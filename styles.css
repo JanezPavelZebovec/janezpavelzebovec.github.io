@@ -108,6 +108,22 @@ code {
     display: inline-block;
 }
 
+blockquote {
+    color: var(--bOspredjeNazaj);
+    font-style: italic;
+    border-left: 2px solid var(--bOspredjeBoljNazaj);
+    padding-left: 1em;
+}
+blockquote cite {
+    color: var(--bOspredjeBoljNazaj);
+    font-size: small;
+    display: block;
+    margin-top: 0.2em;
+}
+blockquote cite:before {
+    content: "\2014 \2009";
+}
+
 img {
     display: block;
     margin-left: auto;
@@ -160,14 +176,14 @@ button {
 }
 
 #datum {
-    color: var(--bOspredjeNazaj);
+    color: var(--bOspredjeBoljNazaj);
     font-size: small;
     text-align: center;
     padding-bottom: 1em;
 }
 
 #stikaloTeme {
-    color: var(--bOspredjeNazaj);
+    color: var(--bOspredjeBoljNazaj);
     background: none;
     border: none;
     cursor: pointer;
@@ -178,7 +194,7 @@ button {
 
 #linkMD, #linkMD a {
     font-size: small;
-    color: var(--bOspredjeNazaj);
+    color: var(--bOspredjeBoljNazaj);
     background: none;
     border: none;
     cursor: pointer;

@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-04-18
+date: 2026-04-24
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -154,6 +154,7 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
 - [Historic Place – Map](https://gk.historic.place/historische_objekte/) – zgodovinski predmeti na OSM (domača stran [Historic Place](https://gk.historic.place/)) 
 - [Komoot](https://www.komoot.com/plan) - načrtovanje kolesarske, pohodniške poti
 - [MapMagic – Map](https://mapmagic.app/map)
+- [Mapy](https://mapy.com/) – *interaktiven* zemljevid češkega podjetja
 - [Open Cycle Map](https://www.opencyclemap.org/) - kolesarski zemljevid
 - [Open Infrastructure Map](https://openinframap.org/) – *infrastrukturni* zemljevid (elektrika, plinovodi, vodovod, *telekomunikacija*)
 - [Open Railway Map](https://openrailwaymap.org/) - železniško omrežje s postajami in drugim
@@ -165,6 +166,7 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
 - [Overpass Turbo](https://overpass-turbo.eu/) - iskalnik značilnosti
 - [ShadeMap](https://shademap.app/) - zemljevid senc po svetu v poljubnem trenutku
 - [Slovenski eksonimi](https://eksonimi.openstreetmap.si/) – zemljevid s slovenskimi imeni krajev izven meja Slovenije
+- [Streets](https://streets.gl/) – prikaz v 3D, zelo realističen
 - [TagInfo](https://taginfo.openstreetmap.org/) - statistika oznak v Open Street Mapu
 - [Velo Planner](https://veloplanner.com/routes) - kolesarske poti in načrtovanje kolesarjenja
 - [WaterwayMap](https://waterwaymap.org/) – zemljevid 

@@ -6,7 +6,7 @@
 
     <title>Janez Pavel Žebovec</title>
     <meta name="author" content="Janez Pavel Žebovec">
-    <meta name="description" content="Moja osebna spletna stran"/>
+    <meta name="description" content="Osebna spletna stran"/>
     <meta name="keywords" content="Janez Pavel Žebovec, osebna spletna
 stran, osebno spletišče"/>
 
@@ -36,7 +36,7 @@ stran, osebno spletišče"/>
             </svg>
         </a>
 
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-02-21">2026-02-21</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-04-25">2026-04-25</time></p>
     </header>
     <main>
         <div class="content">
@@ -44,10 +44,19 @@ stran, osebno spletišče"/>
             potrebam, dobrodošli pa so seveda tudi vsi s podobnimi
             zanimanji.</p>
             <ul>
-            <li><a href="/zvezdoslovna_ura/">Zvezdoslovna ura</a> –
-            predstavitev vesolja kot ure</li>
             <li><a href="/visoka_slovenscina">Visoka slovenščina</a> –
-            kakšna bi slovenščina morala biti (oz. mora biti)</li>
+            kakšna bi slovenščina morala biti (oz. mora biti)
+            <ul>
+            <li><a href="/prepovedane_besede">Prepovedane besede</a> –
+            seznam nekaj več prepovedanih besed v visoki slovenščini z
+            ustreznicami v visoki slovenščini</li>
+            </ul></li>
+            <li><a href="/zvezdoslovna_ura/">Zvezdoslovna ura</a> –
+            predstavitev vesolja kot ure
+            <ul>
+            <li><a href="opombe_k_zvezdoslovni_uri">Opombe k
+            Zvezdoslovni uri</a></li>
+            </ul></li>
             <li><a href="/Glasopisnica/">Glasopisnica</a> – moja pisava
             <small><em>(v delu - tako pisava sama, kot tudi spletna
             stran)</em></small></li>
@@ -57,10 +66,16 @@ stran, osebno spletišče"/>
             20 letih so zaradi zasebnosti vidna le imena in priimki brez
             vseh ostalih podatkov)</small></li>
             <li><a href="/programje">Programje</a> – predstavitev
-            miselnosti in seznam dobrih računalniških orodij</li>
+            miselnosti in seznam dobrih računalniških orodij
+            <ul>
             <li><a href="/vodic_skozi_namestitev_Linuxa">Vodič skozi
             namestitev Linuxa</a> – vodič namestitev operacijskega
             sistema, kot ga imam jaz</li>
+            </ul></li>
+            <li><a href="/umovanje">Umovanje</a></li>
+            <li><a href="/dnevnik">Dnevnik</a> – beleženje napredka pri
+            raznih projektih, navedeni so predvsem pomembnejši
+            mejniki</li>
             <li><a href="/zemljevid/">Zemljevid</a> – skupek nekaj
             prostih zemljevidov, ki so večinoma iz podatkov
             OpenStreetMap, pa tudi GURS-ov zračni posnetek, <small>ter
@@ -101,8 +116,6 @@ stran, osebno spletišče"/>
             <ul>
             <li><a
             href="https://www.facebook.com/janezpavel.zebovec">Facebook</a></li>
-            <li><a
-            href="https://www.instagram.com/janezpavelzebovec/">Instagram</a></li>
             <li><a href="https://x.com/JanezPavelZ">Twitter</a></li>
             </ul>
             <hr />
@@ -157,10 +170,10 @@ stran, osebno spletišče"/>
             <li><a
             href="https://translate.codeberg.org/user/JanezPavelZebovec/">Codeberg
             Translate</a> – <a href="https://www.comaps.app/">CoMaps</a>
-            (prevedel takorekoč sam, zahteva še nekaj popravkov)</li>
+            (prevod je skoraj povsem moj in končan)</li>
             <li><a
             href="https://translatewiki.net/wiki/User:JanezPavelZebovec">Translate
-            Wiki</a> – sodelujem pri prevodu spletni strani <a
+            Wiki</a> – sodelujem pri prevodu spletnih strani <a
             href="https://www.openstreetmap.org/">OpenStreetMap.org</a>
             in <a
             href="https://www.openhistoricalmap.org/">OpenHistoricalMap.org</a></li>
@@ -208,9 +221,8 @@ stran, osebno spletišče"/>
             pretvorjeno v <a
             href="https://sl.wikipedia.org/wiki/HTML">HTML</a>, zato so
             spletne strani dostopne tudi v izvornem Markdownu v razdelku
-            <em>https://janezpavelzebovec.net/markdown/</em>. Na dnu
-            vsake take strani je povezava do pripadajoče strani v
-            Markdownu.</p>
+            <em>janezpavelzebovec.net/md/</em>. Na dnu vsake take strani
+            je povezava do pripadajoče strani v Markdownu.</p>
             <p>Datum zadnje spremembe strani, ki je naveden na vrhu, se
             nanaša na vsebinsko spremembo, ne na slogovno ali kak
             zanemarljiv (npr. slovničen) popravek.</p>
@@ -230,15 +242,26 @@ stran, osebno spletišče"/>
             <li><strong>D</strong> – povezava na domačo stran</li>
             <li><strong>M</strong> – povezava na stran v Markdownu</li>
             </ul>
-            <p>Predlogi za izboljšave so seveda dobrodošli, vkolikor so
-            dobro premišljeni in se sladajo z načeli preprostosti (tudi
-            v preprostosti je za to spletišče verjetno še nekaj prostora
-            za izboljšave).</p>
+            <h3 id="smernice-spletišča">Smernice spletišča</h3>
+            <ul>
+            <li>čim bolj preprosto, a ne na ceno lepote in
+            uporabnosti;</li>
+            <li>čim manj Javascripta (spletna stran mora delovati tudi
+            brez njega – z izjemo <a
+            href="/zvezdoslovna_ura/">Zvezdoslovne ure</a>,
+            seveda);</li>
+            <li>zgradba HTML-ja, ki omogoča jasen ogled strani tudi brez
+            CSS-ja, oz. omogoča enostavno prilagajanje na lastni
+            slog;</li>
+            <li>vsebina naj bo dostopna tudi v golem besedilu (za npr.
+            ogled v terminalu) – razdelek
+            <em>janezpavelzebovec.net/md/</em>);</li>
+            </ul>
         </div>
     </main>
     <footer>
         <button id="stikaloTeme">Preklopi barvni način strani</button>
-        <br><a id="linkMD" href="/markdown/index.md">Stran v Markdownu</a>
+        <br><a id="linkMD" href="/md/index.md">Stran v Markdownu</a>
     </footer>
 </body>
 </html>

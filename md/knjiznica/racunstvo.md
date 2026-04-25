@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-04-16
+date: 2026-04-22
 description: računska teorija, enačbe
 keywords: računstvo, matematika
 author: Janez Pavel Žebovec
@@ -610,11 +610,14 @@ $$ IA = AI = A $$
 ***Komutator** dveh matrik* A in B:
 $$ [A, B] = AB - BA $$
 
-**Gauss-Jordanova *eliminacija*** – z njo pridemo do *inverza matrike* (če ta obstaja); *operacije*, ki jih lahko uporabimo:
+**Gauss-Jordanova *eliminacija*** – z njo pridemo do *inverza matrike* (če ta obstaja); ***elementarne* vrstične *operacije***, ki jih lahko uporabimo:
 
 - i-to vrstico pomnožimo z neničelnim številom $\alpha$
+    $$ \begin{pmatrix} 1 & & & & \\ & \ddots & & & \\ & & 1 & & \\ & & & \alpha & \\    & & & & 1 \\ & & & & & \ddots \\ & & & & & & 1 \end{pmatrix} $$
 - i-ti vrstici prištejemo $\beta$-kratnik j-te vrstice
 - zamenjamo i-to in j-to vrstico
+
+Matriki sta vrstično enakovredni (*ekvivalentni*), če lahko eno z zaporedjem *elementarnih* vrstičnih *operacij* preoblikujemo v drugo.
 
 **Sled** (ang. *trace*) je vsota prekotniških (*diagonalnih*) členov:
 $$ \mathrm{tr} (A) = A_{11} + A_{22} + ... + A_{nn} $$
