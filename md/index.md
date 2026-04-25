@@ -15,7 +15,6 @@ To je moje spletišče, namenjeno mojim zanimanjem in potrebam, dobrodošli pa s
 - [Moj rodovnik](/moj_rodovnik) – moje družinsko drevo, na katerem delava z bratrancem <small>(s poudarkom na prednikih; za živeče osebe in umrle v zadnjih 20 letih so zaradi zasebnosti vidna le imena in priimki brez vseh ostalih podatkov)</small>
 - [Programje](/programje) – predstavitev miselnosti in seznam dobrih računalniških orodij
     - [Vodič skozi namestitev Linuxa](/vodic_skozi_namestitev_Linuxa) – vodič namestitev operacijskega sistema, kot ga imam jaz
-- [Umovanje](/umovanje)
 - [Dnevnik](/dnevnik) – beleženje napredka pri raznih projektih, navedeni so predvsem pomembnejši mejniki
 - [Zemljevid](/zemljevid/) – skupek nekaj prostih zemljevidov, ki so večinoma iz podatkov OpenStreetMap, pa tudi GURS-ov zračni posnetek, <small>ter prepovedani  G\*\*\*lovi zemljevidi zgolj za primerjavo</small>
 - [Moji seznami](/seznami) – priporočila, predvsem spletne povezave
@@ -87,7 +86,7 @@ Uporabljen je barvni slog [Gruvbox](https://github.com/morhetz/gruvbox) Pavla Pe
 
 Stran [Moj rodovnik](/moj_rodovnik) je ustvarjena z [Grampsom](https://gramps-project.org/).
 
-*Analitika* spletišča je na voljo [preko storitve Umami](https://cloud.umami.is/analytics/eu/share/FhDonlJniEyIGdQY) (pri čemer je treba upoštevati, da sem jaz reden obiskovalec).
+*Analitika* spletišča je na voljo [preko storitve Umami](https://cloud.umami.is/analytics/eu/share/FhDonlJniEyIGdQY) (pri čemer je treba upoštevati, da sem jaz skoraj zagotovo najrednejši obiskovalec :).
 
 Spletišče ima tri bližnjice:
 
@@ -98,6 +97,6 @@ Spletišče ima tri bližnjice:
 ### Smernice spletišča
 
 - čim bolj preprosto, a ne na ceno lepote in uporabnosti;
-- čim manj Javascripta (spletna stran mora delovati tudi brez njega – z izjemo [Zvezdoslovne ure](/zvezdoslovna_ura/), seveda);
+- čim manj Javascripta (tj. *animacij*, prehodov, *interaktivnosti*, ...; spletna stran mora delovati tudi brez njega – z izjemo [Zvezdoslovne ure](/zvezdoslovna_ura/), seveda);
 - zgradba HTML-ja, ki omogoča jasen ogled strani tudi brez CSS-ja, oz. omogoča enostavno prilagajanje na lastni slog;
 - vsebina naj bo dostopna tudi v golem besedilu (za npr. ogled v terminalu) – razdelek *janezpavelzebovec.net/md/*);
