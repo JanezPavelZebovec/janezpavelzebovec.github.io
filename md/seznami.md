@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-04-24
+date: 2026-04-25
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -90,6 +90,10 @@ Glej tudi strani [Programje](programje) in [Linux](Linux).
     - [Suckless - Philosphy](https://suckless.org/philosophy/) - predstavitev njihove miselnosti
 - [W3Schools](https://www.w3schools.com/) - priročnik za programiranje
 
+##### Linux
+
+- [Altan Avtzi: Awesome Linux ricing](https://github.com/avtzis/awesome-linux-ricing) (Github)
+
 ##### Spletne strani
 
 - [CSS-Tricks](https://css-tricks.com/)
@@ -105,6 +109,15 @@ Primerih dobrih spletnih strani:
 - [Better Motherfucking Website](http://bettermotherfuckingwebsite.com/) - zelo preprosta spletna stran
 - [Best Motherfucking website](https://bestmotherfucking.website/) - preprosta spletna stran
 - [Perfect Motherfucking Website](https://perfectmotherfuckingwebsite.com/) - preprosta spletna stran
+
+### Državni podatki
+
+(Glej tudi [Uradni zemljevidi](#Uradni_zemljevidi))
+
+- [EID](https://eid.gov.si/) – iskalnik po registru nepremične kulturne dediščine
+- [Odprti podatki Slovenije](https://podatki.gov.si/)
+- [Portal Prostor](https://www.e-prostor.gov.si/)
+    - [Portal Prostor – Seznam omrežnih storitev](https://www.e-prostor.gov.si/inspire/seznam-omreznih-storitev/vse-storitve/)
 
 ### Zemljepisje
 
@@ -219,7 +232,7 @@ Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
 - [Geoportal AKOS](https://gis.akos-rs.si/) - zemljevid z omrežji (vodovodno, električno, poštno, želežniško, *mobilno*, *radijsko* ...), zemljiški zemljevid
 - [GisKD pregledovalnik](https://geohub.gov.si/ghapp/giskd/) - zemljevid kulturne dediščine, arheoloških najdišč
 - [INSPIRE](https://eprostor.gov.si/imps) - brskalnik po državnih zemljevidih
-- [Javni pregledovalnik grafičnih podatkov MKGP](https://rkg.gov.si/GERK/WebViewer)
+- [RKG – Javni pregledovalnik grafičnih podatkov MKGP](https://rkg.gov.si/GERK/WebViewer)
 - [NAP – Nacionalna točka dostopa](https://www.nap.si/) - dostop do prometnih podatkov in podatkov o polnilnih mestih za el. vozila (Ministrstvo za infrastrukturo)
 - [PIS](https://pis.eprostor.gov.si/pis-gr-jv/) – prostorsko načrtovanje, graditev objektov, območja varovanja in omejitev, nevarnosti in vplivi, evidenca stavbnih zemljišč, stanovanja, javne objave
 - [Planinska zveza Slovenije](https://poti.pzs.si/)
@@ -236,8 +249,9 @@ Državni podatki za prenos ali gostovani
 - [Javni spletni servisi GURS - WMS](https://ipi.eprostor.gov.si/wms-si-gurs-dts/wms)
 - [Portal Prostor – Javni geodetski podatki](https://ipi.eprostor.gov.si/jgp/)
     - [Temeljne karte](https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE) – gostovani (na voljo za uporabo v npr. JOSMu, na volju tudi za prenos v različnih oblikah): *topografska* zemljevida, franciscejski *kataster*, lidar, ...
-- [RKG](https://rkg.gov.si/vstop/)
-    - [RKG – Raba](https://rkg.gov.si/arhiv/RABA/?C=N;O=D) – vrste/rabe zemljišč (arhiv od leta 2002)
+- [Register nepremične kulturne dediščine](https://podatki.gov.si/dataset/register-nepremicne-kulturne-dediscine)
+- [Register kmetijskih gospodarstev (RKG)](https://rkg.gov.si/vstop/)
+    - [Raba](https://rkg.gov.si/arhiv/RABA/?C=N;O=D) – vrste/rabe zemljišč (arhiv od leta 2002)
 
 ### Zgodovina
 
@@ -250,6 +264,7 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 - [Map Warper](https://mapwarper.net/) - prevsem zgodovinski zemljevidi, *geopozicioniranje* zemljevidov
 - [Miniaturna železnica – Proge: Emonika](https://www.miniaturna-zeleznica.eu/Proge/Emonika/)
 - [Plemiška dediščina na Slovenskem](https://plemiska-dediscina.zrc-sazu.si/)
+
 - [Rapalska meja](https://www.rapalskameja.si/) – medvojno obdobje
 - [Virtualna arhivska knjižnica](https://vac.sjas.gov.si/) - arhivi Republike Slovenije
 - [Zgodovina na dlani](https://zgodovinanadlani.si/)
@@ -477,6 +492,7 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [Luke Smith](https://www.youtube.com/@LukeSmithxyz) - programstvo (Linux), modroslovje (*filozofija*), pravoslavstvo?
 - [Mikhaila Peterson](https://www.youtube.com/@mikhaila)
 - [Nicholas Bowling](https://www.youtube.com/@NicholasBowling) – ameriški ulični pridigar, nekdanji katolik
+- [Pope Defenders](https://www.youtube.com/@PopeDefendersYT) – zagovornik katolištva
 - [Remnant777](https://www.youtube.com/@Remnant777) – kritik levice
 - [Sahar TV](https://www.youtube.com/@OfficialSaharTV) – Jud, zagovornik Izraela v vojni proti palestinski oblasti
 - [Truthly](https://www.youtube.com/@truthlyTV)

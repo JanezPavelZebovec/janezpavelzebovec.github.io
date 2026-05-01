@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-03-15
+date: 2026-05-01
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -20,7 +20,7 @@ Tukaj so navedeni koraki, po katerih prideš do skoraj enakega okolja kot je moj
 - Zaženi računalnik in pritiskaj **F12** ali **F9** (odvisno od računalnika, lahko je tudi kaj tretjega, pogosto pa piše, kaj naj bi pritiskal)
 - Odpre se zagonski *meni*, kjer izbereš svojo zagonsko napravo (ključek USB)
 
-## Namestitev operacijskega sistema
+## Namestitev *operacijskega sistema*
 
 Izberi **Graphical install** ali **Install**
 
@@ -34,7 +34,7 @@ Izberi **Graphical install** ali **Install**
 - Izberi geslo (tega novoustvarjenega uporabnika, ki bo imel skrbniške pravice, če nisi predhodno izbral gesla skrbnika)
 - *Partitioning method* izberi *Guided – use entire disk*, če hočeš imeti na napravi le Linux (ostale podatke na disku bo izbrisalo!)
 - Pazljivo izberi pravi disk, na katerega boš namestil Linux (da ne izbereš recimo zagonskega ključka, ker bo potem Linux namestilo na ključek)
-- Izberi ločena *particija* za **\home** (to pomeni, da ločiš svoje datoteke – hranjene v \home – od datotek operacijskega sistema, ki jih praviloma ne urejaš neposredno)
+- Izberi ločena *particija* za ** \home** (to pomeni, da ločiš svoje datoteke – hranjene v \home – od datotek operacijskega sistema, ki jih praviloma ne urejaš neposredno)
 - Potrdi
 - Zdaj bo namestilo *operacijski sistem*, ter preneslo in maestilo vse potrebne *pakete/programe*
 - Zavrni *Scan extra installation media*, če nočeš namestiti Linuxa na dodatno napravo
@@ -53,274 +53,304 @@ Zagon novega *operacijskega sistema*:
 - Zdaj si v Linuxu brez uporabniškega vmesnika (ker ga moramo še namestiti, poleg še nekaterih drugih zadev)
 - Prijavi se, kot zahtevano, z uporabniškim imenom in geslom, ki si ju nastavil
 
-## Namestitev osnovnih/sistemskih orodij
+## Urejanje *operacijskega sistema*
 
-- `sudo apt update` – posodobi seznam programske opreme
-- `sudo apt install network-manager` – namesti upravitelja omrežne povezave
-- `sudo systemctl start NetworkManager`
+- `sudo apt update` – posodobi seznam nameščenih *paketov programov*
+- `sudo apt install` ... – namesti orodje ...
+    - `xorg` – namesti strežnik X
+    - `xinit` – *program*, ki se izvede ob zagonu; lahko tudi nastavimo, kaj vse naj se še zažene ob zagonu *sistema*
+    - `git` – [Git](https://git-scm.com/), orodje za upravljanje z izvorno *kodo* (tako tudi prenos datotek s spletišč kot SO GitHub, GitLab in Codeberg)
+    - `curl` – [Curl](https://curl.se/), orodje za en izmed načinov prenosa datotek s spleta
+    - `make` – program za "izgradnjo", prevajanje orodij iz "nastavitvenih datotek" v *binarne* za uporabo
+    - `build-essential` – namesti potrebne pakete za izgradnjo z ukazom `make`
+    - `network-manager` – orodje za upravljanje z omrežjem
+- `sudo systemctl start NetworkManager` – zažene NetworkManager
 - `sudo systemctl enable NetworkManager`
-    - `nmcli device wifi connect ime_omrežja password geslo` – poveži se na brezžično omrežje (izbirno)
-- `sudo apt install xorg` – namesti strežnik X
-- `sudo apt install xinit` – ustvari zagonsko datoteko, s klicem katere zaženeš *grafično okolje* (DWM) in vsebuje vse, kar naj se izvede ob zagonu *sistema* (ukaz startx)
-- `echo "exec dwm" > ~/.xinitrc` – doda vrstico `exec dwm`v zagonsko datoteko **~/.xinitrc**
-- `sudo apt install make` – namesti program **make** za izgradnjo programov (pretvorbo v binarni jezik) iz vira (npr. Sucklessovih)
-- `sudo apt install build-essential` – namesti potrebne pakete za izgradnjo z ukazom `make`
-- `mkdir viri` – ustvari mapo za programe, nameščene iz vira (npr. Sucklessovi)
-- `cd viri` – premakni se v novoustvarjeno mapo **viri**, kamor boš prenesel programe iz vira
-- `sudo apt install git` – namesti program **git** za prenos datotek (npr. programov) s spletnih strani
-- `sudo apt install libx11-dev libxft-dev libxinerama-dev`, oz. izbirno `sudo apt install libx11-dev libxft-dev libxinerama-dev libxrandr-dev libxcb-res-dev`, če boš uporabljal tudi patche
-    - **libx11-dev** za osnovno sporazumevanje s strežnikom X
-    - **libxft-dev** za prikaz pisav
-    - **libxinerama-dev** za podporo več zaslonov
-    - **libxrandr-dev** za dinamično spreminjanje ločljivosti in orientacije zaslona
-    - **libxcb-res-dev** omogoča dostop do določenih sistemskih podatkov za npr. statusno vrstico
-- `git clone https://git.suckless.org/dwm` – prenese DWM (*Dynamic Windows Manager* – upravitelj oken) s Sucklessove spletne strani – glej <https://dwm.suckless.org/>
-- `git clone https://git.suckless.org/dmenu` – prenese Še glede zadnjega bloka kode (ki vprašal prej): ta del zdaj izgleda pravilno – če želiš ga vstavim nazaj na pravo mesto v novo verzijo.DMenu (*Dynamic Menu* – nekakšna statusna vrstica) – glej <https://tools.suckless.org/dmenu/>
-- `git clone https://git.suckless.org/st` – prenese ST (*Simple terminal*) – glej <https://st.suckless.org/>
-- `git clone https://git.suckless.org/slock` – prenese SLock (*Simple X display locker* – zaklenjen zaslon) – glej <https://tools.suckless.org/slock/>
-- `git clone https://git.suckless.org/slstatus` – prenese SlStatus (prikazovalnik stanja v "orodni vrstici", če ne ustvariš kar svojega) – glej <https://tools.suckless.org/slstatus/>
-- Za vsakega od teh treh programov:
-    - `cd ime_programa` – premakni se v mapo programa (dwm/dmenu/st)
-    - `sudo make clean install` – izgradi program
-    - `cd ..` – premakni se nazaj v nadmapo
-- `startx` – zažene strežnik X, oz. DWM (brez **~/.xinitrc** ne bo delovalo)
+- `nmcli device wifi connect ime_omrežja password geslo_omrežja` – tako se lahko zdaj povežeš tudi na na brezžično omrežje (izbirno)
+
+### Nameščanje Sucklessovih orodij iz vira
+
+- `mkdir viri` – ustvari *mapo*, v katero bomo shranili programe, prenešene iz vira
+- `cd viri` – premakni se v to *mapo*
+- `git clone` ... – prenese zadevo (*repozitorij*) s spleta
+    - `https://git.suckless.org/dwm` – [Dynamic Windows Manager (DWM)](https://dwm.suckless.org/), upravitelj oken
+    - `https://git.suckless.org/dmenu` – [Dynamic Menu (DMenu)](https://tools.suckless.org/dmenu/), orodna (*statusna*) vrstica
+    - `https://git.suckless.org/st` – [Simple terminal (ST)](https://st.suckless.org/), *terminal*
+    - `https://git.suckless.org/slock` – [Simple X display locker (SLock)](https://tools.suckless.org/slock/), zaklenjen zaslon
+    - `https://git.suckless.org/slstatus` – [SLStatus](https://tools.suckless.org/slstatus/), prikazovalnik stanja v orodni vrstici, kot je ura, *baterija*, omrežna povezava, ... (če ne ustvariš kar svojega)
+    - `https://git.suckless.org/surf` – [Surf](https://surf.suckless.org/), spletni brskalnik
+
+**Nameščanje orodij**:
+
+- `sudo apt install` ... – namesti odvisnosti za DWM (morda te potrebujeta tudi ST in Dmenu, ker zanju ne potrebujemo dodatnih odvisnostih) ...
+    - `libx11-dev` – za osnovno sporazumevanje s strežnikom X
+    - `libxft-dev` – za prikaz pisav
+    - `libxinerama-dev` – za podporo več zaslonov
+    Morda je dobro imeti še (tega sam še nisem potreboval):
+    - `libxrandr-dev` – za dinamično spreminjanje ločljivosti in usmeritve zaslona
+    - `libxcb-res-dev` – omogoča dostop do določenih *sistemskih* podatkov za npr. *statusno* vrstico
+- `sudo apt install libxrandr-dev` –  odvisnost za Slock
+- `cd ~/viri/ime_programa/` – pojdi v mapo prenešenega orodja
+- prilagodi nastavitveno datoteko **config.h** svojim željam (to lahko storiš tudi kasneje in ponoviš sledeči korak)
+- `sudo make clean install` – pretvori orodje v uporabni *binarni* zapis in namesti orodje
+
+### Zagon *sistema*
+
+- `echo "exec dwm" > ~/.xinitrc` – v nastavitveno datoteko **~/.xinitrc/** zagonskega *programa* doda vrstico, ki zažene DWM ob zagonu strežnika X
+- `startx` – zažene strežnik X (torej tudi DWM, a le, če si pred tem ustrezno uredil **~/.xinitrc**
+- terminal ST lahko zdaj odpreš z bližnjico **Shift+Alt+Enter**
 
 ### Tipkovnica
 
+Zdi se mi, da če si izbral pravo tipkovnico med postopkom nameščanja *operacijskega sistema*, bi moral imeti nastavljeno že pravo tipkovnico (?; vsaj jaz ob zadnji namestitvi z njo nisem imel težav), sicer pa je postopek tak (morda je treba namestiti še kakšen *program*):
+
 - `sudo dpkg-reconfigure keyboard-configuration` – zaženi programček za nastavitev tipkovnice
     - izberi *model* svoje tipkovnice
-    - izberi običajno slovensko tipkovnico "*Slovenian*"
+    - izberi slovensko tipkovnico "*Slovenian*"
     - izberi *Default* (privzeto) tipko za **AltGr**
-    - za *Compose key* pa *Right Alt (AltGr)* ali pa nič, če ne rabiš
-- `sudo systemctl restart keyboard-setup.service` – znova zaženeš sistem za uporabo tipkovnice
-- nastavi slovensko tipkovnico v terminalu s `setxkbmap si`in to dodaj v ~./xinitrc
+    - za *Compose key* pa *Right Alt (AltGr)* (ali pa nič, če ne rabiš)
+- `sudo systemctl restart keyboard-setup.service` – znova zaženeš *sistem* za uporabo tipkovnice
+- nastavi slovensko tipkovnico v terminalu s `setxkbmap si`in to dodaj v **~./xinitrc**, da se ob zagonu vedno nastavi prava tipkovnica
+
+### Čas
+
+- `timedatectl` – izpiše podatke o nastavljenem časovnem pasu, oz. trenutnem času
+- `sudo timedatectl set-timezone Europe/Ljubljana` – nastavi časovni pas na Slovenijo
+- trenutni čas lahko bolj strnjeno preveriš tudi z `date`
+
+### Zunanji pogoni
+
+- `sudo apt install udisks2` – namesti udisksctl za upravljanje z USB-ji
+- `udisksctl mount -b /dev/sda1` – priključi napravo (najpogostje je ime naprave *sda1*, kot v tem primeru, oz. *sda2* itd. če je naprav več, oz. *sdb1*)
+- `udisksctl unmount -b /dev/sda1` – varno izvrže napravo
+
+Za nekoliko bolj priročno uporabo zunanjih pogonov:
+
+- `mkdir -p ~/usb` – ustvari *mapo* usb v domači mapi
+- `ln -s /media/janezpavel ~/usb` – ustvari simbolno povezavo med *mapo*, kamor zgornji ukaz priklaplja naprave in novo ustvarjeno *mapo* v domači *mapi*
 
 ### Zvok
 
-- `sudo apt install alsa-utils pulseaudio pulsemixer` – namesti programe za predvajanje zvoka (**pulsemixer** je program za uravnavanje glasnosti, izbiranje izhoda)
+- `sudo apt install` ...
+    - `alsa-utils`
+    - `pulseaudio`
+    - `pulseaudio-utils` – (je tale sploh res potreben?)
+    - `pulsemixer` – orodje za uravnavanje glasnosti, izbiranje izhodov)
+- `pulseaudio --start`
 
-## Namestitev dodatnih orodij
+Lahko ne uporablja želenih zvočnih *kartic* (izhodov; značilno se to zgodi, ko na HDMI priključimo dodaten zaslon z lastnimi zvočniki). To rešimo takole:
 
-- `sudo apt install curl` – namesti program **curl** (potreben za nekatere prenose podatkov/programov)
-- `curl -fsS https://dl.brave.com/install.sh | sh` – namesti spletni brskalnik Brave
-- `sudo apt install lf` – namesti "raziskovalca" shranjenih datotek /shrambe
+- `pactl list short sinks` – izpiše seznam izhodov
+- `pactl set-default-sink ime_s_seznama.analog-stereo` – nastavi zvočno kartico vgrajenih zvočnikov, oz. ne zvočnikov priključenega zaslona (je to vedno *.analog-stero*?). Tako potem delujejo tudi slušalke (ker delujejo na zvočni *kartici* računalnika, ne povezanega zaslona).
 
-## Prilagoditve videza in uporabnosti posameznih orodij
+### Sistemski temni način
 
-- Da odstraniš nadležen pisk: `sudo rmmod pcspkr`. Da ga odstraniš za vedno `echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf`, oz. v datoteko `/etc/modprobe.d/nobeep.conf`dodaj `blacklist pcspkr`. To onemogoči **pcspkr**, ki je odgovoren za to piskanje.
+Da lahko v programih nastavimo *sistemsko* privzeto temo (v našem primeru temno), jim moramo to nekako povedati. To storimo s sledečima datotekama:
 
-### Dejanja ob zagonu
+- `mkdir -p ~/.config/gtk-3.0`
+- `mkdir -p ~/.config/gtk-4.0`
+- `printf "[Settings]\ngtk-application-prefer-dark-theme=1\n" > ~/.config/gtk-3.0/settings.ini`
+- `printf "[Settings]\ngtk-application-prefer-dark-theme=1\n" > ~/.config/gtk-4.0/settings.ini`
 
-- `vim ~/.xinitrc` – odpri zagonsko datoteko in vanjo vstavi sledeče:
-    ```sh
-    #!/bin/sh
+### Lastne bližnjice
 
-    sxhkd & #file of custom chortcuts
+- `sudo apt install sxhkd` – namesti program za dodajanje lastnih *sistemskih* bližnjic
+- `sxhkd &` – zažene SXHKD; najlepše je to dodati v **~/.xinitrc** (nekam pred `exec dwn`, da se zažene že samodejno ob zagonu sistema)
+- `mkdir -p ~/.config/sxhkd/` – ustvari *mapo* za nastavitvene datoteke SXHKD
+- `touch ~/.config/sxhkd/sxhkdrc` – ustvari datoteko [**sxhkdrc**](https://codeberg.org/JanezPavelZebovec/My_Linux_configs/src/branch/main/~/.config/sxhkd/sxhkdrc) za določanje lastnih bližnjic
+- `pkill -usr1 -x sxhkd` – s tem po urejanju nastavitvene datoteke ponovno zaženeš SXHKD (ne da bi znova zagnal ves *sistem*), da spremembe stopijo v veljavo
 
-    xinput --set-prop 'MSFT0001:00 06CB:CE2D Touchpad' 'libinput Tapping Enabled' 1 #enable click with tab on touchtab
-    xinput --set-prop 'MSFT0001:00 06CB:CE2D Touchpad' 'libinput Natural Scrolling Enabled' 1 #reverse direction of scrolling on touchtab - up=down
 
-    while true; do
-        ~/.local/bin/status-bar # calls script for status bar
-        sleep 10 #interval of refreshing in seconds
-    done &
+### Posnetki zaslona
 
-    exec dwm #run DWM
-    ```
-    - nekam pred `exec dwm` dodaj še `xrandr --output "ime-zaslona" --mode širinaxvišina &`, če želiš ob zagonu nastaviti neko neprivzeto povećavo/velikost zaslona
+- `sudo apt install imagemagick xclip`– programa potrebna za slikanje zaslona
 
-### DWM
+### Orodja za vsakdanjo rabo
 
-- `vim ~/viri/dwm/config.h` – odpri nastavitveno datoteko DWM in spremeni:
-    - Videz:
-        ```c
-        /* appearance */
-        static const char col_rob[]         = "#fca503"; //rob glavnega okna (dodano; oranžna za boljšo vidljivost glavnega okna)
-        static const char *colors[][3]      = {
-            /*               fg         bg         border   */
-            [SchemeSel]  = { col_gray4, col_cyan,  col_rob  }, // zamenjaj `col_cyan` z `col_border` v tej vrstici
-        };
-        ```
-    - Obnašanje oken:
-        - `static const int resizehints = 1;`spremeni v `static const int resizehints = 0;`, da DWM ne upošteva namigov programov o velikosti oken (da ne bo nepotrebnih praznih robov bo tako včasih zlomilo prikaz v teh oknih, kar pa običajno ne predstavlja take težave kot so grdi prazni robovi)
-    - Bližnjice:
-        - `#define MODKEY Mod1Mask` spremeni v `#define MODKEY Mod4Mask` – tako je ključni gumb pri bližnjicah DWM-ja **Super**, ne **Alt**
-        - `{ MODKEY,  XK_p,  spawn,  {.v = dmenucmd } },` spremeni v `{ MODKEY,  XK_a,  spawn,  {.v = dmenucmd } },`, da odpiraš menu z bolj priročno bližnjico **Super+a**
-        - Dodaj `{ MODKEY,  XK_Tab,  focusstack,  {.i = +1 } },` za kroženje med okni z **Super+Tab**
-        - Dodaj `{ MODKEY|ShiftMask,  XK_Tab,  focusstack,  {.i = -1 } },` za kroženje med okni v nasprotno smer z **Super+Shift+Tab**
-        - Spremeni `{ MODKEY,  XK_Tab,  view,  {0} },` v `{ MODKEY,  XK_v,  view,  {0} },`
-- `sudo make clean install` – program DWM ponovno izgradi s prilagoditvami
+- `sudo apt install` ...
+    - `vim` – [Vim](https://www.vim.org/), urejevalnik golega besedila ([na GitHubu](https://github.com/vim/vim))
+    - `lf` – [LF](https://github.com/gokcehan/lf), raziskovalec shrambe ([na GitHubu](https://github.com/gokcehan/lf), izpeljanka [Rangerja](https://ranger.fm/))
+    - `mpv` – [MPV](https://mpv.io/), predvajalnik posnetkov
+    - `vlc` – [VLC](https://www.videolan.org/vlc/), predvajalnik posnetkov
+    - `zathura` – [Zathura](https://pwmt.org/projects/zathura/), ogledovalnik PDF ([na GitHubu](https://github.com/pwmt/zathura))
+    - `nsxiv` – [NSXIV](https://codeberg.org/nsxiv/nsxiv), ogledovalnik slik 
+    - `simple-scan` – *skeniranje*
+    - `inkscape` – [Inkscape](https://inkscape.org/), urejevalnik SVG
+    - `gimp` – [GIMP](https://www.gimp.org/), urejevalnik slik
+    - `sc-im` – [SC-IM](https://github.com/andmarti1424/sc-im), preprost urejevalnik preglednic
+    - `ncmpcpp` – [NCMPCPP](https://github.com/ncmpcpp/ncmpcpp), poslušanje glasbe (po *avtorjih*, *albumih*, seznamih predvajanja, ...)
 
-### ST
+#### Brskalnik Brave
 
-- `vim ~/viri/st/config.h` – odpri nastavitveno datoteko ST
-- Namesto
-    ```c
-    /* Terminal colors (16 first used in escape sequence) */
-    static const char *colorname[] = {
-        /* 8 normal colors */
-        [0] = "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-        [1] = "#cc241d", /* red     */
-        [2] = "#98971a", /* green   */
-        [3] = "#d79921", /* yellow  */
-        [4] = "#458588", /* blue    */
-        [5] = "#b16286", /* magenta */
-        [6] = "#689d6a", /* cyan    */
-        [7] = "#a89984", /* white   */
+Ker [Brava](https://brave.com/) ni v uradni knjižnici Debiana, je treba dodati povezavo do Bravevove knjižnice (glej tudi [*Installing Brave on Linux – Debian, Ubuntu, Mint*](https://brave.com/linux/#debian-ubuntu-mint)):
 
-        /* 8 bright colors */
-        [8]  = "#928374", /* black   */
-        [9]  = "#fb4934", /* red     */
-        [10] = "#b8bb26", /* green   */
-        [11] = "#fabd2f", /* yellow  */
-        [12] = "#83a598", /* blue    */
-        [13] = "#d3869b", /* magenta */
-        [14] = "#8ec07c", /* cyan    */
-        [15] = "#ebdbb2", /* white   */
-    };
-    ```
-    vstavi
+- `sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg`
+- `sudo curl -fsSLo /etc/apt/sources.list.d/brave-browser-release.sources https://brave-browser-apt-release.s3.brave.com/brave-browser.sources`
+- `sudo apt update`
+- `sudo apt install brave-browser`
 
-    ```c
-    typedef struct {
-        const char* const colors[258]; /* terminal colors */
-        unsigned int fg;               /* foreground */
-        unsigned int bg;               /* background */
-        unsigned int cs;               /* cursor */
-        unsigned int rcs;              /* reverse cursor */
-    } ColorScheme;
-    /*
-     * Terminal colors (16 first used in escape sequence,
-     * 2 last for custom cursor color),
-     * foreground, background, cursor, reverse cursor
-     */
-    static const ColorScheme schemes[] = {
-        // st (dark)
-        {{"black", "red3", "green3", "yellow3",
-          "blue2", "magenta3", "cyan3", "gray90",
-          "gray50", "red", "green", "yellow",
-          "#5c5cff", "magenta", "cyan", "white",
-          [256]="#cccccc", "#555555"}, 7, 0, 256, 257},
+Morda deluje tudi tole (?)
+ 
+- `curl -fsS https://dl.brave.com/install.sh | sh`
 
-        // Alacritty (dark)
-        {{"#1d1f21", "#cc6666", "#b5bd68", "#f0c674",
-          "#81a2be", "#b294bb", "#8abeb7", "#c5c8c6",
-          "#666666", "#d54e53", "#b9ca4a", "#e7c547",
-          "#7aa6da", "#c397d8", "#70c0b1", "#eaeaea",
-          [256]="#cccccc", "#555555"}, 7, 0, 256, 257},
+#### Dodatna orodja
 
-        // One Half dark
-        {{"#282c34", "#e06c75", "#98c379", "#e5c07b",
-          "#61afef", "#c678dd", "#56b6c2", "#dcdfe4",
-          "#282c34", "#e06c75", "#98c379", "#e5c07b",
-          "#61afef", "#c678dd", "#56b6c2", "#dcdfe4",
-          [256]="#cccccc", "#555555"}, 7, 0, 256, 257},
+- `sudo apt install` ...
+    - `pandoc` – [Pandoc](https://pandoc.org/), pretvornik *dokumentov*
+    - `lftp` – [LFTP](https://lftp.yar.ru/), prenos datotek med napravami z različnimi *protokoli* (FTP, FTPS, SFTP, HTTP, HTTPS, BitTorrent, FISH)
+    - `sshpass`
+    - `htop` – [HTOP](https://htop.dev/), *statistika procesov sistema*
+    - `fastfetch` – [FastFetch](https://github.com/fastfetch-cli/fastfetch), podatki o *sistemu* v *terminalu*
+    - `solvespace` – [Solvespace](https://solvespace.com/), urejevalnik 3R (*3D*; [na GitHubu](https://github.com/solvespace/solvespace))
+    - `fontforge` – [GontForge](https://fontforge.org/), urejevalnik pisav [na GitHubu](https://github.com/fontforge/fontforge)
+    - `josm` – [JOSM](https://josm.openstreetmap.de/), urejevalnik OpenStreetMap
+    - `gramps` – [Gramps](https://gramps-project.org/), rodoslovno orodje
 
-        // One Half light
-        {{"#fafafa", "#e45649", "#50a14f", "#c18401",
-          "#0184bc", "#a626a4", "#0997b3", "#383a42",
-          "#fafafa", "#e45649", "#50a14f", "#c18401",
-          "#0184bc", "#a626a4", "#0997b3", "#383a42",
-          [256]="#cccccc", "#555555"}, 7, 0, 256, 257},
+##### Musescore
 
-        // Solarized dark
-        {{"#073642", "#dc322f", "#859900", "#b58900",
-          "#268bd2", "#d33682", "#2aa198", "#eee8d5",
-          "#002b36", "#cb4b16", "#586e75", "#657b83",
-          "#839496", "#6c71c4", "#93a1a1", "#fdf6e3",
-          [256]="#93a1a1", "#fdf6e3"}, 12, 8, 256, 257},
+[Musescore](https://musescore.org/) je orodje za pisanje notnih zapisov
 
-        // Solarized light
-        {{"#eee8d5", "#dc322f", "#859900", "#b58900",
-          "#268bd2", "#d33682", "#2aa198", "#073642",
-          "#fdf6e3", "#cb4b16", "#93a1a1", "#839496",
-          "#657b83", "#6c71c4", "#586e75", "#002b36",
-          [256]="#586e75", "#002b36"}, 12, 8, 256, 257},
+Debian ima precej staro različico, zato je bolje [prenesti AppImage](https://musescore.org/en/download) z Musescorove uradne strani.
 
-        // Gruvbox dark
-        {{"#282828", "#cc241d", "#98971a", "#d79921",
-          "#458588", "#b16286", "#689d6a", "#a89984",
-          "#928374", "#fb4934", "#b8bb26", "#fabd2f",
-          "#83a598", "#d3869b", "#8ec07c", "#ebdbb2",
-          [256]="#ebdbb2", "#555555"}, 15, 0, 256, 257},
+- prenesi/shrani jo v ~/.local/bin/
+- po želji preimenuj privzeto ime oblike *MuseScore-Studio-4.6.5.253511702-x86_64.AppImage* v *MuseScore.AppImage*, da ti ob posodobitvah ni treba spreminjati poti v .desktop, če jo imaš nastavljeno (preneseš novo različico in jo prav tako preimenuješ, staro pa izbrišeš)
+- `chmod +x ~/.local/bin/MuseScore.AppImage` – naredi datoteko izvršljivo
+- `~/.local/bin/MuseScore-4.4.2.AppImage` da poženeš orodje, oz. `~/.local/bin/MuseScore.AppImage install`, če želiš, da samodejno ustvari še datoteko ~/.local/share/applications/MuseScore.desktop, navodilno datoteko in *ikone*
 
-        // Gruvbox light
-        {{"#fbf1c7", "#cc241d", "#98971a", "#d79921",
-          "#458588", "#b16286", "#689d6a", "#7c6f64",
-          "#928374", "#9d0006", "#79740e", "#b57614",
-          "#076678", "#8f3f71", "#427b58", "#3c3836",
-          [256]="#3c3836", "#555555"}, 15, 0, 256, 257},
-     };
-     
-    static const char * const * colorname;
-    int colorscheme = 1;
-    ```
-- v `static MouseShortcut mshortcuts[] = {}` opredeli še dve bližnjici, da se lahko premikaš gor/dol z vrtenjem koleščka:
-    ```c
-	{ ShiftMask,            Button4, kscrollup,      {.i = 1} },
-	{ ShiftMask,            Button5, kscrolldown,    {.i = 1} },
-    ```
-- V `static MouseShortcut mshortcuts[] = {}`:
+#### Izbirnik barv na zaslonu
 
-    ```c
-    { TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
-    { TERMMOD,              XK_Next,        zoom,           {.f = -1} },
-    ```
-    zamenjaj s
-    ```c
-	{ ControlMask,          XK_plus,        zoom,           {.f = +1} },
-	{ ControlMask,          XK_minus,       zoom,           {.f = -1} }
-    ```
-    ter dodaj sledeče bližnjice za izbiro barvnih tem (in lepljenje):
-    ```c
-	{ ControlMask,          XK_e,           kscrollup,      {.i = -1} },
-	{ ControlMask,          XK_y,           kscrolldown,    {.i = -1} },
- 	{ MODKEY,               XK_1,           selectscheme,   {.i =  0} },
- 	{ MODKEY,               XK_2,           selectscheme,   {.i =  1} },
- 	{ MODKEY,               XK_3,           selectscheme,   {.i =  2} },
- 	{ MODKEY,               XK_4,           selectscheme,   {.i =  3} },
- 	{ MODKEY,               XK_5,           selectscheme,   {.i =  4} },
- 	{ MODKEY,               XK_6,           selectscheme,   {.i =  5} },
- 	{ MODKEY,               XK_7,           selectscheme,   {.i =  6} },
- 	{ MODKEY,               XK_8,           selectscheme,   {.i =  7} },
- 	{ MODKEY,               XK_9,           selectscheme,   {.i =  8} },
- 	{ MODKEY,               XK_0,           nextscheme,     {.i = +1} },
- 	{ MODKEY|ControlMask,   XK_0,           nextscheme,     {.i = -1} },
+- potrebujemo [SXCS](https://codeberg.org/NRK/sxcs/) ([tudi na GitHubu](https://github.com/N-R-K/sxcs)):
+    - `cd ~/viri/` – prenesli ga bomo v **viri**
+    - `git clone https://codeberg.org/NRK/sxcs.git` – prenese SXCS s Codeberga
+    - `cd ~/viri/sxcs/` – v *mapo* *programa*
+    - `cc -o sxcs sxcs.c -O3 -s -l X11 -l Xrender` – izgradimo orodje/*program*
+    - `sudo install -Dm755 sxcs /usr/local/bin/sxcs` – namestimo orodje na ustrezno mesto
+    - `sudo install -Dm644 sxcs.1 /usr/local/share/man/man1/sxcs.1` – namestimo navodila na ustrezno mesto
+    - `sudo mandb` – lahko še takoj osvežimo zbirko navodil
+    - če zdaj poženemo orodje v *terminalu* (`sxcs`), lahko *klikamo* z miško naokoli in se v *terminalu* izpisujejo barve *poklikanih* točk
 
-	{ MODKEY,           	XK_v,           selpaste,       {.i =  0} },
-    ```
+#### Programski jeziki
 
-### Drugi programčki, bližnjice
+##### Python
 
-`sudo apt install imagemagick xclip` – namesti programa za zajem posnetka zaslona (za bližnjice glej [~/.config/sxhkd/sxhkdrc](https://codeberg.org/JanezPavelZebovec/My_Linux_configs/src/branch/main/~/.config/sxhkd/sxhkdrc))
+`sudo apt install pyton3` – namesti osnovni *interpretator* [Pythona](https://www.python.org/)
 
-### Računalniški jeziki in njihove knjižnice
+Knjižnice:
 
-- Python
-    - `sudo apt install python3-matplotlib` – Matplotlib (za risanje raznih grafov)
-    - `sudo apt install python3-uncertainties` – računanje z negotovostmi
-    - `sudo apt install python3-scipy`
-- Latex
-    - `sudo apt install texlive-fonts-recommended` – paket priporočenih pisav
-    - `sudo apt install texlive-latex-extra`
-    - `sudo apt install texlive-latex-base`
-    - `sudo apt install texlive-lang-european` – evropski jezikovni paket
-    - `sudo apt install texlive-science` – znanstveni paket
+- `sudo apt install` ...
+    - `python3-pandas` – [Pandas](https://pandas.pydata.org/), obdelava seznamov/preglednic podatkov
+    - `python3-matplotlib` – [Matplotlib](https://matplotlib.org/), risanje grafov
+    - `python3-uncertainties` – [Uncertainties](https://uncertainties.readthedocs.io/), računanje z negotovostmi
+    - `python3-scipy` – [SciPy](https://scipy.org/), znanstveno računanje
 
-## Kaj je treba še dodati v vodič:
+##### Latex
 
-- namesti udisks2 (za udisksctl) za nameščanje ključka
-    - povezava mape ~/USB
-- namesti sxhkd
-    - ponovni zagon sxhkd: `pkill -usr1 -x sxhkd`
+[Latex](https://www.latex-project.org/) je označevalni jezik za pripravo *dokumentov* (zlasti znanstvenih)
 
-- `chmod +x pot/do/programčka` – podeli datoteki izvršilne pravice
+- `sudo apt install` ...
+    - `texlive-latex-base` – osnovni Latex
+    - `texlive-latex-extra` – razširitev osnovnega Latexa
+    - `texlive-fonts-recommended` – paket priporočenih pisav
+    - `texlive-lang-european` – evropski jezikovni paket
+    - `texlive-science` – znanstveni paket
+
+### Uporaba lastnih *skript*
+
+- Na konec **~/.profile** dodaj to vrstico: `export PATH="$HOME/.local/bin:$PATH"`
+- Vse mape, ki so v PATH lahko preveriš z `echo $PATH`
+- Skripte dodaj v mapo **~/.local/bin/** in jih naredi izvršljive: `chmod +x ime-skripte`
+
+### Pošiljanje GIT
+
+`git config --global user.name "MojeUporabniskoIme"`
+`git config --global user.email "moj.naslov@domena.si"`
+
+Preverjanje:
+
+- `git config --global user.name`
+- `git config --global user.email`
+- `ssh -T git@github.com`
+- `ssh -T git@codeberg.org`
+- `git ls-remote ime-repozitorija` – preverjanje dostopa do oddaljenega *repozitorija*
+
+### Prilagajanje orodij
+
+(Glej tudi nastavitvene datoteke [na Codebergeu](https://codeberg.org/JanezPavelZebovec/My_Linux_configs), tu bom namreč pokril le nekatere bolj *tehnične* nastavitve, ne pa tudi slogovnih.)
+
+**Uporaba *patchev*** (predvsem za Sucklessova orodja, oz. orodja nameščena iz vira):
+
+- *patche* za določeno orodje shrani v **~/viri/orodje/patches/**
+- Premakni se v *mapo* orodja
+- `patch -p1 < patches/ime_patcha.diff` – datoteke orodja spremeni po navodilih iz datoteke *.diff*
+- Če se kaj ponesreči (javi napako, da ni bilo mogoče uporabiti določenih *patchov*), praviloma shrani spodletele poskuse v **datoteka.c.rej**. Nato je treba sprmembe opraviti ročno po navodilih v slednji datoteki.
+- `sudo make clean install` – treba je ponovno "izgraditi" orodje in ga spremenjenega namestiti
+
+Uporabni *patchi*:
+
+- **ST**: [**Gruvbox**](https://st.suckless.org/patches/gruvbox/) – lepa barvna *tema*
+- **SLock**: [**Message**](https://tools.suckless.org/slock/patches/message/) – sporočilo na zaklenjenem zaslonu
+
+#### VIM
+
+- `sudo apt install vim-gtk3` – to je VIM z razširjenimi zmogljivostmi, za nas je bistveno odložišče (*kopiranje*/lepljenje iz VIM-a v druge programe in obratno) in uporaba miške; s tem sicer dobimo tudi nepotrebni *grafični* urejevalnik GVIM, a je to vseeno najboljša možnost
+- `mkdir -p ~/.config/vim` – ustvari mapo za nastavitvene datoteke VIM-a
+- `touch ~/.config/vim/vimrc` – ustvari nastavitveno datoteko
+- `curl -fLo ~/.config/vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim` – namesti [vim-plug](https://github.com/junegunn/vim-plug) za vtičnike v VIM-u
+
+##### Gruvbox za VIM
+
+[Gruvbox](https://github.com/morhetz/gruvbox), barvna tema Pavla Pertseva [za VIM](https://www.vim.org/scripts/script.php?script_id=4349)
+
+Na začetek datoteke **~/.vimrc** dodaj:
+
+```sh
+call plug#begin('~/.config/vim/plugged')
+Plug 'morhetz/gruvbox'
+call plug#end()
+
+syntax on
+set background=dark
+colorscheme gruvbox
+```
+
+Nato v odprtem VIM-u izvedi:
+
+- `:source %` – da stopijo spremembe **vimrc** v veljavo
+- `:PlugInstall` – namesti vtičnike, navedene v **vimrc**
+
+#### DWM
+
+V **~/viri/dwm/config.h**:
+
+- spremeni `static const int resizehints = 1;` v `static const int resizehints = 0;`
+- spremeni `#define MODKEY Mod1Mask` v `#define MODKEY Mod4Mask`, da je glavna tipka bližnjic **Super**, ne **Alt**
+- spremeni `{ MODKEY, XK_p, spawn, {.v = dmenucmd } },` v `{ MODKEY, XK_a, spawn, {.v = dmenucmd } },`, da *menijsko* vrstico odpreš z bližnjico **Super+a** namesto **Super+p**, ki je nepriročna
+- opredeli novo barvo `static const char col_border[] = "#fca503";` in nato spremeni v `[SchemeSel] = { col_gray4, col_cyan, col_border },`, da je obroba *aktivnega* okna bolj vidno obrobljena (oranžna namesto privzete modre)
+
+#### LF
+
+- `mkdir -p ~/.config/lf/` – ustvari *mapo* za nastavitveno datoteko
+- `touch ~/.config/lf/lfrc` – ustvari nastavitveno datoteko za LF
 
 ---
 
-## Namestitev strežnika
+## Še za narediti
 
-Vsi koraki razen zadnjega so enaki.
+- [Gökçehan Kara (gokcehan): LF](https://github.com/gokcehan/lf) (GitHub) 
+    - [predogled slik](https://github.com/gokcehan/lf/wiki/Previews#full-preview-with-image-support) 
+- Mutt / Neomutt
+- Tor, firefox 
+- Thunderbird
+- FreeCAD
+- Blender
+- Libreoffice
+- QGIS
+
+---
+
+# Namestitev strežnika
+
+Vsi koraki razen "zadnjega" so enaki.
 V *Software Selection* (med zadnjimi koraki) naj bosta izbrana le *Standard System Utilities* in *SSH server*. Za strežnik namreč ne potrebuješ namitnega okolja.
 
 Po prvem zagonu novega *operacijskega sistema*:
@@ -347,5 +377,7 @@ Po prvem zagonu novega *operacijskega sistema*:
 - `crontab -e` – uredi crontab (program za sinhronizacijo)
     - na konec datoteke ddodaj `*/1 * * * * /bin/bash /user/cloudflare.sh`, shrani in zapri
 - `systemctl restart cron` – ponovno zažene cron
+
+Še nekaj uporabnih ukazov:
 
 - `nslookup moja-domena`

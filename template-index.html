@@ -4,11 +4,10 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>Snovoslovje</title>
+    <title>$title$</title>
     <meta name="author" content="Janez Pavel Žebovec">
-    <meta name="description" content="Od atomov in njegovih sestavin do
-spojin"/>
-    <meta name="keywords" content="snovoslovje, kemija, spojine"/>
+    <meta name="description" content="$description$"/>
+    <meta name="keywords" content="$keywords$"/>
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg"/>
@@ -17,7 +16,13 @@ spojin"/>
     <link rel="stylesheet" href="/styles.css"/>
     <script src="/scripts.js" defer></script>
 
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="ac7911af-065e-4a16-8a66-255ee9f70989"></script> 
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="ac7911af-065e-4a16-8a66-255ee9f70989"></script>
+    
+    <style>
+        footer {
+            margin-bottom: 0 !important;
+        }
+    </style>
 
 </head>
 <body>
@@ -30,44 +35,16 @@ spojin"/>
             </svg>
         </a>
 
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2025-07-11">2025-07-11</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="$date$">$date$</time></p>
     </header>
-    <nav>
-        <ul>
-        <li><a href="#Snovoslovje" id="toc-Snovoslovje">Snovoslovje</a>
-        <ul>
-        <li><a href="#Zunanje_povezave_in_viri"
-        id="toc-Zunanje_povezave_in_viri">Zunanje povezave in
-        viri</a></li>
-        </ul></li>
-        </ul>
-    </nav>
     <main>
         <div class="content">
-            <h1 id="Snovoslovje">Snovoslovje</h1>
-            <figure>
-            <img
-            src="/images/knjiznica/naravoslovje/periodni_sistem_elementov.svg"
-            alt="Periodni sistem elementov" />
-            <figcaption aria-hidden="true">Periodni sistem
-            elementov</figcaption>
-            </figure>
-            <h2 id="Zunanje_povezave_in_viri">Zunanje povezave in
-            viri</h2>
-            <ul>
-            <li><a
-            href="https://iupac.org/what-we-do/periodic-table-of-elements/">IUPAC:
-            Periodic table of elements</a></li>
-            <li><a href="https://www.periodictable.co.za/">The Periodic
-            Table: The Periodic Table of Elements</a></li>
-            <li><a href="https://www.rsc.org/periodic-table/">RSC:
-            Periodic table</a></li>
-            </ul>
+            $body$
         </div>
     </main>
     <footer>
         <button id="stikaloTeme">Preklopi barvni način strani</button>
-        <br><a id="linkMD" href="/md/knjiznica/snovoslovje.md">Stran v Markdownu</a>
+        <br><a id="linkMD" href="/md/$md_link$">Stran v Markdownu</a>
     </footer>
 </body>
 </html>

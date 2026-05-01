@@ -4,11 +4,7 @@
 *.log
 *.tmp
 *.swp
-
-template.html
-template-index.html
-template-mathjax.html
-*.lua
+*.swo
 
 moj_rodovnik/
 

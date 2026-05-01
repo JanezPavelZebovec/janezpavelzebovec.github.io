@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2026-04-12
+date: 2026-05-01
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 author: Janez Pavel Žebovec
@@ -140,63 +140,84 @@ Dobri predlogi na [*Fran - Predlagajte nove slovenske ustreznice*](https://fran.
 - **znamčenje** < ang. *branding*
 - **ženomor** < *femicid*
 
-Drugi predlogi:
+Drugi predlogi (slabše tvorjeni – pomeni, da imajo precej angleško tvorbo, sli so bolj dobesedni prevod, kot poimenovanje pojava – so označeni z zvezdico \*):
 
-- **navléčnik**, **návlec** < *pulover* <small>(< nem. *Pullover* < ang. *pull = *(po)vleči* + *over* = *čez/preko*)</small>
-- **privzgíb** < *pull up* <small>(< ang. *pull up* = *povleči (se) gor*)</small>
+- **gonilnik** (Benjamin Žebovec, 2026-05-01) < *motor* (kot tisto, kar poganja)
+- [**kadníca**][L1] (Boštjan Mejak, 2025-11-24] < *cigareta*
+- [**lik**][L1] (Boštjan Mejak, 2025-11-24) < *profil* (na npr. družbenih omrežjih)
+- [**mnogovoz**][L1] (Ferrari Stojanović, /2025-11-24) < *avtobus*
+- **navléčnik**, **návlec** (/2025-06-30) < *pulover* <small>(< nem. *Pullover* < ang. *pull = *(po)vleči* + *over* = *čez/preko*)</small>
+- [**nosiglas**][L1]\* (Ferrari Stojanović, /2025-11-24) < *mobitel*
+- [**podatkoslovje**][L1] (Boštjan Mejak, 2025-11-24) < *statistika*
+- [**podoba**][L1] (Boštjan Mejak, 2025-11-24) < *profil* (na npr. družbenih omrežjih)
+- **privzgíb** (/2025-06-30) < *pull up* <small>(< ang. *pull up* = *povleči (se) gor*)</small>
+- [**razpóčnica** < *žemlja*][L1]
 - **raznospôlništvo, raznospôlnik** < *LGBTQ..., kvir*
+- [**rékanje**][L1] (Ferrari Stojanović, /2025-11-24) < *rafting*
+- [**slikodájnik**][L1]\* (Boštjan Mejak, 2025-11-24) < *televizija*
+- [**slikôvnica**][L1] (Boštjan Mejak, 2025-11-24) < *album*
+- [**samodêjnik**][L1] (Boštjan Mejak, 2025-11-24) < *avtomat*
+- [**samovoz**][L1] (Ferrari Stojanović, /2025-11-24)  < *avtomobil*
+- **sámovóz** (Filip Žebovec, /2025-06-30) < *avtonomni avtomobil/avto*
+- [**snovoslôvje**][L1] (Boštjan mejak, 2025-11-24) < *kemija*
+- [**vedobežnik**][L2] < kdor se boji znanja, védenja, kdor beži pred resnico
+- **vrstno približevanje** (Iztok Žebovec?, /2026-04-13) < *konvergenca* (računsko)
+- [**vrženček**][L1] (2025 < *žeton za avtobus* 
+- [**zloženec**, **rezinec**][L1] (Ferrari Stojanović, /2025-11-24) < *sendvič*
+- [**zvokodájnik**][L1]\* (Boštjan Mejak, 2025-11-24) < *radio*
+- [**živosnovoslovje**][L1] (Boštjan Mejak, 2025-11-24) < *biokemija*
 
 ### Moji predlogi
 
-Tu je seznam mojih predlogov za nove slovenske ustreznice (nekatere so že obstoječe, z dodanim pomenom, druge so tvorjene nanovo):
+Tu je seznam mojih predlogov za nove slovenske ustreznice (nekatere so že obstoječe, z zgolj dodanim/prirejenim pomenom, druge so tvorjene nanovo):
 
-- **dlánčnik** < "pametni" *telefon* <small>(podobno je tudi nem. *Handy*)</small>
-- **dáljnoglás** < *telefon* <small>(< nem. *Telephon*; fran. *téléphone*; ang. *telephone* < gr. *tē̃le* = *daleč, v daljavi*; *phōnḗ* = *glas, zvok*)</small>
-- **gmôta** (**gmôtnost**) < *masa*
-- **gôn** < *energija* <small>(< nem. *Energie* < fran. *énergie* < poznolat. *energīa*; gr. *enérgeia* = delo, delovanje, moč)</small>
-- **naravoslôvje**, stvárnoslovje?, tvarnoslovje? < *fizika* <small>(< nem. *Physik* < lat. *physica* < gr. *physikḗ* = *naravoslovje, naraven, ki zadeva naravo* < gr. *phýsis* = *narava, stvarstvo, rast, rojstvo* < gr. glagol *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*)</small>
-- **preslikáva** < *funkcija*
-- **prostóroslôvje** < *geometrija*
-- **pótno usmérjanje** < *navigacija*
-- **rázspôlnik, razspôlništvo** < *LGBTQ ...* (kot motnja v spolnem razvoju, ko posameznik nima pravilno razvitih spolnih značilnostih zaradi prirojenih motenj ali **samorazspoljenja**, ki je pogosto družbeno pogojeno)
-- **prespǒljenje, prêspolnik** < *transseksualnost, transseksualec*
-- **rod otrok blaginje** < *babyboom generacija*
-- **vóz** (**sámogôn**) < *avtomobil/avto* <small>(< nem. *Auto/Automobil*; fran. *auto/automobile* < gr. *autós* = *sam*, lat. *mōbilis* = *premičen*)</small>
-- **sámovóz** < *avtonomni avtomobil/avto*
-- **síto** < *filter*
-- **snôvoslôvje** < *kemija*
-- **sprejémnik zvóka, zvókosprejémnik** < *mikrofon*
-- **tresávec** < *vibrant*
-- **vêlecésta** < *avtocesta*
-- **vesóljeslôvje** < *kozmologija*
-- **vrh** < *ekstrem* (*funkcije*)
-- **vrstno približevanje** < *konvergenca* (računsko)
-- **zemlják** < *krompir*
-- **zemljevidopis** < *kartografija*
+- **dlánčnik** (/2025-06-30) < "pametni" *telefon* <small>(podobno je tudi nem. *Handy*)</small>
+- **dáljnoglás** (/2025-06-30) < *telefon* <small>(< nem. *Telephon*; fran. *téléphone*; ang. *telephone* < gr. *tē̃le* = *daleč, v daljavi*; *phōnḗ* = *glas, zvok*)</small>
+- **gmôta** (/2025-06-30) (**gmôtnost**) < *masa*
+- **gôn** (/2025-06-30) < *energija* <small>(< nem. *Energie* < fran. *énergie* < poznolat. *energīa*; gr. *enérgeia* = delo, delovanje, moč)</small>
+- **gonilo** (2026-05-01) < *motor* (kot tisto, kar poganja)
+- **oslíka** (/2026-05-01)(oz. samo: **ponazorilna/pojasnilna slika**; celo uveljavljeno: **ponazorilo**); **osličen** (oz. samo: opremljen s slikami) < *ilustracija*; *ilustriran*
+- **naravoslôvje** (/2025-06-30), **stvárnoslovje**\* (/2025-06-30), tvárnoslovje(?) < *fizika* <small>(< nem. *Physik* < lat. *physica* < gr. *physikḗ* = *naravoslovje, naraven, ki zadeva naravo* < gr. *phýsis* = *narava, stvarstvo, rast, rojstvo* < gr. glagol *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*)</small>
+- **preslikáva** (2026-04-13) < *funkcija*
+- **prostóroslôvje** (/2025-06-30) < *geometrija*
+- **pótno usmérjanje** (/2026-03-13) < *navigacija*
+- **rázspôlnik** (/2025-06-30), **razspôlništvo** (/2025-06-30) < *LGBTQ ...* (kot motnja v spolnem razvoju, ko posameznik nima pravilno razvitih spolnih značilnostih zaradi prirojenih motenj ali **samorazspoljenja**, ki je pogosto družbeno pogojeno, kot zavestna odločitev, da živiš v nasprotju z značilnostmi svojega pravega spola, oz. da trdiš, da nisi spola, kakršnega si v resnici)
+- **prespǒljenje, prêspolnik** (/2026-05-01) < *transseksualnost, transseksualec*
+- **rod otrok blaginje** (/2025-08-05) < *babyboom generacija*
+- **vóz** (/2025-06-30), **sámogôn**\* (/2025-06-30) < *avtomobil/avto* <small>(< nem. *Auto/Automobil*; fran. *auto/automobile* < gr. *autós* = *sam*, lat. *mōbilis* = *premičen*)</small>
+- **síto** (/2026-02-18) < *filter*
+- **snôvoslôvje** (/2025-06-30) < *kemija*
+- **sprejémnik zvóka** (/2025-06-30), **zvókosprejémnik** (/2025-06-30) < *mikrofon*
+- **tresávec** (/2025-06-30) < *vibrant*
+- **vêlecésta** (/2025-06-30) < *avtocesta*
+- **vesóljeslôvje** (/2025-06-30) < *kozmologija*
+- **vrh** (/2026-03-13) < *ekstrem* (*funkcije*)
+- **zemlják** (/2025-06-30) < *krompir*
+- **zemljevidopis** (/2025-08-05) < *kartografija*
 
 #### Besede v nastajanju
 
 Te skovanke so (še) precej okorne in potrebne dodatnega premisleka ali druge zamisli, ali pa sploh še nimajo ustreznice, a se dosti uporabljane in torej potrebne ustreznice:
 
-- uštevilčiti, vračunalčiti? < *digitalizirati*
-- **(napihljivi) mehur** < *balon*
-- svetlo(bo)stav(ba)? < *fotosinteza*
-- **številčno, (računalniško)** < *digitalno*, *digitalizirati*
-- **mnógovôz** < *avtobus*
-- kopališko obrežje? (s peskom?) < *plaža*
-- **slikonôs** < *televizija* <small>(< ang. *television*; fran. *télévision* < *tē̃le* = *daleč, v daljavi* + lat. *vīsiō* = *pogled, gledanje*)</small>
+- **mnógovôz** (/2025-06-30) < *avtobus*
+- **(napihljivi) mehur** (/2025-12-19) < *balon*
+- *bazen*
+- uštevilčiti (/2026-03-13) , vračunalčiti? (/2026-03-13) < *digitalizirati*
+- **številčno** (/2025-08-05), **računalniško** (/2025-08-05) < *digitalno*, *digitalizirati*
+- *film*
+- svetlo(bo)stav(ba)? (/2025-08-05) < *fotosinteza*
+- – (zgradba za voz) < *garaža*
+- *kino*
+- omika, družba, narod (?) < *kultura* 
 - *park*
 - *piknik*
-- omika, družba, narod (?) < *kultura* 
-- (vadba, zabava, urjenje) < *šport*
-- *savna*
 - (računalniški) *program*
-- *film*
-- *kino*
-- (ladja za prevoz vozil) < *trajekt*
 - *policija*
-- *bazen*
-- – (zgradba za voz) < *garaža*
+- kopališko obrežje? (s peskom?) (/2026-03-13) < *plaža*
+- *savna*
+- (vadba, zabava, urjenje) (/2026-01-03) < *šport*
+- **slikonôs** (/2025-06-30) < *televizija* <small>(< ang. *television*; fran. *télévision* < *tē̃le* = *daleč, v daljavi* + lat. *vīsiō* = *pogled, gledanje*)</small>
+- (ladja za prevoz vozil) < *trajekt*
 
 ------------------------------------------------------------------------------------------------
 
@@ -211,3 +232,9 @@ Predlogi so dobrodošli na [osebno@janezpavelzebovec.net](mailto:osebno@janezpav
 - [Delo - Majda M. Lesjak: Koliko je danes v resnici še vredna slovenščina?](https://www.delo.si/mnenja/gostujoce-pero/koliko-je-danes-v-resnici-se-vredna-slovenscina/) ([arhivirano](https://web.archive.org/web/20240112203130/https%3A%2F%2Fwww.delo.si%2Fmnenja%2Fgostujoce-pero%2Fkoliko-je-danes-v-resnici-se-vredna-slovenscina%2F))
 - [RTV SLO - Jezikovni spletovalec: Top jezikovna lista nadrealista](https://www.rtvslo.si/kultura/jezikovni-spletovalec/jezikovni-spletovalec-top-jezikovna-lista-nadrealista/442574)
 - [Razpotja - Tomaž Gerden: Slovenščina v novih časih (2014)](https://razpotja.si/razpotja_article/slovenscina-v-novih-casih/) ([arhivirano](https://web.archive.org/web/20250619132945/https://razpotja.si/razpotja_article/slovenscina-v-novih-casih/))
+- [Leemeta – Ni be3sede? Ustvari novo!](https://www.leemeta.si/blog/slovnica/ni-besede-ustvari-novo)
+
+### Sklici
+
+- [L1]: <https://www.leemeta.si/blog/jezikovne-dileme/neologizmi-hrustopek-nosiglas-in-mnogovoz-veste-o-cem-govorimo> (Leemeta – Neologizmi hrustopek, nosiglas in mnogovoz – veste o čem govorimo?; 2025-11-24)
+- [L2]: <https://www.leemeta.si/blog/jezikovne-dileme/nove-besede-ali-novotvorjenke-lahko-tudi-vi-izumite-novo-besedo> (Leemeta – Nove besede ali novotvorjenke – lahko tudi vi izumite novo besedo?)
