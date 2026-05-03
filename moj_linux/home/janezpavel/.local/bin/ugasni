@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Skripta za ugašanje računalnika prek bližnjice
+izbor=(
+    'Nič'
+    'Ugasni se'
+    'Trdno zaspi'
+    'Samo zadremaj'
+    'Še enkrat se prižgi'
+    )
+poziv='Kaj naj naredim?'
+odziv=`printf "%s\n" "${izbor[@]}" | dmenu -sb "#ccaa22" -sf "#222222" -i -p "$poziv"`
+case "$odziv" in
+    'Ugasni se')         systemctl poweroff;;
+    'Trdno zaspi')    systemctl hybrid-sleep;;
+    'Samo zadremaj')  systemctl suspend;;
+    'Še enkrat se prižgi') systemctl reboot;;
+esac

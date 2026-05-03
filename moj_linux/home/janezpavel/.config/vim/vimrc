@@ -1,0 +1,108 @@
+" ~/.config/vim/vimrc
+
+call plug#begin('~/.config/vim/plugged')
+Plug 'morhetz/gruvbox' " doda/prenese vtičnik gruvbox iz oddaljenega repozitorija
+call plug#end()
+
+syntax on
+set background=dark
+colorscheme gruvbox
+
+set mouse=a " vklop uporabe miške v vseh (a = all) načinih
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set nowrap
+set autoindent
+
+set number relativenumber " vrstice so številčene v odvisnosti od trenutne
+
+set foldmethod=indent " zlaga se glede na zamike
+set foldnestmax=2 " omejitev globine gnezdenja zlaganj
+set nofoldenable
+set foldignore= " prezre opombe kode
+
+map <Tab> :bn<CR>
+map <S-Tab> :bp<CR>
+set hidden
+set splitbelow splitright " novo datoteko v razdeljenem oknu odpre pod trenutno oz. desno
+
+" IZVRŠEVANJE DATOTEK
+" Izvršljive datoteke tako lahko izvršiš s tipko F8; datoteko pred tem tudi
+" shrani. V primeru markdowna in texa datoteko pretvori v PDF
+autocmd FileType python map <buffer> <F8> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+autocmd FileType sh map <buffer> <F8> :w<CR>:exec '!bash' shellescape(@%, 1)<CR>
+autocmd FileType markdown map <buffer> <F8> :w<CR>:exec '!pandoc -f markdown -t pdf -V papersize:a4 -o' shellescape(expand('%:r'), 1) .. '.pdf' shellescape(@%, 1)<CR>
+"autocmd FileType tex map <buffer> <F8> :w<CR>:exec '!pdflatex -shell-escape' shellescape(@%, 1)<CR>
+"autocmd FileType tex map <buffer> <F7> :w<CR>:!bibtex %:r<CR>
+"autocmd FileType tex map <buffer> <F8> :w<CR>:!biber %:r<CR>
+
+" ============ KOMENTIRANJE =======================================
+
+" autocmd FileType python,sh map <S-c> :s/^\(\s*\)\([^ #]\)/\1# \2<esc>
+" autocmd FileType python,sh map <S-s> :s/^\(\s*\)# \?\([^#]\)/\1\2<esc>
+
+" autocmd FileType tex,sty map <S-c> :s/^\([^%]\)/% \1<esc>
+" autocmd FileType tex,sty map <S-s> :s/^% \?/<esc>
+
+" autocmd FileType sql map <S-c> :s/^\([^-]\{2\}\)/-- \1<esc>
+" autocmd FileType sql map <S-s> :s/^-- \?/<esc>
+
+" autocmd FileType javascript map <S-c> :s/^\(\s*\)\(\/\/\)\@!/\1\/\/ \2<esc>
+" autocmd FileType javascript map <S-s> :s/^\(\s*\)\/\/ \?\(\/\/\)\@!/\1<esc>
+
+" autocmd FileType vim map <S-c> :s/^\(\s*\)\("\)\@!/\1" \2<esc>
+" autocmd FileType vim map <S-s> :s/^\(\s*\)" \?\([^"]\)/\1\2<esc>
+
+" autocmd FileType cpp,c nmap <S-c> :s~^\(/\=[^/]\)~// \1<esc>
+" autocmd FileType cpp,c map <S-s> :s~^// ~<esc>
+autocmd FileType cpp,c vmap <expr> <S-c> mode() ==# "v" ? "xi/*  */<esc>hhPlll" : ":s~^\\(/\\=[^/]\\)~// \\1<esc>"
+
+autocmd FileType c,cpp,java,scala let b:comment_leader = '//'
+autocmd FileType javascript       let b:comment_leader = '//'
+autocmd FileType sh,ruby,python   let b:comment_leader = '#'
+autocmd FileType tex,sty          let b:comment_leader = '%'
+autocmd FileType mail             let b:comment_leader = '>'
+autocmd FileType vim              let b:comment_leader = '"'
+autocmd FileType sql              let b:comment_leader = '--'
+
+" Izraz "<c-r>=b:comment_leader<cr>" uporabljen v nadaljevanju, se spremeni v vsebino spremenljivke b:comment_leader
+
+" zakomentiraj izbrane vrstice:
+map <S-c> :s@^\(\s*\)\s\@!\(<c-r>=b:comment_leader<cr>\)\@!@\1<c-r>=b:comment_leader<cr> \2<esc>
+" odkomentiraj izbrane vrstice:
+map <S-s> :s@^\(\s*\)<c-r>=b:comment_leader<cr> \?\([^<c-r>=b:comment_leader<cr>]\)@\1\2<esc>
+
+" Primer s spleta:
+" vnoremap <S-c> :s/^/\=b:comment_leader/g<CR>gv=
+" vnoremap <S-s> :s@\V<c-r>=escape(b:comment_leader,'\@')<cr>@@<cr>gv=
+autocmd FileType xml,html map <S-c> vat:s/^\(.*\)$/<!-- \1 -->/<cr>
+autocmd FileType xml,html map <S-s> vatV:s/<!-- \(.*\) -->/\1/<cr>
+
+" ============ OSTALO =======================================
+
+map <Tab> :bn<CR>
+map <S-Tab> :bp<CR>
+set hidden
+
+" autocmd FileType python map <S-f> :s/^if \(False\\|True\)/if <c-r>={'False':'True', 'True':'False'}[submatch(0)]<CR>/<CR>
+" autocmd FileType python map <S-f> :execute "s/^if \(False\|True\)/if \={'False':'True', 'True':'False'}[submatch(0)]"/<CR>
+autocmd FileType python map <S-f> :s/^if False/if Faalse/e \| s/^if True/if Trrue/e \| s/^if Faalse/if True/e \| s/^if Trrue/if False/e<esc><CR>
+
+" omogoči branje .vimrc datoteke iz trenutne mape
+" set exrc
+" set secure
+let g:tex_no_error=1
+autocmd FileType tex imap <C-s>eq \begin{equation}<cr>\end{equation}<esc>ko    \label{}<esc>ko 
+autocmd FileType tex imap <C-s>e* \begin{equation*}<cr>\end{equation*}<esc>ko    
+autocmd BufEnter,BufNew *.odp.tex vmap <C-a> "xc\a{<c-r>x}<esc>
+autocmd BufEnter,BufNew *.odp.tex nmap <C-a> v"xc\a{<c-r>x}<esc>
+autocmd BufEnter,BufNew *.odp.tex imap <C-a> \a{}<esc>i
+"autocmd FileType tex nnoremap <buffer> <F8> :w<CR>:!pdflatex -shell-escape % && pdflatex -shell-escape %<CR>
+
+autocmd FileType tex noremap <F8> :w<CR>:!pdflatex -shell-escape "%" &<CR>
+
+autocmd BufEnter,BufNew *.vrt set filetype=xml
+
+map <S-Y> V"+y

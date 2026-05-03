@@ -1,0 +1,160 @@
+# Basic vars
+set shellopts '-eu'
+set ifs "\n"
+set scrolloff 10
+#set icons  #uporabi ikone za označevanje vrst datotek
+set period 1
+set hiddenfiles ".*:*.aux:*.log:*.bbl:*.bcf:*.blg:*.run.xml"
+set autoquit true
+
+# cmds/functions
+cmd open ${{
+    case "$f" in
+        *.jpg|*.jpeg|*.png|*.gif|*.bmp|*.tiff|*.jfif|*.webp) nsxiv "$f" &;;
+        *.xcf) gimp "$f" &;;
+        *.pdf) zathura "$f" &;;
+        *.mp4|*.mkv|*.webm|*.mp3|*.flac|*.wav|*.ogg) mpv "$f" &;;
+        *.md|*.html|*.css|*.js|*.py|*.sh|*.txt |*.tex) vim "$f";;
+        *.svg) inkscape "$f" &;;
+        *.odt|*.doc|*.docx|*.ods|*.xls|*.xlsx|*.ppt|*.pptx) libreoffice "$f" &;;
+        *.mscz|*.mscx) musescore "$f" &;;
+        *.blend) blender "$f" &;;
+        *.birdfont) birdfont "$f" &;;
+        *.sfd|*.ttf|*.woff|*.woff2) fontforge "$f" &;;
+        *) xdg-open "$f" &;;
+    esac
+}}
+
+cmd mkdir $mkdir -p "$@"
+
+cmd extract ${{
+	clear; tput cup $(($(tput lines)/3)); tput bold
+	set -f
+	printf "%s\n\t" "$fx"
+	printf "extract?[y/N]"
+	read ans
+	[ $ans = "y" ] && {
+		case $fx in
+			*.tar.bz2)   tar xjf $fx     ;;
+			*.tar.gz)    tar xzf $fx     ;;
+			*.bz2)       bunzip2 $fx     ;;
+			*.rar)       unrar e $fx     ;;
+			*.gz)        gunzip $fx      ;;
+			*.tar)       tar xf $fx      ;;
+			*.tbz2)      tar xjf $fx     ;;
+			*.tgz)       tar xzf $fx     ;;
+			*.zip)       unzip $fx       ;;
+			*.Z)         uncompress $fx  ;;
+			*.7z)        7z x $fx        ;;
+			*.tar.xz)    tar xf $fx      ;;
+		esac
+	}
+}}
+
+cmd delete ${{
+	clear; tput cup $(($(tput lines)/3)); tput bold
+	set -f
+	printf "%s\n\t" "$fx"
+	printf "delete?[y/N]"
+	read ans
+	[ $ans = "y" ] && rm -rf -- $fx
+}}
+
+cmd moveto ${{
+	set -f
+	dest=$(sed -e 's/\s*#.*//' -e '/^$/d' -e 's/^\S*\s*//' "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-dirs" | fzf --prompt 'Move to where? ' | sed 's|~|$HOME|')
+	[ -z "$dest" ] && exit
+	destpath=$(eval printf '%s' \"$dest\")
+	clear; tput cup $(($(tput lines)/3)); tput bold
+	echo "From:"
+	echo "$fx" | sed 's/^/   /'
+	printf "To:\n   %s\n\n\tmove?[y/N]" "$destpath"
+	read -r ans
+	[ "$ans" != "y" ] && exit
+	for x in $fx; do
+		mv -iv "$x" "$destpath"
+	done &&
+	notify-send "File(s) moved." "File(s) moved to $destpath."
+}}
+
+cmd copyto ${{
+	set -f
+	dest=$(sed -e 's/\s*#.*//' -e '/^$/d' -e 's/^\S*\s*//' "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-dirs" | fzf --prompt 'Copy to where? ' | sed 's|~|$HOME|')
+	[ -z "$dest" ] && exit
+	destpath=$(eval printf '%s' \"$dest\")
+	clear; tput cup $(($(tput lines)/3)); tput bold
+	echo "From:"
+	echo "$fx" | sed 's/^/   /'
+	printf "To:\n   %s\n\n\tcopy?[y/N]" "$destpath"
+	read -r ans
+	[ "$ans" != "y" ] && exit
+	for x in $fx; do
+		cp -ivr "$x" "$destpath"
+	done &&
+	notify-send "File(s) copied." "File(s) copied to $destpath."
+}}
+
+cmd setbg "$1"
+
+cmd bulkrename ${{
+    tmpfile_old="$(mktemp)"
+    tmpfile_new="$(mktemp)"
+
+    [ -n "$fs" ] && fs=$(basename -a $fs) || fs=$(ls)
+
+    echo "$fs" > "$tmpfile_old"
+    echo "$fs" > "$tmpfile_new"
+    $EDITOR "$tmpfile_new"
+
+    [ "$(wc -l < "$tmpfile_old")" -eq "$(wc -l < "$tmpfile_new")" ] || { rm -f "$tmpfile_old" "$tmpfile_new"; exit 1; }
+
+    paste "$tmpfile_old" "$tmpfile_new" | while IFS="$(printf '\t')" read -r src dst
+    do
+        [ "$src" = "$dst" ] || [ -e "$dst" ] || mv -- "$src" "$dst"
+    done
+
+    rm -f "$tmpfile_old" "$tmpfile_new"
+    lf -remote "send $id unselect"
+}}
+
+# Bindings
+map <c-f> $lf -remote "send $id select \"$(fzf)\""
+map J $lf -remote "send $id cd $(sed -e 's/\s*#.*//' -e '/^$/d' -e 's/^\S*\s*//' ${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-dirs | fzf)"
+map H cd ~
+map g top
+map D delete
+map E extract
+map C copyto
+map M moveto
+map <c-n> push :mkdir<space>""<left>
+map <c-r> reload
+map <c-s> set hidden!
+map <enter> shell
+map x $$f
+map X !$f
+map o &mimeopen "$f"
+map O $mimeopen --ask "$f"
+
+map A :rename; cmd-end # at the very end
+map c push A<c-u> # new rename
+map I :rename; cmd-home # at the very beginning
+map i :rename # before extension
+map a :rename; cmd-right # after extension
+map B bulkrename
+map b $setbg $f
+
+map <c-e> down
+map <c-y> up
+map V push :!nvim<space>
+
+map W $setsid -f $TERMINAL >/dev/null 2>&1
+
+map U $printf "%s" "$fx" | xclip -selection clipboard
+map u $printf "%s" "$fx" | sed 's/.*\///' | xclip -selection clipboard
+map . $printf "%s" "$fx" | sed -E 's/^.+\[/https:\/\/www.youtube.com\/watch?v=/' | sed -E 's/\]\..+//' | xclip -selection clipboard
+map <gt> $printf "%s" "$fx" | sed -E 's/^.+\[/https:\/\/piped.video\/watch?v=/' | sed -E 's/\]\..+//' | xclip -selection clipboard
+map T $nsxiv -t "$(pwd)" # opens thumbnail mode
+map <c-l> unselect
+
+# Source Bookmarks
+#source "~/.config/lf/shortcutrc"

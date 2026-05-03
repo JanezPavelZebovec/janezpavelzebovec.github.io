@@ -1,0 +1,12 @@
+[Unit]
+Description=Log shutdown time
+DefaultDependencies=no
+Before=shutdown.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/janezpavel/.local/bin/raba halt
+
+[Install]
+WantedBy=halt.target
+

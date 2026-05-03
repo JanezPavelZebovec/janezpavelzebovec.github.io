@@ -1,0 +1,19 @@
+# rof.mplstyle
+
+font.family: serif  # use serif/main font for text elements
+font.size: 15
+text.usetex: True
+pgf.texsystem: pdflatex # sicer želi uporabiti xelatex in ne dela
+pgf.rcfonts: False    # don't setup fonts from rc parameters
+
+axes.labelsize: 15
+axes.titlesize: 15
+xtick.labelsize: 13
+ytick.labelsize: 13
+legend.fontsize: 13
+
+lines.linewidth: 1.5
+lines.markersize: 6
+
+figure.dpi: 500
+savefig.bbox: tight

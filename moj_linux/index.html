@@ -31,7 +31,7 @@ sistema"/>
             </svg>
         </a>
 
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-05-01">2026-05-01</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-05-03">2026-05-03</time></p>
     </header>
     <nav>
         <ul>
@@ -68,6 +68,8 @@ sistema"/>
         bližnjice</a></li>
         <li><a href="#Posnetki_zaslona"
         id="toc-Posnetki_zaslona">Posnetki zaslona</a></li>
+        <li><a href="#Ploscica_na_dotik"
+        id="toc-Ploscica_na_dotik">Ploščica na dotik</a></li>
         <li><a href="#Orodja_za_vsakdanjo_rabo"
         id="toc-Orodja_za_vsakdanjo_rabo">Orodja za vsakdanjo
         rabo</a></li>
@@ -274,8 +276,8 @@ sistema"/>
             določenih <em>sistemskih</em> podatkov za npr.
             <em>statusno</em> vrstico</li>
             </ul></li>
-            <li><code>sudo apt install libxrandr-dev</code> – odvisnost
-            za Slock</li>
+            <li><code>sudo apt install libxrandr-dev</code> – dodatna
+            odvisnost za Slock</li>
             <li><code>cd ~/viri/ime_programa/</code> – pojdi v mapo
             prenešenega orodja</li>
             <li>prilagodi nastavitveno datoteko
@@ -287,7 +289,8 @@ sistema"/>
             <h3 id="Zagon_sistema">Zagon <em>sistema</em></h3>
             <ul>
             <li><code>echo "exec dwm" &gt; ~/.xinitrc</code> – v
-            nastavitveno datoteko <strong>~/.xinitrc/</strong>
+            nastavitveno datoteko <a
+            href="/moj_linux/home/janezpavel/.xinitrc"><strong>~/.xinitrc/</strong></a>
             zagonskega <em>programa</em> doda vrstico, ki zažene DWM ob
             zagonu strežnika X</li>
             <li><code>startx</code> – zažene strežnik X (torej tudi DWM,
@@ -390,14 +393,15 @@ sistema"/>
             <li><code>sudo apt install sxhkd</code> – namesti program za
             dodajanje lastnih <em>sistemskih</em> bližnjic</li>
             <li><code>sxhkd &amp;</code> – zažene SXHKD; najlepše je to
-            dodati v <strong>~/.xinitrc</strong> (nekam pred
-            <code>exec dwn</code>, da se zažene že samodejno ob zagonu
-            sistema)</li>
+            dodati v <a
+            href="/moj_linux/home/janezpavel/.xinitrc"><strong>~/.xinitrc/</strong></a>
+            (nekam pred <code>exec dwn</code>, da se zažene že samodejno
+            ob zagonu sistema)</li>
             <li><code>mkdir -p ~/.config/sxhkd/</code> – ustvari
             <em>mapo</em> za nastavitvene datoteke SXHKD</li>
             <li><code>touch ~/.config/sxhkd/sxhkdrc</code> – ustvari
             datoteko <a
-            href="https://codeberg.org/JanezPavelZebovec/My_Linux_configs/src/branch/main/~/.config/sxhkd/sxhkdrc"><strong>sxhkdrc</strong></a>
+            href="/moj_linux/home/janezpavel/.config/sxhkd/sxhkdrc"><strong>sxhkdrc</strong></a>
             za določanje lastnih bližnjic</li>
             <li><code>pkill -usr1 -x sxhkd</code> – s tem po urejanju
             nastavitvene datoteke ponovno zaženeš SXHKD (ne da bi znova
@@ -408,6 +412,17 @@ sistema"/>
             <ul>
             <li><code>sudo apt install imagemagick xclip</code>–
             programa potrebna za slikanje zaslona</li>
+            </ul>
+            <h3 id="Ploscica_na_dotik">Ploščica na dotik</h3>
+            <ul>
+            <li><code>sudo apt install xinput</code></li>
+            <li><code>xinput --set-prop 'MSFT0001:00 06CB:CE2D Touchpad' 'libinput Tapping Enabled' 1</code>
+            – omogoči klikanje z dotikom (<em>tapom</em>)</li>
+            <li><code>xinput --set-prop 'MSFT0001:00 06CB:CE2D Touchpad' 'libinput Natural Scrolling Enabled' 1</code>
+            – drsenje v pravo smer s ploščico (drs gor premakne stran
+            dol)</li>
+            <li>zgornja ukaza je smiselno dodati v ~/.xinitrc, da se to
+            nastavi samodejno ob vsakem zagonu</li>
             </ul>
             <h3 id="Orodja_za_vsakdanjo_rabo">Orodja za vsakdanjo
             rabo</h3>
@@ -473,6 +488,13 @@ sistema"/>
             <li><code>pandoc</code> – <a
             href="https://pandoc.org/">Pandoc</a>, pretvornik
             <em>dokumentov</em></li>
+            <li><code>abook</code> – <a
+            href="https://abook.sourceforge.io/">ABook</a>,
+            imenik/urejevalnik stikov</li>
+            <li><code>calcurse</code> – <a
+            href="https://calcurse.org/">CalCurse</a> (<a
+            href="https://github.com/lfos/calcurse">na GitHubu</a>),
+            <em>koledar</em></li>
             <li><code>lftp</code> – <a
             href="https://lftp.yar.ru/">LFTP</a>, prenos datotek med
             napravami z različnimi <em>protokoli</em> (FTP, FTPS, SFTP,
@@ -589,12 +611,16 @@ sistema"/>
             <li><code>texlive-lang-european</code> – evropski jezikovni
             paket</li>
             <li><code>texlive-science</code> – znanstveni paket</li>
+            <li><code>cm-super</code> – nek paket pisav, med drugim
+            lahko potem uporabljaš LaTex v grafih Matplotlib</li>
             </ul></li>
             </ul>
             <h3 id="Uporaba_lastnih_skript">Uporaba lastnih
             <em>skript</em></h3>
             <ul>
-            <li>Na konec <strong>~/.profile</strong> dodaj to vrstico:
+            <li>Na konec <a
+            href="/moj_linux/home/janezpavel/.config"><strong>~/.profile</strong></a>
+            dodaj to vrstico:
             <code>export PATH="$HOME/.local/bin:$PATH"</code></li>
             <li>Vse mape, ki so v PATH lahko preveriš z
             <code>echo $PATH</code></li>
@@ -602,15 +628,104 @@ sistema"/>
             jih naredi izvršljive:
             <code>chmod +x ime-skripte</code></li>
             </ul>
+            <h4 id="Belezenje_uporabe_racunalnika">Beleženje uporabe
+            računalnika</h4>
+            <ul>
+            <li>Dodaj datoteko <a
+            href="/moj_linux/home/janezpavel/.local/bin/raba">~/.local/bin/raba</a>.</li>
+            <li>Naredi datoteko izvršljivo:
+            <code>sudo chmod +x ~/.local/bin/raba</code>.</li>
+            </ul>
+            <p>Ta <em>programček</em> sprejme <em>argument</em> in v
+            ~/uporaba.csv doda vrstico s časom v UTC in imenom dogodka
+            (ki ga dobi iz podanega <em>argumenta</em>). Sprejme lahko
+            še drugi <em>argument</em>, ki je kot opomba (če ta opomba
+            vsebuje vejice, naj bo obdana z narekovaji).</p>
+            <p>Primer: ukaz <code>raba startup</code> zapiše dogodek v
+            obliki <code>2026-05-03T12:38:00Z,startup,</code></p>
+            <h4 id="Zagon_in_zaustavitev_sistema">Zagon in zaustavitev
+            <em>sistema</em></h4>
+            <p>V /etc/systemd/system/ dodaj:</p>
+            <ul>
+            <li><a
+            href="/moj_linux/etc/systemd/system/log-halt.service">log-halt.service</a></li>
+            <li><a
+            href="/moj_linux/etc/systemd/system/log-poweroff.service">log-poweroff.service</a></li>
+            <li><a
+            href="/moj_linux/etc/systemd/system/log-reboot.service">log-reboot.service</a></li>
+            <li><a
+            href="/moj_linux/etc/systemd/system/log-startup.service">log.startup.service</a></li>
+            </ul>
+            <p>V vsaki teh datotek je bistvena vrstica</p>
+            <pre><code>ExecStart=/home/uporabnik/.local/bin/raba argument</code></pre>
+            <p>(kjer je <em>argument</em> ustrezen <em>halt, poweroff,
+            reboot</em> ali <em>startup</em>), ki požene
+            <strong>raba</strong> z ustreznim <em>argumentom</em></p>
+            <h5 id="Zaklepanje_in_odklepanja">Zaklepanje in
+            odklepanja</h5>
+            <p>Za zaklenjen zaslon uporabljamo SLock.</p>
+            <p>V <a
+            href="/moj_linux/home/janezpavel/viri/slock/slock.c">~/viri/slock/slock.c</a>
+            takoj za</p>
+            <pre><code>/* did we manage to lock everything? */
+if (nlocks != nscreens)
+    return 1;</code></pre>
+            <p>dodaj</p>
+            <pre><code>if (fork() == 0) {
+    execl(&quot;/home/uporabnik/.local/bin/raba&quot;,
+          &quot;raba&quot;,
+          &quot;lock&quot;,
+          (char*)NULL);
+}</code></pre>
+            <p>Tako ob po zaklepanju zaslona poženem <em>program</em>
+            <strong>raba</strong> z <em>argumentom</em> “lock”. Za
+            beleženje odklepanja takoj za</p>
+            <pre><code>/* everything is now blank. Wait for the correct password */
+readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
+            <p>dodaj</p>
+            <pre><code>if (fork() == 0) {
+    execl(&quot;/home/uporabnik/.local/bin/raba&quot;,
+          &quot;raba&quot;,
+          &quot;unlock&quot;,
+          (char*)NULL);
+}</code></pre>
+            <p>Tako po pravilno vnešenem geslu in torej odklepu požene
+            <strong>rabo</strong> z <em>argumentom</em> “unlock”.</p>
+            <h5 id="Prikazovanje_trenutne_rabe">Prikazovanje trenutne
+            rabe</h5>
+            <p>Dodaj <a
+            href="/moj_linux/home/janezpavel/viri/slstatus/components/raba.c">~/viri/slstatus/components/raba.c</a>.</p>
             <h3 id="Posiljanje_GIT">Pošiljanje GIT</h3>
             <p><code>git config --global user.name "MojeUporabniskoIme"</code>
-            <code>git config --global user.email "moj.naslov@domena.si"</code></p>
+            – nastavi <em>globalno</em> uporabniško ime za GIT
+            <code>git config --global user.email "moj.naslov@domena.si"</code>
+            – nastavi <em>elektronski</em> <em>globalni</em> naslov za
+            GIT</p>
+            <p>Če imaš oddaljene <em>repozitorije</em> z različnimi
+            uporabniškimi imeni in/ali <em>elektronskimi</em> naslovi,
+            ne uporabi oznake <code>--global</code>, ampak ime/naslov
+            nastavi v mapi izbranega <em>lokalnega
+            repozitorija</em>.</p>
+            <p><code>git remote add github git@github.com:USER/REPO.git</code>
+            /
+            <code>git remote add codeberg git@codeberg.org:USER/REPO.git</code>
+            – doda vzdevek oddaljenega <em>repozitorija</em> na
+            GitHub/Codeberg, ker je “USER” uporabniško ime in “REPO” ime
+            <em>repozitorija</em>
+            <code>git remote rename origin github</code> – spremeni
+            vzdevek oddaljenega <em>repozitorija</em> -
+            <code>git status</code> – če ta ukaz izvedeš v
+            <em>repozitoiju projekta</em>, izpiše trenutno stanje gita
+            za ta <em>projekt</em></p>
             <p>Preverjanje:</p>
             <ul>
-            <li><code>git config --global user.name</code></li>
-            <li><code>git config --global user.email</code></li>
-            <li><code>ssh -T git@github.com</code></li>
-            <li><code>ssh -T git@codeberg.org</code></li>
+            <li><code>git config --global user.name</code> – preveri
+            nastavljeno uporabniško ime za git</li>
+            <li><code>git config --global user.email</code> – preveri
+            nastavljen <em>elektronski</em> naslov</li>
+            <li><code>ssh -T git@github.com</code> /
+            <code>ssh -T git@codeberg.org</code> – preveri dostop SSH do
+            GitHuba/Codeberga</li>
             <li><code>git ls-remote ime-repozitorija</code> –
             preverjanje dostopa do oddaljenega
             <em>repozitorija</em></li>
@@ -657,7 +772,8 @@ sistema"/>
             <li><code>mkdir -p ~/.config/vim</code> – ustvari mapo za
             nastavitvene datoteke VIM-a</li>
             <li><code>touch ~/.config/vim/vimrc</code> – ustvari
-            nastavitveno datoteko</li>
+            nastavitveno datoteko <a
+            href="/moj_linux/home/janezpavel/.config/vim/vimrc"><strong>vimrc</strong></a></li>
             <li><code>curl -fLo ~/.config/vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</code>
             – namesti <a
             href="https://github.com/junegunn/vim-plug">vim-plug</a> za
@@ -668,15 +784,17 @@ sistema"/>
             barvna tema Pavla Pertseva <a
             href="https://www.vim.org/scripts/script.php?script_id=4349">za
             VIM</a></p>
-            <p>Na začetek datoteke <strong>~/.vimrc</strong> dodaj:</p>
-            <div class="sourceCode" id="cb1"><pre
-            class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">call</span> plug#begin<span class="er">(</span><span class="st">&#39;~/.config/vim/plugged&#39;</span><span class="kw">)</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Plug</span> <span class="st">&#39;morhetz/gruvbox&#39;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">call</span> plug#end<span class="er">(</span><span class="kw">)</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">syntax</span> on</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> background=dark</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">colorscheme</span> gruvbox</span></code></pre></div>
+            <p>Na začetek datoteke <a
+            href="/moj_linux/home/janezpavel/.config/vim/vimrc"><strong>~/.vimrc</strong></a>
+            dodaj:</p>
+            <div class="sourceCode" id="cb6"><pre
+            class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">call</span> plug#begin<span class="er">(</span><span class="st">&#39;~/.config/vim/plugged&#39;</span><span class="kw">)</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Plug</span> <span class="st">&#39;morhetz/gruvbox&#39;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ex">call</span> plug#end<span class="er">(</span><span class="kw">)</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="ex">syntax</span> on</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> background=dark</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="ex">colorscheme</span> gruvbox</span></code></pre></div>
             <p>Nato v odprtem VIM-u izvedi:</p>
             <ul>
             <li><code>:source %</code> – da stopijo spremembe
@@ -685,7 +803,8 @@ sistema"/>
             <strong>vimrc</strong></li>
             </ul>
             <h4 id="DWM">DWM</h4>
-            <p>V <strong>~/viri/dwm/config.h</strong>:</p>
+            <p>V <a
+            href="/moj_linux/home/janezpavel/viri/dwm/config.h"><strong>~/viri/dwm/config.h</strong></a>:</p>
             <ul>
             <li>spremeni <code>static const int resizehints = 1;</code>
             v <code>static const int resizehints = 0;</code></li>
@@ -711,7 +830,9 @@ sistema"/>
             <li><code>mkdir -p ~/.config/lf/</code> – ustvari
             <em>mapo</em> za nastavitveno datoteko</li>
             <li><code>touch ~/.config/lf/lfrc</code> – ustvari
-            nastavitveno datoteko za LF</li>
+            nastavitveno datoteko <a
+            href="/moj_linux/home/janezpavel/.config/lf/lfrc"><strong>lfrc</strong></a>
+            za LF</li>
             </ul>
             <hr />
             <h2 id="Se_za_narediti">Še za narediti</h2>
@@ -729,7 +850,7 @@ sistema"/>
             <li>FreeCAD</li>
             <li>Blender</li>
             <li>Libreoffice</li>
-            <li>QGIS</li>
+            <li><a href="https://qgis.org/">QGIS</a></li>
             </ul>
             <hr />
             <h1 id="Namestitev_streznika">Namestitev strežnika</h1>
@@ -803,7 +924,7 @@ sistema"/>
     </main>
     <footer>
         <button id="stikaloTeme">Preklopi barvni način strani</button>
-        <br><a id="linkMD" href="/md/vodic_skozi_namestitev_Linuxa.md">Stran v Markdownu</a>
+        <br><a id="linkMD" href="/md/moj_linux/index.md">Stran v Markdownu</a>
     </footer>
 </body>
 </html>

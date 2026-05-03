@@ -1,0 +1,11 @@
+#!/bin/bash
+
+dev="$(lsblk --list --exclude 259 --paths -o NAME --noheadings | dmenu)"
+[ -z "$dev" ] && exit 0
+sporocilo="$(udisksctl $1 -b $dev 2>&1)"
+
+echo "udisksctl $1 --block-device $dev ==> $sporocilo"
+xsetroot -name "$sporocilo"
+
+sleep 5
+status-bar

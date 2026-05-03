@@ -1,0 +1,9 @@
+[Unit]
+Description=Log startup time
+
+[Service]
+Type=oneshot
+ExecStart=/home/janezpavel/.local/bin/raba startup
+
+[Install]
+WantedBy=multi-user.target

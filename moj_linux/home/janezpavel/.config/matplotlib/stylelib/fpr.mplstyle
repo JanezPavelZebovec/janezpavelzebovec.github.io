@@ -1,0 +1,16 @@
+# fpr.mplstyle
+
+font.family: serif  # use serif/main font for text elements
+font.size: 11
+text.usetex: True # daj na True, če rabiš Tex, a potem rabiš tudi ustrezne pakete
+pgf.texsystem: pdflatex # sicer želi uporabiti xelatex in ne dela
+pgf.rcfonts: False    # don't setup fonts from rc parameters
+
+lines.marker: o
+lines.markerfacecolor: black 
+lines.markeredgecolor: black
+lines.markersize: 3
+
+axes.prop_cycle: cycler('linestyle', ['-', '--', ':', '-.'])
+
+legend.frameon: False

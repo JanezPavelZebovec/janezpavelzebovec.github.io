@@ -1,0 +1,71 @@
+#!/bin/bash
+
+update() {
+    TIME=$(date +%a,%Y-%m-%d,%H:%M)
+    
+    #BATERIJA=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -e percentage -e 'time to empty' | sed 's/[[:blank:]]//g'  | tr -d '\n') #time to empty:_hours percentage:_%
+    BATERIJA=$(/usr/bin/upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -e percentage -e 'time to empty')
+        PERCENTAGE=$(echo "$BATERIJA" | grep 'percentage' | awk '{print $2}') #_%   izvleče vrstico s percentage in vzame drugi stolpec z vrednostjo
+        if echo "$BATERIJA" | grep -q 'time to empty'; then #preveri, če je v izpisu stanja baterije tudi vrednost "time to empty"
+            TIME_TO_EMPTY=$(echo "$BATERIJA" | grep 'time to empty' | awk '{print $4 " ure"}')
+            STATUS="$PERCENTAGE ($TIME_TO_EMPTY)"
+        else
+            STATUS="$PERCENTAGE"
+        fi
+
+    POVEZAVA=$(nmcli -t -f TYPE,STATE,CONNECTION dev status | grep ':connected' | head -n 1)
+        if [ -z "$POVEZAVA" ]; then
+            OMREZJE="NOP" #Ni omrežne povezave
+        else
+            DEVICE_TYPE=$(echo "$POVEZAVA" | cut -d':' -f1) # Pridobi vrsto naprave (wifi, ethernet)
+            case "$DEVICE_TYPE" in
+                ethernet)
+                    #OMREZJE="ŽOP" #žična omrežna povezava
+                    DEVICE_NAME=$(echo "$POVEZAVA" | cut -d':' -f3) # Pridobi ime naprave (npr. enp1s0)
+                    #SPEED=$(ethtool "$DEVICE_NAME" 2>/dev/null | grep "Speed" | awk '{print $2}') # Hitrost povezave
+                    if [ -f "/sys/class/net/$DEVICE_NAME/speed" ]; then
+                        SPEED=$(cat "/sys/class/net/$DEVICE_NAME/speed") # Preberi hitrost
+                        OMREZJE="ŽOP ${SPEED}Mb/s" # Dodaj hitrost v izpis
+                    else
+                        OMREZJE="ŽOP" # Če ni mogoče pridobiti hitrosti
+                    fi
+                    ;;
+                wifi)
+                    SIGNAL=$(nmcli -t -f SIGNAL dev wifi list | head -n 1)
+                    OMREZJE="BOP ${SIGNAL}%" #brezžična omrežna povezava
+                    ;;
+                *) #če omrežje ni ne ethernet, ne wifi
+                    OMREZJE="DOP" #druga omrežna povezava
+                    ;;
+            esac
+        fi
+
+    PREDVAJANO=$(mpc status | grep -E '^\[playing\]')
+    if [ -n "$PREDVAJANO" ]; then
+        # Če se predvaja, pridobi naslov skladbe
+        SKLADBA="$(ncmpcpp --current-song "%t" -q) |" #%t title, %a artist
+    else
+        # Če ne predvaja, očisti prikaz
+        SKLADBA=""
+    fi
+
+    RABA_CSV="$HOME/Moje/razvidi/raba.csv"
+    if [ -f "$RABA_CSV" ]; then
+        RABA=$(tail -n 1 "$RABA_CSV" | cut -d',' -f2- | sed 's/^ //')
+    else
+        RABA=""
+    fi
+
+    #VREME=$(curl wttr.in/Medvode 2>/dev/null | sed 's/.* //g')
+    xsetroot -name "$SKLADBA $RABA | $OMREZJE | $STATUS | $TIME"
+    #xsetroot -name "`date +%H:%M`" #nastavi napis v pasici, uporabi programček "date" in prikaže v izbrani obliki - ure-minute
+}
+
+trap update USR1
+update
+
+# mirno čaka na signale
+while true; do
+    sleep 1000 &
+    wait $!
+done

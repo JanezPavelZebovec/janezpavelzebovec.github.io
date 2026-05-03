@@ -3,8 +3,10 @@
 
 *.log
 *.tmp
-*.swp
+*.swm
+*.swn
 *.swo
+*.swp
 
 moj_rodovnik/
 

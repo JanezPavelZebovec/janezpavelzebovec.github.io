@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-05-01
+date: 2026-05-03
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -89,14 +89,14 @@ Zagon novega *operacijskega sistema*:
     Morda je dobro imeti še (tega sam še nisem potreboval):
     - `libxrandr-dev` – za dinamično spreminjanje ločljivosti in usmeritve zaslona
     - `libxcb-res-dev` – omogoča dostop do določenih *sistemskih* podatkov za npr. *statusno* vrstico
-- `sudo apt install libxrandr-dev` –  odvisnost za Slock
+- `sudo apt install libxrandr-dev` –  dodatna odvisnost za Slock
 - `cd ~/viri/ime_programa/` – pojdi v mapo prenešenega orodja
 - prilagodi nastavitveno datoteko **config.h** svojim željam (to lahko storiš tudi kasneje in ponoviš sledeči korak)
 - `sudo make clean install` – pretvori orodje v uporabni *binarni* zapis in namesti orodje
 
 ### Zagon *sistema*
 
-- `echo "exec dwm" > ~/.xinitrc` – v nastavitveno datoteko **~/.xinitrc/** zagonskega *programa* doda vrstico, ki zažene DWM ob zagonu strežnika X
+- `echo "exec dwm" > ~/.xinitrc` – v nastavitveno datoteko [**~/.xinitrc/**](/moj_linux/home/janezpavel/.xinitrc) zagonskega *programa* doda vrstico, ki zažene DWM ob zagonu strežnika X
 - `startx` – zažene strežnik X (torej tudi DWM, a le, če si pred tem ustrezno uredil **~/.xinitrc**
 - terminal ST lahko zdaj odpreš z bližnjico **Shift+Alt+Enter**
 
@@ -155,15 +155,22 @@ Da lahko v programih nastavimo *sistemsko* privzeto temo (v našem primeru temno
 ### Lastne bližnjice
 
 - `sudo apt install sxhkd` – namesti program za dodajanje lastnih *sistemskih* bližnjic
-- `sxhkd &` – zažene SXHKD; najlepše je to dodati v **~/.xinitrc** (nekam pred `exec dwn`, da se zažene že samodejno ob zagonu sistema)
+- `sxhkd &` – zažene SXHKD; najlepše je to dodati v [**~/.xinitrc/**](/moj_linux/home/janezpavel/.xinitrc) (nekam pred `exec dwn`, da se zažene že samodejno ob zagonu sistema)
 - `mkdir -p ~/.config/sxhkd/` – ustvari *mapo* za nastavitvene datoteke SXHKD
-- `touch ~/.config/sxhkd/sxhkdrc` – ustvari datoteko [**sxhkdrc**](https://codeberg.org/JanezPavelZebovec/My_Linux_configs/src/branch/main/~/.config/sxhkd/sxhkdrc) za določanje lastnih bližnjic
+- `touch ~/.config/sxhkd/sxhkdrc` – ustvari datoteko [**sxhkdrc**](/moj_linux/home/janezpavel/.config/sxhkd/sxhkdrc) za določanje lastnih bližnjic
 - `pkill -usr1 -x sxhkd` – s tem po urejanju nastavitvene datoteke ponovno zaženeš SXHKD (ne da bi znova zagnal ves *sistem*), da spremembe stopijo v veljavo
 
 
 ### Posnetki zaslona
 
 - `sudo apt install imagemagick xclip`– programa potrebna za slikanje zaslona
+
+### Ploščica na dotik
+
+- `sudo apt install xinput`
+- `xinput --set-prop 'MSFT0001:00 06CB:CE2D Touchpad' 'libinput Tapping Enabled' 1` – omogoči klikanje z dotikom (*tapom*)
+- `xinput --set-prop 'MSFT0001:00 06CB:CE2D Touchpad' 'libinput Natural Scrolling Enabled' 1` – drsenje v pravo smer s ploščico (drs gor premakne stran dol)
+- zgornja ukaza je smiselno dodati v ~/.xinitrc, da se to nastavi samodejno ob vsakem zagonu
 
 ### Orodja za vsakdanjo rabo
 
@@ -197,6 +204,8 @@ Morda deluje tudi tole (?)
 
 - `sudo apt install` ...
     - `pandoc` – [Pandoc](https://pandoc.org/), pretvornik *dokumentov*
+    - `abook` – [ABook](https://abook.sourceforge.io/), imenik/urejevalnik stikov
+    - `calcurse` – [CalCurse](https://calcurse.org/) ([na GitHubu](https://github.com/lfos/calcurse)), *koledar*
     - `lftp` – [LFTP](https://lftp.yar.ru/), prenos datotek med napravami z različnimi *protokoli* (FTP, FTPS, SFTP, HTTP, HTTPS, BitTorrent, FISH)
     - `sshpass`
     - `htop` – [HTOP](https://htop.dev/), *statistika procesov sistema*
@@ -253,24 +262,93 @@ Knjižnice:
     - `texlive-fonts-recommended` – paket priporočenih pisav
     - `texlive-lang-european` – evropski jezikovni paket
     - `texlive-science` – znanstveni paket
+    - `cm-super` – nek paket pisav, med drugim lahko potem uporabljaš LaTex v grafih Matplotlib
 
 ### Uporaba lastnih *skript*
 
-- Na konec **~/.profile** dodaj to vrstico: `export PATH="$HOME/.local/bin:$PATH"`
+- Na konec [**~/.profile**](/moj_linux/home/janezpavel/.config) dodaj to vrstico: `export PATH="$HOME/.local/bin:$PATH"`
 - Vse mape, ki so v PATH lahko preveriš z `echo $PATH`
 - Skripte dodaj v mapo **~/.local/bin/** in jih naredi izvršljive: `chmod +x ime-skripte`
 
+#### Beleženje uporabe računalnika
+
+- Dodaj datoteko [~/.local/bin/raba](/moj_linux/home/janezpavel/.local/bin/raba).
+- Naredi datoteko izvršljivo: `sudo chmod +x ~/.local/bin/raba`.
+
+Ta *programček* sprejme *argument* in v ~/uporaba.csv doda vrstico s časom v UTC in imenom dogodka (ki ga dobi iz podanega *argumenta*). Sprejme lahko še drugi *argument*, ki je kot opomba (če ta opomba vsebuje vejice, naj bo obdana z narekovaji).
+
+Primer: ukaz `raba startup` zapiše dogodek v obliki `2026-05-03T12:38:00Z,startup,`
+
+#### Zagon in zaustavitev *sistema*
+
+V /etc/systemd/system/ dodaj:
+
+- [log-halt.service](/moj_linux/etc/systemd/system/log-halt.service)
+- [log-poweroff.service](/moj_linux/etc/systemd/system/log-poweroff.service)
+- [log-reboot.service](/moj_linux/etc/systemd/system/log-reboot.service)
+- [log.startup.service](/moj_linux/etc/systemd/system/log-startup.service)
+
+V vsaki teh datotek je bistvena vrstica
+
+    ExecStart=/home/uporabnik/.local/bin/raba argument
+
+(kjer je *argument* ustrezen *halt, poweroff, reboot* ali *startup*), ki požene **raba** z ustreznim *argumentom*
+
+##### Zaklepanje in odklepanja
+
+Za zaklenjen zaslon uporabljamo SLock.
+
+V [~/viri/slock/slock.c](/moj_linux/home/janezpavel/viri/slock/slock.c) takoj za
+
+	/* did we manage to lock everything? */
+	if (nlocks != nscreens)
+		return 1;
+
+dodaj
+
+    if (fork() == 0) {
+        execl("/home/uporabnik/.local/bin/raba",
+              "raba",
+              "lock",
+              (char*)NULL);
+    }
+
+Tako ob po zaklepanju zaslona poženem *program* **raba** z *argumentom* "lock". Za beleženje odklepanja takoj za
+
+	/* everything is now blank. Wait for the correct password */
+	readpw(dpy, &rr, locks, nscreens, hash);
+
+dodaj
+
+    if (fork() == 0) {
+        execl("/home/uporabnik/.local/bin/raba",
+              "raba",
+              "unlock",
+              (char*)NULL);
+    }
+
+Tako po pravilno vnešenem geslu in torej odklepu požene **rabo** z *argumentom* "unlock".
+
+##### Prikazovanje trenutne rabe
+
+Dodaj [~/viri/slstatus/components/raba.c](/moj_linux/home/janezpavel/viri/slstatus/components/raba.c).
+
 ### Pošiljanje GIT
 
-`git config --global user.name "MojeUporabniskoIme"`
-`git config --global user.email "moj.naslov@domena.si"`
+`git config --global user.name "MojeUporabniskoIme"` – nastavi *globalno* uporabniško ime za GIT
+`git config --global user.email "moj.naslov@domena.si"` – nastavi *elektronski* *globalni* naslov za GIT
+
+Če imaš oddaljene *repozitorije* z različnimi uporabniškimi imeni in/ali *elektronskimi* naslovi, ne uporabi oznake `--global`, ampak ime/naslov nastavi v mapi izbranega *lokalnega repozitorija*.
+
+`git remote add github git@github.com:USER/REPO.git` / `git remote add codeberg git@codeberg.org:USER/REPO.git` – doda vzdevek oddaljenega *repozitorija* na GitHub/Codeberg, ker je "USER" uporabniško ime in "REPO" ime *repozitorija* 
+`git remote rename origin github` – spremeni vzdevek oddaljenega *repozitorija*
+- `git status` – če ta ukaz izvedeš v *repozitoiju projekta*, izpiše trenutno stanje gita za ta *projekt*
 
 Preverjanje:
 
-- `git config --global user.name`
-- `git config --global user.email`
-- `ssh -T git@github.com`
-- `ssh -T git@codeberg.org`
+- `git config --global user.name` – preveri nastavljeno uporabniško ime za git
+- `git config --global user.email` – preveri nastavljen *elektronski* naslov
+- `ssh -T git@github.com` / `ssh -T git@codeberg.org` – preveri dostop SSH do GitHuba/Codeberga
 - `git ls-remote ime-repozitorija` – preverjanje dostopa do oddaljenega *repozitorija*
 
 ### Prilagajanje orodij
@@ -294,14 +372,14 @@ Uporabni *patchi*:
 
 - `sudo apt install vim-gtk3` – to je VIM z razširjenimi zmogljivostmi, za nas je bistveno odložišče (*kopiranje*/lepljenje iz VIM-a v druge programe in obratno) in uporaba miške; s tem sicer dobimo tudi nepotrebni *grafični* urejevalnik GVIM, a je to vseeno najboljša možnost
 - `mkdir -p ~/.config/vim` – ustvari mapo za nastavitvene datoteke VIM-a
-- `touch ~/.config/vim/vimrc` – ustvari nastavitveno datoteko
+- `touch ~/.config/vim/vimrc` – ustvari nastavitveno datoteko [**vimrc**](/moj_linux/home/janezpavel/.config/vim/vimrc)
 - `curl -fLo ~/.config/vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim` – namesti [vim-plug](https://github.com/junegunn/vim-plug) za vtičnike v VIM-u
 
 ##### Gruvbox za VIM
 
 [Gruvbox](https://github.com/morhetz/gruvbox), barvna tema Pavla Pertseva [za VIM](https://www.vim.org/scripts/script.php?script_id=4349)
 
-Na začetek datoteke **~/.vimrc** dodaj:
+Na začetek datoteke [**~/.vimrc**](/moj_linux/home/janezpavel/.config/vim/vimrc) dodaj:
 
 ```sh
 call plug#begin('~/.config/vim/plugged')
@@ -320,7 +398,7 @@ Nato v odprtem VIM-u izvedi:
 
 #### DWM
 
-V **~/viri/dwm/config.h**:
+V [**~/viri/dwm/config.h**](/moj_linux/home/janezpavel/viri/dwm/config.h):
 
 - spremeni `static const int resizehints = 1;` v `static const int resizehints = 0;`
 - spremeni `#define MODKEY Mod1Mask` v `#define MODKEY Mod4Mask`, da je glavna tipka bližnjic **Super**, ne **Alt**
@@ -330,7 +408,7 @@ V **~/viri/dwm/config.h**:
 #### LF
 
 - `mkdir -p ~/.config/lf/` – ustvari *mapo* za nastavitveno datoteko
-- `touch ~/.config/lf/lfrc` – ustvari nastavitveno datoteko za LF
+- `touch ~/.config/lf/lfrc` – ustvari nastavitveno datoteko [**lfrc**](/moj_linux/home/janezpavel/.config/lf/lfrc) za LF
 
 ---
 
@@ -344,7 +422,7 @@ V **~/viri/dwm/config.h**:
 - FreeCAD
 - Blender
 - Libreoffice
-- QGIS
+- [QGIS](https://qgis.org/)
 
 ---
 

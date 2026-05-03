@@ -1,0 +1,87 @@
+# da stopijo v veljavo sprememebe te datoteke: pkill -usr1 -x sxhkd
+
+super + shift + l
+#zaklepanje zaslona
+    slock
+
+super + shift + a
+    st -e pulsemixer 
+
+super + e
+    st -e lf
+
+
+super + alt + 1
+#samo glavni zaslon (prenosnika)
+    xrandr --output eDP --auto --output HDMI-A-0 --off
+
+super + alt + 2
+#oba zaslona
+    xrandr --output eDP --auto --output HDMI-A-0 --auto
+
+super + alt + 3
+#samo priključen HDMI zaslon
+    xrandr --output eDP --off --output HDMI-A-0 --auto
+
+super + alt + 4
+#oba zaslona, priključen na levi
+    xrandr --output eDP --auto --output HDMI-A-0 --left-of eDP
+
+super + alt + 5
+#oba zaslona, priključen na desni
+    xrandr --output eDP --auto --output HDMI-A-0 --right-of eDP
+
+
+XF86MonBrightnessUp
+    brightnessctl -d amdgpu_bl0 set 10%+ && \
+    xsetroot -name "Svetlost: $(brightnessctl -d amdgpu_bl0 get)%" && \
+    sleep 2; ~/.local/bin/status-bar
+
+XF86MonBrightnessDown
+    brightnessctl -d amdgpu_bl0 set 10%- && \
+    xsetroot -name "Svetlost: $(brightnessctl -d amdgpu_bl0 get)%" && \
+    sleep 2; ~/.local/bin/status-bar
+
+Print
+# napravi posnetek zaslona in ga spravi v odložišče
+    import png:- | xclip -selection clipboard -t image/png -i 
+
+shift + Print
+# ob zajemu zaslona vpraša, kam naj shrani
+    posnetki
+
+
+super + n
+    namesti-usb mount
+
+super + shift + n
+    namesti-usb unmount
+
+super + shift + u
+    ugasni
+
+super + c
+#izbiranje barv na zaslonu
+    sxcs -o --hex -k --mag-filters circle,xhair | sed -e 's/hex:\t//' | xclip -selection clipboard
+
+#Filipov način hitrega pisanja grških črk:
+#super + g
+#    xsetroot -name "$(xmodmap -e 'keysym F1 = Multi_key') F1 + g + a = α"; sleep 2; xsetroot -name "`date +%H:%M`"
+#super + shift + g
+#    xsetroot -name "$(xmodmap -e 'keysym Multi_key = F1') F1 + g + a ≠ α"; sleep 2; xsetroot -name "`date +%H:%M`"
+
+super + s
+    st -e lf ~/moje/spletno_mesto/
+
+super + r
+# prikaže izbiro za rabo
+    raba-izbira
+super + shift + r
+    raba raba-drugo
+
+
+
+
+
+
+

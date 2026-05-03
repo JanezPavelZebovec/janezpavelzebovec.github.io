@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#shraniš v ~/.local/bin/moje/posnetki ali nekaj takega
+
+import png:- | xclip -selection clipboard -t image/png -i
+poziv='Kam shranim?'
+izhod=`echo | dmenu -sb "#ccaa22" -sf "#222222" -i -p "$poziv"`
+xclip -selection clipboard -t image/png -o > ~/Posnetki_zaslona/$izhod

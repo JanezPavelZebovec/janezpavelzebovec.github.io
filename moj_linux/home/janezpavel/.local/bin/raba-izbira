@@ -1,0 +1,33 @@
+#!/bin/bash
+
+izbor=(
+    'Drugo'
+    'Učilišče'
+    'Spletišče'
+    'OSM'
+    'OHM'
+    'Linux'
+    'Rodoslovje'
+    'YT'
+    'Film'
+    'Nakupovanje'
+    )
+poziv='Kaj boš počel?'
+odziv=`printf "%s\n" "${izbor[@]}" | dmenu -sb "#ccaa22" -sf "#222222" -i -p "$poziv"`
+
+# če uporabnik prekliče
+[ -z "$odziv" ] && exit 0
+
+case "$odziv" in
+    "Drugo") raba "raba-drugo" ;;
+    "Učilišče") raba "raba-ucilisce" ;;
+    "Spletišče") raba "raba-spletisce" ;;
+    "OSM") raba "raba-osm" ;;
+    "OHM") raba "raba-ohm" ;;
+    "Linux") raba "raba-linux" ;;
+    "Rodoslovje") raba "raba-rodoslovje" ;;
+    "YT") raba "raba-yt" ;;
+    "Film") raba "film" ;;
+    "Nakupovanje") raba "raba-nakup" ;;
+    *) raba "raba-$odziv" ;;
+esac
