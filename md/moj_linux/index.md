@@ -8,7 +8,7 @@ author: Janez Pavel Žebovec
 
 # Vodič skozi namestitev uporabniškega okolja na Linux Debianu
 
-Nekatere moje nastavitvene in druge datoteke Linuxa se še nahajajo na [Codebergu: My Linux Configs](https://codeberg.org/JanezPavelZebovec/My_Linux_configs). Sicer pa je tu seznam datotek, ki so na tem speltišču:
+Nekatere moje stare nastavitvene in druge datoteke Linuxa se še nahajajo na [Codebergu: My Linux Configs](https://codeberg.org/JanezPavelZebovec/My_Linux_configs). Sicer pa je tu seznam najnovejših datotek, ki so na tem spletišču:
 
 - etc/systemd/system/
     - [log-halt.service](/moj_linux/etc/systemd/system/log-halt.service)
@@ -16,15 +16,15 @@ Nekatere moje nastavitvene in druge datoteke Linuxa se še nahajajo na [Codeberg
     - [log-reboot.service](/moj_linux/etc/systemd/system/log-reboot.service)
     - [log-startup.service](/moj_linux/etc/systemd/system/log-startup.service)
 - home/janezpavel/viri/
-    - dwm/config.h
+    - [dwm/config.h](/moj_linux/home/janezpavel/viri/dwm/config.h)
     - slock/
-        - config.h
-        - slock.c
+        - [config.h](/moj_linux/home/janezpavel/viri/slock/config.h)
+        - [slock.c](/moj_linux/home/janezpavel/viri/slock/slock.c)
     - slstatus/
-        - components/raba.c
-        - config.h
-        - Makefile
-    - st/config.h
+        - [config.h](/moj_linux/home/janezpavel/viri/slstatus/config.h)
+        - [Makefile](/moj_linux/home/janezpavel/viri/slstatus/Makefile)
+        - [components/raba.c](/moj_linux/home/janezpavel/viri/slstatus/raba.c)
+    - [st/config.h](/moj_linux/home/janezpavel/viri/st/config.h)
 
 Tukaj so navedeni koraki, po katerih prideš do skoraj enakega okolja kot je moje:
 
