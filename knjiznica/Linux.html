@@ -6,8 +6,10 @@
 
     <title>Linux</title>
     <meta name="author" content="Janez Pavel Žebovec">
-    <meta name="description" content=""/>
-    <meta name="keywords" content="programska oprema, Linux, programi"/>
+    <meta name="description" content="Priročnik za uporabo Linuxa,
+posebno skozi terminal"/>
+    <meta name="keywords" content="Linux, terminal, operacijski
+sistem"/>
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg"/>
@@ -29,11 +31,12 @@
             </svg>
         </a>
 
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-02-21">2026-02-21</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-05-05">2026-05-05</time></p>
     </header>
     <nav>
         <ul>
-        <li><a href="#Linux" id="toc-Linux">Linux</a>
+        <li><a href="#Prirocnik_za_Linux"
+        id="toc-Prirocnik_za_Linux">Priročnik za Linux</a>
         <ul>
         <li><a href="#Upravljanje_programov"
         id="toc-Upravljanje_programov">Upravljanje programov</a>
@@ -62,10 +65,16 @@
         Client)</a></li>
         <li><a href="#Eduroam" id="toc-Eduroam">Eduroam</a></li>
         </ul></li>
-        <li><a href="#Pretvarjanje_zdruzevanje_datotek"
-        id="toc-Pretvarjanje_zdruzevanje_datotek">Pretvarjanje/združevanje
-        datotek</a>
+        <li><a href="#Pretvarjanje_zdruzevanje_stiskanje_datotek"
+        id="toc-Pretvarjanje_zdruzevanje_stiskanje_datotek">Pretvarjanje
+        / združevanje / stiskanje datotek</a>
         <ul>
+        <li><a href="#Zdruzevanje_datotek"
+        id="toc-Zdruzevanje_datotek">Združevanje datotek</a></li>
+        <li><a href="#Pretvarjanje_datotek"
+        id="toc-Pretvarjanje_datotek">Pretvarjanje datotek</a></li>
+        <li><a href="#Stisnjene_datoteke"
+        id="toc-Stisnjene_datoteke">Stisnjene datoteke</a></li>
         <li><a href="#Spreminjanje_izvirne_datoteke"
         id="toc-Spreminjanje_izvirne_datoteke">Spreminjanje izvirne
         datoteke</a></li>
@@ -75,6 +84,8 @@
         <ul>
         <li><a href="#Terminal_jezik_Bash"
         id="toc-Terminal_jezik_Bash">Terminal (jezik Bash)</a></li>
+        <li><a href="#YT_DLP" id="toc-YT_DLP">YT-DLP</a></li>
+        <li><a href="#JOSM" id="toc-JOSM">JOSM</a></li>
         <li><a href="#ST_Simple_Terminal" id="toc-ST_Simple_Terminal">ST
         (Simple Terminal)</a></li>
         <li><a href="#DWM_Dynamic_Window_Manager"
@@ -83,8 +94,6 @@
         <li><a href="#VIM" id="toc-VIM">VIM</a></li>
         <li><a href="#LF" id="toc-LF">LF</a></li>
         <li><a href="#NCMPCPP" id="toc-NCMPCPP">NCMPCPP</a></li>
-        <li><a href="#YT_DLP" id="toc-YT_DLP">YT-DLP</a></li>
-        <li><a href="#JOSM" id="toc-JOSM">JOSM</a></li>
         </ul></li>
         <li><a href="#Zunanje_povezave_in_viri"
         id="toc-Zunanje_povezave_in_viri">Zunanje povezave in
@@ -94,10 +103,17 @@
     </nav>
     <main>
         <div class="content">
-            <h1 id="Linux">Linux</h1>
-            <p>Glej <a href="/vodic_skozi_namestitev_Linuxa">Vodič skozi
-            namestitev Linuxa</a> za namestitev in ureditev okolja, kot
-            ga imam jaz.</p>
+            <p>Ta stran zahteva nekaj več urejenosti, oziroma splošno
+            posodobitev, kar bo tudi prišlo na vrsto enkrat v
+            prihodnosti – zaenkrat pa je, kar je.</p>
+            <p>Glej <a href="/moj_linux">Vodič skozi namestitev
+            Linuxa</a> za namestitev in ureditev okolja, kot ga imam
+            jaz.</p>
+            <h1 id="Prirocnik_za_Linux">Priročnik za Linux</h1>
+            <p>Ta priročnik temelji na Linux Debianu, kakršnega
+            uporabljam / kar uporabljam jaz (glej tudi <a
+            href="/moj_linux/">Vodič skozi namestitev Debiana</a>, kjer
+            je moje okolje podrobno opisano).</p>
             <ul>
             <li><code>sudo shutdown</code> - ugasni se</li>
             <li><code>sudo reboot</code> - ponovno se zaženi
@@ -214,14 +230,16 @@
             datoteke za slovarske datoteke programov</li>
             </ul>
             <p>Datoteke:</p>
-            <p>-<strong>~/.xinitrc</strong> - datoteka z ukazi, ki se
-            izvedejo ob zagonu računalnika -
-            <strong>~/bash_history</strong> - datoteka z zgodovino
-            izvedenih ukazov v terminalu -
-            <strong>~/.config/sxhkd/sxhkdrc</strong> - datoteka z
+            <ul>
+            <li><strong>~/.xinitrc</strong> - datoteka z ukazi, ki se
+            izvedejo ob zagonu računalnika</li>
+            <li><strong>~/bash_history</strong> - datoteka z zgodovino
+            izvedenih ukazov v terminalu</li>
+            <li><strong>~/.config/sxhkd/sxhkdrc</strong> - datoteka z
             osebnimi bližnjicami (da stopijo v veljavo spremembe v tej
             datoteki izvedi <code>pkill -usr1 -x sxhkd</code> ali znova
-            zaženi sistem)</p>
+            zaženi sistem)</li>
+            </ul>
             <h2 id="Zunanje_naprave">Zunanje naprave</h2>
             <ul>
             <li><code>lsblk</code> - izpiše vse priklopljene naprave
@@ -377,16 +395,14 @@
             <li>Zaženi program <code>ime_datoteke.py</code>.</li>
             </ol>
             <h2
-            id="Pretvarjanje_zdruzevanje_datotek">Pretvarjanje/združevanje
-            datotek</h2>
+            id="Pretvarjanje_zdruzevanje_stiskanje_datotek">Pretvarjanje
+            / združevanje / stiskanje datotek</h2>
+            <h3 id="Zdruzevanje_datotek">Združevanje datotek</h3>
             <ul>
-            <li><p><code>tar -xvzf mapa.tar.gz</code> - razširi
-            stisnjeno mapo <em>.tar.gz</em> (<em>.tar</em> - arhivska;
-            <em>.gz</em> - stisnjena)</p></li>
-            <li><p><code>convert {imena_slik} ime_PDF-ja</code> - združi
-            več slik JPG v en PDF</p></li>
-            <li><p><code>pdfjam {imena_PDF-jev} -o ime_nove_datoteke.pdf</code>
-            - združi več PDF-jev v enega</p>
+            <li><code>convert {imena_slik} ime_PDF-ja</code> - združi
+            več slik JPG v en PDF</li>
+            <li><code>pdfjam {imena_PDF-jev} -o ime_nove_datoteke.pdf</code>
+            - združi več PDF-jev v enega
             <ul>
             <li><code>-o</code> - ugane vrsto datotek za pretvorbo po
             končnicah teh datotek</li>
@@ -394,26 +410,28 @@
             strani v PDF-ju (npr. <code>--paper a4paper</code> za
             A4)</li>
             </ul></li>
-            <li><p><code>mogrify -format vrsta-datoteke ime_datoteke</code>
-            - pretvori datoteke (z ustrezno končnico) v želeni vrsto
-            datoteke (npr. pretvori sliko JPG v PDF:
-            <code>mogrify -format pdf datoteka.jpg</code>)</p>
-            <ul>
-            <li><code>-format [vrsta-datoteke]</code> - določi vrsto
-            (<em>format</em>) datoteke (npr. <code>-format pdf</code> za
-            PDF)</li>
-            </ul></li>
-            <li><p><code>qpdf --empty {imena_PDF-jev} -- ime_nove_datoteke.pdf</code>
-            - združi PDF-je, pri čemer ohrani izvorne velikosti
-            strani</p>
+            <li><code>qpdf --empty {imena_PDF-jev} -- ime_nove_datoteke.pdf</code>
+            - združi PDF-je, pri čemer ohrani izvorne velikosti strani
             <ul>
             <li><code>--empty</code> - velikost strani ni opredeljena -
             vsem stranem določi enako najprimernejšo velikost</li>
             <li><code>--pages</code> - ohrani izvorne velikosti strani
             (?)</li>
             </ul></li>
-            <li><p><code>pandoc</code> - pretvornik
-            <em>strukturiranih</em> besedilnih dokumentov</p>
+            </ul>
+            <h3 id="Pretvarjanje_datotek">Pretvarjanje datotek</h3>
+            <ul>
+            <li><code>mogrify -format vrsta-datoteke ime_datoteke</code>
+            - pretvori datoteke (z ustrezno končnico) v želeni vrsto
+            datoteke (npr. pretvori sliko JPG v PDF:
+            <code>mogrify -format pdf datoteka.jpg</code>)
+            <ul>
+            <li><code>-format [vrsta-datoteke]</code> - določi vrsto
+            (<em>format</em>) datoteke (npr. <code>-format pdf</code> za
+            PDF)</li>
+            </ul></li>
+            <li><code>pandoc</code> - pretvornik <em>strukturiranih</em>
+            besedilnih dokumentov
             <ul>
             <li><code>-o izhodna_datoteka</code> - ugane vrsto izhodne
             datoteke za pretvorbo po končnici te datoteke</li>
@@ -443,8 +461,7 @@
             <li><code>--metadata lang=sl</code> - doda slovenščino za
             jezik dokumenta</li>
             </ul></li>
-            </ul>
-            <p>Za pretvorbo v HTML:</p>
+            <li>Za pretvorbo v HTML:
             <ul>
             <li><code>--template=predloga.html</code> - novo datoteko
             ustvari po predlogi, kar omogoča popolen nadzor nad sestavo
@@ -464,14 +481,33 @@
             za dodajanje metapodatkov <code>&lt;meta&gt;</code>, CSS-ja,
             JS-a, …)</li>
             </ul></li>
-            <li><p><code>ffmpeg</code> - orodje za obdelavo posnetkov -
+            </ul></li>
+            <li><code>ffmpeg</code> - orodje za obdelavo posnetkov -
             pretvarjanje, obrezovanje, izrezovanje, združevanje,
-            spreminjanje kakovosti, ločljivosti, dodajanje podnapisov,
-            …</p>
+            spreminjanje kakovosti, ločljivosti, dodajanje podnapisov, …
             <ul>
             <li><code>ffmpeg -i posnetek.mp3 -ss 00:00 -t 00:20 -c copy izsek.mp3</code>
             - obreži posnetek</li>
             </ul></li>
+            </ul>
+            <h3 id="Stisnjene_datoteke">Stisnjene datoteke</h3>
+            <ul>
+            <li><code>sudo apt install zip gzip tar</code></li>
+            <li><code>zip -r moja_mapa.zip moja_mapa</code> – ustvari
+            stisnjen (<em>.zip</em>) dvojnik mape
+            <em>moja_mapa</em></li>
+            <li><code>unzip moja_mapa.zip</code> – razširi stisnjeno
+            mapo <em>moja_mapa.zip</em> v navadno mapo
+            <em>moja_mapa</em></li>
+            <li><code>tar -cvzf moja_mapa.tar.gz moja_mapa</code> –
+            navadno mapo <em>moja_mapa</em> stisne v
+            <em>moja_mapa.tar.gz</em> (c = <em>create</em>, v =
+            <em>verbose</em>, z = uporaba (GNU)zip, f = za opredelitev
+            imena izhodne datoteke); dvojna končnica je zaradi orodij
+            TAR in GZIP</li>
+            <li><code>tar -xvzf moja_mapa.tar.gz</code> – razširi
+            stisnjeno mapo <em>moja_mapa.tar.gz</em> (<em>.tar</em> -
+            arhivska; <em>.gz</em> - stisnjena)</li>
             </ul>
             <h3 id="Spreminjanje_izvirne_datoteke">Spreminjanje izvirne
             datoteke</h3>
@@ -650,6 +686,129 @@
             <p>Dodatno:</p>
             <ul>
             <li><code>$(ukaz)</code> - uporabi izpis ukaza v ukazu</li>
+            </ul>
+            <h3 id="YT_DLP">YT-DLP</h3>
+            <p>Prenos posnetkov z YouTuba pa tudi številnih drugih
+            spletnih mest</p>
+            <ul>
+            <li><code>yt-dlp {možnosti} {--} URL-ji</code> - prenese
+            posnetek na naslovu URL
+            <ul>
+            <li><code>-x</code> - izvozi samo zvok</li>
+            <li><code>-o pot/do/datoteke</code> - nastavi izhodno
+            pot/ime datotek(e)
+            <ul>
+            <li><code>%(playlist_index)s</code> - zaporedna številka
+            posnetka v seznamu predvajanja</li>
+            <li><code>%(playlist_title)s</code> - naslov seznama
+            predvajanja</li>
+            <li><code>%(title)s</code> - naslov posnetka</li>
+            <li><code>%(ext)s</code> - končnica datoteke</li>
+            </ul></li>
+            <li><code>--restrict-filenames</code> – odstrani posebne
+            znake in presledke v imenih datotek</li>
+            <li><code>-f bestaudio</code> - izbere najboljši zvok
+            (posebej če npr. itak prenašaš le zvok)</li>
+            <li><code>-f bestvideo</code> - izbere najboljšo sliko
+            (posebej če npr. itak prenašaš le sliko)</li>
+            <li><code>-f bestvideo+bestaudio</code> - izbere ločeno
+            najboljšo sliko in najboljši zvok, ter ju združi</li>
+            <li><code>-f best</code> - izbere najboljšo datoteko</li>
+            <li><code>--audio-format vrsta-datoteke</code> - pretvori v
+            izbrano vrsto zvočne datoteke (npr.
+            <code>--audio-format mp3</code> pretvori v <code>mp3</code>,
+            lahko pa je tudi <code>wav</code>, <code>flac</code>,
+            <code>opus</code>)</li>
+            <li><code>--audio-quality 0</code> - izbere najboljšo možno
+            kakovost zvoka</li>
+            <li><code>--embed-metadata</code> - doda metapodatke
+            (naslov, avtor, datum, …) v datoteko</li>
+            <li><code>--ignore-errors</code> = <code>-i</code> -
+            nadaljuje tudi ob napakah</li>
+            <li><code>--progress</code> - prikaz napredka prenosa (to
+            počne tudi že privzeto, zato te možnosti ni potrebno
+            izcrecno navajati)</li>
+            <li><code>--cookies-from-browser BRSKALNIK[:profil]</code> –
+            pridobi piškotke (prej jih moraš prenesti) za strani, kjer
+            je potrebna prijava, ali prihaja do s tem povezanih napak
+            (npr. <code>--cookies-from-browser firefox</code>)</li>
+            <li><code>--no-overwrites</code> – ne prepiši že obstoječih
+            datotek</li>
+            <li><code>--download-sections "*01:57:00-03:05:06"</code> -
+            prenesi le odsek(e) (lahko pa obrežeš šele po prenosu - za
+            to glej <em>ffmpeg</em>)
+            <ul>
+            <li><code>--postprocessor-args "-ss 01:57:00 -t 03:05:06"</code>
+            - obreži šele po prenosu z <code>ffmpeg</code></li>
+            <li><code>--force-keyframes-at-cuts "*01:57:00-03:05:06"</code>
+            - zagotovi bolj natančno rezanje med sličicami (deluje le z
+            nekaterimi oblikami datotek)</li>
+            </ul></li>
+            </ul></li>
+            </ul>
+            <h3 id="JOSM">JOSM</h3>
+            <p>Urejevalnik zemljevida <a
+            href="https://www.openstreetmap.org/">Open Street Map</a>
+            (OSM)</p>
+            <h4 id="JOSM_za_Open_Historical_Map">JOSM za <em>Open
+            Historical Map</em></h4>
+            <p>JOSM lahko uporabljaš tudi za urejanje <a
+            href="https://www.openhistoricalmap.org/">Open Historical
+            Map</a> (OHM), za to pa moraš spremeniti nastavitve tako, da
+            program uporablja ustrezen strežnik za prenos podatkov in
+            nalaganje sprememb.</p>
+            <p>Če JOSMa ne nameravaš uporabljati zgolj za urejanje OHM,
+            je priporočeno ustvariti ločeno datoteko z nastavitvami, da
+            ti ni treba nastavitev spreminjati vsakič, ko urejaš drug
+            zemljevid (OSM/OHM). V nasprotnem primeru preskoči ta
+            korak.</p>
+            <ul>
+            <li>Nastavitvena datoteka se običajno nahaja na naslovu
+            <code>~/.config/JOSM/preferences.xml</code>. Ustvari dvojnik
+            teh nastavitev (npr.
+            <code>~/.config/JOHM/preferences.xml</code>).</li>
+            <li>Zaženi JOSM tako, da uporablja ta dvojnik nastavitev:
+            <code>JAVA_OPTS="-Djosm.pref=$HOME/.config/JOHM" josm</code>
+            (ob zagonu programu poveš, katere nastavitve naj
+            uporabi).</li>
+            </ul>
+            <p>Urejanje nastavitev za uporabo OHM (te nastavitve se bodo
+            shranile v nastavitveno datoteko, s katero s program
+            odprl):</p>
+            <ul>
+            <li>V <em>Nastavitvah/Preferences</em> odkljukaj <em>“Use
+            the default OSM server URL”</em> in pod <em>OSM Server
+            URL</em> vnesi <a
+            href="https://www.openhistoricalmap.org/api"
+            class="uri">https://www.openhistoricalmap.org/api</a>.
+            Pritisni <em>Validate</em>. Tako nastaviš ustrezen
+            strežnik.</li>
+            <li>Prijavi se s svojim računom za OHM (pred tem se odstrani
+            svoj račun za OSM, če si se pred tem prijavil z njim).</li>
+            <li>Poljubno nastavi še <em>Overpass server</em> na <a
+            href="https://overpass-api.openhistoricalmap.org/api/"
+            class="uri">https://overpass-api.openhistoricalmap.org/api/</a>.</li>
+            <li>Poljubno nastavi vzdevek za zagon JOHMa v terminalu: na
+            konec datoteke <code>~/.bashrc</code>dodaj:
+            <code>alias johm='JAVA_OPTS="-Djosm.pref=$HOME/.config/JOHM" josm'</code>
+            (shrani in posodobi rabo te datoteke z
+            <code>source ~/.bashrc</code>). Zdaj lahko program odpreš z
+            ukazom <code>johm</code>.
+            <ul>
+            <li>Lahko še ustvariš skripto <code>~/.local/bin/johm</code>
+            s sledečo vsebino:
+            <code>bash       #!/bin/bash       JAVA_OPTS="-Djosm.pref=$HOME/.config/JOHM" josm "$@"</code></li>
+            </ul></li>
+            </ul>
+            <p>Uporabni vtičniki za “JOHM”:</p>
+            <ul>
+            <li><a
+            href="https://github.com/OpenHistoricalMap/ohm-date-filter/">ohm-date-filter</a>:
+            zasenči elemente, ki niso znotraj izbranega obdobja</li>
+            <li><a href="https://github.com/JOSM/PicLayer">PicLayer</a>:
+            prikaz slike zemljevida in nje umeščanje v prostor (<a
+            href="https://wiki.openstreetmap.org/wiki/JOSM/Plugins/PicLayer">na
+            <em>Wiki</em>ju</a>)</li>
             </ul>
             <h3 id="ST_Simple_Terminal">ST (Simple Terminal)</h3>
             <p>Bližnjice:</p>
@@ -849,154 +1008,33 @@
             <li><kbd>i</kbd> - pokaži podatke o skladbi</li>
             <li><kbd>:</kbd> - odpri ukazno vrstico</li>
             </ul>
-            <h3 id="YT_DLP">YT-DLP</h3>
-            <p>Prenos posnetkov z YouTuba pa tudi številnih drugih
-            spletnih mest</p>
-            <ul>
-            <li><code>yt-dlp {možnosti} {--} URL-ji</code> - prenese
-            posnetek na naslovu URL
-            <ul>
-            <li><code>-x</code> - izvozi samo zvok</li>
-            <li><code>-o pot/do/datoteke</code> - nastavi izhodno
-            pot/ime datotek(e)
-            <ul>
-            <li><code>%(playlist_index)s</code> - zaporedna številka
-            posnetka v seznamu predvajanja</li>
-            <li><code>%(playlist_title)s</code> - naslov seznama
-            predvajanja</li>
-            <li><code>%(title)s</code> - naslov posnetka</li>
-            <li><code>%(ext)s</code> - končnica datoteke</li>
-            </ul></li>
-            <li><code>--restrict-filenames</code> – odstrani posebne
-            znake in presledke v imenih datotek</li>
-            <li><code>-f bestaudio</code> - izbere najboljši zvok
-            (posebej če npr. itak prenašaš le zvok)</li>
-            <li><code>-f bestvideo</code> - izbere najboljšo sliko
-            (posebej če npr. itak prenašaš le sliko)</li>
-            <li><code>-f bestvideo+bestaudio</code> - izbere ločeno
-            najboljšo sliko in najboljši zvok, ter ju združi</li>
-            <li><code>-f best</code> - izbere najboljšo datoteko</li>
-            <li><code>--audio-format vrsta-datoteke</code> - pretvori v
-            izbrano vrsto zvočne datoteke (npr.
-            <code>--audio-format mp3</code> pretvori v <code>mp3</code>,
-            lahko pa je tudi <code>wav</code>, <code>flac</code>,
-            <code>opus</code>)</li>
-            <li><code>--audio-quality 0</code> - izbere najboljšo možno
-            kakovost zvoka</li>
-            <li><code>--embed-metadata</code> - doda metapodatke
-            (naslov, avtor, datum, …) v datoteko</li>
-            <li><code>--ignore-errors</code> = <code>-i</code> -
-            nadaljuje tudi ob napakah</li>
-            <li><code>--progress</code> - prikaz napredka prenosa (to
-            počne tudi že privzeto, zato te možnosti ni potrebno
-            izcrecno navajati)</li>
-            <li><code>--cookies-from-browser BRSKALNIK[:profil]</code> –
-            pridobi piškotke (prej jih moraš prenesti) za strani, kjer
-            je potrebna prijava, ali prihaja do s tem povezanih napak
-            (npr. <code>--cookies-from-browser firefox</code>)</li>
-            <li><code>--no-overwrites</code> – ne prepiši že obstoječih
-            datotek</li>
-            <li><code>--download-sections "*01:57:00-03:05:06"</code> -
-            prenesi le odsek(e) (lahko pa obrežeš šele po prenosu - za
-            to glej <em>ffmpeg</em>)
-            <ul>
-            <li><code>--postprocessor-args "-ss 01:57:00 -t 03:05:06"</code>
-            - obreži šele po prenosu z <code>ffmpeg</code></li>
-            <li><code>--force-keyframes-at-cuts "*01:57:00-03:05:06"</code>
-            - zagotovi bolj natančno rezanje med sličicami (deluje le z
-            nekaterimi oblikami datotek)</li>
-            </ul></li>
-            </ul></li>
-            </ul>
-            <h3 id="JOSM">JOSM</h3>
-            <p>Urejevalnik zemljevida <a
-            href="https://www.openstreetmap.org/">Open Street Map</a>
-            (OSM)</p>
-            <h4 id="JOSM_za_Open_Historical_Map">JOSM za <em>Open
-            Historical Map</em></h4>
-            <p>JOSM lahko uporabljaš tudi za urejanje <a
-            href="https://www.openhistoricalmap.org/">Open Historical
-            Map</a> (OHM), za to pa moraš spremeniti nastavitve tako, da
-            program uporablja ustrezen strežnik za prenos podatkov in
-            nalaganje sprememb.</p>
-            <p>Če JOSMa ne nameravaš uporabljati zgolj za urejanje OHM,
-            je priporočeno ustvariti ločeno datoteko z nastavitvami, da
-            ti ni treba nastavitev spreminjati vsakič, ko urejaš drug
-            zemljevid (OSM/OHM). V nasprotnem primeru preskoči ta
-            korak.</p>
-            <ul>
-            <li>Nastavitvena datoteka se običajno nahaja na naslovu
-            <code>~/.config/JOSM/preferences.xml</code>. Ustvari dvojnik
-            teh nastavitev (npr.
-            <code>~/.config/JOHM/preferences.xml</code>).</li>
-            <li>Zaženi JOSM tako, da uporablja ta dvojnik nastavitev:
-            <code>JAVA_OPTS="-Djosm.pref=$HOME/.config/JOHM" josm</code>
-            (ob zagonu programu poveš, katere nastavitve naj
-            uporabi).</li>
-            </ul>
-            <p>Urejanje nastavitev za uporabo OHM (te nastavitve se bodo
-            shranile v nastavitveno datoteko, s katero s program
-            odprl):</p>
-            <ul>
-            <li>V <em>Nastavitvah/Preferences</em> odkljukaj <em>“Use
-            the default OSM server URL”</em> in pod <em>OSM Server
-            URL</em> vnesi <a
-            href="https://www.openhistoricalmap.org/api"
-            class="uri">https://www.openhistoricalmap.org/api</a>.
-            Pritisni <em>Validate</em>. Tako nastaviš ustrezen
-            strežnik.</li>
-            <li>Prijavi se s svojim računom za OHM (pred tem se odstrani
-            svoj račun za OSM, če si se pred tem prijavil z njim).</li>
-            <li>Poljubno nastavi še <em>Overpass server</em> na <a
-            href="https://overpass-api.openhistoricalmap.org/api/"
-            class="uri">https://overpass-api.openhistoricalmap.org/api/</a>.</li>
-            <li>Poljubno nastavi vzdevek za zagon JOHMa v terminalu: na
-            konec datoteke <code>~/.bashrc</code>dodaj:
-            <code>alias johm='JAVA_OPTS="-Djosm.pref=$HOME/.config/JOHM" josm'</code>
-            (shrani in posodobi rabo te datoteke z
-            <code>source ~/.bashrc</code>). Zdaj lahko program odpreš z
-            ukazom <code>johm</code>.
-            <ul>
-            <li>Lahko še ustvariš skripto <code>~/.local/bin/johm</code>
-            s sledečo vsebino:
-            <code>bash       #!/bin/bash       JAVA_OPTS="-Djosm.pref=$HOME/.config/JOHM" josm "$@"</code></li>
-            </ul></li>
-            </ul>
-            <p>Uporabni vtičniki za “JOHM”:</p>
-            <ul>
-            <li><a
-            href="https://github.com/OpenHistoricalMap/ohm-date-filter/">ohm-date-filter</a>:
-            zasenči elemente, ki niso znotraj izbranega obdobja</li>
-            <li><a href="https://github.com/JOSM/PicLayer">PicLayer</a>:
-            prikaz slike zemljevida in nje umeščanje v prostor (<a
-            href="https://wiki.openstreetmap.org/wiki/JOSM/Plugins/PicLayer">na
-            <em>Wiki</em>ju</a>)</li>
-            </ul>
             <hr />
             <h2 id="Zunanje_povezave_in_viri">Zunanje povezave in
             viri</h2>
             <ul>
-            <li><p><a
+            <li><a
             href="https://community.hetzner.com/tutorials/howto-ssh-key">Hetzner
-            Community - Tutorials - Setting up an SSH key</a> -
-            ustvarjanje varsnostnih ključev SSH;</p></li>
-            <li><p><a href="https://vim.rtorr.com/">VIM Cheat Sheet</a>
-            - bližnjice v VIM-u;</p></li>
-            <li><p><a
+            Community - Tutorials - Setting up an SSH key</a> –
+            ustvarjanje varnostnih ključev SSH</li>
+            <li><a href="https://vim.rtorr.com/">VIM Cheat Sheet</a> –
+            bližnjice v VIM-u</li>
+            <li><a
             href="https://docs.codeberg.org/getting-started/first-repository/">Codeberg
-            Docs - Your First Repository</a> - Git pri Codebergu, med
-            drugim;</p></li>
-            <li><p><a
-            href="https://anvaka.github.io/pm/#/?_k=hl5p8n">Software
-            Galaxies</a> (zemljevid odvisnosti med posameznimi paketi
-            glede naupravitelja paketov)</p></li>
-            <li><p><a
+            Docs - Your First Repository</a> – Git pri Codebergu, med
+            drugim</li>
+            <li><a
             href="https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/JOSM">Wiki
-            OpenStreetMap – OpenHistoricalMap/JOSM</a></p></li>
-            <li><p><a
-            href="https://www.youtube.com/watch?v=6MaTMuFVGck">YT –
-            Mashed – COMPLETE Beginners guide to Suckless (Dwm, Dmenu,
-            ST)</a></p></li>
+            OpenStreetMap – OpenHistoricalMap/JOSM</a></li>
+            <li><a href="https://www.youtube.com/watch?v=6MaTMuFVGck">YT
+            – Mashed – COMPLETE Beginners guide to Suckless (Dwm, Dmenu,
+            ST)</a></li>
+            </ul>
+            <p>Drugo, povezano z Linuxom:</p>
+            <ul>
+            <li><a
+            href="https://anvaka.github.io/pm/#/?_k=hl5p8n">Software
+            Galaxies</a> – zemljevid odvisnosti med posameznimi paketi
+            glede na upravitelja paketov</li>
             </ul>
         </div>
     </main>

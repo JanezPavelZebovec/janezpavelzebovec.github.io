@@ -1,16 +1,32 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-05-03
+date: 2026-05-05
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
 ---
 
-# Vodič skozi namestitev Linuxa
+# Vodič skozi namestitev uporabniškega okolja na Linux Debianu
 
-Nekatere moje nastavitvene in druge datoteke Linuxa se nahajajo na [Codebergu: My Linux Configs](https://codeberg.org/JanezPavelZebovec/My_Linux_configs).
+Nekatere moje nastavitvene in druge datoteke Linuxa se še nahajajo na [Codebergu: My Linux Configs](https://codeberg.org/JanezPavelZebovec/My_Linux_configs). Sicer pa je tu seznam datotek, ki so na tem speltišču:
 
-Tukaj so navedeni koraki, po katerih prideš do skoraj enakega okolja kot je moje.
+- etc/systemd/system/
+    - [log-halt.service](/moj_linux/etc/systemd/system/log-halt.service)
+    - [log-poweroff.service](/moj_linux/etc/systemd/system/log-poweroff.service)
+    - [log-reboot.service](/moj_linux/etc/systemd/system/log-reboot.service)
+    - [log-startup.service](/moj_linux/etc/systemd/system/log-startup.service)
+- home/janezpavel/viri/
+    - dwm/config.h
+    - slock/
+        - config.h
+        - slock.c
+    - slstatus/
+        - components/raba.c
+        - config.h
+        - Makefile
+    - st/config.h
+
+Tukaj so navedeni koraki, po katerih prideš do skoraj enakega okolja kot je moje:
 
 ## Ustvarjanje zagonskega ključka in dostop do zagonskega *menija*
 
@@ -263,6 +279,7 @@ Knjižnice:
     - `texlive-lang-european` – evropski jezikovni paket
     - `texlive-science` – znanstveni paket
     - `cm-super` – nek paket pisav, med drugim lahko potem uporabljaš LaTex v grafih Matplotlib
+    - `dvipng`
 
 ### Uporaba lastnih *skript*
 
@@ -410,6 +427,13 @@ V [**~/viri/dwm/config.h**](/moj_linux/home/janezpavel/viri/dwm/config.h):
 - `mkdir -p ~/.config/lf/` – ustvari *mapo* za nastavitveno datoteko
 - `touch ~/.config/lf/lfrc` – ustvari nastavitveno datoteko [**lfrc**](/moj_linux/home/janezpavel/.config/lf/lfrc) za LF
 
+#### Eduroam
+
+- prenesi nameščevalnik Eduroam za Linux za svoje učilišče
+- `sudo apt install python3-dbus` – prenesi D-Bus, ki ga nameščevalnik Eduroam zahteva (oz. ga bo, če ga ne namestiš)
+- `python3 eduroam-linux-blablabla.py` – poženi prenešeni nameščevalnik
+- vnesi uporabniško ime in geslo – in namestitev je uspela: zdaj naj bi se lahko povezal na omrežje Eduroam brez vpisa kakršnegakoli gesla
+
 ---
 
 ## Še za narediti
@@ -426,7 +450,7 @@ V [**~/viri/dwm/config.h**](/moj_linux/home/janezpavel/viri/dwm/config.h):
 
 ---
 
-# Namestitev strežnika
+# Namestitev strežnika na Linux Debianu
 
 Vsi koraki razen "zadnjega" so enaki.
 V *Software Selection* (med zadnjimi koraki) naj bosta izbrana le *Standard System Utilities* in *SSH server*. Za strežnik namreč ne potrebuješ namitnega okolja.

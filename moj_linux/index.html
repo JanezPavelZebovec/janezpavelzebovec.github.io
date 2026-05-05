@@ -31,13 +31,14 @@ sistema"/>
             </svg>
         </a>
 
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-05-03">2026-05-03</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-05-05">2026-05-05</time></p>
     </header>
     <nav>
         <ul>
-        <li><a href="#Vodic_skozi_namestitev_Linuxa"
-        id="toc-Vodic_skozi_namestitev_Linuxa">Vodič skozi namestitev
-        Linuxa</a>
+        <li><a
+        href="#Vodic_skozi_namestitev_uporabniskega_okolja_na_Linux_Debianu"
+        id="toc-Vodic_skozi_namestitev_uporabniskega_okolja_na_Linux_Debianu">Vodič
+        skozi namestitev uporabniškega okolja na Linux Debianu</a>
         <ul>
         <li><a
         href="#Ustvarjanje_zagonskega_kljucka_in_dostop_do_zagonskega_menija"
@@ -84,20 +85,52 @@ sistema"/>
         <li><a href="#Se_za_narediti" id="toc-Se_za_narediti">Še za
         narediti</a></li>
         </ul></li>
-        <li><a href="#Namestitev_streznika"
-        id="toc-Namestitev_streznika">Namestitev strežnika</a></li>
+        <li><a href="#Namestitev_streznika_na_Linux_Debianu"
+        id="toc-Namestitev_streznika_na_Linux_Debianu">Namestitev
+        strežnika na Linux Debianu</a></li>
         </ul>
     </nav>
     <main>
         <div class="content">
-            <h1 id="Vodic_skozi_namestitev_Linuxa">Vodič skozi
-            namestitev Linuxa</h1>
-            <p>Nekatere moje nastavitvene in druge datoteke Linuxa se
+            <h1
+            id="Vodic_skozi_namestitev_uporabniskega_okolja_na_Linux_Debianu">Vodič
+            skozi namestitev uporabniškega okolja na Linux Debianu</h1>
+            <p>Nekatere moje nastavitvene in druge datoteke Linuxa se še
             nahajajo na <a
             href="https://codeberg.org/JanezPavelZebovec/My_Linux_configs">Codebergu:
-            My Linux Configs</a>.</p>
+            My Linux Configs</a>. Sicer pa je tu seznam datotek, ki so
+            na tem speltišču:</p>
+            <ul>
+            <li>etc/systemd/system/
+            <ul>
+            <li><a
+            href="/moj_linux/etc/systemd/system/log-halt.service">log-halt.service</a></li>
+            <li><a
+            href="/moj_linux/etc/systemd/system/log-poweroff.service">log-poweroff.service</a></li>
+            <li><a
+            href="/moj_linux/etc/systemd/system/log-reboot.service">log-reboot.service</a></li>
+            <li><a
+            href="/moj_linux/etc/systemd/system/log-startup.service">log-startup.service</a></li>
+            </ul></li>
+            <li>home/janezpavel/viri/
+            <ul>
+            <li>dwm/config.h</li>
+            <li>slock/
+            <ul>
+            <li>config.h</li>
+            <li>slock.c</li>
+            </ul></li>
+            <li>slstatus/
+            <ul>
+            <li>components/raba.c</li>
+            <li>config.h</li>
+            <li>Makefile</li>
+            </ul></li>
+            <li>st/config.h</li>
+            </ul></li>
+            </ul>
             <p>Tukaj so navedeni koraki, po katerih prideš do skoraj
-            enakega okolja kot je moje.</p>
+            enakega okolja kot je moje:</p>
             <h2
             id="Ustvarjanje_zagonskega_kljucka_in_dostop_do_zagonskega_menija">Ustvarjanje
             zagonskega ključka in dostop do zagonskega
@@ -613,6 +646,7 @@ sistema"/>
             <li><code>texlive-science</code> – znanstveni paket</li>
             <li><code>cm-super</code> – nek paket pisav, med drugim
             lahko potem uporabljaš LaTex v grafih Matplotlib</li>
+            <li><code>dvipng</code></li>
             </ul></li>
             </ul>
             <h3 id="Uporaba_lastnih_skript">Uporaba lastnih
@@ -834,6 +868,19 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             href="/moj_linux/home/janezpavel/.config/lf/lfrc"><strong>lfrc</strong></a>
             za LF</li>
             </ul>
+            <h4 id="Eduroam">Eduroam</h4>
+            <ul>
+            <li>prenesi nameščevalnik Eduroam za Linux za svoje
+            učilišče</li>
+            <li><code>sudo apt install python3-dbus</code> – prenesi
+            D-Bus, ki ga nameščevalnik Eduroam zahteva (oz. ga bo, če ga
+            ne namestiš)</li>
+            <li><code>python3 eduroam-linux-blablabla.py</code> – poženi
+            prenešeni nameščevalnik</li>
+            <li>vnesi uporabniško ime in geslo – in namestitev je
+            uspela: zdaj naj bi se lahko povezal na omrežje Eduroam brez
+            vpisa kakršnegakoli gesla</li>
+            </ul>
             <hr />
             <h2 id="Se_za_narediti">Še za narediti</h2>
             <ul>
@@ -853,7 +900,8 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             <li><a href="https://qgis.org/">QGIS</a></li>
             </ul>
             <hr />
-            <h1 id="Namestitev_streznika">Namestitev strežnika</h1>
+            <h1 id="Namestitev_streznika_na_Linux_Debianu">Namestitev
+            strežnika na Linux Debianu</h1>
             <p>Vsi koraki razen “zadnjega” so enaki. V <em>Software
             Selection</em> (med zadnjimi koraki) naj bosta izbrana le
             <em>Standard System Utilities</em> in <em>SSH server</em>.
