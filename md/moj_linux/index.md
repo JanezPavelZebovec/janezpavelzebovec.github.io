@@ -242,6 +242,28 @@ Debian ima precej staro različico, zato je bolje [prenesti AppImage](https://mu
 - `chmod +x ~/.local/bin/MuseScore.AppImage` – naredi datoteko izvršljivo
 - `~/.local/bin/MuseScore-4.4.2.AppImage` da poženeš orodje, oz. `~/.local/bin/MuseScore.AppImage install`, če želiš, da samodejno ustvari še datoteko ~/.local/share/applications/MuseScore.desktop, navodilno datoteko in *ikone*
 
+##### NeoMutt
+
+- `sudo apt install neomutt isync msmtp pass curl ca-certificates gettext` – Neomutt in njegove odvisnosti
+    - Izpisalo se bo vprašanje, ali želiš omogočiti *profil* AppArmor za msmpt, kar je priporočeno potrditi.
+- `sudo apt install notmuch lynx abook urlview` – priporočeni programi za zraven
+- `gpg --full-generate-key` – ustvari ključ GPG
+    - izberi privzeto vrsto: ECC (*sign and encrypt*; 9)
+    - izberi privzeto krivuljo (*Curve 25519*, 1)
+    - izberi privzeti čas poteka: ne poteče (*key does not expire*; 0)
+    - vpraša te po imenu
+    - vpraša te po el. naslovu
+    - izbereš lahko še neko opombo ključa
+    - potrdi izbire z **O**
+    - zdaj ustvariš geslo za ta ključ
+    - ključ je ustvarjen; lahko preveriš seznam svojih ključev z `gpg --list-secret-keys`
+- `pass init moj@elektronski.naslov`
+- `cd ~/viri/`
+- `git clone https://github.com/LukeSmithxyz/mutt-wizard`
+- `cd mutt-wizard`
+- `sudo make install`
+- `mw -a moj@elektronski.naslov` – dodaj elektronski naslov
+
 #### Izbirnik barv na zaslonu
 
 - potrebujemo [SXCS](https://codeberg.org/NRK/sxcs/) ([tudi na GitHubu](https://github.com/N-R-K/sxcs)):
@@ -368,6 +390,13 @@ Preverjanje:
 - `ssh -T git@github.com` / `ssh -T git@codeberg.org` – preveri dostop SSH do GitHuba/Codeberga
 - `git ls-remote ime-repozitorija` – preverjanje dostopa do oddaljenega *repozitorija*
 
+### Eduroam
+
+- prenesi nameščevalnik Eduroam za Linux za svoje učilišče
+- `sudo apt install python3-dbus` – prenesi D-Bus, ki ga nameščevalnik Eduroam zahteva (oz. ga bo, če ga ne namestiš)
+- `python3 eduroam-linux-blablabla.py` – poženi prenešeni nameščevalnik
+- vnesi uporabniško ime in geslo – in namestitev je uspela: zdaj naj bi se lahko povezal na omrežje Eduroam brez vpisa kakršnegakoli gesla
+
 ### Prilagajanje orodij
 
 (Glej tudi nastavitvene datoteke [na Codebergeu](https://codeberg.org/JanezPavelZebovec/My_Linux_configs), tu bom namreč pokril le nekatere bolj *tehnične* nastavitve, ne pa tudi slogovnih.)
@@ -426,13 +455,6 @@ V [**~/viri/dwm/config.h**](/moj_linux/home/janezpavel/viri/dwm/config.h):
 
 - `mkdir -p ~/.config/lf/` – ustvari *mapo* za nastavitveno datoteko
 - `touch ~/.config/lf/lfrc` – ustvari nastavitveno datoteko [**lfrc**](/moj_linux/home/janezpavel/.config/lf/lfrc) za LF
-
-#### Eduroam
-
-- prenesi nameščevalnik Eduroam za Linux za svoje učilišče
-- `sudo apt install python3-dbus` – prenesi D-Bus, ki ga nameščevalnik Eduroam zahteva (oz. ga bo, če ga ne namestiš)
-- `python3 eduroam-linux-blablabla.py` – poženi prenešeni nameščevalnik
-- vnesi uporabniško ime in geslo – in namestitev je uspela: zdaj naj bi se lahko povezal na omrežje Eduroam brez vpisa kakršnegakoli gesla
 
 ---
 

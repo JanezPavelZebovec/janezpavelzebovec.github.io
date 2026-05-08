@@ -79,6 +79,7 @@ sistema"/>
         <em>skript</em></a></li>
         <li><a href="#Posiljanje_GIT" id="toc-Posiljanje_GIT">Pošiljanje
         GIT</a></li>
+        <li><a href="#Eduroam" id="toc-Eduroam">Eduroam</a></li>
         <li><a href="#Prilagajanje_orodij"
         id="toc-Prilagajanje_orodij">Prilagajanje orodij</a></li>
         </ul></li>
@@ -586,6 +587,40 @@ sistema"/>
             ~/.local/share/applications/MuseScore.desktop, navodilno
             datoteko in <em>ikone</em></li>
             </ul>
+            <h5 id="NeoMutt">NeoMutt</h5>
+            <ul>
+            <li><code>sudo apt install neomutt isync msmtp pass curl ca-certificates gettext</code>
+            – Neomutt in njegove odvisnosti
+            <ul>
+            <li>Izpisalo se bo vprašanje, ali želiš omogočiti
+            <em>profil</em> AppArmor za msmpt, kar je priporočeno
+            potrditi.</li>
+            </ul></li>
+            <li><code>sudo apt install notmuch lynx abook urlview</code>
+            – priporočeni programi za zraven</li>
+            <li><code>gpg --full-generate-key</code> – ustvari ključ GPG
+            <ul>
+            <li>izberi privzeto vrsto: ECC (<em>sign and encrypt</em>;
+            9)</li>
+            <li>izberi privzeto krivuljo (<em>Curve 25519</em>, 1)</li>
+            <li>izberi privzeti čas poteka: ne poteče (<em>key does not
+            expire</em>; 0)</li>
+            <li>vpraša te po imenu</li>
+            <li>vpraša te po el. naslovu</li>
+            <li>izbereš lahko še neko opombo ključa</li>
+            <li>potrdi izbire z <strong>O</strong></li>
+            <li>zdaj ustvariš geslo za ta ključ</li>
+            <li>ključ je ustvarjen; lahko preveriš seznam svojih ključev
+            z <code>gpg --list-secret-keys</code></li>
+            </ul></li>
+            <li><code>pass init moj@elektronski.naslov</code></li>
+            <li><code>cd ~/viri/</code></li>
+            <li><code>git clone https://github.com/LukeSmithxyz/mutt-wizard</code></li>
+            <li><code>cd mutt-wizard</code></li>
+            <li><code>sudo make install</code></li>
+            <li><code>mw -a moj@elektronski.naslov</code> – dodaj
+            elektronski naslov</li>
+            </ul>
             <h4 id="Izbirnik_barv_na_zaslonu">Izbirnik barv na
             zaslonu</h4>
             <ul>
@@ -771,6 +806,19 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             preverjanje dostopa do oddaljenega
             <em>repozitorija</em></li>
             </ul>
+            <h3 id="Eduroam">Eduroam</h3>
+            <ul>
+            <li>prenesi nameščevalnik Eduroam za Linux za svoje
+            učilišče</li>
+            <li><code>sudo apt install python3-dbus</code> – prenesi
+            D-Bus, ki ga nameščevalnik Eduroam zahteva (oz. ga bo, če ga
+            ne namestiš)</li>
+            <li><code>python3 eduroam-linux-blablabla.py</code> – poženi
+            prenešeni nameščevalnik</li>
+            <li>vnesi uporabniško ime in geslo – in namestitev je
+            uspela: zdaj naj bi se lahko povezal na omrežje Eduroam brez
+            vpisa kakršnegakoli gesla</li>
+            </ul>
             <h3 id="Prilagajanje_orodij">Prilagajanje orodij</h3>
             <p>(Glej tudi nastavitvene datoteke <a
             href="https://codeberg.org/JanezPavelZebovec/My_Linux_configs">na
@@ -874,19 +922,6 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             nastavitveno datoteko <a
             href="/moj_linux/home/janezpavel/.config/lf/lfrc"><strong>lfrc</strong></a>
             za LF</li>
-            </ul>
-            <h4 id="Eduroam">Eduroam</h4>
-            <ul>
-            <li>prenesi nameščevalnik Eduroam za Linux za svoje
-            učilišče</li>
-            <li><code>sudo apt install python3-dbus</code> – prenesi
-            D-Bus, ki ga nameščevalnik Eduroam zahteva (oz. ga bo, če ga
-            ne namestiš)</li>
-            <li><code>python3 eduroam-linux-blablabla.py</code> – poženi
-            prenešeni nameščevalnik</li>
-            <li>vnesi uporabniško ime in geslo – in namestitev je
-            uspela: zdaj naj bi se lahko povezal na omrežje Eduroam brez
-            vpisa kakršnegakoli gesla</li>
             </ul>
             <hr />
             <h2 id="Se_za_narediti">Še za narediti</h2>

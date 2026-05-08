@@ -1,6 +1,6 @@
 ---
 title: Dnevnik
-date: 2026-05-01
+date: 2026-05-08
 description: Tu beležim svoj napredek pri projektih in nekatere druge stvari
 ---
 
@@ -24,4 +24,4 @@ Glej tudi dnevniške zapise [na OSM-ju](https://www.openstreetmap.org/user/Janez
 - 2026-03-06: [moj prevod](https://github.com/gsantner/markor/pull/2745) [Markorja](https://github.com/gsantner/markor) v slovenščino je bil sprejet
 - 2026-03-09: v OpenHistoricalMap sem uvozil vse GURS-ove naslove Slovenije
 - 2026-03-16: v OpenHistoricalMap sem uvozil prvo občino zgradb – Medvode
-- 2026-04-27: ponovno nameščanje Linux Debiana in posodobitev [Vodiča skozi namestitev Linuxa](https://janezpavelzebovec.net/vodic_skozi_namestitev_Linuxa)
+- 2026-04-27: ponovno nameščanje Linux Debiana (tudi z Debiana 12 na Debian 13) in posodobitev [Vodiča skozi namestitev Linuxa](https://janezpavelzebovec.net/vodic_skozi_namestitev_Linuxa)
