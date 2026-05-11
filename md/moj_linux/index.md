@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-05-05
+date: 2026-05-11
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -15,16 +15,40 @@ Nekatere moje stare nastavitvene in druge datoteke Linuxa se še nahajajo na [Co
     - [log-poweroff.service](/moj_linux/etc/systemd/system/log-poweroff.service)
     - [log-reboot.service](/moj_linux/etc/systemd/system/log-reboot.service)
     - [log-startup.service](/moj_linux/etc/systemd/system/log-startup.service)
-- home/janezpavel/viri/
-    - [dwm/config.h](/moj_linux/home/janezpavel/viri/dwm/config.h)
-    - slock/
-        - [config.h](/moj_linux/home/janezpavel/viri/slock/config.h)
-        - [slock.c](/moj_linux/home/janezpavel/viri/slock/slock.c)
-    - slstatus/
-        - [config.h](/moj_linux/home/janezpavel/viri/slstatus/config.h)
-        - [Makefile](/moj_linux/home/janezpavel/viri/slstatus/Makefile)
-        - [components/raba.c](/moj_linux/home/janezpavel/viri/slstatus/raba.c)
-    - [st/config.h](/moj_linux/home/janezpavel/viri/st/config.h)
+- home/janezpavel/
+    - .config/
+        - [lf/lfrc](moj_linux/home/janezpavel/.config/lf/lfrc)
+        - matplotlib/stylelib/
+            - [a4leze.mplstyle](moj_linux/home/janezpavel/.config/matlpotlib/stylelib/a4leze.mpstyle)
+            - [a4pokonci.mplstyle](moj_linux/home/janezpavel/.config/matlpotlib/stylelib/a4pokonci.mpstyle)
+            - [fpr.mplstyle](moj_linux/home/janezpavel/.config/matlpotlib/stylelib/fpr.mpstyle)
+            - [latex.mplstyle](moj_linux/home/janezpavel/.config/matlpotlib/stylelib/latex.mpstyle)
+            - [rof.mplstyle](moj_linux/home/janezpavel/.config/matlpotlib/stylelib/rof.mpstyle)
+        - [sxhkd/sxhkdrc](moj_linux/home/janezpavel/.config/sxhkd/sxhkdrc)
+        - [vim/vimrc](moj_linux/home/janezpavel/.config/vim/vimrc)
+        - [mimeapps.list](moj_linux/home/janezpavel/.config/mimeapps.list)
+    - .local/bin/
+        - [johm](/moj_linux/home/janezpavel/.local/bin/johm)
+        - [namesti-usb](/moj_linux/home/janezpavel/.local/bin/namesti-usb)
+        - [posnetki](/moj_linux/home/janezpavel/.local/bin/posnetki)
+        - [raba](/moj_linux/home/janezpavel/.local/bin/raba)
+        - [raba-izbira](/moj_linux/home/janezpavel/.local/bin/raba-izbira)
+        - [raba-statistika](/moj_linux/home/janezpavel/.local/bin/raba-statistika)
+        - [status-bar](/moj_linux/home/janezpavel/.local/bin/status-bar)
+        - [ugasni](/moj_linux/home/janezpavel/.local/bin/ugasni)
+    - viri/
+        - [dwm/config.h](/moj_linux/home/janezpavel/viri/dwm/config.h)
+        - slock/
+            - [config.h](/moj_linux/home/janezpavel/viri/slock/config.h)
+            - [slock.c](/moj_linux/home/janezpavel/viri/slock/slock.c)
+        - slstatus/
+            - [config.h](/moj_linux/home/janezpavel/viri/slstatus/config.h)
+            - [Makefile](/moj_linux/home/janezpavel/viri/slstatus/Makefile)
+            - [components/raba.c](/moj_linux/home/janezpavel/viri/slstatus/raba.c)
+        - [st/config.h](/moj_linux/home/janezpavel/viri/st/config.h)
+    - [.bashrc](/moj_linux/home/janezpavel/.bashrc)
+    - [.profile](/moj_linux/home/janezpavel/.profile)
+    - [.xinitrc](/moj_linux/home/janezpavel/.xinitrc)
 
 Tukaj so navedeni koraki, po katerih prideš do skoraj enakega okolja kot je moje:
 
@@ -158,6 +182,15 @@ Lahko ne uporablja želenih zvočnih *kartic* (izhodov; značilno se to zgodi, k
 
 - `pactl list short sinks` – izpiše seznam izhodov
 - `pactl set-default-sink ime_s_seznama.analog-stereo` – nastavi zvočno kartico vgrajenih zvočnikov, oz. ne zvočnikov priključenega zaslona (je to vedno *.analog-stero*?). Tako potem delujejo tudi slušalke (ker delujejo na zvočni *kartici* računalnika, ne povezanega zaslona).
+
+### Odstranitev nadležnega piskanja
+
+Za piskanje je odgovoren *modul* **pcspkr**.
+
+- `sudo rmmod pcspkr` – onemogoči ga začasno (do ponovnega zagona *sistema*)
+- `echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf` – onemogoči piskanje za vedno (tudi po ponovnem zagonu *sistema*)- to še ne onemogoči piskanja v trenutni seji (za to uporabi zgornji ukaz), ampak šele ob ponovnem zagonu
+    - enakovredno: v datoteko [**/etc/modprobe.d/nobeep.conf**](/moj_linux/etc/modprobe.d/nobeep.conf) dodaj `blacklist pcspkr`
+- `lsmod | grep pcspkr` – preveri, če je *modul* trenutno dejaven/omogočen
 
 ### Sistemski temni način
 

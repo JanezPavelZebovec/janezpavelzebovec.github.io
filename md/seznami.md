@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-04-25
+date: 2026-05-11
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -39,10 +39,18 @@ Moja *priporočila* (precej nepopolna)
 - [Lugos](https://www.lugos.si/) – Društvo uporabnikov Linuxa Slovenije
     - [Lugos – Wiki](https://wiki.lugos.si/)
 
+### Gibanja
+
+- [Keep Android Open](https://keepandroidopen.org/) – Google namreva zapreti glavno vejo razvoja Androida, močno omejitiodprtokodne razvijalce
+- [Long Now](https://longnow.org/) – družba, ki bi razmišljaja na ravni *civilizacije*, oz. daljne preteklosti in prihodnosti
+    - [The 10,000-year clock](https://longnow.org/clock/) – mehanska ura, ki naj bi z zelo malo vzdrževanja in občasnim navitjem delala 10 tisoč let
+        - [načrti za uro](https://static.longnow.org/media/ClockPlans01.pdf)
+
 ### Dobra podjetja
 
 - [Fairphone](https://fairphone.com/) – dlančniki, tudi slušalke (Nizozemska); popravljivost, okoljevarstvo, zeleni viri, pravični trg
 - [Framework](https://frame.work/) – prenosni računalniki, tudi namizni računalnik (ZDA); popravljivost
+- [PinePhone](https://pine64.org/) – dlančniki (*pametni telefoni*) z Linuxom in še nekaj drugih naprav
 
 ### Osebne spletne strani
 
@@ -291,8 +299,6 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 ### Modroslovje, krščanstvo
 
 - [Long Now](https://longnow.org/) – družba, ki bi razmišljaja na ravni *civilizacije*, oz. daljne preteklosti in prihodnosti
-    - [The 10,000-year clock](https://longnow.org/clock/) – mehanska ura, ki naj bi z zelo malo vzdrževanja in občasnim navitjem delala 10 tisoč let
-        - [načrti za uro](https://static.longnow.org/media/ClockPlans01.pdf)
 - [Luka Smith](https://lukesmith.xyz/) - zagovornik odrtokodnosti, Linuxa, spreobrnjenec v pravoslavstvo
 
 ### Rodoslovje

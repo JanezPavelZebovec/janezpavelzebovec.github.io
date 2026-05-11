@@ -2,7 +2,7 @@
 title: Umovanje
 date: 2026-05-08
 description: Moja osebna razmišljanja
-keywords: Janez Pavel Žebovec, misli, blog
+keywords: Janez Pavel Žebovec, razmišljanje, blog
 ---
 
 ## Znanost

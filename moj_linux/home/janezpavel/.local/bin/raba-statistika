@@ -1,0 +1,185 @@
+#!/usr/bin/env python3
+
+# STATISTIKA UPORABE RAČUNALNIKA ===========================================
+
+import csv
+from datetime import datetime, timezone
+from collections import defaultdict
+import matplotlib.pyplot as plt
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+FINISH = True # končaj zadnjo rabo do trenutnega časa
+LOCAL_TZ = ZoneInfo("Europe/Ljubljana")
+
+LOGFILE = Path.home() / "uporaba.csv"
+OUTPUT_DIR = Path.home() / "moje" / "razvidi"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+# halt, poweroff, reboot, startup, lock, unlock
+END_EVENTS = {"lock", "poweroff", "halt", "reboot"}
+START_EVENTS = {"unlock", "startup", "resume"}
+IGNORED_USAGE = {"raba-nic"}
+DEFAULT_USAGE = "raba-drugo"
+
+USAGES = {
+    "raba-yt": {"label": "YouTube", "color": "#ff0000"},
+    "raba-linux": {"label": "Linux", "color": "#444444"},
+    "raba-note": {"label": "Note", "color": "#0b3c8a"},
+    "raba-osm": {"label": "OSM", "color": "#2ca02c"},
+    "raba-ohm": {"label": "OHM", "color": "#8b5a2b"},
+    "raba-prevajanje": {"label": "Prevajanje", "color": "#ffd700"},
+    "raba-spletisce": {"label": "Spletišče", "color": "#66b2ff"},
+    "raba-ucilisce": {"label": "Učilišče", "color": "#000000", },
+    "raba-rodoslovje": {"label": "Rodoslovje", "color": "#6b8e23",},
+    "raba-film": {"label": "Film", "color": "#7b3f98"},
+    "raba-nakup": {"label": "Nakupovanje", "color": "#ff69b4"},
+    "raba-drugo": {"label": "Drugo", "color": "#cccccc"},
+}
+
+def usage_label(u):
+    return USAGES.get(u, {}).get("label", u.replace("raba-", ""))
+
+def usage_color(u):
+    return USAGES.get(u, {}).get("color", "#999999")
+
+def parse_time(s):
+    #return datetime.fromisoformat(s.replace("Z", "+00:00"))
+    return datetime.fromisoformat(s.replace("Z", "+00:00")).astimezone(LOCAL_TZ)
+
+# 1. Branje CSV -----------------------------------------------------------
+
+events = []
+
+with open(LOGFILE, newline="", encoding="utf-8") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        events.append({
+            "time": parse_time(row["cas"]),
+            "event": row["dogodek"]
+        })
+
+events.sort(key=lambda e: e["time"])
+
+# 2. Simulacija stanj -------------------------------------------------------
+
+daily_usage = defaultdict(lambda: defaultdict(float))
+total_usage = defaultdict(float)
+
+current_usage = None
+last_time = None
+
+for ev in events:
+    t = ev["time"]
+    e = ev["event"]
+
+    if last_time and current_usage and current_usage not in IGNORED_USAGE:
+        dt = (t - last_time).total_seconds() / 3600.0
+        #day = last_time.date()
+        day = last_time.astimezone(LOCAL_TZ).date()
+        daily_usage[day][current_usage] += dt
+        total_usage[current_usage] += dt
+
+    # sprememba stanja
+    if e.startswith("raba-"):
+        current_usage = e
+    elif e in END_EVENTS:
+        current_usage = None
+    elif e in START_EVENTS:
+        current_usage = DEFAULT_USAGE
+
+    last_time = t
+
+# Dokončaj zadnjo rabo do trenutnega časa
+if FINISH and last_time and current_usage and current_usage not in IGNORED_USAGE:
+    #now = datetime.now(timezone.utc)
+    now = datetime.now(LOCAL_TZ)
+    dt = (now - last_time).total_seconds() / 3600.0
+    day = last_time.date()
+    daily_usage[day][current_usage] += dt
+    total_usage[current_usage] += dt
+
+
+# 3. Priprava podatkov za graf --------------------------------------------
+
+days = sorted(daily_usage.keys())
+categories = sorted({u for d in daily_usage.values() for u in d})
+
+data = {u: [] for u in categories}
+total_per_day = []
+
+for day in days:
+    total = 0
+    for u in categories:
+        v = daily_usage[day].get(u, 0)
+        data[u].append(v)
+        total += v
+    total_per_day.append(total)
+
+
+
+# 4. Graf: dnevna uporaba + skupna črta ------------------------------------
+
+plt.figure()
+bottom = [0] * len(days)
+
+for u in categories:
+    plt.bar(
+        days,
+        data[u],
+        bottom=bottom,
+        label=usage_label(u),
+        color=usage_color(u),
+    )
+    #plt.bar(days, data[u], bottom=bottom, label=u)
+    bottom = [b + v for b, v in zip(bottom, data[u])]
+
+#plt.plot(days, total_per_day, marker="o", label="Skupaj")
+plt.legend()
+plt.ylabel("ure / dan")
+plt.title("Uporaba računalnika po dnevih")
+plt.xticks(rotation=45)
+plt.tight_layout()
+#plt.show()
+plt.savefig(OUTPUT_DIR / "uporaba_po_dnevih.pdf")
+plt.close()
+
+
+# 5. Tortni diagram --------------------------------------------------------
+
+labels = []
+sizes = []
+colors = []
+
+for u, t in total_usage.items():
+    if t > 0:
+        labels.append(usage_label(u))
+        #labels.append(u)
+        sizes.append(t)
+        colors.append(usage_color(u))
+
+plt.figure()
+plt.pie(sizes, labels=labels, colors=colors, autopct="%1.1f%%")
+plt.title("Delež uporabe po kategorijah")
+plt.tight_layout()
+#plt.show()
+plt.savefig(OUTPUT_DIR / "delez_uporabe.pdf")
+plt.close()
+
+
+# 6. Statistika v terminal ----------------------------------------------------
+
+total_time = sum(total_usage.values())
+num_days = len(days)
+avg_per_day = total_time / num_days if num_days else 0
+
+print("STATISTIKA UPORABE")
+print("------------------")
+print(f"Skupni zabeleženi čas uporabe: {total_time:.2f} h")
+
+if days:
+    print(f"Obdobje: {days[0]} – {days[-1]} ({num_days} dni)")
+else:
+    print("Ni podatkov.")
+
+print(f"Povprečna uporaba na dan: {avg_per_day:.2f} h")

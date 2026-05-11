@@ -31,7 +31,7 @@ sistema"/>
             </svg>
         </a>
 
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-05-05">2026-05-05</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-05-11">2026-05-11</time></p>
     </header>
     <nav>
         <ul>
@@ -63,6 +63,9 @@ sistema"/>
         <li><a href="#Zunanji_pogoni" id="toc-Zunanji_pogoni">Zunanji
         pogoni</a></li>
         <li><a href="#Zvok" id="toc-Zvok">Zvok</a></li>
+        <li><a href="#Odstranitev_nadleznega_piskanja"
+        id="toc-Odstranitev_nadleznega_piskanja">Odstranitev nadležnega
+        piskanja</a></li>
         <li><a href="#Sistemski_temni_nacin"
         id="toc-Sistemski_temni_nacin">Sistemski temni način</a></li>
         <li><a href="#Lastne_bliznjice" id="toc-Lastne_bliznjice">Lastne
@@ -113,7 +116,52 @@ sistema"/>
             <li><a
             href="/moj_linux/etc/systemd/system/log-startup.service">log-startup.service</a></li>
             </ul></li>
-            <li>home/janezpavel/viri/
+            <li>home/janezpavel/
+            <ul>
+            <li>.config/
+            <ul>
+            <li><a
+            href="moj_linux/home/janezpavel/.config/lf/lfrc">lf/lfrc</a></li>
+            <li>matplotlib/stylelib/
+            <ul>
+            <li><a
+            href="moj_linux/home/janezpavel/.config/matlpotlib/stylelib/a4leze.mpstyle">a4leze.mplstyle</a></li>
+            <li><a
+            href="moj_linux/home/janezpavel/.config/matlpotlib/stylelib/a4pokonci.mpstyle">a4pokonci.mplstyle</a></li>
+            <li><a
+            href="moj_linux/home/janezpavel/.config/matlpotlib/stylelib/fpr.mpstyle">fpr.mplstyle</a></li>
+            <li><a
+            href="moj_linux/home/janezpavel/.config/matlpotlib/stylelib/latex.mpstyle">latex.mplstyle</a></li>
+            <li><a
+            href="moj_linux/home/janezpavel/.config/matlpotlib/stylelib/rof.mpstyle">rof.mplstyle</a></li>
+            </ul></li>
+            <li><a
+            href="moj_linux/home/janezpavel/.config/sxhkd/sxhkdrc">sxhkd/sxhkdrc</a></li>
+            <li><a
+            href="moj_linux/home/janezpavel/.config/vim/vimrc">vim/vimrc</a></li>
+            <li><a
+            href="moj_linux/home/janezpavel/.config/mimeapps.list">mimeapps.list</a></li>
+            </ul></li>
+            <li>.local/bin/
+            <ul>
+            <li><a
+            href="/moj_linux/home/janezpavel/.local/bin/johm">johm</a></li>
+            <li><a
+            href="/moj_linux/home/janezpavel/.local/bin/namesti-usb">namesti-usb</a></li>
+            <li><a
+            href="/moj_linux/home/janezpavel/.local/bin/posnetki">posnetki</a></li>
+            <li><a
+            href="/moj_linux/home/janezpavel/.local/bin/raba">raba</a></li>
+            <li><a
+            href="/moj_linux/home/janezpavel/.local/bin/raba-izbira">raba-izbira</a></li>
+            <li><a
+            href="/moj_linux/home/janezpavel/.local/bin/raba-statistika">raba-statistika</a></li>
+            <li><a
+            href="/moj_linux/home/janezpavel/.local/bin/status-bar">status-bar</a></li>
+            <li><a
+            href="/moj_linux/home/janezpavel/.local/bin/ugasni">ugasni</a></li>
+            </ul></li>
+            <li>viri/
             <ul>
             <li><a
             href="/moj_linux/home/janezpavel/viri/dwm/config.h">dwm/config.h</a></li>
@@ -135,6 +183,13 @@ sistema"/>
             </ul></li>
             <li><a
             href="/moj_linux/home/janezpavel/viri/st/config.h">st/config.h</a></li>
+            </ul></li>
+            <li><a
+            href="/moj_linux/home/janezpavel/.bashrc">.bashrc</a></li>
+            <li><a
+            href="/moj_linux/home/janezpavel/.profile">.profile</a></li>
+            <li><a
+            href="/moj_linux/home/janezpavel/.xinitrc">.xinitrc</a></li>
             </ul></li>
             </ul>
             <p>Tukaj so navedeni koraki, po katerih prideš do skoraj
@@ -418,6 +473,26 @@ sistema"/>
             <em>.analog-stero</em>?). Tako potem delujejo tudi slušalke
             (ker delujejo na zvočni <em>kartici</em> računalnika, ne
             povezanega zaslona).</li>
+            </ul>
+            <h3 id="Odstranitev_nadleznega_piskanja">Odstranitev
+            nadležnega piskanja</h3>
+            <p>Za piskanje je odgovoren <em>modul</em>
+            <strong>pcspkr</strong>.</p>
+            <ul>
+            <li><code>sudo rmmod pcspkr</code> – onemogoči ga začasno
+            (do ponovnega zagona <em>sistema</em>)</li>
+            <li><code>echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf</code>
+            – onemogoči piskanje za vedno (tudi po ponovnem zagonu
+            <em>sistema</em>)- to še ne onemogoči piskanja v trenutni
+            seji (za to uporabi zgornji ukaz), ampak šele ob ponovnem
+            zagonu
+            <ul>
+            <li>enakovredno: v datoteko <a
+            href="/moj_linux/etc/modprobe.d/nobeep.conf"><strong>/etc/modprobe.d/nobeep.conf</strong></a>
+            dodaj <code>blacklist pcspkr</code></li>
+            </ul></li>
+            <li><code>lsmod | grep pcspkr</code> – preveri, če je
+            <em>modul</em> trenutno dejaven/omogočen</li>
             </ul>
             <h3 id="Sistemski_temni_nacin">Sistemski temni način</h3>
             <p>Da lahko v programih nastavimo <em>sistemsko</em>
