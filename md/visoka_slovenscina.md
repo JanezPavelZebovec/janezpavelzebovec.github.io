@@ -236,5 +236,5 @@ Predlogi so dobrodošli na [osebno@janezpavelzebovec.net](mailto:osebno@janezpav
 
 ### Sklici
 
-- [^L1]: [Leemeta – Neologizmi hrustopek, nosiglas in mnogovoz – veste o čem govorimo?; 2025-11-24](https://www.leemeta.si/blog/jezikovne-dileme/neologizmi-hrustopek-nosiglas-in-mnogovoz-veste-o-cem-govorimo)
-- [^L2]: [Leemeta – Nove besede ali novotvorjenke – lahko tudi vi izumite novo besedo?](https://www.leemeta.si/blog/jezikovne-dileme/nove-besede-ali-novotvorjenke-lahko-tudi-vi-izumite-novo-besedo)
+[^L1]: [Leemeta – Neologizmi hrustopek, nosiglas in mnogovoz – veste o čem govorimo?; 2025-11-24](https://www.leemeta.si/blog/jezikovne-dileme/neologizmi-hrustopek-nosiglas-in-mnogovoz-veste-o-cem-govorimo)
+[^L2]: [Leemeta – Nove besede ali novotvorjenke – lahko tudi vi izumite novo besedo?](https://www.leemeta.si/blog/jezikovne-dileme/nove-besede-ali-novotvorjenke-lahko-tudi-vi-izumite-novo-besedo)
