@@ -219,7 +219,7 @@ Te skovanke so (še) precej okorne in potrebne dodatnega premisleka ali druge za
 - **slikonôs** <small>(/2025-06-30)</small> < *televizija* <small>(< ang. *television*; fran. *télévision* < *tē̃le* = *daleč, v daljavi* + lat. *vīsiō* = *pogled, gledanje*)</small>
 - (ladja za prevoz vozil) < *trajekt*
 
-------------------------------------------------------------------------------------------------
+---
 
 Predlogi so dobrodošli na [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net).
 
