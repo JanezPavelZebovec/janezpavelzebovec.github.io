@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2026-05-01
+date: 2026-05-11
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 author: Janez Pavel Žebovec
@@ -143,29 +143,29 @@ Dobri predlogi na [*Fran - Predlagajte nove slovenske ustreznice*](https://fran.
 Drugi predlogi (slabše tvorjeni – pomeni, da imajo precej angleško tvorbo, sli so bolj dobesedni prevod, kot poimenovanje pojava – so označeni z zvezdico \*):
 
 - **gonilnik** <small>(Benjamin Žebovec, 2026-05-01)</small> < *motor* (kot tisto, kar poganja)
-- **kadníca**[^L1] <small>(Boštjan Mejak, 2025-11-24)</small> < *cigareta*
-- **lik**[^L1] <small>(Boštjan Mejak, 2025-11-24)</small> < *profil* (na npr. družbenih omrežjih)
-- **mnogovoz**[^L1] <small>(Ferrari Stojanović, /2025-11-24)</small> < *avtobus*
+- **kadníca**[@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *cigareta*
+- **lik**[@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *profil* (na npr. družbenih omrežjih)
+- **mnogovoz**[@leemeta1] <small>(Ferrari Stojanović, /2025-11-24)</small> < *avtobus*
 - **navléčnik**, **návlec** <small>(/2025-06-30)</small> < *pulover*
-- **nosiglas**[^L1]\* <small>(Ferrari Stojanović, /2025-11-24)</small> < *mobitel*
-- **podatkoslovje**[^L1] <small>(Boštjan Mejak, 2025-11-24)</small> < *statistika*
-- **podoba**[^L1] <small>(Boštjan Mejak, 2025-11-24)</small> < *profil* (na npr. družbenih omrežjih)
+- **nosiglas**[@leemeta1]\* <small>(Ferrari Stojanović, /2025-11-24)</small> < *mobitel*
+- **podatkoslovje**[@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *statistika*
+- **podoba**[@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *profil* (na npr. družbenih omrežjih)
 - **privzgíb** <small>(/2025-06-30)</small> < *pull up*
-- **razpóčnica**[^L1] < *žemlja*
+- **razpóčnica**[@leemeta1] < *žemlja*
 - **raznospôlništvo, raznospôlnik** < *LGBTQ..., kvir*
-- **rékanje**[^L1] <small>(Ferrari Stojanović, /2025-11-24)</small> < *rafting*
-- **slikodájnik**[^L1]\* <small>(Boštjan Mejak, 2025-11-24)</small> < *televizija*
-- **slikôvnica**[^L1] <small>(Boštjan Mejak, 2025-11-24)</small> < *album*
-- **samodêjnik**[^L1] <small>(Boštjan Mejak, 2025-11-24)</small> < *avtomat*
-- **samovoz**[^L1] <small>(Ferrari Stojanović, /2025-11-24)</small>  < *avtomobil*
+- **rékanje**[@leemeta1] <small>(Ferrari Stojanović, /2025-11-24)</small> < *rafting*
+- **slikodájnik**[@leemeta1]\* <small>(Boštjan Mejak, 2025-11-24)</small> < *televizija*
+- **slikôvnica**[@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *album*
+- **samodêjnik**[@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *avtomat*
+- **samovoz**[@leemeta1] <small>(Ferrari Stojanović, /2025-11-24)</small>  < *avtomobil*
 - **sámovóz** <small>(Filip Žebovec, /2025-06-30)</small> < *avtonomni avtomobil/avto*
-- **snovoslôvje**[^L1] <small>(Boštjan mejak, 2025-11-24)</small> < *kemija*
-- **vedobežnik**[^L2] < kdor se boji znanja, védenja, kdor beži pred resnico
+- **snovoslôvje**[@leemeta1] <small>(Boštjan mejak, 2025-11-24)</small> < *kemija*
+- **vedobežnik**[@leemeta2] < kdor se boji znanja, védenja, kdor beži pred resnico
 - **vrstno približevanje** <small>(Iztok Žebovec?, /2026-04-13)</small> < *konvergenca* (računsko)
-- **vrženček**[^L1] <small>(/2025)</small> < *žeton za avtobus* 
-- **zloženec**, **rezinec**[^L1] <small>(Ferrari Stojanović, /2025-11-24)</small> < *sendvič*
-- **zvokodájnik**[^L1]\* <small>(Boštjan Mejak, 2025-11-24)</small> < *radio*
-- **živosnovoslovje**[^L1] <small>(Boštjan Mejak, 2025-11-24)</small> < *biokemija*
+- **vrženček**[@leemeta1] <small>(/2025)</small> < *žeton za avtobus* 
+- **zloženec**, **rezinec**[@leemeta1] <small>(Ferrari Stojanović, /2025-11-24)</small> < *sendvič*
+- **zvokodájnik**[@leemeta1]\* <small>(Boštjan Mejak, 2025-11-24)</small> < *radio*
+- **živosnovoslovje**[@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *biokemija*
 
 ### Moji predlogi
 
@@ -223,7 +223,7 @@ Te skovanke so (še) precej okorne in potrebne dodatnega premisleka ali druge za
 
 Predlogi so dobrodošli na [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net).
 
-## Zunanje povezave in viri
+## Zunanje povezave,  viri in sklici
 
 - [Fran - Slovarji Inštituta za slovenski jezik Frana Ramovša ZRC SAZU](https://www.fran.si/)
     - [Fran - Predlagajte nove slovenske ustreznice](https://www.fran.si/ustreznice)
@@ -236,5 +236,5 @@ Predlogi so dobrodošli na [osebno@janezpavelzebovec.net](mailto:osebno@janezpav
 
 ### Sklici
 
-[^L1]: [Leemeta – Neologizmi hrustopek, nosiglas in mnogovoz – veste o čem govorimo?; 2025-11-24](https://www.leemeta.si/blog/jezikovne-dileme/neologizmi-hrustopek-nosiglas-in-mnogovoz-veste-o-cem-govorimo)
-[^L2]: [Leemeta – Nove besede ali novotvorjenke – lahko tudi vi izumite novo besedo?](https://www.leemeta.si/blog/jezikovne-dileme/nove-besede-ali-novotvorjenke-lahko-tudi-vi-izumite-novo-besedo)
+- [Leemeta – Neologizmi hrustopek, nosiglas in mnogovoz – veste o čem govorimo?; 2025-11-24](https://www.leemeta.si/blog/jezikovne-dileme/neologizmi-hrustopek-nosiglas-in-mnogovoz-veste-o-cem-govorimo)
+- [Leemeta – Nove besede ali novotvorjenke – lahko tudi vi izumite novo besedo?](https://www.leemeta.si/blog/jezikovne-dileme/nove-besede-ali-novotvorjenke-lahko-tudi-vi-izumite-novo-besedo)
