@@ -143,29 +143,29 @@ Dobri predlogi na [*Fran - Predlagajte nove slovenske ustreznice*](https://fran.
 Drugi predlogi (slabše tvorjeni – pomeni, da imajo precej angleško tvorbo, sli so bolj dobesedni prevod, kot poimenovanje pojava – so označeni z zvezdico \*):
 
 - **gonilnik** <small>(Benjamin Žebovec, 2026-05-01)</small> < *motor* (kot tisto, kar poganja)
-- **kadníca**[@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *cigareta*
-- **lik**[@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *profil* (na npr. družbenih omrežjih)
-- **mnogovoz**[@leemeta1] <small>(Ferrari Stojanović, /2025-11-24)</small> < *avtobus*
+- **kadníca** [@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *cigareta*
+- **lik** [@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *profil* (na npr. družbenih omrežjih)
+- **mnogovoz** [@leemeta1] <small>(Ferrari Stojanović, /2025-11-24)</small> < *avtobus*
 - **navléčnik**, **návlec** <small>(/2025-06-30)</small> < *pulover*
-- **nosiglas**[@leemeta1]\* <small>(Ferrari Stojanović, /2025-11-24)</small> < *mobitel*
-- **podatkoslovje**[@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *statistika*
-- **podoba**[@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *profil* (na npr. družbenih omrežjih)
+- **nosiglas** [@leemeta1]\* <small>(Ferrari Stojanović, /2025-11-24)</small> < *mobitel*
+- **podatkoslovje** [@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *statistika*
+- **podoba** [@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *profil* (na npr. družbenih omrežjih)
 - **privzgíb** <small>(/2025-06-30)</small> < *pull up*
-- **razpóčnica**[@leemeta1] < *žemlja*
+- **razpóčnica** [@leemeta1] < *žemlja*
 - **raznospôlništvo, raznospôlnik** < *LGBTQ..., kvir*
-- **rékanje**[@leemeta1] <small>(Ferrari Stojanović, /2025-11-24)</small> < *rafting*
-- **slikodájnik**[@leemeta1]\* <small>(Boštjan Mejak, 2025-11-24)</small> < *televizija*
-- **slikôvnica**[@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *album*
-- **samodêjnik**[@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *avtomat*
-- **samovoz**[@leemeta1] <small>(Ferrari Stojanović, /2025-11-24)</small>  < *avtomobil*
+- **rékanje** [@leemeta1] <small>(Ferrari Stojanović, /2025-11-24)</small> < *rafting*
+- **slikodájnik** [@leemeta1]\* <small>(Boštjan Mejak, 2025-11-24)</small> < *televizija*
+- **slikôvnica** [@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *album*
+- **samodêjnik** [@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *avtomat*
+- **samovoz** [@leemeta1] <small>(Ferrari Stojanović, /2025-11-24)</small>  < *avtomobil*
 - **sámovóz** <small>(Filip Žebovec, /2025-06-30)</small> < *avtonomni avtomobil/avto*
-- **snovoslôvje**[@leemeta1] <small>(Boštjan mejak, 2025-11-24)</small> < *kemija*
-- **vedobežnik**[@leemeta2] < kdor se boji znanja, védenja, kdor beži pred resnico
+- **snovoslôvje** [@leemeta1] <small>(Boštjan mejak, 2025-11-24)</small> < *kemija*
+- **vedobežnik** [@leemeta2] < kdor se boji znanja, védenja, kdor beži pred resnico
 - **vrstno približevanje** <small>(Iztok Žebovec?, /2026-04-13)</small> < *konvergenca* (računsko)
-- **vrženček**[@leemeta1] <small>(/2025)</small> < *žeton za avtobus* 
-- **zloženec**, **rezinec**[@leemeta1] <small>(Ferrari Stojanović, /2025-11-24)</small> < *sendvič*
-- **zvokodájnik**[@leemeta1]\* <small>(Boštjan Mejak, 2025-11-24)</small> < *radio*
-- **živosnovoslovje**[@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *biokemija*
+- **vrženček** [@leemeta1] <small>(/2025)</small> < *žeton za avtobus* 
+- **zloženec**, **rezinec** [@leemeta1] <small>(Ferrari Stojanović, /2025-11-24)</small> < *sendvič*
+- **zvokodájnik** [@leemeta1]\* <small>(Boštjan Mejak, 2025-11-24)</small> < *radio*
+- **živosnovoslovje** [@leemeta1] <small>(Boštjan Mejak, 2025-11-24)</small> < *biokemija*
 
 ### Moji predlogi
 
