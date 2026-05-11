@@ -297,18 +297,6 @@ Debian ima precej staro različico, zato je bolje [prenesti AppImage](https://mu
 - `sudo make install`
 - `mw -a moj@elektronski.naslov` – dodaj elektronski naslov
 
-#### Izbirnik barv na zaslonu
-
-- potrebujemo [SXCS](https://codeberg.org/NRK/sxcs/) ([tudi na GitHubu](https://github.com/N-R-K/sxcs)):
-    - `cd ~/viri/` – prenesli ga bomo v **viri**
-    - `git clone https://codeberg.org/NRK/sxcs.git` – prenese SXCS s Codeberga
-    - `cd ~/viri/sxcs/` – v *mapo* *programa*
-    - `cc -o sxcs sxcs.c -O3 -s -l X11 -l Xrender` – izgradimo orodje/*program*
-    - `sudo install -Dm755 sxcs /usr/local/bin/sxcs` – namestimo orodje na ustrezno mesto
-    - `sudo install -Dm644 sxcs.1 /usr/local/share/man/man1/sxcs.1` – namestimo navodila na ustrezno mesto
-    - `sudo mandb` – lahko še takoj osvežimo zbirko navodil
-    - če zdaj poženemo orodje v *terminalu* (`sxcs`), lahko *klikamo* z miško naokoli in se v *terminalu* izpisujejo barve *poklikanih* točk
-
 #### Programski jeziki
 
 ##### Python
@@ -335,6 +323,22 @@ Knjižnice:
     - `texlive-science` – znanstveni paket
     - `cm-super` – nek paket pisav, med drugim lahko potem uporabljaš LaTex v grafih Matplotlib
     - `dvipng`
+
+#### *Live-server*
+
+- `sudo apt install nodejs npm`
+
+#### Izbirnik barv na zaslonu
+
+- potrebujemo [SXCS](https://codeberg.org/NRK/sxcs/) ([tudi na GitHubu](https://github.com/N-R-K/sxcs)):
+    - `cd ~/viri/` – prenesli ga bomo v **viri**
+    - `git clone https://codeberg.org/NRK/sxcs.git` – prenese SXCS s Codeberga
+    - `cd ~/viri/sxcs/` – v *mapo* *programa*
+    - `cc -o sxcs sxcs.c -O3 -s -l X11 -l Xrender` – izgradimo orodje/*program*
+    - `sudo install -Dm755 sxcs /usr/local/bin/sxcs` – namestimo orodje na ustrezno mesto
+    - `sudo install -Dm644 sxcs.1 /usr/local/share/man/man1/sxcs.1` – namestimo navodila na ustrezno mesto
+    - `sudo mandb` – lahko še takoj osvežimo zbirko navodil
+    - če zdaj poženemo orodje v *terminalu* (`sxcs`), lahko *klikamo* z miško naokoli in se v *terminalu* izpisujejo barve *poklikanih* točk
 
 ### Uporaba lastnih *skript*
 
@@ -440,12 +444,19 @@ Preverjanje:
 - Premakni se v *mapo* orodja
 - `patch -p1 < patches/ime_patcha.diff` – datoteke orodja spremeni po navodilih iz datoteke *.diff*
 - Če se kaj ponesreči (javi napako, da ni bilo mogoče uporabiti določenih *patchov*), praviloma shrani spodletele poskuse v **datoteka.c.rej**. Nato je treba sprmembe opraviti ročno po navodilih v slednji datoteki.
+- `cp config.def.h config.h`
 - `sudo make clean install` – treba je ponovno "izgraditi" orodje in ga spremenjenega namestiti
 
 Uporabni *patchi*:
 
-- **ST**: [**Gruvbox**](https://st.suckless.org/patches/gruvbox/) – lepa barvna *tema*
-- **SLock**: [**Message**](https://tools.suckless.org/slock/patches/message/) – sporočilo na zaklenjenem zaslonu
+- **ST**:
+    - [**Gruvbox**](https://st.suckless.org/patches/gruvbox/) – lepa barvna *tema*
+    - [**Scrollback**](https://st.suckless.org/patches/scrollbacko/)
+        - [st-scrollback-0.9.2.diff](https://st.suckless.org/patches/scrollback/st-scrollback-0.9.2.diff) – glavni del *scrollbacka*
+        - [st-scrollback-reflow-0.9.1.diff](https://st.suckless.org/patches/scrollback/st-scrollback-reflow-0.9.2.diff) – za pričakovano obnašanje ob spreminjanju okna terminala: preširoke vrstice se prelomijo v novo vrstico, se ne odrežejo
+        - [st-scrollback-mouse-0.9.2.diff](https://st.suckless.org/patches/scrollback/st-scrollback-mouse-0.9.2.diff) – drsenje po vsebini z koleščkom miške (**Shift+ScrollUp**/**Shift+ScrollDown**)
+- **SLock**:
+    -[**Message**](https://tools.suckless.org/slock/patches/message/) – sporočilo na zaklenjenem zaslonu
 
 #### VIM
 

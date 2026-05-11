@@ -143,29 +143,29 @@ Dobri predlogi na [*Fran - Predlagajte nove slovenske ustreznice*](https://fran.
 Drugi predlogi (slabše tvorjeni – pomeni, da imajo precej angleško tvorbo, sli so bolj dobesedni prevod, kot poimenovanje pojava – so označeni z zvezdico \*):
 
 - **gonilnik** (Benjamin Žebovec, 2026-05-01) < *motor* (kot tisto, kar poganja)
-- [**kadníca**][L1] (Boštjan Mejak, 2025-11-24] < *cigareta*
-- [**lik**][L1] (Boštjan Mejak, 2025-11-24) < *profil* (na npr. družbenih omrežjih)
-- [**mnogovoz**][L1] (Ferrari Stojanović, /2025-11-24) < *avtobus*
+- **kadníca** [^L1] (Boštjan Mejak, 2025-11-24] < *cigareta*
+- **lik** [^L1] (Boštjan Mejak, 2025-11-24) < *profil* (na npr. družbenih omrežjih)
+- **mnogovoz** [^L1] (Ferrari Stojanović, /2025-11-24) < *avtobus*
 - **navléčnik**, **návlec** (/2025-06-30) < *pulover* <small>(< nem. *Pullover* < ang. *pull = *(po)vleči* + *over* = *čez/preko*)</small>
-- [**nosiglas**][L1]\* (Ferrari Stojanović, /2025-11-24) < *mobitel*
-- [**podatkoslovje**][L1] (Boštjan Mejak, 2025-11-24) < *statistika*
-- [**podoba**][L1] (Boštjan Mejak, 2025-11-24) < *profil* (na npr. družbenih omrežjih)
+- **nosiglas** [^L1]\* (Ferrari Stojanović, /2025-11-24) < *mobitel*
+- **podatkoslovje** [^L1] (Boštjan Mejak, 2025-11-24) < *statistika*
+- **podoba** [^L1] (Boštjan Mejak, 2025-11-24) < *profil* (na npr. družbenih omrežjih)
 - **privzgíb** (/2025-06-30) < *pull up* <small>(< ang. *pull up* = *povleči (se) gor*)</small>
-- [**razpóčnica** < *žemlja*][L1]
+- **razpóčnica** [^L1] < *žemlja*
 - **raznospôlništvo, raznospôlnik** < *LGBTQ..., kvir*
-- [**rékanje**][L1] (Ferrari Stojanović, /2025-11-24) < *rafting*
-- [**slikodájnik**][L1]\* (Boštjan Mejak, 2025-11-24) < *televizija*
-- [**slikôvnica**][L1] (Boštjan Mejak, 2025-11-24) < *album*
-- [**samodêjnik**][L1] (Boštjan Mejak, 2025-11-24) < *avtomat*
-- [**samovoz**][L1] (Ferrari Stojanović, /2025-11-24)  < *avtomobil*
+- **rékanje** [^L1] (Ferrari Stojanović, /2025-11-24) < *rafting*
+- **slikodájnik** [^L1]\* (Boštjan Mejak, 2025-11-24) < *televizija*
+- **slikôvnica** [^L1] (Boštjan Mejak, 2025-11-24) < *album*
+- **samodêjnik** [^L1] (Boštjan Mejak, 2025-11-24) < *avtomat*
+- **samovoz** [^L1] (Ferrari Stojanović, /2025-11-24)  < *avtomobil*
 - **sámovóz** (Filip Žebovec, /2025-06-30) < *avtonomni avtomobil/avto*
-- [**snovoslôvje**][L1] (Boštjan mejak, 2025-11-24) < *kemija*
-- [**vedobežnik**][L2] < kdor se boji znanja, védenja, kdor beži pred resnico
+- **snovoslôvje** [^L1] (Boštjan mejak, 2025-11-24) < *kemija*
+- **vedobežnik** [^L2] < kdor se boji znanja, védenja, kdor beži pred resnico
 - **vrstno približevanje** (Iztok Žebovec?, /2026-04-13) < *konvergenca* (računsko)
-- [**vrženček**][L1] (2025 < *žeton za avtobus* 
-- [**zloženec**, **rezinec**][L1] (Ferrari Stojanović, /2025-11-24) < *sendvič*
-- [**zvokodájnik**][L1]\* (Boštjan Mejak, 2025-11-24) < *radio*
-- [**živosnovoslovje**][L1] (Boštjan Mejak, 2025-11-24) < *biokemija*
+- **vrženček** [^L1] (2025 < *žeton za avtobus* 
+- **zloženec**, **rezinec** [^L1] (Ferrari Stojanović, /2025-11-24) < *sendvič*
+- **zvokodájnik** [^L1]\* (Boštjan Mejak, 2025-11-24) < *radio*
+- **živosnovoslovje** [^L1] (Boštjan Mejak, 2025-11-24) < *biokemija*
 
 ### Moji predlogi
 
@@ -236,5 +236,5 @@ Predlogi so dobrodošli na [osebno@janezpavelzebovec.net](mailto:osebno@janezpav
 
 ### Sklici
 
-- [L1]: <https://www.leemeta.si/blog/jezikovne-dileme/neologizmi-hrustopek-nosiglas-in-mnogovoz-veste-o-cem-govorimo> (Leemeta – Neologizmi hrustopek, nosiglas in mnogovoz – veste o čem govorimo?; 2025-11-24)
-- [L2]: <https://www.leemeta.si/blog/jezikovne-dileme/nove-besede-ali-novotvorjenke-lahko-tudi-vi-izumite-novo-besedo> (Leemeta – Nove besede ali novotvorjenke – lahko tudi vi izumite novo besedo?)
+- [^L1]: [Leemeta – Neologizmi hrustopek, nosiglas in mnogovoz – veste o čem govorimo?; 2025-11-24](https://www.leemeta.si/blog/jezikovne-dileme/neologizmi-hrustopek-nosiglas-in-mnogovoz-veste-o-cem-govorimo)
+- [^L2]: [Leemeta – Nove besede ali novotvorjenke – lahko tudi vi izumite novo besedo?](https://www.leemeta.si/blog/jezikovne-dileme/nove-besede-ali-novotvorjenke-lahko-tudi-vi-izumite-novo-besedo)

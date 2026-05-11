@@ -696,33 +696,6 @@ sistema"/>
             <li><code>mw -a moj@elektronski.naslov</code> – dodaj
             elektronski naslov</li>
             </ul>
-            <h4 id="Izbirnik_barv_na_zaslonu">Izbirnik barv na
-            zaslonu</h4>
-            <ul>
-            <li>potrebujemo <a
-            href="https://codeberg.org/NRK/sxcs/">SXCS</a> (<a
-            href="https://github.com/N-R-K/sxcs">tudi na GitHubu</a>):
-            <ul>
-            <li><code>cd ~/viri/</code> – prenesli ga bomo v
-            <strong>viri</strong></li>
-            <li><code>git clone https://codeberg.org/NRK/sxcs.git</code>
-            – prenese SXCS s Codeberga</li>
-            <li><code>cd ~/viri/sxcs/</code> – v <em>mapo</em>
-            <em>programa</em></li>
-            <li><code>cc -o sxcs sxcs.c -O3 -s -l X11 -l Xrender</code>
-            – izgradimo orodje/<em>program</em></li>
-            <li><code>sudo install -Dm755 sxcs /usr/local/bin/sxcs</code>
-            – namestimo orodje na ustrezno mesto</li>
-            <li><code>sudo install -Dm644 sxcs.1 /usr/local/share/man/man1/sxcs.1</code>
-            – namestimo navodila na ustrezno mesto</li>
-            <li><code>sudo mandb</code> – lahko še takoj osvežimo zbirko
-            navodil</li>
-            <li>če zdaj poženemo orodje v <em>terminalu</em>
-            (<code>sxcs</code>), lahko <em>klikamo</em> z miško naokoli
-            in se v <em>terminalu</em> izpisujejo barve
-            <em>poklikanih</em> točk</li>
-            </ul></li>
-            </ul>
             <h4 id="Programski_jeziki">Programski jeziki</h4>
             <h5 id="Python">Python</h5>
             <p><code>sudo apt install pyton3</code> – namesti osnovni
@@ -764,6 +737,37 @@ sistema"/>
             <li><code>cm-super</code> – nek paket pisav, med drugim
             lahko potem uporabljaš LaTex v grafih Matplotlib</li>
             <li><code>dvipng</code></li>
+            </ul></li>
+            </ul>
+            <h4 id="Live_server"><em>Live-server</em></h4>
+            <ul>
+            <li><code>sudo apt install nodejs npm</code></li>
+            </ul>
+            <h4 id="Izbirnik_barv_na_zaslonu">Izbirnik barv na
+            zaslonu</h4>
+            <ul>
+            <li>potrebujemo <a
+            href="https://codeberg.org/NRK/sxcs/">SXCS</a> (<a
+            href="https://github.com/N-R-K/sxcs">tudi na GitHubu</a>):
+            <ul>
+            <li><code>cd ~/viri/</code> – prenesli ga bomo v
+            <strong>viri</strong></li>
+            <li><code>git clone https://codeberg.org/NRK/sxcs.git</code>
+            – prenese SXCS s Codeberga</li>
+            <li><code>cd ~/viri/sxcs/</code> – v <em>mapo</em>
+            <em>programa</em></li>
+            <li><code>cc -o sxcs sxcs.c -O3 -s -l X11 -l Xrender</code>
+            – izgradimo orodje/<em>program</em></li>
+            <li><code>sudo install -Dm755 sxcs /usr/local/bin/sxcs</code>
+            – namestimo orodje na ustrezno mesto</li>
+            <li><code>sudo install -Dm644 sxcs.1 /usr/local/share/man/man1/sxcs.1</code>
+            – namestimo navodila na ustrezno mesto</li>
+            <li><code>sudo mandb</code> – lahko še takoj osvežimo zbirko
+            navodil</li>
+            <li>če zdaj poženemo orodje v <em>terminalu</em>
+            (<code>sxcs</code>), lahko <em>klikamo</em> z miško naokoli
+            in se v <em>terminalu</em> izpisujejo barve
+            <em>poklikanih</em> točk</li>
             </ul></li>
             </ul>
             <h3 id="Uporaba_lastnih_skript">Uporaba lastnih
@@ -913,15 +917,35 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             spodletele poskuse v <strong>datoteka.c.rej</strong>. Nato
             je treba sprmembe opraviti ročno po navodilih v slednji
             datoteki.</li>
+            <li><code>cp config.def.h config.h</code></li>
             <li><code>sudo make clean install</code> – treba je ponovno
             “izgraditi” orodje in ga spremenjenega namestiti</li>
             </ul>
             <p>Uporabni <em>patchi</em>:</p>
             <ul>
-            <li><strong>ST</strong>: <a
+            <li><strong>ST</strong>:
+            <ul>
+            <li><a
             href="https://st.suckless.org/patches/gruvbox/"><strong>Gruvbox</strong></a>
             – lepa barvna <em>tema</em></li>
-            <li><strong>SLock</strong>: <a
+            <li><a
+            href="https://st.suckless.org/patches/scrollbacko/"><strong>Scrollback</strong></a>
+            <ul>
+            <li><a
+            href="https://st.suckless.org/patches/scrollback/st-scrollback-0.9.2.diff">st-scrollback-0.9.2.diff</a>
+            – glavni del <em>scrollbacka</em></li>
+            <li><a
+            href="https://st.suckless.org/patches/scrollback/st-scrollback-reflow-0.9.2.diff">st-scrollback-reflow-0.9.1.diff</a>
+            – za pričakovano obnašanje ob spreminjanju okna terminala:
+            preširoke vrstice se prelomijo v novo vrstico, se ne
+            odrežejo</li>
+            <li><a
+            href="https://st.suckless.org/patches/scrollback/st-scrollback-mouse-0.9.2.diff">st-scrollback-mouse-0.9.2.diff</a>
+            – drsenje po vsebini z koleščkom miške
+            (<strong>Shift+ScrollUp</strong>/<strong>Shift+ScrollDown</strong>)</li>
+            </ul></li>
+            </ul></li>
+            <li><strong>SLock</strong>: -<a
             href="https://tools.suckless.org/slock/patches/message/"><strong>Message</strong></a>
             – sporočilo na zaklenjenem zaslonu</li>
             </ul>
