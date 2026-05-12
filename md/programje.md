@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2026-02-15
+date: 2026-05-11
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -173,13 +173,22 @@ Glej tudi: [Moje seznami](/seznami).
 
 ## Zunanje povezave in viri
 
+- [GitHub](https://github.com/) - spletno mesto za odprtokodne programe
+- [Codeberg](https://codeberg.org/) - boljše spletno mesto za odprtokodne programe
+
+### Računalniki
+
 - [Suckless.org - software that sucks less](https://suckless.org/) - kakovostni programi po načelu preprostosti, majhnosti, uporabnosti in, seveda, odprtokodnosti
     - [Suckless - Philosophy](https://suckless.org/philosophy/) - Sucklessova miselnost
     - [Suckless - Rocks](https://suckless.org/rocks/) - seznam programov, ki jih Suckless odobrava
     - [Suckless - Sucks](https://suckless.org/sucks/) - seznam programov in drugih zadev, ki jih Suckless **ne** odobrava
-- [F-Droid](https://f-droid.org/) - orodje za nameščanje odprtokodnih orodij za [Android](https://www.android.com/) knjižnice [Free and Open Source Software](https://freeopensourcesoftware.org/)
-- [GitHub](https://github.com/) - spletno mesto za odprtokodne programe
-- [Codeberg](https://codeberg.org/) - boljše spletno mesto za odprtokodne programe
 - [Luke Madison Smith](https://lukesmith.xyz/) - bister mož, zagovornik Linuxa, odprtokodnosti, preprostosti
     - [YouTube - Luke Smith](https://www.youtube.com/c/lukesmithxyz)
     - [GitHub - Luke Smith](https://github.com/LukeSmithxyz/)
+
+### Dlančniki
+
+- [F-Droid](https://f-droid.org/) - orodje za nameščanje odprtokodnih orodij za [Android](https://www.android.com/) knjižnice [Free and Open Source Software](https://freeopensourcesoftware.org/)
+- [FSFE: Free Your Android!](https://fsfe.org/activities/android/android.en.html)
+    - [FSFE: Why your phone isn't as free as your PC](https://fsfe.org/activities/android/locked_down.en.html)
+    - [FSFE: Liberate Your Device!](https://fsfe.org/activities/android/liberate.en.html)

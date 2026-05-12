@@ -34,6 +34,8 @@ Moja *priporočila* (precej nepopolna)
 
 - [Društvo za elektronsko in računalniško pismenost](https://derp.si/)
 - [Duh časa](https://www.duh-casa.si/)
+- [Free Software Foundation Europe (FSFE)](https://fsfe.org/)
+    - [Public Money, Public Code](https://publiccode.eu/sl/)
 - [Kiberpipa](https://kiberpipa.org/) – društvo *tehnoloških* (predvsem računalniških) navdušencev
 - [Kompot](https://kompot.si/)
 - [Lugos](https://www.lugos.si/) – Društvo uporabnikov Linuxa Slovenije
