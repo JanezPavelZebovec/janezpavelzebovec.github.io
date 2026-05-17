@@ -1,27 +1,29 @@
 ---
 title: Dnevnik
-date: 2026-05-08
+date: 2026-05-17
 description: Tu beležim svoj napredek pri projektih in nekatere druge stvari
 ---
 
 Glej tudi dnevniške zapise [na OSM-ju](https://www.openstreetmap.org/user/Janez%20Pavel%20%C5%BDebovec/diary)
 (tudi seznam uvozov [na profilu za uvoze v OSM](https://www.openstreetmap.org/user/JanezPavelZebovec_import)).
 
-- 2020-09-09: ustvaril sem si [*profil* na OpenStreetMap](https://www.openstreetmap.org/user/JanezPavelZebovec).
-- 2023-08-19: moje spletno mesto je gostovana na Githubu.
-- 2023-09-12: moje spletno mesto je dostopno pod domeno [janezpavelzebovec.net](https://janezpavelzebovec.net/).
-- 2025-01-23: ustvaril sem si [*profil* na OpenHistoricalMap](https://www.openhistoricalmap.org/user/JanezPavelZebovec).
-- 2025-06: moje spletno mesto je gostovana pri [Hetznerju](https://www.hetzner.com/).
-- 2025-06-28: moje spletno mesto je gostovana tudi na Codebergu (od 28. do 30. v repozitoriju 'janezpavelzebovec.net', potem pa v 'pages').
-- 2025-08-23; končana [Slovenika v OHM](https://www.openhistoricalmap.org/relation/2866824).
-- 2025-09-01: končana [Ilirika v OHM](https://www.openhistoricalmap.org/relation/2867196).
-- 2025-09-16: dodan [Triglavski ledenik v OHM](https://www.openhistoricalmap.org/relation/2869042) med leti 1850 in 2012 ([sklop sprememb](https://www.openhistoricalmap.org/changeset/194887)).
-- 2025-12-02: izključen iz skupine svetovnega OpenStreetMap na Discordu s krivo obtožbo *homofobije* in sovražnega govora.
-- 2025-12-19: [Visoka slovenščina](/visoka_slovenscina) ima zdaj jasnejša pravila in je poudarjeno, da vključuje vsa narečja, ne le knjižne/zborne slovenščine.
+- 2020-09-09: naredil sem si [*profil* na OpenStreetMap](https://www.openstreetmap.org/user/JanezPavelZebovec)
+- 2023-08-19: moje spletno mesto je gostovana na Githubu (po domeno [janezpavelzebovec.github.io](https://janezpavelzebovec.github.io/)
+- 2023-09-12: moje spletno mesto je dostopno pod domeno [janezpavelzebovec.net](https://janezpavelzebovec.net/)
+- 2024-12-23: naredil sem si [*profil* za uvoze na OpenStreetMap](https://www.openstreetmap.org/user/JanezPavelZebovec_import)
+- 2025-01-23: naredil sem si [*profil* na OpenHistoricalMap](https://www.openhistoricalmap.org/user/JanezPavelZebovec)
+- 2025-06-??: moje spletno mesto je gostovana pri [Hetznerju](https://www.hetzner.com/)
+- 2025-06-28: moje spletno mesto je gostovana tudi na Codebergu (pod domeno [janezpavelzebovec.codeberg.page](https://janezpavelzebovec.codeberg.page/); od 28. do 30. v repozitoriju 'janezpavelzebovec.net', potem pa v 'pages')
+- 2025-08-23; končana [Slovenika v OHM](https://www.openhistoricalmap.org/relation/2866824)
+- 2025-09-01: končana [Ilirika v OHM](https://www.openhistoricalmap.org/relation/2867196)
+- 2025-09-12: naredil sem si [*profil* za uvoze na OpenHisoricalMap](https://www.openhistoricalmap.org/user/JanezPavelZebovec_import)
+- 2025-09-16: dodan [Triglavski ledenik v OHM](https://www.openhistoricalmap.org/relation/2869042) med leti 1850 in 2012 ([sklop sprememb](https://www.openhistoricalmap.org/changeset/194887))
+- 2025-12-02: izključen iz skupine svetovnega OpenStreetMap na Discordu s krivo obtožbo *homofobije* in sovražnega govora
+- 2025-12-19: [Visoka slovenščina](/visoka_slovenscina) ima zdaj jasnejša pravila in je poudarjeno, da vključuje vsa narečja, ne le knjižne/zborne slovenščine
 - 2025-10-14–2026-01-16: prevedel sem [CoMaps](https://www.comaps.app/) v slovenščino
 - 2026-01-23: bolj zares sem začel delati na prilagoditvi obtoječega uvoza GURS-ovih zgradb in naslovov v OpenStreetMap za uvoz v [OpenHistoricalMap](https://www.openhistoricalmap.org/)
 - 2026-02-24–2026-02-25: [moj prevod](https://github.com/gsantner/markor/pull/2745) [Markorja](https://github.com/gsantner/markor) v slovenščino
 - 2026-03-06: [moj prevod](https://github.com/gsantner/markor/pull/2745) [Markorja](https://github.com/gsantner/markor) v slovenščino je bil sprejet
 - 2026-03-09: v OpenHistoricalMap sem uvozil vse GURS-ove naslove Slovenije
 - 2026-03-16: v OpenHistoricalMap sem uvozil prvo občino zgradb – Medvode
-- 2026-04-27: ponovno nameščanje Linux Debiana (tudi z Debiana 12 na Debian 13) in posodobitev [Vodiča skozi namestitev Linuxa](https://janezpavelzebovec.net/vodic_skozi_namestitev_Linuxa)
+- 2026-04-27: ponovno nameščanje Linux Debiana (tudi z Debiana 12 na Debian 13) in bistvena posodobitev [Vodiča skozi namestitev Linuxa](/moj_linux/)

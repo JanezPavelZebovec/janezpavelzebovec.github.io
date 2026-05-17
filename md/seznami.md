@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-05-11
+date: 2026-05-17
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -494,6 +494,7 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [Charlie Kirk](https://www.youtube.com/@RealCharlieKirk) - zagovornik Trumpa, prepovedi splava
 - [The Crucible](https://www.youtube.com/@The_Crucible) – Andrew Wilson
 - [Daily Dose Of Wisdom](https://www.youtube.com/@Daily_Dose_Of_Wisdom)
+- [Družina in Življenje](https://www.youtube.com/@Druzinainzivljenje)
 - [The Fallen State](https://www.youtube.com/@TheFallenStateTV) – *intervuji* z raznimi osebnostmi, večinoma s strani *liberalcev*
 - [Jaiden Forrest](https://www.youtube.com/@JaidenForrest)
 - [The Long Now Foundation](https://www.youtube.com/@longnow)

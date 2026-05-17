@@ -1,10 +1,12 @@
 ---
 title: Programje
-date: 2026-05-11
+date: 2026-05-16
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
 ---
+
+Za ureditev sistema, kot ga imam jaz, glej stran [Moj Linux](/moj_linux/).
 
 # Programje
 
@@ -18,6 +20,7 @@ Večinoma so tu programi, ki jih sam uporabljam, nekateri pa za določene naloge
 
 | program | namembnost | Debianov paket | opombe |
 | --- | --- | --- | --- |
+| [Audiveris](https://github.com/Audiveris/audiveris) | prepoznavalnik notnih zapisov PDF | | |
 | [Birdfont](https://birdfont.org/) | urejevalnik računalniških pisav | [birdfont](https://packages.debian.org/buster/birdfont) | preprost, lep |
 | [Blender](https://www.blender.org/) | 3R urejevalnik, orodje za animiranje | [blender](https://wiki.debian.org/Blender) | zelo obsežen, napreden |
 | [Brave Browser](https://brave.com/") | spletni brskalnik | [brave-browser](https://brave.com/linux/#debian-ubuntu-mint) | privzeto preprečevanje oglasov |

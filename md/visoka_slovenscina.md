@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2026-05-11
+date: 2026-05-12
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 author: Janez Pavel Žebovec
@@ -233,8 +233,6 @@ Predlogi so dobrodošli na [osebno@janezpavelzebovec.net](mailto:osebno@janezpav
 - [RTV SLO - Jezikovni spletovalec: Top jezikovna lista nadrealista](https://www.rtvslo.si/kultura/jezikovni-spletovalec/jezikovni-spletovalec-top-jezikovna-lista-nadrealista/442574)
 - [Razpotja - Tomaž Gerden: Slovenščina v novih časih (2014)](https://razpotja.si/razpotja_article/slovenscina-v-novih-casih/) ([arhivirano](https://web.archive.org/web/20250619132945/https://razpotja.si/razpotja_article/slovenscina-v-novih-casih/))
 - [Leemeta – Ni be3sede? Ustvari novo!](https://www.leemeta.si/blog/slovnica/ni-besede-ustvari-novo)
-
-### Sklici
 
 [L1]: https://www.leemeta.si/blog/jezikovne-dileme/neologizmi-hrustopek-nosiglas-in-mnogovoz-veste-o-cem-govorimo
 [L2]: https://www.leemeta.si/blog/jezikovne-dileme/nove-besede-ali-novotvorjenke-lahko-tudi-vi-izumite-novo-besedo

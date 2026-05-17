@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-04-22
+date: 2026-05-12
 description: računska teorija, enačbe
 keywords: računstvo, matematika
 author: Janez Pavel Žebovec
@@ -613,11 +613,14 @@ $$ [A, B] = AB - BA $$
 **Gauss-Jordanova *eliminacija*** – z njo pridemo do *inverza matrike* (če ta obstaja); ***elementarne* vrstične *operacije***, ki jih lahko uporabimo:
 
 - i-to vrstico pomnožimo z neničelnim številom $\alpha$
-    $$ \begin{pmatrix} 1 & & & & \\ & \ddots & & & \\ & & 1 & & \\ & & & \alpha & \\    & & & & 1 \\ & & & & & \ddots \\ & & & & & & 1 \end{pmatrix} $$
+    $$ \begin{pmatrix}
+    1 & & &        & \\
+    & \ddots & & & \\
+    & & 1 & & \\
+    & & & \alpha & \\    & & & & 1 \\ & & & & & \ddots \\ & & & & & & 1 \end{pmatrix} $$
+
 - i-ti vrstici prištejemo $\beta$-kratnik j-te vrstice
 - zamenjamo i-to in j-to vrstico
-
-Matriki sta vrstično enakovredni (*ekvivalentni*), če lahko eno z zaporedjem *elementarnih* vrstičnih *operacij* preoblikujemo v drugo.
 
 **Sled** (ang. *trace*) je vsota prekotniških (*diagonalnih*) členov:
 $$ \mathrm{tr} (A) = A_{11} + A_{22} + ... + A_{nn} $$
@@ -677,3 +680,7 @@ $$ f(x) = \begin{bmatrix}a & b\\c & d\end{bmatrix}; g(x) = \begin{bmatrix}e & h\
 $$ f(g(x)) = \begin{bmatrix}a & b\\c & d\end{bmatrix} \left( \begin{bmatrix}e & h\\l & m\end{bmatrix} \begin{bmatrix}x\\y\end{bmatrix} \right) = \left( \begin{bmatrix}a & b\\c & d\end{bmatrix} \begin{bmatrix}e & h\\l & m\end{bmatrix} \right) \begin{bmatrix}x\\y\end{bmatrix} $$
 
 *Determinanta transformacijske matrike* nam pove, za kakšen količnik se spremeni ploščina/prostornina ob *transformaciji*. Če je *determinanta negativna*, to pomeni, da se je *vektor normale* ploščine obrnil (zamenjal predznak), kar se zgodi, če "zamenjamo " *bazna vektorja* med sabo.
+
+### Preslikave med *vektorskimi* prostori
+
+- ***unitarna matrika***: $A* A = A A* = I_n$

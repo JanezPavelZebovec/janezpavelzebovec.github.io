@@ -1,12 +1,16 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-05-11
+date: 2026-05-16
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
 ---
 
-# Vodič skozi namestitev uporabniškega okolja na Linux Debianu
+# Moj Linux
+
+To je vodič skozi namestitev okolij Linux Debian, kakršne imam jaz (svojega strežnika trenutno sicer nimam, sem ga pa že vzpostavil po navedenih korakih v preteklosti – spet bo zaživel enkrat v prihodsnoti v nadgrajeni različici).
+
+## Vodič skozi namestitev uporabniškega okolja
 
 Nekatere moje stare nastavitvene in druge datoteke Linuxa se še nahajajo na [Codebergu: My Linux Configs](https://codeberg.org/JanezPavelZebovec/My_Linux_configs). Sicer pa je tu seznam najnovejših datotek, ki so na tem spletišču:
 
@@ -275,6 +279,16 @@ Debian ima precej staro različico, zato je bolje [prenesti AppImage](https://mu
 - `chmod +x ~/.local/bin/MuseScore.AppImage` – naredi datoteko izvršljivo
 - `~/.local/bin/MuseScore-4.4.2.AppImage` da poženeš orodje, oz. `~/.local/bin/MuseScore.AppImage install`, če želiš, da samodejno ustvari še datoteko ~/.local/share/applications/MuseScore.desktop, navodilno datoteko in *ikone*
 
+##### Audiveris
+
+(Glej tudi [Audiveris – Building from source (Windows, macOS, Linux)](https://audiveris.github.io/audiveris/_pages/tutorials/install/sources/))
+
+`java -version` – če nimaš Jave vsaj 25, najverjetneje tega ne boš mogel namestiti (trenutna stabilna Java za Debian je 21, zato tega programa še nisem uspel namestiti).
+
+- `git clone https://github.com/Audiveris/audiveris.git`
+- `git checkout development`, `git pull --all` – zagotovi, da smo na najnovejši veji (je to sploh potrebno, če smo itak ravnokar prenesli?)
+- `./gradlew build` – izgradi program iz vira
+
 ##### NeoMutt
 
 - `sudo apt install neomutt isync msmtp pass curl ca-certificates gettext` – Neomutt in njegove odvisnosti
@@ -327,6 +341,7 @@ Knjižnice:
 #### *Live-server*
 
 - `sudo apt install nodejs npm`
+- `npm install -g live-server` – namesti live-server *globalno* (bi bilo bolje namestiti kam drugam, kot privzeto, npr. v ~/ ?)
 
 #### Izbirnik barv na zaslonu
 
@@ -516,7 +531,7 @@ V [**~/viri/dwm/config.h**](/moj_linux/home/janezpavel/viri/dwm/config.h):
 
 ---
 
-# Namestitev strežnika na Linux Debianu
+## Namestitev strežnika na Linux Debianu
 
 Vsi koraki razen "zadnjega" so enaki.
 V *Software Selection* (med zadnjimi koraki) naj bosta izbrana le *Standard System Utilities* in *SSH server*. Za strežnik namreč ne potrebuješ namitnega okolja.
