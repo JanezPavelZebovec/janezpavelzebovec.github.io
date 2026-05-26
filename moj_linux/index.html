@@ -32,7 +32,7 @@ sistema"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/moj_linux/">moj_linux</a> / <a href="/moj_linux/index/">index</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-05-16">2026-05-16</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-05-17">2026-05-17</time></p>
     </header>
     <nav>
         <ul>
@@ -643,6 +643,40 @@ sistema"/>
             href="https://gramps-project.org/">Gramps</a>, rodoslovno
             orodje</li>
             </ul></li>
+            </ul>
+            <h5 id="JOSM">JOSM</h5>
+            <ul>
+            <li>v <a
+            href="/moj_linux/home/janezpavel/.xinitrc">~/.xinitrc</a>
+            dodaj <code>export _JAVA_AWT_WM_NONREPARENTING=1</code>, da
+            Java ve, kake vrste je upravljalec oken, da se preprečijo
+            napake, povezane z okni (belo okno ob zagonu JOSM-a)</li>
+            </ul>
+            <h5 id="QGIS">QGIS</h5>
+            <p>(Glej tudi <a
+            href="https://qgis.org/resources/installation-guide/#debian-ubuntu">QGIS
+            – Installation Guide</a></p>
+            <ul>
+            <li><p><code>sudo apt install gnupg wget</code></p></li>
+            <li><p><code>sudo mkdir -p /etc/apt/keyrings</code> –
+            ustvari mapo <strong>keyrings</strong>, če še ne obstaja
+            (skoraj zagotovo že obstaja)</p></li>
+            <li><p><code>sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg</code>
+            – ključ GPG</p></li>
+            <li><p><code>sudo vim /etc/apt/sources.list.d/qgis.sources</code>
+            – odpri datoteko <strong>qgis.sources</strong> v
+            urejevalniku in dodaj sledečo vsebino (ime ditribucije
+            <em>Suites</em> lahko preveriš tudi z ukazom
+            <code>lsb_release -cs</code>):</p>
+            <p>Types: deb deb-src URIs: https://qgis.org/debian Suites:
+            trixie Architectures: amd64 Components: main Signed-By:
+            /etc/apt/keyrings/qgis-archive-keyring.gpg</p></li>
+            <li><p><code>sudo apt update</code></p></li>
+            <li><p><code>sudo apt install qgis qgis-plugin-grass</code>
+            – namesti QGIS</p></li>
+            <li><p>po potrebi še
+            <code>sudo apt install qgis-server</code>, kar namesti
+            QGIS-ov strežnik (jaz tega še nisem nameščal)</p></li>
             </ul>
             <h5 id="Musescore">Musescore</h5>
             <p><a href="https://musescore.org/">Musescore</a> je orodje

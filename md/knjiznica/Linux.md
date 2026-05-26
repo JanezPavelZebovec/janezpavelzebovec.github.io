@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2026-05-05
+date: 2026-05-26
 description: Priročnik za uporabo Linuxa, posebno skozi terminal
 keywords: Linux, terminal, operacijski sistem
 author: Janez Pavel Žebovec
@@ -211,11 +211,11 @@ Zagonski ključek je običajno potreben pri nameščanju operacijskega sistema.
 Npr. za sinhronizacijo z [GitHubom](https://github.com/), [Codebergom](https://codeberg.org/), ...
 
 - `git clone URL` - podvoji *repozitorij* na URL-ju na svoj računalnik
-- `git init` - ustvari mapo Gita
+- `git init` - ustvari mapo Gita – od zdaj naprej Git sledi spremembam v tej mapi
 - `git checkout -b main` = `git branch main` + `git checkout main` - ustvari novo vejo z imenom *main* in se nanjo priklopi
 - `git add {datoteke}` - dodaj datoteke v Git pred objavo
 - `git commit` - ustvari objavo
-    - `-m "opomba" = *message*` - opomba/povzetek/sporočilo objave
+    - `-m "opomba"` = *message* - opomba/povzetek/sporočilo objave
 - `git remote add origin URL` - opredeli mesto objave (spletni naslov *repozitorija*; to je potrebno le prvič)
 - `git push -u origin main` - poveži *repozitorij* na računalniku in oddaljeni repozitorij (npr. na GitHubu, Codebergu), oz. objavi spremembe (vprašalo te bo za up. ime in geslo)
     - `-u` = *upstream remote*
@@ -227,7 +227,7 @@ Npr. za sinhronizacijo z [GitHubom](https://github.com/), [Codebergom](https://c
 - `ssh -T git@github.com` - preveri povezavo prek SSH (prek ključa)
 - `ssh-add ~/.ssh/id_ed25519` - dodaj ključ
 - `ssh-add -l` - preveri ključe, dodane v `agent`
-- `git diff > spremembe.patch` - ustvari datoteko s spremembami
+- `git diff > spremembe.patch` - ustvari datoteko s spremembami (od kdaj – od začetka repozitorija ali od zadnje objave?)
 
 ## Strežnik
 

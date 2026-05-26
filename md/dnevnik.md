@@ -4,6 +4,8 @@ date: 2026-05-17
 description: Tu beležim svoj napredek pri projektih in nekatere druge stvari
 ---
 
+# Dnevnik
+
 Glej tudi dnevniške zapise [na OSM-ju](https://www.openstreetmap.org/user/Janez%20Pavel%20%C5%BDebovec/diary)
 (tudi seznam uvozov [na profilu za uvoze v OSM](https://www.openstreetmap.org/user/JanezPavelZebovec_import)).
 

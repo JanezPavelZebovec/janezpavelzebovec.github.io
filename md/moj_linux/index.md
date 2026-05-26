@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-05-16
+date: 2026-05-17
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -267,6 +267,30 @@ Morda deluje tudi tole (?)
     - `fontforge` – [GontForge](https://fontforge.org/), urejevalnik pisav [na GitHubu](https://github.com/fontforge/fontforge)
     - `josm` – [JOSM](https://josm.openstreetmap.de/), urejevalnik OpenStreetMap
     - `gramps` – [Gramps](https://gramps-project.org/), rodoslovno orodje
+
+##### JOSM
+
+- v [~/.xinitrc](/moj_linux/home/janezpavel/.xinitrc) dodaj `export _JAVA_AWT_WM_NONREPARENTING=1`, da Java ve, kake vrste je upravljalec oken, da se preprečijo napake, povezane z okni (belo okno ob zagonu JOSM-a)
+
+##### QGIS
+
+(Glej tudi [QGIS – Installation Guide](https://qgis.org/resources/installation-guide/#debian-ubuntu)
+
+- `sudo apt install gnupg wget`
+- `sudo mkdir -p /etc/apt/keyrings` – ustvari mapo **keyrings**, če še ne obstaja (skoraj zagotovo že obstaja)
+- `sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg` – ključ GPG
+- `sudo vim /etc/apt/sources.list.d/qgis.sources` – odpri datoteko **qgis.sources** v urejevalniku in dodaj sledečo vsebino (ime ditribucije *Suites* lahko preveriš tudi z ukazom `lsb_release -cs`):
+
+    Types: deb deb-src
+    URIs: https://qgis.org/debian
+    Suites: trixie
+    Architectures: amd64
+    Components: main
+    Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
+
+- `sudo apt update`
+- `sudo apt install qgis qgis-plugin-grass` – namesti QGIS
+- po potrebi še `sudo apt install qgis-server`, kar namesti QGIS-ov strežnik (jaz tega še nisem nameščal)
 
 ##### Musescore
 

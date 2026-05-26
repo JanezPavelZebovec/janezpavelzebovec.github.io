@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-05-17
+date: 2026-05-26
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -24,15 +24,17 @@ Moja *priporočila* (precej nepopolna)
 
 ## Splet
 
+- [KamiKam](https://kamkam.si/) – *platforma* za medsebojno *organiziranje* deljenega prevoza
 - [Kvarkadabra - časopis za tolmačenje znanosti](https://kvarkadabra.net/)
 - [Na prostem, zadruga za odprto kodo](https://www.na-prostem.si/)
 - [Odysee](https://odysee.com/)
+- [Prevoz](https://prevoz.org/) – za medsebojno *organizacijo* deljenega prevoza
 - [Statistični urad Republike Slovenije](https://www.stat.si/)
 - [Yewtu.be](https://yewtu.be/) – odjemalec YouTuba
 
 ### Nepridobitne organizacije
 
-- [Društvo za elektronsko in računalniško pismenost](https://derp.si/)
+- [Društvo za elektronsko in računalniško pismenost (DERP)](https://derp.si/)
 - [Duh časa](https://www.duh-casa.si/)
 - [Free Software Foundation Europe (FSFE)](https://fsfe.org/)
     - [Public Money, Public Code](https://publiccode.eu/sl/)
@@ -52,16 +54,18 @@ Moja *priporočila* (precej nepopolna)
 
 - [Fairphone](https://fairphone.com/) – dlančniki, tudi slušalke (Nizozemska); popravljivost, okoljevarstvo, zeleni viri, pravični trg
 - [Framework](https://frame.work/) – prenosni računalniki, tudi namizni računalnik (ZDA); popravljivost
+- [Gizzmo – Reborn](https://gizzmo.si/reborn) – obnovljeni dlančniki
 - [PinePhone](https://pine64.org/) – dlančniki (*pametni telefoni*) z Linuxom in še nekaj drugih naprav
 
 ### Osebne spletne strani
 
-- [Anton Luka Šijanec](https://sijanec.eu/)
-- [Branko cestnik](https://branenacesti.blogspot.com/)
+- [Anton Luka Šijanec](https://sijanec.eu/) – član Programerskega kluba FMF
+- [Branko cestnik](https://branenacesti.blogspot.com/) – slo. župnik
 - [Filip Žebovec](https://filipzebovec.net/)
-- [Jure Smolar](https://jure-smolar.com/)
-- [Matija Šuklje](https://matija.suklje.name/)
-- [Mitja Jež](https://mitja.jež.si/)
+- [Jure Smolar](https://jure-smolar.com/) – član Programerskega kluba FMF
+- [Matija Šuklje](https://matija.suklje.name/) – član slo. odprtokodne skupnosti
+- [Mitja Jež](https://mitja.jež.si/) – član slo. odprtokodne skupnosti (mdr. OpenStreetMap)
+- [Siggsy](https://siggsy.xyz/) – član slo. odprtokodne skupnosti (mdr. v zvezi s z javnim prevozom)
 
 ### Naravoslovje
 
@@ -142,12 +146,14 @@ Za zgodovinske zemljevide glej tudi razdelek [Zgodovinski zemljevidi](#Zgodovins
 - [Flurnamen](https://maps.flurnamen.at/) - ledinska imena
 - [Geo3D Viewer](https://geo3d.pgi.gov.pl/Global_Library/index.html) – zbirka prostih svetovnih geoloških podatkov
 - [GeoFabrik Tools](https://tools.geofabrik.de/)
+- [Geohub](https://geohub.gov.si/)
 - [Geology](https://geology.com/world)
 - [GeoNames](https://www.geonames.org/v3/)
 - [Geopedia](https://www.geopedia.world)
     - [Geopedia - GURS - Prostorski podatki](https://www.geopedia.world/#T276_x1614235.3818404947_y5798283.654628612_s11_b2852)
 - [Mapillary](https://www.mapillary.com/app) - ulični posnetki
 - [Open Street Map](https://www.openstreetmap.org/) - prosto dostopen in urejevan zemljevid (glej tudi [Zemljevidi, ki temeljijo na OSM](#Zemljevidi_ki_temeljijo_na_Open_Street_Map))
+- [WikiMap](https://wikimap.toolforge.org/) – zemljevid s kraji v [Wikidata](https://www.wikidata.org/) in na [Wikipediji](https://www.wikipedia.org/)
 - [WikiMapia](https://wikimapia.org/) – še en bolj precej poskus odprtega zemljevida, ki sta ga začela dva Rusa leta 2006
 - [Windy](https://www.windy.com) - vremenski zemljevidi
 
@@ -178,6 +184,7 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
 - [Komoot](https://www.komoot.com/plan) - načrtovanje kolesarske, pohodniške poti
 - [MapMagic – Map](https://mapmagic.app/map)
 - [Mapy](https://mapy.com/) – *interaktiven* zemljevid češkega podjetja
+- [Open AED Map](https://openaedmap.org/sl/) – zemljevid AED-jev po vsem svetu
 - [Open Cycle Map](https://www.opencyclemap.org/) - kolesarski zemljevid
 - [Open Infrastructure Map](https://openinframap.org/) – *infrastrukturni* zemljevid (elektrika, plinovodi, vodovod, *telekomunikacija*)
 - [Open Railway Map](https://openrailwaymap.org/) - železniško omrežje s postajami in drugim
@@ -215,8 +222,10 @@ Zemljevidi ki temeljijo na podatkih [OpenHistoricalMap](https://www.openhistoric
 Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
 
 - [BrezAvta.si](https://brezavta.si/) - iskanje povezav javnega prometa (avtobus, kolo, avto, skuter)
+- [Mestni Promer](https://mestnipromet.cyou/) – sledilec avtobusov LPP in njihov seznam, arhiv
 - [Jaka Černetič: IJPP Tracker](https://tracker.cernetic.cc/) – avtobusi in vlaki v omrežju Integriranega javnega potniškega prometa (IJPP)
 - [Točen.si](https://tocen.si/#/) – točni časi prihodov avtobusov z njihovimi trenutnimi položaji
+- [ZZnidar – Busi](https://zznidar.github.io/busi/)
 
 ###### Druga spletna mesta za urejanje OSM, oz. projekti OSM
 
@@ -252,16 +261,206 @@ Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
 - [SiMO](https://www.simo.si/) – načrtovalnik potovanj, uporablja tudi podatke [NAP](https://www.nap.si/) (Ministrstvo za infrastrukturo, Nacionalni center za upravljanje prometa)
 - [Testni 3D vpogledovalnik](https://clss.si/) - ogledovalnik trorazsežnostnega prikaza podatkov lidarja
 
-Državni podatki za prenos ali gostovani
+Državni podatki za prenos in gostovani sloji:
 
 - [ArcGIS REST Services Directory](https://geohub.gov.si/ags/rest/services)
-- [Inspire – Kataster nepremičnin](https://eprostor.gov.si/imps/srv/slv/catalog.search#/metadata/9a8fd241-9162-407c-94e7-c98e05766881)
+- [Portal Prostor](https://www.e-prostor.gov.si/)
+    - [Inspire](https://eprostor.gov.si/imps/srv/slv/catalog.search#/home)
+    - [Storitve WMS](https://www.e-prostor.gov.si/inspire/seznam-omreznih-storitev/storitve-wms/)
+    - [PIS – Spletni servisi](https://pis.eprostor.gov.si/pis/spletni-servisi)
 - [Javni spletni servisi GURS - WMS](https://ipi.eprostor.gov.si/wms-si-gurs-dts/wms)
 - [Portal Prostor – Javni geodetski podatki](https://ipi.eprostor.gov.si/jgp/)
     - [Temeljne karte](https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE) – gostovani (na voljo za uporabo v npr. JOSMu, na volju tudi za prenos v različnih oblikah): *topografska* zemljevida, franciscejski *kataster*, lidar, ...
 - [Register nepremične kulturne dediščine](https://podatki.gov.si/dataset/register-nepremicne-kulturne-dediscine)
 - [Register kmetijskih gospodarstev (RKG)](https://rkg.gov.si/vstop/)
-    - [Raba](https://rkg.gov.si/arhiv/RABA/?C=N;O=D) – vrste/rabe zemljišč (arhiv od leta 2002)
+    - [RABA](https://rkg.gov.si/arhiv/RABA/) – vrste/rabe zemljišč (arhiv od leta 2002)
+
+Spletne storitve slojev:
+
+- [WFS](https://eprostor.gov.si/imps/srv/slv/catalog.search#/metadata/8f427833-d5bf-49fd-ae9e-1106eb63e901)
+- [WMS](https://eprostor.gov.si/imps/srv/slv/catalog.search#/metadata/a1af8b13-2a5d-45d3-ae50-62069a2d2713):
+    - <https://ipi.eprostor.gov.si/wms-si-gurs-kn/wms?request=getCapabilities> – Kataster nepremičnin
+        - MZIP_EI_NA_STAVBI (Centroid stavbe z informacijo o številu energetskih izkaznic)
+        - NEP_DALJICE (Daljice parcel)
+        - NEP_ETAZE (Etaže)
+        - NEP_ETAZE_X_DELI_STAVB (Etaže na posameznih delih stavbe)
+        - NEP_GRADBENE_PARCELE (Gradbene parcele)
+        - NEP_HISNE_STEVILKE (Hišne številke)
+        - NEP_KATASTRSKE_OBCINE (Katastrske občine)
+        - NEP_NASLOVI_HS ()
+        - NEP_OBMOCJA_SP_PRAVIC (Območja stvarno pravnih pravic)
+        - NEP_OSNOVNI_PARCELE (Osnovni podatki o parceli)
+        - NEP_OSNOVNI_PARCELE_CENTROID (Sloj centroidov parcel, izračunan iz E_CEN in N_CEN.)
+        - NEP_OSNOVNI_STAVBE (Osnovni podatki o stavbi, obris stavbe)
+        - NEP_OSNOVNI_STAVBE_CENTROID (Centorid stavb)
+        - NEP_OST_BONITETE (Bonitete)
+        - NEP_OST_DEJANSKE_RABE (Skupne dejanske rabe)
+        - NEP_OST_GOZDNO_GOSP_OBM (Podatki o gozdnih gospodarskih območjih, rastiščnem koeficientu in odprtosti)
+        - NEP_OST_NAMENSKE_RABE (Namenska raba parcel)
+        - NEP_OST_OMEJITVE (Omejitve oz. območja soglasij)
+        - NEP_OST_POSEBNI_REZIMI (Posebni režimi)
+        - NEP_PARCELE (Podatki o parcelah)
+        - NEP_PARCELE_JAVNI_LASTNIKI ()
+        - NEP_SESTAVINE_DST (Sestavine delov stavb - atriji, parkirišča)
+        - NEP_STAVBE (temporary)
+        - NEP_STAVBE_OBRIS (Obris stavbe)
+        - NEP_STAVBE_PARCELE (Parcele pod stavbami)
+        - NEP_STAVBE_TLORIS (Tlorisi stavb)
+        - NEP_TOCKE (Točke zemljiškega katastra)
+        - NEP_UREJENE_MEJE (Urejene meje - daljice s statusom 2)
+    - <https://ipi.eprostor.gov.si/wms-si-gurs-rpe/wms?request=getCapabilities> – Register prostorskih enot
+        - NEP_RPE_CETRTNE_SKUPNOSTI (Register prostorskih enot - Mestne četrti)
+        - NEP_RPE_DZ_VOLISCA (Register prostorskih enot - Državnozborska volišča)
+        - NEP_RPE_KOHEZIJSKE_REGIJE (Kohezijske regije)
+        - NEP_RPE_KRAJEVNE_SKUPNOSTI (Register prostorskih enot - Krajevne skupnosti)
+        - NEP_RPE_LOKALNA_VOLISCA (Register prostorskih enot - Lokalna volišča)
+        - NEP_RPE_LOKALNE_VOLILNE_ENOTE (Register prostorskih enot - Lokalne volilne enote)
+        - NEP_RPE_NASELJA (Register prostorskih enot - Naselja)
+        - NEP_RPE_OBCINE (Register prostorskih enot - Občine)
+        - NEP_RPE_POSTNI_OKOLISI (Register prostorskih enot - Poštni okoliši)
+        - NEP_RPE_SOLSKI_OKOLISI (Register prostorskih enot - Šolski okoliši)
+        - NEP_RPE_STATISTICNE_REGIJE (Podatki o statističnih regijah.)
+        - NEP_RPE_ULICE (Register prostorskih enot - Ulice)
+        - NEP_RPE_UPRAVNE_ENOTE (Register prostorskih enot - Upravne enote)
+        - NEP_RPE_VASKE_SKUPNOSTI (Register prostorskih enot - Vaške četrti)
+        - NEP_RPE_VOLILNE_ENOTE_DZ (Register prostorskih enot - Volilne enote državni zbor)
+        - NEP_RPE_VOLILNI_OKRAJI (Register prostorskih enot - Volilni okraji)
+    - <https://ipi.eprostor.gov.si/wms-si-gurs-kgi/wms?request=getCapabilities> – Zbirni kataster gospodarske javne infrastrukture
+        - GJI_GIO_STAVBE ()
+        - GJI_GIO_STAVBE_REZERVACIJE ()
+        - GJI_LINIJE_CESTE_G (Kataster gospodarske infrastrukture - Ceste - grafika linij)
+        - GJI_LINIJE_ELEKTRICNA_ENERGIJA_G (Kataster gospodarske infrastrukture - Električna energija - grafika linij)
+        - GJI_LINIJE_ELEKTRONSKE_KOMUNIKACIJE_CEVI_G (Kataster gospodarske infrastrukture - Cevi - grafika linij)
+        - GJI_LINIJE_ELEKTRONSKE_KOMUNIKACIJE_G (Kataster gospodarske infrastrukture - Elektronske komunikacije - grafika linij)
+        - GJI_LINIJE_ELEKTRONSKE_KOMUNIKACIJE_KABLI_G (Kataster gospodarske infrastrukture - Kabli - grafika linij)
+        - GJI_LINIJE_KANALIZACIJA_G (Kataster gospodarske infrastrukture - Kanalizacija - grafika linij)
+        - GJI_LINIJE_LETALISCA_G (Kataster gospodarske infrastrukture - Letališča - grafika linij)
+        - GJI_LINIJE_NAFTA_IN_NAFTNI_DERIVATI_G (Kataster gospodarske infrastrukture - Nafta in naftni derivati - grafika linij)
+        - GJI_LINIJE_OBJEKTI_ZA_OPAZOVANJE_NARAVNIH_POJAVOV_IN_NARAVNIH_VIROV_G (Kataster gospodarske infrastrukture - Objekti za opazovanje naravnih pojavov in naravnih virov - grafika linij)
+        - GJI_LINIJE_OSTALA_INFRASTRUKTURA_G ()
+        - GJI_LINIJE_PRISTANISCA_G (Kataster gospodarske infrastrukture - Pristanišča - grafika linij)
+        - GJI_LINIJE_RAVNANJE_Z_ODPADKI_G (Kataster gospodarske infrastrukture - Ravnanje z odpadki - grafika linij)
+        - GJI_LINIJE_TOPLOTNA_ENERGIJA_G (Kataster gospodarske infrastrukture - Toplotna energija - grafika linij)
+        - GJI_LINIJE_VODNA_INFRASTRUKTURA_G (Kataster gospodarske infrastrukture - Vodna infrastruktura - grafika linij)
+        - GJI_LINIJE_VODOVOD_G (Kataster gospodarske infrastrukture - Vodovod - grafika linij)
+        - GJI_LINIJE_ZELEZNICE_G (Kataster gospodarske infrastrukture - Zemeljski plin - grafika linij)
+        - GJI_LINIJE_ZEMELJSKI_PLIN_G (Kataster gospodarske infrastrukture - Železnice - grafika linij)
+        - GJI_LINIJE_ZICNICE_G (Kataster gospodarske infrastrukture - Žičnice - grafika linij)
+        - GJI_OPT_DELI_STAVB_G (Kataster gospodarske infrastrukture - Omrežne priključne točke - grafika točk)
+        - GJI_POLIGONI_CESTE_G (Kataster gospodarske infrastrukture - Ceste - grafika poligonov)
+        - GJI_POLIGONI_ELEKTRICNA_ENERGIJA_G (Kataster gospodarske infrastrukture - Električna energija - grafika poligonov)
+        - GJI_POLIGONI_ELEKTRONSKE_KOMUNIKACIJE_G ()
+        - GJI_POLIGONI_KANALIZACIJA_G (Kataster gospodarske infrastrukture - Kanalizacija - grafika poligonov)
+        - GJI_POLIGONI_LETALISCA_G (Kataster gospodarske infrastrukture - Letališča - grafika poligonov)
+        - GJI_POLIGONI_NAFTA_IN_NAFTNI_DERIVATI_G (Kataster gospodarske infrastrukture - Nafta in naftni derivati - grafika poligonov)
+        - GJI_POLIGONI_OBJEKTI_ZA_OPAZOVANJE_NARAVNIH_POJAVOV_IN_NARAVNIH_VIROV_G (Kataster gospodarske infrastrukture - Objekti za opazovanje naravnih pojavov in naravnih virov - grafika poligonov)
+        - GJI_POLIGONI_OSTALA_INFRASTRUKTURA_G ()
+        - GJI_POLIGONI_PARKIRISCA_G ()
+        - GJI_POLIGONI_PRISTANISCA_G (Kataster gospodarske infrastrukture - Pristanišča - grafika poligonov)
+        - GJI_POLIGONI_RAVNANJE_Z_ODPADKI_G (Kataster gospodarske infrastrukture - Ravnanje z odpadki - grafika poligonov)
+        - GJI_POLIGONI_SPORT_G ()
+        - GJI_POLIGONI_TOPLOTNA_ENERGIJA_G (Kataster gospodarske infrastrukture - Toplotna energija - grafika poligonov)
+        - GJI_POLIGONI_VODNA_INFRASTRUKTURA_G (Kataster gospodarske infrastrukture - Vodna infrastruktura - grafika poligonov)
+        - GJI_POLIGONI_VODOVOD_G (Kataster gospodarske infrastrukture - Vodovod - grafika poligonov)
+        - GJI_POLIGONI_ZELEZNICE_G (Kataster gospodarske infrastrukture - Zemeljski plin - grafika poligonov)
+        - GJI_POLIGONI_ZEMELJSKI_PLIN_G (Kataster gospodarske infrastrukture - Železnice - grafika poligonov)
+        - GJI_POLIGONI_ZICNICE_G (Kataster gospodarske infrastrukture - Žičnice - grafika poligonov)
+        - GJI_TOCKE_CESTE_G (Kataster gospodarske infrastrukture - Ceste - grafika točk)
+        - GJI_TOCKE_ELEKTRICNA_ENERGIJA_G (Kataster gospodarske infrastrukture - Električna energija - grafika točk)
+        - GJI_TOCKE_ELEKTRONSKE_KOMUNIKACIJE_G ()
+        - GJI_TOCKE_KANALIZACIJA_G (Kataster gospodarske infrastrukture - Kanalizacija - grafika točk)
+        - GJI_TOCKE_LETALISCA_G (Kataster gospodarske infrastrukture - Letališča - grafika točk)
+        - GJI_TOCKE_NAFTA_IN_NAFTNI_DERIVATI_G (Kataster gospodarske infrastrukture - Nafta in naftni derivati - grafika točk)
+        - GJI_TOCKE_OBJEKTI_ZA_OPAZOVANJE_NARAVNIH_POJAVOV_IN_NARAVNIH_VIROV_G (Kataster gospodarske infrastrukture - Objekti za opazovanje naravnih pojavov in naravnih virov - grafika točk)
+        - GJI_TOCKE_OSTALA_INFRASTRUKTURA_G ()
+        - GJI_TOCKE_PRISTANISCA_G (Kataster gospodarske infrastrukture - Pristanišča - grafika točk)
+        - GJI_TOCKE_RAVNANJE_Z_ODPADKI_G (Kataster gospodarske infrastrukture - Ravnanje z odpadki - grafika točk)
+        - GJI_TOCKE_SPORT_G ()
+        - GJI_TOCKE_TOPLOTNA_ENERGIJA_G (Kataster gospodarske infrastrukture - Toplotna energija - grafika točk)
+        - GJI_TOCKE_VODNA_INFRASTRUKTURA_G (Kataster gospodarske infrastrukture - Vodna infrastruktura - grafika točk)
+        - GJI_TOCKE_VODOVOD_G (Kataster gospodarske infrastrukture - Vodovod - grafika točk)
+        - GJI_TOCKE_ZELEZNICE_G (Kataster gospodarske infrastrukture - Zemeljski plin - grafika točk)
+        - GJI_TOCKE_ZEMELJSKI_PLIN_G (Kataster gospodarske infrastrukture - Železnice - grafika točk)
+        - GJI_TOCKE_ZICNICE_G (Kataster gospodarske infrastrukture - Žičnice - grafika točk)
+    - <https://ipi.eprostor.gov.si/wms-si-gurs-dts/wms?request=getCapabilities> – Državni topografski sistem
+        - DOF025 (Zbirka podatkov daljinskega zaznavanja - Ortofoto merila 5000 – DOF025 – raster.)
+        - DOF025_3857 (Barvni DOF v koordinatnem sistemu EPSG:3857)
+        - DOF050 (Zbirka podatkov daljinskega zaznavanja - Ortofoto merila 5000 - DOF050 - raster)
+        - Državne karte - Državna pregledna karta merila 250.000/500.000/750.000/1.000.000/2.500.000 - raster
+        - Državne karte - Državna topografska karta merila 50 000 - zvezni kartografski prikaz  - raster
+        - LIDAR_20112014_BT (Podoba analitičnega senčenja)
+        - PREGLEDNI_OF_008 ()
+        - PREGLEDNI_OF_010 ()
+        - SI.GURS.ZPDZ:PREGLEDNI_DOF (Pregledni ortofoto, natančnosti 8m, 10m in DOF025)
+        - Temeljni topografski načrt merila 5000 in 10000 – združeni sloj – raster (Državne karte – Temeljni topografski načrt merila 5000 in 10000 – združeni sloj – raster.)
+        - Zgodovinski DOF5 (Zbirka podatkov daljinskega zaznavanja – Zgodovinski ortofoto merila 5000 - DOF050 - raster)
+    - <https://ipi.eprostor.gov.si/wms-si-gurs-ins/ows?service=wms&version=1.1.1&request=GetCapabilities>
+        - Addresses (Addresses - INSPIRE compliant WMS service from the Register of Spatial Units dataset.)
+        - Administrative unit (Administrative units - INSPIRE compliant WMS service from the Register of Spatial Units dataset.
+        - There are 4 levels implemented:
+        - 1: national border (style=AU.AdministrativeUnit.1st)
+        - 2: statistical regions (style=AU.AdministrativeUnit.2nd)
+        - 3: administrative units (style=AU.AdministrativeUnit.3rd)
+        - 4: municipalities (style=AU.AdministrativeUnit1.4th))
+        - Aerodrome Area Default Style (Aerodrome areas - INSPIRE compliant WMS service from the Public Infrastructure Cadastre dataset.)
+        - Apron Area Default Style (Apron areas - INSPIRE compliant WMS service from the Public Infrastructure Cadastre dataset.)
+        - Bathing Waters (INSPIRE compliant WMS service from the Kopalne vode dataset)
+        - Bathing Waters (INSPIRE compliant WMS service from the Prispevna območja kopalnih voda dataset)
+        - Bathing Waters (INSPIRE compliant WMS service from the Vplivna območja kopalnih voda dataset)
+        - Building (Buildings - INSPIRE compliant WMS service from the Building Cadastre dataset.)
+        - CP.CadastralZoning (Cadastral zoning - INSPIRE compliant WMS service from the Land Cadastre dataset.)
+        - Cableway Link Default Style (Cableway links - INSPIRE compliant WMS service from the Topographic Dataset (DTM) dataset.)
+        - Cadastral Parcel (Cadastral parcels - INSPIRE compliant WMS service from the Land Cadastre dataset.)
+        - Contour Line (Contour Lines - INSPIRE compliant WMS service from the Topographic Dataset (DTM) dataset.)
+        - Designated Waters (INSPIRE compliant WMS service from the Referenčni odseki dataset)
+        - Drinking Water Protection Area (INSPIRE compliant WMS service from the Vodovarstvena območja dataset)
+        - Electricity Network (Electricity networks - INSPIRE compliant WMS service from the Public Infrastructure Cadastre dataset.)
+        - Evidenca melioracijskih sistemov in naprav (Katmesina) ()
+        - Evidenca območij z omejenimi možnostmi za kmetijsko dejavnost ()
+        - Geographical Names (Geographical names - INSPIRE compliant WMS service from the Register of Geographical Names dataset.)
+        - LandCoverSurfaces (Land cover surfaces - INSPIRE compliant WMS service from the Agricultural and Forestry Land Use Database dataset.)
+        - Port Area Default Style (Port areas - INSPIRE compliant WMS service from the Public Infrastructure Cadastre dataset.)
+        - Protected Sites – Cultural (INSPIRE compliant WMS service from the Varstveni režimi kulturne dediščine (eVrd) dataset)
+        - Protected Sites – Nature Conservation (INSPIRE compliant WMS service from the Kataster Gozdnih rezervatov dataset)
+        - Protected Sites – Nature Conservation (INSPIRE compliant WMS service from the Kataster Varovalnih gozdov dataset)
+        - Protected Sites – Nature Conservation (INSPIRE compliant WMS service from the Požarno ogroženi gozdovi dataset)
+        - RKG_BLOK_GERK ()
+        - Railway Link Default Style (Railway links - INSPIRE compliant WMS service from the Public Infrastructure Cadastre dataset.)
+        - River Basin District (INSPIRE compliant WMS service from the Vodna območja dataset)
+        - RoadLink default Style (Road links - INSPIRE compliant WMS service from the Public Infrastructure Cadastre dataset.)
+        - Runway Area Default Style (Runway areas - INSPIRE compliant WMS service from the Public Infrastructure Cadastre dataset.)
+        - SI.GURS.ZPDZ:PREGLEDNI_DOF (Pregledni ortofoto, natančnosti 8m, 10m in DOF025)
+        - Sewer Network (Sewer networks - INSPIRE compliant WMS service from the Public Infrastructure Cadastre dataset.)
+        - Spot Elevation (Spot Elevations - INSPIRE compliant WMS service from the Topographic Dataset (DTM) dataset.)
+        - Thermal Network (Thermal networks -INSPIRE compliant WMS service from the Public Infrastructure Cadastre dataset.)
+        - Vodna zemljišča (INSPIRE compliant WMS service from the Vodna zemljišča dataset)
+        - Water Body under the Water Framework Directive (2000/60/EC) (INSPIRE compliant WMS service from the Vodna telesa podzemnih voda dataset)
+        - Water Body under the Water Framework Directive (2000/60/EC) (INSPIRE compliant WMS service from the Vodna telesa površinskih voda dataset)
+        - Water Network (Water networks - INSPIRE compliant WMS service from the Public Infrastructure Cadastre dataset.)
+        - ZV_KMRS ()
+    - <https://ipi.eprostor.gov.si/wms-si-mnvp-pa/wms?REQUEST=GetCapabilities>
+        - Enote urejanja prostora (OPN) ()
+        - Namenska raba prostora (OPN) ()
+        - Območja prostorskih aktov v pripravi ()
+        - Območja zaključenih prostorskih aktov ()
+        - Podenote urejanja prostora (OPN) ()
+        - Regulacijske površine (OPN) ()
+        - Regulacijske črte (OPN) ()
+        - dpnp_D96 ()
+    - [Geohub: Franciscejski_kataster_SI](https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE/Franciscejski_kataster_SI/MapServer): <wmts:https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE/Franciscejski_kataster_SI/MapServer/WMTS>
+- [WMTS](https://eprostor.gov.si/imps/srv/slv/catalog.search#/metadata/6b84ac7e-39e6-483c-af03-3c5e97ca5d2e):
+    - <https://ipi.eprostor.gov.si/gwc-si-gurs-dts/service/wmts?request=getcapabilities>
+        - DK DPK 250/500/750/1000/2500 (EPSG 3794)
+        - DK DTK 50 (EPSG 3794)
+        - DK OSK (EPSG 3794)
+        - DK OSK MS (EPSG 3794)
+        - DTM DTM5 (EPSG 3794)
+        - ZPDZ DOF 25 (EPSG 3794/4326)
+        - ZPDZ 50/50Z (EPSG 3794)
+        - ZPDZ LIDAR (EPSG 3794)
+        - ZPDZ LIDAR PAS (EPSG 3794)
+        - ZPDZ PLS (EPSG 3794)
+        - ZPDZ Pregledni DOF (EPSG 3794)
 
 ### Zgodovina
 
@@ -484,11 +683,12 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Manuel Bravo](https://www.youtube.com/@ManuelBravo/videos) - poudarek na cerkveni, rimski in egipčanski *arhitekturi*
 - [World War Two](https://www.youtube.com/@WorldWarTwo) – 2. svetovna vojna
 
-#### Modroslovje, krščanstvo
+#### Modroslovje
 
 Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 
-- [Alexander Grace](https://www.youtube.com/@alexandergrace5350) - kritik *feminizma*, pospornik prave moškosti
+- [Abolitions](https://www.youtube.com/@AbolitionistsRising/)
+- [Alexander Grace](https://www.youtube.com/@alexandergrace5350) - skrajni kritik *feminizma*, podpornik prave moškosti, deluje že kar sovražen do žensk
 - [Ben Shapiro](https://www.youtube.com/@BenShapiro) – Jud, desničar
 - [Brian Holdsworth](https://www.youtube.com/@BrianHoldsworth)
 - [Charlie Kirk](https://www.youtube.com/@RealCharlieKirk) - zagovornik Trumpa, prepovedi splava

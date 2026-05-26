@@ -1,6 +1,6 @@
 ---
 title: OpenStreetMap
-date: 2026-03-23
+date: 2026-05-19
 description: Nekaj izbranih oznak za označevanje v OpenStretMap
 keywords: OpenStreetMap
 ---
@@ -236,7 +236,7 @@ man_made=tower
 ### Pokopališče
 
 ```
-landuse=cemetry
+landuse=cemetery
 
 parish=Župnija *
 deanery=Dekanija *

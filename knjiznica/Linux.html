@@ -31,8 +31,8 @@ sistem"/>
             </svg>
         </a>
 
-        <nav id="pot"></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-05-05">2026-05-05</time></p>
+        <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/Linux/">Linux</a></nav>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-05-26">2026-05-26</time></p>
     </header>
     <nav>
         <ul>
@@ -538,7 +538,8 @@ sistem"/>
             <ul>
             <li><code>git clone URL</code> - podvoji
             <em>repozitorij</em> na URL-ju na svoj računalnik</li>
-            <li><code>git init</code> - ustvari mapo Gita</li>
+            <li><code>git init</code> - ustvari mapo Gita – od zdaj
+            naprej Git sledi spremembam v tej mapi</li>
             <li><code>git checkout -b main</code> =
             <code>git branch main</code> +
             <code>git checkout main</code> - ustvari novo vejo z imenom
@@ -547,7 +548,7 @@ sistem"/>
             pred objavo</li>
             <li><code>git commit</code> - ustvari objavo
             <ul>
-            <li><code>-m "opomba" = *message*</code> -
+            <li><code>-m "opomba"</code> = <em>message</em> -
             opomba/povzetek/sporočilo objave</li>
             </ul></li>
             <li><code>git remote add origin URL</code> - opredeli mesto
@@ -576,7 +577,8 @@ sistem"/>
             <li><code>ssh-add -l</code> - preveri ključe, dodane v
             <code>agent</code></li>
             <li><code>git diff &gt; spremembe.patch</code> - ustvari
-            datoteko s spremembami</li>
+            datoteko s spremembami (od kdaj – od začetka repozitorija
+            ali od zadnje objave?)</li>
             </ul>
             <h2 id="Streznik">Strežnik</h2>
             <p>Sinhronizacija s strežnikom (npr. pri Hetznerju):</p>
