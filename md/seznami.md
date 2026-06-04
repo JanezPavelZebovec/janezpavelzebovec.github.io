@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-05-26
+date: 2026-06-04
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -447,7 +447,7 @@ Spletne storitve slojev:
         - Regulacijske površine (OPN) ()
         - Regulacijske črte (OPN) ()
         - dpnp_D96 ()
-    - [Geohub: Franciscejski_kataster_SI](https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE/Franciscejski_kataster_SI/MapServer): <wmts:https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE/Franciscejski_kataster_SI/MapServer/WMTS>
+    - [Geohub: Franciscejski_kataster_SI](https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE/Franciscejski_kataster_SI/MapServer): <https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE/Franciscejski_kataster_SI/MapServer/WMTS>
 - [WMTS](https://eprostor.gov.si/imps/srv/slv/catalog.search#/metadata/6b84ac7e-39e6-483c-af03-3c5e97ca5d2e):
     - <https://ipi.eprostor.gov.si/gwc-si-gurs-dts/service/wmts?request=getcapabilities>
         - DK DPK 250/500/750/1000/2500 (EPSG 3794)
@@ -473,7 +473,6 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 - [Map Warper](https://mapwarper.net/) - prevsem zgodovinski zemljevidi, *geopozicioniranje* zemljevidov
 - [Miniaturna železnica – Proge: Emonika](https://www.miniaturna-zeleznica.eu/Proge/Emonika/)
 - [Plemiška dediščina na Slovenskem](https://plemiska-dediscina.zrc-sazu.si/)
-
 - [Rapalska meja](https://www.rapalskameja.si/) – medvojno obdobje
 - [Virtualna arhivska knjižnica](https://vac.sjas.gov.si/) - arhivi Republike Slovenije
 - [Zgodovina na dlani](https://zgodovinanadlani.si/)
@@ -532,6 +531,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 [You Tube](https://www.youtube.com/@2CELLOSlive)
 - Adi Smolar: [You Tube](https://www.youtube.com/channel/UCABp7iuDH3vALPpK5uePplQ)
 - Ansambel bratov Avsenik: [You Tube](https://www.youtube.com/channel/UCdrxJ8LTjaClDqOrmUKeFXw) - narodnozabavna
+- The Bass Gang: [You Tube](https://www.youtube.com/@TheBassGangOfficial)
 - Clamavi De Profundis: [Spotify](https://open.spotify.com/artist/4d2UfcRE5XSsapO3kyzwdP),
 [You Tube](https://www.youtube.com/@ClamaviDeProfundis) - cerkvena, domišljijska, uglasbitve Tolkienovih pesmi
 - Emmanuel Music: [Spotify - Emmanuel Music Slovensko](https://open.spotify.com/artist/5osds6YxDJwOa2mq6UonWJ),
@@ -595,6 +595,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Good News](Good News) – dobre novice iz sveta
 - [Imperial](https://www.youtube.com/@IMPERIALYT) – zgodovina in *politika*
 - [Johnny Harris](https://www.youtube.com/@johnnyharris) – "neodvisni novinar" – razno iz sveta / o svetu
+- [Rabbit Hole](https://www.youtube.com/@rabbithole)
 - [Ruhi Cenet Documentaries](https://www.youtube.com/@ruhicenetdocs) – potovanja v najrazličnejše konce sveta
 - [Thoughty2](https://www.youtube.com/@Thoughty2) - večinoma zgodovinske zanimivosti
 - [Tom Scott](https://www.youtube.com/@TomScottGo)

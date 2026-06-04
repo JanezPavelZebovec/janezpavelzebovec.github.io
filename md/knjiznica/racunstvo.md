@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-05-12
+date: 2026-06-03
 description: računska teorija, enačbe
 keywords: računstvo, matematika
 author: Janez Pavel Žebovec
@@ -593,8 +593,14 @@ $$ \vec{a} \cdot \vec{b} = |\vec{a}| \cdot |\vec{b}| \cdot cos \phi = a_1 \cdot 
     - množenje/deljenje s *skalarjem*: po *komponentah*
 - *absolutna* vrednost / dolžina:
 $$ |\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2} $$
--*Vektorski produkt* prestavlja ploščino paralelograma, ki ga zmnožena *vektorja* oklepata. Smer zmnožka je odvisna od zaporedja množenja in pri tem velja desno pravilo (tudi "pravilo desnega vijaka, ki pomeni, da če prvi *vektor* zasučemo okoli skupnega izhodišča proti drugemu *vektorju*, se vijak zavrti v smer *vektorja* zmnožka).
+- *Vektorski produkt* prestavlja ploščino paralelograma, ki ga zmnožena *vektorja* oklepata. Smer zmnožka je odvisna od zaporedja množenja in pri tem velja desno pravilo (tudi "pravilo desnega vijaka, ki pomeni, da če prvi *vektor* zasučemo okoli skupnega izhodišča proti drugemu *vektorju*, se vijak zavrti v smer *vektorja* zmnožka).
 $$ \vec{a} \times \vec{b} = \mathrm{det} \left( \begin{bmatrix}a_1 & b_1\\a_2 & b_2\\a_3 & b_3\end{bmatrix} \right) $$
+
+### *Vektorski* prostori
+
+*Vektorji* tvorijo ogrodje prostora, če lahko vsak *vektor* v tem prostoru izrazimo kot njihovo *linearno kombinacijo*.
+
+*Baza* prostora je tako ogrodje prostora, da so *linearne kombinacije* vseh *vektorjev* enolične (vsak *vektor* je moč izraziti le z eno *linearno kombinacijo*).
 
 ## *Matrike*
 
@@ -602,55 +608,105 @@ $$ \vec{a} \times \vec{b} = \mathrm{det} \left( \begin{bmatrix}a_1 & b_1\\a_2 & 
 - Množenje s *skalarjem* (oz. matrika velikosti 1x1): po *komponentah*
 - Množenje *matrik* (ne velja zamenljivost / *komutativnost*, velja pa družilnost / *asociativnost*):
 $$ \begin{bmatrix}a & b & c\\d & e & f\end{bmatrix} \begin{bmatrix}g & h\\i & j\\k & l\end{bmatrix} = \begin{bmatrix}ag + bi + ck & ah + bj + cl\\dg + ei + fk & dh + ej + fl\end{bmatrix} $$
+    *Matrični produkt* dveh neničelnih *matrik* je lahko tudi enak nič.
 - *transpozicija*: stolpci postanejo vrstice in vrstice stolpci
-Vsi *elemeti diagonale identične matrike* so enaki 1, ostali pa enaki 0.
+Vsi *elementi diagonale identične matrike* so enaki 1, ostali pa enaki 0.
 $$ IA = AI = A $$
 
-*Inverz diagonalne matrike*: po *komponentah*
-***Komutator** dveh matrik* A in B:
+**Komutator** kvadratnih matrik $A, B \in \mathbb{C}^{n \times n}$:
 $$ [A, B] = AB - BA $$
-
-**Gauss-Jordanova *eliminacija*** – z njo pridemo do *inverza matrike* (če ta obstaja); ***elementarne* vrstične *operacije***, ki jih lahko uporabimo:
-
-- i-to vrstico pomnožimo z neničelnim številom $\alpha$
-    $$ \begin{pmatrix}
-    1 & & &        & \\
-    & \ddots & & & \\
-    & & 1 & & \\
-    & & & \alpha & \\    & & & & 1 \\ & & & & & \ddots \\ & & & & & & 1 \end{pmatrix} $$
-
-- i-ti vrstici prištejemo $\beta$-kratnik j-te vrstice
-- zamenjamo i-to in j-to vrstico
 
 **Sled** (ang. *trace*) je vsota prekotniških (*diagonalnih*) členov:
 $$ \mathrm{tr} (A) = A_{11} + A_{22} + ... + A_{nn} $$
 $$ \mathrm{tr} (A + B) = \mathrm{tr} (A) + \mathrm{tr} (B) $$
+$$ \mathrm{tr} (AB) = \mathrm{tr} (BA); A, B \in \mathbb{C}^{n \times n} $$
+$$ \mathrm{tr} (\lambda A) = \lambda \mathrm{tr} (A); \lambda \in \mathbb{C}; A \in \mathbb{C}^{n \times n} $$
 
-**Vrstična *kanonična forma***:
+### Vrstična *kanonična forma*
 
 - v vsaki vrstici je prvo neničelno število 1 (to je tudi t. i. *pivot*)
 - v dani vrstici je prva 1 desno od prve 1 v vrstici nad njo
 - od nekod dalje so lahko vrstice ničelne
 
-*Rank matrike* je enak številu njenih *pivotov* v VKF. *Matriko* lahko pretvorimo v vrstično *kanonično formo* z uporabo vrstičnih *operacij* Gauss-Jordanove *eliminacije*.
-
 Primer:
 $$ \begin{bmatrix}0 & 0 & 1 & a & b & c\\0 & 0 & 0 & 0 & 1 &d\\0 & 0 & 0 & 0 & 0 & 0\end{bmatrix} $$
 
-*Dimenzija* prostora rešitev *homogenega sistema lienarnih* enačb je enaka razliki med številom vrstic in njenim *rangom*. Spremenljivke, ki nimajo *pivota*, vzamemo za *parameter*.
+***Rank matrike*** je enak številu njenih *pivotov* v vrstični *kanonični formi* (VKF). *Matriko* lahko pretvorimo v VKF z uporabo vrstičnih *operacij* [Gauss-Jordanove *eliminacije*](#Gauss_Jordanova_eliminacija).
 
-Tak *sistem* pa je pravzaprav podvrsta *nehomogenega*.
+### Reševanje *linearnih* enačb z *matrikami*
+
+***Dimenzija*** prostora rešitev *homogenega sistema linearnih* enačb je enaka razliki med številom vrstic in njenim *rangom* ($k = n - \mathrm{rang}(A)$). Spremenljivke, ki nimajo *pivota*, vzamemo za *parameter*.
+
+Homogen *sistem* (kjer so vse vrstice enake 0) pa je pravzaprav podvrsta *nehomogenega*, kjer moramo *matriko* zgolj zapisati v razširjeni obliki, in je rešljiv le takrat, ko je $\mathrm{rang}(A) = \mathrm{rang}(A:b)$
+
+Postopek reševanja *nehomogenih linearnih* enačb:
+
+- zapišemo *matriko* količnikov in jo prevedemo v VKF
+- spremenljivke, ki nimajo pivotov v VKF, vzamemo za proste spremenljivke (*parametre*)
+- zapišemo poenostavljen *sistem* enačb in ostale spremenljivke izrazimo s prostimi spremenljivkami
 
 Primer:
 
 $$ x - 2y + 3z - 4u = 4 \\ y - z + u = -3 \\ x + 3y - 3u = 1 $$
-$$ \begin{bmatrix}1 & -1 & 3 & -4 & | & 4\\0 & 1 & -1 & 1 & | & -3\\1 & 3 & 0 & -3 & | & 1\end{bmatrix} \to \begin{bmatrix}1 & -2 & 3 & -4 & | & 4\\0 & 1 & -1 & 1 & | & -3\\0 & 0 & 1 & -2 & | & 6\end{bmatrix} $$
-Tako dobimo poenostavljen *sistem* enačb (u vzamemo za *parameter*):
+$$ \begin{bmatrix}1 & -1 & 3 & -4 & : & 4\\0 & 1 & -1 & 1 & : & -3\\1 & 3 & 0 & -3 & : & 1\end{bmatrix} \to \begin{bmatrix}1 & -2 & 3 & -4 & : & 4\\0 & 1 & -1 & 1 & : & -3\\0 & 0 & 1 & -2 & : & 6\end{bmatrix} $$
+Tako dobimo poenostavljen *sistem* enačb:
 $$ x - 2y + 3z - 4u = 4 \\ y -z + u = -3 \\ z - 2u = 6 $$
+$u$ vzamemo za *parameter*, ker nima pivota:
+$$ x = -8 \\ y = 3 + u \\ z = 6 + 2 u $$
+$$ r(u) (x, y, z, u) = (-8, 3 + u, b + 2 u, u) = (-8, 3, 6, 0) + u (0, 1, 2, 1) = \vec{r_0} + \vec{s} $$
+kjer je $\vec{r_0}$ začetna točka na premici in $\vec{s}$ smerni *vektor* premice.
 
-***Determinanta matrike*** predstavlja tudi količnik, za katerega se spremeni ploščina (*vektorski produkt*), če matriko vzamemo kot *transformacijo*. Če je *determinanta negativna*, je to zato, ker sta se *bazna vektorja* pri *transformaciji* zamenjala.
-$$ \mathrm{det} \left( \begin{bmatrix}a & b\\c & d\end{bmatrix} \right) = ad + bc - ad - bc $$
+Ali dani *vektorji* tvorijo ogrodje [*vektorskega* prostora](Vektorski_prostori) $\mathbb{R}^n$, ugotovimo tako, da
+
+1. *vektorje* zložimo v stolpce *matrike* A
+2. to *matriko* A pretvorimo v [VKF](#Vrsticna_kanonicna_forma)
+3. Če je $\mathrm{rang}(A) = n$, dani *vektorji* tvorijo ogrodje; *vektorji*, ki imajo pivote, tvorijo *bazo*
+
+### Inverz matrike
+
+Če *matriko* razumemo kot [*transformacijo*](#Linearne_transformacije), je *inverz matrike* obratna *transformacija*.
+
+$$ A^{-1} A = A A^{-1} = I_n; A, A^{-1} \in \mathbb{C}^{n \times n}; \mathrm{det}(A) \neq 0 $$
+
+*Inverz* $A^{-1}$ lahko izračunamo:
+
+- z enačbo $A X = I$, kjer je X iskani *inverz*, I pa *identična matrika*
+- z [Gaussovim *algoritmom*](#Gauss_Jordanova_eliminacija)
+
+*Inverz diagonalne matrike*: po *komponentah*
+
+$$ \begin{bmatrix} A & 0 \\ 0 & C \end{bmatrix}^{-1} = \begin{bmatrix}A˘{-1} & 0 \\ 0 & C^{-1} \end{bmatrix} $$
+
+### Gauss-Jordanova *eliminacija*
+
+Z njo pridemo do *inverza matrike* (če ta obstaja).
+
+- najprej zapišemo razširjeno *matriko* $\begin{bmatrix} A & I \end{bmatrix}$
+- z vrstičnimi *operacijami* razširjeno *matrikp* prevedemo v obliko $\begin{bmatrix} I & A^{-1} \end{bmatrix}$
+
+
+***Elementarne* vrstične *operacije***, ki jih lahko uporabimo:
+
+- i-to vrstico pomnožimo z neničelnim številom $\alpha$ oz. celotno *matriko* pomnožimo z *matriko*
+    $$ \begin{pmatrix}
+    1   &       &   &       &   &       &   \\
+        &\ddots &   &       &   &       &   \\
+        &       & 1 &       &   &       &   \\
+        &       &   &\alpha &   &       &   \\
+        &       &   &       & 1 &       &   \\
+        &       &   &       &   &\ddots &   \\
+        &       &   &       &   &       & 1 \\
+    \end{pmatrix} $$
+
+- i-ti vrstici prištejemo $\beta$-kratnik j-te vrstice
+- zamenjamo i-to in j-to vrstico
+
+### Determinanta matrike
+
+*determinanta* predstavlja tudi količnik, za katerega se spremeni ploščina (*vektorski produkt*), če matriko vzamemo kot *transformacijo*. Če je *determinanta negativna*, je to zato, ker sta se *bazna vektorja* pri *transformaciji* zamenjala.
+$$ \mathrm{det} \left( \begin{bmatrix}a & b\\c & d\end{bmatrix} \right) = ad - bc $$
 $$ \mathrm{det} \left( \begin{bmatrix}a & b & c\\d & e & f\\g & h & i\end{bmatrix} \right) = aei + bfg + cdh - ceg - bdi - afh $$
+$$ \mathrm{det} (A) = \sum_{\sigma \in \mathrm{Sym(n)}} \mathrm{sgn} (\sigma) A; A \in \mathbb{C}^{n \times n} $$
 $$ \begin{bmatrix}a_1\\a_2\\a_3\end{bmatrix} \times \begin{bmatrix}b_1\\b_2\\b_3\end{bmatrix} = \mathrm{det} \left( \begin{bmatrix}\vec{i} & a_1 & b_1\\\vec{j} & a_2 & b_2\\\vec{k} & a_3 & b_3\end{bmatrix} \right) = \vec{i}(a_2b_3 - a_3b_2) + \vec{j}(a_3b_1 - a_1b_3) + \vec{k}(a_1b_2 - a_2b_1) $$
 
 Za izračun *determinante* lahko uporabimo tudi Gaussovo *metodo/algoritem*:
@@ -664,23 +720,38 @@ Za izračun *determinante* lahko uporabimo tudi Gaussovo *metodo/algoritem*:
 
 Če ima *matrika* veliko ničel, se splača uporabiti **razvoj po stolpcu ali vrstici**. 
 
-**Cramberjevo pravilo** za izračun *matrike*:
+### Računanje *linearnih* enačb z *matrikami*
+
+*Dimenzija* prostora (število prostih spremenljivk / *parametrov*) je $k = n - \mathrm{rang}(A)$.
+
+### Cramerjevo pravilo za izračun *inverza matrike*
+
 $$ A^{-1} = \frac{1}{\mathrm{det}(A)} \mathrm{co}(A)^{T} $$
 *Kofaktor* $\mathrm{co}(A)$ dobimo tako, da izračunamo *kofaktorje* po vseh vrsticah in stolpcih.
 
 ### *Linearne transformacije*
 
-*linearna transformacija* preoblikuje *koordinatni* prostor tako, da ohrani *koordinatno* mrežo (prejšnje navpičnice, vodoravnice in poševnice) ravne, vzporedne in enakomerno razmaknjene, ter ne premakne izhodišča. Opišemo jo lahko s preprosto *matriko*, ki nam pravzaprav pove *koordinate transformiranih baznih vektorjev* v *netransformiranem* prostoru. Če torej *matriko*/*vektor* množimo s to *transormacijsko matriko*, dobimo *transformirano matriko*/*vektor*.
+*linearna transformacija* preoblikuje *koordinatni* prostor tako, da ohrani *koordinatno* mrežo (prejšnje navpičnice, vodoravnice in poševnice) ravne, vzporedne in enakomerno razmaknjene, ter ne premakne izhodišča. Opišemo jo lahko s preprosto *matriko*, ki nam pravzaprav pove *koordinate transformiranih baznih vektorjev* v *netransformiranem* prostoru. Če torej *matriko*/*vektor* množimo s to *transformacijsko matriko*, dobimo *transformirano matriko*/*vektor*.
 
 $$ \vec{i} \to (a\vec{i}, c\vec{j});\, \vec{j} \to (b\vec{i}, d\vec{j}) $$
 $$ \begin{bmatrix}x\\y\end{bmatrix} \to \begin{bmatrix}a & b\\c & d\end{bmatrix} \cdot \begin{bmatrix}x\\y\end{bmatrix} = \begin{bmatrix}ax & by\\cx & dy\end{bmatrix} $$
 
-*Kompozicija transformacij* (več zaporednih – zaporedje je pomembno) = zmnožek njihovih *transformacijskih matrik* (zaporedje v levo):
+Preslikava je *linearna*, če velja, da je
+
+- *homogena*: $T(\alpha \gamma) = \alpha T(\gamma); \alpha \in \mathbb{R}; \gamma \in V$
+- *aditivna*: $T(\gamma + \omega) = T(\gamma) + T(\omega); \gamma, \omega \in V$
+
+Vsaka *linearna* preslikava je določena s slikami *baznih vektorjev*.
+
+***Kompozicija transformacij*** (več zaporednih – zaporedje je pomembno) = zmnožek njihovih *transformacijskih matrik* (zaporedje v levo):
 $$ f(x) = \begin{bmatrix}a & b\\c & d\end{bmatrix}; g(x) = \begin{bmatrix}e & h\\l & m\end{bmatrix} $$
 $$ f(g(x)) = \begin{bmatrix}a & b\\c & d\end{bmatrix} \left( \begin{bmatrix}e & h\\l & m\end{bmatrix} \begin{bmatrix}x\\y\end{bmatrix} \right) = \left( \begin{bmatrix}a & b\\c & d\end{bmatrix} \begin{bmatrix}e & h\\l & m\end{bmatrix} \right) \begin{bmatrix}x\\y\end{bmatrix} $$
 
-*Determinanta transformacijske matrike* nam pove, za kakšen količnik se spremeni ploščina/prostornina ob *transformaciji*. Če je *determinanta negativna*, to pomeni, da se je *vektor normale* ploščine obrnil (zamenjal predznak), kar se zgodi, če "zamenjamo " *bazna vektorja* med sabo.
+***Determinanta transformacijske matrike*** nam pove, za kakšen količnik se spremeni ploščina/prostornina ob *transformaciji*. Če je *determinanta negativna*, to pomeni, da se je *vektor normale* ploščine obrnil (zamenjal predznak), kar se zgodi, če "zamenjamo " *bazna vektorja* med sabo.
+
+Primer zasuka dvorazsežnostnega prostora okoli $(0, 0)$ za kot $\phi$:
+$$ R_\phi = \begin{bmatrix} \cos \phi & - \sin \phi \\ \sin \phi & \cos \phi \end{bmatrix} $$
 
 ### Preslikave med *vektorskimi* prostori
 
-- ***unitarna matrika***: $A* A = A A* = I_n$
+- ***unitarna matrika***: $A^* A = A A^* = I_n$

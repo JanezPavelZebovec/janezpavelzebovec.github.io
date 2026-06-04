@@ -36,7 +36,7 @@
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/racunstvo/">racunstvo</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-05-12">2026-05-12</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-06-03">2026-06-03</time></p>
     </header>
     <nav>
         <ul>
@@ -84,9 +84,19 @@
         zaporedje</a></li>
         <li><a href="#Geometrijsko_zaporedje"
         id="toc-Geometrijsko_zaporedje"><em>Geometrijsko</em>
-        zaporedje</a></li>
+        zaporedje</a>
+        <ul>
+        <li><a href="#Neskoncna_geometrijska_vrsta"
+        id="toc-Neskoncna_geometrijska_vrsta">Neskončna
+        <em>geometrijska</em> vrsta</a></li>
+        </ul></li>
         <li><a href="#Stevilske_vrste"
-        id="toc-Stevilske_vrste">Številske vrste</a></li>
+        id="toc-Stevilske_vrste">Številske vrste</a>
+        <ul>
+        <li><a href="#Pogoji_za_konvergenco_divergenco"
+        id="toc-Pogoji_za_konvergenco_divergenco">Pogoji za
+        <em>konvergenco</em> / <em>divergenco</em></a></li>
+        </ul></li>
         </ul></li>
         <li><a href="#Dvoclenik" id="toc-Dvoclenik">Dvočlenik</a>
         <ul>
@@ -99,10 +109,18 @@
         <li><a href="#Linearna_funkcija"
         id="toc-Linearna_funkcija">Linearna funkcija</a></li>
         <li><a href="#Potenciranje"
-        id="toc-Potenciranje">Potenciranje</a></li>
+        id="toc-Potenciranje">Potenciranje</a>
+        <ul>
+        <li><a href="#Kvadratna_funkcija"
+        id="toc-Kvadratna_funkcija">Kvadratna funkcija</a></li>
+        </ul></li>
         <li><a href="#Logaritem" id="toc-Logaritem">Logaritem</a></li>
         <li><a href="#Kotne_funkcije" id="toc-Kotne_funkcije">Kotne
-        funkcije</a></li>
+        funkcije</a>
+        <ul>
+        <li><a href="#Hiperbolicne"
+        id="toc-Hiperbolicne"><em>Hiperbolične</em></a></li>
+        </ul></li>
         <li><a href="#Limita" id="toc-Limita">Limita</a></li>
         <li><a href="#Odvod_in_integral"
         id="toc-Odvod_in_integral">Odvod in integral</a></li>
@@ -119,18 +137,47 @@
         <li><a href="#Prostoroslovje"
         id="toc-Prostoroslovje">Prostoroslovje</a>
         <ul>
-        <li><a href="#Koti" id="toc-Koti">Koti</a></li>
-        <li><a href="#Trikotnik" id="toc-Trikotnik">Trikotnik</a></li>
+        <li><a href="#Koti" id="toc-Koti">Koti</a>
+        <ul>
+        <li><a href="#Radian" id="toc-Radian">Radian</a></li>
+        </ul></li>
+        <li><a href="#Trikotnik" id="toc-Trikotnik">Trikotnik</a>
+        <ul>
+        <li><a href="#Pravokotni_trikotnik"
+        id="toc-Pravokotni_trikotnik">Pravokotni trikotnik</a></li>
+        </ul></li>
         <li><a href="#Paralelogram"
         id="toc-Paralelogram"><em>Paralelogram</em></a></li>
         <li><a href="#Deltoid"
         id="toc-Deltoid"><em>Deltoid</em></a></li>
         <li><a href="#Krogla" id="toc-Krogla">Krogla</a></li>
         </ul></li>
-        <li><a href="#Vektorji"
-        id="toc-Vektorji"><em>Vektorji</em></a></li>
+        <li><a href="#Vektorji" id="toc-Vektorji"><em>Vektorji</em></a>
+        <ul>
+        <li><a href="#Vektorski_prostori"
+        id="toc-Vektorski_prostori"><em>Vektorski</em> prostori</a></li>
+        </ul></li>
         <li><a href="#Matrike" id="toc-Matrike"><em>Matrike</em></a>
         <ul>
+        <li><a href="#Vrsticna_kanonicna_forma"
+        id="toc-Vrsticna_kanonicna_forma">Vrstična <em>kanonična
+        forma</em></a></li>
+        <li><a href="#Resevanje_linearnih_enacb_z_matrikami"
+        id="toc-Resevanje_linearnih_enacb_z_matrikami">Reševanje
+        <em>linearnih</em> enačb z <em>matrikami</em></a></li>
+        <li><a href="#Inverz_matrike" id="toc-Inverz_matrike">Inverz
+        matrike</a></li>
+        <li><a href="#Gauss_Jordanova_eliminacija"
+        id="toc-Gauss_Jordanova_eliminacija">Gauss-Jordanova
+        <em>eliminacija</em></a></li>
+        <li><a href="#Determinanta_matrike"
+        id="toc-Determinanta_matrike">Determinanta matrike</a></li>
+        <li><a href="#Racunanje_linearnih_enacb_z_matrikami"
+        id="toc-Racunanje_linearnih_enacb_z_matrikami">Računanje
+        <em>linearnih</em> enačb z <em>matrikami</em></a></li>
+        <li><a href="#Cramerjevo_pravilo_za_izracun_inverza_matrike"
+        id="toc-Cramerjevo_pravilo_za_izracun_inverza_matrike">Cramerjevo
+        pravilo za izračun <em>inverza matrike</em></a></li>
         <li><a href="#Linearne_transformacije"
         id="toc-Linearne_transformacije"><em>Linearne
         transformacije</em></a></li>
@@ -1191,17 +1238,26 @@
             </ul></li>
             <li><em>absolutna</em> vrednost / dolžina: <span
             class="math display">\[ |\vec{a}| = \sqrt{a_1^2 + a_2^2 +
-            a_3^2} \]</span> -<em>Vektorski produkt</em> prestavlja
-            ploščino paralelograma, ki ga zmnožena <em>vektorja</em>
-            oklepata. Smer zmnožka je odvisna od zaporedja množenja in
-            pri tem velja desno pravilo (tudi “pravilo desnega vijaka,
-            ki pomeni, da če prvi <em>vektor</em> zasučemo okoli
-            skupnega izhodišča proti drugemu <em>vektorju</em>, se vijak
-            zavrti v smer <em>vektorja</em> zmnožka). <span
+            a_3^2} \]</span></li>
+            <li><em>Vektorski produkt</em> prestavlja ploščino
+            paralelograma, ki ga zmnožena <em>vektorja</em> oklepata.
+            Smer zmnožka je odvisna od zaporedja množenja in pri tem
+            velja desno pravilo (tudi “pravilo desnega vijaka, ki
+            pomeni, da če prvi <em>vektor</em> zasučemo okoli skupnega
+            izhodišča proti drugemu <em>vektorju</em>, se vijak zavrti v
+            smer <em>vektorja</em> zmnožka). <span
             class="math display">\[ \vec{a} \times \vec{b} =
             \mathrm{det} \left( \begin{bmatrix}a_1 &amp; b_1\\a_2 &amp;
             b_2\\a_3 &amp; b_3\end{bmatrix} \right) \]</span></li>
             </ul>
+            <h3 id="Vektorski_prostori"><em>Vektorski</em> prostori</h3>
+            <p><em>Vektorji</em> tvorijo ogrodje prostora, če lahko vsak
+            <em>vektor</em> v tem prostoru izrazimo kot njihovo
+            <em>linearno kombinacijo</em>.</p>
+            <p><em>Baza</em> prostora je tako ogrodje prostora, da so
+            <em>linearne kombinacije</em> vseh <em>vektorjev</em>
+            enolične (vsak <em>vektor</em> je moč izraziti le z eno
+            <em>linearno kombinacijo</em>).</p>
             <h2 id="Matrike"><em>Matrike</em></h2>
             <ul>
             <li>Seštevanje/odštevanje <em>matrik</em>: po
@@ -1214,44 +1270,30 @@
             \begin{bmatrix}a &amp; b &amp; c\\d &amp; e &amp;
             f\end{bmatrix} \begin{bmatrix}g &amp; h\\i &amp; j\\k &amp;
             l\end{bmatrix} = \begin{bmatrix}ag + bi + ck &amp; ah + bj +
-            cl\\dg + ei + fk &amp; dh + ej + fl\end{bmatrix}
-            \]</span></li>
+            cl\\dg + ei + fk &amp; dh + ej + fl\end{bmatrix} \]</span>
+            <em>Matrični produkt</em> dveh neničelnih <em>matrik</em> je
+            lahko tudi enak nič.</li>
             <li><em>transpozicija</em>: stolpci postanejo vrstice in
-            vrstice stolpci Vsi <em>elemeti diagonale identične
+            vrstice stolpci Vsi <em>elementi diagonale identične
             matrike</em> so enaki 1, ostali pa enaki 0. <span
             class="math display">\[ IA = AI = A \]</span></li>
             </ul>
-            <p><em>Inverz diagonalne matrike</em>: po
-            <em>komponentah</em> <em><strong>Komutator</strong> dveh
-            matrik</em> A in B: <span class="math display">\[ [A, B] =
-            AB - BA \]</span></p>
-            <p><strong>Gauss-Jordanova <em>eliminacija</em></strong> – z
-            njo pridemo do <em>inverza matrike</em> (če ta obstaja);
-            <strong><em>elementarne</em> vrstične
-            <em>operacije</em></strong>, ki jih lahko uporabimo:</p>
-            <ul>
-            <li><p>i-to vrstico pomnožimo z neničelnim številom <span
-            class="math inline">\(\alpha\)</span> <span
-            class="math display">\[ \begin{pmatrix}
-              1 &amp; &amp; &amp;        &amp; \\
-              &amp; \ddots &amp; &amp; &amp; \\
-              &amp; &amp; 1 &amp; &amp; \\
-              &amp; &amp; &amp; \alpha &amp; \\    &amp; &amp; &amp;
-            &amp; 1 \\ &amp; &amp; &amp; &amp; &amp; \ddots \\ &amp;
-            &amp; &amp; &amp; &amp; &amp; 1 \end{pmatrix}
-            \]</span></p></li>
-            <li><p>i-ti vrstici prištejemo <span
-            class="math inline">\(\beta\)</span>-kratnik j-te
-            vrstice</p></li>
-            <li><p>zamenjamo i-to in j-to vrstico</p></li>
-            </ul>
+            <p><strong>Komutator</strong> kvadratnih matrik <span
+            class="math inline">\(A, B \in \mathbb{C}^{n \times
+            n}\)</span>: <span class="math display">\[ [A, B] = AB - BA
+            \]</span></p>
             <p><strong>Sled</strong> (ang. <em>trace</em>) je vsota
             prekotniških (<em>diagonalnih</em>) členov: <span
             class="math display">\[ \mathrm{tr} (A) = A_{11} + A_{22} +
             ... + A_{nn} \]</span> <span class="math display">\[
             \mathrm{tr} (A + B) = \mathrm{tr} (A) + \mathrm{tr} (B)
-            \]</span></p>
-            <p><strong>Vrstična <em>kanonična forma</em></strong>:</p>
+            \]</span> <span class="math display">\[ \mathrm{tr} (AB) =
+            \mathrm{tr} (BA); A, B \in \mathbb{C}^{n \times n} \]</span>
+            <span class="math display">\[ \mathrm{tr} (\lambda A) =
+            \lambda \mathrm{tr} (A); \lambda \in \mathbb{C}; A \in
+            \mathbb{C}^{n \times n} \]</span></p>
+            <h3 id="Vrsticna_kanonicna_forma">Vrstična <em>kanonična
+            forma</em></h3>
             <ul>
             <li>v vsaki vrstici je prvo neničelno število 1 (to je tudi
             t. i. <em>pivot</em>)</li>
@@ -1259,45 +1301,151 @@
             njo</li>
             <li>od nekod dalje so lahko vrstice ničelne</li>
             </ul>
-            <p><em>Rank matrike</em> je enak številu njenih
-            <em>pivotov</em> v VKF. <em>Matriko</em> lahko pretvorimo v
-            vrstično <em>kanonično formo</em> z uporabo vrstičnih
-            <em>operacij</em> Gauss-Jordanove <em>eliminacije</em>.</p>
             <p>Primer: <span class="math display">\[ \begin{bmatrix}0
             &amp; 0 &amp; 1 &amp; a &amp; b &amp; c\\0 &amp; 0 &amp; 0
             &amp; 0 &amp; 1 &amp;d\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
             &amp; 0\end{bmatrix} \]</span></p>
-            <p><em>Dimenzija</em> prostora rešitev <em>homogenega
-            sistema lienarnih</em> enačb je enaka razliki med številom
-            vrstic in njenim <em>rangom</em>. Spremenljivke, ki nimajo
-            <em>pivota</em>, vzamemo za <em>parameter</em>.</p>
-            <p>Tak <em>sistem</em> pa je pravzaprav podvrsta
-            <em>nehomogenega</em>.</p>
+            <p><strong><em>Rank matrike</em></strong> je enak številu
+            njenih <em>pivotov</em> v vrstični <em>kanonični formi</em>
+            (VKF). <em>Matriko</em> lahko pretvorimo v VKF z uporabo
+            vrstičnih <em>operacij</em> <a
+            href="#Gauss_Jordanova_eliminacija">Gauss-Jordanove
+            <em>eliminacije</em></a>.</p>
+            <h3 id="Resevanje_linearnih_enacb_z_matrikami">Reševanje
+            <em>linearnih</em> enačb z <em>matrikami</em></h3>
+            <p><strong><em>Dimenzija</em></strong> prostora rešitev
+            <em>homogenega sistema linearnih</em> enačb je enaka razliki
+            med številom vrstic in njenim <em>rangom</em> (<span
+            class="math inline">\(k = n - \mathrm{rang}(A)\)</span>).
+            Spremenljivke, ki nimajo <em>pivota</em>, vzamemo za
+            <em>parameter</em>.</p>
+            <p>Homogen <em>sistem</em> (kjer so vse vrstice enake 0) pa
+            je pravzaprav podvrsta <em>nehomogenega</em>, kjer moramo
+            <em>matriko</em> zgolj zapisati v razširjeni obliki, in je
+            rešljiv le takrat, ko je <span
+            class="math inline">\(\mathrm{rang}(A) =
+            \mathrm{rang}(A:b)\)</span></p>
+            <p>Postopek reševanja <em>nehomogenih linearnih</em>
+            enačb:</p>
+            <ul>
+            <li>zapišemo <em>matriko</em> količnikov in jo prevedemo v
+            VKF</li>
+            <li>spremenljivke, ki nimajo pivotov v VKF, vzamemo za
+            proste spremenljivke (<em>parametre</em>)</li>
+            <li>zapišemo poenostavljen <em>sistem</em> enačb in ostale
+            spremenljivke izrazimo s prostimi spremenljivkami</li>
+            </ul>
             <p>Primer:</p>
             <p><span class="math display">\[ x - 2y + 3z - 4u = 4 \\ y -
             z + u = -3 \\ x + 3y - 3u = 1 \]</span> <span
             class="math display">\[ \begin{bmatrix}1 &amp; -1 &amp; 3
-            &amp; -4 &amp; | &amp; 4\\0 &amp; 1 &amp; -1 &amp; 1 &amp; |
-            &amp; -3\\1 &amp; 3 &amp; 0 &amp; -3 &amp; | &amp;
+            &amp; -4 &amp; : &amp; 4\\0 &amp; 1 &amp; -1 &amp; 1 &amp; :
+            &amp; -3\\1 &amp; 3 &amp; 0 &amp; -3 &amp; : &amp;
             1\end{bmatrix} \to \begin{bmatrix}1 &amp; -2 &amp; 3 &amp;
-            -4 &amp; | &amp; 4\\0 &amp; 1 &amp; -1 &amp; 1 &amp; | &amp;
-            -3\\0 &amp; 0 &amp; 1 &amp; -2 &amp; | &amp; 6\end{bmatrix}
-            \]</span> Tako dobimo poenostavljen <em>sistem</em> enačb (u
-            vzamemo za <em>parameter</em>): <span
-            class="math display">\[ x - 2y + 3z - 4u = 4 \\ y -z + u =
-            -3 \\ z - 2u = 6 \]</span></p>
-            <p><strong><em>Determinanta matrike</em></strong>
-            predstavlja tudi količnik, za katerega se spremeni ploščina
-            (<em>vektorski produkt</em>), če matriko vzamemo kot
-            <em>transformacijo</em>. Če je <em>determinanta
-            negativna</em>, je to zato, ker sta se <em>bazna
-            vektorja</em> pri <em>transformaciji</em> zamenjala. <span
-            class="math display">\[ \mathrm{det} \left( \begin{bmatrix}a
-            &amp; b\\c &amp; d\end{bmatrix} \right) = ad + bc - ad - bc
-            \]</span> <span class="math display">\[ \mathrm{det} \left(
-            \begin{bmatrix}a &amp; b &amp; c\\d &amp; e &amp; f\\g &amp;
-            h &amp; i\end{bmatrix} \right) = aei + bfg + cdh - ceg - bdi
-            - afh \]</span> <span class="math display">\[
+            -4 &amp; : &amp; 4\\0 &amp; 1 &amp; -1 &amp; 1 &amp; : &amp;
+            -3\\0 &amp; 0 &amp; 1 &amp; -2 &amp; : &amp; 6\end{bmatrix}
+            \]</span> Tako dobimo poenostavljen <em>sistem</em> enačb:
+            <span class="math display">\[ x - 2y + 3z - 4u = 4 \\ y -z +
+            u = -3 \\ z - 2u = 6 \]</span> <span
+            class="math inline">\(u\)</span> vzamemo za
+            <em>parameter</em>, ker nima pivota: <span
+            class="math display">\[ x = -8 \\ y = 3 + u \\ z = 6 + 2 u
+            \]</span> <span class="math display">\[ r(u) (x, y, z, u) =
+            (-8, 3 + u, b + 2 u, u) = (-8, 3, 6, 0) + u (0, 1, 2, 1) =
+            \vec{r_0} + \vec{s} \]</span> kjer je <span
+            class="math inline">\(\vec{r_0}\)</span> začetna točka na
+            premici in <span class="math inline">\(\vec{s}\)</span>
+            smerni <em>vektor</em> premice.</p>
+            <p>Ali dani <em>vektorji</em> tvorijo ogrodje <a
+            href="Vektorski_prostori"><em>vektorskega</em> prostora</a>
+            <span class="math inline">\(\mathbb{R}^n\)</span>, ugotovimo
+            tako, da</p>
+            <ol type="1">
+            <li><em>vektorje</em> zložimo v stolpce <em>matrike</em>
+            A</li>
+            <li>to <em>matriko</em> A pretvorimo v <a
+            href="#Vrsticna_kanonicna_forma">VKF</a></li>
+            <li>Če je <span class="math inline">\(\mathrm{rang}(A) =
+            n\)</span>, dani <em>vektorji</em> tvorijo ogrodje;
+            <em>vektorji</em>, ki imajo pivote, tvorijo
+            <em>bazo</em></li>
+            </ol>
+            <h3 id="Inverz_matrike">Inverz matrike</h3>
+            <p>Če <em>matriko</em> razumemo kot <a
+            href="#Linearne_transformacije"><em>transformacijo</em></a>,
+            je <em>inverz matrike</em> obratna
+            <em>transformacija</em>.</p>
+            <p><span class="math display">\[ A^{-1} A = A A^{-1} = I_n;
+            A, A^{-1} \in \mathbb{C}^{n \times n}; \mathrm{det}(A) \neq
+            0 \]</span></p>
+            <p><em>Inverz</em> <span
+            class="math inline">\(A^{-1}\)</span> lahko izračunamo:</p>
+            <ul>
+            <li>z enačbo <span class="math inline">\(A X = I\)</span>,
+            kjer je X iskani <em>inverz</em>, I pa <em>identična
+            matrika</em></li>
+            <li>z <a href="#Gauss_Jordanova_eliminacija">Gaussovim
+            <em>algoritmom</em></a></li>
+            </ul>
+            <p><em>Inverz diagonalne matrike</em>: po
+            <em>komponentah</em></p>
+            <p><span class="math display">\[ \begin{bmatrix} A &amp; 0
+            \\ 0 &amp; C \end{bmatrix}^{-1} = \begin{bmatrix}A˘{-1}
+            &amp; 0 \\ 0 &amp; C^{-1} \end{bmatrix} \]</span></p>
+            <h3 id="Gauss_Jordanova_eliminacija">Gauss-Jordanova
+            <em>eliminacija</em></h3>
+            <p>Z njo pridemo do <em>inverza matrike</em> (če ta
+            obstaja).</p>
+            <ul>
+            <li>najprej zapišemo razširjeno <em>matriko</em> <span
+            class="math inline">\(\begin{bmatrix} A &amp; I
+            \end{bmatrix}\)</span></li>
+            <li>z vrstičnimi <em>operacijami</em> razširjeno
+            <em>matrikp</em> prevedemo v obliko <span
+            class="math inline">\(\begin{bmatrix} I &amp; A^{-1}
+            \end{bmatrix}\)</span></li>
+            </ul>
+            <p><strong><em>Elementarne</em> vrstične
+            <em>operacije</em></strong>, ki jih lahko uporabimo:</p>
+            <ul>
+            <li><p>i-to vrstico pomnožimo z neničelnim številom <span
+            class="math inline">\(\alpha\)</span> oz. celotno
+            <em>matriko</em> pomnožimo z <em>matriko</em> <span
+            class="math display">\[ \begin{pmatrix}
+              1   &amp;       &amp;   &amp;       &amp;   &amp;       &amp;   \\
+                  &amp;\ddots
+            &amp;   &amp;       &amp;   &amp;       &amp;   \\
+                  &amp;       &amp; 1
+            &amp;       &amp;   &amp;       &amp;   \\
+                  &amp;       &amp;   &amp;\alpha
+            &amp;   &amp;       &amp;   \\
+                  &amp;       &amp;   &amp;       &amp; 1
+            &amp;       &amp;   \\
+                  &amp;       &amp;   &amp;       &amp;   &amp;\ddots
+            &amp;   \\
+                  &amp;       &amp;   &amp;       &amp;   &amp;       &amp;
+            1 \\
+              \end{pmatrix} \]</span></p></li>
+            <li><p>i-ti vrstici prištejemo <span
+            class="math inline">\(\beta\)</span>-kratnik j-te
+            vrstice</p></li>
+            <li><p>zamenjamo i-to in j-to vrstico</p></li>
+            </ul>
+            <h3 id="Determinanta_matrike">Determinanta matrike</h3>
+            <p><em>determinanta</em> predstavlja tudi količnik, za
+            katerega se spremeni ploščina (<em>vektorski produkt</em>),
+            če matriko vzamemo kot <em>transformacijo</em>. Če je
+            <em>determinanta negativna</em>, je to zato, ker sta se
+            <em>bazna vektorja</em> pri <em>transformaciji</em>
+            zamenjala. <span class="math display">\[ \mathrm{det} \left(
+            \begin{bmatrix}a &amp; b\\c &amp; d\end{bmatrix} \right) =
+            ad - bc \]</span> <span class="math display">\[ \mathrm{det}
+            \left( \begin{bmatrix}a &amp; b &amp; c\\d &amp; e &amp;
+            f\\g &amp; h &amp; i\end{bmatrix} \right) = aei + bfg + cdh
+            - ceg - bdi - afh \]</span> <span class="math display">\[
+            \mathrm{det} (A) = \sum_{\sigma \in \mathrm{Sym(n)}}
+            \mathrm{sgn} (\sigma) A; A \in \mathbb{C}^{n \times n}
+            \]</span> <span class="math display">\[
             \begin{bmatrix}a_1\\a_2\\a_3\end{bmatrix} \times
             \begin{bmatrix}b_1\\b_2\\b_3\end{bmatrix} = \mathrm{det}
             \left( \begin{bmatrix}\vec{i} &amp; a_1 &amp; b_1\\\vec{j}
@@ -1325,8 +1473,15 @@
             trikotne oblike.</p>
             <p>Če ima <em>matrika</em> veliko ničel, se splača uporabiti
             <strong>razvoj po stolpcu ali vrstici</strong>.</p>
-            <p><strong>Cramberjevo pravilo</strong> za izračun
-            <em>matrike</em>: <span class="math display">\[ A^{-1} =
+            <h3 id="Racunanje_linearnih_enacb_z_matrikami">Računanje
+            <em>linearnih</em> enačb z <em>matrikami</em></h3>
+            <p><em>Dimenzija</em> prostora (število prostih spremenljivk
+            / <em>parametrov</em>) je <span class="math inline">\(k = n
+            - \mathrm{rang}(A)\)</span>.</p>
+            <h3
+            id="Cramerjevo_pravilo_za_izracun_inverza_matrike">Cramerjevo
+            pravilo za izračun <em>inverza matrike</em></h3>
+            <p><span class="math display">\[ A^{-1} =
             \frac{1}{\mathrm{det}(A)} \mathrm{co}(A)^{T} \]</span>
             <em>Kofaktor</em> <span
             class="math inline">\(\mathrm{co}(A)\)</span> dobimo tako,
@@ -1343,7 +1498,7 @@
             transformiranih baznih vektorjev</em> v
             <em>netransformiranem</em> prostoru. Če torej
             <em>matriko</em>/<em>vektor</em> množimo s to
-            <em>transormacijsko matriko</em>, dobimo <em>transformirano
+            <em>transformacijsko matriko</em>, dobimo <em>transformirano
             matriko</em>/<em>vektor</em>.</p>
             <p><span class="math display">\[ \vec{i} \to (a\vec{i},
             c\vec{j});\, \vec{j} \to (b\vec{i}, d\vec{j}) \]</span>
@@ -1352,8 +1507,19 @@
             b\\c &amp; d\end{bmatrix} \cdot
             \begin{bmatrix}x\\y\end{bmatrix} = \begin{bmatrix}ax &amp;
             by\\cx &amp; dy\end{bmatrix} \]</span></p>
-            <p><em>Kompozicija transformacij</em> (več zaporednih –
-            zaporedje je pomembno) = zmnožek njihovih
+            <p>Preslikava je <em>linearna</em>, če velja, da je</p>
+            <ul>
+            <li><em>homogena</em>: <span class="math inline">\(T(\alpha
+            \gamma) = \alpha T(\gamma); \alpha \in \mathbb{R}; \gamma
+            \in V\)</span></li>
+            <li><em>aditivna</em>: <span class="math inline">\(T(\gamma
+            + \omega) = T(\gamma) + T(\omega); \gamma, \omega \in
+            V\)</span></li>
+            </ul>
+            <p>Vsaka <em>linearna</em> preslikava je določena s slikami
+            <em>baznih vektorjev</em>.</p>
+            <p><strong><em>Kompozicija transformacij</em></strong> (več
+            zaporednih – zaporedje je pomembno) = zmnožek njihovih
             <em>transformacijskih matrik</em> (zaporedje v levo): <span
             class="math display">\[ f(x) = \begin{bmatrix}a &amp; b\\c
             &amp; d\end{bmatrix}; g(x) = \begin{bmatrix}e &amp; h\\l
@@ -1364,17 +1530,24 @@
             \begin{bmatrix}a &amp; b\\c &amp; d\end{bmatrix}
             \begin{bmatrix}e &amp; h\\l &amp; m\end{bmatrix} \right)
             \begin{bmatrix}x\\y\end{bmatrix} \]</span></p>
-            <p><em>Determinanta transformacijske matrike</em> nam pove,
-            za kakšen količnik se spremeni ploščina/prostornina ob
-            <em>transformaciji</em>. Če je <em>determinanta
-            negativna</em>, to pomeni, da se je <em>vektor normale</em>
-            ploščine obrnil (zamenjal predznak), kar se zgodi, če
-            “zamenjamo” <em>bazna vektorja</em> med sabo.</p>
+            <p><strong><em>Determinanta transformacijske
+            matrike</em></strong> nam pove, za kakšen količnik se
+            spremeni ploščina/prostornina ob <em>transformaciji</em>. Če
+            je <em>determinanta negativna</em>, to pomeni, da se je
+            <em>vektor normale</em> ploščine obrnil (zamenjal predznak),
+            kar se zgodi, če “zamenjamo” <em>bazna vektorja</em> med
+            sabo.</p>
+            <p>Primer zasuka dvorazsežnostnega prostora okoli <span
+            class="math inline">\((0, 0)\)</span> za kot <span
+            class="math inline">\(\phi\)</span>: <span
+            class="math display">\[ R_\phi = \begin{bmatrix} \cos \phi
+            &amp; - \sin \phi \\ \sin \phi &amp; \cos \phi \end{bmatrix}
+            \]</span></p>
             <h3 id="Preslikave_med_vektorskimi_prostori">Preslikave med
             <em>vektorskimi</em> prostori</h3>
             <ul>
             <li><strong><em>unitarna matrika</em></strong>: <span
-            class="math inline">\(A* A = A A* = I_n\)</span></li>
+            class="math inline">\(A^* A = A A^* = I_n\)</span></li>
             </ul>
         </div> 
     </main>

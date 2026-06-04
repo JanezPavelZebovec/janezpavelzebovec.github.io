@@ -1,6 +1,6 @@
 ---
 title: Župnije Slovenije na OSM
-date: 2026-02-16
+date: 2026-06-01
 description: Seznam že vnešenih župnij v OSM
 keywords: OpenStreetMap, župnija, Slovenija
 ---
@@ -104,6 +104,8 @@ Podatki o župnijah, ki so navedeni na Družini, a drugi viri navajajo drugače
 - Župnija Brdo pri Lukovici: leta 2026 sta se ji pridružili župniji [Češnjice](https://www.druzina.si/zupnija/zupnijska-cerkev-karmelske-matere-bozja-cesnjice) in [Zlato Polje](https://www.druzina.si/zupnija/zupnijska-cerkev-sv-marije-magdalene-zlato-polje)
 - Župnija Babno Polje: leta 2026 pridružena župniji Stari Trg pri Ložu
 - Župnija Šentožbolt: leta 2026 pridružena župniji Blagovica
+- Župnija Brezno pri Dravi: spletna stran <https://vecna-voda.si/zupnijabrezno/> (ne pa <http://zupnije.com/brezno/>)
+- Župnija Pirniče: spletna stran <https://www.pirnice.si/zupnija-pirnice/> (ne pa <http://zupnija-pirnice.rkc.si/>)
 
 ## Dodatni podatki
 
