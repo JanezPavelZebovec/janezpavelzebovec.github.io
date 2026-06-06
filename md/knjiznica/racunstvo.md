@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-06-03
+date: 2026-06-05
 description: računska teorija, enačbe
 keywords: računstvo, matematika
 author: Janez Pavel Žebovec
@@ -416,9 +416,9 @@ V spodnji preglednici so neosnovni (oz. *bolj* neosnovni) integrali sivo obarvan
 | $$ \log_a x $$ | $$ \frac {1}{x \ln a} = \frac {\log_a \mathrm{e}}{x} $$ | |
 | $$ \textcolor{grey} {ln x} $$ | $$ \textcolor{grey} {\frac {1}{x}} $$ | |
 | $$ \sin x $$ | $$ \cos x $$ | $$ - \cos x + C $$ |
-| $$ \sin a x $$ | | $$ -\frac {1}{a} \cos a x + C $$ |
+| $$ \sin a x $$ | $$ \textcolor{grey} a \cos a x $$ | $$ -\frac {1}{a} \cos a x + C $$ |
 | $$ \cos x $$ | $$ - \sin x $$ | $$ \sin x + C $$ |
-| $$ \cos a x $$ | | $$ \frac {1}{a} \sin a x + C $$ |
+| $$ \cos a x $$ | $$ \textcolor{grey} - a \sin a x $$ | $$ \frac {1}{a} \sin a x + C $$ |
 | $$ \tan x $$ | $$ \frac {1}{cos^2x} $$ | |
 | $$ \frac {1}{\cos^2 x} $$ | | $$ \tan x + C $$ |
 | $$ \cot x $$ | $$ - \frac {1}{\sin^2 x} $$ |

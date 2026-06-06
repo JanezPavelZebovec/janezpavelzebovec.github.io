@@ -1,6 +1,6 @@
 ---
 title: Dnevnik
-date: 2026-05-17
+date: 2026-06-06
 description: Tu beležim svoj napredek pri projektih in nekatere druge stvari
 ---
 
@@ -20,7 +20,6 @@ Glej tudi dnevniške zapise [na OSM-ju](https://www.openstreetmap.org/user/Janez
 - 2025-09-01: končana [Ilirika v OHM](https://www.openhistoricalmap.org/relation/2867196)
 - 2025-09-12: naredil sem si [*profil* za uvoze na OpenHisoricalMap](https://www.openhistoricalmap.org/user/JanezPavelZebovec_import)
 - 2025-09-16: dodan [Triglavski ledenik v OHM](https://www.openhistoricalmap.org/relation/2869042) med leti 1850 in 2012 ([sklop sprememb](https://www.openhistoricalmap.org/changeset/194887))
-- 2025-12-02: izključen iz skupine svetovnega OpenStreetMap na Discordu s krivo obtožbo *homofobije* in sovražnega govora
 - 2025-12-19: [Visoka slovenščina](/visoka_slovenscina) ima zdaj jasnejša pravila in je poudarjeno, da vključuje vsa narečja, ne le knjižne/zborne slovenščine
 - 2025-10-14–2026-01-16: prevedel sem [CoMaps](https://www.comaps.app/) v slovenščino
 - 2026-01-23: bolj zares sem začel delati na prilagoditvi obtoječega uvoza GURS-ovih zgradb in naslovov v OpenStreetMap za uvoz v [OpenHistoricalMap](https://www.openhistoricalmap.org/)

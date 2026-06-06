@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2026-05-12
+date: 2026-06-06
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 author: Janez Pavel Žebovec
@@ -232,6 +232,7 @@ Predlogi so dobrodošli na [osebno@janezpavelzebovec.net](mailto:osebno@janezpav
 - [Delo - Majda M. Lesjak: Koliko je danes v resnici še vredna slovenščina?](https://www.delo.si/mnenja/gostujoce-pero/koliko-je-danes-v-resnici-se-vredna-slovenscina/) ([arhivirano](https://web.archive.org/web/20240112203130/https%3A%2F%2Fwww.delo.si%2Fmnenja%2Fgostujoce-pero%2Fkoliko-je-danes-v-resnici-se-vredna-slovenscina%2F))
 - [RTV SLO - Jezikovni spletovalec: Top jezikovna lista nadrealista](https://www.rtvslo.si/kultura/jezikovni-spletovalec/jezikovni-spletovalec-top-jezikovna-lista-nadrealista/442574)
 - [Razpotja - Tomaž Gerden: Slovenščina v novih časih (2014)](https://razpotja.si/razpotja_article/slovenscina-v-novih-casih/) ([arhivirano](https://web.archive.org/web/20250619132945/https://razpotja.si/razpotja_article/slovenscina-v-novih-casih/))
+- [Jezikovna svetovalnica – Kritika imena »Ljubljana Festival«](https://svetovalnica.zrc-sazu.si/topic/3315/kritika-imena-ljubljana-festival)
 - [Leemeta – Ni be3sede? Ustvari novo!](https://www.leemeta.si/blog/slovnica/ni-besede-ustvari-novo)
 
 [L1]: https://www.leemeta.si/blog/jezikovne-dileme/neologizmi-hrustopek-nosiglas-in-mnogovoz-veste-o-cem-govorimo
