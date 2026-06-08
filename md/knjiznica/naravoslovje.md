@@ -1,6 +1,6 @@
 ---
 title: Naravoslovje
-date: 2026-06-06
+date: 2026-06-08
 description: Naravni zakoni
 keywords: naravoslovje, fizika
 author: Janez Pavel Žebovec
@@ -325,7 +325,7 @@ Snovi lahko ločimo po gibljivosti *električnega* naboja:
 
 - **Prevodniki** (kovine): naboji se prosto gibljejo po snovi (*dipol makroskopskih* velikosti)
     V *kondenzator* vstavimo plošče prevodnika: naboj v prevodniku se prerazporedi, tako da se na strani prevodnika pri *pozitivno* nabitem delu *kondenzatorja* naberejo *elektroni* – tako dobimo dva nova "*kondenzatorja*" z manjšim razmikom
-    $$ U_C = \frac{e (d - d_p}{\epsilon_0 S} $$
+    $$ U_C = \frac{e (d - d_p)}{\epsilon_0 S} $$
 
 - **Polprevodniki**
 
@@ -385,13 +385,13 @@ $$ P = \frac{\d A_e}{\d t} = \frac{U \d e}{\d t} = U I = - I^2 R $$
 **Kirchhoffova zakona**:
 
 1. Vsota tokov v vozlišču *el.* toka je enaka nič, oz. vsota pritekajočih tokov je enaka vsoti odtekajočih
-    $$ \sum I_i = 0 $$
+    $$ \sum_{vozlišče} I_i = 0 $$
 2. V sklenjeni tokovni zanki je vsota napetosti po vseh gradnikih kroga enaka nič
     $$ \sum_{krog} U_i = 0 $$
 
 ### *Kondenzator*
 
-*Kondenzator* deluje kot hranilnik naboja.
+*Kondenzator* deluje kot hranilnik naboja, oz. v tokokrogu kot "prožnost"
 
 - ploščati (kjer je $d$ razmak med ploščama in $S$ njuna ploščina):
     $$ E_C = \frac{\sigma}{2 \epsilon_0}$$
@@ -433,6 +433,10 @@ Silnice *magnetnega* polja so vedno sklenjene (tečejo namreč od severnega *pol
 $$ \vec B_1 = e (\vec v_1 \times \vec r) \frac{\mu_0}{4 \pi r^2 r} $$
 $$ \mu_0 \epsilon_0 = \frac{1}{c^2} $$
 
+Polje okoli vodnika:
+$$ \vec B = \frac{\mu_0}{4 \pi} \int_{vodnik} \frac{\vec r \times \vec{I \d l}}{r^3} = \frac{I \mu_0 a^2}{4 \pi a^3} \int_{- \pi / 2}^{\pi /2} \frac{\d \phi \cos \phi}{cos^2(\phi)} $$
+$$ B_{vodnik} = \frac{\mu_0 I}{2 \pi r}$$
+
 *Magnetna* sila:
 $$ \vec{F_m} = e_2 \vec v_2 \times \vec B_1 \implies F_m = e v B \sin(\phi) $$
 $$ F_{m 1 2} = \frac{e_1 e_2 \mu_0}{4 \pi r^2} (\vec{v_2} \times (\vec{v_1} \times \frac{\vec r}{r})) $$
@@ -441,14 +445,14 @@ Lorentzova sila:
 $$ \vec{F} = e \vec E + e \vec v \times \vec B $$
 
 Sila na vodnik:
-$$ \vec{F_m} = N \vec{F_1} = N_e l S e_0 v B = \vec{j_e} l S \vec B = \vec I l \vec B $$
+$$ \vec{F_m} = N \vec{F_1} = N_e l S e_0 v B = \vec{j_e} l S \vec B = \vec{I l} \vec B $$
 
-Navor na zanko: neodvisen od njene oblike, ampak le od ploščine
+Navor na zanko: neodvisen od njene oblike, odvisen le od ploščine (ki je lahko poljubno iz-/vbočena, le da je napeta na vodnik zanke)
 $$ |\vec M| = \vec F_{m 1} b = I a B b = I S B $$
 $$ \vec M = \vec I S \times \vec B $$
 
 *Magnetni dipol*:
-$$ \vec{p_m} = \vec I S$
+$$ \vec{p_m} = \vec I \vec S $$
 $$ \vec M = \vec I S \times \vec B = \vec{p_m} \times \vec B $$
 $$ W_m = - \vec{p_m} \vec B $$
 
@@ -461,9 +465,105 @@ $$ \nu_c = \frac{e B}{2 \pi m}; \omega = \frac{e B}{m} $$
 $$ F_m = F_e \implies e v B = e E $$
 $$ U_H = E d = B d v $$
 
-Biot-Savartov zakon (za dolg vodnik, $l >> r$):
+**Biot-Savartov zakon**: polje, ki ga vodnik (zelo dolg, $l \gg r$) povzroča v točki, oddaljeni $\vec r$:
 $$ \vec{\d B}(\vec r) = \frac{\mu_0}{4 \pi} \left( \frac{\vec{I \d l} \times \vec r}{r^3} \right)$$
 $$ \vec B(0) = \frac{\mu_0}{4 \pi} \int{ \frac{\vec r \times \vec{I \d l}}{r^3} } $$
+
+**Amperov zakon**: zaobjeti tok (npr. če bi šli po *magnetni* silnici okoli vodnika, dobimo tok v tem vodniku)
+$$ \oint \vec B \vec{\d S} = \mu_0 I $$
+Amperov zakon za tuljavo (kjer gledamo $l'$ in $N'$ na neko enoto:
+$$ \oint \vec B \vec{\d s} = B l' = \mu_0 N' I $$
+$$ B = \frac{N' \mu_0 I}{l'} = \frac{N \mu_0 I}{l} $$
+
+#### *Indukcija*
+
+Vodnik, ki ga vlečemo pravokotno na *magnetno* polje:
+$$ U_i = U_H = B l v $$
+$$ F_{zaviralna} = F_m = B l I_i = \frac{B^2 l^2 v}{R} $$
+
+Zanka, ki kroži v *magnetnem* polju, z osjo, pravokotno na silnice *mag.* polja (v zanki se *inducira* izmenična napetost):
+$$ \vec v = \vec \omega \vec r \implies U_i = 2 U_H = 2 \omega r B a = B S \omega \cos(\phi) $$
+$$ \vec v \times \vec B = \omega r B \cos(\phi) $$
+
+**Faradayev /*indukcijski* zakon**: *inducirana* napetost v zaključeni zanki je premo sorazmerna hitrosti spreminjanja *magnetnega* pretoka skozi površino te zanke (kjer je $\phi_m$ *mag.* pretok, $\vec B$ pa gostota *mag.* polja):
+$$ U_i = \frac{\d \phi_m}{\d t}; \phi_m = \int \vec B \vec{\d S} $$
+$$ \oint \vec B \vec{\d S} = \mu_0 I \implies \oint \vec H \vec{\d S} = I $$
+$\vec H$: jakost *Mag.* polja, ki je neodvisna od snovi v prostoru
+$$ \oint \vec E_i \cdot \d \vec s = - \int \frac{\dd B}{\dd t} \d \vec S $$
+
+#### Tuljava
+
+Tuljava v tokogrogu deluje kot "vztrajnost", saj se upira spremembam.
+
+L: *induktivnost* tuljave
+$$ L = N^2 \frac{\mu_0 S}{l} $$
+$$ U_i = - \frac{\d \phi_m}{\d t} = - L \frac{\d I}{\d t} $$
+
+$$ \tau = \frac{L}{R} $$
+"Polnjenje" tuljave
+$$ I = I_0 (1 - e^{- t/\tau}) $$
+"Praznenje" tuljave:
+$$ U_L + U_R = 0 \implies - L \frac{\d I}{\d t} - I R = 0 \implies L \frac{\d I}{\d t} = - I R $$
+$$ I = I_0 e^{- t/\tau} $$
+
+*Energija* tuljave:
+$$ \d A = U \d e = U I \d t = P \d t = L \frac{\d I}{\d t} I \d t \implies A = L \int_0^I I \d I $$
+$$ W_m = L \frac{I^2}{2} $$
+
+Tuljava v tuljavi:
+$$ L_{2 1} = \frac{N_2 B_1 S_2}{I_1} = \frac{\mu_0 N_1^2 I_1 N_2 S_2}{l_1 I_1} = \frac{\mu_0 N_1 N_2 S_2}{l_1} $$
+
+#### Snov v *magnetnem* polju
+
+$\mu$: *permeabilnost*; večja kot je, bolj snov poveča *mag.* polje, ker so v snovi *mag. dipoli*
+$$ \mu_0 \rightarrow \mu \mu_0 $$
+*Magnetni dipol*:
+$$\vec p_m = I \vec S = e_0 \upsilon \pi r^2 \frac{v}{2 \pi r} = \frac{e_0 r v}{2} = \frac{e_0 \Gamma}{2 m_e} $$
+
+### Izmenični tok
+
+$$U = U_0 \sin(\omega t + \delta) $$
+
+*Kondenzator*:
+$$ U + U_C = 0 \implies U_0 \sin(\omega t) = \frac{e}{C} /\frac{\d}{\d t} \implies C \omega U_0 \cos(\omega t) = I $$
+$$ "R_C" = Z_C = \frac{U_0}{I_0} = \frac{1}{\omega C} $$
+
+Tuljava:
+$$ U + U_L = 0 \implies U_= \sin(\omega t) = L \frac{\d I}{\d t} \implies - \frac{1}{\omega L} U_0 \cos(\omega t) = A I$$
+$$ "R_L" = Z_L = \omega L $$
+
+$U_C$ in $U_L$ v tokokrogu z izmeničnim tokom nihata v *protifazi*.
+
+### *Električni* nihajni krog
+
+$$ U = U_0 \sin(\omega t) $$
+$$ I = I_0 \sin(\omega t + \delta) $$
+$$ \omega^2 = \frac{1}{L C} $$
+
+Primerjava vzmetnega nihala v *mehaniki* in *el.* nihajnega kroga:
+
+| vzmetno | *el.* nih. krog |
+| --- | --- |
+| $$ k $$ | $$ \frac{1}{C} $$ |
+| $$ m $$ | $$ L $$ |
+| $$ F $$ | $$ U $$ |
+| $$ W_k $$ | $$ W_m (L) $$ |
+| $$ W_{pr.} $$ | $$ W_e (C) $$ |
+| $$ x $$ | $$ l $$ |
+| $$ v $$ | $$ I $$ |
+
+$$ P = U_0 \sin(\omega t + \delta) I_0 \sin(\omega t) = U_0 I_0 \left[ \sin^2(\omega t) \cos(\delta) + \cos(\omega t) \sin(\omega t) \sin(\delta) \right] = U_0 I_0 \left[ \sin^2(\omega t) \cos(\delta) + \frac{1}{2} \sin^2(2 \omega t) \sin(\delta) \right] $$
+$$ \overline{P} = \frac{1}{2} U_0 I_0 \cos(\delta) $$
+$$ P = U_{ef.} I_{ef.} $$
+$$ I_{ef.} = \frac{I_0}{\sqrt{2}} \implies U_{ef.} = R I_{ef.} = \frac{U_0}{\sqrt{2}} $$
+
+*El.* nihajni krog v *kompleksnem*:
+$$ \phi = \omega t $$
+$$ U = U_0 e^{\mathrm{i} \phi} $$
+$$ I = I_0 e^{\mathrm{i} (\phi + \delta)} $$
+$$ Z_C = \frac{1}{\mathrm{i} \omega C} $$
+$$ Z_L = \mathrm{i} \omega L $$
+$$ |Z| e^{\mathrm{i} \delta} = R + \mathrm{i} \omega L + \frac{1}{\mathrm{i} \omega C} $$
 
 ## *Fizika* delcev
 

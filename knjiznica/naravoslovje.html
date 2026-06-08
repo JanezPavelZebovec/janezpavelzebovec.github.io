@@ -36,7 +36,7 @@
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/naravoslovje/">naravoslovje</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-06-06">2026-06-06</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-06-08">2026-06-08</time></p>
     </header>
     <nav>
         <ul>
@@ -98,7 +98,20 @@
         <em>kondenzatorju</em></a></li>
         </ul></li>
         <li><a href="#Elektromagnetizem"
-        id="toc-Elektromagnetizem"><em>Elektromagnetizem</em></a></li>
+        id="toc-Elektromagnetizem"><em>Elektromagnetizem</em></a>
+        <ul>
+        <li><a href="#Indukcija"
+        id="toc-Indukcija"><em>Indukcija</em></a></li>
+        <li><a href="#Tuljava" id="toc-Tuljava">Tuljava</a></li>
+        <li><a href="#Snov_v_magnetnem_polju"
+        id="toc-Snov_v_magnetnem_polju">Snov v <em>magnetnem</em>
+        polju</a></li>
+        </ul></li>
+        <li><a href="#Izmenicni_tok" id="toc-Izmenicni_tok">Izmenični
+        tok</a></li>
+        <li><a href="#Elektricni_nihajni_krog"
+        id="toc-Elektricni_nihajni_krog"><em>Električni</em> nihajni
+        krog</a></li>
         </ul></li>
         <li><a href="#Fizika_delcev"
         id="toc-Fizika_delcev"><em>Fizika</em> delcev</a>
@@ -645,7 +658,7 @@
             <em>kondenzatorja</em> naberejo <em>elektroni</em> – tako
             dobimo dva nova “<em>kondenzatorja</em>” z manjšim razmikom
             <span class="math display">\[ U_C = \frac{e (d -
-            d_p}{\epsilon_0 S} \]</span></p></li>
+            d_p)}{\epsilon_0 S} \]</span></p></li>
             <li><p><strong>Polprevodniki</strong></p></li>
             <li><p><strong><em>Izolatorji</em> /
             <em>dielektriki</em></strong></p>
@@ -728,13 +741,15 @@
             <ol type="1">
             <li>Vsota tokov v vozlišču <em>el.</em> toka je enaka nič,
             oz. vsota pritekajočih tokov je enaka vsoti odtekajočih
-            <span class="math display">\[ \sum I_i = 0 \]</span></li>
+            <span class="math display">\[ \sum_{vozlišče} I_i = 0
+            \]</span></li>
             <li>V sklenjeni tokovni zanki je vsota napetosti po vseh
             gradnikih kroga enaka nič <span class="math display">\[
             \sum_{krog} U_i = 0 \]</span></li>
             </ol>
             <h3 id="Kondenzator"><em>Kondenzator</em></h3>
-            <p><em>Kondenzator</em> deluje kot hranilnik naboja.</p>
+            <p><em>Kondenzator</em> deluje kot hranilnik naboja, oz. v
+            tokokrogu kot “prožnost”</p>
             <ul>
             <li>ploščati (kjer je <span class="math inline">\(d\)</span>
             razmak med ploščama in <span
@@ -796,6 +811,12 @@
             \times \vec r) \frac{\mu_0}{4 \pi r^2 r} \]</span> <span
             class="math display">\[ \mu_0 \epsilon_0 = \frac{1}{c^2}
             \]</span></p>
+            <p>Polje okoli vodnika: <span class="math display">\[ \vec B
+            = \frac{\mu_0}{4 \pi} \int_{vodnik} \frac{\vec r \times
+            \vec{I \d l}}{r^3} = \frac{I \mu_0 a^2}{4 \pi a^3} \int_{-
+            \pi / 2}^{\pi /2} \frac{\d \phi \cos \phi}{cos^2(\phi)}
+            \]</span> <span class="math display">\[ B_{vodnik} =
+            \frac{\mu_0 I}{2 \pi r}\]</span></p>
             <p><em>Magnetna</em> sila: <span class="math display">\[
             \vec{F_m} = e_2 \vec v_2 \times \vec B_1 \implies F_m = e v
             B \sin(\phi) \]</span> <span class="math display">\[ F_{m 1
@@ -804,17 +825,20 @@
             <p>Lorentzova sila: <span class="math display">\[ \vec{F} =
             e \vec E + e \vec v \times \vec B \]</span></p>
             <p>Sila na vodnik: <span class="math display">\[ \vec{F_m} =
-            N \vec{F_1} = N_e l S e_0 v B = \vec{j_e} l S \vec B = \vec
-            I l \vec B \]</span></p>
-            <p>Navor na zanko: neodvisen od njene oblike, ampak le od
-            ploščine <span class="math display">\[ |\vec M| = \vec F_{m
-            1} b = I a B b = I S B \]</span> <span
+            N \vec{F_1} = N_e l S e_0 v B = \vec{j_e} l S \vec B =
+            \vec{I l} \vec B \]</span></p>
+            <p>Navor na zanko: neodvisen od njene oblike, odvisen le od
+            ploščine (ki je lahko poljubno iz-/vbočena, le da je napeta
+            na vodnik zanke) <span class="math display">\[ |\vec M| =
+            \vec F_{m 1} b = I a B b = I S B \]</span> <span
             class="math display">\[ \vec M = \vec I S \times \vec B
             \]</span></p>
             <p><em>Magnetni dipol</em>: <span class="math display">\[
-            \vec{p_m} = \vec I S$
-            \]</span> M = I S B = B <span class="math display">\[
-            \]</span> W_m = - B $$</p>
+            \vec{p_m} = \vec I \vec S \]</span> <span
+            class="math display">\[ \vec M = \vec I S \times \vec B =
+            \vec{p_m} \times \vec B \]</span> <span
+            class="math display">\[ W_m = - \vec{p_m} \vec B
+            \]</span></p>
             <p>V <em>homogenem magnetnem</em> polju na gibajoč se naboj
             deluje stalna sila na eno stran – sredobežna sila, ki
             povzroči, da naboj v <em>magnetnem</em> polju kroži: <span
@@ -828,13 +852,164 @@
             vsaksebi in sta enaki <span class="math display">\[ F_m =
             F_e \implies e v B = e E \]</span> <span
             class="math display">\[ U_H = E d = B d v \]</span></p>
-            <p>Biot-Savartov zakon (za dolg vodnik, <span
-            class="math inline">\(l &gt;&gt; r\)</span>): <span
-            class="math display">\[ \vec{\d B}(\vec r) = \frac{\mu_0}{4
-            \pi} \left( \frac{\vec{I \d l} \times \vec r}{r^3}
-            \right)\]</span> <span class="math display">\[ \vec B(0) =
-            \frac{\mu_0}{4 \pi} \int{ \frac{\vec r \times \vec{I \d
-            l}}{r^3} } \]</span></p>
+            <p><strong>Biot-Savartov zakon</strong>: polje, ki ga vodnik
+            (zelo dolg, <span class="math inline">\(l \gg r\)</span>)
+            povzroča v točki, oddaljeni <span class="math inline">\(\vec
+            r\)</span>: <span class="math display">\[ \vec{\d B}(\vec r)
+            = \frac{\mu_0}{4 \pi} \left( \frac{\vec{I \d l} \times \vec
+            r}{r^3} \right)\]</span> <span class="math display">\[ \vec
+            B(0) = \frac{\mu_0}{4 \pi} \int{ \frac{\vec r \times \vec{I
+            \d l}}{r^3} } \]</span></p>
+            <p><strong>Amperov zakon</strong>: zaobjeti tok (npr. če bi
+            šli po <em>magnetni</em> silnici okoli vodnika, dobimo tok v
+            tem vodniku) <span class="math display">\[ \oint \vec B
+            \vec{\d S} = \mu_0 I \]</span> Amperov zakon za tuljavo
+            (kjer gledamo <span class="math inline">\(l&#39;\)</span> in
+            <span class="math inline">\(N&#39;\)</span> na neko enoto:
+            <span class="math display">\[ \oint \vec B \vec{\d s} = B
+            l&#39; = \mu_0 N&#39; I \]</span> <span
+            class="math display">\[ B = \frac{N&#39; \mu_0 I}{l&#39;} =
+            \frac{N \mu_0 I}{l} \]</span></p>
+            <h4 id="Indukcija"><em>Indukcija</em></h4>
+            <p>Vodnik, ki ga vlečemo pravokotno na <em>magnetno</em>
+            polje: <span class="math display">\[ U_i = U_H = B l v
+            \]</span> <span class="math display">\[ F_{zaviralna} = F_m
+            = B l I_i = \frac{B^2 l^2 v}{R} \]</span></p>
+            <p>Zanka, ki kroži v <em>magnetnem</em> polju, z osjo,
+            pravokotno na silnice <em>mag.</em> polja (v zanki se
+            <em>inducira</em> izmenična napetost): <span
+            class="math display">\[ \vec v = \vec \omega \vec r \implies
+            U_i = 2 U_H = 2 \omega r B a = B S \omega \cos(\phi)
+            \]</span> <span class="math display">\[ \vec v \times \vec B
+            = \omega r B \cos(\phi) \]</span></p>
+            <p><strong>Faradayev /<em>indukcijski</em> zakon</strong>:
+            <em>inducirana</em> napetost v zaključeni zanki je premo
+            sorazmerna hitrosti spreminjanja <em>magnetnega</em> pretoka
+            skozi površino te zanke (kjer je <span
+            class="math inline">\(\phi_m\)</span> <em>mag.</em> pretok,
+            <span class="math inline">\(\vec B\)</span> pa gostota
+            <em>mag.</em> polja): <span class="math display">\[ U_i =
+            \frac{\d \phi_m}{\d t}; \phi_m = \int \vec B \vec{\d S}
+            \]</span> <span class="math display">\[ \oint \vec B \vec{\d
+            S} = \mu_0 I \implies \oint \vec H \vec{\d S} = I \]</span>
+            <span class="math inline">\(\vec H\)</span>: jakost
+            <em>Mag.</em> polja, ki je neodvisna od snovi v prostoru
+            <span class="math display">\[ \oint \vec E_i \cdot \d \vec s
+            = - \int \frac{\dd B}{\dd t} \d \vec S \]</span></p>
+            <h4 id="Tuljava">Tuljava</h4>
+            <p>Tuljava v tokogrogu deluje kot “vztrajnost”, saj se upira
+            spremembam.</p>
+            <p>L: <em>induktivnost</em> tuljave <span
+            class="math display">\[ L = N^2 \frac{\mu_0 S}{l} \]</span>
+            <span class="math display">\[ U_i = - \frac{\d \phi_m}{\d t}
+            = - L \frac{\d I}{\d t} \]</span></p>
+            <p><span class="math display">\[ \tau = \frac{L}{R}
+            \]</span> “Polnjenje” tuljave <span class="math display">\[
+            I = I_0 (1 - e^{- t/\tau}) \]</span> “Praznenje” tuljave:
+            <span class="math display">\[ U_L + U_R = 0 \implies - L
+            \frac{\d I}{\d t} - I R = 0 \implies L \frac{\d I}{\d t} = -
+            I R \]</span> <span class="math display">\[ I = I_0 e^{-
+            t/\tau} \]</span></p>
+            <p><em>Energija</em> tuljave: <span class="math display">\[
+            \d A = U \d e = U I \d t = P \d t = L \frac{\d I}{\d t} I \d
+            t \implies A = L \int_0^I I \d I \]</span> <span
+            class="math display">\[ W_m = L \frac{I^2}{2} \]</span></p>
+            <p>Tuljava v tuljavi: <span class="math display">\[ L_{2 1}
+            = \frac{N_2 B_1 S_2}{I_1} = \frac{\mu_0 N_1^2 I_1 N_2
+            S_2}{l_1 I_1} = \frac{\mu_0 N_1 N_2 S_2}{l_1} \]</span></p>
+            <h4 id="Snov_v_magnetnem_polju">Snov v <em>magnetnem</em>
+            polju</h4>
+            <p><span class="math inline">\(\mu\)</span>:
+            <em>permeabilnost</em>; večja kot je, bolj snov poveča
+            <em>mag.</em> polje, ker so v snovi <em>mag. dipoli</em>
+            <span class="math display">\[ \mu_0 \rightarrow \mu \mu_0
+            \]</span> <em>Magnetni dipol</em>: <span
+            class="math display">\[\vec p_m = I \vec S = e_0 \upsilon
+            \pi r^2 \frac{v}{2 \pi r} = \frac{e_0 r v}{2} = \frac{e_0
+            \Gamma}{2 m_e} \]</span></p>
+            <h3 id="Izmenicni_tok">Izmenični tok</h3>
+            <p><span class="math display">\[U = U_0 \sin(\omega t +
+            \delta) \]</span></p>
+            <p><em>Kondenzator</em>: <span class="math display">\[ U +
+            U_C = 0 \implies U_0 \sin(\omega t) = \frac{e}{C}
+            /\frac{\d}{\d t} \implies C \omega U_0 \cos(\omega t) = I
+            \]</span> <span class="math display">\[ &quot;R_C&quot; =
+            Z_C = \frac{U_0}{I_0} = \frac{1}{\omega C} \]</span></p>
+            <p>Tuljava: <span class="math display">\[ U + U_L = 0
+            \implies U_= \sin(\omega t) = L \frac{\d I}{\d t} \implies -
+            \frac{1}{\omega L} U_0 \cos(\omega t) = A I\]</span> <span
+            class="math display">\[ &quot;R_L&quot; = Z_L = \omega L
+            \]</span></p>
+            <p><span class="math inline">\(U_C\)</span> in <span
+            class="math inline">\(U_L\)</span> v tokokrogu z izmeničnim
+            tokom nihata v <em>protifazi</em>.</p>
+            <h3 id="Elektricni_nihajni_krog"><em>Električni</em> nihajni
+            krog</h3>
+            <p><span class="math display">\[ U = U_0 \sin(\omega t)
+            \]</span> <span class="math display">\[ I = I_0 \sin(\omega
+            t + \delta) \]</span> <span class="math display">\[ \omega^2
+            = \frac{1}{L C} \]</span></p>
+            <p>Primerjava vzmetnega nihala v <em>mehaniki</em> in
+            <em>el.</em> nihajnega kroga:</p>
+            <table>
+            <thead>
+            <tr class="header">
+            <th>vzmetno</th>
+            <th><em>el.</em> nih. krog</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="odd">
+            <td><span class="math display">\[ k \]</span></td>
+            <td><span class="math display">\[ \frac{1}{C} \]</span></td>
+            </tr>
+            <tr class="even">
+            <td><span class="math display">\[ m \]</span></td>
+            <td><span class="math display">\[ L \]</span></td>
+            </tr>
+            <tr class="odd">
+            <td><span class="math display">\[ F \]</span></td>
+            <td><span class="math display">\[ U \]</span></td>
+            </tr>
+            <tr class="even">
+            <td><span class="math display">\[ W_k \]</span></td>
+            <td><span class="math display">\[ W_m (L) \]</span></td>
+            </tr>
+            <tr class="odd">
+            <td><span class="math display">\[ W_{pr.} \]</span></td>
+            <td><span class="math display">\[ W_e (C) \]</span></td>
+            </tr>
+            <tr class="even">
+            <td><span class="math display">\[ x \]</span></td>
+            <td><span class="math display">\[ l \]</span></td>
+            </tr>
+            <tr class="odd">
+            <td><span class="math display">\[ v \]</span></td>
+            <td><span class="math display">\[ I \]</span></td>
+            </tr>
+            </tbody>
+            </table>
+            <p><span class="math display">\[ P = U_0 \sin(\omega t +
+            \delta) I_0 \sin(\omega t) = U_0 I_0 \left[ \sin^2(\omega t)
+            \cos(\delta) + \cos(\omega t) \sin(\omega t) \sin(\delta)
+            \right] = U_0 I_0 \left[ \sin^2(\omega t) \cos(\delta) +
+            \frac{1}{2} \sin^2(2 \omega t) \sin(\delta) \right]
+            \]</span> <span class="math display">\[ \overline{P} =
+            \frac{1}{2} U_0 I_0 \cos(\delta) \]</span> <span
+            class="math display">\[ P = U_{ef.} I_{ef.} \]</span> <span
+            class="math display">\[ I_{ef.} = \frac{I_0}{\sqrt{2}}
+            \implies U_{ef.} = R I_{ef.} = \frac{U_0}{\sqrt{2}}
+            \]</span></p>
+            <p><em>El.</em> nihajni krog v <em>kompleksnem</em>: <span
+            class="math display">\[ \phi = \omega t \]</span> <span
+            class="math display">\[ U = U_0 e^{\mathrm{i} \phi}
+            \]</span> <span class="math display">\[ I = I_0
+            e^{\mathrm{i} (\phi + \delta)} \]</span> <span
+            class="math display">\[ Z_C = \frac{1}{\mathrm{i} \omega C}
+            \]</span> <span class="math display">\[ Z_L = \mathrm{i}
+            \omega L \]</span> <span class="math display">\[ |Z|
+            e^{\mathrm{i} \delta} = R + \mathrm{i} \omega L +
+            \frac{1}{\mathrm{i} \omega C} \]</span></p>
             <h2 id="Fizika_delcev"><em>Fizika</em> delcev</h2>
             <p><span class="math display">\[ W_f = \mathrm{h} \nu
             \]</span> <span class="math display">\[ W_f = A_i + W_k

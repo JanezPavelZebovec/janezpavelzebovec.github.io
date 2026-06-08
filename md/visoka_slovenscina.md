@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2026-06-06
+date: 2026-06-07
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 author: Janez Pavel Žebovec
@@ -176,6 +176,7 @@ Tu je seznam mojih predlogov za nove slovenske ustreznice (nekatere so že obsto
 - **gmôta** <small>(/2025-06-30)</small> (**gmôtnost**) < *masa*
 - **gôn** <small>(/2025-06-30)</small> < *energija* <small>(< nem. *Energie* < fran. *énergie* < poznolat. *energīa*; gr. *enérgeia* = delo, delovanje, moč)</small>
 - **gonilo** <small>(2026-05-01)</small> < *motor* (kot tisto, kar poganja)
+- **gonohrán** (gonski hranilnik) <small>(2026-06-07)</small> < *baterija*
 - **oslíka** <small>(/2026-05-01)</small>(oz. samo: **ponazorilna/pojasnilna slika**; celo uveljavljeno: **ponazorilo**); **osličen** (oz. samo: opremljen s slikami) < *ilustracija*; *ilustriran*
 - **naravoslôvje** <small>(/2025-06-30)</small>, **stvárnoslovje**\* <small>(/2025-06-30)</small>, tvárnoslovje(?) < *fizika* <small>(< nem. *Physik* < lat. *physica* < gr. *physikḗ* = *naravoslovje, naraven, ki zadeva naravo* < gr. *phýsis* = *narava, stvarstvo, rast, rojstvo* < gr. glagol *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*)</small>
 - **preslikáva** <small>(2026-04-13)</small> < *funkcija*
