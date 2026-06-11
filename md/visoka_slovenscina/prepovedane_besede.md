@@ -1,6 +1,6 @@
 ---
 title: Prepovedane besede v visoki slovenščini
-date: 2026-05-01
+date: 2026-06-11
 description: Prepovedane besede, prevzete besede, v visoki slovenščini
 keywords: visoka slovenščina, visoka slovenščina, potujčenje
 author: Janez Pavel Žebovec
@@ -11,6 +11,7 @@ author: Janez Pavel Žebovec
 Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne sveže skovanimi) in so zato v visoki slovenščini prepovedane.
 
 - *agronomija* > kmetijstvo
+- *anketa* > vprašalnik
 - *anksioznost* > tesnoba, tesnobnost
 - *atmosfera* > ozračje
 - *avion* > letalo
@@ -25,6 +26,7 @@ Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne svež
 - *koeficient* > (stalni?) količnik
 - *komponenta* > (sestavni) del, sestavina
 - *konkaven* > vbočen, vbokel
+- *konkurent* > tekmec
 - *konveksen* > izbočen, izbokel
 - *longitudinalno* > vzdolžno
 - *monitor* > (računalniški) zaslon
@@ -36,6 +38,7 @@ Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne svež
 - *privaten*, *privat* > zaseben
 - *problem* > težava
 - *projekcija*; *projicirati* > preslikava; preslikati, prenesti, (prikazati)
+- *refleksija* > odboj, premišljevanje, (odziv)
 - *relief* > pridvig
 - *sediment* > usedlina
 - *simetrija*, *simetričnost* > somernost
@@ -45,7 +48,9 @@ Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne svež
 - *transverzalno* > prečno
 - *univerza* > vseučilišče
 - *vertikalno*, *vertikala* > navpično, navpičnica
+- *vikend* > konec tedna
 - *virtualna realnost* > namišljena resničnost
+- *vulkan* > ognjenik
 
 Imena mesecev:
 

@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2026-06-07
+date: 2026-06-11
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 author: Janez Pavel Žebovec
@@ -171,6 +171,7 @@ Drugi predlogi (slabše tvorjeni – pomeni, da imajo precej angleško tvorbo, s
 
 Tu je seznam mojih predlogov za nove slovenske ustreznice (nekatere so že obstoječe, z zgolj dodanim/prirejenim pomenom, druge so tvorjene nanovo):
 
+- **déževka** <small>(2025-12-17)</small> < *pelerina*
 - **dlánčnik** <small>(/2025-06-30)</small> < "pametni" *telefon* <small>(podobno je tudi nem. *Handy*)</small>
 - **dáljnoglás** <small>(/2025-06-30)</small> < *telefon* <small>(< nem. *Telephon*; fran. *téléphone*; ang. *telephone* < gr. *tē̃le* = *daleč, v daljavi*; *phōnḗ* = *glas, zvok*)</small>
 - **gmôta** <small>(/2025-06-30)</small> (**gmôtnost**) < *masa*
@@ -223,6 +224,8 @@ Te skovanke so (še) precej okorne in potrebne dodatnega premisleka ali druge za
 ---
 
 Predlogi so dobrodošli na [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net).
+
+Glej tudi [Propad slovenščine](/visoka_slovenscina/propad_slovenscine) za primere.
 
 ## Zunanje povezave,  viri in sklici
 

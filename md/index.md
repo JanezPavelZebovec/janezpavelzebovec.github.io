@@ -7,8 +7,8 @@ keywords: Janez Pavel Žebovec, osebna spletna stran, osebno spletišče
 
 To je moje spletišče, namenjeno mojim zanimanjem in potrebam, dobrodošli pa so seveda tudi vsi s podobnimi zanimanji.
 
-- [Visoka slovenščina](/visoka_slovenscina) – kakšna bi slovenščina morala biti (oz. mora biti)
-    - [Prepovedane besede](/prepovedane_besede) – seznam nekaj več prepovedanih besed v visoki slovenščini z ustreznicami v visoki slovenščini
+- [Visoka slovenščina](/visoka_slovenscina/) – kakšna bi slovenščina morala biti (oz. mora biti)
+    - [Prepovedane besede](/visoka_slovenscina/prepovedane_besede) – seznam nekaj več prepovedanih besed v visoki slovenščini z ustreznicami v visoki slovenščini
 - [Zvezdoslovna ura](/zvezdoslovna_ura/) – predstavitev vesolja kot ure
     - [Opombe k Zvezdoslovni uri](opombe_k_zvezdoslovni_uri)
 - [Glasopisnica](/Glasopisnica/) – moja pisava <small>*(v delu - tako pisava sama, kot tudi spletna stran)*</small>

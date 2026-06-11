@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-05-17
+date: 2026-06-10
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -348,6 +348,8 @@ Knjižnice:
     - `python3-matplotlib` – [Matplotlib](https://matplotlib.org/), risanje grafov
     - `python3-uncertainties` – [Uncertainties](https://uncertainties.readthedocs.io/), računanje z negotovostmi
     - `python3-scipy` – [SciPy](https://scipy.org/), znanstveno računanje
+    - `python3-requests-oauthlib` – za dokazovanje istovetnosti (recimo za povezovanje z OSM ali OHM)
+    - `python3-osmapi`
 
 ##### Latex
 

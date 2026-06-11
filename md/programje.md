@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2026-05-16
+date: 2026-06-11
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -140,6 +140,7 @@ F-Droid ponuja nameščanje odprtokodnih orodij za [Android](https://www.android
 - [/e/OS](https://e.foundation/e-os/)
 - [GrapheneOS](https://grapheneos.org/) – najbolj zaščiten/varen za dlančnike
 - [LineageOS](https://lineageos.org/)
+- [SXMO](https://sxmo.org/) – Linuxov *minimalističen OS*
 
 ### Moj izbor za dlančnik
 
@@ -188,6 +189,7 @@ Glej tudi: [Moje seznami](/seznami).
 - [Luke Madison Smith](https://lukesmith.xyz/) - bister mož, zagovornik Linuxa, odprtokodnosti, preprostosti
     - [YouTube - Luke Smith](https://www.youtube.com/c/lukesmithxyz)
     - [GitHub - Luke Smith](https://github.com/LukeSmithxyz/)
+- [Open razer](https://openrazer.github.io/)
 
 ### Dlančniki
 

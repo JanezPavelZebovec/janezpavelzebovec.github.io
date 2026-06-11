@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2026-05-26
+date: 2026-06-11
 description: Priročnik za uporabo Linuxa, posebno skozi terminal
 keywords: Linux, terminal, operacijski sistem
 author: Janez Pavel Žebovec
@@ -245,6 +245,11 @@ Sinhronizacija s strežnikom (npr. pri Hetznerju):
 - `ssh-add ~/.ssh/id_ed25519` - dodaj ključ v `ssh-agent`
 - `curl {možnosti} URL` - pridobivanje podatkov od oddaljenega strežnika ali pošiljanje podatkov oddaljenemu strežniku
     - `-L` - sledi preusmeritvam, dokler ne dospe do cilja
+
+*Lokalni* strežnik za npr. razvijanje spletišč:
+
+- `python3 -m http.server 8000` – zagon Pythonovega strežnika
+- odpri stran *localhost:8000* v brskalniku
 
 ## Programi
 

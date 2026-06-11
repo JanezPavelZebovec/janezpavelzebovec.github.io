@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-06-04
+date: 2026-06-11
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -42,6 +42,8 @@ Moja *priporočila* (precej nepopolna)
 - [Kompot](https://kompot.si/)
 - [Lugos](https://www.lugos.si/) – Društvo uporabnikov Linuxa Slovenije
     - [Lugos – Wiki](https://wiki.lugos.si/)
+- [Pohod za življenje](https://pohodzazivljenje.si/)
+- [Prolife Europe](https://prolifeeurope.org/)
 
 ### Gibanja
 
@@ -55,7 +57,9 @@ Moja *priporočila* (precej nepopolna)
 - [Fairphone](https://fairphone.com/) – dlančniki, tudi slušalke (Nizozemska); popravljivost, okoljevarstvo, zeleni viri, pravični trg
 - [Framework](https://frame.work/) – prenosni računalniki, tudi namizni računalnik (ZDA); popravljivost
 - [Gizzmo – Reborn](https://gizzmo.si/reborn) – obnovljeni dlančniki
+- [The Light Phone](https://www.thelightphone.com/)
 - [PinePhone](https://pine64.org/) – dlančniki (*pametni telefoni*) z Linuxom in še nekaj drugih naprav
+- [Sanctuary Computer](https://www.sanctuary.computer/) – *programersko* podjetje (sodelovali tudi z The Light Phone pri zasnovi njihovega dlančnika)
 
 ### Osebne spletne strani
 

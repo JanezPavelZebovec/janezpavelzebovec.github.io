@@ -1,6 +1,6 @@
 ---
 title: Naravoslovje
-date: 2026-06-08
+date: 2026-06-10
 description: Naravni zakoni
 keywords: naravoslovje, fizika
 author: Janez Pavel Žebovec
@@ -487,8 +487,8 @@ $$ \vec v \times \vec B = \omega r B \cos(\phi) $$
 
 **Faradayev /*indukcijski* zakon**: *inducirana* napetost v zaključeni zanki je premo sorazmerna hitrosti spreminjanja *magnetnega* pretoka skozi površino te zanke (kjer je $\phi_m$ *mag.* pretok, $\vec B$ pa gostota *mag.* polja):
 $$ U_i = \frac{\d \phi_m}{\d t}; \phi_m = \int \vec B \vec{\d S} $$
-$$ \oint \vec B \vec{\d S} = \mu_0 I \implies \oint \vec H \vec{\d S} = I $$
 $\vec H$: jakost *Mag.* polja, ki je neodvisna od snovi v prostoru
+$$ \oint \vec B \vec{\d S} = \mu_0 I \implies \oint \vec H \vec{\d S} = I $$
 $$ \oint \vec E_i \cdot \d \vec s = - \int \frac{\dd B}{\dd t} \d \vec S $$
 
 #### Tuljava
@@ -600,6 +600,10 @@ Negotovosti se sešteva, kadar so medsebojno povezane/odvisne; če ne, seštevam
 
 - seštevanje/odštevanje količin: seštevanje *absolutnih* napak
 - množenje/deljenje količin: seštevanje *relativnih* napak
+
+Enačbe lahko močno poenostavimo z upoštevanjem negotovosti in uporabo Taylorjeve vrste:
+$$ f(x) = f(a) + \frac{f'(a)}{1!} x + \frac{f''(a)}{2!} x^2 + \frac{f'''(a)}{3!} x^3 + ... $$
+V enačbi lahko zanemarimo člene od tistega naprej, ki je zadosti manjši od negotovosti.
 
 ## Veličine in enote
 

@@ -32,7 +32,7 @@ sistem"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/Linux/">Linux</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-05-26">2026-05-26</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-06-11">2026-06-11</time></p>
     </header>
     <nav>
         <ul>
@@ -44,7 +44,10 @@ sistem"/>
         <ul>
         <li><a href="#Namescanje_programov_iz_vira"
         id="toc-Namescanje_programov_iz_vira">Nameščanje programov iz
-        vira</a></li>
+        vira</a>
+        <ul>
+        <li><a href="#Suckless" id="toc-Suckless">Suckless</a></li>
+        </ul></li>
         </ul></li>
         <li><a href="#Mape_in_datoteke_v_Linuxu"
         id="toc-Mape_in_datoteke_v_Linuxu">Mape in datoteke v
@@ -54,7 +57,10 @@ sistem"/>
         <ul>
         <li><a href="#Ustvarjanje_zagonskega_kljucka"
         id="toc-Ustvarjanje_zagonskega_kljucka">Ustvarjanje zagonskega
-        ključka</a></li>
+        ključka</a>
+        <ul>
+        <li><a href="#Ventoy" id="toc-Ventoy">Ventoy</a></li>
+        </ul></li>
         </ul></li>
         <li><a href="#Omrezna_povezava"
         id="toc-Omrezna_povezava">Omrežna povezava</a>
@@ -78,7 +84,10 @@ sistem"/>
         id="toc-Stisnjene_datoteke">Stisnjene datoteke</a></li>
         <li><a href="#Spreminjanje_izvirne_datoteke"
         id="toc-Spreminjanje_izvirne_datoteke">Spreminjanje izvirne
-        datoteke</a></li>
+        datoteke</a>
+        <ul>
+        <li><a href="#Git" id="toc-Git">Git</a></li>
+        </ul></li>
         </ul></li>
         <li><a href="#Streznik" id="toc-Streznik">Strežnik</a></li>
         <li><a href="#Programi" id="toc-Programi">Programi</a>
@@ -86,7 +95,12 @@ sistem"/>
         <li><a href="#Terminal_jezik_Bash"
         id="toc-Terminal_jezik_Bash">Terminal (jezik Bash)</a></li>
         <li><a href="#YT_DLP" id="toc-YT_DLP">YT-DLP</a></li>
-        <li><a href="#JOSM" id="toc-JOSM">JOSM</a></li>
+        <li><a href="#JOSM" id="toc-JOSM">JOSM</a>
+        <ul>
+        <li><a href="#JOSM_za_Open_Historical_Map"
+        id="toc-JOSM_za_Open_Historical_Map">JOSM za <em>Open Historical
+        Map</em></a></li>
+        </ul></li>
         <li><a href="#ST_Simple_Terminal" id="toc-ST_Simple_Terminal">ST
         (Simple Terminal)</a></li>
         <li><a href="#DWM_Dynamic_Window_Manager"
@@ -620,6 +634,13 @@ sistem"/>
             <li><code>-L</code> - sledi preusmeritvam, dokler ne dospe
             do cilja</li>
             </ul></li>
+            </ul>
+            <p><em>Lokalni</em> strežnik za npr. razvijanje
+            spletišč:</p>
+            <ul>
+            <li><code>python3 -m http.server 8000</code> – zagon
+            Pythonovega strežnika</li>
+            <li>odpri stran <em>localhost:8000</em> v brskalniku</li>
             </ul>
             <h2 id="Programi">Programi</h2>
             <h3 id="Terminal_jezik_Bash">Terminal (jezik Bash)</h3>
