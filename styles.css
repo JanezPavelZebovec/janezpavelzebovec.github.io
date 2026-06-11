@@ -118,7 +118,7 @@ blockquote cite {
     color: var(--bOspredjeBoljNazaj);
     font-size: small;
     display: block;
-    margin-top: 0.2em;
+    margin-top: 0.25em;
 }
 blockquote cite:before {
     content: "\2014 \2009";
@@ -131,6 +131,12 @@ img {
     max-width: 100%;
     max-height: 90vh
 }
+figcaption {
+    font-style: italic;
+    text-align: center;
+    color: var(--bOspredjeNazaj);
+    margin-top: 0.25em;
+}   
 
 svg {
     color: var(--bOspredje);
