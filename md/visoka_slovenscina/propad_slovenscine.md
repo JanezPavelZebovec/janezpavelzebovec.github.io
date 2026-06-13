@@ -43,30 +43,30 @@ author: Janez Pavel Žebovec
 
 **Razprave FMF, 1. letnik (2026-06-06)**:
 
-> ne rabi vsak jezik met popolnama unikatnih besed
+> ne rabi vsak jezik met popolnama unikatnih besed [B]
 
-> zaka bi si zmislu novo besedo
+> zaka bi si zmislu novo besedo [B]
 
 > nihce razen izoliranih koltur si ne zmisli novga jezika popolnoma iz nicesar  
 > vse besede za vse  
-> vsi jeziki prevzemajo besede od drugod  
+> vsi jeziki prevzemajo besede od drugod [B]
 
-> zakaj bi me brigal? kako lahko dokazemo da je slovenscina jezik ki je ga bols govort kot kerga kol druzga
+> zakaj bi me brigal? kako lahko dokazemo da je slovenscina jezik ki je ga bols govort kot kerga kol druzga [SK]
 
-> js govorim slovensko po nakljucju in nimam nc  s tem
+> js govorim slovensko po nakljucju in nimam nc  s tem [SK]
 
-> boli me kurac ce usi govorci slovenscine umrejo v nuklearnem ognju alpa zacnejo govort black speech pac
+> boli me kurac ce usi govorci slovenscine umrejo v nuklearnem ognju alpa zacnejo govort black speech pac [SK]
 
-> mislim ja ampak ziv jezik ne pomeni to da si en kr tk zmisli novo besedo pa jo proba ustulit v ze ustaljen jezik
+> mislim ja ampak ziv jezik ne pomeni to da si en kr tk zmisli novo besedo pa jo proba ustulit v ze ustaljen jezik [B]
 
 > Ja in kaj je narove s tem ce jezik umre  
-> Pac nothing lasts forever or sum  
+> Pac nothing lasts forever or sum [B]
 
-> nasprotovanje naravnemu spreminjanju jezika in oklepanje nekih starih "boljših" verzij jezika je značilnost fašizma
+> nasprotovanje naravnemu spreminjanju jezika in oklepanje nekih starih "boljših" verzij jezika je značilnost fašizma [E]
 
-> od kje pa naj bi prišle? poleg tega tako ali tako veliko tujih besed vseeno prevedejo/poslovenijo tako da res ne vidim problema
+> od kje pa naj bi prišle? poleg tega tako ali tako veliko tujih besed vseeno prevedejo/poslovenijo tako da res ne vidim problema [E]
 
 ![Coming soon (prispeval SK, 2026-06-06)](slike/pride_kmalu-zajbron.png)
 
-Pred Logarsko dolino ([46.4179596, 14.6412436](https://www.openstreetmap.org/#map=19/46.4179596/14.6412436)):
-![Slovenščina je v Sloveniji na zadnjem mestu](slike/dobrodosli.jpg)
+Pred Logarsko dolino; osrednji oglas *akcije* "Gostje prihajajo" (1986; [46.4179596, 14.6412436](https://www.openstreetmap.org/#map=19/46.4179596/14.6412436); [vir](https://lipovlist.turisticna-zveza.si/turisti-bodo-prisli-ce-jim-bomo-ponudili-prave-stvari-in-se-ustrezno-obnasali/)):
+![Slovenščina je v Sloveniji na zadnjem mestu](slike/slovenija_moja_dezela-dobrodosli.png)
