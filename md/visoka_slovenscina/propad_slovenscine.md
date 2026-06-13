@@ -1,6 +1,6 @@
 ---
 title: Propad slovenščine
-date: 2026-06-11
+date: 2026-06-13
 description: Primeri propada slovenščine
 keywords: slovenščina
 author: Janez Pavel Žebovec
@@ -67,3 +67,6 @@ author: Janez Pavel Žebovec
 > od kje pa naj bi prišle? poleg tega tako ali tako veliko tujih besed vseeno prevedejo/poslovenijo tako da res ne vidim problema
 
 ![Coming soon (prispeval SK, 2026-06-06)](slike/pride_kmalu-zajbron.png)
+
+Pred Logarsko dolino ([46.4179596, 14.6412436](https://www.openstreetmap.org/#map=19/46.4179596/14.6412436)):
+![Slovenščina je v Sloveniji na zadnjem mestu](slike/dobrodosli.jpg)

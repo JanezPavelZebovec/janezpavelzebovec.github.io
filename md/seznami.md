@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-06-11
+date: 2026-06-12
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -596,6 +596,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 
 #### Zanimivosti
 
+- [Britannica](https://www.youtube.com/@Britannica1/) – svetovni popotnik
 - [Good News](Good News) – dobre novice iz sveta
 - [Imperial](https://www.youtube.com/@IMPERIALYT) – zgodovina in *politika*
 - [Johnny Harris](https://www.youtube.com/@johnnyharris) – "neodvisni novinar" – razno iz sveta / o svetu
@@ -677,6 +678,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Atlas Pro](https://www.youtube.com/@AtlasPro1) - zemljepisje in živoslovje
 - [Map Your Grid](https://www.youtube.com/@MapYourGrid) – skupnosti za vnašanje podatkov *infrastrukture* v OSM
 - [Minds Behind Maps](https://www.youtube.com/@mindsbehindmaps)
+- [Ollie Bye](https://www.youtube.com/@OllieBye/) – predvsem zgodovinski zemljevidi
 - [OpenStreetMap US](https://www.youtube.com/@openstreetmapus5936)
 
 #### Zgodovina
@@ -704,6 +706,8 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [Jaiden Forrest](https://www.youtube.com/@JaidenForrest)
 - [The Long Now Foundation](https://www.youtube.com/@longnow)
 - [Luke Smith](https://www.youtube.com/@LukeSmithxyz) - programstvo (Linux), modroslovje (*filozofija*), pravoslavstvo?
+- [Matt Fradd](https://www.youtube.com/@pintswithaquinas)
+    - [More Pints With Aquinas](https://www.youtube.com/@morepintswithaquinas)
 - [Mikhaila Peterson](https://www.youtube.com/@mikhaila)
 - [Nicholas Bowling](https://www.youtube.com/@NicholasBowling) – ameriški ulični pridigar, nekdanji katolik
 - [Pope Defenders](https://www.youtube.com/@PopeDefendersYT) – zagovornik katolištva
