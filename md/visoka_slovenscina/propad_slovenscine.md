@@ -69,4 +69,5 @@ author: Janez Pavel Žebovec
 ![Coming soon (prispeval SK, 2026-06-06)](slike/pride_kmalu-zajbron.png)
 
 Pred Logarsko dolino; osrednji oglas *akcije* "Gostje prihajajo" (1986; [46.4179596, 14.6412436](https://www.openstreetmap.org/#map=19/46.4179596/14.6412436); [vir](https://lipovlist.turisticna-zveza.si/turisti-bodo-prisli-ce-jim-bomo-ponudili-prave-stvari-in-se-ustrezno-obnasali/)):
+
 ![Slovenščina je v Sloveniji na zadnjem mestu](slike/slovenija_moja_dezela-dobrodosli.png)

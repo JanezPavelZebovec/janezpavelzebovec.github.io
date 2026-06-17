@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-06-10
+date: 2026-06-16
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -540,6 +540,45 @@ V [**~/viri/dwm/config.h**](/moj_linux/home/janezpavel/viri/dwm/config.h):
 
 - `mkdir -p ~/.config/lf/` – ustvari *mapo* za nastavitveno datoteko
 - `touch ~/.config/lf/lfrc` – ustvari nastavitveno datoteko [**lfrc**](/moj_linux/home/janezpavel/.config/lf/lfrc) za LF
+
+### Podatkovna zbirka SQL
+
+- `sudo apt install mariadb-server` – namesti strežnik [MariaDB](https://mariadb.com/) (različica MySQL?)
+- `sudo systemctl status mariadb` – preveri stanje zbirke SQL
+- `sudo mariadb` – tako vstopiš v zbirko
+    - `exit;` – izhod iz zbirke
+    - `CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE utfmb4_unicode_ci;` – ustavri zbirko z imenom *moja_zbirka* s polnim Unikodom (utf8mb4), kar prepreči težave s šumniki, posebnimi znaki; ter zagotovi pravilno slovensko/Unikodno razvrščanje besedila
+    - `CREATE USER 'uporabnik'@'localhost' IDENTIFIED BY 'geslo';` – ustvari uporabnika zbirke z up. imenom *uporabnik*, ki se sme povezati preko *lokalnega* strežnika (*localhost*); dodelimo mu še geslo za prijavo
+    - `GRANT ALL PRIVILEGES ON moja_zbirka.* TO 'uporabnik'@'localhost';` – dodeli uporabniku vse pravice do vseh preglednic v zbirki (.\*)
+    - `ALTER USER 'uporabnik'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('geslo');` – uporabnika izrecno nastavimo na geselno *avtentikacijo*
+    - `FLUSH PRIVILEGES;` – MariaDB ponovno naloži, oz. osveži pravice in zagotovi, da začnejo veljati takoj
+    - `ALTER USER 'uporabnik'@'localhost' IDENTIFIED BY 'novo_geslo';` – spremeni geslo uporabnika
+    - `DROP USER 'uporabnik'@'localhost';` – izbriše uporabnika
+    - `DROP DATABASE knjige_dev;` – izbriše zbirko
+- `mysql -u uporabnik -p moja_zbirka` – prijava uporabnika v zbirko (v naslednjem koraku moraš vnesti še geslo)
+    - `CREATE TABLE moja_preglednica (` – ustvari preglednico z imenom *moja_preglednica* v zbirki
+        - `id INT AUTO_INCREMENT PRIMARY KEY,`
+        - `ime VARCHAR(255) NOT NULL,` – opredeli stolpec *ime* za nize, dolžine največ 255; vse vrstice rabijo imeti ime
+        - `podime VARCHAR(255),` – opredeli stolpec *podime* za nize, dolžine največ 255, ki je lahko tudi prazen
+        - `stevilke INT,` – opredeli stolpec *stevilke* številk
+
+#### Beekeeper Studio
+
+**Namestitev ključa GPG**:
+```
+curl -fsSL https://deb.beekeeperstudio.io/beekeeper.key | sudo gpg --dearmor --output /usr/share/keyrings/beekeeper.gpg \
+  && sudo chmod go+r /usr/share/keyrings/beekeeper.gpg \
+  && echo "deb [signed-by=/usr/share/keyrings/beekeeper.gpg] https://deb.beekeeperstudio.io stable main" \
+  | sudo tee /etc/apt/sources.list.d/beekeeper-studio-app.list > /dev/null
+```
+
+**Namestitev programa**: `sudo apt update && sudo apt install beekeeper-studio -y`
+
+Glavna izvrščjiva datoteka je zdaj nameščena na **/opt/Beekeeper Studio/beekeeper-studio**
+
+Za lažje zaganjanje:
+
+`sudo ln -s "/opt/Beekeeper Studio/beekeeper-studio" /usr/local/bin/beekeeper`
 
 ---
 

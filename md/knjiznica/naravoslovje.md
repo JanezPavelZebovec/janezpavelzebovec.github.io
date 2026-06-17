@@ -1,6 +1,6 @@
 ---
 title: Naravoslovje
-date: 2026-06-10
+date: 2026-06-17
 description: Naravni zakoni
 keywords: naravoslovje, fizika
 author: Janez Pavel Žebovec
@@ -64,8 +64,7 @@ Stalen pospešek:
 $$ \Delta v = at $$
 $$ v^2 = v'^2 + 2 a (x - x') $$
 
-### Navor
-
+**Navor**:
 $$ \vec M = \vec r \times \vec F = m \vec \alpha r^2 = J \vec \alpha $$
 
 ## *Energije*
@@ -116,9 +115,50 @@ Za "ravno Zemljo" ($\Delta h << r_Z$):
 $$ g = \frac{G M_Z}{r_Z^2} $$
 $$ W_{p, g} = m g h $$
 
-### Potencialna prožnostna energija
+### *Potencialna* prožnostna *energija*
 
 $$ \Delta W_{pr} = -A_{vzmeti} = - \int_{x'}^x F x \d x = \int_{x'}^{x} k x \d x = \frac{1}{2} k (x^2 - x'^2) = \frac{1}{2} k x^2 $$
+
+## *Termodinamika*
+
+*Temperatura* je *termodinamska* spremenljivka, toplota pa ne. Toplota je način prehajanja *energije*, vrsta dela.
+
+Povprečna *kinetična energija molekul*:
+$$ p = \frac{2}{3} \frac{N}{V} < W_{k1} > $$
+
+*Kinetična* opredelitev *temperature*:
+$$ < W_{k 1} > = \frac{3}{2} k_B T $$
+
+**Ničti zakon *termodinamike***: Če je *termodinamski sistem* A v ravnovesju z B in B v ravnovesju z C, potem je A v ravnovesju z C (prenosljivost *termodinamskega* ravnovesja).
+
+$$ \Delta W_n = Q_{stalna V} = m c_V \Delta T $$
+$$ Q_{stalen p} = \Delta W_n - A = m c_V \Delta T + \int{p \d V} = m c_V \Delta T + p (V_2 - V_1) = m c_V \Delta T + \frac{m}{M} R \Delta T = m c_p \Delta T $$
+
+Za popolni plin velja:
+$$ c_p - c_V = \frac{R}{M} $$
+
+Splošna plinska enačba:
+$$ \frac{p V}{T} = \mathrm{stalnica} = N k_B = \frac{m}{M} N_A k_b = \frac{m}{M} R $$
+$$ p V = n R T = \frac{m}{M} R T $$
+
+| | enačba stanja | toplota | delo | $$\Delta W_n$$ |
+| --- | --- | --- | --- | --- |
+| stalen $p$ | $$ \frac{V}{T} $$ | $$ Q = \Delta H = m c_p \Delta T $$ | $$ - p \Delta V $$ | $$ m c_V \Delta T $$ |
+| stalna $V$ | $$ \frac{p}{T} $$ | $$ Q = \Delta W_n = m c_V \Delta T $$ | / | $$ m c_V \Delta T; \Delta W_n = Q_{stalna V} $$ |
+| stalna $T$ | $$ p V $$ | $$ Q = - A = \frac{m}{M} R T \ln(\frac{V}{V'}) $$ | $$ A = - \int{p \d V} = - p_0 V_0 \int{\frac{\d V}{V}} = \frac{m}{M} R T \ln(\frac{V}{V'}) $$ |
+
+$$ \frac{\Delta l}{l} = \alpha \Delta T $$
+$$ \frac{\Delta V}{V} = \beta \Delta T $$
+
+- $\alpha$ – *lienarni* količnik dolžinskega raztezka
+- $\beta$ – *linearni* količnik prostorninskega raztezka
+
+$$ \beta = 3 \alpha $$
+
+### *Entropija*
+
+$$ \d S \geq \frac{\mathrm{đ} Q}{T} $$
+$$ \Delta S \geq \int{ \frac{\d Q}{T} } $$
 
 ## Gibalna količina
 
@@ -557,7 +597,7 @@ $$ \overline{P} = \frac{1}{2} U_0 I_0 \cos(\delta) $$
 $$ P = U_{ef.} I_{ef.} $$
 $$ I_{ef.} = \frac{I_0}{\sqrt{2}} \implies U_{ef.} = R I_{ef.} = \frac{U_0}{\sqrt{2}} $$
 
-*El.* nihajni krog v *kompleksnem*:
+*El.* nihajni krog v *kompleksnem* (glej tudi [Skupna števila](/knjiznica/racunstvo#Skupna_stevila)):
 $$ \phi = \omega t $$
 $$ U = U_0 e^{\mathrm{i} \phi} $$
 $$ I = I_0 e^{\mathrm{i} (\phi + \delta)} $$

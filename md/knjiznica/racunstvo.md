@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-06-05
+date: 2026-06-16
 description: računska teorija, enačbe
 keywords: računstvo, matematika
 author: Janez Pavel Žebovec
@@ -58,16 +58,23 @@ To so števila, ki jih lahko predstavimo na običajni številski premici (npr. 0
 Skupna števila imajo stvarno sestavino (*realno komponento*) *a* in umišljeno sestavino (*imaginarno komponento*) *b*. Umišljena *komponenta* se označuje z i.
 
 $$ \mathbb{C} = \left\{a + b\mathrm{i}; (a, b \in \mathbb{R} ) \land (\mathrm{i}^2 = -1 \Leftrightarrow \sqrt{-1} = \sqrt{\mathrm{i^2}})\right\} $$
-$$ \lvert z \rvert = \sqrt{a^2 + b^2} $$
+$$ {\lvert z \rvert}^2 = a^2 + b^2 $$
+$\overline{z}$ je *konjugirana* vrednost skupnega števila
+$$ \overline{z} = a - \mathrm{i} b $$
 $$ {\lvert z \rvert}^2 = z \overline{z} $$
+$$ \phi = \arctan \left( \frac{b}{a} \right) $$
 
 *Polarni* zapis:
 
 $$ z = \lvert  z \rvert (\cos \phi + \mathrm{i} \sin \phi) $$
 
+Eulerjeva enačba:
+$$ \mathrm{e}^{\mathrm{i} \phi} = \cos(\phi) + \mathrm{i} \sin(\phi) $$
+
 Eulerjev zapis:
 
 $$ z = \lvert z \rvert \mathrm{e}^{\mathrm{i} \phi} $$
+$$ \overline{z} = \lvert z \rvert \mathrm{e}^{- \mathrm{i} \phi} $$
 
 De Moivrova enačba:
 
