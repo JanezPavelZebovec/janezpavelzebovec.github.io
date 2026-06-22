@@ -30,7 +30,7 @@ računalnik zna ustrezno upoštevati"/>
             </svg>
         </a>
 
-        <nav id="pot"></nav>
+        <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/racunalniski_jeziki/">racunalniski_jeziki</a></nav>
         <p id="datum">Zadnja sprememba te strani: <time datetime="2026-03-17">2026-03-17</time></p>
     </header>
     <nav>
@@ -68,7 +68,7 @@ računalnik zna ustrezno upoštevati"/>
             nekaterih primerih pa je to celo obvezno.</p>
             <ul>
             <li><code># Naslov</code> - naslov; več ključnikov
-            (<em>heštegov</em>) pomeni nižji podnaslov; HTML:
+            (<i>heštegov</i>) pomeni nižji podnaslov; HTML:
             <code>&lt;h1&gt;Naslov&lt;/h1&gt;</code>;
             <ul>
             <li><p>Naslov prve ravni lahko označiš tudi tako:</p>
@@ -118,11 +118,11 @@ računalnik zna ustrezno upoštevati"/>
             saj s tem ločiš seznam na več seznamov.</p>
             <ul>
             <li><code>* element</code> = <code>- element</code> =
-            <code>+ element</code> - oznaka <em>elementa</em>
+            <code>+ element</code> - oznaka <i>elementa</i>
             nerazvrščenega seznama; HTML:
             <code>&lt;ul&gt;&lt;li&gt;element&lt;/li&gt;&lt;/ul&gt;</code>;</li>
             <li><code>1. element</code> (zapovrstne številke s piko) -
-            oznaka <em>elementa</em> razvrščenega seznama; HTML:
+            oznaka <i>elementa</i> razvrščenega seznama; HTML:
             <code>&lt;ol&gt;&lt;li&gt;element&lt;/li&gt;&lt;/ol&gt;</code>
             <ul>
             <li><code>- 1\. element</code> - če se element
@@ -158,7 +158,7 @@ računalnik zna ustrezno upoštevati"/>
             kateri je besedilo enako naslovu;</li>
             </ul></li>
             <li><p><code>[besedilo povezave](pot)</code> - povezava s
-            potjo, <em>relativno</em> na mapo, v kateri se nahaja
+            potjo, <i>relativno</i> na mapo, v kateri se nahaja
             stran;</p></li>
             <li><p><code>[besedilo povezave][ime sklica]</code> - sklic
             (ime sklica je lahko tudi preposta številka)</p>
@@ -174,11 +174,11 @@ računalnik zna ustrezno upoštevati"/>
             vstavljena slika;</p></li>
             <li><p><code>---</code> = <code>***</code> =
             <code>___</code> - vodoravna razdelilna črta (uporabiš
-            <em>najmanj</em> tri znake);</p></li>
+            <i>najmanj</i> tri znake);</p></li>
             <li><p><code>`koda`</code> - besedilo v računalniškem
             jeziku;</p></li>
-            <li><p>večji <em>blok</em> besedila v rač. jeziku (ni
-            potrebno opredeliti jezika):</p>
+            <li><p>večji <i>blok</i> besedila v rač. jeziku (ni potrebno
+            opredeliti jezika):</p>
             <div class="sourceCode" id="cb6"><pre
             class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="in">```jezik</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="in">koda</span></span>
@@ -234,13 +234,13 @@ računalnik zna ustrezno upoštevati"/>
             </ul>
             <h2 id="LaTeX">LaTeX</h2>
             <p><code>\usepackage[slovene]{babel}</code> – uporabi
-            slovenske oznake slik (<em>Slika</em> namesto
-            <em>Figure</em>)</p>
-            <p>V glavi <em>dokumenta</em> določiš vrsto dokumenta, lahko
+            slovenske oznake slik (<i>Slika</i> namesto
+            <i>Figure</i>)</p>
+            <p>V glavi <i>dokumenta</i> določiš vrsto dokumenta, lahko
             tudi lastne velikosti strani in pisave (npr. velikost strani
             A4, velikost pisave 12 in vrsta članka):</p>
             <pre><code>\documentclass[a4paper,12pt]{article}</code></pre>
-            <p>Izbira vrste <em>dokumenta</em> vpliva na privzet slog
+            <p>Izbira vrste <i>dokumenta</i> vpliva na privzet slog
             (npr. pri članku se vsebina začne že na isti strani kot
             naslov, pri poročilu pa na naslednji strani, za naslovnico).
             Na voljo so:</p>
@@ -249,10 +249,10 @@ računalnik zna ustrezno upoštevati"/>
             <li><code>report</code> – poročilo</li>
             <li><code>book</code> – knjiga</li>
             <li><code>slides</code> – prosojnice</li>
-            <li><code>proc</code> (<em>proceedings</em>) – zapisnik,
+            <li><code>proc</code> (<i>proceedings</i>) – zapisnik,
             postopek</li>
             </ul>
-            <p>Podatki o <em>dokumentu</em>:</p>
+            <p>Podatki o <i>dokumentu</i>:</p>
             <pre><code>\title{Naslov dokumenta}
 \author{ime avtorja}
 \date{datum nastanka}</code></pre>
@@ -261,11 +261,11 @@ računalnik zna ustrezno upoštevati"/>
             <p>Če želiš ustvariti naslovnico (v primeru razen članka je
             to ločena stran), kličeš</p>
             <pre><code>\maketitle</code></pre>
-            <p>Vsebina <em>dokumenta</em> je obdana z</p>
+            <p>Vsebina <i>dokumenta</i> je obdana z</p>
             <pre><code>\begin{document}
 Vsa moja vsebina (besedilo).
 \end{document}</code></pre>
-            <p>Karkoli pred tem vpliva na celoten <em>dokument</em>,
+            <p>Karkoli pred tem vpliva na celoten <i>dokument</i>,
             karkoli za tem pa je prezrto.</p>
             <p>Poglavja:</p>
             <pre><code>\section{Naslov odseka/poglavja}
@@ -273,7 +273,7 @@ Vsa moja vsebina (besedilo).
 \subsubsection{Naslov podpododseka/podpodpoglavja}
 \paragraph{Naslov odstavka}
 \subparagraph{Nasov pododstavka}</code></pre>
-            <p>V <em>dokumentu</em> vrst <code>book</code> in
+            <p>V <i>dokumentu</i> vrst <code>book</code> in
             <code>report</code> obstaja še
             <code>\chapter{Naslov poglavja}</code>.</p>
             <pre><code>Zadeva z imenom \label{ime}
@@ -313,7 +313,7 @@ $$
     zadeve $=$ zaadeve sedno od sredinsko poravnanega enačaja
 |end{</code></pre>
             <p><code>\!</code> – majhen negativni presledek
-            <code>\rm</code> – navadno besedilo (<em>roman</em>)
+            <code>\rm</code> – navadno besedilo (<i>roman</i>)
             <code>\quad</code> – razmik znotraj vrstice</p>
             <p><code>\dots</code> – tri pike <code>\approx</code> – je
             približno <code>\sim</code> – je podobno <code>\times</code>

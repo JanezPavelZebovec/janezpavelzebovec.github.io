@@ -56,9 +56,8 @@
             <code>sudo rmmod pcspkr</code>. Da ga odstraniš za vedno
             <code>echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf</code>,
             oz. v datoteko <code>/etc/modprobe.d/nobeep.conf</code>dodaj
-            <code>blacklist pcspkr</code>. To onemogoči
-            <strong>pcspkr</strong>, ki je odgovoren za to
-            piskanje.</li>
+            <code>blacklist pcspkr</code>. To onemogoči <b>pcspkr</b>,
+            ki je odgovoren za to piskanje.</li>
             </ul>
             <h3 id="Dejanja_ob_zagonu">Dejanja ob zagonu</h3>
             <ul>
@@ -101,20 +100,19 @@
             <ul>
             <li><code>#define MODKEY Mod1Mask</code> spremeni v
             <code>#define MODKEY Mod4Mask</code> – tako je ključni gumb
-            pri bližnjicah DWM-ja <strong>Super</strong>, ne
-            <strong>Alt</strong></li>
+            pri bližnjicah DWM-ja <b>Super</b>, ne <b>Alt</b></li>
             <li><code>{ MODKEY,  XK_p,  spawn,  {.v = dmenucmd } },</code>
             spremeni v
             <code>{ MODKEY,  XK_a,  spawn,  {.v = dmenucmd } },</code>,
             da odpiraš menu z bolj priročno bližnjico
-            <strong>Super+a</strong></li>
+            <b>Super+a</b></li>
             <li>Dodaj
             <code>{ MODKEY,  XK_Tab,  focusstack,  {.i = +1 } },</code>
-            za kroženje med okni z <strong>Super+Tab</strong></li>
+            za kroženje med okni z <b>Super+Tab</b></li>
             <li>Dodaj
             <code>{ MODKEY|ShiftMask,  XK_Tab,  focusstack,  {.i = -1 } },</code>
             za kroženje med okni v nasprotno smer z
-            <strong>Super+Shift+Tab</strong></li>
+            <b>Super+Shift+Tab</b></li>
             <li>Spremeni <code>{ MODKEY,  XK_Tab,  view,  {0} },</code>
             v <code>{ MODKEY,  XK_v,  view,  {0} },</code></li>
             </ul></li>
@@ -127,13 +125,13 @@
             <li><p><code>vim ~/viri/st/config.h</code> – odpri
             nastavitveno datoteko ST</p></li>
             <li><p>Namesto ```c /* Terminal colors (16 first used in
-            escape sequence) <em>/ static const char </em>colorname[] =
-            { /* 8 normal colors <em>/ [0] = “#282828”, /</em> hard
-            contrast: #1d2021 / soft contrast: #32302f <em>/ [1] =
-            “#cc241d”, /</em> red <em>/ [2] = “#98971a”, /</em> green
-            <em>/ [3] = “#d79921”, /</em> yellow <em>/ [4] = “#458588”,
-            /</em> blue <em>/ [5] = “#b16286”, /</em> magenta <em>/ [6]
-            = “#689d6a”, /</em> cyan <em>/ [7] = “#a89984”, /</em> white
+            escape sequence) <i>/ static const char </i>colorname[] = {
+            /* 8 normal colors <i>/ [0] = “#282828”, /</i> hard
+            contrast: #1d2021 / soft contrast: #32302f <i>/ [1] =
+            “#cc241d”, /</i> red <i>/ [2] = “#98971a”, /</i> green <i>/
+            [3] = “#d79921”, /</i> yellow <i>/ [4] = “#458588”, /</i>
+            blue <i>/ [5] = “#b16286”, /</i> magenta <i>/ [6] =
+            “#689d6a”, /</i> cyan <i>/ [7] = “#a89984”, /</i> white
             */</p>
             <pre><code>  /* 8 bright colors */
   [8]  = &quot;#928374&quot;, /* black   */
