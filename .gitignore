@@ -8,5 +8,7 @@
 *.swo
 *.swp
 
+knjiznica_zebovec/*
+
 moj_rodovnik/
 

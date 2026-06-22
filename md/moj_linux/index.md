@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-06-16
+date: 2026-06-19
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -364,10 +364,24 @@ Knjižnice:
     - `cm-super` – nek paket pisav, med drugim lahko potem uporabljaš LaTex v grafih Matplotlib
     - `dvipng`
 
-#### *Live-server*
+#### *Lokalni* strežnik
+
+- ` python3 -m http.server 8000`
+
+##### *Live-server*
 
 - `sudo apt install nodejs npm`
 - `npm install -g live-server` – namesti live-server *globalno* (bi bilo bolje namestiti kam drugam, kot privzeto, npr. v ~/ ?)
+
+##### PHP
+
+- `sudo apt install php`
+- `php -S localhost:8000`
+
+Za uporabo SQL še:
+
+- `sudo apt install php-pdo php-mysql`
+- `sudo systemctl restart apache2`
 
 #### Izbirnik barv na zaslonu
 

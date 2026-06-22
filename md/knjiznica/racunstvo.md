@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-06-16
+date: 2026-06-22
 description: računska teorija, enačbe
 keywords: računstvo, matematika
 author: Janez Pavel Žebovec
@@ -58,6 +58,7 @@ To so števila, ki jih lahko predstavimo na običajni številski premici (npr. 0
 Skupna števila imajo stvarno sestavino (*realno komponento*) *a* in umišljeno sestavino (*imaginarno komponento*) *b*. Umišljena *komponenta* se označuje z i.
 
 $$ \mathbb{C} = \left\{a + b\mathrm{i}; (a, b \in \mathbb{R} ) \land (\mathrm{i}^2 = -1 \Leftrightarrow \sqrt{-1} = \sqrt{\mathrm{i^2}})\right\} $$
+$$ i = \sqrt{-} $$
 $$ {\lvert z \rvert}^2 = a^2 + b^2 $$
 $\overline{z}$ je *konjugirana* vrednost skupnega števila
 $$ \overline{z} = a - \mathrm{i} b $$
@@ -531,8 +532,8 @@ Za tetivni štirikotnik (to je le *trapez*) velja, da sta nasprotna kota sokota.
 
 #### Radian
 
-Radian je opredeljen kot kot loka enake dolžine kot polmera. Torej je bseg kroga $2 \pi$ radianov, oz. $2 \pi$ polmerov.
-$$ 180 ° = \pi \mathrm{rd} $$
+Radian je opredeljen kot kót loka na krožnici dolžine polmera iste krožnice. Torej je obseg kroga $2 \pi$ radianov, oz. $2 \pi$ polmerov.
+$$ 180 ° = \pi $$
 
 ### Trikotnik
 
@@ -611,14 +612,21 @@ $$ \vec{a} \times \vec{b} = \mathrm{det} \left( \begin{bmatrix}a_1 & b_1\\a_2 & 
 
 ## *Matrike*
 
-- Seštevanje/odštevanje *matrik*: po *komponentah*
+**Vrste *matrik***:
+
+- ***Identična matrika***: *diagonala*/prekotnica *matrike* je v vseh členih enaka 1, ostali členi so 0. Vedno je tudi kvadratna.
+$$ IA = AI = A $$
+
+### Pravila za računanje z *matrikami*
+
+- Seštevanje/odštevanje *matrik*: po *komponentah* (*matriki* morata biti torej enake oblike / velikosti)
 - Množenje s *skalarjem* (oz. matrika velikosti 1x1): po *komponentah*
 - Množenje *matrik* (ne velja zamenljivost / *komutativnost*, velja pa družilnost / *asociativnost*):
 $$ \begin{bmatrix}a & b & c\\d & e & f\end{bmatrix} \begin{bmatrix}g & h\\i & j\\k & l\end{bmatrix} = \begin{bmatrix}ag + bi + ck & ah + bj + cl\\dg + ei + fk & dh + ej + fl\end{bmatrix} $$
     *Matrični produkt* dveh neničelnih *matrik* je lahko tudi enak nič.
 - *transpozicija*: stolpci postanejo vrstice in vrstice stolpci
-Vsi *elementi diagonale identične matrike* so enaki 1, ostali pa enaki 0.
-$$ IA = AI = A $$
+
+### *Funkcije matrik*
 
 **Komutator** kvadratnih matrik $A, B \in \mathbb{C}^{n \times n}$:
 $$ [A, B] = AB - BA $$
@@ -628,17 +636,6 @@ $$ \mathrm{tr} (A) = A_{11} + A_{22} + ... + A_{nn} $$
 $$ \mathrm{tr} (A + B) = \mathrm{tr} (A) + \mathrm{tr} (B) $$
 $$ \mathrm{tr} (AB) = \mathrm{tr} (BA); A, B \in \mathbb{C}^{n \times n} $$
 $$ \mathrm{tr} (\lambda A) = \lambda \mathrm{tr} (A); \lambda \in \mathbb{C}; A \in \mathbb{C}^{n \times n} $$
-
-### Vrstična *kanonična forma*
-
-- v vsaki vrstici je prvo neničelno število 1 (to je tudi t. i. *pivot*)
-- v dani vrstici je prva 1 desno od prve 1 v vrstici nad njo
-- od nekod dalje so lahko vrstice ničelne
-
-Primer:
-$$ \begin{bmatrix}0 & 0 & 1 & a & b & c\\0 & 0 & 0 & 0 & 1 &d\\0 & 0 & 0 & 0 & 0 & 0\end{bmatrix} $$
-
-***Rank matrike*** je enak številu njenih *pivotov* v vrstični *kanonični formi* (VKF). *Matriko* lahko pretvorimo v VKF z uporabo vrstičnih *operacij* [Gauss-Jordanove *eliminacije*](#Gauss_Jordanova_eliminacija).
 
 ### Reševanje *linearnih* enačb z *matrikami*
 
@@ -652,6 +649,7 @@ Postopek reševanja *nehomogenih linearnih* enačb:
 - spremenljivke, ki nimajo pivotov v VKF, vzamemo za proste spremenljivke (*parametre*)
 - zapišemo poenostavljen *sistem* enačb in ostale spremenljivke izrazimo s prostimi spremenljivkami
 
+<div class="zgled">
 Primer:
 
 $$ x - 2y + 3z - 4u = 4 \\ y - z + u = -3 \\ x + 3y - 3u = 1 $$
@@ -662,6 +660,7 @@ $u$ vzamemo za *parameter*, ker nima pivota:
 $$ x = -8 \\ y = 3 + u \\ z = 6 + 2 u $$
 $$ r(u) (x, y, z, u) = (-8, 3 + u, b + 2 u, u) = (-8, 3, 6, 0) + u (0, 1, 2, 1) = \vec{r_0} + \vec{s} $$
 kjer je $\vec{r_0}$ začetna točka na premici in $\vec{s}$ smerni *vektor* premice.
+</div>
 
 Ali dani *vektorji* tvorijo ogrodje [*vektorskega* prostora](Vektorski_prostori) $\mathbb{R}^n$, ugotovimo tako, da
 
@@ -671,7 +670,7 @@ Ali dani *vektorji* tvorijo ogrodje [*vektorskega* prostora](Vektorski_prostori)
 
 ### Inverz matrike
 
-Če *matriko* razumemo kot [*transformacijo*](#Linearne_transformacije), je *inverz matrike* obratna *transformacija*.
+Če *matriko* razumemo/razlagamo kot [*transformacijo*](#Linearne_transformacije), je *inverz matrike* obratna *transformacija*.
 
 $$ A^{-1} A = A A^{-1} = I_n; A, A^{-1} \in \mathbb{C}^{n \times n}; \mathrm{det}(A) \neq 0 $$
 
@@ -682,19 +681,19 @@ $$ A^{-1} A = A A^{-1} = I_n; A, A^{-1} \in \mathbb{C}^{n \times n}; \mathrm{det
 
 *Inverz diagonalne matrike*: po *komponentah*
 
-$$ \begin{bmatrix} A & 0 \\ 0 & C \end{bmatrix}^{-1} = \begin{bmatrix}A˘{-1} & 0 \\ 0 & C^{-1} \end{bmatrix} $$
+$$ \begin{bmatrix} A & 0 \\ 0 & C \end{bmatrix}^{-1} = \begin{bmatrix}A^{-1} & 0 \\ 0 & C^{-1} \end{bmatrix} $$
 
 ### Gauss-Jordanova *eliminacija*
 
-Z njo pridemo do *inverza matrike* (če ta obstaja).
+Z njo pridemo do *inverza matrike* (če ta obstaja, sicer se postopek ne izide).
 
 - najprej zapišemo razširjeno *matriko* $\begin{bmatrix} A & I \end{bmatrix}$
 - z vrstičnimi *operacijami* razširjeno *matrikp* prevedemo v obliko $\begin{bmatrix} I & A^{-1} \end{bmatrix}$
 
 
-***Elementarne* vrstične *operacije***, ki jih lahko uporabimo:
+***Elementarne* vrstične *operacije***, ki jih lahko uporabimo (pri tem v resnici množimo enačbo $A X = I$ z leve z ustreznimi *matrikami*):
 
-- i-to vrstico pomnožimo z neničelnim številom $\alpha$ oz. celotno *matriko* pomnožimo z *matriko*
+- $i$-to vrstico pomnožimo z neničelnim številom $\alpha$ oz. to pomeni, da celotno *matriko* z leve pomnožimo z *matriko*
     $$ \begin{pmatrix}
     1   &       &   &       &   &       &   \\
         &\ddots &   &       &   &       &   \\
@@ -705,8 +704,28 @@ Z njo pridemo do *inverza matrike* (če ta obstaja).
         &       &   &       &   &       & 1 \\
     \end{pmatrix} $$
 
-- i-ti vrstici prištejemo $\beta$-kratnik j-te vrstice
-- zamenjamo i-to in j-to vrstico
+- $i$-ti vrstici prištejemo $\beta$-kratnik $j$-te vrstice
+    <div class="zgled">
+    Da drugi vrstici *matrike* $A$ prištejemo $\beta$-kratnik prve vrstice:
+    $$ \begin{bmatrix} 1 & 0 & 0 \\ \beta & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} A X = \begin{bmatrix} \end{bmatrix} I $$
+    </div>
+
+- zamenjamo $i$-to in $j$-to vrstico
+
+### Vrstična *kanonična forma*
+
+- v vsaki vrstici je prvo neničelno število 1 (to je tudi t. i. *pivot*)
+- v dani vrstici je prva 1 desno od prve 1 v vrstici nad njo
+- od nekod dalje so lahko vrstice ničelne
+
+<div class="zgled">
+Primer:
+$$ \begin{bmatrix} 0 & 0 & 1 & a & b & c \\ 0 & 0 & 0 & 0 & 1 & d \\ 0 & 0 & 0 & 0 & 0 & 0 \end{bmatrix} $$
+</div>
+
+*Matriko* lahko pretvorimo v VKF z uporabo vrstičnih *operacij* [Gauss-Jordanove *eliminacije*](#Gauss_Jordanova_eliminacija).
+
+***Rank matrike*** je po svoji opredelitvi enak številu njenih *pivotov* v vrstični *kanonični formi* (VKF).
 
 ### Determinanta matrike
 
@@ -727,14 +746,26 @@ Za izračun *determinante* lahko uporabimo tudi Gaussovo *metodo/algoritem*:
 
 Če ima *matrika* veliko ničel, se splača uporabiti **razvoj po stolpcu ali vrstici**. 
 
+**Izračun *determinante* po vrstici/stolpcu**: splača se, kada je v *matriki* veliko ničel; ta pristop *determinanto* $n \times n$ prevede na $(n - 1) \times (n - 1)$.
+
+Po $i$-ti vrstici:
+$$ \mathrm{det}(A) = \sum_{j=1}^n a_{i j} \mathrm{co}_{i j}(A) $$
+Po $i$-tem stolpcu:
+$$ \mathrm{det}(A) = \sum_{i=1}^n a_{j i} \mathrm{co}_{j i}(A) $$
+
 ### Računanje *linearnih* enačb z *matrikami*
 
 *Dimenzija* prostora (število prostih spremenljivk / *parametrov*) je $k = n - \mathrm{rang}(A)$.
 
 ### Cramerjevo pravilo za izračun *inverza matrike*
 
+Splača se ga uporabiti v nekaterih teoretičnih izpeljavah, v *praktičnih* primerih pa predvsem za $n = 1$ in $n = 3$.
+
 $$ A^{-1} = \frac{1}{\mathrm{det}(A)} \mathrm{co}(A)^{T} $$
 *Kofaktor* $\mathrm{co}(A)$ dobimo tako, da izračunamo *kofaktorje* po vseh vrsticah in stolpcih.
+
+Enačba za *matriko* $2 \times 2$:
+$$ \begin{bmatrix} a & b \\ c & d \end{bmatrix}^{-1} = \frac{1}{a d - b c} \begin{bmatrix} d & -b \\ -c & a \end{bmatrix} $$
 
 ### *Linearne transformacije*
 
@@ -756,9 +787,74 @@ $$ f(g(x)) = \begin{bmatrix}a & b\\c & d\end{bmatrix} \left( \begin{bmatrix}e & 
 
 ***Determinanta transformacijske matrike*** nam pove, za kakšen količnik se spremeni ploščina/prostornina ob *transformaciji*. Če je *determinanta negativna*, to pomeni, da se je *vektor normale* ploščine obrnil (zamenjal predznak), kar se zgodi, če "zamenjamo " *bazna vektorja* med sabo.
 
+<div class="zgled">
 Primer zasuka dvorazsežnostnega prostora okoli $(0, 0)$ za kot $\phi$:
 $$ R_\phi = \begin{bmatrix} \cos \phi & - \sin \phi \\ \sin \phi & \cos \phi \end{bmatrix} $$
+</div>
 
 ### Preslikave med *vektorskimi* prostori
 
 - ***unitarna matrika***: $A^* A = A A^* = I_n$
+
+### *Linearne* preslikave
+
+Preslikava je lahko:
+
+- *monomorfizem*: je *injektivna*
+- *epimorfizem*: je *surjektivna*
+- *izomorfizem*: je *injektivna* in *surjektivna*, torej *bijektivna*
+    Prostora sta *izomorfna*, če med njima obstaja kak *izomorfizem*. To je *ekvivalenčna relacija*.
+
+#### Jedro *matrike*
+
+Jedro (imenovan tudi ničelni prostor ali *kernel*) je množica vseh *vektorjev* $x$, za katere velja
+$$ A x = 0 $$
+Postopek računanja jedra *matrike*:
+
+1. Poenostavitev *matrike* $A$ z [Gaussovo *eliminacijo*](#Gauss_Jordanova_eliminacija) v zgornje trikotno obliko
+2. Določitev prostih spremenljivk: če je število stolpcev večje od *ranka matrike*, se za proste spremenljivke uvede *parametre* (npr. $t$, $s$)
+3. Zapis enačbe $A x = 0$
+4. Zapis rešitve s *parametri*
+
+<div class="zgled">
+Primer:
+$$ A = \begin{bmatrix} 1 & 2 \\ 2 & 4 \end{bmatrix} $$
+
+1. $$ A \approx \begin{bmatrix} 1 & 2 \\ 0 & 0 \end{bmatrix} $$
+2. $\mathrm{rang}(A) = 1$, torej naj bo spremenljivka $y$ prosta
+3. $$ A x = 0 $$
+    $$ 1x + 2y = 0 $$
+    $$ 0x + 0y = 0 $$
+4. $$ x = - 2y $$
+    $$ x = \begin{bmatrix} x \\ y \end{bmatrix} = (x, y) = (- 2y, y) = y (-2, 1) $$
+</div>
+
+#### Lastni *vektorji* in lastne vrednosti
+
+Lastni *vektorji* so tisti, ki ob *transformaciji* ostanejo na svoji ogrinjači in se zgolj raztegnejo/skrčijo za svojo lastno rednost. Ostali *vektorji* v prostoru se premaknejo (razmerje med njihovimi *koordinatami* se spremeni). Če je katera izmed njegovih lastnih vrednosti *negativna*, se tak *vektor* tudi preslika čez svoje izhodišče (a ostane na svoji ogrinjači).
+Za sukanje v treh razsežnostih so lastni *vektorji* osi tega sukanja (če gre samo za sukanje, morajo biti lastne vrednosti enake 1).
+
+Število $\lambda$ je lastna vrednost za $A$, če obstaja tak neničeln *vektor* $\vec v \in \mathbb{C}^n$, da je
+$$ A \vec v = \lambda \vec v $$
+Tak *vektor* $\vec v$ imenujemo lastni *vektor* za A pri lastni vrednosti $\lambda$.
+
+$$ A \vec v = \lambda \vec v = (\lambda I) \vec v \implies (A - \lambda I) \vec v = \vec 0 \implies \mathrm{det}(A - \lambda I) = 0 $$
+
+Število $\lambda$ je lastna vrednost za $A$ natanko tedaj, ko velja
+$$ \mathrm{ker}(A - \lambda I ) \neq 0 $$
+Če je $\lambda$ lastna vrednost za $A$, potem je *vektorski* podprostor $\mathrm{ker}(A - \lambda I)$ lastni podprostor za A pri lastni vrednosti $\lambda$
+
+***Diagonalna matrika*** ima neničelne člene le na svoji *diagonali*, kar pomeni, da je *transformacija*, za katero so vsi *bazni vektorji* lastni *vektorji* s svojimi lastnimi vrednostmi, ki so kar *diagonalni* členi.
+
+Zaradi lepih lastnosti lastnih *vektorjev* je lahko zelo priročno, če za *bazne vektorje* vzamemo lastne *vektorje*. Vendar to lahko storimo le, če imamo dovolj nevzporednih (*nekolinearnih*) *vektorjev* za *bazo* prostora.
+
+<div class="zgled">
+Če sta naša lastna *vektorja* $a = (1, 0)$ in $b = (-1, 1)$, potem *bazo* prostora spremenimo tako:
+$$ \begin{bmatrix} 1 & -1 \\ 0 & 1 \end{bmatrix}^{-1} A \begin{bmatrix} 1 & -1 \\ 0 & 1 \end{bmatrix}^{-1} $$
+Iz tega potem dobimo *diagonalno matriko*, z *diagonalnimi* členi, ki so hkrati tusi lastne vrednosti *baznih* vektorjev.
+Tej novi *bazi* prostora pravimo lastna *baza*.
+</div>
+
+# Zunanje povezave in viri
+
+- [3Blue1Brown: Essence of linear algebra](https://www.youtube.com/playlist?app=desktop&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) (YouTube)
