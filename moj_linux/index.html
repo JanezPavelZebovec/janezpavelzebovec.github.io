@@ -32,7 +32,7 @@ sistema"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/moj_linux/">moj_linux</a> / <a href="/moj_linux/index/">index</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-06-19">2026-06-19</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-06-22">2026-06-22</time></p>
     </header>
     <nav>
         <ul>
@@ -116,6 +116,11 @@ sistema"/>
         <ul>
         <li><a href="#Beekeeper_Studio"
         id="toc-Beekeeper_Studio">Beekeeper Studio</a></li>
+        <li><a href="#DBeaver" id="toc-DBeaver">DBeaver</a></li>
+        </ul></li>
+        <li><a href="#Torrent" id="toc-Torrent">Torrent</a>
+        <ul>
+        <li><a href="#Aria2" id="toc-Aria2">Aria2</a></li>
         </ul></li>
         </ul></li>
         <li><a href="#Se_za_narediti" id="toc-Se_za_narediti">Še za
@@ -769,6 +774,11 @@ sistema"/>
             </ul></li>
             <li><code>pass init moj@elektronski.naslov</code></li>
             <li><code>cd ~/viri/</code></li>
+            </ul>
+            <p><b>Mutt-wizard</b> (glej <a
+            href="https://github.com/LukeSmithxyz/mutt-wizard">LukeSmith:
+            mutt-wizard</a>):</p>
+            <ul>
             <li><code>git clone https://github.com/LukeSmithxyz/mutt-wizard</code></li>
             <li><code>cd mutt-wizard</code></li>
             <li><code>sudo make install</code></li>
@@ -800,6 +810,30 @@ sistema"/>
             istovetnosti (recimo za povezovanje z OSM ali OHM)</li>
             <li><code>python3-osmapi</code></li>
             </ul></li>
+            </ul>
+            <p>Micromamba</p>
+            <ul>
+            <li><code>"${SHELL}" &lt;(curl -L micro.mamba.pm/install.sh)</code>
+            – namesti Micromambo</li>
+            <li><code>source ~/.bashrc</code> – ponoven zagon
+            <i>terminala</i></li>
+            <li><code>micromamba self-update</code> – posodobitev
+            Micromambe</li>
+            <li><code>micromamba create -n moje_okolje python=3.11 ime_knjižnice -c conda-forge</code>
+            – namestitev knjižnice znotraj novega okolja, preko
+            conda-forge
+            <ul>
+            <li>Primer:
+            <code>micromamba create -n okolje_sql python=3.11 mysql-connector-python pandas -c conda-forge</code></li>
+            </ul></li>
+            <li><code>micromamba activate moje_okolje</code> oz.
+            <code>micromamba deactivate</code></li>
+            <li><code>micromamba env list</code> – izpiše obstoječa
+            okolja v Micromambi</li>
+            <li><code>micromamba env remove -n moje_okolje</code> –
+            odstrani okolje</li>
+            <li><code>micromamba clean --trash</code> – počisti ostanke
+            datotek izbrisanih okolij</li>
             </ul>
             <h5 id="Latex">Latex</h5>
             <p><a href="https://www.latex-project.org/">Latex</a> je
@@ -1127,7 +1161,7 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             <ul>
             <li><code>exit;</code> – izhod iz zbirke</li>
             <li><code>CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE utfmb4_unicode_ci;</code>
-            – ustavri zbirko z imenom <i>moja_zbirka</i> s polnim
+            – ustvari zbirko z imenom <i>moja_zbirka</i> s polnim
             Unikodom (utf8mb4), kar prepreči težave s šumniki, posebnimi
             znaki; ter zagotovi pravilno slovensko/Unikodno razvrščanje
             besedila</li>
@@ -1182,6 +1216,28 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             <b>/opt/Beekeeper Studio/beekeeper-studio</b></p>
             <p>Za lažje zaganjanje:</p>
             <p><code>sudo ln -s "/opt/Beekeeper Studio/beekeeper-studio" /usr/local/bin/beekeeper</code></p>
+            <h4 id="DBeaver">DBeaver</h4>
+            <p>(Glej <a
+            href="https://dbeaver.io/download/#linux"></a>)</p>
+            <ul>
+            <li><code>sudo wget -q -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/dbeaver.gpg.key</code>
+            – prenese ključ GPG</li>
+            <li><code>echo "deb [signed-by=/usr/share/keyrings/dbeaver.gpg.key] https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list</code>
+            – doda repozitorij APT</li>
+            <li><code>sudo apt update &amp;&amp; sudo apt install dbeaver-ce</code>
+            – posodobi sezname nameščenih <i>paketov</i> in namesti
+            DBeaver</li>
+            </ul>
+            <h3 id="Torrent">Torrent</h3>
+            <h4 id="Aria2">Aria2</h4>
+            <ul>
+            <li><code>sudo apt install aria2</code></li>
+            <li><code>aria2c pot/do/datoteke.torrent</code>
+            <code>--seed-ratio=1</code> – nastavi razmerje na 1 (lahko
+            je katerakoli druga pozitivna številka)
+            <code>--seed-time=5</code> – nastavi <i>sejalni</i> čas na 5
+            minut (lahko je drugo število minut)</li>
+            </ul>
             <hr />
             <h2 id="Se_za_narediti">Še za narediti</h2>
             <ul>

@@ -44,6 +44,10 @@ footer {
     padding: 1em;
     margin-bottom: 100vh;
 }
+header nav {
+    display: flex;
+    justify-content: center;
+}
 
 hr {
     width: 100%;

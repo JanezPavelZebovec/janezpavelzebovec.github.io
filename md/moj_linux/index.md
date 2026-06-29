@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-06-19
+date: 2026-06-22
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -330,6 +330,9 @@ Debian ima precej staro različico, zato je bolje [prenesti AppImage](https://mu
     - ključ je ustvarjen; lahko preveriš seznam svojih ključev z `gpg --list-secret-keys`
 - `pass init moj@elektronski.naslov`
 - `cd ~/viri/`
+
+**Mutt-wizard** (glej [LukeSmith: mutt-wizard](https://github.com/LukeSmithxyz/mutt-wizard)):
+
 - `git clone https://github.com/LukeSmithxyz/mutt-wizard`
 - `cd mutt-wizard`
 - `sudo make install`
@@ -350,6 +353,18 @@ Knjižnice:
     - `python3-scipy` – [SciPy](https://scipy.org/), znanstveno računanje
     - `python3-requests-oauthlib` – za dokazovanje istovetnosti (recimo za povezovanje z OSM ali OHM)
     - `python3-osmapi`
+
+Micromamba
+
+- `"${SHELL}" <(curl -L micro.mamba.pm/install.sh)` – namesti Micromambo
+- `source ~/.bashrc` – ponoven zagon *terminala*
+- `micromamba self-update` – posodobitev Micromambe
+- `micromamba create -n moje_okolje python=3.11 ime_knjižnice -c conda-forge` – namestitev knjižnice znotraj novega okolja, preko conda-forge
+    - Primer: `micromamba create -n okolje_sql python=3.11 mysql-connector-python pandas -c conda-forge`
+- `micromamba activate moje_okolje` oz. `micromamba deactivate`
+- `micromamba env list` – izpiše obstoječa okolja v Micromambi
+- `micromamba env remove -n moje_okolje` – odstrani okolje
+- `micromamba clean --trash` – počisti ostanke datotek izbrisanih okolij
 
 ##### Latex
 
@@ -561,7 +576,7 @@ V [**~/viri/dwm/config.h**](/moj_linux/home/janezpavel/viri/dwm/config.h):
 - `sudo systemctl status mariadb` – preveri stanje zbirke SQL
 - `sudo mariadb` – tako vstopiš v zbirko
     - `exit;` – izhod iz zbirke
-    - `CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE utfmb4_unicode_ci;` – ustavri zbirko z imenom *moja_zbirka* s polnim Unikodom (utf8mb4), kar prepreči težave s šumniki, posebnimi znaki; ter zagotovi pravilno slovensko/Unikodno razvrščanje besedila
+    - `CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE utfmb4_unicode_ci;` – ustvari zbirko z imenom *moja_zbirka* s polnim Unikodom (utf8mb4), kar prepreči težave s šumniki, posebnimi znaki; ter zagotovi pravilno slovensko/Unikodno razvrščanje besedila
     - `CREATE USER 'uporabnik'@'localhost' IDENTIFIED BY 'geslo';` – ustvari uporabnika zbirke z up. imenom *uporabnik*, ki se sme povezati preko *lokalnega* strežnika (*localhost*); dodelimo mu še geslo za prijavo
     - `GRANT ALL PRIVILEGES ON moja_zbirka.* TO 'uporabnik'@'localhost';` – dodeli uporabniku vse pravice do vseh preglednic v zbirki (.\*)
     - `ALTER USER 'uporabnik'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('geslo');` – uporabnika izrecno nastavimo na geselno *avtentikacijo*
@@ -593,6 +608,23 @@ Glavna izvrščjiva datoteka je zdaj nameščena na **/opt/Beekeeper Studio/beek
 Za lažje zaganjanje:
 
 `sudo ln -s "/opt/Beekeeper Studio/beekeeper-studio" /usr/local/bin/beekeeper`
+
+#### DBeaver
+
+(Glej [](https://dbeaver.io/download/#linux))
+
+- `sudo wget -q -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/dbeaver.gpg.key` – prenese ključ GPG 
+- `echo "deb [signed-by=/usr/share/keyrings/dbeaver.gpg.key] https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list` – doda repozitorij APT
+- `sudo apt update && sudo apt install dbeaver-ce` – posodobi sezname nameščenih *paketov* in namesti DBeaver
+
+### Torrent
+
+#### Aria2
+
+- `sudo apt install aria2`
+- `aria2c pot/do/datoteke.torrent`
+    `--seed-ratio=1` – nastavi razmerje na 1 (lahko je katerakoli druga pozitivna številka)
+    `--seed-time=5` – nastavi *sejalni* čas na 5 minut (lahko je drugo število minut)
 
 ---
 

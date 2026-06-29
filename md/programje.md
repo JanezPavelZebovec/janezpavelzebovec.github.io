@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2026-06-11
+date: 2026-06-25
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -141,6 +141,7 @@ F-Droid ponuja nameščanje odprtokodnih orodij za [Android](https://www.android
 - [GrapheneOS](https://grapheneos.org/) – najbolj zaščiten/varen za dlančnike
 - [LineageOS](https://lineageos.org/)
 - [SXMO](https://sxmo.org/) – Linuxov *minimalističen OS*
+- [Ubuntu Touch](https://www.ubuntu-touch.io/)
 
 ### Moj izbor za dlančnik
 
@@ -165,6 +166,13 @@ Orodja:
 - [Thunderbird](https://thunderbird.net/): elektronska pošta
 - [Track & Graph](https://samamco.github.io/track-and-graph/): beleženje
 - [Windy](https://windy.app/): vremenski zemljevid
+
+## Sporazumevalni *standardi*
+
+Za primerjavo Matrix in XMPP glej [Luke Smith: Matrix vs. XMPP](https://lukesmith.xyz/articles/matrix-vs-xmpp/).
+
+- [Matrix](https://matrix.org/)
+- [XMPP](https://xmpp.org/)
 
 ## Druge storitve
 

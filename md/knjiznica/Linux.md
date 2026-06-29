@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2026-06-11
+date: 2026-06-23
 description: Priročnik za uporabo Linuxa, posebno skozi terminal
 keywords: Linux, terminal, operacijski sistem
 author: Janez Pavel Žebovec
@@ -464,6 +464,7 @@ Uporablja podobne bližnjice kot VIM:
 
 ## Zunanje povezave in viri
 
+- [Luke Smith: The Voidrice](https://github.com/lukesmithxyz/voidrice) (GitHub)
 - [Hetzner Community - Tutorials - Setting up an SSH key](https://community.hetzner.com/tutorials/howto-ssh-key) – ustvarjanje varnostnih ključev SSH
 - [VIM Cheat Sheet](https://vim.rtorr.com/) – bližnjice v VIM-u
 - [Codeberg Docs - Your First Repository](https://docs.codeberg.org/getting-started/first-repository/) – Git pri Codebergu, med drugim

@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-06-12
+date: 2026-06-28
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -42,6 +42,7 @@ Moja *priporočila* (precej nepopolna)
 - [Kompot](https://kompot.si/)
 - [Lugos](https://www.lugos.si/) – Društvo uporabnikov Linuxa Slovenije
     - [Lugos – Wiki](https://wiki.lugos.si/)
+- [Open Source Ecology](https://www.opensourceecology.org/) – odprti načrti za "izgraditev civilizacije"
 - [Pohod za življenje](https://pohodzazivljenje.si/)
 - [Prolife Europe](https://prolifeeurope.org/)
 
@@ -63,6 +64,7 @@ Moja *priporočila* (precej nepopolna)
 
 ### Osebne spletne strani
 
+- [Aatish Bhatia](https://aatishb.com/) – pisec znanstvenih vsebin, učitelj
 - [Anton Luka Šijanec](https://sijanec.eu/) – član Programerskega kluba FMF
 - [Branko cestnik](https://branenacesti.blogspot.com/) – slo. župnik
 - [Filip Žebovec](https://filipzebovec.net/)
@@ -108,6 +110,12 @@ Glej tudi strani [Programje](programje) in [Linux](Linux).
     - [Suckless - Philosphy](https://suckless.org/philosophy/) - predstavitev njihove miselnosti
 - [W3Schools](https://www.w3schools.com/) - priročnik za programiranje
 
+Zanimivi računalniški jeziki:
+
+- [Markdown (MD)](https://en.wikipedia.org/wiki/Markdown) – preprost oznaćevalski jezik
+- [Markdown eXtended (MDX)](https://github.com/mdx-js/mdx/) – *programabilen* Markdown, ki omogoča vključevanje JSX (React) in JavaScripta
+- [reStructuredText (RST)](https://docutils.sourceforge.io/rst.html) – označevalski jezik
+
 ##### Linux
 
 - [Altan Avtzi: Awesome Linux ricing](https://github.com/avtzis/awesome-linux-ricing) (Github)
@@ -139,6 +147,7 @@ Primerih dobrih spletnih strani:
 
 ### Zemljepisje
 
+- [Equal-earth](https://equal-earth.com/)
 - [Map Projection Explorer](https://www.geo-projections.com/) - prikazovalnik različnih preslikav zemljevidov sveta
 
 #### Zemljevidi
@@ -481,6 +490,12 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 - [Virtualna arhivska knjižnica](https://vac.sjas.gov.si/) - arhivi Republike Slovenije
 - [Zgodovina na dlani](https://zgodovinanadlani.si/)
 
+#### Izrael – Palestina
+
+- [JNS – How fixed concepts lead to stumbling blocks when it comes to Gaza](https://www.jns.org/opinion/nitsana-darshan-leitner/how-fixed-concepts-lead-to-stumbling-blocks-when-it-comes-to-gaza) [2025-07-25]
+- [Euro News – There is no clear intent to commit genocide in Gaza, top international law expert says](https://www.euronews.com/my-europe/2025/08/01/there-is-no-clear-intent-to-commit-genocide-in-gaza-top-international-law-expert-says) [2025-08-01]
+- [BBC – Israel and the Palestinians: History of the conflict explained](https://www.bbc.com/news/articles/ckgr71z0jp4o) [Web Archive](https://web.archive.org/web/20260623085201/https://www.bbc.com/news/articles/ckgr71z0jp4o) [2025-10-14]
+
 #### Zgodovinski zemljevidi
 
 - [Arcanum Maps](https://maps.arcanum.com/)
@@ -504,6 +519,19 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 
 - [Long Now](https://longnow.org/) – družba, ki bi razmišljaja na ravni *civilizacije*, oz. daljne preteklosti in prihodnosti
 - [Luka Smith](https://lukesmith.xyz/) - zagovornik odrtokodnosti, Linuxa, spreobrnjenec v pravoslavstvo
+
+#### *Filmi*
+
+- [Matt Welsh: What is a Woman](https://www.dailymotion.com/video/x8kyaar) (Dailymotion)
+
+#### Čudeži, znamenja
+
+##### Turinski prt
+
+- [MDPI – X-ray Dating of a Turin Shroud’s Linen Sample](https://www.mdpi.com/2571-9408/5/2/47)
+- [Research Gate – A Ray of Light on the Shroud of Turin](https://www.researchgate.net/publication/305496617_A_Ray_of_Light_on_the_Shroud_of_Turin)
+- [Academic Journals – Particle radiation from the body could explain the Shroud's images and its carbon dating](https://academicjournals.org/article/article1380798649_Antonacci.pdf)
+- [APCZ: Signs of Life in the Figure of the Shroud of Turin](https://apcz.umk.pl/SetF/article/view/SetF.2020.001)
 
 ### Rodoslovje
 
@@ -529,6 +557,10 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Glossika Phonics](https://www.youtube.com/@GlossikaPhonics) - izgovorjava v mednarodni glasoslovni abecedi z *animacijami*
 - [Omniglot](https://www.omniglot.com/) - *enciklopedija* pisav in jezikov
 
+### Glasba
+
+- [Aatish Bhatia: Dissonance](https://aatishb.com/dissonance/)
+
 ### Glasbeniki
 
 - 2 Cellos: [Spotify](https://open.spotify.com/artist/6Fi8CHfO8WGtu3yO8c2Mc4),
@@ -548,8 +580,9 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - Imagine Dragons: [Spotify](https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q)
 - Pentatonix: [Spotify](https://open.spotify.com/artist/26AHtbjWKiwYzsoGoUZq53),
 [You Tube](https://www.youtube.com/@PTXofficial) - *akapela*
+- Thomas Bergersen: [Spotify](https://open.spotify.com/artist/6BF0bXbsdujMSMeFZBGcBq), [YouTube](https://www.youtube.com/@thomasbergersenmusic)
 - Two Steps From Hell: [Spotify](https://open.spotify.com/artist/2qvP9yerCZCS0U1gZU8wYp),
-[You Tube](https://www.youtube.com/@TwoStepsFromHell-Official) - mogočna
+[You Tube](https://www.youtube.com/@TwoStepsFromHell-Official) - mogočna, "*epska*"
 
 ### Dostop do sicer plačljivih vsebin
 
@@ -599,6 +632,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Britannica](https://www.youtube.com/@Britannica1/) – svetovni popotnik
 - [Good News](Good News) – dobre novice iz sveta
 - [Imperial](https://www.youtube.com/@IMPERIALYT) – zgodovina in *politika*
+- [The Infographics Show](https://www.youtube.com/@TheInfographicsShow)
 - [Johnny Harris](https://www.youtube.com/@johnnyharris) – "neodvisni novinar" – razno iz sveta / o svetu
 - [Rabbit Hole](https://www.youtube.com/@rabbithole)
 - [Ruhi Cenet Documentaries](https://www.youtube.com/@ruhicenetdocs) – potovanja v najrazličnejše konce sveta
@@ -649,6 +683,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 
 ##### Okolje
 
+- [Climate (US)](https://www.climate.us/) – podnebni podatki ZDA
 - [Climate Trace](https://climatetrace.org/explore) – podatki o onesnaževanju po svetu
 - [Not Just Bikes](https://www.youtube.com/@NotJustBikes) – prometna ureditev mest
 - [Planet Wild](https://www.youtube.com/@planet-wild) - naravovarstvo in obnavljanje življenjskih prostorov v večjem obsegu

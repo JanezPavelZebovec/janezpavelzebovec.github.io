@@ -35,25 +35,33 @@ document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(heading => {
 });
 
 document.addEventListener("keydown", function(event) {
+  // Ne sproži bližnjic, če uporabnik tipka v vnosno polje
+  const urejevalni_elementi = ['INPUT', 'TEXTAREA', 'SELECT'];
+  if (urejevalni_elementi.includes(event.target.tagName) || event.target.isContentEditable) {
+    return;
+  }
+
   // Preveri, da je Shift pritisnjen, Ctrl/Alt/Meta pa ne
   if (!event.shiftKey || event.ctrlKey || event.altKey || event.metaKey) return;
-
   const key = event.key.toUpperCase(); // velike črke, ker Shift običajno pomeni velike
 
   switch (key) {
-    case 'B':
+    case 'B': {
       const stikaloTeme = document.getElementById("stikaloTeme");
       if (stikaloTeme) stikaloTeme.click();
       break;
+    }
 
-    case 'M':
+    case 'M': {
       const linkMD = document.getElementById("linkMD");
       if (linkMD) linkMD.click();
       break;
+    }
 
-    case 'D':
+    case 'D': {
       const domov = document.getElementById("domov");
       if (domov) domov.click();
       break;
+    }
   }
 });
