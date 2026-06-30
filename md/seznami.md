@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-06-28
+date: 2026-06-29
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -520,9 +520,13 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 - [Long Now](https://longnow.org/) – družba, ki bi razmišljaja na ravni *civilizacije*, oz. daljne preteklosti in prihodnosti
 - [Luka Smith](https://lukesmith.xyz/) - zagovornik odrtokodnosti, Linuxa, spreobrnjenec v pravoslavstvo
 
-#### *Filmi*
+#### Spol
 
 - [Matt Welsh: What is a Woman](https://www.dailymotion.com/video/x8kyaar) (Dailymotion)
+
+#### Pomoč pri samomoru
+
+- [Tyler Oliveira: Inside the Country that KILLS Disabled People...](https://youtu.be/XmQzuxyl4DA?t=963) (YouTube)
 
 #### Čudeži, znamenja
 

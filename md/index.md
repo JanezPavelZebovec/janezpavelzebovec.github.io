@@ -18,7 +18,6 @@ To je moje spletišče, namenjeno mojim zanimanjem in potrebam, dobrodošli pa s
 - [Dnevnik](/dnevnik) – beleženje napredka pri raznih projektih, navedeni so predvsem pomembnejši mejniki
 - [Zemljevid](/zemljevid/) – skupek nekaj prostih zemljevidov, ki so večinoma iz podatkov OpenStreetMap, pa tudi GURS-ov zračni posnetek, <small>ter prepovedani  G\*\*\*lovi zemljevidi zgolj za primerjavo</small>
 - [Moji seznami](/seznami) – priporočila, predvsem spletne povezave
-- [Moja polica](/moja_polica) – seznam večine mojih knjig
 
 Tu je tudi moja [Knjižnica](/knjiznica/), kjer so zbrana nekatera znanja/področja mojih zanimanj ali izobraževanja, torej zadeve, ki si jih načeloma lahko preberete tudi drugje.
 

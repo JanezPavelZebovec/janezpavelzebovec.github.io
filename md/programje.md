@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2026-06-25
+date: 2026-06-30
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -24,6 +24,7 @@ Večinoma so tu programi, ki jih sam uporabljam, nekateri pa za določene naloge
 | [Birdfont](https://birdfont.org/) | urejevalnik računalniških pisav | [birdfont](https://packages.debian.org/buster/birdfont) | preprost, lep |
 | [Blender](https://www.blender.org/) | 3R urejevalnik, orodje za animiranje | [blender](https://wiki.debian.org/Blender) | zelo obsežen, napreden |
 | [Brave Browser](https://brave.com/") | spletni brskalnik | [brave-browser](https://brave.com/linux/#debian-ubuntu-mint) | privzeto preprečevanje oglasov |
+| [DBeaver](https://dbeaver.io/) | urejevalnik podatkovnih zbirk SQL | | |
 | [DigiKam](https://www.digikam.org/) | razvrščevalnik slik | [digikam](https://packages.debian.org/bookworm/digikam) | s prepoznavo obrazov, urejanjem metapodatkov |
 | [FontForge](https://fontforge.org/) | urejevalnik računalniških pisav | [fontforge](https://packages.debian.org/buster/fontforge) | napreden, grši |
 | [Gimp](https://www.gimp.org/) | urejevalnik slik | [gimp](https://wiki.debian.org/GIMP) | |
@@ -48,6 +49,7 @@ Večinoma so tu programi, ki jih sam uporabljam, nekateri pa za določene naloge
 Moji izbrani programi po namembnosti:
 
 - [Brave Browser](https://brave.com/"): spletni brskalnik
+- [DBeaver](https://dbeaver.io/): urejevalnik podatkovnih zbirk SQL
 - [FontForge](https://fontforge.org/): urejevalnik pisav
 - [Gimp](https://www.gimp.org/): urejevalnik slik (posebaj točkastih)
 - [Gramps](https://gramps-project.org/): rodoslovje
@@ -59,7 +61,6 @@ Moji izbrani programi po namembnosti:
 - [SimpleScan](https://gitlab.gnome.org/GNOME/simple-scan): skeniranje in tiskanje
 - [SolveSpace](https://solvespace.com/): 3R (in 2R) urejevalnik
 - [VIM](https://www.vim.org/): urejevalnik golega besedila
-- [YouTube-DL](https://ytdl-org.github.io/youtube-dl/index.html): prenos posnetkov z YouTuba
 - [Zathura](https://pwmt.org/projects/zathura/): ogledovalnik PDF
 
 ### Razširitve za brskalnik
@@ -98,7 +99,8 @@ Sucklessove programe je priporočljivo namestiti kar iz vira - neposredno s [Suc
 | [Surf](https://surf.suckless.org/) | spletni brskalnik | []() | zelo preprost, a (zaenkrat) neprimeren za zahtevnejše spletne strani |
 | [SXCS](https://github.com/N-R-K/sxcs) | orodje za izbiro barv na zaslonu in povečevalnik | | |
 | [SXIV](https://github.com/xyb3rt/sxiv) (Simple X Image Viewer) | pregledovalnik in urejevalnik slik | [sxiv](https://packages.debian.org/buster/sxiv) | ni več vzdrževan, vzdrževana različica je NSXIV |
-| [YT-dlp](https://github.com/yt-dlp/yt-dlp) | prenašanje posnetkov z YouTuba (in drugod; iz terminala) | [yt-dlp](https://packages.debian.org/sid/yt-dlp) | || [pdfjam](https://github.com/pdfjam/pdfjam) | združevanje PDF-jev | | je del Debianovega paketa *texlive-extra-utils* |
+| [YT-DLP](https://github.com/yt-dlp/yt-dlp) | prenašanje posnetkov z YouTuba (in drugod; iz terminala) | [yt-dlp](https://packages.debian.org/sid/yt-dlp) | |
+| [pdfjam](https://github.com/pdfjam/pdfjam) | združevanje PDF-jev | | je del Debianovega paketa *texlive-extra-utils* |
 
 Večino navedenih programov zgoraj uporabljam tudi sam - več ali manj (kar je odvisno tudi od namembnosti). 
 

@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-06-22
+date: 2026-06-30
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -625,6 +625,11 @@ Za lažje zaganjanje:
 - `aria2c pot/do/datoteke.torrent`
     `--seed-ratio=1` – nastavi razmerje na 1 (lahko je katerakoli druga pozitivna številka)
     `--seed-time=5` – nastavi *sejalni* čas na 5 minut (lahko je drugo število minut)
+
+### YT-DLP
+
+- odpri povezavo <https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp> (glej tudi [yt-dlp – Installation](https://github.com/yt-dlp/yt-dlp/wiki/Installation), GitHub) in se samodejno prenese različica za Linux, ki jo shrani v **~/.local/bin/**
+- `yt-dlp -U` – posodobitev
 
 ---
 
