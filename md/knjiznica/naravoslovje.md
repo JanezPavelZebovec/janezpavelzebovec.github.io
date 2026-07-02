@@ -1,6 +1,6 @@
 ---
 title: Naravoslovje
-date: 2026-06-17
+date: 2026-07-01
 description: Naravni zakoni
 keywords: naravoslovje, fizika
 author: Janez Pavel Žebovec
@@ -55,9 +55,9 @@ $$ v^2 = v_0^2 + 2 a x $$
 
 | | |
 | --- | --- |
-| položajni *vektor* | $$ \vec r = \int_{t'}^t \vec v \d t $$ |
-| pot [$m$] | $$ s = \int_{\vec r'}^{\vec r} \lvert \d \vec r \rvert = \int_{\vec r'}^{\vec r} \d s $$ |
-| hitrost (spreminja *vektor* položaja) [$\frac{m}{s}$] | $$ \vec v = \vec r '(t) = \frac{\d \vec r}{\d t} = \vec v' + \int_{t'}^t \vec a \d t $$ $$ \overline{\vec v} = \frac{\Delta \vec{r}}{\Delta t} =  \frac{\vec s}{\Delta t} $$ |
+| položajni *vektor* | $$ \vec r = \vec r_0 + \int_{t_z}^{t_k§ \vec v \d t + \int_{t_z}^{t_k} \vec a \frac{t^2}{2} $$ |
+| pot [$m$] | $$ s = \int_{\vec r_z}^{\vec r_k} \lvert \d \vec r \rvert = \int_{\vec r_z}^{\vec r_k} \d s $$ |
+| hitrost (spreminja *vektor* položaja) [$\frac{m}{s}$] | $$ \vec v = \vec r '(t) = \frac{\d \vec r}{\d t} = \vec v_z + \int_{t_z}^{t_k} \vec a \d t $$ $$ \vec v^2 = \vec v_0^2 + \int_{t_z}^{t_k} 2 \vec a \d x $$ $$ \overline{\vec v} = \frac{\Delta \vec{r}}{\Delta t} =  \frac{\vec s}{\Delta t} $$ |
 | pospešek (spreminja smer in velikost hitrost) [$\frac{m}{s^2}$] | $$ \vec a = \vec v '(t) = \frac{\d \vec v}{\d t} $$ $$ \overline{\vec a} = \frac{\Delta \vec v}{\Delta t} $$ |
 
 Stalen pospešek:

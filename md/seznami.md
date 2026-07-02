@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-06-29
+date: 2026-07-02
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -749,6 +749,7 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
     - [More Pints With Aquinas](https://www.youtube.com/@morepintswithaquinas)
 - [Mikhaila Peterson](https://www.youtube.com/@mikhaila)
 - [Nicholas Bowling](https://www.youtube.com/@NicholasBowling) – ameriški ulični pridigar, nekdanji katolik
+- [Pearl](https://www.youtube.com/@JustPearlyThings) – kritičarka *feminizma*, zagovornica ženstvenosti in moškosti
 - [Pope Defenders](https://www.youtube.com/@PopeDefendersYT) – zagovornik katolištva
 - [Remnant777](https://www.youtube.com/@Remnant777) – kritik levice
 - [Sahar TV](https://www.youtube.com/@OfficialSaharTV) – Jud, zagovornik Izraela v vojni proti palestinski oblasti
