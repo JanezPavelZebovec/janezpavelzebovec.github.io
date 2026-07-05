@@ -1,6 +1,6 @@
 ---
 title: Janez Pavel Žebovec
-date: 2026-05-16
+date: 2026-07-05
 description: Osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran, osebno spletišče
 ---
@@ -11,7 +11,7 @@ To je moje spletišče, namenjeno mojim zanimanjem in potrebam, dobrodošli pa s
     - [Prepovedane besede](/visoka_slovenscina/prepovedane_besede) – seznam nekaj več prepovedanih besed v visoki slovenščini z ustreznicami v visoki slovenščini
 - [Zvezdoslovna ura](/zvezdoslovna_ura/) – predstavitev vesolja kot ure
     - [Opombe k Zvezdoslovni uri](opombe_k_zvezdoslovni_uri)
-- [Glasopisnica](/Glasopisnica/) – moja pisava <small>*(v delu - tako pisava sama, kot tudi spletna stran)*</small>
+- [Glasopisnica](/glasopisnica/) – moja pisava <small>*(v delu - tako pisava sama, kot tudi spletna stran)*</small>
 - [Moj rodovnik](/moj_rodovnik) – moje družinsko drevo, na katerem delava z bratrancem <small>(s poudarkom na prednikih; za živeče osebe in umrle v zadnjih 20 letih so zaradi zasebnosti vidna le imena in priimki brez vseh ostalih podatkov)</small>
 - [Programje](/programje) – predstavitev miselnosti in seznam dobrih računalniških orodij
     - [Moj Linux](/moj_linux/) – vodič namestitev in ureditev operacijskega sistema, kot ga imam jaz
@@ -85,7 +85,7 @@ Uporabljen je barvni slog [Gruvbox](https://github.com/morhetz/gruvbox) Pavla Pe
 
 Stran [Moj rodovnik](/moj_rodovnik) je ustvarjena z [Grampsom](https://gramps-project.org/).
 
-*Analitika* spletišča je na voljo [preko storitve Umami](https://cloud.umami.is/analytics/eu/share/FhDonlJniEyIGdQY) (pri čemer je treba upoštevati, da sem jaz skoraj zagotovo najrednejši obiskovalec :).
+*Analitika* spletišča je na voljo [preko storitve Umami](https://cloud.umami.is/analytics/eu/share/FhDonlJniEyIGdQY). Nekako rožnika 2026 sem prepovedal robotom dostop do spletnega mesta (ti so močno pripevali k prometu na spletišču, ter najverjetneje krivi za tolikšno število obiskovalcev iz ZDA, ki se bili celo na vrhu lestvice). Promet se je zato od takrat precej umiril.
 
 Spletišče ima tri bližnjice:
 

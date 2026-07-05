@@ -1,6 +1,6 @@
 ---
 title: Knjižnica
-date: 2026-02-21
+date: 2026-07-05
 description: Knjižnica področij mojih zanimanji in/ali dela
 keywords: knjižnica, znanje
 ---
@@ -15,12 +15,14 @@ To je moja knjižnica nekaterih znanj, osredotočena predvsem na področja mojeg
 - [Računstvo](/knjiznica/racunstvo) (*matematika*)
 - Računalništvo
     - [Računalniški jeziki](/knjiznica/racunalniski_jeziki)
-    - [Linux](/knjiznica/Linux)
+    - [Linux](/knjiznica/linux)
 - Družboslovje
     - [Rodoslovje](/knjiznica/rodoslovje)
     - [Jezikoslovje](/knjiznica/jezikoslovje)
         - Jeziki
             - [Slovenščina](/knjiznica/jezikoslovje/jeziki/slovenscina)
+            - [Latinščina](/knjiznica/jezikoslovje/jeziki/latinscina)
+            - [Angleščina](/knjiznica/jezikoslovje/jeziki/anglescina)
         - [Pisave](/knjiznica/jezikoslovje/pisave)
             - [Grška abeceda](/knjiznica/jezikoslovje/pisave/grska_abeceda)
             - [Aramejska abeceda](/knjiznica/jezikoslovje/pisave/aramejska_abeceda)
@@ -28,4 +30,3 @@ To je moja knjižnica nekaterih znanj, osredotočena predvsem na področja mojeg
             - [Slovenske zgodovinske pisave](/knjiznica/jezikoslovje/pisave/slovenske_pisave)
             - [Shawova abeceda](/knjiznica/jezikoslovje/pisave/shawova_abeceda)
     - [Krščanstvo in modroslovje](/knjiznica/krscanstvo)
-- [OpenStreetMap](/OSM)
