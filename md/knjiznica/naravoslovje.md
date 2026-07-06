@@ -1,6 +1,6 @@
 ---
 title: Naravoslovje
-date: 2026-07-01
+date: 2026-07-06
 description: Naravni zakoni
 keywords: naravoslovje, fizika
 author: Janez Pavel Žebovec
@@ -8,13 +8,31 @@ author: Janez Pavel Žebovec
 
 # Naravoslovje
 
-**Newtonovi zakoni** (veljajo le v *inercialnih* opazovalnih *sistemih*):
+Okolica mora z neko silo delovati na telo, da to telo z neko *maso* spravi v (ali vpliva na) gibanje.
 
-1. Če je vsota učinkov okolice (sil) enaka nič, telo miruje ali se giblje premo in enakomerno: $\sum_{i} \vec F_i = 0$
-2. Pospešek je sorazmeren s silo in ima smer sile: $\sum_{i} \vec F_i = m \vec{a}$
-3. Če deluje prvo telo na drugo z neko silo, deluje drugo telo na prvo z nasprotno enako silo: $\vec F_{1,2} = - \vec F_{2,1}$
+## Opazovalni *sistemi*
+
+***Inercialni* opazovalni *sistemi*** se gibljejo premo in enakomerno drug proti/od drugemu/ga, ne pospešujejo.
+
+$$ \vec r = \vec r' + \vec r_0 \implies \vec r' = \vec r - \vec r_0 $$
+$$ \vec r' = \vec r + \vec r_0' \implies \vec r = \vec r' - \vec r_0' $$
+
+Pospeški so v vseh *inercialnih sistemih* enaki (ker en *sistem* ne pospešuje v primerjavi z drugim).
+
+$$ \vec a' = \vec a - \vec a_0 = \vec a $$
+
+## Sile
 
 Sila je učinek okolice, teles v okolici. V *inercialnih* opazovalnih *sistemih* ni "skrivnostnih" sil brez določenega telesa – vsaka sila ima svoje izvorno telo.
+
+**Newtonovi zakoni** (veljajo le v *inercialnih* opazovalnih *sistemih*):
+
+1. **Če je vsota učinkov okolice (sil) enaka nič, telo miruje ali se giblje premo in enakomerno**
+    $$ \sum_{i} \vec F_i = 0 \implies \vec a = 0 $$
+2. **Pospešek je sorazmeren s silo in ima smer sile**
+    $$ \sum_{i} \vec F_i = m \vec{a} $$
+3. **Če deluje prvo telo na drugo z neko silo, deluje drugo telo na prvo z nasprotno enako silo**
+    $$ \vec F_{1,2} = - \vec F_{2,1} $$
 
 *Masa* je lastnost telesa, da se upira pospešovanju – vztrajnost (*inercija*). Teža je sila okolice, sorazmerna z *maso* (težnostni pospešek je neodvisen od *mase*).
 
@@ -51,25 +69,43 @@ $$ \Delta p = \rho g h $$
 
 $$ x = x_0 + v_0 t + \frac {a t^2}{2} $$
 $$ v = v_0 + a t $$
-$$ v^2 = v_0^2 + 2 a x $$
+<div class="izpeljava">
+$$ a = \frac{\d v}{\d t} = \frac{\d v \d x}{\d x \d t} = v \frac{\d v}{\d x} $$
+$$ \int_{v_0}^v v \d v = \int_{x_0}^x a \d x
+    \implies \frac{1}{2} (v^2 - v_0^2) = a (x - x_0) $$
+</div>
+$$ v^2 = v_0^2 + 2 a (x - x_0) $$
+
+Povprečna hitrost na časovnem odseku:
+$$ \overline{\vec v} = \frac{\Delta \vec r}{\Delta t} $$
+
+Za razliko od povprečne hitrosti se prava hitrost nanaša na trenutek, ko gre časovni odsek proti nič:
+$$ \vec v = \lim_{\Delta t \to 0} \frac{\Delta \vec r}{\Delta t} = \frac{\d \vec r}{\d t} $$
+$$ \vec v = (v_x, v_y, v_z) = \left( \frac{\d x}{\d t}, \frac{\d y}{\d t}, \frac{\d z}{\d t} \right) $$
+
+Podobno velja tudi za pospešek in vse nadaljne časovne odvode poti:
+$$ \overline{\vec a} = \frac{\Delta \vec v}{\Delta t} $$
+$$ \vec a = \lim_{\Delta t \to 0} \frac{\Delta \vec v}{\Delta t} = \frac{\d \vec v}{\d t} $$
+$$ \vec a = \left( \frac{\d v_x}{\d t}, \frac{\d v_y}{\d t}, \frac{\d v_z}{\d t} \right)
+    = \left( \frac{\d^2 x}{\d t^2}, \frac{\d^2 y}{\d t^2}, \frac{\d^2 z}{\d t^2} \right) $$
+
+Pospešek, ki je vzporeden hitrosti, zgolj spreminja velikost hitrosti, nevzporeden pospešek pa tudi spreminja smer.
+$$ \sin \d \phi = \frac{| \vec a | \d t}{| \vec v |} \implies \d \phi = \frac{a}{v} \d t \implies a = \frac{\d \phi}{\d t} v = \omega v $$
 
 | | |
 | --- | --- |
-| položajni *vektor* | $$ \vec r = \vec r_0 + \int_{t_z}^{t_k§ \vec v \d t + \int_{t_z}^{t_k} \vec a \frac{t^2}{2} $$ |
-| pot [$m$] | $$ s = \int_{\vec r_z}^{\vec r_k} \lvert \d \vec r \rvert = \int_{\vec r_z}^{\vec r_k} \d s $$ |
-| hitrost (spreminja *vektor* položaja) [$\frac{m}{s}$] | $$ \vec v = \vec r '(t) = \frac{\d \vec r}{\d t} = \vec v_z + \int_{t_z}^{t_k} \vec a \d t $$ $$ \vec v^2 = \vec v_0^2 + \int_{t_z}^{t_k} 2 \vec a \d x $$ $$ \overline{\vec v} = \frac{\Delta \vec{r}}{\Delta t} =  \frac{\vec s}{\Delta t} $$ |
+| položajni *vektor* | $$ \vec r = \vec r_0 + \int_{t_z}^{t_k} \vec v \d t + \int_{t_z}^{t_k} \vec a \frac{t^2}{2} $$ |
+| pot [$m$] | $$ s = \int_{\vec r_z}^{\vec r_k} \lvert \d \vec r \rvert = \int_{\vec r_z}^{\vec r_k} \d s $$ $$ \d s^2 = \d x^2 + \d y^2 + \d z^2 $$ |
+| hitrost (spreminja *vektor* položaja) [$\frac{m}{s}$] | $$ \vec v = \vec r '(t) = \frac{\d \vec r}{\d t} = \vec v_z + \int_{t_z}^{t_k} \vec a \d t $$ $$ \vec v^2 = \vec v_0^2 + \int_{t_z}^{t_k} 2 \vec a \d x $$ $$ \overline{\vec v} = \frac{\Delta \vec{r}}{\Delta t} $$ |
 | pospešek (spreminja smer in velikost hitrost) [$\frac{m}{s^2}$] | $$ \vec a = \vec v '(t) = \frac{\d \vec v}{\d t} $$ $$ \overline{\vec a} = \frac{\Delta \vec v}{\Delta t} $$ |
 
-Stalen pospešek:
-$$ \Delta v = at $$
-$$ v^2 = v'^2 + 2 a (x - x') $$
+### Navor
 
-**Navor**:
 $$ \vec M = \vec r \times \vec F = m \vec \alpha r^2 = J \vec \alpha $$
 
 ## *Energije*
 
-$$ A = \Delta W_k + \Delta W_p + \Delta W_{pr} $$
+$$ A = \Delta W_k + \Delta W_p + \Delta W_{pr} + ... $$
 $$ A = - p \Delta V $$
 
 | | |
@@ -87,15 +123,16 @@ $W = W_k + W_p = M_Z \frac{v^2}{2} - G \frac{M_S M_Z}{r}$ (npr. v osončju):
 
 ### *Kinetična energija*
 
+<div class="izpeljava">
 $$ \Delta W_k = A = \int_{\vec r_1}^{\vec r_2} \vec F \d \vec r
-= \int_{\vec r_1}^{\vec r_2} m \vec a \d \vec r
-= \int_{\vec r_1}^{\vec r_2} m \frac{\d \vec v \d \vec r}{\d t \d t}
-= m \int_{\vec v'}^{v} \vec v \d \vec v
-= m \int \vec v \d \vec v
-= m \int \left( v_x \d v_x + v_y \d v_y + v_z \d v_z \right)
-= \frac{1}{2} m \left( v_x' + v_y' + v_z' \right) \Big|_{v'}^{v} = \frac{1}{2} m v^2 \Big|_{v'}^{v}
-= \frac{1}{2} m (v^2 - v'^2) $$
-
+    = \int_{\vec r_1}^{\vec r_2} m \vec a \d \vec r
+    = \int_{\vec r_1}^{\vec r_2} m \frac{\d \vec v \d \vec r}{\d t \d t}
+    = m \int_{\vec v'}^{v} \vec v \d \vec v
+    = m \int \vec v \d \vec v
+    = m \int \left( v_x \d v_x + v_y \d v_y + v_z \d v_z \right)
+    = \frac{1}{2} m \left( v_x' + v_y' + v_z' \right) \Big|_{v'}^{v} = \frac{1}{2} m v^2 \Big|_{v'}^{v}
+    = \frac{1}{2} m (v^2 - v'^2) $$
+</div>
 $$ W_k = \frac {m v^2}{2} $$
 
 ### *Potencialna* težnostna *energija*
@@ -103,21 +140,26 @@ $$ W_k = \frac {m v^2}{2} $$
 *Potencialna energija* ima naravno izhodišče ($W_{p, g} = 0$) neskončno daleč stran, kjer gre teža proti nič ($r_1 \rightarrow \infty$):
 
 $$ \vec F_g = -G \frac{m_1 m_2}{r^2} \frac{r_{1,2}}{r} $$
+<div class="izpeljava">
 $$ W_{p, g} = - A_g
-= - \int_{\vec r_1}^{\vec r_2} \vec F_g \cdot d\vec{r}
-= - \int_{r_1}^{r_2} \left(- \frac{G m_1 m_2}{r^2} \right) \frac{r_{1,2}}{r} dr
-= \int_{r_1}^{r_2} \frac{G m_1 m_2}{r^3} r dr
-= - \frac{G m_1 m_2}{r} \Big|_{r_1}^{r_2}
-= - \frac{G m_1 m_2}{r_2} $$
+    = - \int_{\vec r_1}^{\vec r_2} \vec F_g \cdot d\vec{r}
+    = - \int_{r_1}^{r_2} \left(- \frac{G m_1 m_2}{r^2} \right) \frac{r_{1,2}}{r} dr
+    = \int_{r_1}^{r_2} \frac{G m_1 m_2}{r^3} r dr
+    = - \frac{G m_1 m_2}{r} \Big|_{r_1}^{r_2}
+    = - \frac{G m_1 m_2}{r_2} $$
+</div>
+$$ W_{p, g} = - \frac{G m_1 m_2}{r_2} $$
 
 Za "ravno Zemljo" ($\Delta h << r_Z$):
-
 $$ g = \frac{G M_Z}{r_Z^2} $$
 $$ W_{p, g} = m g h $$
 
 ### *Potencialna* prožnostna *energija*
 
+<div class="izpeljava">
 $$ \Delta W_{pr} = -A_{vzmeti} = - \int_{x'}^x F x \d x = \int_{x'}^{x} k x \d x = \frac{1}{2} k (x^2 - x'^2) = \frac{1}{2} k x^2 $$
+</div>
+$$ \Delta W_{pr} = \frac{1}{2} k x^2 $$
 
 ## *Termodinamika*
 
@@ -132,7 +174,10 @@ $$ < W_{k 1} > = \frac{3}{2} k_B T $$
 **Ničti zakon *termodinamike***: Če je *termodinamski sistem* A v ravnovesju z B in B v ravnovesju z C, potem je A v ravnovesju z C (prenosljivost *termodinamskega* ravnovesja).
 
 $$ \Delta W_n = Q_{stalna V} = m c_V \Delta T $$
+<div class="izpeljava">
 $$ Q_{stalen p} = \Delta W_n - A = m c_V \Delta T + \int{p \d V} = m c_V \Delta T + p (V_2 - V_1) = m c_V \Delta T + \frac{m}{M} R \Delta T = m c_p \Delta T $$
+</div>
+$$ Q = m c_p \Delta T $$
 
 Za popolni plin velja:
 $$ c_p - c_V = \frac{R}{M} $$
@@ -164,7 +209,10 @@ $$ \Delta S \geq \int{ \frac{\d Q}{T} } $$
 
 $$ \vec G = m \vec v $$
 $$ \vec F = m \vec a = m \frac{\d \vec v}{\d t} = \frac{\d (m \vec v)}{\d t} = \frac{\d \vec G}{\d t} $$
+<div class="izpeljava">
 $$ \int_{t'}^{t} \vec F \d t = \int_{t'}^t \frac{\d \vec G}{\d t} \d t = \vec G \Big|_{t'}^t = \vec G - \vec G' = \Delta \vec G $$
+</div>
+$$ \int_{t'}^{t} \vec F \d t = \Delta \vec G $$
 
 - Neprožni trk: ohranja se gibalna količina
 - Prožni trk: ohranjata se gobalna količina in *kinetična energija*
@@ -175,18 +223,30 @@ Kot $\phi$ ni *vektor*, je pa njegov *diferencial* $\vec{d \phi}$.
 
 | | |
 | --- | --- |
-| kot | $$ \phi = \frac{l}{r} $$ |
+| kot [rd] | $$ \phi = \frac{l}{r} $$ |
 | kotna hitrost [$\frac{1}{s}$] | $$ \vec \omega = \vec \phi '(t) = \frac{\vec {\d \phi}}{dt} $$ $$ \overline \omega = \frac{\Delta \phi}{\Delta t} $$ |
-| kotni pospešek [$\frac{1}{s^2}$] | $$ \vec \alpha = \vec \omega '(t) = \frac{\vec {\d \omega}}{\d t} $$ |
+| kotni pospešek [$\frac{1}{s^2}$] | $$ \vec \alpha = \vec \omega '(t) = \frac{\vec {\d \omega}}{\d t} $$ $$ \overline{\alpha} = \frac{\Delta \omega}{\Delta t} $$ |
 | *frekvenca* [Hz] | $$ \gamma = \frac{N}{\Delta t} = \frac{1}{t_o} $$ |
 
+Kot:
 $$ \phi = \phi_0 + \omega_0 t + \frac{\alpha}{2} t^2 $$
+
+Kotna hitrost:
 $$ \omega = \frac{2 \pi}{t_o} = 2 \pi \gamma = \omega_0 + \alpha t $$
-$$ a_r = \omega v = \frac{v_0^2}{r} = \omega^2 r $$
+
+Sredobežni (*centripetalni*) pospešek, ki sploh povzroča kroženje:
+$$ a_r = \omega v = \frac{v_0^2}{r} = - \omega^2 r $$
+
+Obodna hitrost:
 $$ \vec{v} = \frac{\d \vec{r}}{\d t} = r \frac{\vec{\d \phi}}{\d t} = \vec r \times \vec{\omega} $$
+
+Obodni pospešek:
 $$ \vec{a_t} = \frac{\vec{\d v}}{\d t} = r \frac{\vec{\d \omega}}{t} = \vec r \times \vec{\alpha} $$
 
+Coriolisova sila:
 $$ \vec F_{Coriolis} = -2 m (\vec{\omega} \times \vec{v}) $$
+
+| 
 
 Keplerjevi zakoni:
 
@@ -195,7 +255,10 @@ Keplerjevi zakoni:
 3. $\frac{r^3}{t_0^2}$ = stalno
 
 Vztrajnostni *moment* [$kg m^2$] je porazdelitev *mase* glede na os vrtenja:
+<div class="izpeljava">
 $$ W_{k, rot} = \frac{1}{2} \sum_i m_i v_i^2 = \frac{1}{2} \int \d m v^2 = \frac{1}{2} \int \d m r^2 \omega^2 = \frac{1}{2} \omega^2 \int \d m r^2 = \frac{1}{2} J \omega^2 $$
+</div>
+$$ W_{k, rot} = \frac{1}{2} J \omega^2 $$
 $$ J_{točka, cev} = m r^2 $$
 $$ J_{valj} = \frac{1}{2} m r^4 $$
 $$ J_{krogla} = \frac{2}{5} m r^2 $$
@@ -634,12 +697,16 @@ $$ X^{+} \rightarrow X + \nu $$
 
 ## Računanje z negotovostmi
 
-Meritve brez negotovosti ne obstajajo (posebno če so zvezne narave), zato so merski podatki brez negotovosti nepopolni, torej precej neuporabni ali vsaj nezaželjeni.
+Meritve brez negotovosti ne obstajajo (posebno če so zvezne narave), zato so merski podatki brez negotovosti nepopolni, torej precej neuporabni ali vsaj nezaželjeni. Meritve pogosto nastopajo v obliki t.i. *normalne* porazdelitve, ki jo opišemo z Gaussovo krivuljo, ki ima en vrh nad izhodiščem (kjer je naše povprečje/večina meritev) in se na obeh straneh spušča vedno bližje nič, torej dlje, kot smo od izhodišča, večje kot je odstopanje meritve, manjša je verjetnost za takšno meritev; nikoli pa ni nič. Po dogovoru za negotovost vzamemo odsek okoli izhodišča, v katerega pade 2/3 vseh meritev.
 
-Negotovosti se sešteva, kadar so medsebojno povezane/odvisne; če ne, seštevamo njihove kvadrate.
+Negotovosti so povezane/odvisne (*korelirane*) ali nepovezane/neodvisne.
+
+**Odvisne negotovosti** seštevamo
 
 - seštevanje/odštevanje količin: seštevanje *absolutnih* napak
 - množenje/deljenje količin: seštevanje *relativnih* napak
+
+Pri **neodvisnih negotovostih** seštevamo njihove kvadrate.
 
 Enačbe lahko močno poenostavimo z upoštevanjem negotovosti in uporabo Taylorjeve vrste:
 $$ f(x) = f(a) + \frac{f'(a)}{1!} x + \frac{f''(a)}{2!} x^2 + \frac{f'''(a)}{3!} x^3 + ... $$

@@ -36,15 +36,20 @@
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/naravoslovje/">naravoslovje</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-07-01">2026-07-01</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-07-06">2026-07-06</time></p>
     </header>
     <nav>
         <ul>
         <li><a href="#Naravoslovje"
         id="toc-Naravoslovje">Naravoslovje</a>
         <ul>
-        <li><a href="#Mehanika"
-        id="toc-Mehanika"><i>Mehanika</i></a></li>
+        <li><a href="#Opazovalni_sistemi"
+        id="toc-Opazovalni_sistemi">Opazovalni <i>sistemi</i></a></li>
+        <li><a href="#Sile" id="toc-Sile">Sile</a></li>
+        <li><a href="#Mehanika" id="toc-Mehanika"><i>Mehanika</i></a>
+        <ul>
+        <li><a href="#Navor" id="toc-Navor">Navor</a></li>
+        </ul></li>
         <li><a href="#Energije" id="toc-Energije"><i>Energije</i></a>
         <ul>
         <li><a href="#Kineticna_energija"
@@ -143,24 +148,40 @@
     <main>
         <div class="content">
             <h1 id="Naravoslovje">Naravoslovje</h1>
-            <p><b>Newtonovi zakoni</b> (veljajo le v <i>inercialnih</i>
-            opazovalnih <i>sistemih</i>):</p>
-            <ol type="1">
-            <li>Če je vsota učinkov okolice (sil) enaka nič, telo miruje
-            ali se giblje premo in enakomerno: <span
-            class="math inline">\(\sum_{i} \vec F_i = 0\)</span></li>
-            <li>Pospešek je sorazmeren s silo in ima smer sile: <span
-            class="math inline">\(\sum_{i} \vec F_i = m
-            \vec{a}\)</span></li>
-            <li>Če deluje prvo telo na drugo z neko silo, deluje drugo
-            telo na prvo z nasprotno enako silo: <span
-            class="math inline">\(\vec F_{1,2} = - \vec
-            F_{2,1}\)</span></li>
-            </ol>
+            <p>Okolica mora z neko silo delovati na telo, da to telo z
+            neko <i>maso</i> spravi v (ali vpliva na) gibanje.</p>
+            <h2 id="Opazovalni_sistemi">Opazovalni <i>sistemi</i></h2>
+            <p><b><i>Inercialni</i> opazovalni <i>sistemi</i></b> se
+            gibljejo premo in enakomerno drug proti/od drugemu/ga, ne
+            pospešujejo.</p>
+            <p><span class="math display">\[ \vec r = \vec r&#39; + \vec
+            r_0 \implies \vec r&#39; = \vec r - \vec r_0 \]</span> <span
+            class="math display">\[ \vec r&#39; = \vec r + \vec r_0&#39;
+            \implies \vec r = \vec r&#39; - \vec r_0&#39; \]</span></p>
+            <p>Pospeški so v vseh <i>inercialnih sistemih</i> enaki (ker
+            en <i>sistem</i> ne pospešuje v primerjavi z drugim).</p>
+            <p><span class="math display">\[ \vec a&#39; = \vec a - \vec
+            a_0 = \vec a \]</span></p>
+            <h2 id="Sile">Sile</h2>
             <p>Sila je učinek okolice, teles v okolici. V
             <i>inercialnih</i> opazovalnih <i>sistemih</i> ni
             “skrivnostnih” sil brez določenega telesa – vsaka sila ima
             svoje izvorno telo.</p>
+            <p><b>Newtonovi zakoni</b> (veljajo le v <i>inercialnih</i>
+            opazovalnih <i>sistemih</i>):</p>
+            <ol type="1">
+            <li><b>Če je vsota učinkov okolice (sil) enaka nič, telo
+            miruje ali se giblje premo in enakomerno</b> <span
+            class="math display">\[ \sum_{i} \vec F_i = 0 \implies \vec
+            a = 0 \]</span></li>
+            <li><b>Pospešek je sorazmeren s silo in ima smer sile</b>
+            <span class="math display">\[ \sum_{i} \vec F_i = m \vec{a}
+            \]</span></li>
+            <li><b>Če deluje prvo telo na drugo z neko silo, deluje
+            drugo telo na prvo z nasprotno enako silo</b> <span
+            class="math display">\[ \vec F_{1,2} = - \vec F_{2,1}
+            \]</span></li>
+            </ol>
             <p><i>Masa</i> je lastnost telesa, da se upira pospešovanju
             – vztrajnost (<i>inercija</i>). Teža je sila okolice,
             sorazmerna z <i>maso</i> (težnostni pospešek je neodvisen od
@@ -213,10 +234,45 @@
             <li>Opis gibanja: <i>kinematika</i></li>
             <li>Napoved gibanja: <i>dinamika</i></li>
             </ul>
-            <p><span class="math display">\[ x = x_0 + v_0 t + \frac {a
+            <span class="math display">\[ x = x_0 + v_0 t + \frac {a
             t^2}{2} \]</span> <span class="math display">\[ v = v_0 + a
-            t \]</span> <span class="math display">\[ v^2 = v_0^2 + 2 a
-            x \]</span></p>
+            t \]</span>
+            <div class="izpeljava">
+            <p><span class="math display">\[ a = \frac{\d v}{\d t} =
+            \frac{\d v \d x}{\d x \d t} = v \frac{\d v}{\d x} \]</span>
+            <span class="math display">\[ \int_{v_0}^v v \d v =
+            \int_{x_0}^x a \d x
+                \implies \frac{1}{2} (v^2 - v_0^2) = a (x - x_0)
+            \]</span></p>
+            </div>
+            <p><span class="math display">\[ v^2 = v_0^2 + 2 a (x - x_0)
+            \]</span></p>
+            <p>Povprečna hitrost na časovnem odseku: <span
+            class="math display">\[ \overline{\vec v} = \frac{\Delta
+            \vec r}{\Delta t} \]</span></p>
+            <p>Za razliko od povprečne hitrosti se prava hitrost nanaša
+            na trenutek, ko gre časovni odsek proti nič: <span
+            class="math display">\[ \vec v = \lim_{\Delta t \to 0}
+            \frac{\Delta \vec r}{\Delta t} = \frac{\d \vec r}{\d t}
+            \]</span> <span class="math display">\[ \vec v = (v_x, v_y,
+            v_z) = \left( \frac{\d x}{\d t}, \frac{\d y}{\d t}, \frac{\d
+            z}{\d t} \right) \]</span></p>
+            <p>Podobno velja tudi za pospešek in vse nadaljne časovne
+            odvode poti: <span class="math display">\[ \overline{\vec a}
+            = \frac{\Delta \vec v}{\Delta t} \]</span> <span
+            class="math display">\[ \vec a = \lim_{\Delta t \to 0}
+            \frac{\Delta \vec v}{\Delta t} = \frac{\d \vec v}{\d t}
+            \]</span> <span class="math display">\[ \vec a = \left(
+            \frac{\d v_x}{\d t}, \frac{\d v_y}{\d t}, \frac{\d v_z}{\d
+            t} \right)
+                = \left( \frac{\d^2 x}{\d t^2}, \frac{\d^2 y}{\d t^2},
+            \frac{\d^2 z}{\d t^2} \right) \]</span></p>
+            <p>Pospešek, ki je vzporeden hitrosti, zgolj spreminja
+            velikost hitrosti, nevzporeden pospešek pa tudi spreminja
+            smer. <span class="math display">\[ \sin \d \phi = \frac{|
+            \vec a | \d t}{| \vec v |} \implies \d \phi = \frac{a}{v} \d
+            t \implies a = \frac{\d \phi}{\d t} v = \omega v
+            \]</span></p>
             <table>
             <colgroup>
             <col style="width: 50%" />
@@ -226,14 +282,15 @@
             <tr class="odd">
             <td>položajni <i>vektor</i></td>
             <td><span class="math display">\[ \vec r = \vec r_0 +
-            \int_{t_z}^{t_k§ \vec v \d t + \int_{t_z}^{t_k} \vec a
+            \int_{t_z}^{t_k} \vec v \d t + \int_{t_z}^{t_k} \vec a
             \frac{t^2}{2} \]</span></td>
             </tr>
             <tr class="even">
             <td>pot [<span class="math inline">\(m\)</span>]</td>
             <td><span class="math display">\[ s = \int_{\vec r_z}^{\vec
             r_k} \lvert \d \vec r \rvert = \int_{\vec r_z}^{\vec r_k} \d
-            s \]</span></td>
+            s \]</span> <span class="math display">\[ \d s^2 = \d x^2 +
+            \d y^2 + \d z^2 \]</span></td>
             </tr>
             <tr class="odd">
             <td>hitrost (spreminja <i>vektor</i> položaja) [<span
@@ -243,7 +300,7 @@
             \d t \]</span> <span class="math display">\[ \vec v^2 = \vec
             v_0^2 + \int_{t_z}^{t_k} 2 \vec a \d x \]</span> <span
             class="math display">\[ \overline{\vec v} = \frac{\Delta
-            \vec{r}}{\Delta t} =  \frac{\vec s}{\Delta t} \]</span></td>
+            \vec{r}}{\Delta t} \]</span></td>
             </tr>
             <tr class="even">
             <td>pospešek (spreminja smer in velikost hitrost) [<span
@@ -255,16 +312,13 @@
             </tr>
             </tbody>
             </table>
-            <p>Stalen pospešek: <span class="math display">\[ \Delta v =
-            at \]</span> <span class="math display">\[ v^2 = v&#39;^2 +
-            2 a (x - x&#39;) \]</span></p>
-            <p><b>Navor</b>: <span class="math display">\[ \vec M = \vec
-            r \times \vec F = m \vec \alpha r^2 = J \vec \alpha
-            \]</span></p>
+            <h3 id="Navor">Navor</h3>
+            <p><span class="math display">\[ \vec M = \vec r \times \vec
+            F = m \vec \alpha r^2 = J \vec \alpha \]</span></p>
             <h2 id="Energije"><i>Energije</i></h2>
             <p><span class="math display">\[ A = \Delta W_k + \Delta W_p
-            + \Delta W_{pr} \]</span> <span class="math display">\[ A =
-            - p \Delta V \]</span></p>
+            + \Delta W_{pr} + ... \]</span> <span
+            class="math display">\[ A = - p \Delta V \]</span></p>
             <table>
             <colgroup>
             <col style="width: 50%" />
@@ -302,18 +356,21 @@
             <i>sistem</i> (<i>hiperbola</i>)</li>
             </ul>
             <h3 id="Kineticna_energija"><i>Kinetična energija</i></h3>
+            <div class="izpeljava">
             <p><span class="math display">\[ \Delta W_k = A = \int_{\vec
             r_1}^{\vec r_2} \vec F \d \vec r
-            = \int_{\vec r_1}^{\vec r_2} m \vec a \d \vec r
-            = \int_{\vec r_1}^{\vec r_2} m \frac{\d \vec v \d \vec r}{\d
-            t \d t}
-            = m \int_{\vec v&#39;}^{v} \vec v \d \vec v
-            = m \int \vec v \d \vec v
-            = m \int \left( v_x \d v_x + v_y \d v_y + v_z \d v_z \right)
-            = \frac{1}{2} m \left( v_x&#39; + v_y&#39; + v_z&#39;
+                = \int_{\vec r_1}^{\vec r_2} m \vec a \d \vec r
+                = \int_{\vec r_1}^{\vec r_2} m \frac{\d \vec v \d \vec
+            r}{\d t \d t}
+                = m \int_{\vec v&#39;}^{v} \vec v \d \vec v
+                = m \int \vec v \d \vec v
+                = m \int \left( v_x \d v_x + v_y \d v_y + v_z \d v_z
+            \right)
+                = \frac{1}{2} m \left( v_x&#39; + v_y&#39; + v_z&#39;
             \right) \Big|_{v&#39;}^{v} = \frac{1}{2} m v^2
             \Big|_{v&#39;}^{v}
-            = \frac{1}{2} m (v^2 - v&#39;^2) \]</span></p>
+                = \frac{1}{2} m (v^2 - v&#39;^2) \]</span></p>
+            </div>
             <p><span class="math display">\[ W_k = \frac {m v^2}{2}
             \]</span></p>
             <h3 id="Potencialna_teznostna_energija"><i>Potencialna</i>
@@ -322,26 +379,33 @@
             class="math inline">\(W_{p, g} = 0\)</span>) neskončno daleč
             stran, kjer gre teža proti nič (<span
             class="math inline">\(r_1 \rightarrow \infty\)</span>):</p>
-            <p><span class="math display">\[ \vec F_g = -G \frac{m_1
-            m_2}{r^2} \frac{r_{1,2}}{r} \]</span> <span
-            class="math display">\[ W_{p, g} = - A_g
-            = - \int_{\vec r_1}^{\vec r_2} \vec F_g \cdot d\vec{r}
-            = - \int_{r_1}^{r_2} \left(- \frac{G m_1 m_2}{r^2} \right)
-            \frac{r_{1,2}}{r} dr
-            = \int_{r_1}^{r_2} \frac{G m_1 m_2}{r^3} r dr
-            = - \frac{G m_1 m_2}{r} \Big|_{r_1}^{r_2}
-            = - \frac{G m_1 m_2}{r_2} \]</span></p>
+            <span class="math display">\[ \vec F_g = -G \frac{m_1
+            m_2}{r^2} \frac{r_{1,2}}{r} \]</span>
+            <div class="izpeljava">
+            <p><span class="math display">\[ W_{p, g} = - A_g
+                = - \int_{\vec r_1}^{\vec r_2} \vec F_g \cdot d\vec{r}
+                = - \int_{r_1}^{r_2} \left(- \frac{G m_1 m_2}{r^2}
+            \right) \frac{r_{1,2}}{r} dr
+                = \int_{r_1}^{r_2} \frac{G m_1 m_2}{r^3} r dr
+                = - \frac{G m_1 m_2}{r} \Big|_{r_1}^{r_2}
+                = - \frac{G m_1 m_2}{r_2} \]</span></p>
+            </div>
+            <p><span class="math display">\[ W_{p, g} = - \frac{G m_1
+            m_2}{r_2} \]</span></p>
             <p>Za “ravno Zemljo” (<span class="math inline">\(\Delta h
-            &lt;&lt; r_Z\)</span>):</p>
-            <p><span class="math display">\[ g = \frac{G M_Z}{r_Z^2}
-            \]</span> <span class="math display">\[ W_{p, g} = m g h
-            \]</span></p>
+            &lt;&lt; r_Z\)</span>): <span class="math display">\[ g =
+            \frac{G M_Z}{r_Z^2} \]</span> <span class="math display">\[
+            W_{p, g} = m g h \]</span></p>
             <h3 id="Potencialna_proznostna_energija"><i>Potencialna</i>
             prožnostna <i>energija</i></h3>
+            <div class="izpeljava">
             <p><span class="math display">\[ \Delta W_{pr} = -A_{vzmeti}
             = - \int_{x&#39;}^x F x \d x = \int_{x&#39;}^{x} k x \d x =
             \frac{1}{2} k (x^2 - x&#39;^2) = \frac{1}{2} k x^2
             \]</span></p>
+            </div>
+            <p><span class="math display">\[ \Delta W_{pr} = \frac{1}{2}
+            k x^2 \]</span></p>
             <h2 id="Termodinamika"><i>Termodinamika</i></h2>
             <p><i>Temperatura</i> je <i>termodinamska</i> spremenljivka,
             toplota pa ne. Toplota je način prehajanja <i>energije</i>,
@@ -356,11 +420,16 @@
             <i>termodinamski sistem</i> A v ravnovesju z B in B v
             ravnovesju z C, potem je A v ravnovesju z C (prenosljivost
             <i>termodinamskega</i> ravnovesja).</p>
-            <p><span class="math display">\[ \Delta W_n = Q_{stalna V} =
-            m c_V \Delta T \]</span> <span class="math display">\[
-            Q_{stalen p} = \Delta W_n - A = m c_V \Delta T + \int{p \d
-            V} = m c_V \Delta T + p (V_2 - V_1) = m c_V \Delta T +
-            \frac{m}{M} R \Delta T = m c_p \Delta T \]</span></p>
+            <span class="math display">\[ \Delta W_n = Q_{stalna V} = m
+            c_V \Delta T \]</span>
+            <div class="izpeljava">
+            <p><span class="math display">\[ Q_{stalen p} = \Delta W_n -
+            A = m c_V \Delta T + \int{p \d V} = m c_V \Delta T + p (V_2
+            - V_1) = m c_V \Delta T + \frac{m}{M} R \Delta T = m c_p
+            \Delta T \]</span></p>
+            </div>
+            <p><span class="math display">\[ Q = m c_p \Delta T
+            \]</span></p>
             <p>Za popolni plin velja: <span class="math display">\[ c_p
             - c_V = \frac{R}{M} \]</span></p>
             <p>Splošna plinska enačba: <span class="math display">\[
@@ -432,13 +501,18 @@
             Q}{T} \]</span> <span class="math display">\[ \Delta S \geq
             \int{ \frac{\d Q}{T} } \]</span></p>
             <h2 id="Gibalna_kolicina">Gibalna količina</h2>
-            <p><span class="math display">\[ \vec G = m \vec v \]</span>
+            <span class="math display">\[ \vec G = m \vec v \]</span>
             <span class="math display">\[ \vec F = m \vec a = m \frac{\d
             \vec v}{\d t} = \frac{\d (m \vec v)}{\d t} = \frac{\d \vec
-            G}{\d t} \]</span> <span class="math display">\[
-            \int_{t&#39;}^{t} \vec F \d t = \int_{t&#39;}^t \frac{\d
-            \vec G}{\d t} \d t = \vec G \Big|_{t&#39;}^t = \vec G - \vec
-            G&#39; = \Delta \vec G \]</span></p>
+            G}{\d t} \]</span>
+            <div class="izpeljava">
+            <p><span class="math display">\[ \int_{t&#39;}^{t} \vec F \d
+            t = \int_{t&#39;}^t \frac{\d \vec G}{\d t} \d t = \vec G
+            \Big|_{t&#39;}^t = \vec G - \vec G&#39; = \Delta \vec G
+            \]</span></p>
+            </div>
+            <p><span class="math display">\[ \int_{t&#39;}^{t} \vec F \d
+            t = \Delta \vec G \]</span></p>
             <ul>
             <li>Neprožni trk: ohranja se gibalna količina</li>
             <li>Prožni trk: ohranjata se gobalna količina in
@@ -455,7 +529,7 @@
             </colgroup>
             <tbody>
             <tr class="odd">
-            <td>kot</td>
+            <td>kot [rd]</td>
             <td><span class="math display">\[ \phi = \frac{l}{r}
             \]</span></td>
             </tr>
@@ -471,7 +545,9 @@
             <td>kotni pospešek [<span
             class="math inline">\(\frac{1}{s^2}\)</span>]</td>
             <td><span class="math display">\[ \vec \alpha = \vec \omega
-            &#39;(t) = \frac{\vec {\d \omega}}{\d t} \]</span></td>
+            &#39;(t) = \frac{\vec {\d \omega}}{\d t} \]</span> <span
+            class="math display">\[ \overline{\alpha} = \frac{\Delta
+            \omega}{\Delta t} \]</span></td>
             </tr>
             <tr class="even">
             <td><i>frekvenca</i> [Hz]</td>
@@ -480,19 +556,24 @@
             </tr>
             </tbody>
             </table>
-            <p><span class="math display">\[ \phi = \phi_0 + \omega_0 t
-            + \frac{\alpha}{2} t^2 \]</span> <span
-            class="math display">\[ \omega = \frac{2 \pi}{t_o} = 2 \pi
-            \gamma = \omega_0 + \alpha t \]</span> <span
-            class="math display">\[ a_r = \omega v = \frac{v_0^2}{r} =
-            \omega^2 r \]</span> <span class="math display">\[ \vec{v} =
-            \frac{\d \vec{r}}{\d t} = r \frac{\vec{\d \phi}}{\d t} =
-            \vec r \times \vec{\omega} \]</span> <span
-            class="math display">\[ \vec{a_t} = \frac{\vec{\d v}}{\d t}
-            = r \frac{\vec{\d \omega}}{t} = \vec r \times \vec{\alpha}
+            <p>Kot: <span class="math display">\[ \phi = \phi_0 +
+            \omega_0 t + \frac{\alpha}{2} t^2 \]</span></p>
+            <p>Kotna hitrost: <span class="math display">\[ \omega =
+            \frac{2 \pi}{t_o} = 2 \pi \gamma = \omega_0 + \alpha t
             \]</span></p>
-            <p><span class="math display">\[ \vec F_{Coriolis} = -2 m
-            (\vec{\omega} \times \vec{v}) \]</span></p>
+            <p>Sredobežni (<i>centripetalni</i>) pospešek, ki sploh
+            povzroča kroženje: <span class="math display">\[ a_r =
+            \omega v = \frac{v_0^2}{r} = - \omega^2 r \]</span></p>
+            <p>Obodna hitrost: <span class="math display">\[ \vec{v} =
+            \frac{\d \vec{r}}{\d t} = r \frac{\vec{\d \phi}}{\d t} =
+            \vec r \times \vec{\omega} \]</span></p>
+            <p>Obodni pospešek: <span class="math display">\[ \vec{a_t}
+            = \frac{\vec{\d v}}{\d t} = r \frac{\vec{\d \omega}}{t} =
+            \vec r \times \vec{\alpha} \]</span></p>
+            <p>Coriolisova sila: <span class="math display">\[ \vec
+            F_{Coriolis} = -2 m (\vec{\omega} \times \vec{v})
+            \]</span></p>
+            <div class="line-block"></div>
             <p>Keplerjevi zakoni:</p>
             <ol type="1">
             <li>Tiri planetov so <i>elipse</i>, Sonce je v gorišču.</li>
@@ -500,17 +581,21 @@
             <li><span class="math inline">\(\frac{r^3}{t_0^2}\)</span> =
             stalno</li>
             </ol>
-            <p>Vztrajnostni <i>moment</i> [<span
-            class="math inline">\(kg m^2\)</span>] je porazdelitev
-            <i>mase</i> glede na os vrtenja: <span
-            class="math display">\[ W_{k, rot} = \frac{1}{2} \sum_i m_i
-            v_i^2 = \frac{1}{2} \int \d m v^2 = \frac{1}{2} \int \d m
-            r^2 \omega^2 = \frac{1}{2} \omega^2 \int \d m r^2 =
-            \frac{1}{2} J \omega^2 \]</span> <span
-            class="math display">\[ J_{točka, cev} = m r^2 \]</span>
-            <span class="math display">\[ J_{valj} = \frac{1}{2} m r^4
-            \]</span> <span class="math display">\[ J_{krogla} =
-            \frac{2}{5} m r^2 \]</span></p>
+            Vztrajnostni <i>moment</i> [<span class="math inline">\(kg
+            m^2\)</span>] je porazdelitev <i>mase</i> glede na os
+            vrtenja:
+            <div class="izpeljava">
+            <p><span class="math display">\[ W_{k, rot} = \frac{1}{2}
+            \sum_i m_i v_i^2 = \frac{1}{2} \int \d m v^2 = \frac{1}{2}
+            \int \d m r^2 \omega^2 = \frac{1}{2} \omega^2 \int \d m r^2
+            = \frac{1}{2} J \omega^2 \]</span></p>
+            </div>
+            <p><span class="math display">\[ W_{k, rot} = \frac{1}{2} J
+            \omega^2 \]</span> <span class="math display">\[ J_{točka,
+            cev} = m r^2 \]</span> <span class="math display">\[
+            J_{valj} = \frac{1}{2} m r^4 \]</span> <span
+            class="math display">\[ J_{krogla} = \frac{2}{5} m r^2
+            \]</span></p>
             <p>Steinerjev izrek: če je težišče telesa izmaknjeno od osi
             vrtenja, je vztrajnostni <i>moment</i> telesa enak vsoti
             tistega, ki bi bil, če bi bila os v težišču in tistega, če
@@ -1136,15 +1221,26 @@
             negotovostmi</h2>
             <p>Meritve brez negotovosti ne obstajajo (posebno če so
             zvezne narave), zato so merski podatki brez negotovosti
-            nepopolni, torej precej neuporabni ali vsaj nezaželjeni.</p>
-            <p>Negotovosti se sešteva, kadar so medsebojno
-            povezane/odvisne; če ne, seštevamo njihove kvadrate.</p>
+            nepopolni, torej precej neuporabni ali vsaj nezaželjeni.
+            Meritve pogosto nastopajo v obliki t.i. <i>normalne</i>
+            porazdelitve, ki jo opišemo z Gaussovo krivuljo, ki ima en
+            vrh nad izhodiščem (kjer je naše povprečje/večina meritev)
+            in se na obeh straneh spušča vedno bližje nič, torej dlje,
+            kot smo od izhodišča, večje kot je odstopanje meritve,
+            manjša je verjetnost za takšno meritev; nikoli pa ni nič. Po
+            dogovoru za negotovost vzamemo odsek okoli izhodišča, v
+            katerega pade 2/3 vseh meritev.</p>
+            <p>Negotovosti so povezane/odvisne (<i>korelirane</i>) ali
+            nepovezane/neodvisne.</p>
+            <p><b>Odvisne negotovosti</b> seštevamo</p>
             <ul>
             <li>seštevanje/odštevanje količin: seštevanje
             <i>absolutnih</i> napak</li>
             <li>množenje/deljenje količin: seštevanje <i>relativnih</i>
             napak</li>
             </ul>
+            <p>Pri <b>neodvisnih negotovostih</b> seštevamo njihove
+            kvadrate.</p>
             <p>Enačbe lahko močno poenostavimo z upoštevanjem
             negotovosti in uporabo Taylorjeve vrste: <span
             class="math display">\[ f(x) = f(a) + \frac{f&#39;(a)}{1!} x

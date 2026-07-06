@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-07-02
+date: 2026-07-05
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -760,6 +760,7 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 
 - [Answers in Genesis Canada](https://www.youtube.com/@AnswersCanada) – zagovornik krščanstva skozi znanost (ima precej vprašljivih razlag, a dosti stvari je še vedno zanimivih)
 - [Hochelaga](https://www.youtube.com/@hochelaga) – Sveto pismo
+- [Jesus and Whatnot](https://www.youtube.com/@Jesus.andwhatnot
 
 ###### Dokazi za Boga
 
