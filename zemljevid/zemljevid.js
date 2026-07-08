@@ -169,21 +169,36 @@ var esriNational = L.tileLayer(
   }
 );
 
+var DARE = L.tileLayer(
+  "https://dh.gu.se/tiles/imperium/{z}/{x}/{y}.png",
+  { tms: true, maxZoom: 11, minZoom: 4, crs: 3857, attribution: "© DARE", opacity: 1.0 }
+);
+
+// -----------------------------------------------------------------------------------------------------
 // GURS – ORTOFOTO (TMS, EPSG:3857)
 var gursDOF025 = L.tileLayer(
   "https://gis.level2.si/geoserver/gwc/service/tms/1.0.0/level2%3ADOF025_latest@EPSG%3A3857@jpeg/{z}/{x}/{y}.jpeg",
-  { tms: true, maxZoom: 20, minZoom: 8, attribution: "© GURS"
-  }
+  { tms: true, maxZoom: 20, minZoom: 8, attribution: "© GURS"}
 );
 
 var gursDOF010_Poplave = L.tileLayer(
   "https://gis.level2.si/geoserver/gwc/service/tms/1.0.0/level2%3ADOF010_2023_Poplave@EPSG%3A3857@png/{z}/{x}/{y}.png",
-  { tms: true, maxZoom: 21, minZoom: 8, attribution: "© GURS - Poplave 2023" }
+  { tms: true, maxZoom: 21, minZoom: 8, attribution: "© GURS" }
 );
 
 var gursHillshade = L.tileLayer(
   "https://gis.level2.si/geoserver/gwc/service/tms/1.0.0/level2%3AHillshade@EPSG%3A3857@jpeg/{z}/{x}/{y}.jpeg",
-  { tms: true, maxZoom: 18, minZoom: 8, attribution: "© GURS LIDAR", opacity: 0.6 }
+  { tms: true, maxZoom: 19, minZoom: 8, attribution: "© GURS", opacity: 1.0 }
+);
+
+var gursCeste = L.tileLayer(
+  "https://wms.openstreetmap.de/tms/GURS-road-lines/{zoom}/{x}/{y}.png",
+  { tms: true, maxZoom: 19, minZoom: 8, attribution: "© GURS", opacity: 1.0 }
+);
+
+var gursZgradbe = L.tileLayer(
+  "https://wms.openstreetmap.de/tms/GURS-building-outlines/{zoom}/{x}/{y}.png",
+  { tms: true, maxZoom: 19, minZoom: 8, attribution: "© GURS", opacity: 1.0 }
 );
 
 // DOF025 po letih - vse prek WMS
@@ -340,13 +355,39 @@ var gursAdmin = L.tileLayer.wms(
   {
     layers: "level2-vector:admin",
     format: "image/png",
-    transparent: true,
+    transparent: false,
     crs: L.CRS.EPSG3857,
     attribution: "© GURS"
   }
 );
 
+var DOF_Ljubljana_2025 = L.esri.dynamicMapLayer({
+    url: 'https://gis2.ljubljana.si/arcgis/rest/services/Podloge/DOF_2025/MapServer',
+    opacity: 1,
+    attribution: "© GURS 2025"
+});
+var DOF_Ljubljana_2022 = L.esri.dynamicMapLayer({
+    url: 'https://gis2.ljubljana.si/arcgis/rest/services/Podloge/DOF_2022/MapServer',
+    opacity: 1,
+    attribution: "© GURS 2022"
+});
+var DOF_Ljubljana_2020 = L.esri.dynamicMapLayer({
+    url: 'https://gis2.ljubljana.si/arcgis/rest/services/Podloge/DOF_2020/MapServer',
+    opacity: 1,
+    attribution: "© GURS 2020"
+});
+var DOF_Ljubljana_2019 = L.esri.dynamicMapLayer({
+    url: 'https://gis2.ljubljana.si/arcgis/rest/services/Podloge/DOF_2019/MapServer',
+    opacity: 1,
+    attribution: "© GURS 2019"
+});
 
+var MK_LIDAR = L.esri.dynamicMapLayer({
+    url: 'https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE/LIDAR_TlaZgradbe_SI/MapServer/WMTS/1.0.0/WMTSCapabilities.xml',
+    opacity: 1
+});
+
+// ---------------------------------------------------------------------------------
 
 // Google Maps
 
@@ -438,11 +479,16 @@ var baseMaps = {
     "GURS DOF 25 cm, 2017": gursDOF025_2017,
     "GURS DOF 10 cm": gursDOF010_Poplave,
     "GURS LIDAR senčenje": gursHillshade,
+    /*"GURS MK LIDAR": MK_LIDAR,*/
     //"GURS LIDAR senćenje": gursHillshadeWMS,
+    "Ljubljana DOF 2025": DOF_Ljubljana_2025,
+    "Ljubljana DOF 2022": DOF_Ljubljana_2022,
+    "Ljubljana DOF 2020": DOF_Ljubljana_2020,
+    "Ljubljana DOF 2019": DOF_Ljubljana_2019,
     "GURS upravne meje": gursAdmin,
-    "GURS pokopališča Dobrova 2021": gursDobrova2021,
-    "GURS pokopališča Dobrova 2016": gursDobrova2016,
-    "GURS pokopališče Domžale 2020": gursDomzale2020,
+    "GURS: pokopališča Dobrova 2021": gursDobrova2021,
+    "GURS: pokopališče Domžale 2020": gursDomzale2020,
+    "GURS: pokopališča Dobrova 2016": gursDobrova2016,
 
     "OpenStreetMap": osm,
     "OpenStreetMap HOT": osmHOT,
@@ -469,6 +515,8 @@ var baseMaps = {
 
     "Stadia Alidade Satellite": Stadia_AlidadeSatellite,
 
+    "Digital Atlas of the Roman Empire": DARE,
+
     "G***le Streets": googleStreets,
     "G***le Hybrid": googleHybrid,
     "G***le Satellite": googleSat,
@@ -476,6 +524,8 @@ var baseMaps = {
 };
 
 var overlayMaps = {
+    /*"GURS: ceste": gursCeste,
+    "GURS: obrisi zgradb": gursZgradbe,*/
 
     "OpenRailwayMap": OpenRailwayMap,
     "OpenSeaMap": OpenSeaMap,
@@ -492,9 +542,33 @@ var overlayMaps = {
     "Slo. nadučilišča": naducilisca,
 };
 
-L.control.layers(baseMaps, overlayMaps, {
+/*L.control.layers(baseMaps, overlayMaps, {
+    collapsed: false
+}).addTo(map);*/
+
+var layersControl = L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
 }).addTo(map);
+
+var panel = layersControl.getContainer();
+panel.style.display = 'none';
+
+var TogglePanel = L.Control.extend({
+    options: { position: 'topright' },
+    onAdd: function () {
+        var btn = L.DomUtil.create('button', 'leaflet-bar sloji-toggle-btn');
+        btn.innerHTML = '☰ Sloji';
+
+        L.DomEvent.disableClickPropagation(btn);
+        L.DomEvent.on(btn, 'click', function () {
+            panel.style.display = (panel.style.display === 'none') ? 'block' : 'none';
+        });
+
+        return btn;
+    }
+});
+
+map.addControl(new TogglePanel());
 
 /*L.control.opacity(
     overlayMaps,

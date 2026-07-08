@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-07-05
+date: 2026-07-07
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -191,6 +191,7 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
 - [CyclOSM](https://www.cyclosm.org/) - kolesarski zemljevid
 - [F4 Map](https://www.f4map.com/) - 3R prikaz, podrobni 3R prikazi stavb,
     - [F4 Map - Demo](https://demo.f4map.com/) – ogled zemljevida
+- [Freemap](https://www.freemap.eu/) – zemljevid Evrope; podatki OSM združeni z *reliefom*, zračnimi slikami, slikami Wikimedia Commons, ...
 - [Geofabrik Tools – OSM Inspector](https://tools.geofabrik.de/osmi/) – izlušči ceste, naslove, vodovja, javni promet, ... in težave pri teh elementih
 - [Health Sites](https://healthsites.io/) – zemljevid zdravstvenih ustanov, storitev
 - [Historic Place – Map](https://gk.historic.place/historische_objekte/) – zgodovinski predmeti na OSM (domača stran [Historic Place](https://gk.historic.place/)) 
@@ -758,9 +759,11 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 
 ##### Krščanstvo
 
+- [Amadej Jazbec](https://www.youtube.com/@amadejjazbec7214) – bogoslovec
 - [Answers in Genesis Canada](https://www.youtube.com/@AnswersCanada) – zagovornik krščanstva skozi znanost (ima precej vprašljivih razlag, a dosti stvari je še vedno zanimivih)
 - [Hochelaga](https://www.youtube.com/@hochelaga) – Sveto pismo
-- [Jesus and Whatnot](https://www.youtube.com/@Jesus.andwhatnot
+- [Jesus and Whatnot](https://www.youtube.com/@Jesus.andwhatnot)
+- [Taylor Alesia](https://www.youtube.com/@thebiblechick)
 
 ###### Dokazi za Boga
 

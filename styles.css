@@ -219,6 +219,18 @@ button {
     color: var(--bOspredjeBoljNazaj);
 }
 
+.zakon {
+    background-color: var(--bOzadjeNaprej);
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0;
+}
+.zakon p {
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
 @media print{
 	body{
 		max-width:none;

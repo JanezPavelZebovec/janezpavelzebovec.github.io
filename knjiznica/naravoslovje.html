@@ -36,7 +36,7 @@
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/naravoslovje/">naravoslovje</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-07-06">2026-07-06</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-07-08">2026-07-08</time></p>
     </header>
     <nav>
         <ul>
@@ -44,7 +44,18 @@
         id="toc-Naravoslovje">Naravoslovje</a>
         <ul>
         <li><a href="#Opazovalni_sistemi"
-        id="toc-Opazovalni_sistemi">Opazovalni <i>sistemi</i></a></li>
+        id="toc-Opazovalni_sistemi">Opazovalni <i>sistemi</i></a>
+        <ul>
+        <li><a href="#Galilejevski_sistemi"
+        id="toc-Galilejevski_sistemi">Galilejevski
+        <i>sistemi</i></a></li>
+        <li><a href="#Pospeseni_sistemi"
+        id="toc-Pospeseni_sistemi">Pospešeni <i>sistemi</i></a>
+        <ul>
+        <li><a href="#Coriolisov_pojav"
+        id="toc-Coriolisov_pojav">Coriolisov pojav</a></li>
+        </ul></li>
+        </ul></li>
         <li><a href="#Sile" id="toc-Sile">Sile</a></li>
         <li><a href="#Mehanika" id="toc-Mehanika"><i>Mehanika</i></a>
         <ul>
@@ -60,15 +71,17 @@
         <li><a href="#Potencialna_proznostna_energija"
         id="toc-Potencialna_proznostna_energija"><i>Potencialna</i>
         prožnostna <i>energija</i></a></li>
+        <li><a href="#Entalpija"
+        id="toc-Entalpija"><i>Entalpija</i></a></li>
         </ul></li>
+        <li><a href="#Gibalna_kolicina"
+        id="toc-Gibalna_kolicina">Gibalna količina</a></li>
         <li><a href="#Termodinamika"
         id="toc-Termodinamika"><i>Termodinamika</i></a>
         <ul>
         <li><a href="#Entropija"
         id="toc-Entropija"><i>Entropija</i></a></li>
         </ul></li>
-        <li><a href="#Gibalna_kolicina"
-        id="toc-Gibalna_kolicina">Gibalna količina</a></li>
         <li><a href="#Vrtenje" id="toc-Vrtenje">Vrtenje</a></li>
         <li><a href="#Ravnovesje"
         id="toc-Ravnovesje">Ravnovesje</a></li>
@@ -108,9 +121,6 @@
         <li><a href="#Elektromagnetizem"
         id="toc-Elektromagnetizem"><i>Elektromagnetizem</i></a>
         <ul>
-        <li><a href="#Indukcija"
-        id="toc-Indukcija"><i>Indukcija</i></a></li>
-        <li><a href="#Tuljava" id="toc-Tuljava">Tuljava</a></li>
         <li><a href="#Snov_v_magnetnem_polju"
         id="toc-Snov_v_magnetnem_polju">Snov v <i>magnetnem</i>
         polju</a></li>
@@ -134,6 +144,34 @@
         id="toc-Velicine_in_enote">Veličine in enote</a>
         <ul>
         <li><a href="#Osnovne_enote" id="toc-Osnovne_enote">Osnovne
+        enote</a>
+        <ul>
+        <li><a href="#Indukcija"
+        id="toc-Indukcija"><i>Indukcija</i></a></li>
+        <li><a href="#Tuljava" id="toc-Tuljava">Tuljava</a></li>
+        <li><a href="#Snov_v_magnetnem_polju-1"
+        id="toc-Snov_v_magnetnem_polju-1">Snov v <i>magnetnem</i>
+        polju</a></li>
+        </ul></li>
+        <li><a href="#Izmenicni_tok-1"
+        id="toc-Izmenicni_tok-1">Izmenični tok</a></li>
+        <li><a href="#Elektricni_nihajni_krog-1"
+        id="toc-Elektricni_nihajni_krog-1"><i>Električni</i> nihajni
+        krog</a></li>
+        </ul></li>
+        <li><a href="#Fizika_delcev-1"
+        id="toc-Fizika_delcev-1"><i>Fizika</i> delcev</a>
+        <ul>
+        <li><a href="#Jedrski_razpadi-1"
+        id="toc-Jedrski_razpadi-1">Jedrski razpadi</a></li>
+        </ul></li>
+        <li><a href="#Racunanje_z_negotovostmi-1"
+        id="toc-Racunanje_z_negotovostmi-1">Računanje z
+        negotovostmi</a></li>
+        <li><a href="#Velicine_in_enote-1"
+        id="toc-Velicine_in_enote-1">Veličine in enote</a>
+        <ul>
+        <li><a href="#Osnovne_enote-1" id="toc-Osnovne_enote-1">Osnovne
         enote</a></li>
         <li><a href="#Izpeljane_enote"
         id="toc-Izpeljane_enote">Izpeljane enote</a></li>
@@ -154,47 +192,87 @@
             <p><b><i>Inercialni</i> opazovalni <i>sistemi</i></b> se
             gibljejo premo in enakomerno drug proti/od drugemu/ga, ne
             pospešujejo.</p>
+            <h3 id="Galilejevski_sistemi">Galilejevski
+            <i>sistemi</i></h3>
+            <p>Galilejeve <i>transformacije</i> veljajo za nepospešene
+            (<i>inercialne sisteme</i>), ter pri majhnih hitrostih
+            (pomeni, da ne blizu svetlobni hitrosti, kjer jih
+            nadomestijo druge <i>transformacije</i> – Lorentzeve?).</p>
             <p><span class="math display">\[ \vec r = \vec r&#39; + \vec
             r_0 \implies \vec r&#39; = \vec r - \vec r_0 \]</span> <span
             class="math display">\[ \vec r&#39; = \vec r + \vec r_0&#39;
             \implies \vec r = \vec r&#39; - \vec r_0&#39; \]</span></p>
+            <p><span class="math display">\[ \vec r&#39; = \vec r - \vec
+            r_0
+                \implies \frac{\d \vec r&#39;}{\d t} = \frac{\d \vec
+            r}{\d t} - \frac{\d \vec r_0}{\d t}
+                \implies \vec v&#39; = \vec v - \vec v_0 \]</span></p>
             <p>Pospeški so v vseh <i>inercialnih sistemih</i> enaki (ker
             en <i>sistem</i> ne pospešuje v primerjavi z drugim).</p>
             <p><span class="math display">\[ \vec a&#39; = \vec a - \vec
             a_0 = \vec a \]</span></p>
+            <h3 id="Pospeseni_sistemi">Pospešeni <i>sistemi</i></h3>
+            <p>(<i>Neinercialni sistemi</i>)</p>
+            <p>Če opazovalni <i>sistem</i> pospešuje, ima torej
+            <i>sistemski</i> pospešek, se pojavi <i>sistemska</i> sila.
+            <span class="math display">\[ \vec a&#39; = \vec a - \vec
+            a_{sis.} \]</span></p>
+            <h4 id="Coriolisov_pojav">Coriolisov pojav</h4>
+            <p>Do Coriolisovega pojava pride v vrtečem se (torej
+            pospešenem) <i>sistemu</i>. Imenujemo ga tudi <i>Coriolisova
+            sila</i> po navidezni sili, ki pridi v poštev pri računanju
+            v takšnih <i>sistemih</i>.</p>
+            <p><span class="math display">\[ \vec F_{Co} = - 2 m (\vec
+            \omega \times \vec v) \]</span></p>
             <h2 id="Sile">Sile</h2>
-            <p>Sila je učinek okolice, teles v okolici. V
-            <i>inercialnih</i> opazovalnih <i>sistemih</i> ni
+            <p>Sila je učinek/vpliv okolice, teles v okolici na drugo
+            telo. V <a href="#Galilejevski_sistemi">galilejevskih
+            (<i>inercialnih</i>) opazovalnih <i>sistemih</i></a> ni
             “skrivnostnih” sil brez določenega telesa – vsaka sila ima
-            svoje izvorno telo.</p>
-            <p><b>Newtonovi zakoni</b> (veljajo le v <i>inercialnih</i>
+            svoje izvorno telo (v pospešenih <i>sistemih</i> imamo še
+            <i>sistemski</i> pospešek, ki povzroča navidezno
+            <i>sistemsko silo</i>).</p>
+            <div class="zakon">
+            <p><b>Newtonovi zakoni</b> (veljajo le v galilejevskih
             opazovalnih <i>sistemih</i>):</p>
             <ol type="1">
             <li><b>Če je vsota učinkov okolice (sil) enaka nič, telo
             miruje ali se giblje premo in enakomerno</b> <span
             class="math display">\[ \sum_{i} \vec F_i = 0 \implies \vec
-            a = 0 \]</span></li>
+            a = 0 \]</span> Bolj splošno: Če je vsota sil na telo enaka
+            nič, je mogoče najti <a
+            href="#Opazovalni%20sistemi">opazovalni <i>sistem</i></a>, v
+            katerem se telo giblje premo in enakomerno.</li>
             <li><b>Pospešek je sorazmeren s silo in ima smer sile</b>
-            <span class="math display">\[ \sum_{i} \vec F_i = m \vec{a}
+            (vzročna zveza: vzrok sila <span
+            class="math inline">\(\to\)</span> posledica gibanje) <span
+            class="math display">\[ \sum_{i} \vec F_i = m \vec{a}
             \]</span></li>
             <li><b>Če deluje prvo telo na drugo z neko silo, deluje
             drugo telo na prvo z nasprotno enako silo</b> <span
             class="math display">\[ \vec F_{1,2} = - \vec F_{2,1}
             \]</span></li>
             </ol>
+            </div>
             <p><i>Masa</i> je lastnost telesa, da se upira pospešovanju
             – vztrajnost (<i>inercija</i>). Teža je sila okolice,
             sorazmerna z <i>maso</i> (težnostni pospešek je neodvisen od
             <i>mase</i>).</p>
+            <p>Težišče: <span class="math display">\[ \vec r^* =
+            \frac{\sum m_i \vec r_i}{\sum m_i} = \frac{\int \d m \vec
+            r}{\int \d m}; M = \int \d m \]</span> Drugi Newtonov zakon
+            za gibanje težišča: težišče v gibanje spravijo le zunanje
+            sile $$ F_{zun.} = M a* Notranje sile ne opravljajo dela, če
+            je telo togo.</p>
             <table>
             <tbody>
             <tr class="odd">
-            <td>lepenje</td>
+            <td>lepenje (ob mirovanju)</td>
             <td><span class="math display">\[ F_{l, max} = k_l F_N
             \]</span></td>
             </tr>
             <tr class="even">
-            <td>trenje</td>
+            <td>trenje (ob gibanju)</td>
             <td><span class="math display">\[ F_{tr} = k_{tr} F_N
             \]</span></td>
             </tr>
@@ -210,9 +288,6 @@
             </tr>
             </tbody>
             </table>
-            <p>Težišče: <span class="math display">\[ \vec r^* =
-            \frac{\sum m_i \vec r_i}{\sum m_i} = \frac{\int \d m \vec
-            r}{\int \d m}; M = \int \d m \]</span></p>
             <p><span class="math display">\[ g(r) = g \frac{r_z^2}{r^2}
             \]</span> <span class="math display">\[ F = G \frac{m_1
             m_2}{r^2} \]</span> <span class="math display">\[
@@ -316,6 +391,12 @@
             <p><span class="math display">\[ \vec M = \vec r \times \vec
             F = m \vec \alpha r^2 = J \vec \alpha \]</span></p>
             <h2 id="Energije"><i>Energije</i></h2>
+            <div class="zakon">
+            <p><b>Zakon o ohranitvi <i>energije</i></b>: V zaprtem
+            <i>sistemu</i> se <i>energija</i> ohranja; ne more nastati
+            iz nič ali izginiti v nič, lahko pa se pretvarja iz ene
+            vrste <i>energije</i> v drugo.</p>
+            </div>
             <p><span class="math display">\[ A = \Delta W_k + \Delta W_p
             + \Delta W_{pr} + ... \]</span> <span
             class="math display">\[ A = - p \Delta V \]</span></p>
@@ -356,6 +437,8 @@
             <i>sistem</i> (<i>hiperbola</i>)</li>
             </ul>
             <h3 id="Kineticna_energija"><i>Kinetična energija</i></h3>
+            <p><i>Kinetična energija</i> je lastnost gibajočega se
+            telesa.</p>
             <div class="izpeljava">
             <p><span class="math display">\[ \Delta W_k = A = \int_{\vec
             r_1}^{\vec r_2} \vec F \d \vec r
@@ -393,11 +476,15 @@
             <p><span class="math display">\[ W_{p, g} = - \frac{G m_1
             m_2}{r_2} \]</span></p>
             <p>Za “ravno Zemljo” (<span class="math inline">\(\Delta h
-            &lt;&lt; r_Z\)</span>): <span class="math display">\[ g =
-            \frac{G M_Z}{r_Z^2} \]</span> <span class="math display">\[
-            W_{p, g} = m g h \]</span></p>
+            &lt;&lt; r_Z\)</span>) – izhodišče je po dogovoru na ničelni
+            nadmorski višini: <span class="math display">\[ g = \frac{G
+            M_Z}{r_Z^2} \]</span> <span class="math display">\[ W_{p, g}
+            = m g h \]</span> <span class="math display">\[ \Delta W_{p,
+            g} = \int_{z_0}^z m g \d z = m g (z - z_0) \]</span></p>
             <h3 id="Potencialna_proznostna_energija"><i>Potencialna</i>
             prožnostna <i>energija</i></h3>
+            <p>Izhodišče je v ravnovesni legi (<span
+            class="math inline">\(x = 0\)</span>).</p>
             <div class="izpeljava">
             <p><span class="math display">\[ \Delta W_{pr} = -A_{vzmeti}
             = - \int_{x&#39;}^x F x \d x = \int_{x&#39;}^{x} k x \d x =
@@ -406,6 +493,35 @@
             </div>
             <p><span class="math display">\[ \Delta W_{pr} = \frac{1}{2}
             k x^2 \]</span></p>
+            <h3 id="Entalpija"><i>Entalpija</i></h3>
+            <p><span class="math display">\[ H = W_n + p V \]</span>
+            <span class="math display">\[ \Delta H = \Delta W_n + p
+            \Delta V \]</span></p>
+            <h2 id="Gibalna_kolicina">Gibalna količina</h2>
+            <p>V nasprotju z <i>energijami</i> je gibalna količina
+            <i>vektor</i>.</p>
+            <span class="math display">\[ \vec G = m \vec v \]</span>
+            <span class="math display">\[ \vec F = m \vec a = m \frac{\d
+            \vec v}{\d t} = \frac{\d (m \vec v)}{\d t} = \frac{\d \vec
+            G}{\d t} \]</span>
+            <div class="izpeljava">
+            <p><span class="math display">\[ \int_{t&#39;}^{t} \vec F \d
+            t = \int_{t&#39;}^t \frac{\d \vec G}{\d t} \d t = \vec G
+            \Big|_{t&#39;}^t = \vec G - \vec G&#39; = \Delta \vec G
+            \]</span></p>
+            </div>
+            <p><span class="math display">\[ \int_{t&#39;}^{t} \vec
+            F_{zun.} \d t = \Delta \vec G = m \Delta \vec v \]</span>
+            Gibalna količina zaprtega <i>sistema</i> se ohranja (če ni
+            pretvorb <i>energij</i>), spremenijo jo lahko le zunanje
+            sile (torej se lahko spremeni le, če <i>sistem</i> ni
+            zaprt), ker se notranje sile med sabo izničijo..</p>
+            <ul>
+            <li>Neprožni trk: ohranja se gibalna količina, <i>kinetična
+            energija</i> se ne ohranja</li>
+            <li>Prožni trk: ohranjata se gobalna količina in
+            <i>kinetična energija</i></li>
+            </ul>
             <h2 id="Termodinamika"><i>Termodinamika</i></h2>
             <p><i>Temperatura</i> je <i>termodinamska</i> spremenljivka,
             toplota pa ne. Toplota je način prehajanja <i>energije</i>,
@@ -416,10 +532,30 @@
             <p><i>Kinetična</i> opredelitev <i>temperature</i>: <span
             class="math display">\[ &lt; W_{k 1} &gt; = \frac{3}{2} k_B
             T \]</span></p>
-            <p><b>Ničti zakon <i>termodinamike</i></b>: Če je
-            <i>termodinamski sistem</i> A v ravnovesju z B in B v
-            ravnovesju z C, potem je A v ravnovesju z C (prenosljivost
-            <i>termodinamskega</i> ravnovesja).</p>
+            <div class="zakon">
+            <p><b><i>Termodinamski</i> zakoni</b>:</p>
+            <ol start="0" type="1">
+            <li>Če je <i>termodinamski sistem</i> A v ravnovesju z B in
+            B v ravnovesju z C, potem je A v ravnovesju z C (<b>zakon o
+            prenosljivosti <i>termodinamskega</i> ravnovesja</b>). <span
+            class="math display">\[ A \sim B \wedge B \sim C \Rightarrow
+            A \sim C \]</span></li>
+            <li>Iz zakona o ohranitvi <i>energije</i> sledi, da je
+            sprememba <i>energije</i> sistema enaka vsoti
+            dovedene/oddane toplote in dovedenega/oddanega dela
+            (<b><i>energijski</i> zakon</b>): <span
+            class="math display">\[ \d W = \mathrm{đ} Q + \mathrm{đ} A
+            \]</span></li>
+            <li><a href="#Entropija"><i>Entropija</i></a> je pri vsaki
+            izmenjavi toplote večja od nič (<b><i>entropijski</i>
+            zakon</b>): <span class="math display">\[ \Delta S \ge \oint
+            \frac{\mathrm{đ} Q}{T} \ge 0 \]</span></li>
+            <li>Sprememba <i>entropije</i> je pri <i>absolutni</i> ničli
+            enaka nič (<b>Nernstov izrek</b>): <span
+            class="math display">\[ \Delta S (T = 0 K) = 0
+            \]</span></li>
+            </ol>
+            </div>
             <span class="math display">\[ \Delta W_n = Q_{stalna V} = m
             c_V \Delta T \]</span>
             <div class="izpeljava">
@@ -497,31 +633,16 @@
             <p><span class="math display">\[ \beta = 3 \alpha
             \]</span></p>
             <h3 id="Entropija"><i>Entropija</i></h3>
+            <p><i>Entropija</i> je <i>termodinamična</i> količina
+            neurejenosti, naključnosti, nepovratnosti. V zaprtem
+            <i>sistemu</i> se vedno povečuje.</p>
             <p><span class="math display">\[ \d S \geq \frac{\mathrm{đ}
             Q}{T} \]</span> <span class="math display">\[ \Delta S \geq
-            \int{ \frac{\d Q}{T} } \]</span></p>
-            <h2 id="Gibalna_kolicina">Gibalna količina</h2>
-            <span class="math display">\[ \vec G = m \vec v \]</span>
-            <span class="math display">\[ \vec F = m \vec a = m \frac{\d
-            \vec v}{\d t} = \frac{\d (m \vec v)}{\d t} = \frac{\d \vec
-            G}{\d t} \]</span>
-            <div class="izpeljava">
-            <p><span class="math display">\[ \int_{t&#39;}^{t} \vec F \d
-            t = \int_{t&#39;}^t \frac{\d \vec G}{\d t} \d t = \vec G
-            \Big|_{t&#39;}^t = \vec G - \vec G&#39; = \Delta \vec G
-            \]</span></p>
-            </div>
-            <p><span class="math display">\[ \int_{t&#39;}^{t} \vec F \d
-            t = \Delta \vec G \]</span></p>
-            <ul>
-            <li>Neprožni trk: ohranja se gibalna količina</li>
-            <li>Prožni trk: ohranjata se gobalna količina in
-            <i>kinetična energija</i></li>
-            </ul>
+            \int{ \frac{\mathrm{đ} Q}{T} } \]</span></p>
             <h2 id="Vrtenje">Vrtenje</h2>
             <p>Kot <span class="math inline">\(\phi\)</span> ni
-            <i>vektor</i>, je pa njegov <i>diferencial</i> <span
-            class="math inline">\(\vec{d \phi}\)</span>.</p>
+            <i>vektor</i>, je pa <i>vektor</i> njegov <i>diferencial</i>
+            <span class="math inline">\(\vec{d \phi}\)</span>.</p>
             <table>
             <colgroup>
             <col style="width: 50%" />
@@ -531,7 +652,8 @@
             <tr class="odd">
             <td>kot [rd]</td>
             <td><span class="math display">\[ \phi = \frac{l}{r}
-            \]</span></td>
+            \]</span> <span class="math display">\[ \phi = \phi_0 +
+            \omega_0 t + \frac{\alpha}{2} t^2 \]</span></td>
             </tr>
             <tr class="even">
             <td>kotna hitrost [<span
@@ -539,7 +661,8 @@
             <td><span class="math display">\[ \vec \omega = \vec \phi
             &#39;(t) = \frac{\vec {\d \phi}}{dt} \]</span> <span
             class="math display">\[ \overline \omega = \frac{\Delta
-            \phi}{\Delta t} \]</span></td>
+            \phi}{\Delta t} = \frac{2 \pi}{t_o} = 2 \pi \gamma =
+            \omega_0 + \alpha t \]</span></td>
             </tr>
             <tr class="odd">
             <td>kotni pospešek [<span
@@ -556,11 +679,6 @@
             </tr>
             </tbody>
             </table>
-            <p>Kot: <span class="math display">\[ \phi = \phi_0 +
-            \omega_0 t + \frac{\alpha}{2} t^2 \]</span></p>
-            <p>Kotna hitrost: <span class="math display">\[ \omega =
-            \frac{2 \pi}{t_o} = 2 \pi \gamma = \omega_0 + \alpha t
-            \]</span></p>
             <p>Sredobežni (<i>centripetalni</i>) pospešek, ki sploh
             povzroča kroženje: <span class="math display">\[ a_r =
             \omega v = \frac{v_0^2}{r} = - \omega^2 r \]</span></p>
@@ -573,7 +691,7 @@
             <p>Coriolisova sila: <span class="math display">\[ \vec
             F_{Coriolis} = -2 m (\vec{\omega} \times \vec{v})
             \]</span></p>
-            <div class="line-block"></div>
+            <div class="zakon">
             <p>Keplerjevi zakoni:</p>
             <ol type="1">
             <li>Tiri planetov so <i>elipse</i>, Sonce je v gorišču.</li>
@@ -581,6 +699,7 @@
             <li><span class="math inline">\(\frac{r^3}{t_0^2}\)</span> =
             stalno</li>
             </ol>
+            </div>
             Vztrajnostni <i>moment</i> [<span class="math inline">\(kg
             m^2\)</span>] je porazdelitev <i>mase</i> glede na os
             vrtenja:
@@ -671,7 +790,8 @@
             <p>Vzvoj (<i>torzija</i>; npr. zvijanje palice okoli njene
             osi): <span class="math display">\[ M = - D \phi \]</span>
             <span class="math display">\[ D = \frac{1}{2} \pi G
-            \frac{R_0^4}{l} [\frac{N m^4}{m^2 m} = N m] \]</span></p>
+            \frac{R_0^4}{l} \left[ \frac{N m^4}{m^2 m} = N m \right]
+            \]</span></p>
             <h2 id="Nihanje">Nihanje</h2>
             <p><span class="math display">\[ \gamma = \frac{N}{\Delta t}
             = \frac{1}{t_0} \]</span> <span class="math display">\[
@@ -794,9 +914,11 @@
             <p><b><i>Električni</i> pretok</b> [As]: <span
             class="math display">\[ \phi_e = \epsilon_0 \int{ \vec{E}
             \vec{\d S}} \]</span></p>
+            <div class="zakon">
             <p><b>Gaussov zakon</b>: Če preštejemo vse silnice, dobimo
             objeti naboj: <span class="math display">\[ \epsilon_0
             \oint{ \vec{E} \vec{\d S} } = e \]</span></p>
+            </div>
             <ul>
             <li>Primer za kroglo, v sredini katere je naboj: <span
             class="math display">\[ \epsilon_0 \oint{ \vec{E} \vec{\d S}
@@ -893,14 +1015,16 @@
             svetlobno hitrostjo. Poleg hitrosti pa imajo
             <i>elektroni</i> še neko <i>temperaturo</i>, kar doprinese k
             hitrostni širjenja motnje.</p>
+            <div class="zakoN">
             <p><b>Ohmov zakon</b> [<span
             class="math inline">\(\Omega\)</span>]: <span
-            class="math display">\[ U = R I \]</span> <span
-            class="math display">\[ R = \zeta \frac{l}{S} \]</span>
-            <span class="math display">\[ j = \frac{\d I}{\d S};
-            \frac{U}{l} = E \implies \frac{\vec E}{\zeta} = \sigma \vec
-            E \]</span> <span class="math inline">\(\zeta\)</span> je
-            <i>specifični</i> upor/upornost [<span
+            class="math display">\[ U = R I \]</span></p>
+            </div>
+            <p><span class="math display">\[ R = \zeta \frac{l}{S}
+            \]</span> <span class="math display">\[ j = \frac{\d I}{\d
+            S}; \frac{U}{l} = E \implies \frac{\vec E}{\zeta} = \sigma
+            \vec E \]</span> <span class="math inline">\(\zeta\)</span>
+            je <i>specifični</i> upor/upornost [<span
             class="math inline">\(\Omega m\)</span>]</p>
             <h4 id="Elektricni_krogi"><i>Električni</i> krogi</h4>
             <p>Tok po celotnem <i>el.</i> krogu je stalen, ker se
@@ -912,6 +1036,7 @@
             class="math inline">\(U = - I R\)</span>.</p>
             <p><span class="math display">\[ P = \frac{\d A_e}{\d t} =
             \frac{U \d e}{\d t} = U I = - I^2 R \]</span></p>
+            <div class="zakon">
             <p><b>Kirchhoffova zakona</b>:</p>
             <ol type="1">
             <li>Vsota tokov v vozlišču <i>el.</i> toka je enaka nič, oz.
@@ -922,6 +1047,7 @@
             gradnikih kroga enaka nič <span class="math display">\[
             \sum_{krog} U_i = 0 \]</span></li>
             </ol>
+            </div>
             <h3 id="Kondenzator"><i>Kondenzator</i></h3>
             <p><i>Kondenzator</i> deluje kot hranilnik naboja, oz. v
             tokokrogu kot “prožnost”</p>
@@ -1026,6 +1152,7 @@
             sta enaki <span class="math display">\[ F_m = F_e \implies e
             v B = e E \]</span> <span class="math display">\[ U_H = E d
             = B d v \]</span></p>
+            <div class="zakon">
             <p><b>Biot-Savartov zakon</b>: polje, ki ga vodnik (zelo
             dolg, <span class="math inline">\(l \gg r\)</span>) povzroča
             v točki, oddaljeni <span class="math inline">\(\vec
@@ -1034,59 +1161,20 @@
             r}{r^3} \right)\]</span> <span class="math display">\[ \vec
             B(0) = \frac{\mu_0}{4 \pi} \int{ \frac{\vec r \times \vec{I
             \d l}}{r^3} } \]</span></p>
+            </div>
+            <div class="zakon">
             <p><b>Amperov zakon</b>: zaobjeti tok (npr. če bi šli po
             <i>magnetni</i> silnici okoli vodnika, dobimo tok v tem
             vodniku) <span class="math display">\[ \oint \vec B \vec{\d
-            S} = \mu_0 I \]</span> Amperov zakon za tuljavo (kjer
-            gledamo <span class="math inline">\(l&#39;\)</span> in <span
+            S} = \mu_0 I \]</span></p>
+            </div>
+            <p>Amperov zakon za tuljavo (kjer gledamo <span
+            class="math inline">\(l&#39;\)</span> in <span
             class="math inline">\(N&#39;\)</span> na neko enoto: <span
             class="math display">\[ \oint \vec B \vec{\d s} = B l&#39; =
             \mu_0 N&#39; I \]</span> <span class="math display">\[ B =
-            \frac{N&#39; \mu_0 I}{l&#39;} = \frac{N \mu_0 I}{l}
-            \]</span></p>
-            <h4 id="Indukcija"><i>Indukcija</i></h4>
-            <p>Vodnik, ki ga vlečemo pravokotno na <i>magnetno</i>
-            polje: <span class="math display">\[ U_i = U_H = B l v
-            \]</span> <span class="math display">\[ F_{zaviralna} = F_m
-            = B l I_i = \frac{B^2 l^2 v}{R} \]</span></p>
-            <p>Zanka, ki kroži v <i>magnetnem</i> polju, z osjo,
-            pravokotno na silnice <i>mag.</i> polja (v zanki se
-            <i>inducira</i> izmenična napetost): <span
-            class="math display">\[ \vec v = \vec \omega \vec r \implies
-            U_i = 2 U_H = 2 \omega r B a = B S \omega \cos(\phi)
-            \]</span> <span class="math display">\[ \vec v \times \vec B
-            = \omega r B \cos(\phi) \]</span></p>
-            <p><b>Faradayev /<i>indukcijski</i> zakon</b>:
-            <i>inducirana</i> napetost v zaključeni zanki je premo
-            sorazmerna hitrosti spreminjanja <i>magnetnega</i> pretoka
-            skozi površino te zanke (kjer je <span
-            class="math inline">\(\phi_m\)</span> <i>mag.</i> pretok,
-            <span class="math inline">\(\vec B\)</span> pa gostota
-            <i>mag.</i> polja): <span class="math display">\[ U_i =
-            \frac{\d \phi_m}{\d t}; \phi_m = \int \vec B \vec{\d S}
-            \]</span> <span class="math inline">\(\vec H\)</span>:
-            jakost <i>Mag.</i> polja, ki je neodvisna od snovi v
-            prostoru <span class="math display">\[ \oint \vec B \vec{\d
-            S} = \mu_0 I \implies \oint \vec H \vec{\d S} = I \]</span>
-            <span class="math display">\[ \oint \vec E_i \cdot \d \vec s
-            = - \int \frac{\dd B}{\dd t} \d \vec S \]</span></p>
-            <h4 id="Tuljava">Tuljava</h4>
-            <p>Tuljava v tokogrogu deluje kot “vztrajnost”, saj se upira
-            spremembam.</p>
-            <p>L: <i>induktivnost</i> tuljave <span
-            class="math display">\[ L = N^2 \frac{\mu_0 S}{l} \]</span>
-            <span class="math display">\[ U_i = - \frac{\d \phi_m}{\d t}
-            = - L \frac{\d I}{\d t} \]</span></p>
-            <p><span class="math display">\[ \tau = \frac{L}{R}
-            \]</span> “Polnjenje” tuljave <span class="math display">\[
-            I = I_0 (1 - e^{- t/\tau}) \]</span> “Praznenje” tuljave:
-            <span class="math display">\[ U_L + U_R = 0 \implies - L
-            \frac{\d I}{\d t} - I R = 0 \implies L \frac{\d I}{\d t} = -
-            I R \]</span> <span class="math display">\[ I = I_0 e^{-
-            t/\tau} \]</span></p>
-            <p><i>Energija</i> tuljave: <span class="math display">\[ \d
-            A = U \d e = U I \d t = P \d t = L \frac{\d I}{\d t} I \d t
-            \implies A = L \int_0^I I \d I \]</span> <span
+            \frac{N&#39; \mu_0 I}{l&#39;}  t = L \frac{\d I}{\d t} I \d
+            t \implies A = L \int_0^I I \d I \]</span> <span
             class="math display">\[ W_m = L \frac{I^2}{2} \]</span></p>
             <p>Tuljava v tuljavi: <span class="math display">\[ L_{2 1}
             = \frac{N_2 B_1 S_2}{I_1} = \frac{\mu_0 N_1^2 I_1 N_2
@@ -1250,6 +1338,248 @@
             manjši od negotovosti.</p>
             <h2 id="Velicine_in_enote">Veličine in enote</h2>
             <h3 id="Osnovne_enote">Osnovne enote</h3>
+            </div>
+            <table>
+            <thead>
+            <tr class="header">
+            <th>veličina</th>
+            <th>oznaka veličine</th>
+            <th>enota</th>
+            <th>oznaka enote</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="odd">
+            <td>dolžina, (odmik)</td>
+            <td>l, d, (x)</td>
+            <td>meter</td>
+            <td>m</td>
+            </tr>
+            <tr class="even">
+            <td>masa</td>
+            <td>m</td>
+            <td>kilogram</td>
+            <td>kg</td>
+            </tr>
+            <tr class="odd">
+            <td>čas</td>
+            <td>t</td>
+            <td>sekunda</td>
+            <td>s</td>
+            </tr>
+            </tbody>
+            </table>
+            <p>= $$</p>
+            <h4 id="Indukcija"><i>Indukcija</i></h4>
+            <p>Vodnik, ki ga vlečemo pravokotno na <i>magnetno</i>
+            polje: <span class="math display">\[ U_i = U_H = B l v
+            \]</span> <span class="math display">\[ F_{zaviralna} = F_m
+            = B l I_i = \frac{B^2 l^2 v}{R} \]</span></p>
+            <p>Zanka, ki kroži v <i>magnetnem</i> polju, z osjo,
+            pravokotno na silnice <i>mag.</i> polja (v zanki se
+            <i>inducira</i> izmenična napetost): <span
+            class="math display">\[ \vec v = \vec \omega \vec r \implies
+            U_i = 2 U_H = 2 \omega r B a = B S \omega \cos(\phi)
+            \]</span> <span class="math display">\[ \vec v \times \vec B
+            = \omega r B \cos(\phi) \]</span></p>
+            <div class="zakon">
+            <p><b>Faradayev /<i>indukcijski</i> zakon</b>:
+            <i>inducirana</i> napetost v zaključeni zanki je premo
+            sorazmerna hitrosti spreminjanja <i>magnetnega</i> pretoka
+            skozi površino te zanke (kjer je <span
+            class="math inline">\(\phi_m\)</span> <i>mag.</i> pretok,
+            <span class="math inline">\(\vec B\)</span> pa gostota
+            <i>mag.</i> polja): <span class="math display">\[ U_i =
+            \frac{\d \phi_m}{\d t}; \phi_m = \int \vec B \vec{\d S}
+            \]</span></p>
+            </div>
+            <p><span class="math inline">\(\vec H\)</span>: jakost
+            <i>Mag.</i> polja, ki je neodvisna od snovi v prostoru <span
+            class="math display">\[ \oint \vec B \vec{\d S} = \mu_0 I
+            \implies \oint \vec H \vec{\d S} = I \]</span> <span
+            class="math display">\[ \oint \vec E_i \cdot \d \vec s = -
+            \int \frac{\partial B}{\partial t} \d \vec S \]</span></p>
+            <h4 id="Tuljava">Tuljava</h4>
+            <p>Tuljava v tokogrogu deluje kot “vztrajnost”, saj se upira
+            spremembam.</p>
+            <p>L: <i>induktivnost</i> tuljave <span
+            class="math display">\[ L = N^2 \frac{\mu_0 S}{l} \]</span>
+            <span class="math display">\[ U_i = - \frac{\d \phi_m}{\d t}
+            = - L \frac{\d I}{\d t} \]</span></p>
+            <p><span class="math display">\[ \tau = \frac{L}{R}
+            \]</span> “Polnjenje” tuljave <span class="math display">\[
+            I = I_0 (1 - e^{- t/\tau}) \]</span> “Praznenje” tuljave:
+            <span class="math display">\[ U_L + U_R = 0 \implies - L
+            \frac{\d I}{\d t} - I R = 0 \implies L \frac{\d I}{\d t} = -
+            I R \]</span> <span class="math display">\[ I = I_0 e^{-
+            t/\tau} \]</span></p>
+            <p><i>Energija</i> tuljave: <span class="math display">\[ \d
+            A = U \d e = U I \d t = P \d t = L \frac{\d I}{\d t} I \d t
+            \implies A = L \int_0^I I \d I \]</span> <span
+            class="math display">\[ W_m = L \frac{I^2}{2} \]</span></p>
+            <p>Tuljava v tuljavi: <span class="math display">\[ L_{2 1}
+            = \frac{N_2 B_1 S_2}{I_1} = \frac{\mu_0 N_1^2 I_1 N_2
+            S_2}{l_1 I_1} = \frac{\mu_0 N_1 N_2 S_2}{l_1} \]</span></p>
+            <h4 id="Snov_v_magnetnem_polju-1">Snov v <i>magnetnem</i>
+            polju</h4>
+            <p><span class="math inline">\(\mu\)</span>:
+            <i>permeabilnost</i>; večja kot je, bolj snov poveča
+            <i>mag.</i> polje, ker so v snovi <i>mag. dipoli</i> <span
+            class="math display">\[ \mu_0 \rightarrow \mu \mu_0
+            \]</span> <i>Magnetni dipol</i>: <span
+            class="math display">\[\vec p_m = I \vec S = e_0 \upsilon
+            \pi r^2 \frac{v}{2 \pi r} = \frac{e_0 r v}{2} = \frac{e_0
+            \Gamma}{2 m_e} \]</span></p>
+            <h3 id="Izmenicni_tok-1">Izmenični tok</h3>
+            <p><span class="math display">\[U = U_0 \sin(\omega t +
+            \delta) \]</span></p>
+            <p><i>Kondenzator</i>: <span class="math display">\[ U + U_C
+            = 0 \implies U_0 \sin(\omega t) = \frac{e}{C} /\frac{\d}{\d
+            t} \implies C \omega U_0 \cos(\omega t) = I \]</span> <span
+            class="math display">\[ &quot;R_C&quot; = Z_C =
+            \frac{U_0}{I_0} = \frac{1}{\omega C} \]</span></p>
+            <p>Tuljava: <span class="math display">\[ U + U_L = 0
+            \implies U_= \sin(\omega t) = L \frac{\d I}{\d t} \implies -
+            \frac{1}{\omega L} U_0 \cos(\omega t) = A I\]</span> <span
+            class="math display">\[ &quot;R_L&quot; = Z_L = \omega L
+            \]</span></p>
+            <p><span class="math inline">\(U_C\)</span> in <span
+            class="math inline">\(U_L\)</span> v tokokrogu z izmeničnim
+            tokom nihata v <i>protifazi</i>.</p>
+            <h3 id="Elektricni_nihajni_krog-1"><i>Električni</i> nihajni
+            krog</h3>
+            <p><span class="math display">\[ U = U_0 \sin(\omega t)
+            \]</span> <span class="math display">\[ I = I_0 \sin(\omega
+            t + \delta) \]</span> <span class="math display">\[ \omega^2
+            = \frac{1}{L C} \]</span></p>
+            <p>Primerjava vzmetnega nihala v <i>mehaniki</i> in
+            <i>el.</i> nihajnega kroga:</p>
+            <table>
+            <thead>
+            <tr class="header">
+            <th>vzmetno</th>
+            <th><i>el.</i> nih. krog</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="odd">
+            <td><span class="math display">\[ k \]</span></td>
+            <td><span class="math display">\[ \frac{1}{C} \]</span></td>
+            </tr>
+            <tr class="even">
+            <td><span class="math display">\[ m \]</span></td>
+            <td><span class="math display">\[ L \]</span></td>
+            </tr>
+            <tr class="odd">
+            <td><span class="math display">\[ F \]</span></td>
+            <td><span class="math display">\[ U \]</span></td>
+            </tr>
+            <tr class="even">
+            <td><span class="math display">\[ W_k \]</span></td>
+            <td><span class="math display">\[ W_m (L) \]</span></td>
+            </tr>
+            <tr class="odd">
+            <td><span class="math display">\[ W_{pr.} \]</span></td>
+            <td><span class="math display">\[ W_e (C) \]</span></td>
+            </tr>
+            <tr class="even">
+            <td><span class="math display">\[ x \]</span></td>
+            <td><span class="math display">\[ l \]</span></td>
+            </tr>
+            <tr class="odd">
+            <td><span class="math display">\[ v \]</span></td>
+            <td><span class="math display">\[ I \]</span></td>
+            </tr>
+            </tbody>
+            </table>
+            <p><span class="math display">\[ P = U_0 \sin(\omega t +
+            \delta) I_0 \sin(\omega t) = U_0 I_0 \left[ \sin^2(\omega t)
+            \cos(\delta) + \cos(\omega t) \sin(\omega t) \sin(\delta)
+            \right] = U_0 I_0 \left[ \sin^2(\omega t) \cos(\delta) +
+            \frac{1}{2} \sin^2(2 \omega t) \sin(\delta) \right]
+            \]</span> <span class="math display">\[ \overline{P} =
+            \frac{1}{2} U_0 I_0 \cos(\delta) \]</span> <span
+            class="math display">\[ P = U_{ef.} I_{ef.} \]</span> <span
+            class="math display">\[ I_{ef.} = \frac{I_0}{\sqrt{2}}
+            \implies U_{ef.} = R I_{ef.} = \frac{U_0}{\sqrt{2}}
+            \]</span></p>
+            <p><i>El.</i> nihajni krog v <i>kompleksnem</i> (glej tudi
+            <a href="/knjiznica/racunstvo#Skupna_stevila">Skupna
+            števila</a>): <span class="math display">\[ \phi = \omega t
+            \]</span> <span class="math display">\[ U = U_0
+            e^{\mathrm{i} \phi} \]</span> <span class="math display">\[
+            I = I_0 e^{\mathrm{i} (\phi + \delta)} \]</span> <span
+            class="math display">\[ Z_C = \frac{1}{\mathrm{i} \omega C}
+            \]</span> <span class="math display">\[ Z_L = \mathrm{i}
+            \omega L \]</span> <span class="math display">\[ |Z|
+            e^{\mathrm{i} \delta} = R + \mathrm{i} \omega L +
+            \frac{1}{\mathrm{i} \omega C} \]</span></p>
+            <h2 id="Fizika_delcev-1"><i>Fizika</i> delcev</h2>
+            <p><span class="math display">\[ W_f = \mathrm{h} \nu
+            \]</span> <span class="math display">\[ W_f = A_i + W_k
+            \]</span> <span class="math display">\[ W_f = \Delta W_n
+            \]</span> <span class="math display">\[ \Delta W_v = \Delta
+            m c^2 \]</span></p>
+            <p><span class="math display">\[ N = N_0 2^{-
+            \frac{t}{t_{1/2}}} = N_0 e^{- \lambda t} \]</span> <span
+            class="math display">\[ \lambda = \frac{\ln 2}{t_{1/2}}
+            \]</span> <span class="math display">\[ A = N \lambda
+            \]</span></p>
+            <h3 id="Jedrski_razpadi-1">Jedrski razpadi</h3>
+            <p>Razpad alfa; delec razpada je <span
+            class="math inline">\(\alpha = ^4_2He_2^{2+}\)</span>: <span
+            class="math display">\[ ^{A}_{Z}X_N \rightarrow
+            ^{A-4}_{Z-2}Y_{N-2} + ^4_2\mathrm{He}_2 \]</span></p>
+            <p>Razpad beta minus; delec razpada je <span
+            class="math inline">\(\beta^{-} = e_0^{-}\)</span>: <span
+            class="math display">\[ ^A_ZX_N \rightarrow ^{A}_{Z+1}Y +
+            e_0^{-} + \bar{\nu}_e \]</span> <span
+            class="math display">\[ n \rightarrow p + e_0^{-} +
+            \bar{\nu}_e \]</span></p>
+            <p>Razpad beta plus; delec razpada je <span
+            class="math inline">\(\beta^{+} = e_0^{+}\)</span>: <span
+            class="math display">\[ ^A_ZX_N \rightarrow
+            ^{A}_{Z-1}Y_{N+1} + e_0^{+} + \nu_e \]</span> <span
+            class="math display">\[ p \rightarrow n + e_0^{+} + \nu_e
+            \]</span></p>
+            <p>Razpad gama; delec razpada je foton <span
+            class="math inline">\(\nu\)</span>: <span
+            class="math display">\[ X^{+} \rightarrow X + \nu
+            \]</span></p>
+            <h2 id="Racunanje_z_negotovostmi-1">Računanje z
+            negotovostmi</h2>
+            <p>Meritve brez negotovosti ne obstajajo (posebno če so
+            zvezne narave), zato so merski podatki brez negotovosti
+            nepopolni, torej precej neuporabni ali vsaj nezaželjeni.
+            Meritve pogosto nastopajo v obliki t.i. <i>normalne</i>
+            porazdelitve, ki jo opišemo z Gaussovo krivuljo, ki ima en
+            vrh nad izhodiščem (kjer je naše povprečje/večina meritev)
+            in se na obeh straneh spušča vedno bližje nič, torej dlje,
+            kot smo od izhodišča, večje kot je odstopanje meritve,
+            manjša je verjetnost za takšno meritev; nikoli pa ni nič. Po
+            dogovoru za negotovost vzamemo odsek okoli izhodišča, v
+            katerega pade 2/3 vseh meritev.</p>
+            <p>Negotovosti so povezane/odvisne (<i>korelirane</i>) ali
+            nepovezane/neodvisne.</p>
+            <p><b>Odvisne negotovosti</b> seštevamo</p>
+            <ul>
+            <li>seštevanje/odštevanje količin: seštevanje
+            <i>absolutnih</i> napak</li>
+            <li>množenje/deljenje količin: seštevanje <i>relativnih</i>
+            napak</li>
+            </ul>
+            <p>Pri <b>neodvisnih negotovostih</b> seštevamo njihove
+            kvadrate.</p>
+            <p>Enačbe lahko močno poenostavimo z upoštevanjem
+            negotovosti in uporabo Taylorjeve vrste: <span
+            class="math display">\[ f(x) = f(a) + \frac{f&#39;(a)}{1!} x
+            + \frac{f&#39;&#39;(a)}{2!} x^2 +
+            \frac{f&#39;&#39;&#39;(a)}{3!} x^3 + ... \]</span> V enačbi
+            lahko zanemarimo člene od tistega naprej, ki je zadosti
+            manjši od negotovosti.</p>
+            <h2 id="Velicine_in_enote-1">Veličine in enote</h2>
+            <h3 id="Osnovne_enote-1">Osnovne enote</h3>
+            </div>
             <table>
             <caption>Preglednica osnovnih enot</caption>
             <thead>
@@ -1305,7 +1635,9 @@
             </tr>
             </tbody>
             </table>
-            <h3 id="Izpeljane_enote">Izpeljane enote</h3>
+            <section id="Izpeljane_enote" class="content">
+            <h3>Izpeljane enote</h3>
+            </section>
             <table>
             <caption>Preglednica dopolnilnih enot</caption>
             <thead>
@@ -1614,120 +1946,146 @@
             </tr>
             </tbody>
             </table>
-            <h2 id="Stalnice">Stalnice</h2>
+            <section id="Stalnice" class="content">
+            <h2>Stalnice</h2>
+            </section>
             <table>
             <caption>Preglednica fizikalnih stalnic</caption>
             <colgroup>
-            <col style="width: 33%" />
-            <col style="width: 33%" />
-            <col style="width: 33%" />
+            <col style="width: 25%" />
+            <col style="width: 25%" />
+            <col style="width: 25%" />
+            <col style="width: 25%" />
             </colgroup>
             <thead>
             <tr class="header">
             <th>stalnica</th>
             <th>oznaka</th>
             <th>vrednost</th>
+            <th>negotovost</th>
             </tr>
             </thead>
             <tbody>
             <tr class="odd">
-            <td>težnostna</td>
-            <td>G</td>
-            <td><span class="math display">\[ 6.67 \cdot 10^{-11}
-            \frac{N m^2}{kg^2} \]</span></td>
-            </tr>
-            <tr class="even">
-            <td>težni pospešek na Zemlji</td>
-            <td>g</td>
-            <td><span class="math display">\[ 9.81 \frac{m}{s^2}
-            \]</span></td>
-            </tr>
-            <tr class="odd">
             <td>hitrost svetlobe v brezzračnem prostoru</td>
             <td>c</td>
-            <td><span class="math display">\[ 299792458 \frac{m}{s}
+            <td><span class="math display">\[ 299.792.458 \frac{m}{s}
             \]</span></td>
-            </tr>
-            <tr class="even">
-            <td>osnovni naboj</td>
-            <td><span class="math inline">\(e_0\)</span></td>
-            <td><span class="math display">\[ 1.60 \cdot 10^{-19} A s
-            \]</span></td>
-            </tr>
-            <tr class="odd">
-            <td>Avogadrovo število</td>
-            <td><span class="math inline">\(N_A\)</span></td>
-            <td><span class="math display">\[ 6.02214076 \cdot 10^{26}
-            \frac{1}{kmol} \]</span></td>
-            </tr>
-            <tr class="even">
-            <td>splošna plinska</td>
-            <td>R</td>
-            <td><span class="math display">\[ 8310 \frac{J}{kmol\cdot K}
-            = 8.310 \frac{kPa \cdot l}{mol \cdot K} \]</span></td>
-            </tr>
-            <tr class="odd">
-            <td>električna (<i>influenčna</i>)</td>
-            <td><span class="math inline">\(ε_0\)</span></td>
-            <td><span class="math display">\[ 8.85 \cdot 10^{-12}
-            \frac{A s}{V m} \]</span></td>
-            </tr>
-            <tr class="even">
-            <td>magnetna (<i>indukcijska</i>)</td>
-            <td><span class="math inline">\(μ_0\)</span></td>
-            <td><span class="math display">\[ 4 \pi \cdot 10^{-7}
-            \frac{V s}{A m} \]</span></td>
-            </tr>
-            <tr class="odd">
-            <td>Boltzmannova</td>
-            <td><span class="math inline">\(k_{\mathrm{B}}\)</span></td>
-            <td><span class="math display">\[ 1.38 \cdot 10^{-23}
-            \frac{J}{K} \]</span></td>
+            <td></td>
             </tr>
             <tr class="even">
             <td>Planckova</td>
             <td>h</td>
-            <td><span class="math display">\[ 6.63 \cdot 10^{-34} J s =
-            4.14 \cdot 10^{-15} eV s \]</span></td>
+            <td><span class="math display">\[ 6,626.070.15 \cdot
+            10^{-34} J s = 4,14 \cdot 10^{-15} eV s \]</span></td>
+            <td></td>
+            </tr>
+            <tr class="odd">
+            <td>težnostna</td>
+            <td>G</td>
+            <td><span class="math display">\[ 6,674.30 \cdot 10^{-11}
+            \frac{N m^2}{kg^2} \]</span></td>
+            <td><span class="math display">\[ 1 \pm 1,2 \cdot 10^{-4}
+            \]</span></td>
+            </tr>
+            <tr class="even">
+            <td>težni pospešek na Zemlji</td>
+            <td>g</td>
+            <td><span class="math display">\[ 9,81 \frac{m}{s^2}
+            \]</span></td>
+            <td></td>
+            </tr>
+            <tr class="odd">
+            <td>osnovni naboj</td>
+            <td><span class="math inline">\(e_0\)</span></td>
+            <td><span class="math display">\[ 1,602.176.634 \cdot
+            10^{-19} A s \]</span></td>
+            <td></td>
+            </tr>
+            <tr class="even">
+            <td>Avogadrovo število</td>
+            <td><span class="math inline">\(N_A\)</span></td>
+            <td><span class="math display">\[ 6,022.140.76 \cdot 10^{23}
+            \frac{1}{mol} \]</span></td>
+            <td></td>
+            </tr>
+            <tr class="odd">
+            <td>splošna plinska</td>
+            <td>R</td>
+            <td><span class="math display">\[ 8,314.462.618
+            \frac{J}{mol\cdot K} = 8,310 \frac{kPa \cdot l}{mol \cdot K}
+            \]</span></td>
+            <td></td>
+            </tr>
+            <tr class="even">
+            <td>električna (<i>influenčna</i>)</td>
+            <td><span class="math inline">\(ε_0\)</span></td>
+            <td><span class="math display">\[ 8,85 \cdot 10^{-12}
+            \frac{A s}{V m} \]</span></td>
+            <td></td>
+            </tr>
+            <tr class="odd">
+            <td>magnetna (<i>indukcijska</i>)</td>
+            <td><span class="math inline">\(μ_0\)</span></td>
+            <td><span class="math display">\[ 4 \pi \cdot 10^{-7}
+            \frac{V s}{A m} \]</span></td>
+            <td></td>
+            </tr>
+            <tr class="even">
+            <td>Boltzmannova</td>
+            <td><span class="math inline">\(k_{\mathrm{B}}\)</span></td>
+            <td><span class="math display">\[ 1,380.649 \cdot 10^{-23}
+            \frac{J}{K} \]</span></td>
+            <td></td>
             </tr>
             <tr class="odd">
             <td>Stefanova</td>
             <td>ο</td>
-            <td><span class="math display">\[ 5.67 \cdot 10^{-8}
-            \frac{W}{m^2 K^4} \]</span></td>
+            <td><span class="math display">\[ 5,670.374.419 \cdot
+            10^{-8} \frac{W}{m^2 K^4} \]</span></td>
+            <td></td>
             </tr>
             <tr class="even">
             <td>poenotena atomska masna enota</td>
             <td><span class="math inline">\(m_u = 1 u\)</span></td>
-            <td><span class="math display">\[ 1.66054 \cdot 10^{-27} kg
-            = 931.494 \frac{Me V}{c^2} \]</span></td>
+            <td><span class="math display">\[ 1,660.539.068.92 \cdot
+            10^{-27} kg = 931,494 \frac{Me V}{c^2} \]</span></td>
+            <td></td>
             </tr>
             <tr class="odd">
             <td>lastna energija atomske enote mase</td>
             <td><span class="math inline">\(m_u c^2\)</span></td>
-            <td><span class="math display">\[ 931.494 Me V
+            <td><span class="math display">\[ 931,494 Me V
             \]</span></td>
+            <td></td>
             </tr>
             <tr class="even">
             <td>masa elektrona</td>
             <td><span class="math inline">\(m_e\)</span></td>
-            <td><span class="math display">\[ 9.109 \cdot 10^{-31} kg =
-            \frac {1 u}{1823} = 0.5110 \frac{Me V}{c^2} \]</span></td>
+            <td><span class="math display">\[ 9,109.383.713.9 \cdot
+            10^{-31} kg = \frac {1 u}{1823} = 0,5110 \frac{Me V}{c^2}
+            \]</span></td>
+            <td></td>
             </tr>
             <tr class="odd">
             <td>masa protona</td>
             <td><span class="math inline">\(m_p\)</span></td>
-            <td><span class="math display">\[ 1.67262 \cdot 10^{-27} kg
-            = 1.00728 u = 938.272 \frac{Me V}{c^2} \]</span></td>
+            <td><span class="math display">\[ 1,672.621.925.95 \cdot
+            10^{-27} kg = 1,00728 u = 938,272 \frac{Me V}{c^2}
+            \]</span></td>
+            <td></td>
             </tr>
             <tr class="even">
             <td>masa nevtrona</td>
             <td><span class="math inline">\(m_n\)</span></td>
-            <td><span class="math display">\[ 1.67493 \cdot 10^{-27} kg
-            = 1.00866 u = 939.566 \frac{Me V}{c^2} \]</span></td>
+            <td><span class="math display">\[ 1,67493 \cdot 10^{-27} kg
+            = 1,00866 u = 939,566 \frac{Me V}{c^2} \]</span></td>
+            <td></td>
             </tr>
             </tbody>
             </table>
+            <div class="content">
+
             <hr />
             <h2 id="Zunanje_povezave_in_viri">Zunanje povezave in
             viri</h2>
@@ -1737,6 +2095,10 @@
             <li><a
             href="https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507">The
             International System of Units (SI; 2019)</a></li>
+            <li><a
+            href="https://www.nist.gov/programs-projects/codata-values-fundamental-physical-constants">NIST
+            – CODATA values of the fundamental physical
+            constants</a></li>
             </ul>
         </div> 
     </main>
