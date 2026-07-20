@@ -36,7 +36,7 @@
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/naravoslovje/">naravoslovje</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-07-08">2026-07-08</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-07-09">2026-07-09</time></p>
     </header>
     <nav>
         <ul>
@@ -82,7 +82,11 @@
         <li><a href="#Entropija"
         id="toc-Entropija"><i>Entropija</i></a></li>
         </ul></li>
-        <li><a href="#Vrtenje" id="toc-Vrtenje">Vrtenje</a></li>
+        <li><a href="#Vrtenje" id="toc-Vrtenje">Vrtenje</a>
+        <ul>
+        <li><a href="#Ubezne_hitrosti" id="toc-Ubezne_hitrosti">Ubežne
+        hitrosti</a></li>
+        </ul></li>
         <li><a href="#Ravnovesje"
         id="toc-Ravnovesje">Ravnovesje</a></li>
         <li><a href="#Deformacije"
@@ -460,10 +464,12 @@
             težnostna <i>energija</i></h3>
             <p><i>Potencialna energija</i> ima naravno izhodišče (<span
             class="math inline">\(W_{p, g} = 0\)</span>) neskončno daleč
-            stran, kjer gre teža proti nič (<span
-            class="math inline">\(r_1 \rightarrow \infty\)</span>):</p>
+            stran od izvora težnosti, kjer gre teža proti nič (<span
+            class="math inline">\(r_1 \rightarrow \infty\)</span>), in
+            je tem bolj <i>negativna</i>, bližje, kot smo izvoru
+            težnosti:</p>
             <span class="math display">\[ \vec F_g = -G \frac{m_1
-            m_2}{r^2} \frac{r_{1,2}}{r} \]</span>
+            m_2}{r^2} \frac{\vec r_{1,2}}{r} \]</span>
             <div class="izpeljava">
             <p><span class="math display">\[ W_{p, g} = - A_g
                 = - \int_{\vec r_1}^{\vec r_2} \vec F_g \cdot d\vec{r}
@@ -481,6 +487,12 @@
             M_Z}{r_Z^2} \]</span> <span class="math display">\[ W_{p, g}
             = m g h \]</span> <span class="math display">\[ \Delta W_{p,
             g} = \int_{z_0}^z m g \d z = m g (z - z_0) \]</span></p>
+            <p>Za Sončev <i>sistem</i> velja: <span
+            class="math display">\[ W_k + W_p = \mathrm{stalnica}
+            \]</span> kjer je <span class="math inline">\(W_k\)</span>
+            vedno <i>pozitivna</i>, <span
+            class="math inline">\(W_p\)</span> pa vedno
+            <i>negativna</i>.</p>
             <h3 id="Potencialna_proznostna_energija"><i>Potencialna</i>
             prožnostna <i>energija</i></h3>
             <p>Izhodišče je v ravnovesni legi (<span
@@ -739,6 +751,41 @@
             \vec r_T \times \vec v_T \]</span> <span
             class="math display">\[ \sum \vec r^* \times \vec F_{zun} =
             \vec r^* \times \sum \vec F_{zun} \]</span></p>
+            <h3 id="Ubezne_hitrosti">Ubežne hitrosti</h3>
+            <p>(<i>kozmične</i> hitrosti)</p>
+            <b>1. ubežna hitrost</b> <span
+            class="math inline">\(v_I\)</span>: kako hitro bi se morala
+            Zemlja vrteti, da bi sredobežni pospešek premagal težnost
+            <div class="izpeljava">
+            <p><span class="math display">\[ F_c = F_g \\
+                \implies \frac{m v^2}{R_Z} = \frac{K m M_Z}{R_Z^2} = m g
+            \\
+                \implies v_{K1} = \sqrt{R_Z g} = 8 \frac{km}{s}
+            \]</span></p>
+            </div>
+            <b>2. ubežna hitrost</b> <span
+            class="math inline">\(v_{II}\)</span>: pobeg Zemlji glede na
+            Zemljo
+            <div class="izpeljava">
+            <p><span class="math display">\[ W_k = - W_p \\
+                \implies \frac{m v_{II}^2}{2} = \frac{m M_Z K
+            R_Z}{R_Z^2} = m g R_Z \\
+                \implies v_{II} = \sqrt{2 R_Z g} = \sqrt{2} v_I = 11,2
+            \frac{km}{s} \]</span></p>
+            </div>
+            <b>3. ubežna hitrost</b> <span
+            class="math inline">\(v_{III}\)</span>: pobeg Soncu glede na
+            Sonce
+            <div class="izpeljava">
+            <p><span class="math display">\[ \frac{m v_{III}^2}{2} =
+            \frac{m M_S K}{d} \\
+                \implies v_{III} = \sqrt{\frac{2 M_S K}{d}} = 42
+            \frac{km}{s} \]</span> Velja tudi: <span
+            class="math display">\[ v_{III} = (V_{II} - v_0)^2 +
+            v_{II}^2 \]</span> kjer je <span
+            class="math inline">\(v_0\)</span> hitrost, ki jo že imamo
+            zaradi kroženja Zemlje</p>
+            </div>
             <h2 id="Ravnovesje">Ravnovesje</h2>
             <ul>
             <li><i>labilno</i> r. (npr. na vrhu hriba)</li>

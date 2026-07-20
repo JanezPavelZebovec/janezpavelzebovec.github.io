@@ -1,6 +1,6 @@
 ---
 title: Župnije Slovenije na OSM
-date: 2026-06-01
+date: 2026-07-13
 description: Seznam že vnešenih župnij v OSM
 keywords: OpenStreetMap, župnija, Slovenija
 ---
@@ -10,59 +10,6 @@ keywords: OpenStreetMap, župnija, Slovenija
 Po seznamu na [Wikipedija - Seznam rimskokatoliških župnij v Sloveniji](https://sl.wikipedia.org/wiki/Seznam_rimskokatoli%C5%A1kih_%C5%BEupnij_v_Sloveniji), glavni vir podatkov je [Družina](https://www.druzina.si/).
 
 Projekt na OSM Wiki: [WikiProject Slovenia/Župnije](https://wiki.openstreetmap.org/wiki/WikiProject_Slovenia/%C5%BDupnije)
-
-- Adlešiči
-- Ajdovec
-- Ajdovščina
-- Ambrus
-- Ankaran
-- Apače
-- Artiče
-- Babno polje
-- Bakovci
-- Banja Loka
-- Batuje
-- Begunje na Gorenjskem
-- Begunje pri Cerknici
-- Bela Cerkev
-- Bele Vode
-- Beltinci
-- Bertoki
-- Besnica
-- Bevke
-- Biljana
-- Bilje
-- Bizeljsko
-- Blagovica
-- Bled
-- Bloke
-- Bočna
-- Bogojina
-- Bohinjska Bela
-- Bohinjska Bistrica [B]
-- Borovnica [B]
-- Boštanj
-- Bovec (2025-12-07)
-- Branik (2025-12-08)
-- Brdo pri Lukovici (2026-02-16)
-- Brestanica
-
-Izven zaporedja:
-
-- Domžale
-- ~Dovje (le še znamenja s spletne strani – glej https://zupnija-dovje.si/znamenja/)
-    - Anceljnovo
-    - Lengarjevo
-    - Brolhovo
-    - Farovško
-    - Bvaščeva skala
-    - Sedučnik
-    - Križanje
-    - Borovlje
--    Škrlatica
--    Peričnik
-- Frankolovo
-- Preska
 
 # Poizvedbe
 
@@ -106,10 +53,12 @@ Podatki o župnijah, ki so navedeni na Družini, a drugi viri navajajo drugače
 - Župnija Šentožbolt: leta 2026 pridružena župniji Blagovica
 - Župnija Brezno pri Dravi: spletna stran <https://vecna-voda.si/zupnijabrezno/> (ne pa <http://zupnije.com/brezno/>)
 - Župnija Pirniče: spletna stran <https://www.pirnice.si/zupnija-pirnice/> (ne pa <http://zupnija-pirnice.rkc.si/>)
+- Župnija Brusnice: naslov urada Velike Brusnice 59, ne pa Velike Brusnice 8 (staro župnišče)
+- Župnija Bukovščica: l. 2026 združena v Župnijo Selca
 
 ## Dodatni podatki
 
 Podatki o župnijah, ki jih na Družini (še) ni
 
-Župnija Bogojina: [spletna stran](https://www.rk-zupnijabogojina.si/)
-
+- Župnija Bogojina: [spletna stran](https://www.rk-zupnijabogojina.si/)
+- Župnija Budanje: podružnica Marije tolažnice žalostnih v Budanjah / Logu pri Vipavi

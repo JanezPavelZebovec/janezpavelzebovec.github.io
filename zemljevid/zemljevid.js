@@ -46,9 +46,10 @@ function createOverpassLayer(query, color = "#7b1e1e") {
 
 //====================================================================================
 
-var osm =L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+var osm =L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    subdomains: ['a','b','c']
 });
 
 var osmHOT = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
@@ -108,7 +109,7 @@ var Thunderforest_Atlas = L.tileLayer('https://tile.thunderforest.com/atlas/{z}/
 });
 
 var openTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+    maxZoom: 17,
     attribution: 'Map data: © OpenStreetMap contributors, SRTM | Map style: © OpenTopoMap (CC-BY-SA)'
 });
 var OpenSeaMap = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png', {
@@ -119,6 +120,12 @@ var OpenRailwayMap = L.tileLayer('https://{s}.tiles.openrailwaymap.org/standard/
 	attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Map style: &copy; <a href="https://www.OpenRailwayMap.org">OpenRailwayMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 });
 var Stadia_StamenTerrainLabels = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain_labels/{z}/{x}/{y}{r}.{ext}', {
+	minZoom: 0,
+	maxZoom: 18,
+	attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	ext: 'png'
+});
+var Stadia_StamenTerrainLines = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain_lines/{z}/{x}/{y}{r}.{ext}', {
 	minZoom: 0,
 	maxZoom: 18,
 	attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -168,6 +175,42 @@ var esriNational = L.tileLayer(
     attribution: '© <a href="https://www.esri.com/">Esri</a>'
   }
 );
+
+var OpenSnowMap_pistes = L.tileLayer('https://tiles.opensnowmap.org/pistes/{z}/{x}/{y}.png', {
+	minZoom: 9,
+	maxZoom: 18,
+	attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors & ODbL, &copy; <a href="https://www.opensnowmap.org/iframes/data.html">www.opensnowmap.org</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+});
+
+var MtbMap = L.tileLayer('http://tile.mtbmap.cz/mtbmap_tiles/{z}/{x}/{y}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &amp; USGS'
+});
+
+var CartoDB_Positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+	subdomains: 'abcd',
+	maxZoom: 20
+});
+var CartoDB_PositronNoLabels = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+	subdomains: 'abcd',
+	maxZoom: 20
+});
+
+var OPNVKarte = L.tileLayer('https://tileserver.memomaps.de/tilegen/{z}/{x}/{y}.png', {
+	maxZoom: 18,
+	attribution: 'Map <a href="https://memomaps.de/">memomaps.de</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+
+var NASAGIBS_ViirsEarthAtNight2012 = L.tileLayer('https://map1.vis.earthdata.nasa.gov/wmts-webmerc/VIIRS_CityLights_2012/default/{time}/{tilematrixset}{maxZoom}/{z}/{y}/{x}.{format}', {
+	attribution: 'Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href="https://earthdata.nasa.gov">ESDIS</a>) with funding provided by NASA/HQ.',
+	bounds: [[-85.0511287776, -179.999999975], [85.0511287776, 179.999999975]],
+	minZoom: 1,
+	maxZoom: 8,
+	format: 'jpg',
+	time: '',
+	tilematrixset: 'GoogleMapsCompatible_Level'
+});
 
 var DARE = L.tileLayer(
   "https://dh.gu.se/tiles/imperium/{z}/{x}/{y}.png",
@@ -493,6 +536,7 @@ var baseMaps = {
     "OpenStreetMap": osm,
     "OpenStreetMap HOT": osmHOT,
     "CyclOSM": CyclOSM,
+    "OPNV Karte": OPNVKarte,
 
     "Thunderforest OpenCycleMap": Thunderforest_OCM,
     "Thunderforest Transport": Thunderforest_Transport,
@@ -513,9 +557,16 @@ var baseMaps = {
     "Esri Navigation Charts": esriNavigation,
     "Esri National": esriNational,
 
-    "Stadia Alidade Satellite": Stadia_AlidadeSatellite,
+    //"Stadia Alidade: Satellite": Stadia_AlidadeSatellite,
+
+    "Mtb Map": MtbMap,
 
     "Digital Atlas of the Roman Empire": DARE,
+
+    "CartoDB Positron": CartoDB_Positron,
+    "Carto DB Positron: No Labels": CartoDB_PositronNoLabels,
+
+    "NASAGIBS Viirs Earth At Night, 2012": NASAGIBS_ViirsEarthAtNight2012,
 
     "G***le Streets": googleStreets,
     "G***le Hybrid": googleHybrid,
@@ -527,19 +578,21 @@ var overlayMaps = {
     /*"GURS: ceste": gursCeste,
     "GURS: obrisi zgradb": gursZgradbe,*/
 
+    "Stadia Stamen Terrain Lines": Stadia_StamenTerrainLines,
+
     "OpenRailwayMap": OpenRailwayMap,
     "OpenSeaMap": OpenSeaMap,
+    "Open Snow Map: Pistes": OpenSnowMap_pistes,
     "WaymarkedTrails – hiking": WaymarkedTrails_hiking,
     "WaymarkedTrails – cycling": WaymarkedTrails_cycling,
 
-    "Stadia Stamen Terrain Label": Stadia_StamenTerrainLabels,
-    //"Stadia_StamenTerrainLines": Stadia_StamenTerrainLines,
-
+    "Slo. župnije z vsem kar spada pod njih": zupnije,
     "Slo. cerkve": cerkve,
     "Slo. župnijske cerkve": zupnijske_cerkve,
-    "Slo. župnije z vsem kar spada pod njih": zupnije,
     "Slo. gradovi": gradovi,
     "Slo. nadučilišča": naducilisca,
+
+    "Stadia Stamen Terrain Labels": Stadia_StamenTerrainLabels,
 };
 
 /*L.control.layers(baseMaps, overlayMaps, {

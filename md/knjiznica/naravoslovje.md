@@ -1,6 +1,6 @@
 ---
 title: Naravoslovje
-date: 2026-07-08
+date: 2026-07-09
 description: Naravni zakoni
 keywords: naravoslovje, fizika
 author: Janez Pavel Žebovec
@@ -169,9 +169,9 @@ $$ W_k = \frac {m v^2}{2} $$
 
 ### *Potencialna* težnostna *energija*
 
-*Potencialna energija* ima naravno izhodišče ($W_{p, g} = 0$) neskončno daleč stran, kjer gre teža proti nič ($r_1 \rightarrow \infty$):
+*Potencialna energija* ima naravno izhodišče ($W_{p, g} = 0$) neskončno daleč stran od izvora težnosti, kjer gre teža proti nič ($r_1 \rightarrow \infty$), in je tem bolj *negativna*, bližje, kot smo izvoru težnosti:
 
-$$ \vec F_g = -G \frac{m_1 m_2}{r^2} \frac{r_{1,2}}{r} $$
+$$ \vec F_g = -G \frac{m_1 m_2}{r^2} \frac{\vec r_{1,2}}{r} $$
 <div class="izpeljava">
 $$ W_{p, g} = - A_g
     = - \int_{\vec r_1}^{\vec r_2} \vec F_g \cdot d\vec{r}
@@ -186,6 +186,10 @@ Za "ravno Zemljo" ($\Delta h << r_Z$) – izhodišče je po dogovoru na ničelni
 $$ g = \frac{G M_Z}{r_Z^2} $$
 $$ W_{p, g} = m g h $$
 $$ \Delta W_{p, g} = \int_{z_0}^z m g \d z = m g (z - z_0) $$
+
+Za Sončev *sistem* velja:
+$$ W_k + W_p = \mathrm{stalnica} $$
+kjer je $W_k$ vedno *pozitivna*, $W_p$ pa vedno *negativna*.
 
 ### *Potencialna* prožnostna *energija*
 
@@ -322,6 +326,32 @@ $$ \vec M = \vec r \times \vec F = \vec r \times \frac{\d \vec G}{\d t} = \frac{
 $$ \vec \Gamma = \vec \Gamma_{tirna} + \vec \Gamma_{lastna}^* $$
 $$ \vec \Gamma_{tirna}^* = \int \d m \vec r_T \times \vec v_T $$
 $$ \sum \vec r^* \times \vec F_{zun} = \vec r^* \times \sum \vec F_{zun} $$
+
+### Ubežne hitrosti
+(*kozmične* hitrosti)
+
+**1. ubežna hitrost** $v_I$: kako hitro bi se morala Zemlja vrteti, da bi sredobežni pospešek premagal težnost
+<div class="izpeljava">
+$$ F_c = F_g \\
+    \implies \frac{m v^2}{R_Z} = \frac{K m M_Z}{R_Z^2} = m g \\
+    \implies v_{K1} = \sqrt{R_Z g} = 8 \frac{km}{s} $$
+</div>
+
+**2. ubežna hitrost** $v_{II}$: pobeg Zemlji glede na Zemljo
+<div class="izpeljava">
+$$ W_k = - W_p \\
+    \implies \frac{m v_{II}^2}{2} = \frac{m M_Z K R_Z}{R_Z^2} = m g R_Z \\
+    \implies v_{II} = \sqrt{2 R_Z g} = \sqrt{2} v_I = 11,2 \frac{km}{s} $$
+</div>
+
+**3. ubežna hitrost** $v_{III}$: pobeg Soncu glede na Sonce
+<div class="izpeljava">
+$$ \frac{m v_{III}^2}{2} = \frac{m M_S K}{d} \\
+    \implies v_{III} = \sqrt{\frac{2 M_S K}{d}} = 42 \frac{km}{s} $$
+Velja tudi:
+$$ v_{III} = (V_{II} - v_0)^2 + v_{II}^2 $$
+kjer je $v_0$ hitrost, ki jo že imamo zaradi kroženja Zemlje
+</div>
 
 ## Ravnovesje
 

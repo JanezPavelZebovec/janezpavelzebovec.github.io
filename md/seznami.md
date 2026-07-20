@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-07-07
+date: 2026-07-16
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -30,6 +30,7 @@ Moja *priporočila* (precej nepopolna)
 - [Odysee](https://odysee.com/)
 - [Prevoz](https://prevoz.org/) – za medsebojno *organizacijo* deljenega prevoza
 - [Statistični urad Republike Slovenije](https://www.stat.si/)
+- [Windows93](https://www.windows93.net/)
 - [Yewtu.be](https://yewtu.be/) – odjemalec YouTuba
 
 ### Nepridobitne organizacije
@@ -66,7 +67,9 @@ Moja *priporočila* (precej nepopolna)
 
 - [Aatish Bhatia](https://aatishb.com/) – pisec znanstvenih vsebin, učitelj
 - [Anton Luka Šijanec](https://sijanec.eu/) – član Programerskega kluba FMF
+- [Barbara Makovec](https://makovec.si/) – članica Programerskega kluba FMF
 - [Branko cestnik](https://branenacesti.blogspot.com/) – slo. župnik
+- [Filip Štamcar](https://www.filips.si/) – član Programerskega kluba FMF
 - [Filip Žebovec](https://filipzebovec.net/)
 - [Jure Smolar](https://jure-smolar.com/) – član Programerskega kluba FMF
 - [Matija Šuklje](https://matija.suklje.name/) – član slo. odprtokodne skupnosti
