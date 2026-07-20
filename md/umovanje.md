@@ -33,6 +33,7 @@ Spola sta dva. Moški in ženski. Ostalo, kar nekateri imenujejo tudi *družbeni
 Razvoj otroka (po tednih):
 
 \1. semester:
+
 3. Oploditev. Začne se 6-dnevna pot skozi jajcevod do maternične votline.
 4. Zarodek se ugnezdi v maternično steno.
 5. Zarodek je velikosti sezamovega zrna. Srce začne utripati, oblikujejo se tudi ostali pomembnejši organi (želodec, jetra, ledvice) in organski sistemi (žile, živčevje, prebavila).
@@ -44,7 +45,9 @@ Razvoj otroka (po tednih):
 11. Plod je velik 4.1 cm, težak 7 g. Ušesa so postavljena na svoje mesto, začnejo se cilki spanja na 5–10 min. Spolni organi so že popolnoma razviti (spola še ni moč ugotoviti z ultrazvokom).
 12. Plod je dolg 6.1 cm, težak 14 g. Plodovo srce že popolnoma deluje. Osrednje živčevje se razvija.
 13. Plod je dolg 7.4 cm, težak do 23 g. Glava zajema polovico dolžine; okončine hitro rastejo (tako da glava do 20. tedna zajema le še tretjino dolžine)
+
 \2. semester:
+
 14. Plod je dolg 8.3 cm,težak 43 g. Rasti začnejo lasje, obrvi, trepalnice.
 15. Plod je dolg 12.7 cm, težak 57 g. Na ultrazvoku lahko vidimo sesanje palca. Začuti lahko močno svetlobo od zunaj, stisne pest, refleksno smeji. Zunanje spolovilo je že popolnoma oblikovano.
 16. Plod je dolg 13.5 cm, težak 70 g. Vse mišice in kosti so oblikovane. Izločanje urina in krvni obtok že delujeta.
@@ -59,7 +62,9 @@ Razvoj otroka (po tednih):
 25. Plod je dolg 35 cm, težak 600 – 700 g. Možnost preživetja ob rojstvu v tej stopnji je 50 %.
 26. Plod je dolg 35 cm, težak 700 – 800 g. Sluh je že toliko razvit, da lahko plod "skoči" ob glasnem zvoku. Možgani so gladki in ni razvite povezave med živčnimi celicami. Možnost preživetja ob rojstvu v tej stopnji je 80 %.
 27. Plod je dolg 36 cm, težak 800 – 1000 g. Ima pravilen ritem spanja in dejavnosti. Pogosto sesa palec. Trepalnice dokončno izrastejo. Pljuča še niso zrela za samostojno dihanje. Pogosto odpiranje oči. Možnost preživetja ob rojstvu v tej stopnji je 90 %.
+
 \3. semester: Otrok je žedovolj velik in razvit, da se lahko z njim "sporazumevamo" s trepljaji, na katere "odgovori" z brcanjem.
+
 28. Plod je dolg 38 cm, težak 1050 g. Lasje rastejo (a ne pri vseh). Trepalnice in obrvi so debelejše, obrazne poteze bolj izrazite, plod pogosto zeha. Možnost preživetja ob rojstvu med 28. in 31. tednom je 95 %.
 29. Plod je dolg 38 cm, težak 1200 g. Rastejo mišice in notranji organi. Možgani že lahko nadzorujejo dihanje. Plod ej vse bolj dejaven. Kostni mozeg ustvarja lastne rdeče krvne celice.
 30. Plod je dolg 39 cm, težak 1200 – 1400 g. Povečuje se količina maščobnega tkiva. Vse več je kanalov v možganih, s čemer se povečuje njihova površina.
