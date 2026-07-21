@@ -632,7 +632,6 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Josh the Intern](https://www.youtube.com/@joshtheintern) – raziskuje razne odmaknjene kraje po svetu, večinoma *arheološka* območja, ki jih najde na Google Earth
 - [Sheehan Quirke](https://www.youtube.com/@SheehanQuirke) – *estetika*?
 - [SpaceX](https://www.youtube.com/@SpaceX) – vesoljsko podjetje
-- [The Woke Critic](https://www.youtube.com/@thewokecritic) - ocene filmov (predvsem kritika novejših trnedov v filmih) na zabaven način
 - [Tom Ayling](https://www.youtube.com/@tomwayling) – preprodajalec knjig
 
 #### Zanimivosti
@@ -647,6 +646,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Thoughty2](https://www.youtube.com/@Thoughty2) - večinoma zgodovinske zanimivosti
 - [Tom Scott](https://www.youtube.com/@TomScottGo)
 - [UsefulCharts](https://www.youtube.com/@UsefulCharts) - zgodovinski in drugi prikazi
+- [The Woke Critic](https://www.youtube.com/@thewokecritic) - ocene filmov (predvsem kritika novejših trnedov v filmih) na zabaven način
 
 #### Zabava
 

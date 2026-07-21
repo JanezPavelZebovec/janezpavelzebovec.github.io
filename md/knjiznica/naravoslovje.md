@@ -774,7 +774,7 @@ V enačbi lahko zanemarimo člene od tistega naprej, ki je zadosti manjši od ne
 | dolžina, (odmik) | l, d, (x) | meter | m |
 | masa | m | kilogram | kg |
 | čas | t | sekunda | s |
-= \frac{N \mu_0 I}{l} $$
+<div class="content">
 
 #### *Indukcija*
 

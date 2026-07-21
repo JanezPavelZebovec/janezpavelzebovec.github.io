@@ -31,30 +31,31 @@ sistem"/>
             </svg>
         </a>
 
-        <nav id="pot"><p><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/linux/">linux</a></p></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-06-23">2026-06-23</time></p>
+        <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/linux/">linux</a></nav>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-07-21">2026-07-21</time></p>
     </header>
     <nav>
         <ul>
         <li><a href="#Prirocnik_za_Linux"
         id="toc-Prirocnik_za_Linux">Priročnik za Linux</a>
         <ul>
+        <li><a href="#Struktura_shrambe"
+        id="toc-Struktura_shrambe"><i>Struktura</i> shrambe</a></li>
+        <li><a href="#Terminal_jezik_Bash"
+        id="toc-Terminal_jezik_Bash"><i>Terminal</i> (jezik
+        Bash)</a></li>
+        <li><a href="#Sistemski_ukazi"
+        id="toc-Sistemski_ukazi"><i>Sistemski</i> ukazi</a>
+        <ul>
+        <li><a href="#Zunanje_naprave" id="toc-Zunanje_naprave">Zunanje
+        naprave</a></li>
         <li><a href="#Upravljanje_programov"
         id="toc-Upravljanje_programov">Upravljanje programov</a>
         <ul>
         <li><a href="#Namescanje_programov_iz_vira"
         id="toc-Namescanje_programov_iz_vira">Nameščanje programov iz
-        vira</a>
-        <ul>
-        <li><a href="#Suckless" id="toc-Suckless">Suckless</a></li>
+        vira</a></li>
         </ul></li>
-        </ul></li>
-        <li><a href="#Mape_in_datoteke_v_Linuxu"
-        id="toc-Mape_in_datoteke_v_Linuxu">Mape in datoteke v
-        Linuxu</a></li>
-        <li><a href="#Zunanje_naprave" id="toc-Zunanje_naprave">Zunanje
-        naprave</a>
-        <ul>
         <li><a href="#Ustvarjanje_zagonskega_kljucka"
         id="toc-Ustvarjanje_zagonskega_kljucka">Ustvarjanje zagonskega
         ključka</a>
@@ -66,49 +67,46 @@ sistem"/>
         id="toc-Omrezna_povezava">Omrežna povezava</a>
         <ul>
         <li><a href="#NetworkManager"
-        id="toc-NetworkManager">NetworkManager</a></li>
-        <li><a href="#NMCLI_Network_Manager_Client"
-        id="toc-NMCLI_Network_Manager_Client">NMCLI (Network Manager
-        Client)</a></li>
+        id="toc-NetworkManager">NetworkManager</a>
+        <ul>
+        <li><a href="#NMCLI" id="toc-NMCLI">NMCLI</a></li>
+        </ul></li>
         <li><a href="#Eduroam" id="toc-Eduroam">Eduroam</a></li>
         </ul></li>
-        <li><a href="#Pretvarjanje_zdruzevanje_stiskanje_datotek"
-        id="toc-Pretvarjanje_zdruzevanje_stiskanje_datotek">Pretvarjanje
-        / združevanje / stiskanje datotek</a>
+        <li><a href="#Upravljanje_datotecnih_oblik"
+        id="toc-Upravljanje_datotecnih_oblik">Upravljanje datotečnih
+        oblik</a>
         <ul>
         <li><a href="#Zdruzevanje_datotek"
         id="toc-Zdruzevanje_datotek">Združevanje datotek</a></li>
         <li><a href="#Pretvarjanje_datotek"
         id="toc-Pretvarjanje_datotek">Pretvarjanje datotek</a></li>
-        <li><a href="#Stisnjene_datoteke"
-        id="toc-Stisnjene_datoteke">Stisnjene datoteke</a></li>
-        <li><a href="#Spreminjanje_izvirne_datoteke"
-        id="toc-Spreminjanje_izvirne_datoteke">Spreminjanje izvirne
-        datoteke</a>
+        <li><a href="#Stiskanje_datotek"
+        id="toc-Stiskanje_datotek">Stiskanje datotek</a></li>
+        </ul></li>
+        <li><a href="#Upravljanje_sprememb_datotek"
+        id="toc-Upravljanje_sprememb_datotek">Upravljanje sprememb
+        datotek</a>
         <ul>
         <li><a href="#Git" id="toc-Git">Git</a></li>
         </ul></li>
+        <li><a href="#Streznik" id="toc-Streznik">Strežnik</a>
+        <ul>
+        <li><a href="#Lokalni_streznik"
+        id="toc-Lokalni_streznik"><i>Lokalni</i> strežnik</a></li>
         </ul></li>
-        <li><a href="#Streznik" id="toc-Streznik">Strežnik</a></li>
         <li><a href="#Programi" id="toc-Programi">Programi</a>
         <ul>
-        <li><a href="#Terminal_jezik_Bash"
-        id="toc-Terminal_jezik_Bash">Terminal (jezik Bash)</a></li>
-        <li><a href="#YT_DLP" id="toc-YT_DLP">YT-DLP</a></li>
-        <li><a href="#JOSM" id="toc-JOSM">JOSM</a>
-        <ul>
-        <li><a href="#JOSM_za_Open_Historical_Map"
-        id="toc-JOSM_za_Open_Historical_Map">JOSM za <i>Open Historical
-        Map</i></a></li>
-        </ul></li>
-        <li><a href="#ST_Simple_Terminal" id="toc-ST_Simple_Terminal">ST
-        (Simple Terminal)</a></li>
-        <li><a href="#DWM_Dynamic_Window_Manager"
-        id="toc-DWM_Dynamic_Window_Manager">DWM (Dynamic Window
-        Manager)</a></li>
+        <li><a href="#ST" id="toc-ST">ST</a></li>
+        <li><a href="#DWM" id="toc-DWM">DWM</a></li>
         <li><a href="#VIM" id="toc-VIM">VIM</a></li>
         <li><a href="#LF" id="toc-LF">LF</a></li>
+        <li><a href="#YT_DLP" id="toc-YT_DLP">YT-DLP</a></li>
         <li><a href="#NCMPCPP" id="toc-NCMPCPP">NCMPCPP</a></li>
+        <li><a href="#JOSM" id="toc-JOSM">JOSM</a>
+        <ul>
+        <li><a href="#JOHM" id="toc-JOHM">JOHM</a></li>
+        </ul></li>
         </ul></li>
         <li><a href="#Zunanje_povezave_in_viri"
         id="toc-Zunanje_povezave_in_viri">Zunanje povezave in
@@ -118,17 +116,108 @@ sistem"/>
     </nav>
     <main>
         <div class="content">
-            <p>Ta stran zahteva nekaj več urejenosti, oziroma splošno
-            posodobitev, kar bo tudi prišlo na vrsto enkrat v
-            prihodnosti – zaenkrat pa je, kar je.</p>
             <p>Glej <a href="/moj_linux">Vodič skozi namestitev
-            Linuxa</a> za namestitev in ureditev okolja, kot ga imam
-            jaz.</p>
+            Linuxa</a> za namestitev in ureditev okolja, kot ga imam jaz
+            in na katerega se ta priročnik tesno navezuje.</p>
             <h1 id="Prirocnik_za_Linux">Priročnik za Linux</h1>
-            <p>Ta priročnik temelji na Linux Debianu, kakršnega
-            uporabljam / kar uporabljam jaz (glej tudi <a
+            <p>Ta priročnik temelji na <a
+            href="https://www.debian.org/">Linux Debianu</a>, v obliki,
+            kakršnega uporabljam jaz (glej tudi <a
             href="/moj_linux/">Vodič skozi namestitev Debiana</a>, kjer
             je moje okolje podrobno opisano).</p>
+            <h2 id="Struktura_shrambe"><i>Struktura</i> shrambe</h2>
+            <ul>
+            <li><b>~/</b> = <b>/home/uporabniskoime/</b> – domača mapa:
+            tu praviloma hraniš vse osebne datoteke
+            <ul>
+            <li><b>.config/</b> – tu so praviloma nastavitvene datoteke
+            programov
+            <ul>
+            <li><b>sxhkd/sxhkdrc</b> – datoteka z osebnimi bližnjicami
+            (da stopijo v veljavo spremembe v tej datoteki izvedi
+            <code>pkill -usr1 -x sxhkd</code> ali znova zaženi
+            sistem)</li>
+            </ul></li>
+            <li><b>.local/</b>
+            <ul>
+            <li><b>bin/</b> – tu so praviloma osebni programčki</li>
+            <li><b>/share/applications/</b> – tu so datoteke za
+            slovarske datoteke programov</li>
+            </ul></li>
+            <li><b>.xinitrc</b> – datoteka z ukazi, ki se izvedejo ob
+            zagonu računalnika</li>
+            <li><b>bash_history</b> – datoteka z zgodovino izvedenih
+            ukazov v terminalu</li>
+            </ul></li>
+            </ul>
+            <h2 id="Terminal_jezik_Bash"><i>Terminal</i> (jezik
+            Bash)</h2>
+            <ul>
+            <li><code>cd ime_mape</code> = <i>change directory</i> -
+            premakni se v mapo</li>
+            <li><code>cp pot/do/kopirane_datoteke_mape pot/do/ciljne_datoteke_mape</code>
+            = <i>copy</i> - kopiraj
+            <ul>
+            <li><code>-r</code> = <i>recrusive</i> - kopiraj vključno s
+            podmapami in datotekami/mapami v njih (pri kopiranju
+            mape)</li>
+            </ul></li>
+            <li><code>mv izvorna/pot ciljna/pot</code> = <i>move</i> -
+            premakni/preimenuj</li>
+            <li><code>ls</code>= <i>list</i> - izpiši vsebino mape
+            <ul>
+            <li><code>-a</code> = <i>all</i> - prikaži tudi skrite
+            datoteke</li>
+            <li><code>-v</code> - razvrsti po naravnih številih (npr.
+            <i>a1, a2, a10, a21, …</i>; namesto privzeto
+            leksikografskega reda, npr. <i>a1, a10, a2, a21, …</i>);
+            prezre skrite datoteke z začetnim <code>.</code> ali
+            <code>..</code></li>
+            </ul></li>
+            <li><code>ln ciljna_datoteka gledana datoteka</code> =
+            <i>link</i>- ustvari povezavo med dvema datotekama, oz.
+            preusmeritev na ciljno datoteko
+            <ul>
+            <li><code>-s</code> = <i>soft</i> - datoteka kaže na drugo
+            datoteko (ne pa na same podatke ciljne datoteke, kot to
+            počne <i>hard link</i>)</li>
+            </ul></li>
+            <li><code>/iskalni_niz</code> - išče po iskalnem nizu po
+            zapisu</li>
+            <li><code>mkdir ime_nove_mape</code> = <i>make directory</i>
+            - ustvari mapo</li>
+            <li><code>touch ime_nove_datoteke</code> - ustvari novo
+            datoteko</li>
+            <li><code>rm ime_datoteke</code> = <i>remove</i> - odstrani
+            predmet
+            <ul>
+            <li><code>rm -r ime_mape</code> - odstrani mapo z njeno
+            vsebino</li>
+            </ul></li>
+            <li><code>cat ime_datoteke</code> - izpiši vsebino
+            datoteke</li>
+            <li><code>find -name ime_datoteke</code> - poišči datoteko
+            <ul>
+            <li><code>find -type d -name ime_mape</code> =
+            <i>directory</i> - poišči mapo</li>
+            <li><code>find / -name ime_datoteke</code> - poišči v
+            korenski mapi</li>
+            </ul></li>
+            </ul>
+            <p>Nadomestne oznake:</p>
+            <ul>
+            <li><code>..</code> - mapa eno raven višje, v kateri je
+            trenutna mapa (<code>../..</code> pomeni mapo dve ravni
+            navzgor itd.)</li>
+            <li><code>*</code> - nadomesti karkoli (npr.
+            <code>abc*</code>pomeni vsak niz znakov, ki se začne z
+            <i>abc</i>)</li>
+            </ul>
+            <p>Dodatno:</p>
+            <ul>
+            <li><code>$(ukaz)</code> - uporabi izpis ukaza v ukazu</li>
+            </ul>
+            <h2 id="Sistemski_ukazi"><i>Sistemski</i> ukazi</h2>
             <ul>
             <li><code>sudo shutdown</code> - ugasni se</li>
             <li><code>sudo reboot</code> - ponovno se zaženi
@@ -149,20 +238,33 @@ sistem"/>
             izvšilne pravice, da jo lahko recimo zaženeš kot ukaz v
             terminalu</li>
             </ul></li>
-            <li><code>python 3 datoteka.py</code> - zaženi Python
-            datoteko</li>
-            <li><code>live server</code> - zažene lokalni strežnik, brez
-            dodatnih opredelitev odpre <i>index.html</i> v mapi, kjer je
-            bil ukaz izveden
-            <ul>
-            <li><code>live server --open=pot/do/datoteke</code> - zažene
-            lokalni strežnik in odpre izbrano datoteko</li>
-            </ul></li>
+            <li><code>man ime-programa</code> = <i>manuals</i> - prikaži
+            navodila programa</li>
             <li><code>sudo dmidecode -t system</code> - izpiše lastnosti
             računalniške opreme (diski, spomin, model računalnika,
             …)</li>
             </ul>
-            <h2 id="Upravljanje_programov">Upravljanje programov</h2>
+            <h3 id="Zunanje_naprave">Zunanje naprave</h3>
+            <ul>
+            <li><code>lsblk</code> - izpiše vse priklopljene naprave
+            (tudi npr. ključke USB)</li>
+            <li><code>xrandr</code> – izpiše ime zaslona in njegove
+            možne povečave
+            <ul>
+            <li><code>xrandr --output "ime-zaslona" --mode širinaxvišina</code>
+            – izberi povečavo za določen zaslon</li>
+            </ul></li>
+            <li><code>udisksctl</code>
+            <ul>
+            <li><code>mount</code>/<code>unmount</code> -
+            namesti/odmesti zunanji pogon (npr.
+            <code>udisksctl mount     -b /dev/sda1</code> namesti
+            pogon);</li>
+            </ul></li>
+            <li><code>aft-mtp-mount pot/do/dlančnika</code> - namesti
+            dlančnik</li>
+            </ul>
+            <h3 id="Upravljanje_programov">Upravljanje programov</h3>
             <ul>
             <li><code>sudo apt install ime-programa</code> - namesti
             program</li>
@@ -187,8 +289,8 @@ sistem"/>
             <li><code>sudo apt autoremove</code> - očisti nepotrebne
             pakete, ki so bili nameščeni kot odvisnosti</li>
             </ul>
-            <h3 id="Namescanje_programov_iz_vira">Nameščanje programov
-            iz vira</h3>
+            <h4 id="Namescanje_programov_iz_vira">Nameščanje programov
+            iz vira</h4>
             <ul>
             <li><code>make</code> - izvozi program, oz. prebere datoteko
             <i>makefile</i></li>
@@ -198,7 +300,7 @@ sistem"/>
             <i>build</i>) – običajno je priporočljivo uporabiti
             tega</li>
             </ul>
-            <h4 id="Suckless">Suckless</h4>
+            <p><b>Primer Sucklessa</b>:</p>
             <p>Priporočljivo je imeti vse programe nameščene iz vira v
             ločeni mapi, npr. ~/viri/.</p>
             <p><code>git clone</code> prenese v trenutno mapo, zato se
@@ -216,7 +318,7 @@ sistem"/>
             </ol>
             <p>Nastavitvena datoteka programa je config.h, config.def.h
             pa je varnostna kopija te nastavitvene datoteke.</p>
-            <h5 id="Dodatki_Patches">Dodatki (<i>Patches</i>)</h5>
+            <p><b>Dodatki</b> (<i>Patches</i>):</p>
             <ol type="1">
             <li>Sledi povezavi na spletni strani “dodatka” in shrani
             datoteko dodatek.diff v
@@ -230,50 +332,6 @@ sistem"/>
             </ol>
             <p>Odstranitev dodatka: ponovno zaženi ukaz za dodajanje,
             saj te nato vpraša, če hočeš dodatek odstraniti.</p>
-            <h2 id="Mape_in_datoteke_v_Linuxu">Mape in datoteke v
-            Linuxu</h2>
-            <p>Mape:</p>
-            <ul>
-            <li><b>~/</b> = <b>/home/[uporabniško-ime]</b> - domača mapa
-            - tu praviloma hraniš vse osebne zadeve</li>
-            <li><b>~/.config</b> - tu so praviloma nastavitvene datoteke
-            programov</li>
-            <li><b>~/.local/bin/</b> - tu so praviloma osebni
-            programčki</li>
-            <li><b>~/-local/share/applications/</b> - tu so datoteke za
-            slovarske datoteke programov</li>
-            </ul>
-            <p>Datoteke:</p>
-            <ul>
-            <li><b>~/.xinitrc</b> - datoteka z ukazi, ki se izvedejo ob
-            zagonu računalnika</li>
-            <li><b>~/bash_history</b> - datoteka z zgodovino izvedenih
-            ukazov v terminalu</li>
-            <li><b>~/.config/sxhkd/sxhkdrc</b> - datoteka z osebnimi
-            bližnjicami (da stopijo v veljavo spremembe v tej datoteki
-            izvedi <code>pkill -usr1 -x sxhkd</code> ali znova zaženi
-            sistem)</li>
-            </ul>
-            <h2 id="Zunanje_naprave">Zunanje naprave</h2>
-            <ul>
-            <li><code>lsblk</code> - izpiše vse priklopljene naprave
-            (tudi npr. ključke USB)</li>
-            <li><code>xrandr</code> – izpiše ime zaslona in njegove
-            možne povečave
-            <ul>
-            <li><code>xrandr --output "ime-zaslona" --mode širinaxvišina</code>
-            – izberi povečavo za določen zaslon</li>
-            </ul></li>
-            <li><code>udisksctl</code>
-            <ul>
-            <li><code>mount</code>/<code>unmount</code> -
-            namesti/odmesti zunanji pogon (npr.
-            <code>udisksctl mount -b /dev/sda1</code> namesti
-            pogon);</li>
-            </ul></li>
-            <li><code>aft-mtp-mount [pot_do_dlančnika]</code> - namesti
-            dlančnik</li>
-            </ul>
             <h3 id="Ustvarjanje_zagonskega_kljucka">Ustvarjanje
             zagonskega ključka</h3>
             <p>(ang. <i>bootable USB drive</i>)</p>
@@ -336,8 +394,8 @@ sistem"/>
             <li><code>systemctl restart NetworkManager</code> - znova
             zaženi NetworkManager</li>
             </ul>
-            <h3 id="NMCLI_Network_Manager_Client">NMCLI (Network Manager
-            Client)</h3>
+            <h4 id="NMCLI">NMCLI</h4>
+            <p>(Network Manager Client)</p>
             <ul>
             <li><code>nmcli</code> - prikaže podroben seznam
             razpoložljivih omrežij;
@@ -408,9 +466,8 @@ sistem"/>
             </ul></li>
             <li>Zaženi program <code>ime_datoteke.py</code>.</li>
             </ol>
-            <h2
-            id="Pretvarjanje_zdruzevanje_stiskanje_datotek">Pretvarjanje
-            / združevanje / stiskanje datotek</h2>
+            <h2 id="Upravljanje_datotecnih_oblik">Upravljanje datotečnih
+            oblik</h2>
             <h3 id="Zdruzevanje_datotek">Združevanje datotek</h3>
             <ul>
             <li><code>convert {imena_slik} ime_PDF-ja</code> - združi
@@ -438,7 +495,7 @@ sistem"/>
             <li><code>mogrify -format vrsta-datoteke ime_datoteke</code>
             - pretvori datoteke (z ustrezno končnico) v želeni vrsto
             datoteke (npr. pretvori sliko JPG v PDF:
-            <code>mogrify -format pdf datoteka.jpg</code>)
+            <code>mogrify   -format pdf datoteka.jpg</code>)
             <ul>
             <li><code>-format [vrsta-datoteke]</code> - določi vrsto
             (<i>format</i>) datoteke (npr. <code>-format pdf</code> za
@@ -504,7 +561,7 @@ sistem"/>
             - obreži posnetek</li>
             </ul></li>
             </ul>
-            <h3 id="Stisnjene_datoteke">Stisnjene datoteke</h3>
+            <h3 id="Stiskanje_datotek">Stiskanje datotek</h3>
             <ul>
             <li><code>sudo apt install zip gzip tar</code></li>
             <li><code>zip -r moja_mapa.zip moja_mapa</code> – ustvari
@@ -522,8 +579,8 @@ sistem"/>
             stisnjeno mapo <i>moja_mapa.tar.gz</i> (<i>.tar</i> -
             arhivska; <i>.gz</i> - stisnjena)</li>
             </ul>
-            <h3 id="Spreminjanje_izvirne_datoteke">Spreminjanje izvirne
-            datoteke</h3>
+            <h2 id="Upravljanje_sprememb_datotek">Upravljanje sprememb
+            datotek</h2>
             <ul>
             <li><code>diff izvorna_datoteka spremenjena_datoteka &gt; spremembe.diff</code>
             - ustvari datoteko s spremembami (<i>patch</i>)
@@ -540,10 +597,10 @@ sistem"/>
             <li>običajno je priporočljivo uporabiti <i>argument</i>
             <code>-p</code>, ki poskrbi za začetne poševnice pri imenih
             datotek za spremembo, torej:
-            <code>patch -p1 &lt; spremembe.diff</code></li>
+            <code>patch -p1 &lt;     spremembe.diff</code></li>
             </ul></li>
             </ul>
-            <h4 id="Git">Git</h4>
+            <h3 id="Git">Git</h3>
             <p>Npr. za sinhronizacijo z <a
             href="https://github.com/">GitHubom</a>, <a
             href="https://codeberg.org/">Codebergom</a>, …</p>
@@ -596,8 +653,10 @@ sistem"/>
             <p>Sinhronizacija s strežnikom (npr. pri Hetznerju):</p>
             <ul>
             <li><code>ssh-keygen -t ed25519 -C "tvoje_ime" -f pot/do/datoteke</code>
-            - ustvari ključ SSH - javnega (daš ga Hetznerju) in
-            zasebnega (ostane pri tebi);
+            - ustvari ključ SSH
+            <ul>
+            <li>javnega (daš ga Hetznerju) in zasebnega (ostane pri
+            tebi);
             <ul>
             <li><code>-t ed25519</code> - opredeli vrsto ključa, oz.
             <i>kriptografskega algoritma</i> (Ed25519 je med
@@ -610,6 +669,7 @@ sistem"/>
             <code>~/.ssh/id_ed25519</code>) - ta <i>parameter</i> sicer
             ni nujen, saj te po njem program sam vpraša, če ga ne
             navedeš</li>
+            </ul></li>
             </ul></li>
             <li><code>ssh-keygen -p -f ~/.ssh/id_ed25519</code> -
             spremeni geslo ključa (torej ga s tem lahko tudi odstraniš,
@@ -639,74 +699,229 @@ sistem"/>
             Pythonovega strežnika</li>
             <li>odpri stran <i>localhost:8000</i> v brskalniku</li>
             </ul>
-            <h2 id="Programi">Programi</h2>
-            <h3 id="Terminal_jezik_Bash">Terminal (jezik Bash)</h3>
+            <h3 id="Lokalni_streznik"><i>Lokalni</i> strežnik</h3>
+            <p><i>Lokalni</i> strežnik se uporablja predvsem pri
+            razvijanju spletnih strani.</p>
             <ul>
-            <li><code>cd ime_mape</code> = <i>change directory</i> -
-            premakni se v mapo</li>
-            <li><code>cp pot/do/kopirane_datoteke_mape pot/do/ciljne_datoteke_mape</code>
-            = <i>copy</i> - kopiraj
-            <ul>
-            <li><code>-r</code> = <i>recrusive</i> - kopiraj vključno s
-            podmapami in datotekami/mapami v njih (pri kopiranju
-            mape)</li>
-            </ul></li>
-            <li><code>mv izvorna/pot ciljna/pot</code> = <i>move</i> -
-            premakni/preimenuj</li>
-            <li><code>ls</code>= <i>list</i> - izpiši vsebino mape
-            <ul>
-            <li><code>-a</code> = <i>all</i> - prikaži tudi skrite
-            datoteke</li>
-            <li><code>-v</code> - razvrsti po naravnih številih (npr.
-            <i>a1, a2, a10, a21, …</i>; namesto privzeto
-            leksikografskega reda, npr. <i>a1, a10, a2, a21, …</i>);
-            prezre skrite datoteke z začetnim <code>.</code> ali
-            <code>..</code></li>
-            </ul></li>
-            <li><code>ln ciljna_datoteka gledana datoteka</code> =
-            <i>link</i>- ustvari povezavo med dvema datotekama, oz.
-            preusmeritev na ciljno datoteko
-            <ul>
-            <li><code>-s</code> = <i>soft</i> - datoteka kaže na drugo
-            datoteko (ne pa na same podatke ciljne datoteke, kot to
-            počne <i>hard link</i>)</li>
-            </ul></li>
-            <li><code>man ime-programa</code> = <i>manuals</i> - prikaži
-            navodila programa</li>
-            <li><code>/iskalni_niz</code> - išče po iskalnem nizu po
-            zapisu</li>
-            <li><code>mkdir ime_nove_mape</code> = <i>make directory</i>
-            - ustvari mapo</li>
-            <li><code>touch ime_nove_datoteke</code> - ustvari novo
+            <li><code>python3 datoteka.py</code> - zaženi Python
             datoteko</li>
-            <li><code>rm ime_datoteke</code> = <i>remove</i> - odstrani
-            predmet
+            <li><code>live server</code> - zažene lokalni strežnik, brez
+            dodatnih opredelitev odpre <i>index.html</i> v mapi, kjer je
+            bil ukaz izveden
             <ul>
-            <li><code>rm -r ime_mape</code> - odstrani mapo z njeno
-            vsebino</li>
+            <li><code>live server --open=pot/do/datoteke</code> - zažene
+            lokalni strežnik in odpre izbrano datoteko</li>
             </ul></li>
-            <li><code>cat ime_datoteke</code> - izpiši vsebino
-            datoteke</li>
-            <li><code>find -name ime_datoteke</code> - poišči datoteko
+            <li><code>php -S localhost:8000</code> – streže na
+            <i>lokalnem</i> naslovu <a href="http://localhost:8000"
+            class="uri">http://localhost:8000</a></li>
+            </ul>
+            <h2 id="Programi">Programi</h2>
+            <h3 id="ST">ST</h3>
+            <p>(Simple Terminal)</p>
+            <p>Bližnjice:</p>
             <ul>
-            <li><code>find -type d -name ime_mape</code> =
-            <i>directory</i> - poišči mapo</li>
-            <li><code>find / -name ime_datoteke</code> - poišči v
-            korenski mapi</li>
+            <li><kbd>Ctrl+c</kbd> - ustavi program;</li>
+            <li><kbd>Ctrl+Shift+c</kbd> = <i>copy</i> - kopira izbrano
+            besedilo v odložišče</li>
+            <li><kbd>Ctrl+Shift+v</kbd> = <b>sredinska tipka</b> -
+            prilepi iz odložišča</li>
+            </ul>
+            <p>Ukazi:</p>
+            <ul>
+            <li><code>clear</code> - počisti prejšnje ukaze in izpise v
+            oknu;</li>
+            <li><code>ime-programa &amp;</code> - zažene program v
+            ozadju (za delovanje brez izpisov v terminal, kjer je bil
+            odprt)</li>
+            </ul>
+            <h3 id="DWM">DWM</h3>
+            <p>(Dynamic Window Manager)</p>
+            <p>Za tipko <i>Mod1</i> se običajno uporablja/nastavi tipka
+            <i>Super</i>.</p>
+            <ul>
+            <li><kbd>Ctrl+Shift+Q</kbd> – zaustavi DWM</li>
+            <li><kbd>F11</kbd> - celozaslonski način</li>
+            <li><kbd>Mod1+Shift+c</kbd> = <i>close</i> - zapri trenutno
+            okno</li>
+            <li><kbd>Mod1+Enter</kbd> - nastavi prvo okno pod glavnim
+            kot glavno</li>
+            <li><kbd>Mod1+j/k</kbd> - premikni se po oknih
+            naprej/nazaj</li>
+            <li><kbd>Mod1+Tab</kbd> - premikaj se med okni</li>
+            <li><kbd>Mod1+l/h</kbd> - povečaj/zmanjšaj širino stranskih
+            oken</li>
+            <li><kbd>Mod1+i/d</kbd> - povečaj/zmanjšaj število oken kot
+            glavna</li>
+            <li><kbd>Mod1+[0 - 9]</kbd> - preklopi delovno površino (pod
+            0 so vsa odprta okna)</li>
+            <li><kbd>Mod1+Shift+[0 - 9]</kbd> - dodeli oknu drugo oznako
+            (tj. delovno površino; <kbd>Mod1+Shift+0</kbd> dodeli oknu
+            vse oznake 1 - 9)
+            <ul>
+            <li><kbd>od1+Shift+Ctrl+[0 - 9]</kbd> - dodeli oknu dodatno
+            oznako poleg trenutne</li>
+            </ul></li>
+            <li><kbd>MMod1+b</kbd> = <i>bar</i> - prikaži/skrij zgornjo
+            pasico</li>
+            <li><kbd>Mod1+m</kbd> - pojdi v način celozaslonskih
+            oken</li>
+            <li><kbd>Mod1+t</kbd> = <i>tiles</i> - pojdi v prikaz oken v
+            mozaičnem načinu</li>
+            <li><kbd>Mod1+Tab</kbd> - premikaj se med okni</li>
+            <li><kbd>Mod1+a</kbd> - odpre meni</li>
+            <li><kbd>Mod1+Shift+Enter</kbd> - odpre terminal</li>
+            <li><kbd>Ctrl++/-</kbd> - povečaj/pomanjšaj velikost
+            pisave</li>
+            </ul>
+            <h3 id="VIM">VIM</h3>
+            <p><b>Ukazi</b>:</p>
+            <ul>
+            <li><code>e</code> = <i>edit</i> - urejaj datoteko (če ni
+            opredeljena druga datoteka, posodobi trenutno, za primer, da
+            je bila spremenjena drugje)
+            <ul>
+            <li><code>e ime_datoteke</code> - urejaj (odpri)
+            datoteko</li>
+            </ul></li>
+            <li><code>bd</code> - preneha z urejanjem trenutno
+            ogledovane datoteke (zapre za urejanje)</li>
+            <li><code>&lt;</code> oz. <code>:&gt;</code> - zamakni vse
+            označene vrstice v levo oz. desno</li>
+            <li><code>s/niz/zamenjava</code> - zamenja niz v trenutni
+            vrsticii
+            <ul>
+            <li><code>%s/niz/zamenjava/g</code> - zamenja niz v vseh
+            vrsticah</li>
+            <li><code>%s/niz/zamenjavanew/gc</code> - za vsako zamenjavo
+            vpraša</li>
+            </ul></li>
+            <li><code>N</code> – skoči v vrstico številka N</li>
+            </ul>
+            <p>Nastavitveni ukazi:</p>
+            <ul>
+            <li><code>set wrap</code> / <code>set nowrap</code> –
+            nastavi prelom, oz. odnastavi prelom prikaza vrstic glede na
+            širino okna seje</li>
+            <li><code>set tabstop=4</code> – nastavi širino zamika
+            vrstic (<i>taba</i>) na 4 znake</li>
+            <li><code>set textwidth=80 linebreak</code> – nastavi širino
+            besedila na 80 znakov, <code>linebreak</code> omogoči
+            samodejno prelamljanje vrstice, ko je dosežena ta meja.</li>
+            <li><code>set background=dark</code> /
+            <code>set background=light</code> – spreminjaj barvni način
+            (temen/svetel)</li>
+            <li><code>set foldmethod=metoda</code> – nastavi metodo
+            zlaganja vrstic; metode, ki so na voljo:
+            <code>manual</code>, <code>indent</code> (glede na zamike),
+            <code>syntax</code>, <code>marker</code>, <code>expr</code>,
+            <code>diff</code></li>
+            </ul>
+            <p>Tovrstni ukazi se uporabljajo tako v nastavitveni
+            datoteki <a
+            href="/moj_linux/home/janezpavel/.config/vim/vimrc">vimrc</a>,
+            kot tudi znotraj seje, kjer v ukazni način vstopiš z
+            bližnjico <code>:</code>.</p>
+            <p><b>Bližnjice</b>:</p>
+            <ul>
+            <li><kbd>i</kbd> = <i>insert</i> – preklopi v urejevalni
+            način</li>
+            <li><kbd>v</kbd> = <i>visual</i> – preklopi v ogledovalni
+            način, v katerem lahko izbiraš besedilo, uporabljaš vse
+            bližnjice
+            <ul>
+            <li><kbd>Shift+v</kbd> - preklopi v ogledovalni način vrstic
+            (za izbiranje celotnih vrstic)</li>
+            </ul></li>
+            <li><kbd>Shift+2</kbd> / <kbd>“</kbd> - izberi register
+            odložišča (odložišče moraš izbrati pred kopiranjem z npr.
+            </kbd>y</kbd>)
+            <ul>
+            <li><kbd>+</kbd> - “običajen” register</li>
+            <li><kbd>*</kbd> - register terminala</li>
+            <li><kbd>0</kbd> - register zadnjega kopiranja z
+            <kbd>y</kbd> (<i>yank</i>, ne pa tudi izrezovanja z
+            <kbd>d</kbd>)</li>
+            </ul></li>
+            <li><kbd>y</kbd> = <i>yank</i> - kopiraj</li>
+            <li><kbd>d</kbd> - izreži (tj. kopiraj in izbriši)</li>
+            <li><kbd>p</kbd> = <i>paste</i> - prilepi</li>
+            <li><kbd>u</kbd> = <i>undo</i> - pojdi korak nazaj v
+            zgodovini urejanja</li>
+            <li><kbd>gg</kbd> - na začetek datoteke</li>
+            <li><kbd>Shift+g</kbd> - na konec datoteke</li>
+            <li><kbd>0</kbd> - na začetek trenutne vrstice (v
+            urejevalnem načinu deluje le splošni <kbd>Home</kbd>, kar je
+            običajno <kbd>Fn+levo</kbd>)</li>
+            <li><kbd>$</kbd> - na konec trenutne vrstice (v urejevalnem
+            načinu deluje le splošni <kbd>End</kbd>, kar je običajno
+            <kbd>Fn+desno</kbd>)</li>
+            <li><kbd>Tab</kbd> – premikaj se med urejevanimi
+            datotekami</li>
+            <li><kbd>gq</kbd> – prilagodi širine vrstic izbranega
+            besedila na anstavljeno širino z
+            <code>set textwidth=80</code> (glej nastavitvene ukaze
+            zgoraj)
+            <ul>
+            <li><kbd>gqip</kbd> – prilagodi širine vseh vrstic v
+            trenutnem odstavku (ne da bi bile vse izbrane)</li>
             </ul></li>
             </ul>
-            <p>Nadomestne oznake:</p>
+            <p>Zlaganje vrstic (<i>folding</i>):</p>
             <ul>
-            <li><code>..</code> - mapa eno raven višje, v kateri je
-            trenutna mapa (<code>../..</code> pomeni mapo dve ravni
-            navzgor itd.)</li>
-            <li><code>*</code> - nadomesti karkoli (npr.
-            <code>abc*</code>pomeni vsak niz znakov, ki se začne z
-            <i>abc</i>)</li>
+            <li><kbd>zc</kbd> / <kbd>zo</kbd> zapri/odpri zavihek</li>
+            <li><kbd>za</kbd> preklopi odprtost trenutnega zavihka</li>
+            <li><kbd>zM</kbd> / <kbd>zR</kbd> zapri/odpri vse
+            zavihke</li>
             </ul>
-            <p>Dodatno:</p>
+            <p>Dodajanje niza v več vrstic hkrati (a navpično
+            poravnano):</p>
+            <ol type="1">
+            <li>na mesto urejanja v prvi vrstici,</li>
+            <li><kbd>Ctrl+v</kbd></li>
+            <li>označi stolpec (gor/dol)</li>
+            <li><kbd>Shift+i</kbd>, dodaj,</li>
+            <li><kbd>Esc</kbd>, <kbd>Esc</kbd></li>
+            </ol>
+            <h3 id="LF">LF</h3>
+            <p>Uporablja podobne bližnjice kot VIM:</p>
             <ul>
-            <li><code>$(ukaz)</code> - uporabi izpis ukaza v ukazu</li>
+            <li><kbd>r</kbd> = <i>rename</i> - preimenuj predmet</li>
+            <li><kbd>y</kbd> = <i>yank</i> - kopiraj</li>
+            <li><kbd>d</kbd> - izreži</li>
+            <li><kbd>p</kbd> = <i>paste</i> - prilepi</li>
+            <li><kbd>c</kbd> = <i>clear</i> - prekliči ukaze (kopiraj,
+            izreži prilepi, … za izbrane predmete)</li>
+            <li><kbd>Space</kbd> - izberi/odizberi predmet</li>
+            <li><kbd>v</kbd> = <i>invert</i> - obrni izbor</li>
+            <li><kbd>u</kbd> = <i>unselect</i> - odizberi vse</li>
+            <li><kbd>gg</kbd> - premakni se na vrh seznama
+            predmetov</li>
+            <li><kbd>Shift+g</kbd> - premakni se na dno seznama
+            predmetov</li>
+            <li><kbd>s</kbd> = <i>sort</i> - razvrsti</li>
+            <li><kbd>s</kbd> - razvrsti po …</li>
+            <li><kbd>z</kbd> - nastavi
+            <ul>
+            <li><kbd><b>zh</kbd></b> = <i>hidden</i> - skrij/prikaži
+            skrite datoteke</li>
+            <li><kbd><b>zr</kbd></b> = <i>reverse</i> - razvrsti
+            predmete v obratnem vrstnem redu</li>
+            <li><kbd><b>zt</kbd></b> = <i>time</i> - prikaži čas
+            datotek/map</li>
+            <li><kbd><b>zs</kbd></b> = <i>size</i> - prikaži velikost
+            datotek</li>
+            </ul></li>
+            <li><kbd><b>Super+w</kbd></b> - odpri trenutno mesto v
+            terminalu</li>
+            <li><kbd>$</kbd> - odpre ukazno vrstico, kjer lahko
+            uporabljaš ukaze terminala (le tako lahko npr. brišeš) -
+            <b>ta bližnjica ni privzeto nastavljena</b></li>
+            <li><code>/iskalni_niz</code> - išči
+            <ul>
+            <li><kbd>n</kbd> / <kbd>Shift+n</kbd> - premikaj se
+            naprej/nazaj po zadetkih iskanja</li>
+            </ul></li>
             </ul>
             <h3 id="YT_DLP">YT-DLP</h3>
             <p>Prenos posnetkov z YouTuba pa tudi številnih drugih
@@ -767,12 +982,47 @@ sistem"/>
             </ul></li>
             </ul></li>
             </ul>
+            <h3 id="NCMPCPP">NCMPCPP</h3>
+            <ul>
+            <li><kbd>1</kbd> - na sezname predvajanja
+            (<i>Playlist</i>)</li>
+            <li><kbd>2</kbd> - na seznam vseh skladb
+            (<i>Browse</i>)</li>
+            <li><kbd>3</kbd> - na iskalnik (<i>Search engine</i>)</li>
+            <li><kbd>4</kbd> - na knjižnico (<i>Media library</i>)</li>
+            <li><kbd>5</kbd> - na urejevalnik seznamov predvajanja
+            (<i>Playlist editor</i>)</li>
+            <li><kbd>6</kbd> - na urejevalnik oznak skladb (<i>Tag
+            editor</i>)</li>
+            <li><kbd>7</kbd> - na izhodne programe za zvok
+            (<i>Outputs</i>)</li>
+            <li><kbd>8</kbd> - na prikazovalnik zvoka (<i>Music
+            visualizer</i>)</li>
+            <li><kbd>=</kbd> - na uro (<i>Clock</i>)</li>
+            <li><kbd>e</kbd> = <i>edit</i> - odpri preprost urejevalnik
+            oznak skladbe (<i>tiny tag editor</i>)</li>
+            <li><kbd>l</kbd> = <i>lyrics</i> - naloži besedilo
+            pesmi</li>
+            <li><kbd>&gt;<b>/</b>&lt;</kbd> - pojdi na
+            naslednjo/prejšnjo skladbo na seznamu</li>
+            <li><kbd>f<b>/</b>b</kbd> = <i>forward</i>/<i>backward</i> -
+            išči naprej/nazaj v pesmi</li>
+            <li><kbd>r</kbd> = <i>repeat mode</i> - preklopi na način
+            ponavljanja</li>
+            <li><kbd>z</kbd> - preklopi na naključni način</li>
+            <li><kbd>y</kbd> - preklopi na način ene skladbe (po eni
+            sladbi prekine predvajanje)</li>
+            <li><kbd>u</kbd> = <i>update</i> - posodobi knjižnico</li>
+            <li><kbd>i</kbd> - pokaži podatke o skladbi</li>
+            <li><kbd>:</kbd> - odpri ukazno vrstico</li>
+            </ul>
             <h3 id="JOSM">JOSM</h3>
+            <p>(Java OpenStreetMap editor)</p>
             <p>Urejevalnik zemljevida <a
             href="https://www.openstreetmap.org/">Open Street Map</a>
             (OSM)</p>
-            <h4 id="JOSM_za_Open_Historical_Map">JOSM za <i>Open
-            Historical Map</i></h4>
+            <h4 id="JOHM">JOHM</h4>
+            <p>(JOSM za <i>Open Historical Map</i>)</p>
             <p>JOSM lahko uporabljaš tudi za urejanje <a
             href="https://www.openhistoricalmap.org/">Open Historical
             Map</a> (OHM), za to pa moraš spremeniti nastavitve tako, da
@@ -810,7 +1060,7 @@ sistem"/>
             class="uri">https://overpass-api.openhistoricalmap.org/api/</a>.</li>
             <li>Poljubno nastavi vzdevek za zagon JOHMa v terminalu: na
             konec datoteke <code>~/.bashrc</code>dodaj:
-            <code>alias johm='JAVA_OPTS="-Djosm.pref=$HOME/.config/JOHM" josm'</code>
+            <code>alias johm='JAVA_OPTS="-Djosm.pref=$HOME/.config/JOHM"   josm'</code>
             (shrani in posodobi rabo te datoteke z
             <code>source ~/.bashrc</code>). Zdaj lahko program odpreš z
             ukazom <code>johm</code>.
@@ -829,202 +1079,6 @@ sistem"/>
             prikaz slike zemljevida in nje umeščanje v prostor (<a
             href="https://wiki.openstreetmap.org/wiki/JOSM/Plugins/PicLayer">na
             <i>Wiki</i>ju</a>)</li>
-            </ul>
-            <h3 id="ST_Simple_Terminal">ST (Simple Terminal)</h3>
-            <p>Bližnjice:</p>
-            <ul>
-            <li><kbd>Ctrl+c</kbd> - ustavi program;</li>
-            <li><kbd>Ctrl+Shift+c</kbd> = <i>copy</i> - kopira izbrano
-            besedilo v odložišče</li>
-            <li><kbd>Ctrl+Shift+v</kbd> = <b>sredinska tipka</b> -
-            prilepi iz odložišča</li>
-            </ul>
-            <p>Ukazi:</p>
-            <ul>
-            <li><code>clear</code> - počisti prejšnje ukaze in izpise v
-            oknu;</li>
-            <li><code>ime-programa &amp;</code> - zažene program v
-            ozadju (za delovanje brez izpisov v terminal, kjer je bil
-            odprt)</li>
-            </ul>
-            <h3 id="DWM_Dynamic_Window_Manager">DWM (Dynamic Window
-            Manager)</h3>
-            <p>Za tipko <i>Mod1</i> se običajno uporablja/nastavi tipka
-            <i>Super</i>.</p>
-            <ul>
-            <li><kbd>Ctrl+Shift+Q</kbd> – zaustavi DWM</li>
-            <li><kbd>F11</kbd> - celozaslonski način</li>
-            <li><kbd>Mod1+Shift+c</kbd> = <i>close</i> - zapri trenutno
-            okno</li>
-            <li><kbd>Mod1+Enter</kbd> - nastavi prvo okno pod glavnim
-            kot glavno</li>
-            <li><kbd>Mod1+j/k</kbd> - premikni se po oknih
-            naprej/nazaj</li>
-            <li><kbd>Mod1+Tab</kbd> - premikaj se med okni</li>
-            <li><kbd>Mod1+l/h</kbd> - povečaj/zmanjšaj širino stranskih
-            oken</li>
-            <li><kbd>Mod1+i/d</kbd> - povečaj/zmanjšaj število oken kot
-            glavna</li>
-            <li><kbd>Mod1+[0 - 9]</kbd> - preklopi delovno površino (pod
-            0 so vsa odprta okna)</li>
-            <li><kbd>Mod1+Shift+[0 - 9]</kbd> - dodeli oknu drugo oznako
-            (tj. delovno površino; <kbd>Mod1+Shift+0</kbd> dodeli oknu
-            vse oznake 1 - 9)
-            <ul>
-            <li><kbd>od1+Shift+Ctrl+[0 - 9]</kbd> - dodeli oknu dodatno
-            oznako poleg trenutne</li>
-            </ul></li>
-            <li><kbd>MMod1+b</kbd> = <i>bar</i> - prikaži/skrij zgornjo
-            pasico</li>
-            <li><kbd>Mod1+m</kbd> - pojdi v način celozaslonskih
-            oken</li>
-            <li><kbd>Mod1+t</kbd> = <i>tiles</i> - pojdi v prikaz oken v
-            mozaičnem načinu</li>
-            <li><kbd>Mod1+Tab</kbd> - premikaj se med okni</li>
-            <li><kbd>Mod1+a</kbd> - odpre meni</li>
-            <li><kbd>Mod1+Shift+Enter</kbd> - odpre terminal</li>
-            <li><kbd>Ctrl++/-</kbd> - povečaj/pomanjšaj velikost
-            pisave</li>
-            </ul>
-            <h3 id="VIM">VIM</h3>
-            <p>Bližnjice:</p>
-            <ul>
-            <li><kbd></kbd> = <i>insert</i> - preklopi v urejevalni
-            način</li>
-            <li><kbd></kbd> = <i>visual</i> - preklopi v ogledovalni
-            način (za izbiranje besedila/kode)
-            <ul>
-            <li><kbd>Shift+v</kbd> - preklopi v ogledovalni način vrstic
-            (za izbiranje celotnih vrstic)</li>
-            </ul></li>
-            <li><kbd>Shift+2</kbd> / <kbd>“</kbd> - izberi register
-            odložišča (odložišče moraš izbrati pred kopiranjem z npr.
-            </kbd>y</kbd>)
-            <ul>
-            <li><kbd>+</kbd> - “običajen” register</li>
-            <li><kbd>*</kbd> - register terminala</li>
-            <li><kbd>0</kbd> - register zadnjega kopiranja z
-            <kbd>y</kbd> (<i>yank</i>, ne pa tudi izrezovanja z
-            <kbd>d</kbd>)</li>
-            </ul></li>
-            <li><kbd>y</kbd> = <i>yank</i> - kopiraj</li>
-            <li><kbd>d</kbd> - izreži (tj. kopiraj in izbriši)</li>
-            <li><kbd>p</kbd> = <i>paste</i> - prilepi</li>
-            <li><kbd>u</kbd> = <i>undo</i> - pojdi korak nazaj v
-            zgodovini urejanja</li>
-            <li><kbd>gg</kbd> - na začetek datoteke</li>
-            <li><kbd>Shift+g</kbd> - na konec datoteke</li>
-            <li><kbd>0</kbd> - na začetek trenutne vrstice (v
-            urejevalnem načinu deluje le splošni <kbd>Home</kbd>, kar je
-            običajno <kbd>Fn+levo</kbd>)</li>
-            <li><kbd>$</kbd> - na konec trenutne vrstice (v urejevalnem
-            načinu deluje le splošni <kbd>End</kbd>, kar je običajno
-            <kbd>Fn+desno</kbd>)</li>
-            <li><kbd>Tab</kbd> - premikaj se med urejevanimi
-            datotekami</li>
-            </ul>
-            <p>Dodajanje v več vrstic hkrati (a navpično poravnano): na
-            mesto urejanja v prvi vrstici, <kbd>Ctrl+v</kbd>, označi
-            stolpec (gor/dol), <kbd>Shift+i</kbd>, dodaj,
-            <kbd>Esc</kbd>, <kbd>Esc</kbd></p>
-            <p>Ukazi:</p>
-            <ul>
-            <li><code>:e</code> = <i>edit</i> - urejaj datoteko (če ni
-            opredeljena druga datoteka, posodobi trenutno, za primer, da
-            je bila spremenjena drugje)
-            <ul>
-            <li><code>:e ime_datoteke</code> - urejaj (odpri)
-            datoteko</li>
-            </ul></li>
-            <li><code>:bd</code> - preneha z urejanjem trenutno
-            ogledovane datoteke (zapre za urejanje)</li>
-            <li><code>:set wrap</code>/<code>:set nowrap</code> -
-            nastavi prelom, oz. odnastavi prelom vrstic</li>
-            <li><code>:&lt;</code> oz. <code>:&gt;</code> - zamakni vse
-            označene vrstice v levo oz. desno</li>
-            <li><code>:s/niz/zamenjava</code> - zamenja niz v trenutni
-            vrsticii
-            <ul>
-            <li><code>%s/niz/zamenjava/g</code> - zamenja niz v vseh
-            vrsticah</li>
-            <li><code>:%s/old/new/gc</code> - za vsako zamenjavo
-            vpraša</li>
-            </ul></li>
-            <li><code>:N</code> – skoči v vrstico številka N</li>
-            </ul>
-            <h3 id="LF">LF</h3>
-            <p>Uporablja podobne bližnjice kot VIM:</p>
-            <ul>
-            <li><kbd>r</kbd> = <i>rename</i> - preimenuj predmet</li>
-            <li><kbd>y</kbd> = <i>yank</i> - kopiraj</li>
-            <li><kbd>d</kbd> - izreži</li>
-            <li><kbd>p</kbd> = <i>paste</i> - prilepi</li>
-            <li><kbd>c</kbd> = <i>clear</i> - prekliči ukaze (kopiraj,
-            izreži prilepi, … za izbrane predmete)</li>
-            <li><kbd>Space</kbd> - izberi/odizberi predmet</li>
-            <li><kbd>v</kbd> = <i>invert</i> - obrni izbor</li>
-            <li><kbd>u</kbd> = <i>unselect</i> - odizberi vse</li>
-            <li><kbd>gg</kbd> - premakni se na vrh seznama
-            predmetov</li>
-            <li><kbd>Shift+g</kbd> - premakni se na dno seznama
-            predmetov</li>
-            <li><kbd>s</kbd> = <i>sort</i> - razvrsti</li>
-            <li><kbd>s</kbd> - razvrsti po …</li>
-            <li><kbd>z</kbd> - nastavi
-            <ul>
-            <li><kbd><b>zh</kbd></b> = <i>hidden</i> - skrij/prikaži
-            skrite datoteke</li>
-            <li><kbd><b>zr</kbd></b> = <i>reverse</i> - razvrsti
-            predmete v obratnem vrstnem redu</li>
-            <li><kbd><b>zt</kbd></b> = <i>time</i> - prikaži čas
-            datotek/map</li>
-            <li><kbd><b>zs</kbd></b> = <i>size</i> - prikaži velikost
-            datotek</li>
-            </ul></li>
-            <li><kbd><b>Super+w</kbd></b> - odpri trenutno mesto v
-            terminalu</li>
-            <li><kbd>$</kbd> - odpre ukazno vrstico, kjer lahko
-            uporabljaš ukaze terminala (le tako lahko npr. brišeš) -
-            <b>ta bližnjica ni privzeto nastavljena</b></li>
-            <li><code>/iskalni_niz</code> - išči
-            <ul>
-            <li><kbd>n</kbd> / <kbd>Shift+n</kbd> - premikaj se
-            naprej/nazaj po zadetkih iskanja</li>
-            </ul></li>
-            </ul>
-            <h3 id="NCMPCPP">NCMPCPP</h3>
-            <ul>
-            <li><kbd>1</kbd> - na sezname predvajanja
-            (<i>Playlist</i>)</li>
-            <li><kbd>2</kbd> - na seznam vseh skladb
-            (<i>Browse</i>)</li>
-            <li><kbd>3</kbd> - na iskalnik (<i>Search engine</i>)</li>
-            <li><kbd>4</kbd> - na knjižnico (<i>Media library</i>)</li>
-            <li><kbd>5</kbd> - na urejevalnik seznamov predvajanja
-            (<i>Playlist editor</i>)</li>
-            <li><kbd>6</kbd> - na urejevalnik oznak skladb (<i>Tag
-            editor</i>)</li>
-            <li><kbd>7</kbd> - na izhodne programe za zvok
-            (<i>Outputs</i>)</li>
-            <li><kbd>8</kbd> - na prikazovalnik zvoka (<i>Music
-            visualizer</i>)</li>
-            <li><kbd>=</kbd> - na uro (<i>Clock</i>)</li>
-            <li><kbd>e</kbd> = <i>edit</i> - odpri preprost urejevalnik
-            oznak skladbe (<i>tiny tag editor</i>)</li>
-            <li><kbd>l</kbd> = <i>lyrics</i> - naloži besedilo
-            pesmi</li>
-            <li><kbd>&gt;<b>/</b>&lt;</kbd> - pojdi na
-            naslednjo/prejšnjo skladbo na seznamu</li>
-            <li><kbd>f<b>/</b>b</kbd> = <i>forward</i>/<i>backward</i> -
-            išči naprej/nazaj v pesmi</li>
-            <li><kbd>r</kbd> = <i>repeat mode</i> - preklopi na način
-            ponavljanja</li>
-            <li><kbd>z</kbd> - preklopi na naključni način</li>
-            <li><kbd>y</kbd> - preklopi na način ene skladbe (po eni
-            sladbi prekine predvajanje)</li>
-            <li><kbd>u</kbd> = <i>update</i> - posodobi knjižnico</li>
-            <li><kbd>i</kbd> - pokaži podatke o skladbi</li>
-            <li><kbd>:</kbd> - odpri ukazno vrstico</li>
             </ul>
             <hr />
             <h2 id="Zunanje_povezave_in_viri">Zunanje povezave in

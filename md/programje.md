@@ -37,6 +37,7 @@ Večinoma so tu programi, ki jih sam uporabljam, nekateri pa za določene naloge
 | [Merkaartor](https://merkaartor.be/) | urejevalnik zemljevida [Open Street Map](https://www.openstreetmap.org/) v jeziku C++ | [merkaartor](https://packages.debian.org/buster/merkaartor) | hiter; več dokumentacije na [OSM - Wiki - Merkaartor](https://wiki.openstreetmap.org/wiki/Merkaartor/Documentation) |
 | [MPV Media Player](https://mpv.io/) | predvajalnik posnetkov | [mpv](https://packages.debian.org/buster/mpv) | preprost, večina upravljanja z bližnjicami |
 | [Musescore](https://musescore.org/) | urejevalnik notnih zapisov | [musescore](https://packages.debian.org/buster/musescore) | priporočeno naložiti z uradne spletne strani |
+| [RapidRAW](https://www.getrapidraw.com/) | "neuničevalni" urejevalnik slik | | nadomestek [Adobe Lightroom](https://lightroom.com/) |
 | [QuteBrowser](https://www.qutebrowser.org/) | spletni brskalnik | []() | |
 | [Scribus](https://www.scribus.net/) | urejevalnik besedilnih dokumentov | [scribus](https://packages.debian.org/buster/scribus) | |
 | [SimpleScan](https://gitlab.gnome.org/GNOME/simple-scan) | skeniranje in tiskanje | [simple-scan](https://packages.debian.org/buster/gnome/simple-scan) | |

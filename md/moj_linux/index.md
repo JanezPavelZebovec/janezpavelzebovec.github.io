@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-06-30
+date: 2026-07-21
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -8,11 +8,20 @@ author: Janez Pavel Žebovec
 
 # Moj Linux
 
-To je vodič skozi namestitev okolij Linux Debian, kakršne imam jaz (svojega strežnika trenutno sicer nimam, sem ga pa že vzpostavil po navedenih korakih v preteklosti – spet bo zaživel enkrat v prihodsnoti v nadgrajeni različici).
+To je vodič skozi namestitev okolij Linux Debian, kakršne imam jaz (svojega
+strežnika trenutno sicer nimam, sem ga pa že vzpostavil po navedenih korakih v
+preteklosti – spet bo zaživel enkrat v prihodnosti v nadgrajeni različici).
+
+Glej tudi [Priročnik za Linux](/knjiznica/linux), ki podrobneje razloži samo
+uporabo tega okolja, ne toliko vzpostavitev. Tudi tu je razloženih nekaj
+osnovnih načinov uporabe, ki pa se praviloma nanašajo na tisto, kar je pogosto
+potrebno vedeti za uspešno vzpostavitev.
 
 ## Vodič skozi namestitev uporabniškega okolja
 
-Nekatere moje stare nastavitvene in druge datoteke Linuxa se še nahajajo na [Codebergu: My Linux Configs](https://codeberg.org/JanezPavelZebovec/My_Linux_configs). Sicer pa je tu seznam najnovejših datotek, ki so na tem spletišču:
+Nekatere moje stare nastavitvene in druge datoteke Linuxa se še nahajajo na
+[Codebergu: My Linux Configs](https://codeberg.org/JanezPavelZebovec/My_Linux_configs).
+Sicer pa je tu seznam najnovejših datotek, ki so na tem spletišču:
 
 - etc/systemd/system/
     - [log-halt.service](/moj_linux/etc/systemd/system/log-halt.service)
@@ -58,103 +67,168 @@ Tukaj so navedeni koraki, po katerih prideš do skoraj enakega okolja kot je moj
 
 ## Ustvarjanje zagonskega ključka in dostop do zagonskega *menija*
 
-- [Debian.org](https://www.debian.org/) > [Other downloads](https://www.debian.org/distrib/) > [small installation image](https://www.debian.org/distrib/netinst) > prenesi **amd64**. S tem si prenesil datoteko ** \*.iso**
-- Ustvari zagonski ključek (ang. *bootable flash USB*) s to datoteko. V ta namen na Windowsu uporabi npr. [Rufus](https://rufus.ie/sl/) ali [Balena Etcher](https://etcher.balena.io/).
-- V programu izberi datoteko \*.iso in napravo (najpogosteje je to ključek USB), ki jo boš uporabil za nameščanje. Pri tem bo izbrisano vse, kar je bilo prej na tej napravi (npr. USB)
-- Zaženi računalnik in pritiskaj **F12** ali **F9** (odvisno od računalnika, lahko je tudi kaj tretjega, pogosto pa piše, kaj naj bi pritiskal)
+- [Debian.org](https://www.debian.org/)
+    > [Other downloads](https://www.debian.org/distrib/)
+    > [small installation image](https://www.debian.org/distrib/netinst)
+    > prenesi **amd64**. S tem si prenesil datoteko ** \*.iso**
+- Ustvari zagonski ključek (ang. *bootable flash USB*) s to datoteko. V ta namen
+  na Windowsu uporabi npr. [Rufus](https://rufus.ie/sl/) ali
+  [Balena Etcher](https://etcher.balena.io/).
+- V programu izberi datoteko \*.iso in napravo (najpogosteje je to ključek USB),
+  ki jo boš uporabil za nameščanje. Pri tem bo izbrisano vse, kar je bilo prej
+  na tej napravi (npr. USB)
+- Zaženi računalnik in pritiskaj **F12** ali **F9** (odvisno od računalnika,
+  lahko je tudi kaj tretjega, pogosto pa piše, kaj naj bi pritiskal)
 - Odpre se zagonski *meni*, kjer izbereš svojo zagonsko napravo (ključek USB)
 
 ## Namestitev *operacijskega sistema*
 
 Izberi **Graphical install** ali **Install**
 
-- Jezik nastavi na angleščino (čeprav je na voljo tudi v slovenščini), ker je tako mnogo lažje razhroščevati morebitne napake
+- Jezik nastavi na angleščino (čeprav je na voljo tudi v slovenščini), ker je
+  tako mnogo lažje razhroščevati morebitne napake
 - Državo lahko izbereš svojo (*Slovenia*, predvidevam)
 - Tipkovnico izbereš tako kot jo imaš (*Slovenian*, predvidevam)
 - Izberi *hostname*, kar je ime tvoje naprave (kot bo vidno v omrežju in tebi)
-- Ime domene (*Domain name*) pusti prazno (razen če vzpostavljaš strežnik – pa tudi v tem primeru se da to nasataviti kasneje)
-- Geslo skrbnika (*Root password*) pusti prazno, če hočeš biti edini uporabnik in s pravicami skrbnika (*root*a)
+- Ime domene (*Domain name*) pusti prazno (razen če vzpostavljaš strežnik – pa
+  tudi v tem primeru se da to nasataviti kasneje)
+- Geslo skrbnika (*Root password*) pusti prazno, če hočeš biti edini uporabnik
+  in s pravicami skrbnika (*root*a)
 - Izberi svoje uporabniško ime (*Full name for the new user*)
-- Izberi geslo (tega novoustvarjenega uporabnika, ki bo imel skrbniške pravice, če nisi predhodno izbral gesla skrbnika)
-- *Partitioning method* izberi *Guided – use entire disk*, če hočeš imeti na napravi le Linux (ostale podatke na disku bo izbrisalo!)
-- Pazljivo izberi pravi disk, na katerega boš namestil Linux (da ne izbereš recimo zagonskega ključka, ker bo potem Linux namestilo na ključek)
-- Izberi ločena *particija* za ** \home** (to pomeni, da ločiš svoje datoteke – hranjene v \home – od datotek operacijskega sistema, ki jih praviloma ne urejaš neposredno)
+- Izberi geslo (tega novoustvarjenega uporabnika, ki bo imel skrbniške pravice,
+  če nisi predhodno izbral gesla skrbnika)
+- *Partitioning method* izberi *Guided – use entire disk*, če hočeš imeti na
+  napravi le Linux (ostale podatke na disku bo izbrisalo!)
+- Pazljivo izberi pravi disk, na katerega boš namestil Linux (da ne izbereš
+  recimo zagonskega ključka, ker bo potem Linux namestilo na ključek)
+- Izberi ločena *particija* za ** \home** (to pomeni, da ločiš svoje datoteke –
+  hranjene v \home – od datotek operacijskega sistema, ki jih praviloma ne
+  urejaš neposredno)
 - Potrdi
-- Zdaj bo namestilo *operacijski sistem*, ter preneslo in maestilo vse potrebne *pakete/programe*
-- Zavrni *Scan extra installation media*, če nočeš namestiti Linuxa na dodatno napravo
+- Zdaj bo namestilo *operacijski sistem*, ter preneslo in maestilo vse potrebne
+  *pakete/programe*
+- Zavrni *Scan extra installation media*, če nočeš namestiti Linuxa na dodatno
+  napravo
 - Izberi svojo državo za *archive mirror*
-- Izbereš lahko privzet strežnik (*archive mirror*) *deb.debian.org* za prejem posodobitev, razen če veš, kjer ti je najbljižje, oz. je zate najhitrejši
+- Izbereš lahko privzet strežnik (*archive mirror*) *deb.debian.org* za prejem
+  posodobitev, razen če veš, kjer ti je najbljižje, oz. je zate najhitrejši
 - *HTTP proxy* pusti prazno
-- Prikaže se seznam razpoložljivih uporabniških vmesnikov (GNOME, Xfce, GNOME Flashback, KDE Plasma, Cinnamon, MATE, LXDE, LXQt) oz. spletni/SSH strežnik. Odizberi privzeto izbran uporabniški vmesnik GNOME in *Debian desktop environment*, ker bomo v nadaljevanju namestili DWM (če pa tega nočeš, se naše poti tu razidejo in je nadaljevanje Vodiča skoraj brezpredmetno) in pusti izbrano *standard system utilities*
+- Prikaže se seznam razpoložljivih uporabniških vmesnikov (GNOME, Xfce, GNOME
+  Flashback, KDE Plasma, Cinnamon, MATE, LXDE, LXQt) oz. spletni/SSH strežnik.
+  Odizberi privzeto izbran uporabniški vmesnik GNOME in *Debian desktop
+  environment*, ker bomo v nadaljevanju namestili DWM (če pa tega nočeš, se naše
+  poti tu razidejo in je nadaljevanje Vodiča skoraj brezpredmetno) in pusti
+  izbrano *standard system utilities*
 - Če si izbral katerega izmed uporabniških vmesnikov, se bo zdaj prenesel
 - *Install the GRUB boot loader* potrdi (to je zagonski *meni*)
-- Izberi napravo, kamor želiš namestiti GRUB (to je skoraj zagotovo disk naprave, na katero trenutno nameščaš Linux) – običajno **/dev/sda** ali **/dev/vda**
+- Izberi napravo, kamor želiš namestiti GRUB (to je skoraj zagotovo disk
+  naprave, na katero trenutno nameščaš Linux) – običajno **/dev/sda** ali
+  **/dev/vda**
 - Namestitev Linuxa je končana, nadaljuj na ponovni zagon
 
 Zagon novega *operacijskega sistema*:
 
 - Ob ponovnem zagonu v zagonskem *meniju* izberi **Debian GNU/Linux**
-- Zdaj si v Linuxu brez uporabniškega vmesnika (ker ga moramo še namestiti, poleg še nekaterih drugih zadev)
-- Prijavi se, kot zahtevano, z uporabniškim imenom in geslom, ki si ju nastavil
+- Zdaj si v Linuxu brez uporabniškega vmesnika (ker ga moramo še namestiti,
+  poleg še nekaterih drugih zadev)
+- Prijavi se, kot zahtevano, z uporabniškim imenom in geslom, ki si ju
+  nastavil
 
 ## Urejanje *operacijskega sistema*
 
 - `sudo apt update` – posodobi seznam nameščenih *paketov programov*
 - `sudo apt install` ... – namesti orodje ...
     - `xorg` – namesti strežnik X
-    - `xinit` – *program*, ki se izvede ob zagonu; lahko tudi nastavimo, kaj vse naj se še zažene ob zagonu *sistema*
-    - `git` – [Git](https://git-scm.com/), orodje za upravljanje z izvorno *kodo* (tako tudi prenos datotek s spletišč kot SO GitHub, GitLab in Codeberg)
-    - `curl` – [Curl](https://curl.se/), orodje za en izmed načinov prenosa datotek s spleta
-    - `make` – program za "izgradnjo", prevajanje orodij iz "nastavitvenih datotek" v *binarne* za uporabo
+    - `xinit` – *program*, ki se izvede ob zagonu; lahko tudi nastavimo, kaj vse
+      naj se še zažene ob zagonu *sistema*
+    - `git` – [Git](https://git-scm.com/), orodje za upravljanje z izvorno
+      *kodo* (tako tudi prenos datotek s spletišč kot SO GitHub, GitLab in
+      Codeberg)
+    - `curl` – [Curl](https://curl.se/), orodje za en izmed načinov prenosa
+      datotek s spleta
+    - `make` – program za "izgradnjo", prevajanje orodij iz "nastavitvenih
+      datotek" v *binarne* za uporabo
     - `build-essential` – namesti potrebne pakete za izgradnjo z ukazom `make`
     - `network-manager` – orodje za upravljanje z omrežjem
+
+Povezovanje z brezžičnim omrežjem:
+
 - `sudo systemctl start NetworkManager` – zažene NetworkManager
 - `sudo systemctl enable NetworkManager`
-- `nmcli device wifi connect ime_omrežja password geslo_omrežja` – tako se lahko zdaj povežeš tudi na na brezžično omrežje (izbirno)
+- `nmcli device wifi` – izpiše razpoložljiva brezžična omrežja (*WiFi*)
+- `nmcli device wifi connect ime_omrežja password geslo_omrežja` – poveže se z
+  omrežjem za kar je potrebno poznati ime omrežja in geslo, če je zaščiteno z
+  geslom
 
 ### Nameščanje Sucklessovih orodij iz vira
+
+Prenašanje orodij:
 
 - `mkdir viri` – ustvari *mapo*, v katero bomo shranili programe, prenešene iz vira
 - `cd viri` – premakni se v to *mapo*
 - `git clone` ... – prenese zadevo (*repozitorij*) s spleta
-    - `https://git.suckless.org/dwm` – [Dynamic Windows Manager (DWM)](https://dwm.suckless.org/), upravitelj oken
-    - `https://git.suckless.org/dmenu` – [Dynamic Menu (DMenu)](https://tools.suckless.org/dmenu/), orodna (*statusna*) vrstica
-    - `https://git.suckless.org/st` – [Simple terminal (ST)](https://st.suckless.org/), *terminal*
-    - `https://git.suckless.org/slock` – [Simple X display locker (SLock)](https://tools.suckless.org/slock/), zaklenjen zaslon
-    - `https://git.suckless.org/slstatus` – [SLStatus](https://tools.suckless.org/slstatus/), prikazovalnik stanja v orodni vrstici, kot je ura, *baterija*, omrežna povezava, ... (če ne ustvariš kar svojega)
-    - `https://git.suckless.org/surf` – [Surf](https://surf.suckless.org/), spletni brskalnik
+    - `https://git.suckless.org/dwm` – 
+        [Dynamic Windows Manager (DWM)](https://dwm.suckless.org/), upravitelj oken
+    - `https://git.suckless.org/dmenu` – 
+        [Dynamic Menu (DMenu)](https://tools.suckless.org/dmenu/),
+        orodna (*statusna*) vrstica
+    - `https://git.suckless.org/st` –
+        [Simple terminal (ST)](https://st.suckless.org/),
+        *terminal*
+    - `https://git.suckless.org/slock` –
+        [Simple X display locker (SLock)](https://tools.suckless.org/slock/),
+        zaklenjen zaslon
+    - `https://git.suckless.org/slstatus` –
+        [SLStatus](https://tools.suckless.org/slstatus/), prikazovalnik stanja
+        v orodni vrstici, kot je ura, *baterija*, omrežna povezava, ...
+        (če ne ustvariš kar svojega)
+    - `https://git.suckless.org/surf` – [Surf](https://surf.suckless.org/),
+        spletni brskalnik
 
-**Nameščanje orodij**:
+Nameščanje orodij:
 
-- `sudo apt install` ... – namesti odvisnosti za DWM (morda te potrebujeta tudi ST in Dmenu, ker zanju ne potrebujemo dodatnih odvisnostih) ...
+- `sudo apt install` ... – namesti odvisnosti za DWM (morda te potrebujeta tudi
+  ST in Dmenu, ker zanju ne potrebujemo dodatnih odvisnostih) ...
     - `libx11-dev` – za osnovno sporazumevanje s strežnikom X
     - `libxft-dev` – za prikaz pisav
-    - `libxinerama-dev` – za podporo več zaslonov
-    Morda je dobro imeti še (tega sam še nisem potreboval):
+    - `libxinerama-dev` – za podporo več zaslonov Morda je dobro imeti še (tega
+      sam še nisem potreboval):
     - `libxrandr-dev` – za dinamično spreminjanje ločljivosti in usmeritve zaslona
-    - `libxcb-res-dev` – omogoča dostop do določenih *sistemskih* podatkov za npr. *statusno* vrstico
+    - `libxcb-res-dev` – omogoča dostop do določenih *sistemskih* podatkov za
+      npr. *statusno* vrstico
 - `sudo apt install libxrandr-dev` –  dodatna odvisnost za Slock
 - `cd ~/viri/ime_programa/` – pojdi v mapo prenešenega orodja
-- prilagodi nastavitveno datoteko **config.h** svojim željam (to lahko storiš tudi kasneje in ponoviš sledeči korak)
-- `sudo make clean install` – pretvori orodje v uporabni *binarni* zapis in namesti orodje
+- prilagodi nastavitveno datoteko **config.h** svojim željam (to lahko storiš
+  tudi kasneje in ponoviš sledeči korak)
+- `sudo make clean install` – pretvori orodje v uporabni *binarni* zapis in
+  namesti orodje
 
 ### Zagon *sistema*
 
-- `echo "exec dwm" > ~/.xinitrc` – v nastavitveno datoteko [**~/.xinitrc/**](/moj_linux/home/janezpavel/.xinitrc) zagonskega *programa* doda vrstico, ki zažene DWM ob zagonu strežnika X
-- `startx` – zažene strežnik X (torej tudi DWM, a le, če si pred tem ustrezno uredil **~/.xinitrc**
+- `echo "exec dwm" > ~/.xinitrc` – v nastavitveno datoteko
+  [**~/.xinitrc/**](/moj_linux/home/janezpavel/.xinitrc) zagonskega *programa*
+  doda vrstico, ki zažene DWM ob zagonu strežnika X
+- `startx` – zažene strežnik X (torej tudi DWM, a le, če si pred tem ustrezno
+  uredil **~/.xinitrc**
 - terminal ST lahko zdaj odpreš z bližnjico **Shift+Alt+Enter**
 
 ### Tipkovnica
 
-Zdi se mi, da če si izbral pravo tipkovnico med postopkom nameščanja *operacijskega sistema*, bi moral imeti nastavljeno že pravo tipkovnico (?; vsaj jaz ob zadnji namestitvi z njo nisem imel težav), sicer pa je postopek tak (morda je treba namestiti še kakšen *program*):
+Zdi se mi, da če si izbral pravo tipkovnico med postopkom nameščanja
+*operacijskega sistema*, bi moral imeti nastavljeno že pravo tipkovnico (vsaj
+jaz ob zadnji namestitvi z njo nisem imel težav?), sicer pa je postopek tak
+(morda je treba namestiti še kakšen *program*):
 
-- `sudo dpkg-reconfigure keyboard-configuration` – zaženi programček za nastavitev tipkovnice
+- `sudo dpkg-reconfigure keyboard-configuration` – zaženi programček za
+  nastavitev tipkovnice
     - izberi *model* svoje tipkovnice
     - izberi slovensko tipkovnico "*Slovenian*"
     - izberi *Default* (privzeto) tipko za **AltGr**
     - za *Compose key* pa *Right Alt (AltGr)* (ali pa nič, če ne rabiš)
-- `sudo systemctl restart keyboard-setup.service` – znova zaženeš *sistem* za uporabo tipkovnice
-- nastavi slovensko tipkovnico v terminalu s `setxkbmap si`in to dodaj v **~./xinitrc**, da se ob zagonu vedno nastavi prava tipkovnica
+- `sudo systemctl restart keyboard-setup.service` – znova zaženeš *sistem* za
+  uporabo tipkovnice
+- nastavi slovensko tipkovnico v terminalu s `setxkbmap si`in to dodaj v
+  **~./xinitrc**, da se ob zagonu vedno nastavi prava tipkovnica
 
 ### Čas
 
@@ -165,13 +239,15 @@ Zdi se mi, da če si izbral pravo tipkovnico med postopkom nameščanja *operaci
 ### Zunanji pogoni
 
 - `sudo apt install udisks2` – namesti udisksctl za upravljanje z USB-ji
-- `udisksctl mount -b /dev/sda1` – priključi napravo (najpogostje je ime naprave *sda1*, kot v tem primeru, oz. *sda2* itd. če je naprav več, oz. *sdb1*)
+- `udisksctl mount -b /dev/sda1` – priključi napravo (najpogostje je ime naprave
+  *sda1*, kot v tem primeru, oz. *sda2* itd. če je naprav več, oz. *sdb1*)
 - `udisksctl unmount -b /dev/sda1` – varno izvrže napravo
 
 Za nekoliko bolj priročno uporabo zunanjih pogonov:
 
 - `mkdir -p ~/usb` – ustvari *mapo* usb v domači mapi
-- `ln -s /media/janezpavel ~/usb` – ustvari simbolno povezavo med *mapo*, kamor zgornji ukaz priklaplja naprave in novo ustvarjeno *mapo* v domači *mapi*
+- `ln -s /media/janezpavel ~/usb` – ustvari simbolno povezavo med *mapo*, kamor
+  zgornji ukaz priklaplja naprave in novo ustvarjeno *mapo* v domači *mapi*
 
 ### Zvok
 
@@ -182,23 +258,33 @@ Za nekoliko bolj priročno uporabo zunanjih pogonov:
     - `pulsemixer` – orodje za uravnavanje glasnosti, izbiranje izhodov)
 - `pulseaudio --start`
 
-Lahko ne uporablja želenih zvočnih *kartic* (izhodov; značilno se to zgodi, ko na HDMI priključimo dodaten zaslon z lastnimi zvočniki). To rešimo takole:
+Lahko ne uporablja želenih zvočnih *kartic* (izhodov; značilno se to zgodi, ko
+na HDMI priključimo dodaten zaslon z lastnimi zvočniki). To rešimo takole:
 
 - `pactl list short sinks` – izpiše seznam izhodov
-- `pactl set-default-sink ime_s_seznama.analog-stereo` – nastavi zvočno kartico vgrajenih zvočnikov, oz. ne zvočnikov priključenega zaslona (je to vedno *.analog-stero*?). Tako potem delujejo tudi slušalke (ker delujejo na zvočni *kartici* računalnika, ne povezanega zaslona).
+- `pactl set-default-sink ime_s_seznama.analog-stereo` – nastavi zvočno kartico
+  vgrajenih zvočnikov, oz. ne zvočnikov priključenega zaslona (je to vedno
+  *.analog-stero*?). Tako potem delujejo tudi slušalke (ker delujejo na zvočni
+  *kartici* računalnika, ne povezanega zaslona).
 
 ### Odstranitev nadležnega piskanja
 
 Za piskanje je odgovoren *modul* **pcspkr**.
 
 - `sudo rmmod pcspkr` – onemogoči ga začasno (do ponovnega zagona *sistema*)
-- `echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf` – onemogoči piskanje za vedno (tudi po ponovnem zagonu *sistema*)- to še ne onemogoči piskanja v trenutni seji (za to uporabi zgornji ukaz), ampak šele ob ponovnem zagonu
-    - enakovredno: v datoteko [**/etc/modprobe.d/nobeep.conf**](/moj_linux/etc/modprobe.d/nobeep.conf) dodaj `blacklist pcspkr`
+- `echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf` – onemogoči
+  piskanje za vedno (tudi po ponovnem zagonu *sistema*)- to še ne onemogoči
+  piskanja v trenutni seji (za to uporabi zgornji ukaz), ampak šele ob ponovnem
+  zagonu
+    - enakovredno: v datoteko
+      [**/etc/modprobe.d/nobeep.conf**](/moj_linux/etc/modprobe.d/nobeep.conf)
+      dodaj `blacklist pcspkr`
 - `lsmod | grep pcspkr` – preveri, če je *modul* trenutno dejaven/omogočen
 
 ### Sistemski temni način
 
-Da lahko v programih nastavimo *sistemsko* privzeto temo (v našem primeru temno), jim moramo to nekako povedati. To storimo s sledečima datotekama:
+Da lahko v programih nastavimo *sistemsko* privzeto temo (v našem primeru
+temno), jim moramo to nekako povedati. To storimo s sledečima datotekama:
 
 - `mkdir -p ~/.config/gtk-3.0`
 - `mkdir -p ~/.config/gtk-4.0`
@@ -207,11 +293,18 @@ Da lahko v programih nastavimo *sistemsko* privzeto temo (v našem primeru temno
 
 ### Lastne bližnjice
 
-- `sudo apt install sxhkd` – namesti program za dodajanje lastnih *sistemskih* bližnjic
-- `sxhkd &` – zažene SXHKD; najlepše je to dodati v [**~/.xinitrc/**](/moj_linux/home/janezpavel/.xinitrc) (nekam pred `exec dwn`, da se zažene že samodejno ob zagonu sistema)
+- `sudo apt install sxhkd` – namesti program za dodajanje lastnih
+    *sistemskih* bližnjic
+- `sxhkd &` – zažene SXHKD; najlepše je to dodati v
+  [**~/.xinitrc/**](/moj_linux/home/janezpavel/.xinitrc) (nekam pred `exec dwn`,
+    da se zažene že samodejno ob zagonu sistema)
 - `mkdir -p ~/.config/sxhkd/` – ustvari *mapo* za nastavitvene datoteke SXHKD
-- `touch ~/.config/sxhkd/sxhkdrc` – ustvari datoteko [**sxhkdrc**](/moj_linux/home/janezpavel/.config/sxhkd/sxhkdrc) za določanje lastnih bližnjic
-- `pkill -usr1 -x sxhkd` – s tem po urejanju nastavitvene datoteke ponovno zaženeš SXHKD (ne da bi znova zagnal ves *sistem*), da spremembe stopijo v veljavo
+- `touch ~/.config/sxhkd/sxhkdrc` – ustvari datoteko
+    [**sxhkdrc**](/moj_linux/home/janezpavel/.config/sxhkd/sxhkdrc)
+    za določanje lastnih bližnjic
+- `pkill -usr1 -x sxhkd` – s tem po urejanju nastavitvene datoteke ponovno
+    zaženeš SXHKD (ne da bi znova zagnal ves *sistem*), da spremembe stopijo v
+    veljavo
 
 
 ### Posnetki zaslona
@@ -221,9 +314,13 @@ Da lahko v programih nastavimo *sistemsko* privzeto temo (v našem primeru temno
 ### Ploščica na dotik
 
 - `sudo apt install xinput`
-- `xinput --set-prop 'MSFT0001:00 06CB:CE2D Touchpad' 'libinput Tapping Enabled' 1` – omogoči klikanje z dotikom (*tapom*)
-- `xinput --set-prop 'MSFT0001:00 06CB:CE2D Touchpad' 'libinput Natural Scrolling Enabled' 1` – drsenje v pravo smer s ploščico (drs gor premakne stran dol)
-- zgornja ukaza je smiselno dodati v ~/.xinitrc, da se to nastavi samodejno ob vsakem zagonu
+- `xinput --set-prop 'MSFT0001:00 06CB:CE2D Touchpad' 'libinput Tapping Enabled'
+  1` – omogoči klikanje z dotikom (*tapom*)
+- `xinput --set-prop 'MSFT0001:00 06CB:CE2D Touchpad' 'libinput Natural
+  Scrolling Enabled' 1` – drsenje v pravo smer s ploščico (drs gor premakne
+  stran dol)
+- zgornja ukaza je smiselno dodati v ~/.xinitrc, da se to nastavi samodejno ob
+  vsakem zagonu
 
 ### Orodja za vsakdanjo rabo
 
@@ -253,94 +350,16 @@ Morda deluje tudi tole (?)
  
 - `curl -fsS https://dl.brave.com/install.sh | sh`
 
-#### Dodatna orodja
+#### Eduroam
 
-- `sudo apt install` ...
-    - `pandoc` – [Pandoc](https://pandoc.org/), pretvornik *dokumentov*
-    - `abook` – [ABook](https://abook.sourceforge.io/), imenik/urejevalnik stikov
-    - `calcurse` – [CalCurse](https://calcurse.org/) ([na GitHubu](https://github.com/lfos/calcurse)), *koledar*
-    - `lftp` – [LFTP](https://lftp.yar.ru/), prenos datotek med napravami z različnimi *protokoli* (FTP, FTPS, SFTP, HTTP, HTTPS, BitTorrent, FISH)
-    - `sshpass`
-    - `htop` – [HTOP](https://htop.dev/), *statistika procesov sistema*
-    - `fastfetch` – [FastFetch](https://github.com/fastfetch-cli/fastfetch), podatki o *sistemu* v *terminalu*
-    - `solvespace` – [Solvespace](https://solvespace.com/), urejevalnik 3R (*3D*; [na GitHubu](https://github.com/solvespace/solvespace))
-    - `fontforge` – [GontForge](https://fontforge.org/), urejevalnik pisav [na GitHubu](https://github.com/fontforge/fontforge)
-    - `josm` – [JOSM](https://josm.openstreetmap.de/), urejevalnik OpenStreetMap
-    - `gramps` – [Gramps](https://gramps-project.org/), rodoslovno orodje
+- prenesi nameščevalnik Eduroam za Linux za svoje učilišče
+- `sudo apt install python3-dbus` – prenesi D-Bus, ki ga nameščevalnik Eduroam zahteva (oz. ga bo, če ga ne namestiš)
+- `python3 eduroam-linux-blablabla.py` – poženi prenešeni nameščevalnik
+- vnesi uporabniško ime in geslo – in namestitev je uspela: zdaj naj bi se lahko povezal na omrežje Eduroam brez vpisa kakršnegakoli gesla
 
-##### JOSM
+### Programski jeziki
 
-- v [~/.xinitrc](/moj_linux/home/janezpavel/.xinitrc) dodaj `export _JAVA_AWT_WM_NONREPARENTING=1`, da Java ve, kake vrste je upravljalec oken, da se preprečijo napake, povezane z okni (belo okno ob zagonu JOSM-a)
-
-##### QGIS
-
-(Glej tudi [QGIS – Installation Guide](https://qgis.org/resources/installation-guide/#debian-ubuntu)
-
-- `sudo apt install gnupg wget`
-- `sudo mkdir -p /etc/apt/keyrings` – ustvari mapo **keyrings**, če še ne obstaja (skoraj zagotovo že obstaja)
-- `sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg` – ključ GPG
-- `sudo vim /etc/apt/sources.list.d/qgis.sources` – odpri datoteko **qgis.sources** v urejevalniku in dodaj sledečo vsebino (ime ditribucije *Suites* lahko preveriš tudi z ukazom `lsb_release -cs`):
-
-    Types: deb deb-src
-    URIs: https://qgis.org/debian
-    Suites: trixie
-    Architectures: amd64
-    Components: main
-    Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
-
-- `sudo apt update`
-- `sudo apt install qgis qgis-plugin-grass` – namesti QGIS
-- po potrebi še `sudo apt install qgis-server`, kar namesti QGIS-ov strežnik (jaz tega še nisem nameščal)
-
-##### Musescore
-
-[Musescore](https://musescore.org/) je orodje za pisanje notnih zapisov
-
-Debian ima precej staro različico, zato je bolje [prenesti AppImage](https://musescore.org/en/download) z Musescorove uradne strani.
-
-- prenesi/shrani jo v ~/.local/bin/
-- po želji preimenuj privzeto ime oblike *MuseScore-Studio-4.6.5.253511702-x86_64.AppImage* v *MuseScore.AppImage*, da ti ob posodobitvah ni treba spreminjati poti v .desktop, če jo imaš nastavljeno (preneseš novo različico in jo prav tako preimenuješ, staro pa izbrišeš)
-- `chmod +x ~/.local/bin/MuseScore.AppImage` – naredi datoteko izvršljivo
-- `~/.local/bin/MuseScore-4.4.2.AppImage` da poženeš orodje, oz. `~/.local/bin/MuseScore.AppImage install`, če želiš, da samodejno ustvari še datoteko ~/.local/share/applications/MuseScore.desktop, navodilno datoteko in *ikone*
-
-##### Audiveris
-
-(Glej tudi [Audiveris – Building from source (Windows, macOS, Linux)](https://audiveris.github.io/audiveris/_pages/tutorials/install/sources/))
-
-`java -version` – če nimaš Jave vsaj 25, najverjetneje tega ne boš mogel namestiti (trenutna stabilna Java za Debian je 21, zato tega programa še nisem uspel namestiti).
-
-- `git clone https://github.com/Audiveris/audiveris.git`
-- `git checkout development`, `git pull --all` – zagotovi, da smo na najnovejši veji (je to sploh potrebno, če smo itak ravnokar prenesli?)
-- `./gradlew build` – izgradi program iz vira
-
-##### NeoMutt
-
-- `sudo apt install neomutt isync msmtp pass curl ca-certificates gettext` – Neomutt in njegove odvisnosti
-    - Izpisalo se bo vprašanje, ali želiš omogočiti *profil* AppArmor za msmpt, kar je priporočeno potrditi.
-- `sudo apt install notmuch lynx abook urlview` – priporočeni programi za zraven
-- `gpg --full-generate-key` – ustvari ključ GPG
-    - izberi privzeto vrsto: ECC (*sign and encrypt*; 9)
-    - izberi privzeto krivuljo (*Curve 25519*, 1)
-    - izberi privzeti čas poteka: ne poteče (*key does not expire*; 0)
-    - vpraša te po imenu
-    - vpraša te po el. naslovu
-    - izbereš lahko še neko opombo ključa
-    - potrdi izbire z **O**
-    - zdaj ustvariš geslo za ta ključ
-    - ključ je ustvarjen; lahko preveriš seznam svojih ključev z `gpg --list-secret-keys`
-- `pass init moj@elektronski.naslov`
-- `cd ~/viri/`
-
-**Mutt-wizard** (glej [LukeSmith: mutt-wizard](https://github.com/LukeSmithxyz/mutt-wizard)):
-
-- `git clone https://github.com/LukeSmithxyz/mutt-wizard`
-- `cd mutt-wizard`
-- `sudo make install`
-- `mw -a moj@elektronski.naslov` – dodaj elektronski naslov
-
-#### Programski jeziki
-
-##### Python
+#### Python
 
 `sudo apt install pyton3` – namesti osnovni *interpretator* [Pythona](https://www.python.org/)
 
@@ -366,7 +385,7 @@ Micromamba
 - `micromamba env remove -n moje_okolje` – odstrani okolje
 - `micromamba clean --trash` – počisti ostanke datotek izbrisanih okolij
 
-##### Latex
+#### Latex
 
 [Latex](https://www.latex-project.org/) je označevalni jezik za pripravo *dokumentov* (zlasti znanstvenih)
 
@@ -379,24 +398,145 @@ Micromamba
     - `cm-super` – nek paket pisav, med drugim lahko potem uporabljaš LaTex v grafih Matplotlib
     - `dvipng`
 
-#### *Lokalni* strežnik
+### Dodatna orodja
 
-- ` python3 -m http.server 8000`
+- `sudo apt install` ...
+    - `pandoc` – [Pandoc](https://pandoc.org/), pretvornik *dokumentov*
+    - `abook` – [ABook](https://abook.sourceforge.io/), imenik/urejevalnik stikov
+    - `calcurse` – [CalCurse](https://calcurse.org/) ([na GitHubu](https://github.com/lfos/calcurse)), *koledar*
+    - `lftp` – [LFTP](https://lftp.yar.ru/), prenos datotek med napravami z različnimi *protokoli* (FTP, FTPS, SFTP, HTTP, HTTPS, BitTorrent, FISH)
+    - `sshpass`
+    - `htop` – [HTOP](https://htop.dev/), *statistika procesov sistema*
+    - `fastfetch` – [FastFetch](https://github.com/fastfetch-cli/fastfetch), podatki o *sistemu* v *terminalu*
+    - `solvespace` – [Solvespace](https://solvespace.com/), urejevalnik 3R (*3D*; [na GitHubu](https://github.com/solvespace/solvespace))
+    - `fontforge` – [GontForge](https://fontforge.org/), urejevalnik pisav [na GitHubu](https://github.com/fontforge/fontforge)
+    - `josm` – [JOSM](https://josm.openstreetmap.de/), urejevalnik OpenStreetMap
+    - `gramps` – [Gramps](https://gramps-project.org/), rodoslovno orodje
 
-##### *Live-server*
+#### JOSM
+
+- v [~/.xinitrc](/moj_linux/home/janezpavel/.xinitrc) dodaj `export _JAVA_AWT_WM_NONREPARENTING=1`, da Java ve, kake vrste je upravljalec oken, da se preprečijo napake, povezane z okni (belo okno ob zagonu JOSM-a)
+
+#### QGIS
+
+(Glej tudi [QGIS – Installation Guide](https://qgis.org/resources/installation-guide/#debian-ubuntu)
+
+- `sudo apt install gnupg wget`
+- `sudo mkdir -p /etc/apt/keyrings` – ustvari mapo **keyrings**, če še ne obstaja (skoraj zagotovo že obstaja)
+- `sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg` – ključ GPG
+- `sudo vim /etc/apt/sources.list.d/qgis.sources` – odpri datoteko **qgis.sources** v urejevalniku in dodaj sledečo vsebino (ime ditribucije *Suites* lahko preveriš tudi z ukazom `lsb_release -cs`):
+
+    Types: deb deb-src
+    URIs: https://qgis.org/debian
+    Suites: trixie
+    Architectures: amd64
+    Components: main
+    Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
+
+- `sudo apt update`
+- `sudo apt install qgis qgis-plugin-grass` – namesti QGIS
+- po potrebi še `sudo apt install qgis-server`, kar namesti QGIS-ov strežnik (jaz tega še nisem nameščal)
+
+#### Musescore
+
+[Musescore](https://musescore.org/) je orodje za pisanje notnih zapisov
+
+Debian ima precej staro različico, zato je bolje [prenesti AppImage](https://musescore.org/en/download) z Musescorove uradne strani.
+
+- prenesi/shrani jo v ~/.local/bin/
+- po želji preimenuj privzeto ime oblike *MuseScore-Studio-4.6.5.253511702-x86_64.AppImage* v *MuseScore.AppImage*, da ti ob posodobitvah ni treba spreminjati poti v .desktop, če jo imaš nastavljeno (preneseš novo različico in jo prav tako preimenuješ, staro pa izbrišeš)
+- `chmod +x ~/.local/bin/MuseScore.AppImage` – naredi datoteko izvršljivo
+- `~/.local/bin/MuseScore-4.4.2.AppImage` da poženeš orodje, oz. `~/.local/bin/MuseScore.AppImage install`, če želiš, da samodejno ustvari še datoteko ~/.local/share/applications/MuseScore.desktop, navodilno datoteko in *ikone*
+
+##### Audiveris
+
+(Glej tudi [Audiveris – Building from source (Windows, macOS, Linux)](https://audiveris.github.io/audiveris/_pages/tutorials/install/sources/))
+
+`java -version` – če nimaš Jave vsaj 25, najverjetneje tega ne boš mogel namestiti (trenutna stabilna Java za Debian je 21, zato tega programa še nisem uspel namestiti).
+
+- `git clone https://github.com/Audiveris/audiveris.git`
+- `git checkout development`, `git pull --all` – zagotovi, da smo na najnovejši veji (je to sploh potrebno, če smo itak ravnokar prenesli?)
+- `./gradlew build` – izgradi program iz vira
+
+#### NeoMutt
+
+- `sudo apt install neomutt isync msmtp pass curl ca-certificates gettext` – Neomutt in njegove odvisnosti
+    - Izpisalo se bo vprašanje, ali želiš omogočiti *profil* AppArmor za msmpt, kar je priporočeno potrditi.
+- `sudo apt install notmuch lynx abook urlview` – priporočeni programi za zraven
+- `gpg --full-generate-key` – ustvari ključ GPG
+    - izberi privzeto vrsto: ECC (*sign and encrypt*; 9)
+    - izberi privzeto krivuljo (*Curve 25519*, 1)
+    - izberi privzeti čas poteka: ne poteče (*key does not expire*; 0)
+    - vpraša te po imenu
+    - vpraša te po el. naslovu
+    - izbereš lahko še neko opombo ključa
+    - potrdi izbire z **O**
+    - zdaj ustvariš geslo za ta ključ
+    - ključ je ustvarjen; lahko preveriš seznam svojih ključev z `gpg --list-secret-keys`
+- `pass init moj@elektronski.naslov`
+- `cd ~/viri/`
+
+**Mutt-wizard** (glej [LukeSmith: mutt-wizard](https://github.com/LukeSmithxyz/mutt-wizard)):
+
+- `git clone https://github.com/LukeSmithxyz/mutt-wizard`
+- `cd mutt-wizard`
+- `sudo make install`
+- `mw -a moj@elektronski.naslov` – dodaj elektronski naslov
+
+#### *Live-server*
 
 - `sudo apt install nodejs npm`
-- `npm install -g live-server` – namesti live-server *globalno* (bi bilo bolje namestiti kam drugam, kot privzeto, npr. v ~/ ?)
+- `npm install -g live-server` – namesti live-server *globalno* (bi bilo bolje
+  namestiti kam drugam, kot privzeto, npr. v **~/** ?)
 
-##### PHP
+##### Strežnik PHP
 
 - `sudo apt install php`
-- `php -S localhost:8000`
 
 Za uporabo SQL še:
 
 - `sudo apt install php-pdo php-mysql`
 - `sudo systemctl restart apache2`
+
+#### Beekeeper Studio
+
+**Namestitev ključa GPG**:
+```
+curl -fsSL https://deb.beekeeperstudio.io/beekeeper.key | sudo gpg --dearmor --output /usr/share/keyrings/beekeeper.gpg \
+  && sudo chmod go+r /usr/share/keyrings/beekeeper.gpg \
+  && echo "deb [signed-by=/usr/share/keyrings/beekeeper.gpg] https://deb.beekeeperstudio.io stable main" \
+  | sudo tee /etc/apt/sources.list.d/beekeeper-studio-app.list > /dev/null
+```
+
+**Namestitev programa**: `sudo apt update && sudo apt install beekeeper-studio -y`
+
+Glavna izvrščjiva datoteka je zdaj nameščena na **/opt/Beekeeper Studio/beekeeper-studio**
+
+Za lažje zaganjanje:
+
+`sudo ln -s "/opt/Beekeeper Studio/beekeeper-studio" /usr/local/bin/beekeeper`
+
+#### DBeaver
+
+(Glej [](https://dbeaver.io/download/#linux))
+
+- `sudo wget -q -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/dbeaver.gpg.key` – prenese ključ GPG 
+- `echo "deb [signed-by=/usr/share/keyrings/dbeaver.gpg.key] https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list` – doda repozitorij APT
+- `sudo apt update && sudo apt install dbeaver-ce` – posodobi sezname nameščenih *paketov* in namesti DBeaver
+
+#### Torrent
+
+##### Aria2
+
+- `sudo apt install aria2`
+- `aria2c pot/do/datoteke.torrent`
+    `--seed-ratio=1` – nastavi razmerje na 1 (lahko je katerakoli druga pozitivna številka)
+    `--seed-time=5` – nastavi *sejalni* čas na 5 minut (lahko je drugo število minut)
+
+#### YT-DLP
+
+- odpri povezavo <https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp> (glej tudi [yt-dlp – Installation](https://github.com/yt-dlp/yt-dlp/wiki/Installation), GitHub) in se samodejno prenese različica za Linux, ki jo shrani v **~/.local/bin/**
+- `yt-dlp -U` – posodobitev
 
 #### Izbirnik barv na zaslonu
 
@@ -409,6 +549,27 @@ Za uporabo SQL še:
     - `sudo install -Dm644 sxcs.1 /usr/local/share/man/man1/sxcs.1` – namestimo navodila na ustrezno mesto
     - `sudo mandb` – lahko še takoj osvežimo zbirko navodil
     - če zdaj poženemo orodje v *terminalu* (`sxcs`), lahko *klikamo* z miško naokoli in se v *terminalu* izpisujejo barve *poklikanih* točk
+
+### Podatkovna zbirka SQL
+
+- `sudo apt install mariadb-server` – namesti strežnik [MariaDB](https://mariadb.com/) (različica MySQL?)
+- `sudo systemctl status mariadb` – preveri stanje zbirke SQL
+- `sudo mariadb` – tako vstopiš v zbirko
+    - `exit;` – izhod iz zbirke
+    - `CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE utfmb4_unicode_ci;` – ustvari zbirko z imenom *moja_zbirka* s polnim Unikodom (utf8mb4), kar prepreči težave s šumniki, posebnimi znaki; ter zagotovi pravilno slovensko/Unikodno razvrščanje besedila
+    - `CREATE USER 'uporabnik'@'localhost' IDENTIFIED BY 'geslo';` – ustvari uporabnika zbirke z up. imenom *uporabnik*, ki se sme povezati preko *lokalnega* strežnika (*localhost*); dodelimo mu še geslo za prijavo
+    - `GRANT ALL PRIVILEGES ON moja_zbirka.* TO 'uporabnik'@'localhost';` – dodeli uporabniku vse pravice do vseh preglednic v zbirki (.\*)
+    - `ALTER USER 'uporabnik'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('geslo');` – uporabnika izrecno nastavimo na geselno *avtentikacijo*
+    - `FLUSH PRIVILEGES;` – MariaDB ponovno naloži, oz. osveži pravice in zagotovi, da začnejo veljati takoj
+    - `ALTER USER 'uporabnik'@'localhost' IDENTIFIED BY 'novo_geslo';` – spremeni geslo uporabnika
+    - `DROP USER 'uporabnik'@'localhost';` – izbriše uporabnika
+    - `DROP DATABASE knjige_dev;` – izbriše zbirko
+- `mysql -u uporabnik -p moja_zbirka` – prijava uporabnika v zbirko (v naslednjem koraku moraš vnesti še geslo)
+    - `CREATE TABLE moja_preglednica (` – ustvari preglednico z imenom *moja_preglednica* v zbirki
+        - `id INT AUTO_INCREMENT PRIMARY KEY,`
+        - `ime VARCHAR(255) NOT NULL,` – opredeli stolpec *ime* za nize, dolžine največ 255; vse vrstice rabijo imeti ime
+        - `podime VARCHAR(255),` – opredeli stolpec *podime* za nize, dolžine največ 255, ki je lahko tudi prazen
+        - `stevilke INT,` – opredeli stolpec *stevilke* številk
 
 ### Uporaba lastnih *skript*
 
@@ -497,13 +658,6 @@ Preverjanje:
 - `ssh -T git@github.com` / `ssh -T git@codeberg.org` – preveri dostop SSH do GitHuba/Codeberga
 - `git ls-remote ime-repozitorija` – preverjanje dostopa do oddaljenega *repozitorija*
 
-### Eduroam
-
-- prenesi nameščevalnik Eduroam za Linux za svoje učilišče
-- `sudo apt install python3-dbus` – prenesi D-Bus, ki ga nameščevalnik Eduroam zahteva (oz. ga bo, če ga ne namestiš)
-- `python3 eduroam-linux-blablabla.py` – poženi prenešeni nameščevalnik
-- vnesi uporabniško ime in geslo – in namestitev je uspela: zdaj naj bi se lahko povezal na omrežje Eduroam brez vpisa kakršnegakoli gesla
-
 ### Prilagajanje orodij
 
 (Glej tudi nastavitvene datoteke [na Codebergeu](https://codeberg.org/JanezPavelZebovec/My_Linux_configs), tu bom namreč pokril le nekatere bolj *tehnične* nastavitve, ne pa tudi slogovnih.)
@@ -553,7 +707,9 @@ colorscheme gruvbox
 
 Nato v odprtem VIM-u izvedi:
 
-- `:source %` – da stopijo spremembe **vimrc** v veljavo
+- `:source %` – da stopijo spremembe **vimrc** v veljavo v trenutni seji
+  datoteke .vimrc brez zapiranja in ponovnega odpiranja (seje drugih datotek je
+  potrebno znova odpreti?)
 - `:PlugInstall` – namesti vtičnike, navedene v **vimrc**
 
 #### DWM
@@ -570,67 +726,6 @@ V [**~/viri/dwm/config.h**](/moj_linux/home/janezpavel/viri/dwm/config.h):
 - `mkdir -p ~/.config/lf/` – ustvari *mapo* za nastavitveno datoteko
 - `touch ~/.config/lf/lfrc` – ustvari nastavitveno datoteko [**lfrc**](/moj_linux/home/janezpavel/.config/lf/lfrc) za LF
 
-### Podatkovna zbirka SQL
-
-- `sudo apt install mariadb-server` – namesti strežnik [MariaDB](https://mariadb.com/) (različica MySQL?)
-- `sudo systemctl status mariadb` – preveri stanje zbirke SQL
-- `sudo mariadb` – tako vstopiš v zbirko
-    - `exit;` – izhod iz zbirke
-    - `CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE utfmb4_unicode_ci;` – ustvari zbirko z imenom *moja_zbirka* s polnim Unikodom (utf8mb4), kar prepreči težave s šumniki, posebnimi znaki; ter zagotovi pravilno slovensko/Unikodno razvrščanje besedila
-    - `CREATE USER 'uporabnik'@'localhost' IDENTIFIED BY 'geslo';` – ustvari uporabnika zbirke z up. imenom *uporabnik*, ki se sme povezati preko *lokalnega* strežnika (*localhost*); dodelimo mu še geslo za prijavo
-    - `GRANT ALL PRIVILEGES ON moja_zbirka.* TO 'uporabnik'@'localhost';` – dodeli uporabniku vse pravice do vseh preglednic v zbirki (.\*)
-    - `ALTER USER 'uporabnik'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('geslo');` – uporabnika izrecno nastavimo na geselno *avtentikacijo*
-    - `FLUSH PRIVILEGES;` – MariaDB ponovno naloži, oz. osveži pravice in zagotovi, da začnejo veljati takoj
-    - `ALTER USER 'uporabnik'@'localhost' IDENTIFIED BY 'novo_geslo';` – spremeni geslo uporabnika
-    - `DROP USER 'uporabnik'@'localhost';` – izbriše uporabnika
-    - `DROP DATABASE knjige_dev;` – izbriše zbirko
-- `mysql -u uporabnik -p moja_zbirka` – prijava uporabnika v zbirko (v naslednjem koraku moraš vnesti še geslo)
-    - `CREATE TABLE moja_preglednica (` – ustvari preglednico z imenom *moja_preglednica* v zbirki
-        - `id INT AUTO_INCREMENT PRIMARY KEY,`
-        - `ime VARCHAR(255) NOT NULL,` – opredeli stolpec *ime* za nize, dolžine največ 255; vse vrstice rabijo imeti ime
-        - `podime VARCHAR(255),` – opredeli stolpec *podime* za nize, dolžine največ 255, ki je lahko tudi prazen
-        - `stevilke INT,` – opredeli stolpec *stevilke* številk
-
-#### Beekeeper Studio
-
-**Namestitev ključa GPG**:
-```
-curl -fsSL https://deb.beekeeperstudio.io/beekeeper.key | sudo gpg --dearmor --output /usr/share/keyrings/beekeeper.gpg \
-  && sudo chmod go+r /usr/share/keyrings/beekeeper.gpg \
-  && echo "deb [signed-by=/usr/share/keyrings/beekeeper.gpg] https://deb.beekeeperstudio.io stable main" \
-  | sudo tee /etc/apt/sources.list.d/beekeeper-studio-app.list > /dev/null
-```
-
-**Namestitev programa**: `sudo apt update && sudo apt install beekeeper-studio -y`
-
-Glavna izvrščjiva datoteka je zdaj nameščena na **/opt/Beekeeper Studio/beekeeper-studio**
-
-Za lažje zaganjanje:
-
-`sudo ln -s "/opt/Beekeeper Studio/beekeeper-studio" /usr/local/bin/beekeeper`
-
-#### DBeaver
-
-(Glej [](https://dbeaver.io/download/#linux))
-
-- `sudo wget -q -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/dbeaver.gpg.key` – prenese ključ GPG 
-- `echo "deb [signed-by=/usr/share/keyrings/dbeaver.gpg.key] https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list` – doda repozitorij APT
-- `sudo apt update && sudo apt install dbeaver-ce` – posodobi sezname nameščenih *paketov* in namesti DBeaver
-
-### Torrent
-
-#### Aria2
-
-- `sudo apt install aria2`
-- `aria2c pot/do/datoteke.torrent`
-    `--seed-ratio=1` – nastavi razmerje na 1 (lahko je katerakoli druga pozitivna številka)
-    `--seed-time=5` – nastavi *sejalni* čas na 5 minut (lahko je drugo število minut)
-
-### YT-DLP
-
-- odpri povezavo <https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp> (glej tudi [yt-dlp – Installation](https://github.com/yt-dlp/yt-dlp/wiki/Installation), GitHub) in se samodejno prenese različica za Linux, ki jo shrani v **~/.local/bin/**
-- `yt-dlp -U` – posodobitev
-
 ---
 
 ## Še za narediti
@@ -644,6 +739,7 @@ Za lažje zaganjanje:
 - Blender
 - Libreoffice
 - [QGIS](https://qgis.org/)
+- [RapidRAW](https://www.getrapidraw.com/) za urejanje slik
 
 ---
 

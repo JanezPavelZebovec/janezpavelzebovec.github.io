@@ -31,8 +31,8 @@ sistema"/>
             </svg>
         </a>
 
-        <nav id="pot"><p><a href="/">dom</a> / <a href="/moj_linux/">moj_linux</a> / <a href="/moj_linux/index/">index</a></p></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-06-30">2026-06-30</time></p>
+        <nav id="pot"><a href="/">dom</a> / <a href="/moj_linux/">moj_linux</a> / <a href="/moj_linux/index/">index</a></nav>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-07-21">2026-07-21</time></p>
     </header>
     <nav>
         <ul>
@@ -80,16 +80,34 @@ sistema"/>
         <ul>
         <li><a href="#Brskalnik_Brave"
         id="toc-Brskalnik_Brave">Brskalnik Brave</a></li>
-        <li><a href="#Dodatna_orodja" id="toc-Dodatna_orodja">Dodatna
-        orodja</a></li>
+        <li><a href="#Eduroam" id="toc-Eduroam">Eduroam</a></li>
+        </ul></li>
         <li><a href="#Programski_jeziki"
-        id="toc-Programski_jeziki">Programski jeziki</a></li>
-        <li><a href="#Lokalni_streznik"
-        id="toc-Lokalni_streznik"><i>Lokalni</i> strežnik</a></li>
+        id="toc-Programski_jeziki">Programski jeziki</a>
+        <ul>
+        <li><a href="#Python" id="toc-Python">Python</a></li>
+        <li><a href="#Latex" id="toc-Latex">Latex</a></li>
+        </ul></li>
+        <li><a href="#Dodatna_orodja" id="toc-Dodatna_orodja">Dodatna
+        orodja</a>
+        <ul>
+        <li><a href="#JOSM" id="toc-JOSM">JOSM</a></li>
+        <li><a href="#QGIS" id="toc-QGIS">QGIS</a></li>
+        <li><a href="#Musescore" id="toc-Musescore">Musescore</a></li>
+        <li><a href="#NeoMutt" id="toc-NeoMutt">NeoMutt</a></li>
+        <li><a href="#Live_server"
+        id="toc-Live_server"><i>Live-server</i></a></li>
+        <li><a href="#Beekeeper_Studio"
+        id="toc-Beekeeper_Studio">Beekeeper Studio</a></li>
+        <li><a href="#DBeaver" id="toc-DBeaver">DBeaver</a></li>
+        <li><a href="#Torrent" id="toc-Torrent">Torrent</a></li>
+        <li><a href="#YT_DLP" id="toc-YT_DLP">YT-DLP</a></li>
         <li><a href="#Izbirnik_barv_na_zaslonu"
         id="toc-Izbirnik_barv_na_zaslonu">Izbirnik barv na
         zaslonu</a></li>
         </ul></li>
+        <li><a href="#Podatkovna_zbirka_SQL"
+        id="toc-Podatkovna_zbirka_SQL">Podatkovna zbirka SQL</a></li>
         <li><a href="#Uporaba_lastnih_skript"
         id="toc-Uporaba_lastnih_skript">Uporaba lastnih
         <i>skript</i></a>
@@ -103,7 +121,6 @@ sistema"/>
         </ul></li>
         <li><a href="#Posiljanje_GIT" id="toc-Posiljanje_GIT">Pošiljanje
         GIT</a></li>
-        <li><a href="#Eduroam" id="toc-Eduroam">Eduroam</a></li>
         <li><a href="#Prilagajanje_orodij"
         id="toc-Prilagajanje_orodij">Prilagajanje orodij</a>
         <ul>
@@ -111,18 +128,6 @@ sistema"/>
         <li><a href="#DWM" id="toc-DWM">DWM</a></li>
         <li><a href="#LF" id="toc-LF">LF</a></li>
         </ul></li>
-        <li><a href="#Podatkovna_zbirka_SQL"
-        id="toc-Podatkovna_zbirka_SQL">Podatkovna zbirka SQL</a>
-        <ul>
-        <li><a href="#Beekeeper_Studio"
-        id="toc-Beekeeper_Studio">Beekeeper Studio</a></li>
-        <li><a href="#DBeaver" id="toc-DBeaver">DBeaver</a></li>
-        </ul></li>
-        <li><a href="#Torrent" id="toc-Torrent">Torrent</a>
-        <ul>
-        <li><a href="#Aria2" id="toc-Aria2">Aria2</a></li>
-        </ul></li>
-        <li><a href="#YT_DLP" id="toc-YT_DLP">YT-DLP</a></li>
         </ul></li>
         <li><a href="#Se_za_narediti" id="toc-Se_za_narediti">Še za
         narediti</a></li>
@@ -138,7 +143,12 @@ sistema"/>
             <p>To je vodič skozi namestitev okolij Linux Debian, kakršne
             imam jaz (svojega strežnika trenutno sicer nimam, sem ga pa
             že vzpostavil po navedenih korakih v preteklosti – spet bo
-            zaživel enkrat v prihodsnoti v nadgrajeni različici).</p>
+            zaživel enkrat v prihodnosti v nadgrajeni različici).</p>
+            <p>Glej tudi <a href="/knjiznica/linux">Priročnik za
+            Linux</a>, ki podrobneje razloži samo uporabo tega okolja,
+            ne toliko vzpostavitev. Tudi tu je razloženih nekaj osnovnih
+            načinov uporabe, ki pa se praviloma nanašajo na tisto, kar
+            je pogosto potrebno vedeti za uspešno vzpostavitev.</p>
             <h2 id="Vodic_skozi_namestitev_uporabniskega_okolja">Vodič
             skozi namestitev uporabniškega okolja</h2>
             <p>Nekatere moje stare nastavitvene in druge datoteke Linuxa
@@ -356,15 +366,21 @@ sistema"/>
             <li><code>network-manager</code> – orodje za upravljanje z
             omrežjem</li>
             </ul></li>
+            </ul>
+            <p>Povezovanje z brezžičnim omrežjem:</p>
+            <ul>
             <li><code>sudo systemctl start NetworkManager</code> –
             zažene NetworkManager</li>
             <li><code>sudo systemctl enable NetworkManager</code></li>
+            <li><code>nmcli device wifi</code> – izpiše razpoložljiva
+            brezžična omrežja (<i>WiFi</i>)</li>
             <li><code>nmcli device wifi connect ime_omrežja password geslo_omrežja</code>
-            – tako se lahko zdaj povežeš tudi na na brezžično omrežje
-            (izbirno)</li>
+            – poveže se z omrežjem za kar je potrebno poznati ime
+            omrežja in geslo, če je zaščiteno z geslom</li>
             </ul>
             <h3 id="Namescanje_Sucklessovih_orodij_iz_vira">Nameščanje
             Sucklessovih orodij iz vira</h3>
+            <p>Prenašanje orodij:</p>
             <ul>
             <li><code>mkdir viri</code> – ustvari <i>mapo</i>, v katero
             bomo shranili programe, prenešene iz vira</li>
@@ -394,7 +410,7 @@ sistema"/>
             brskalnik</li>
             </ul></li>
             </ul>
-            <p><b>Nameščanje orodij</b>:</p>
+            <p>Nameščanje orodij:</p>
             <ul>
             <li><code>sudo apt install</code> … – namesti odvisnosti za
             DWM (morda te potrebujeta tudi ST in Dmenu, ker zanju ne
@@ -436,9 +452,9 @@ sistema"/>
             <h3 id="Tipkovnica">Tipkovnica</h3>
             <p>Zdi se mi, da če si izbral pravo tipkovnico med postopkom
             nameščanja <i>operacijskega sistema</i>, bi moral imeti
-            nastavljeno že pravo tipkovnico (?; vsaj jaz ob zadnji
-            namestitvi z njo nisem imel težav), sicer pa je postopek tak
-            (morda je treba namestiti še kakšen <i>program</i>):</p>
+            nastavljeno že pravo tipkovnico (vsaj jaz ob zadnji
+            namestitvi z njo nisem imel težav?), sicer pa je postopek
+            tak (morda je treba namestiti še kakšen <i>program</i>):</p>
             <ul>
             <li><code>sudo dpkg-reconfigure keyboard-configuration</code>
             – zaženi programček za nastavitev tipkovnice
@@ -567,9 +583,9 @@ sistema"/>
             <h3 id="Ploscica_na_dotik">Ploščica na dotik</h3>
             <ul>
             <li><code>sudo apt install xinput</code></li>
-            <li><code>xinput --set-prop 'MSFT0001:00 06CB:CE2D Touchpad' 'libinput Tapping Enabled' 1</code>
+            <li><code>xinput --set-prop 'MSFT0001:00 06CB:CE2D Touchpad' 'libinput Tapping Enabled'   1</code>
             – omogoči klikanje z dotikom (<i>tapom</i>)</li>
-            <li><code>xinput --set-prop 'MSFT0001:00 06CB:CE2D Touchpad' 'libinput Natural Scrolling Enabled' 1</code>
+            <li><code>xinput --set-prop 'MSFT0001:00 06CB:CE2D Touchpad' 'libinput Natural   Scrolling Enabled' 1</code>
             – drsenje v pravo smer s ploščico (drs gor premakne stran
             dol)</li>
             <li>zgornja ukaza je smiselno dodati v ~/.xinitrc, da se to
@@ -632,162 +648,21 @@ sistema"/>
             <ul>
             <li><code>curl -fsS https://dl.brave.com/install.sh | sh</code></li>
             </ul>
-            <h4 id="Dodatna_orodja">Dodatna orodja</h4>
+            <h4 id="Eduroam">Eduroam</h4>
             <ul>
-            <li><code>sudo apt install</code> …
-            <ul>
-            <li><code>pandoc</code> – <a
-            href="https://pandoc.org/">Pandoc</a>, pretvornik
-            <i>dokumentov</i></li>
-            <li><code>abook</code> – <a
-            href="https://abook.sourceforge.io/">ABook</a>,
-            imenik/urejevalnik stikov</li>
-            <li><code>calcurse</code> – <a
-            href="https://calcurse.org/">CalCurse</a> (<a
-            href="https://github.com/lfos/calcurse">na GitHubu</a>),
-            <i>koledar</i></li>
-            <li><code>lftp</code> – <a
-            href="https://lftp.yar.ru/">LFTP</a>, prenos datotek med
-            napravami z različnimi <i>protokoli</i> (FTP, FTPS, SFTP,
-            HTTP, HTTPS, BitTorrent, FISH)</li>
-            <li><code>sshpass</code></li>
-            <li><code>htop</code> – <a
-            href="https://htop.dev/">HTOP</a>, <i>statistika procesov
-            sistema</i></li>
-            <li><code>fastfetch</code> – <a
-            href="https://github.com/fastfetch-cli/fastfetch">FastFetch</a>,
-            podatki o <i>sistemu</i> v <i>terminalu</i></li>
-            <li><code>solvespace</code> – <a
-            href="https://solvespace.com/">Solvespace</a>, urejevalnik
-            3R (<i>3D</i>; <a
-            href="https://github.com/solvespace/solvespace">na
-            GitHubu</a>)</li>
-            <li><code>fontforge</code> – <a
-            href="https://fontforge.org/">GontForge</a>, urejevalnik
-            pisav <a href="https://github.com/fontforge/fontforge">na
-            GitHubu</a></li>
-            <li><code>josm</code> – <a
-            href="https://josm.openstreetmap.de/">JOSM</a>, urejevalnik
-            OpenStreetMap</li>
-            <li><code>gramps</code> – <a
-            href="https://gramps-project.org/">Gramps</a>, rodoslovno
-            orodje</li>
-            </ul></li>
+            <li>prenesi nameščevalnik Eduroam za Linux za svoje
+            učilišče</li>
+            <li><code>sudo apt install python3-dbus</code> – prenesi
+            D-Bus, ki ga nameščevalnik Eduroam zahteva (oz. ga bo, če ga
+            ne namestiš)</li>
+            <li><code>python3 eduroam-linux-blablabla.py</code> – poženi
+            prenešeni nameščevalnik</li>
+            <li>vnesi uporabniško ime in geslo – in namestitev je
+            uspela: zdaj naj bi se lahko povezal na omrežje Eduroam brez
+            vpisa kakršnegakoli gesla</li>
             </ul>
-            <h5 id="JOSM">JOSM</h5>
-            <ul>
-            <li>v <a
-            href="/moj_linux/home/janezpavel/.xinitrc">~/.xinitrc</a>
-            dodaj <code>export _JAVA_AWT_WM_NONREPARENTING=1</code>, da
-            Java ve, kake vrste je upravljalec oken, da se preprečijo
-            napake, povezane z okni (belo okno ob zagonu JOSM-a)</li>
-            </ul>
-            <h5 id="QGIS">QGIS</h5>
-            <p>(Glej tudi <a
-            href="https://qgis.org/resources/installation-guide/#debian-ubuntu">QGIS
-            – Installation Guide</a></p>
-            <ul>
-            <li><p><code>sudo apt install gnupg wget</code></p></li>
-            <li><p><code>sudo mkdir -p /etc/apt/keyrings</code> –
-            ustvari mapo <b>keyrings</b>, če še ne obstaja (skoraj
-            zagotovo že obstaja)</p></li>
-            <li><p><code>sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg</code>
-            – ključ GPG</p></li>
-            <li><p><code>sudo vim /etc/apt/sources.list.d/qgis.sources</code>
-            – odpri datoteko <b>qgis.sources</b> v urejevalniku in dodaj
-            sledečo vsebino (ime ditribucije <i>Suites</i> lahko
-            preveriš tudi z ukazom <code>lsb_release -cs</code>):</p>
-            <p>Types: deb deb-src URIs: https://qgis.org/debian Suites:
-            trixie Architectures: amd64 Components: main Signed-By:
-            /etc/apt/keyrings/qgis-archive-keyring.gpg</p></li>
-            <li><p><code>sudo apt update</code></p></li>
-            <li><p><code>sudo apt install qgis qgis-plugin-grass</code>
-            – namesti QGIS</p></li>
-            <li><p>po potrebi še
-            <code>sudo apt install qgis-server</code>, kar namesti
-            QGIS-ov strežnik (jaz tega še nisem nameščal)</p></li>
-            </ul>
-            <h5 id="Musescore">Musescore</h5>
-            <p><a href="https://musescore.org/">Musescore</a> je orodje
-            za pisanje notnih zapisov</p>
-            <p>Debian ima precej staro različico, zato je bolje <a
-            href="https://musescore.org/en/download">prenesti
-            AppImage</a> z Musescorove uradne strani.</p>
-            <ul>
-            <li>prenesi/shrani jo v ~/.local/bin/</li>
-            <li>po želji preimenuj privzeto ime oblike
-            <i>MuseScore-Studio-4.6.5.253511702-x86_64.AppImage</i> v
-            <i>MuseScore.AppImage</i>, da ti ob posodobitvah ni treba
-            spreminjati poti v .desktop, če jo imaš nastavljeno
-            (preneseš novo različico in jo prav tako preimenuješ, staro
-            pa izbrišeš)</li>
-            <li><code>chmod +x ~/.local/bin/MuseScore.AppImage</code> –
-            naredi datoteko izvršljivo</li>
-            <li><code>~/.local/bin/MuseScore-4.4.2.AppImage</code> da
-            poženeš orodje, oz.
-            <code>~/.local/bin/MuseScore.AppImage install</code>, če
-            želiš, da samodejno ustvari še datoteko
-            ~/.local/share/applications/MuseScore.desktop, navodilno
-            datoteko in <i>ikone</i></li>
-            </ul>
-            <h5 id="Audiveris">Audiveris</h5>
-            <p>(Glej tudi <a
-            href="https://audiveris.github.io/audiveris/_pages/tutorials/install/sources/">Audiveris
-            – Building from source (Windows, macOS, Linux)</a>)</p>
-            <p><code>java -version</code> – če nimaš Jave vsaj 25,
-            najverjetneje tega ne boš mogel namestiti (trenutna stabilna
-            Java za Debian je 21, zato tega programa še nisem uspel
-            namestiti).</p>
-            <ul>
-            <li><code>git clone https://github.com/Audiveris/audiveris.git</code></li>
-            <li><code>git checkout development</code>,
-            <code>git pull --all</code> – zagotovi, da smo na najnovejši
-            veji (je to sploh potrebno, če smo itak ravnokar
-            prenesli?)</li>
-            <li><code>./gradlew build</code> – izgradi program iz
-            vira</li>
-            </ul>
-            <h5 id="NeoMutt">NeoMutt</h5>
-            <ul>
-            <li><code>sudo apt install neomutt isync msmtp pass curl ca-certificates gettext</code>
-            – Neomutt in njegove odvisnosti
-            <ul>
-            <li>Izpisalo se bo vprašanje, ali želiš omogočiti
-            <i>profil</i> AppArmor za msmpt, kar je priporočeno
-            potrditi.</li>
-            </ul></li>
-            <li><code>sudo apt install notmuch lynx abook urlview</code>
-            – priporočeni programi za zraven</li>
-            <li><code>gpg --full-generate-key</code> – ustvari ključ GPG
-            <ul>
-            <li>izberi privzeto vrsto: ECC (<i>sign and encrypt</i>;
-            9)</li>
-            <li>izberi privzeto krivuljo (<i>Curve 25519</i>, 1)</li>
-            <li>izberi privzeti čas poteka: ne poteče (<i>key does not
-            expire</i>; 0)</li>
-            <li>vpraša te po imenu</li>
-            <li>vpraša te po el. naslovu</li>
-            <li>izbereš lahko še neko opombo ključa</li>
-            <li>potrdi izbire z <b>O</b></li>
-            <li>zdaj ustvariš geslo za ta ključ</li>
-            <li>ključ je ustvarjen; lahko preveriš seznam svojih ključev
-            z <code>gpg --list-secret-keys</code></li>
-            </ul></li>
-            <li><code>pass init moj@elektronski.naslov</code></li>
-            <li><code>cd ~/viri/</code></li>
-            </ul>
-            <p><b>Mutt-wizard</b> (glej <a
-            href="https://github.com/LukeSmithxyz/mutt-wizard">LukeSmith:
-            mutt-wizard</a>):</p>
-            <ul>
-            <li><code>git clone https://github.com/LukeSmithxyz/mutt-wizard</code></li>
-            <li><code>cd mutt-wizard</code></li>
-            <li><code>sudo make install</code></li>
-            <li><code>mw -a moj@elektronski.naslov</code> – dodaj
-            elektronski naslov</li>
-            </ul>
-            <h4 id="Programski_jeziki">Programski jeziki</h4>
-            <h5 id="Python">Python</h5>
+            <h3 id="Programski_jeziki">Programski jeziki</h3>
+            <h4 id="Python">Python</h4>
             <p><code>sudo apt install pyton3</code> – namesti osnovni
             <i>interpretator</i> <a
             href="https://www.python.org/">Pythona</a></p>
@@ -836,7 +711,7 @@ sistema"/>
             <li><code>micromamba clean --trash</code> – počisti ostanke
             datotek izbrisanih okolij</li>
             </ul>
-            <h5 id="Latex">Latex</h5>
+            <h4 id="Latex">Latex</h4>
             <p><a href="https://www.latex-project.org/">Latex</a> je
             označevalni jezik za pripravo <i>dokumentov</i> (zlasti
             znanstvenih)</p>
@@ -856,26 +731,220 @@ sistema"/>
             <li><code>dvipng</code></li>
             </ul></li>
             </ul>
-            <h4 id="Lokalni_streznik"><i>Lokalni</i> strežnik</h4>
+            <h3 id="Dodatna_orodja">Dodatna orodja</h3>
             <ul>
-            <li><code>python3 -m http.server 8000</code></li>
+            <li><code>sudo apt install</code> …
+            <ul>
+            <li><code>pandoc</code> – <a
+            href="https://pandoc.org/">Pandoc</a>, pretvornik
+            <i>dokumentov</i></li>
+            <li><code>abook</code> – <a
+            href="https://abook.sourceforge.io/">ABook</a>,
+            imenik/urejevalnik stikov</li>
+            <li><code>calcurse</code> – <a
+            href="https://calcurse.org/">CalCurse</a> (<a
+            href="https://github.com/lfos/calcurse">na GitHubu</a>),
+            <i>koledar</i></li>
+            <li><code>lftp</code> – <a
+            href="https://lftp.yar.ru/">LFTP</a>, prenos datotek med
+            napravami z različnimi <i>protokoli</i> (FTP, FTPS, SFTP,
+            HTTP, HTTPS, BitTorrent, FISH)</li>
+            <li><code>sshpass</code></li>
+            <li><code>htop</code> – <a
+            href="https://htop.dev/">HTOP</a>, <i>statistika procesov
+            sistema</i></li>
+            <li><code>fastfetch</code> – <a
+            href="https://github.com/fastfetch-cli/fastfetch">FastFetch</a>,
+            podatki o <i>sistemu</i> v <i>terminalu</i></li>
+            <li><code>solvespace</code> – <a
+            href="https://solvespace.com/">Solvespace</a>, urejevalnik
+            3R (<i>3D</i>; <a
+            href="https://github.com/solvespace/solvespace">na
+            GitHubu</a>)</li>
+            <li><code>fontforge</code> – <a
+            href="https://fontforge.org/">GontForge</a>, urejevalnik
+            pisav <a href="https://github.com/fontforge/fontforge">na
+            GitHubu</a></li>
+            <li><code>josm</code> – <a
+            href="https://josm.openstreetmap.de/">JOSM</a>, urejevalnik
+            OpenStreetMap</li>
+            <li><code>gramps</code> – <a
+            href="https://gramps-project.org/">Gramps</a>, rodoslovno
+            orodje</li>
+            </ul></li>
             </ul>
-            <h5 id="Live_server"><i>Live-server</i></h5>
+            <h4 id="JOSM">JOSM</h4>
+            <ul>
+            <li>v <a
+            href="/moj_linux/home/janezpavel/.xinitrc">~/.xinitrc</a>
+            dodaj <code>export _JAVA_AWT_WM_NONREPARENTING=1</code>, da
+            Java ve, kake vrste je upravljalec oken, da se preprečijo
+            napake, povezane z okni (belo okno ob zagonu JOSM-a)</li>
+            </ul>
+            <h4 id="QGIS">QGIS</h4>
+            <p>(Glej tudi <a
+            href="https://qgis.org/resources/installation-guide/#debian-ubuntu">QGIS
+            – Installation Guide</a></p>
+            <ul>
+            <li><p><code>sudo apt install gnupg wget</code></p></li>
+            <li><p><code>sudo mkdir -p /etc/apt/keyrings</code> –
+            ustvari mapo <b>keyrings</b>, če še ne obstaja (skoraj
+            zagotovo že obstaja)</p></li>
+            <li><p><code>sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg</code>
+            – ključ GPG</p></li>
+            <li><p><code>sudo vim /etc/apt/sources.list.d/qgis.sources</code>
+            – odpri datoteko <b>qgis.sources</b> v urejevalniku in dodaj
+            sledečo vsebino (ime ditribucije <i>Suites</i> lahko
+            preveriš tudi z ukazom <code>lsb_release -cs</code>):</p>
+            <p>Types: deb deb-src URIs: https://qgis.org/debian Suites:
+            trixie Architectures: amd64 Components: main Signed-By:
+            /etc/apt/keyrings/qgis-archive-keyring.gpg</p></li>
+            <li><p><code>sudo apt update</code></p></li>
+            <li><p><code>sudo apt install qgis qgis-plugin-grass</code>
+            – namesti QGIS</p></li>
+            <li><p>po potrebi še
+            <code>sudo apt install qgis-server</code>, kar namesti
+            QGIS-ov strežnik (jaz tega še nisem nameščal)</p></li>
+            </ul>
+            <h4 id="Musescore">Musescore</h4>
+            <p><a href="https://musescore.org/">Musescore</a> je orodje
+            za pisanje notnih zapisov</p>
+            <p>Debian ima precej staro različico, zato je bolje <a
+            href="https://musescore.org/en/download">prenesti
+            AppImage</a> z Musescorove uradne strani.</p>
+            <ul>
+            <li>prenesi/shrani jo v ~/.local/bin/</li>
+            <li>po želji preimenuj privzeto ime oblike
+            <i>MuseScore-Studio-4.6.5.253511702-x86_64.AppImage</i> v
+            <i>MuseScore.AppImage</i>, da ti ob posodobitvah ni treba
+            spreminjati poti v .desktop, če jo imaš nastavljeno
+            (preneseš novo različico in jo prav tako preimenuješ, staro
+            pa izbrišeš)</li>
+            <li><code>chmod +x ~/.local/bin/MuseScore.AppImage</code> –
+            naredi datoteko izvršljivo</li>
+            <li><code>~/.local/bin/MuseScore-4.4.2.AppImage</code> da
+            poženeš orodje, oz.
+            <code>~/.local/bin/MuseScore.AppImage install</code>, če
+            želiš, da samodejno ustvari še datoteko
+            ~/.local/share/applications/MuseScore.desktop, navodilno
+            datoteko in <i>ikone</i></li>
+            </ul>
+            <h5 id="Audiveris">Audiveris</h5>
+            <p>(Glej tudi <a
+            href="https://audiveris.github.io/audiveris/_pages/tutorials/install/sources/">Audiveris
+            – Building from source (Windows, macOS, Linux)</a>)</p>
+            <p><code>java -version</code> – če nimaš Jave vsaj 25,
+            najverjetneje tega ne boš mogel namestiti (trenutna stabilna
+            Java za Debian je 21, zato tega programa še nisem uspel
+            namestiti).</p>
+            <ul>
+            <li><code>git clone https://github.com/Audiveris/audiveris.git</code></li>
+            <li><code>git checkout development</code>,
+            <code>git pull --all</code> – zagotovi, da smo na najnovejši
+            veji (je to sploh potrebno, če smo itak ravnokar
+            prenesli?)</li>
+            <li><code>./gradlew build</code> – izgradi program iz
+            vira</li>
+            </ul>
+            <h4 id="NeoMutt">NeoMutt</h4>
+            <ul>
+            <li><code>sudo apt install neomutt isync msmtp pass curl ca-certificates gettext</code>
+            – Neomutt in njegove odvisnosti
+            <ul>
+            <li>Izpisalo se bo vprašanje, ali želiš omogočiti
+            <i>profil</i> AppArmor za msmpt, kar je priporočeno
+            potrditi.</li>
+            </ul></li>
+            <li><code>sudo apt install notmuch lynx abook urlview</code>
+            – priporočeni programi za zraven</li>
+            <li><code>gpg --full-generate-key</code> – ustvari ključ GPG
+            <ul>
+            <li>izberi privzeto vrsto: ECC (<i>sign and encrypt</i>;
+            9)</li>
+            <li>izberi privzeto krivuljo (<i>Curve 25519</i>, 1)</li>
+            <li>izberi privzeti čas poteka: ne poteče (<i>key does not
+            expire</i>; 0)</li>
+            <li>vpraša te po imenu</li>
+            <li>vpraša te po el. naslovu</li>
+            <li>izbereš lahko še neko opombo ključa</li>
+            <li>potrdi izbire z <b>O</b></li>
+            <li>zdaj ustvariš geslo za ta ključ</li>
+            <li>ključ je ustvarjen; lahko preveriš seznam svojih ključev
+            z <code>gpg --list-secret-keys</code></li>
+            </ul></li>
+            <li><code>pass init moj@elektronski.naslov</code></li>
+            <li><code>cd ~/viri/</code></li>
+            </ul>
+            <p><b>Mutt-wizard</b> (glej <a
+            href="https://github.com/LukeSmithxyz/mutt-wizard">LukeSmith:
+            mutt-wizard</a>):</p>
+            <ul>
+            <li><code>git clone https://github.com/LukeSmithxyz/mutt-wizard</code></li>
+            <li><code>cd mutt-wizard</code></li>
+            <li><code>sudo make install</code></li>
+            <li><code>mw -a moj@elektronski.naslov</code> – dodaj
+            elektronski naslov</li>
+            </ul>
+            <h4 id="Live_server"><i>Live-server</i></h4>
             <ul>
             <li><code>sudo apt install nodejs npm</code></li>
             <li><code>npm install -g live-server</code> – namesti
             live-server <i>globalno</i> (bi bilo bolje namestiti kam
-            drugam, kot privzeto, npr. v ~/ ?)</li>
+            drugam, kot privzeto, npr. v <b>~/</b> ?)</li>
             </ul>
-            <h5 id="PHP">PHP</h5>
+            <h5 id="Streznik_PHP">Strežnik PHP</h5>
             <ul>
             <li><code>sudo apt install php</code></li>
-            <li><code>php -S localhost:8000</code></li>
             </ul>
             <p>Za uporabo SQL še:</p>
             <ul>
             <li><code>sudo apt install php-pdo php-mysql</code></li>
             <li><code>sudo systemctl restart apache2</code></li>
+            </ul>
+            <h4 id="Beekeeper_Studio">Beekeeper Studio</h4>
+            <p><b>Namestitev ključa GPG</b>:</p>
+            <pre><code>curl -fsSL https://deb.beekeeperstudio.io/beekeeper.key | sudo gpg --dearmor --output /usr/share/keyrings/beekeeper.gpg \
+  &amp;&amp; sudo chmod go+r /usr/share/keyrings/beekeeper.gpg \
+  &amp;&amp; echo &quot;deb [signed-by=/usr/share/keyrings/beekeeper.gpg] https://deb.beekeeperstudio.io stable main&quot; \
+  | sudo tee /etc/apt/sources.list.d/beekeeper-studio-app.list &gt; /dev/null</code></pre>
+            <p><b>Namestitev programa</b>:
+            <code>sudo apt update &amp;&amp; sudo apt install beekeeper-studio -y</code></p>
+            <p>Glavna izvrščjiva datoteka je zdaj nameščena na
+            <b>/opt/Beekeeper Studio/beekeeper-studio</b></p>
+            <p>Za lažje zaganjanje:</p>
+            <p><code>sudo ln -s "/opt/Beekeeper Studio/beekeeper-studio" /usr/local/bin/beekeeper</code></p>
+            <h4 id="DBeaver">DBeaver</h4>
+            <p>(Glej <a
+            href="https://dbeaver.io/download/#linux"></a>)</p>
+            <ul>
+            <li><code>sudo wget -q -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/dbeaver.gpg.key</code>
+            – prenese ključ GPG</li>
+            <li><code>echo "deb [signed-by=/usr/share/keyrings/dbeaver.gpg.key] https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list</code>
+            – doda repozitorij APT</li>
+            <li><code>sudo apt update &amp;&amp; sudo apt install dbeaver-ce</code>
+            – posodobi sezname nameščenih <i>paketov</i> in namesti
+            DBeaver</li>
+            </ul>
+            <h4 id="Torrent">Torrent</h4>
+            <h5 id="Aria2">Aria2</h5>
+            <ul>
+            <li><code>sudo apt install aria2</code></li>
+            <li><code>aria2c pot/do/datoteke.torrent</code>
+            <code>--seed-ratio=1</code> – nastavi razmerje na 1 (lahko
+            je katerakoli druga pozitivna številka)
+            <code>--seed-time=5</code> – nastavi <i>sejalni</i> čas na 5
+            minut (lahko je drugo število minut)</li>
+            </ul>
+            <h4 id="YT_DLP">YT-DLP</h4>
+            <ul>
+            <li>odpri povezavo <a
+            href="https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp"
+            class="uri">https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp</a>
+            (glej tudi <a
+            href="https://github.com/yt-dlp/yt-dlp/wiki/Installation">yt-dlp
+            – Installation</a>, GitHub) in se samodejno prenese
+            različica za Linux, ki jo shrani v <b>~/.local/bin/</b></li>
+            <li><code>yt-dlp -U</code> – posodobitev</li>
             </ul>
             <h4 id="Izbirnik_barv_na_zaslonu">Izbirnik barv na
             zaslonu</h4>
@@ -902,6 +971,60 @@ sistema"/>
             (<code>sxcs</code>), lahko <i>klikamo</i> z miško naokoli in
             se v <i>terminalu</i> izpisujejo barve <i>poklikanih</i>
             točk</li>
+            </ul></li>
+            </ul>
+            <h3 id="Podatkovna_zbirka_SQL">Podatkovna zbirka SQL</h3>
+            <ul>
+            <li><code>sudo apt install mariadb-server</code> – namesti
+            strežnik <a href="https://mariadb.com/">MariaDB</a>
+            (različica MySQL?)</li>
+            <li><code>sudo systemctl status mariadb</code> – preveri
+            stanje zbirke SQL</li>
+            <li><code>sudo mariadb</code> – tako vstopiš v zbirko
+            <ul>
+            <li><code>exit;</code> – izhod iz zbirke</li>
+            <li><code>CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE utfmb4_unicode_ci;</code>
+            – ustvari zbirko z imenom <i>moja_zbirka</i> s polnim
+            Unikodom (utf8mb4), kar prepreči težave s šumniki, posebnimi
+            znaki; ter zagotovi pravilno slovensko/Unikodno razvrščanje
+            besedila</li>
+            <li><code>CREATE USER 'uporabnik'@'localhost' IDENTIFIED BY 'geslo';</code>
+            – ustvari uporabnika zbirke z up. imenom <i>uporabnik</i>,
+            ki se sme povezati preko <i>lokalnega</i> strežnika
+            (<i>localhost</i>); dodelimo mu še geslo za prijavo</li>
+            <li><code>GRANT ALL PRIVILEGES ON moja_zbirka.* TO 'uporabnik'@'localhost';</code>
+            – dodeli uporabniku vse pravice do vseh preglednic v zbirki
+            (.*)</li>
+            <li><code>ALTER USER 'uporabnik'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('geslo');</code>
+            – uporabnika izrecno nastavimo na geselno
+            <i>avtentikacijo</i></li>
+            <li><code>FLUSH PRIVILEGES;</code> – MariaDB ponovno naloži,
+            oz. osveži pravice in zagotovi, da začnejo veljati
+            takoj</li>
+            <li><code>ALTER USER 'uporabnik'@'localhost' IDENTIFIED BY 'novo_geslo';</code>
+            – spremeni geslo uporabnika</li>
+            <li><code>DROP USER 'uporabnik'@'localhost';</code> –
+            izbriše uporabnika</li>
+            <li><code>DROP DATABASE knjige_dev;</code> – izbriše
+            zbirko</li>
+            </ul></li>
+            <li><code>mysql -u uporabnik -p moja_zbirka</code> – prijava
+            uporabnika v zbirko (v naslednjem koraku moraš vnesti še
+            geslo)
+            <ul>
+            <li><code>CREATE TABLE moja_preglednica (</code> – ustvari
+            preglednico z imenom <i>moja_preglednica</i> v zbirki
+            <ul>
+            <li><code>id INT AUTO_INCREMENT PRIMARY KEY,</code></li>
+            <li><code>ime VARCHAR(255) NOT NULL,</code> – opredeli
+            stolpec <i>ime</i> za nize, dolžine največ 255; vse vrstice
+            rabijo imeti ime</li>
+            <li><code>podime VARCHAR(255),</code> – opredeli stolpec
+            <i>podime</i> za nize, dolžine največ 255, ki je lahko tudi
+            prazen</li>
+            <li><code>stevilke INT,</code> – opredeli stolpec
+            <i>stevilke</i> številk</li>
+            </ul></li>
             </ul></li>
             </ul>
             <h3 id="Uporaba_lastnih_skript">Uporaba lastnih
@@ -1016,19 +1139,6 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             <li><code>git ls-remote ime-repozitorija</code> –
             preverjanje dostopa do oddaljenega <i>repozitorija</i></li>
             </ul>
-            <h3 id="Eduroam">Eduroam</h3>
-            <ul>
-            <li>prenesi nameščevalnik Eduroam za Linux za svoje
-            učilišče</li>
-            <li><code>sudo apt install python3-dbus</code> – prenesi
-            D-Bus, ki ga nameščevalnik Eduroam zahteva (oz. ga bo, če ga
-            ne namestiš)</li>
-            <li><code>python3 eduroam-linux-blablabla.py</code> – poženi
-            prenešeni nameščevalnik</li>
-            <li>vnesi uporabniško ime in geslo – in namestitev je
-            uspela: zdaj naj bi se lahko povezal na omrežje Eduroam brez
-            vpisa kakršnegakoli gesla</li>
-            </ul>
             <h3 id="Prilagajanje_orodij">Prilagajanje orodij</h3>
             <p>(Glej tudi nastavitvene datoteke <a
             href="https://codeberg.org/JanezPavelZebovec/My_Linux_configs">na
@@ -1106,18 +1216,20 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             <p>Na začetek datoteke <a
             href="/moj_linux/home/janezpavel/.config/vim/vimrc"><b>~/.vimrc</b></a>
             dodaj:</p>
-            <div class="sourceCode" id="cb6"><pre
-            class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">call</span> plug#begin<span class="er">(</span><span class="st">&#39;~/.config/vim/plugged&#39;</span><span class="kw">)</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Plug</span> <span class="st">&#39;morhetz/gruvbox&#39;</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ex">call</span> plug#end<span class="er">(</span><span class="kw">)</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="ex">syntax</span> on</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> background=dark</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="ex">colorscheme</span> gruvbox</span></code></pre></div>
+            <div class="sourceCode" id="cb7"><pre
+            class="sourceCode sh"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">call</span> plug#begin<span class="er">(</span><span class="st">&#39;~/.config/vim/plugged&#39;</span><span class="kw">)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Plug</span> <span class="st">&#39;morhetz/gruvbox&#39;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ex">call</span> plug#end<span class="er">(</span><span class="kw">)</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="ex">syntax</span> on</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> background=dark</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="ex">colorscheme</span> gruvbox</span></code></pre></div>
             <p>Nato v odprtem VIM-u izvedi:</p>
             <ul>
             <li><code>:source %</code> – da stopijo spremembe
-            <b>vimrc</b> v veljavo</li>
+            <b>vimrc</b> v veljavo v trenutni seji datoteke .vimrc brez
+            zapiranja in ponovnega odpiranja (seje drugih datotek je
+            potrebno znova odpreti?)</li>
             <li><code>:PlugInstall</code> – namesti vtičnike, navedene v
             <b>vimrc</b></li>
             </ul>
@@ -1151,105 +1263,6 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             href="/moj_linux/home/janezpavel/.config/lf/lfrc"><b>lfrc</b></a>
             za LF</li>
             </ul>
-            <h3 id="Podatkovna_zbirka_SQL">Podatkovna zbirka SQL</h3>
-            <ul>
-            <li><code>sudo apt install mariadb-server</code> – namesti
-            strežnik <a href="https://mariadb.com/">MariaDB</a>
-            (različica MySQL?)</li>
-            <li><code>sudo systemctl status mariadb</code> – preveri
-            stanje zbirke SQL</li>
-            <li><code>sudo mariadb</code> – tako vstopiš v zbirko
-            <ul>
-            <li><code>exit;</code> – izhod iz zbirke</li>
-            <li><code>CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE utfmb4_unicode_ci;</code>
-            – ustvari zbirko z imenom <i>moja_zbirka</i> s polnim
-            Unikodom (utf8mb4), kar prepreči težave s šumniki, posebnimi
-            znaki; ter zagotovi pravilno slovensko/Unikodno razvrščanje
-            besedila</li>
-            <li><code>CREATE USER 'uporabnik'@'localhost' IDENTIFIED BY 'geslo';</code>
-            – ustvari uporabnika zbirke z up. imenom <i>uporabnik</i>,
-            ki se sme povezati preko <i>lokalnega</i> strežnika
-            (<i>localhost</i>); dodelimo mu še geslo za prijavo</li>
-            <li><code>GRANT ALL PRIVILEGES ON moja_zbirka.* TO 'uporabnik'@'localhost';</code>
-            – dodeli uporabniku vse pravice do vseh preglednic v zbirki
-            (.*)</li>
-            <li><code>ALTER USER 'uporabnik'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('geslo');</code>
-            – uporabnika izrecno nastavimo na geselno
-            <i>avtentikacijo</i></li>
-            <li><code>FLUSH PRIVILEGES;</code> – MariaDB ponovno naloži,
-            oz. osveži pravice in zagotovi, da začnejo veljati
-            takoj</li>
-            <li><code>ALTER USER 'uporabnik'@'localhost' IDENTIFIED BY 'novo_geslo';</code>
-            – spremeni geslo uporabnika</li>
-            <li><code>DROP USER 'uporabnik'@'localhost';</code> –
-            izbriše uporabnika</li>
-            <li><code>DROP DATABASE knjige_dev;</code> – izbriše
-            zbirko</li>
-            </ul></li>
-            <li><code>mysql -u uporabnik -p moja_zbirka</code> – prijava
-            uporabnika v zbirko (v naslednjem koraku moraš vnesti še
-            geslo)
-            <ul>
-            <li><code>CREATE TABLE moja_preglednica (</code> – ustvari
-            preglednico z imenom <i>moja_preglednica</i> v zbirki
-            <ul>
-            <li><code>id INT AUTO_INCREMENT PRIMARY KEY,</code></li>
-            <li><code>ime VARCHAR(255) NOT NULL,</code> – opredeli
-            stolpec <i>ime</i> za nize, dolžine največ 255; vse vrstice
-            rabijo imeti ime</li>
-            <li><code>podime VARCHAR(255),</code> – opredeli stolpec
-            <i>podime</i> za nize, dolžine največ 255, ki je lahko tudi
-            prazen</li>
-            <li><code>stevilke INT,</code> – opredeli stolpec
-            <i>stevilke</i> številk</li>
-            </ul></li>
-            </ul></li>
-            </ul>
-            <h4 id="Beekeeper_Studio">Beekeeper Studio</h4>
-            <p><b>Namestitev ključa GPG</b>:</p>
-            <pre><code>curl -fsSL https://deb.beekeeperstudio.io/beekeeper.key | sudo gpg --dearmor --output /usr/share/keyrings/beekeeper.gpg \
-  &amp;&amp; sudo chmod go+r /usr/share/keyrings/beekeeper.gpg \
-  &amp;&amp; echo &quot;deb [signed-by=/usr/share/keyrings/beekeeper.gpg] https://deb.beekeeperstudio.io stable main&quot; \
-  | sudo tee /etc/apt/sources.list.d/beekeeper-studio-app.list &gt; /dev/null</code></pre>
-            <p><b>Namestitev programa</b>:
-            <code>sudo apt update &amp;&amp; sudo apt install beekeeper-studio -y</code></p>
-            <p>Glavna izvrščjiva datoteka je zdaj nameščena na
-            <b>/opt/Beekeeper Studio/beekeeper-studio</b></p>
-            <p>Za lažje zaganjanje:</p>
-            <p><code>sudo ln -s "/opt/Beekeeper Studio/beekeeper-studio" /usr/local/bin/beekeeper</code></p>
-            <h4 id="DBeaver">DBeaver</h4>
-            <p>(Glej <a
-            href="https://dbeaver.io/download/#linux"></a>)</p>
-            <ul>
-            <li><code>sudo wget -q -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/dbeaver.gpg.key</code>
-            – prenese ključ GPG</li>
-            <li><code>echo "deb [signed-by=/usr/share/keyrings/dbeaver.gpg.key] https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list</code>
-            – doda repozitorij APT</li>
-            <li><code>sudo apt update &amp;&amp; sudo apt install dbeaver-ce</code>
-            – posodobi sezname nameščenih <i>paketov</i> in namesti
-            DBeaver</li>
-            </ul>
-            <h3 id="Torrent">Torrent</h3>
-            <h4 id="Aria2">Aria2</h4>
-            <ul>
-            <li><code>sudo apt install aria2</code></li>
-            <li><code>aria2c pot/do/datoteke.torrent</code>
-            <code>--seed-ratio=1</code> – nastavi razmerje na 1 (lahko
-            je katerakoli druga pozitivna številka)
-            <code>--seed-time=5</code> – nastavi <i>sejalni</i> čas na 5
-            minut (lahko je drugo število minut)</li>
-            </ul>
-            <h3 id="YT_DLP">YT-DLP</h3>
-            <ul>
-            <li>odpri povezavo <a
-            href="https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp"
-            class="uri">https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp</a>
-            (glej tudi <a
-            href="https://github.com/yt-dlp/yt-dlp/wiki/Installation">yt-dlp
-            – Installation</a>, GitHub) in se samodejno prenese
-            različica za Linux, ki jo shrani v <b>~/.local/bin/</b></li>
-            <li><code>yt-dlp -U</code> – posodobitev</li>
-            </ul>
             <hr />
             <h2 id="Se_za_narediti">Še za narediti</h2>
             <ul>
@@ -1267,6 +1280,8 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             <li>Blender</li>
             <li>Libreoffice</li>
             <li><a href="https://qgis.org/">QGIS</a></li>
+            <li><a href="https://www.getrapidraw.com/">RapidRAW</a> za
+            urejanje slik</li>
             </ul>
             <hr />
             <h2 id="Namestitev_streznika_na_Linux_Debianu">Namestitev

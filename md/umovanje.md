@@ -1,7 +1,7 @@
 ---
 title: Umovanje
 date: 2026-07-20
-description: Moja osebna razmišljanja
+description: Osebna razmišljanja
 keywords: Janez Pavel Žebovec, razmišljanje, blog
 ---
 
@@ -13,7 +13,26 @@ Znanosti se pogosto postavlja nasproti veri, kot da jo lahko nadomesti, da z zna
 
 ## Posameznik je bog
 
-Ko ljudje izgubijo vero v Boga, bogove najdejo drugod. Med drugim jih lahko najdejo v sebi, kar je še posebaj dandanes tako pogosto. Tak človek ima sebe za boga, kajti po želji ustvarja svojo resničnost, svojo Resnico, nato pa prisili druge, da jo sprejmejo. Vsak posameznik postane samsvoj bog, ki ga morajo drugi kot takega tudi obravnavati. Če reče, da ni to, kar v resnici je, je treba to njegovo zablodo ponižno sprejeti in potrditi.
+Ko ljudje izgubijo vero v Boga, bogove najdejo drugod. Med drugim jih lahko najdejo v sebi, kar je še posebaj dandanes tako pogosto. Tak človek ima sebe za boga, kajti po želji ustvarja svojo resničnost, svojo Resnico, nato pa prisili druge, da jo sprejmejo. Vsak posameznik postane samsvoj bog, ki ga morajo drugi kot takega tudi obravnavati. Če reče, da ni to, kar v resnici je, je treba to njegovo zablodo ponižno sprejeti in celo potrditi, namesto da bi takemu človeku pomagalo. Kako bi se mu namreč pomagalo, če ni nobene edine prave resnice, če je resnic toliko, kot je umov, če ne še več. Ljudem se gnusi zamisel o *absolutni* resničnosti, bližje so jim pravljice o *Matrici*, *simulacijah*, ipd.
+
+S takim poudarjanjem posameznikove pristranske resničnosti se odpira možnost za opravičevanje zločina, saj ta ni več nepristransko slab, zla ni več, le še muhavost, težka otroštva, želja biti viden.
+
+## Jezik
+
+Levičarji (tudi nekateri z desne, a v bistveno manjši meri) se redno poslužujejo velikih besed (*diktatura*, *nacizem*, *fašizem*, *ksenofobija*, *homofobija*, *rasizem*, *seksizem*, ...), da z njimi podkrepijo svoje vseprepogosto slabo *argumentirane* izjave, oziroma da *diskreditirajo* nasprotnike. Če se nekdo potem postavi v bran napadenega, s tem samodejno oznaka pripada tudi njemu, kakor da zagovarja katerega izmed *konceptov* za temi izrazi.
+Hkrati in zaradi tega prihaja do razhajanj in nedoslednosti pri rabi teh izrazov.
+
+Primer: nekdaj je *rasizem* pomenil vrednotenje človeka na podlagi rase, oz. stališče, da je neka rasa več/manj vredna od druge. Kasneje se je izraz začel uporabljati le za sovražnost/nenaklonjenost belcev do črncev in drugih ras; nato se je razširil na vsako dejanje nenaklonjenosti/nestrinjanja do druge rase (vendar ne do bele, kar naj bi ta bila itak *priviligirana*), oz. predsodek do neke rase (četudi utemeljen na *statistiki*), zdaj pa pomeni že samo priznavanje "*koncepta*" rase, torej zagovarjanje stališča, da rase obstajajo, imajo kakršnokoli *genetsko* uporabnost, je o njih smiselno govoriti; kajti že sama smiselnost ras naj bi ogrožala položaj *nepriviligiranih* ras, ker kaže na to, da ima neko vezo z *genotipom* (torej tudi s slabimi/dobrimi *mutacijami*). Nekdaj je torej *rasizem* označeval nekaj nepristransko povsem nedopustljivega, zločin, danes pa temu izrazi ni več zaupati, izgubil je svojo težo.
+
+> Rasa je družbeni konstrukt, ne pa biološki koncept. Koncept rase so osnovali za potrebe opravičevanja kolonializma. Izven kolonializma je koncept rase neuporaben, nesmiselen.
+
+Podobno kot je rasa v njihovih ustih izgubila svojo živoslovno določljivost, jo je izgubil tudi spol. Iz tega, da naj bi spol bil še eden izmed "*družbenih konstruktov*" so prišli do poljubno mnogo spolov, ki so celo neopredeljivi. Pojasnjujejo jih lahko le še s krožnim sklepanjem, npr.
+
+> Ženska/moški je tisti, ki si opredeljuje kot ta.
+
+### Osebni zaimki
+
+Čeprav sta se leta in leta v večini jezikov uporabljala le moški in ženski spol (torej živoslovna spola), nas mnogi danes silijo v rabo izmišljenih zaimkov za izmišljene spole. To je popolna in neutemeljena samovoljnost manjšine. Vsiljujejo rabo neustaljenih, izmišljenih, neopredeljenih besed, ki niso del nobenega jezika.
 
 ## Spol
 
@@ -32,8 +51,9 @@ Spola sta dva. Moški in ženski. Ostalo, kar nekateri imenujejo tudi *družbeni
 
 Razvoj otroka (po tednih):
 
-\1. semester:
+1\. semester: Obdobje nosečnosti se šteje od zadnje menstrucije.
 
+2. Na koncu 2. tedna se zgodi ovulacija, jajčna celica začne svojo pot.
 3. Oploditev. Začne se 6-dnevna pot skozi jajcevod do maternične votline.
 4. Zarodek se ugnezdi v maternično steno.
 5. Zarodek je velikosti sezamovega zrna. Srce začne utripati, oblikujejo se tudi ostali pomembnejši organi (želodec, jetra, ledvice) in organski sistemi (žile, živčevje, prebavila).
@@ -44,9 +64,12 @@ Razvoj otroka (po tednih):
 10. Plod je velik 3.1 cm, težak 4 g. Ledvice, jetra, pljuča že delujejo. Ločijo se prsti nog, pojavljajo se nohti.
 11. Plod je velik 4.1 cm, težak 7 g. Ušesa so postavljena na svoje mesto, začnejo se cilki spanja na 5–10 min. Spolni organi so že popolnoma razviti (spola še ni moč ugotoviti z ultrazvokom).
 12. Plod je dolg 6.1 cm, težak 14 g. Plodovo srce že popolnoma deluje. Osrednje živčevje se razvija.
+
+![Noe, 12 tednov in 5 dni](/images/razvoj_otroka/Noe_12_tednov-24kul_si.jpg)
+
 13. Plod je dolg 7.4 cm, težak do 23 g. Glava zajema polovico dolžine; okončine hitro rastejo (tako da glava do 20. tedna zajema le še tretjino dolžine)
 
-\2. semester:
+2\. semester:
 
 14. Plod je dolg 8.3 cm,težak 43 g. Rasti začnejo lasje, obrvi, trepalnice.
 15. Plod je dolg 12.7 cm, težak 57 g. Na ultrazvoku lahko vidimo sesanje palca. Začuti lahko močno svetlobo od zunaj, stisne pest, refleksno smeji. Zunanje spolovilo je že popolnoma oblikovano.
@@ -63,7 +86,7 @@ Razvoj otroka (po tednih):
 26. Plod je dolg 35 cm, težak 700 – 800 g. Sluh je že toliko razvit, da lahko plod "skoči" ob glasnem zvoku. Možgani so gladki in ni razvite povezave med živčnimi celicami. Možnost preživetja ob rojstvu v tej stopnji je 80 %.
 27. Plod je dolg 36 cm, težak 800 – 1000 g. Ima pravilen ritem spanja in dejavnosti. Pogosto sesa palec. Trepalnice dokončno izrastejo. Pljuča še niso zrela za samostojno dihanje. Pogosto odpiranje oči. Možnost preživetja ob rojstvu v tej stopnji je 90 %.
 
-\3. semester: Otrok je žedovolj velik in razvit, da se lahko z njim "sporazumevamo" s trepljaji, na katere "odgovori" z brcanjem.
+3\. semester: Otrok je žedovolj velik in razvit, da se lahko z njim "sporazumevamo" s trepljaji, na katere "odgovori" z brcanjem.
 
 28. Plod je dolg 38 cm, težak 1050 g. Lasje rastejo (a ne pri vseh). Trepalnice in obrvi so debelejše, obrazne poteze bolj izrazite, plod pogosto zeha. Možnost preživetja ob rojstvu med 28. in 31. tednom je 95 %.
 29. Plod je dolg 38 cm, težak 1200 g. Rastejo mišice in notranji organi. Možgani že lahko nadzorujejo dihanje. Plod ej vse bolj dejaven. Kostni mozeg ustvarja lastne rdeče krvne celice.
@@ -100,12 +123,7 @@ Z leve strani se pogosto sliši, da so povsem proti nasilju in za vključenost. 
 
 ---
 
-## Prebujenske in levičarske izjave
-
-> Rasa je družbeni konstrukt, ne pa biološki koncept. Koncept rase so osnovali za potrebe opravičevanja kolonializma. Izven kolonializma je koncept rase neuporaben, nesmiselen.
-
-> Spolov je poljubno mnogo. In nobenega ne moremo opredeliti.
-> Ženska/moški je tisti, ki si opredeljuje kot ta.
+## Druge prebujenske in levičarske izjave
 
 > Brez rdeče zvezde bi zdaj govorili nemško.
 > Partizani so rešili slovenski narod.
@@ -122,4 +140,10 @@ Z leve strani se pogosto sliši, da so povsem proti nasilju in za vključenost. 
 - [Luke Smith: On the "Hate Speech" Psy-op](https://lukesmith.xyz/articles/hate-speech/)
 - [Luke Smith: The Fragility of Physics](https://lukesmith.xyz/articles/the-fragility-of-physics/)
 - [National Library of Medicine – Soroush Dabbagh: Fetus as Human Being: Where is the Cut-off Point?](https://pmc.ncbi.nlm.nih.gov/articles/PMC3713799/)
-- [Potek nosečnosti po tednih](https://www.poliklinika-amber.si/ginekologija-in-nosecnice/nosecnice/nosecnost-po-tednih/)
+- [Poliklinika Amber – Potek nosečnosti po tednih](https://www.poliklinika-amber.si/ginekologija-in-nosecnice/nosecnice/nosecnost-po-tednih/)
+- [March of Dimes – Pregnancy Week by Week](https://www.marchofdimes.org/pregnancy-week-week)
+
+Prebujenski članki:
+
+- [BBC – Adam Rutherford: How to argue with a racist: Five myths debunked](https://www.bbc.com/news/science-environment-51914782)
+- [BBC – Adam Rutherford: 'Biological reality': What genetics has taught us about race](https://www.bbc.com/future/article/20250417-biological-reality-what-genetics-has-taught-us-about-race)
