@@ -20,7 +20,7 @@ Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne svež
 - *eksitacija* > vzbuditev
 - *fluktuacija* > spreminjanje, menjavanje, gibanje
 - *horizontalno*, *horizontala* > vodoravno, vodoravnica
-- *ilustracija* > ponazorilo, ponazorilna/pojasnevalna slika
+- *ilustracija* (v nekaterih rabah/pomenih) > ponazorilo, ponazorilna/pojasnevalna slika
 - *integracija*, *integriranost* > vključitev, (združitev); povezanost, vključenost, združenost
 - *karcinogen* > rakotvoren
 - *koeficient* > (stalni?) količnik

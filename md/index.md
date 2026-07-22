@@ -1,34 +1,62 @@
 ---
 title: Janez Pavel Žebovec
-date: 2026-07-05
+date: 2026-07-21
 description: Osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran, osebno spletišče
 ---
 
-To je moje spletišče, namenjeno mojim zanimanjem in potrebam, dobrodošli pa so seveda tudi vsi s podobnimi zanimanji.
+Pozdravljen, spletni popotnik! Obiskal si spletišče osebe Janez Pavel Žebovec.
 
-- [Visoka slovenščina](/visoka_slovenscina/) – kakšna bi slovenščina morala biti (oz. mora biti)
-    - [Prepovedane besede](/visoka_slovenscina/prepovedane_besede) – seznam nekaj več prepovedanih besed v visoki slovenščini z ustreznicami v visoki slovenščini
+To spletišče je osrednje mesto deljenja mojih zanimanj in povezavanja z mojimi
+spletnimi računi – tako družabnimi, kot tudi *projektnimi*. Slednji pomembneje
+krojijo mojo prisotnost na spletu.
+
+---
+
+- [Visoka slovenščina](/visoka_slovenscina/) – kakšna bi slovenščina morala biti
+  (oz. mora biti)
+    - [Prepovedane besede](/visoka_slovenscina/prepovedane_besede) – seznam
+      nekaj več prepovedanih besed v visoki slovenščini z ustreznicami v visoki
+      slovenščini
 - [Zvezdoslovna ura](/zvezdoslovna_ura/) – predstavitev vesolja kot ure
-    - [Opombe k Zvezdoslovni uri](opombe_k_zvezdoslovni_uri)
-- [Glasopisnica](/glasopisnica/) – moja pisava <small>*(v delu - tako pisava sama, kot tudi spletna stran)*</small>
-- [Moj rodovnik](/moj_rodovnik) – moje družinsko drevo, na katerem delava z bratrancem <small>(s poudarkom na prednikih; za živeče osebe in umrle v zadnjih 20 letih so zaradi zasebnosti vidna le imena in priimki brez vseh ostalih podatkov)</small>
-- [Programje](/programje) – predstavitev miselnosti in seznam dobrih računalniških orodij
-    - [Moj Linux](/moj_linux/) – vodič namestitev in ureditev operacijskega sistema, kot ga imam jaz
-- [Dnevnik](/dnevnik) – beleženje napredka pri raznih projektih, navedeni so predvsem pomembnejši mejniki
-- [Zemljevid](/zemljevid/) – skupek nekaj prostih zemljevidov, ki so večinoma iz podatkov OpenStreetMap, pa tudi GURS-ov zračni posnetek, <small>ter prepovedani  G\*\*\*lovi zemljevidi zgolj za primerjavo</small>
+    - [Opombe k Zvezdoslovni uri](/zvezdoslovna_ura/opombe_k_zvezdoslovni_uri)
+- [Glasopisnica](/glasopisnica/) – moja pisava <small>*(v delu - tako pisava
+  sama, kot tudi spletna stran)*</small>
+- [Moj rodovnik](/moj_rodovnik) – moje družinsko drevo, na katerem delava z
+  bratrancem <small>(s poudarkom na prednikih; za živeče osebe in umrle v
+  zadnjih 20 letih so zaradi zasebnosti vidna le imena in priimki brez vseh
+  ostalih podatkov)</small>
+- [Programje](/programje) – predstavitev miselnosti in seznam dobrih
+  računalniških orodij
+    - [Moj Linux](/moj_linux/) – vodič namestitev in ureditev operacijskega
+      sistema, kot ga imam jaz
+- [Dnevnik](/dnevnik) – beleženje napredka pri raznih projektih, navedeni so
+  predvsem pomembnejši mejniki
+- [Zemljevid](/zemljevid/) – skupek nekaj prostih zemljevidov, ki so večinoma iz
+  podatkov OpenStreetMap, pa tudi GURS-ov zračni posnetek, <small>ter
+  prepovedani  G\*\*\*lovi zemljevidi zgolj za primerjavo</small>
 - [Moji seznami](/seznami) – priporočila, predvsem spletne povezave
 
-Tu je tudi moja [Knjižnica](/knjiznica/), kjer so zbrana nekatera znanja/področja mojih zanimanj ali izobraževanja, torej zadeve, ki si jih načeloma lahko preberete tudi drugje.
+Tu je tudi moja [Knjižnica](/knjiznica/), kjer so zbrana nekatera
+znanja/področja mojih zanimanj ali izobraževanja, torej zadeve, ki si jih
+načeloma lahko preberete tudi drugje.
 
 ---
 
 ## Stiki
 
-- spletni poštni naslov: [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net) (nekdanji naslov, ki ga umikam iz rabe: [janezpavel.zebovec@gmail.com](mailto:janezpavel.zebovec@gmail.com))
-- [Matrix](https://matrix.org/): [@janezpavelzebovec:matrix.org](https://matrix.to/#/@janezpavelzebovec:matrix.org) (moje prednostno omrežje za klepete)
-- [Discord](https://discord.com/): [janezpavel](https://discordapp.com/users/789883011084058666) (trenutno najbolj uporabljano omrežje, vendar bi ga bilo lepo zapustiti in preiti popolnoma na Matrix)
-- [Telegram](telegram.org): [@janezpavelzebovec](https://t.me/janezpavelzebovec) (uporabljam bolj izjemoma)
+- spletni poštni naslov:
+  [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net)
+  <small>(nekdanji naslov, ki ga umikam iz rabe:
+  [janezpavel.zebovec@gmail.com](mailto:janezpavel.zebovec@gmail.com))</small>
+- [Matrix](https://matrix.org/):
+  [@janezpavelzebovec:matrix.org](https://matrix.to/#/@janezpavelzebovec:matrix.org)
+  (moje prednostno omrežje za klepete)
+- [Discord](https://discord.com/):
+  [janezpavel](https://discordapp.com/users/789883011084058666) (trenutno
+  najbolj uporabljano omrežje, vendar bi ga bilo lepo zapustiti in preiti
+  popolnoma na Matrix)
+- [Telegram](telegram.org): [@janezpavelzebovec](https://t.me/janezpavelzebovec)
 
 Še nekatera družbena omrežja, kjer sem sicer registriram, a jih ne uporabljam:
 
@@ -40,25 +68,48 @@ Tu je tudi moja [Knjižnica](/knjiznica/), kjer so zbrana nekatera znanja/podro�
 ## Dejavnosti na spletu
 
 - Zemljevidi:
-    - [Open Street Map](https://www.openstreetmap.org/user/JanezPavelZebovec), kjer prispevam k najboljšemu prostemu zemljevidu
-    - [Open Historical Map](https://www.openhistoricalmap.org/user/JanezPavelZebovec), izpeljanka zgoraj omenjenega OpenStreetMapa, vendar za zgodovinsko zemljepisje
-    - [MapWarper](https://mapwarper.net/users/40154) – za potrebe OpenHistoricalMap
+    - [Open Street Map](https://www.openstreetmap.org/user/JanezPavelZebovec),
+      kjer prispevam k najboljšemu prostemu zemljevidu
+    - [Open Historical
+      Map](https://www.openhistoricalmap.org/user/JanezPavelZebovec), izpeljanka
+      zgoraj omenjenega OpenStreetMapa, vendar za zgodovinsko zemljepisje
+    - [MapWarper](https://mapwarper.net/users/40154) – za potrebe
+      OpenHistoricalMap
 - Programiranje/Git:
-    - [Codeberg](https://codeberg.org/), kjer je nekaj mojih pregramčkov in ta spletna stran
-    - [Git Hub](https://github.com/janezpavelzebovec), ki ga bom za osebne zadeve zamenjal s Codebergom
-- Rodoslovje: popisujem predvsem častivredne korenine svojih prednikov in njihovih potomcev (na tem spletišču glej tudi [Moj rodovnik](./mojrodovnik)).
-    Trenutno kot osrednje rodoslovno orodje uporabljam [Gramps](https://gramps-project.org/)
+    - [Codeberg](https://codeberg.org/), kjer je nekaj mojih pregramčkov in ta
+      spletna stran
+    - [Git Hub](https://github.com/janezpavelzebovec), ki ga bom za osebne
+      zadeve zamenjal s Codebergom
+- Rodoslovje: popisujem predvsem častivredne korenine svojih prednikov in
+  njihovih potomcev (na tem spletišču glej tudi [Moj rodovnik](./mojrodovnik)).
+  Trenutno kot osrednje rodoslovno orodje uporabljam
+  [Gramps](https://gramps-project.org/)
     - [Geneanet](https://gw.geneanet.org/japaze1_w)
-    - [WikiTree](https://www.wikitree.com/wiki/%C5%BDebovec-1) – prosta zbirka rodoslovnih podatkov
-    - [Geni](https://www.geni.com/people/Janez-Pavel-%C5%BDebovec) – tu sem prvič bolj zares začel ([MyHeritage](https://www.myheritage.com/) raje ne omenjajmo), zdaj pa je tamkajšnje drevo že precej zastarelo
-- [Wikipedija](https://sl.wikipedia.org/wiki/Uporabnik:JanezPavelZebovec) – prispevam k člankom, ki se mi zdijo pomembnejši ali zanimivejši (vendar nisem več dosti dejaven)
+    - [WikiTree](https://www.wikitree.com/wiki/%C5%BDebovec-1) – prosta zbirka
+      rodoslovnih podatkov
+    - [Geni](https://www.geni.com/people/Janez-Pavel-%C5%BDebovec) – tu sem
+      prvič bolj zares začel ([MyHeritage](https://www.myheritage.com/) raje ne
+      omenjajmo), zdaj pa je tamkajšnje drevo že precej zastarelo
+- [Wikipedija](https://sl.wikipedia.org/wiki/Uporabnik:JanezPavelZebovec) –
+  prispevam k člankom, ki se mi zdijo pomembnejši ali zanimivejši (vendar nisem
+  več dosti dejaven)
 - Prevodi programov / spletnih strani:
-    - [Codeberg Translate](https://translate.codeberg.org/user/JanezPavelZebovec/) – [CoMaps](https://www.comaps.app/) (prevod je skoraj povsem moj in končan)
-    - [Translate Wiki](https://translatewiki.net/wiki/User:JanezPavelZebovec) – sodelujem pri prevodu spletnih strani [OpenStreetMap.org](https://www.openstreetmap.org/)
-        in [OpenHistoricalMap.org](https://www.openhistoricalmap.org/)
-    - [Transifex](https://app.transifex.com/user/profile/JanezPavelZebovec/) – sodelujem pri prevodu spletnega urejevalnika OpenStreetMapa (ID)
-    - [Hosted Weblate](https://hosted.weblate.org/user/janezpavelzebovec/) – sodelujem pri prevodu [OsmAnd](https://osmand.net/), nekaj malega tudi pri [F-Droidu](https://f-droid.org/)
-    - [Element Translations](https://translate.element.io/user/JanezPavelZebovec/) – začel sem sodelovati pri prevodu [Elementa](https://element.io/), posebej dlančniškega orodja
+    - [Codeberg
+      Translate](https://translate.codeberg.org/user/JanezPavelZebovec/) –
+      [CoMaps](https://www.comaps.app/) (prevod je skoraj povsem moj in končan)
+    - [Translate Wiki](https://translatewiki.net/wiki/User:JanezPavelZebovec) –
+      sodelujem pri prevodu spletnih strani
+      [OpenStreetMap.org](https://www.openstreetmap.org/) in
+      [OpenHistoricalMap.org](https://www.openhistoricalmap.org/)
+    - [Transifex](https://app.transifex.com/user/profile/JanezPavelZebovec/) –
+      sodelujem pri prevodu spletnega urejevalnika OpenStreetMapa (ID)
+    - [Hosted Weblate](https://hosted.weblate.org/user/janezpavelzebovec/) –
+      sodelujem pri prevodu [OsmAnd](https://osmand.net/), nekaj malega tudi pri
+      [F-Droidu](https://f-droid.org/)
+    - [Element
+      Translations](https://translate.element.io/user/JanezPavelZebovec/) –
+      začel sem sodelovati pri prevodu [Elementa](https://element.io/), posebej
+      dlančniškega orodja
 
 Druga spletna mesta:
 
@@ -68,24 +119,39 @@ Druga spletna mesta:
 
 ## O spletišču
 
-Moje spletišče je gostovano pri nemškem podjetju [Hetzner](https://www.hetzner.com/), kjer imam tudi zakupljeno *domeno*.
+Moje spletišče je gostovano pri nemškem podjetju
+[Hetzner](https://www.hetzner.com/), kjer imam tudi zakupljeno *domeno*.
 
 Dostopno je tudi:
 
-- [preko Codeberga](https://codeberg.org/JanezPavelZebovec/pages) na naslovu [janezpavelzebovec.codeberg.page](https://janezpavelzebovec.codeberg.page/),
-- [preko Git Huba](https://github.com/janezpavelzebovec/janezpavelzebovec.github.io) na naslovu [janezpavelzebovec.github.io](https://janezpavelzebovec.github.io)
+- [preko Codeberga](https://codeberg.org/JanezPavelZebovec/pages) na naslovu
+  [janezpavelzebovec.codeberg.page](https://janezpavelzebovec.codeberg.page/),
+- [preko Git
+  Huba](https://github.com/janezpavelzebovec/janezpavelzebovec.github.io) na
+  naslovu [janezpavelzebovec.github.io](https://janezpavelzebovec.github.io)
 
-To spletišče je večinoma napisano v [Markdownu](https://en.wikipedia.org/wiki/Markdown) in nato s [Pandocom](https://pandoc.org/) pretvorjeno v [HTML](https://sl.wikipedia.org/wiki/HTML),
-zato so spletne strani dostopne tudi v izvornem Markdownu v razdelku *janezpavelzebovec.net/md/*.
-Na dnu vsake take strani je povezava do pripadajoče strani v Markdownu.
+To spletišče je večinoma napisano v
+[Markdownu](https://en.wikipedia.org/wiki/Markdown) in nato s
+[Pandocom](https://pandoc.org/) pretvorjeno v
+[HTML](https://sl.wikipedia.org/wiki/HTML), zato so spletne strani dostopne tudi
+v izvornem Markdownu v razdelku *janezpavelzebovec.net/md/*.  Na dnu vsake take
+strani je povezava do pripadajoče strani v Markdownu.
 
-Datum zadnje spremembe strani, ki je naveden na vrhu, se nanaša na vsebinsko spremembo, ne na slogovno ali kak zanemarljiv (npr. slovničen) popravek.
+Datum zadnje spremembe strani, ki je naveden na vrhu, se nanaša na vsebinsko
+spremembo, ne na slogovno ali kak zanemarljiv (npr. slovničen) popravek.
 
-Uporabljen je barvni slog [Gruvbox](https://github.com/morhetz/gruvbox) Pavla Pertseva.
+Uporabljen je barvni slog [Gruvbox](https://github.com/morhetz/gruvbox) Pavla
+Pertseva.
 
-Stran [Moj rodovnik](/moj_rodovnik) je ustvarjena z [Grampsom](https://gramps-project.org/).
+Stran [Moj rodovnik](/moj_rodovnik) je ustvarjena z
+[Grampsom](https://gramps-project.org/).
 
-*Analitika* spletišča je na voljo [preko storitve Umami](https://cloud.umami.is/analytics/eu/share/FhDonlJniEyIGdQY). Nekako rožnika 2026 sem prepovedal robotom dostop do spletnega mesta (ti so močno pripevali k prometu na spletišču, ter najverjetneje krivi za tolikšno število obiskovalcev iz ZDA, ki se bili celo na vrhu lestvice). Promet se je zato od takrat precej umiril.
+*Analitika* spletišča je na voljo [preko storitve
+Umami](https://cloud.umami.is/analytics/eu/share/FhDonlJniEyIGdQY). Nekako
+rožnika 2026 sem prepovedal robotom dostop do spletnega mesta (ti so močno
+pripevali k prometu na spletišču, ter najverjetneje krivi za tolikšno število
+obiskovalcev iz ZDA, ki se bili celo na vrhu lestvice). Promet se je zato od
+takrat precej umiril.
 
 Spletišče ima tri bližnjice:
 
@@ -96,6 +162,10 @@ Spletišče ima tri bližnjice:
 ### Smernice spletišča
 
 - čim bolj preprosto, a ne na ceno lepote in uporabnosti;
-- čim manj Javascripta (tj. *animacij*, prehodov, *interaktivnosti*, ...; spletna stran mora delovati tudi brez njega – z izjemo [Zvezdoslovne ure](/zvezdoslovna_ura/), seveda);
-- zgradba HTML-ja, ki omogoča jasen ogled strani tudi brez CSS-ja, oz. omogoča enostavno prilagajanje na lastni slog;
-- vsebina naj bo dostopna tudi v golem besedilu (za npr. ogled v terminalu) – razdelek *janezpavelzebovec.net/md/*);
+- čim manj Javascripta (tj. *animacij*, prehodov, *interaktivnosti*, ...;
+  spletna stran mora delovati tudi brez njega – z izjemo [Zvezdoslovne
+  ure](/zvezdoslovna_ura/), seveda);
+- zgradba HTML-ja, ki omogoča jasen ogled strani tudi brez CSS-ja, oz. omogoča
+  enostavno prilagajanje na lastni slog;
+- vsebina naj bo dostopna tudi v golem besedilu (za npr. ogled v terminalu) –
+  razdelek *janezpavelzebovec.net/md/*);

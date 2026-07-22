@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2026-06-30
+date: 2026-07-21
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
