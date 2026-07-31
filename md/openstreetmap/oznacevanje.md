@@ -1,6 +1,6 @@
 ---
 title: OpenStreetMap
-date: 2026-05-19
+date: 2026-07-31
 description: Nekaj izbranih oznak za označevanje v OpenStretMap
 keywords: OpenStreetMap
 ---
@@ -62,18 +62,65 @@ cycleway=crossing
 
 Za pešce in kolesarje:
 
-```
-highway=path
-foot=designated
-bicycle=designated
-```
+    highway=path
+    foot=designated
+    bicycle=designated
 
 Zgolj kolesarska steza:
 
-```
-highway=cycleway
-bicycle=designated
-```
+    highway=cycleway
+    bicycle=designated
+
+## Avtobusne povezave
+
+Postajališče (`platform`):
+
+    public_transport=platform
+    highway=bus_stop
+    bus=yes
+    name=Jadranska
+    operator=Ljubljanski potniški promet
+    shelter=no
+    covered=no
+    bench=no
+
+Postojno mesto avtobusa (`stop_position`):
+
+    public_transport=stop_position
+    bus=yes
+
+Zveza postajališča (`stop_area`):
+
+    type=public_transport
+    public_transport=stop_area
+    bus=yes
+    name=Jadranska
+    operator=Ljubljanski potniški promet
+
+Avtobusna povezava v eno smer (`route`):
+
+    type=route
+    route=bus
+    public_transport:version=2
+    ref=42
+    name=Bus 10: Besnica obračališče => Zadobrova
+    from=Besnica obračališče
+    via=Podgrad
+    to=Zadobrova
+    network=MPP Ljubljana - Urbana
+    operator=Ljubljanski Potniški Promet
+    fee=yes
+    colour=#58574a
+
+Zveza avtobusne povezave v obe (/vse) smeri (`route_master`):
+
+    type=route_master
+    route_master=bus
+    ref=42
+    name=Bus 42
+    network=MPP Ljubljana - Urbana
+    operator=Ljubljanski Potniški Promet
+    colour=#58574a
 
 # Verski gradniki
 

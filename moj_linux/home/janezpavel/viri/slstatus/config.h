@@ -73,5 +73,6 @@ static const struct arg args[] = {
     //{ run_command, "%s | ",     "if bat=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | awk '/time to (empty|full)/ {print $4}') ; then [ -n \"$bat\" ] && echo \"($bat)\" || echo \"\" ; fi" },
     { cpu_perc, "| CPU %3s%% ", NULL },
     { ram_perc, "| RAM %3s%% ", NULL },
-    { datetime, "| %s",         "%F %R" },
+    { swap_perc, "| SWAP %3s%% ", NULL },
+    { datetime, "| %s",         "%F %u %R" },
 };

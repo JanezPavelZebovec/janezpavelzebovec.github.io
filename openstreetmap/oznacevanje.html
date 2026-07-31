@@ -30,8 +30,8 @@ označevanje v OpenStretMap"/>
             </svg>
         </a>
 
-        <nav id="pot"><p><a href="/">dom</a> / <a href="/openstreetmap/">openstreetmap</a> / <a href="/openstreetmap/oznacevanje/">oznacevanje</a></p></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-05-19">2026-05-19</time></p>
+        <nav id="pot"><a href="/">dom</a> / <a href="/openstreetmap/">openstreetmap</a> / <a href="/openstreetmap/oznacevanje/">oznacevanje</a></nav>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-07-31">2026-07-31</time></p>
     </header>
     <nav>
         <ul>
@@ -41,6 +41,8 @@ označevanje v OpenStretMap"/>
         <li><a href="#Prehodi" id="toc-Prehodi">Prehodi</a></li>
         <li><a href="#Poti_ki_niso_plocniki"
         id="toc-Poti_ki_niso_plocniki">Poti, ki niso pločniki</a></li>
+        <li><a href="#Avtobusne_povezave"
+        id="toc-Avtobusne_povezave">Avtobusne povezave</a></li>
         </ul></li>
         <li><a href="#Verski_gradniki" id="toc-Verski_gradniki">Verski
         gradniki</a>
@@ -124,6 +126,47 @@ bicycle=designated</code></pre>
             <p>Zgolj kolesarska steza:</p>
             <pre><code>highway=cycleway
 bicycle=designated</code></pre>
+            <h2 id="Avtobusne_povezave">Avtobusne povezave</h2>
+            <p>Postajališče (<code>platform</code>):</p>
+            <pre><code>public_transport=platform
+highway=bus_stop
+bus=yes
+name=Jadranska
+operator=Ljubljanski potniški promet
+shelter=no
+covered=no
+bench=no</code></pre>
+            <p>Postojno mesto avtobusa (<code>stop_position</code>):</p>
+            <pre><code>public_transport=stop_position
+bus=yes</code></pre>
+            <p>Zveza postajališča (<code>stop_area</code>):</p>
+            <pre><code>type=public_transport
+public_transport=stop_area
+bus=yes
+name=Jadranska
+operator=Ljubljanski potniški promet</code></pre>
+            <p>Avtobusna povezava v eno smer (<code>route</code>):</p>
+            <pre><code>type=route
+route=bus
+public_transport:version=2
+ref=42
+name=Bus 10: Besnica obračališče =&gt; Zadobrova
+from=Besnica obračališče
+via=Podgrad
+to=Zadobrova
+network=MPP Ljubljana - Urbana
+operator=Ljubljanski Potniški Promet
+fee=yes
+colour=#58574a</code></pre>
+            <p>Zveza avtobusne povezave v obe (/vse) smeri
+            (<code>route_master</code>):</p>
+            <pre><code>type=route_master
+route_master=bus
+ref=42
+name=Bus 42
+network=MPP Ljubljana - Urbana
+operator=Ljubljanski Potniški Promet
+colour=#58574a</code></pre>
             <h1 id="Verski_gradniki">Verski gradniki</h1>
             <p>Splošna verska zgradba:
             <code>building=religious</code></p>

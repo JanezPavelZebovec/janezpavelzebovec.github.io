@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-07-16
+date: 2026-07255
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -71,7 +71,7 @@ Moja *priporočila* (precej nepopolna)
 - [Branko cestnik](https://branenacesti.blogspot.com/) – slo. župnik
 - [Filip Štamcar](https://www.filips.si/) – član Programerskega kluba FMF
 - [Filip Žebovec](https://filipzebovec.net/)
-- [Jure Smolar](https://jure-smolar.com/) – član Programerskega kluba FMF
+- [Jure Smolar](https://jure.smolar.si/) ([stara *domena*](https://jure-smolar.com/)) – član Programerskega kluba FMF
 - [Matija Šuklje](https://matija.suklje.name/) – član slo. odprtokodne skupnosti
 - [Mitja Jež](https://mitja.jež.si/) – član slo. odprtokodne skupnosti (mdr. OpenStreetMap)
 - [Siggsy](https://siggsy.xyz/) – član slo. odprtokodne skupnosti (mdr. v zvezi s z javnim prevozom)

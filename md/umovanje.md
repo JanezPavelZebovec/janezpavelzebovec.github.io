@@ -1,6 +1,6 @@
 ---
 title: Umovanje
-date: 2026-07-23
+date: 2026-07-29
 description: Osebna razmišljanja
 keywords: Janez Pavel Žebovec, razmišljanje, blog
 ---
@@ -42,6 +42,22 @@ resničnosti, bližje so jim pravljice o *Matrici*, *simulacijah*, ipd.
 S takim poudarjanjem posameznikove pristranske resničnosti se odpira možnost za
 opravičevanje zločina, saj ta ni več nepristransko slab, zla ni več, le še
 muhavost, težka otroštva, želja biti viden.
+
+## Leva gibanja
+
+Veliko levičarjev je ljudi, ki jim ni uspelo prerasti najstniške upornosti, ki
+se upirajo, nasprotujejo *tradiciji*, vrednotam prejšnjih rodov, krščanskim
+vrednotam iz gole upornosti, oz. ker mislijo, da vedo vse bolje od ljudi pred
+njimi. Veliko jih prihaja iz vrst ljudi z višjo uradno izobrazbo, ki jih utrjuje
+v njihovem občutku, da so glas razuma v družbi ovc. Na podlagi nekoliko višje
+povprečne izobrazbe upravičujejo označevanje nasprotnikov za neumne kmete.
+
+Njihovo najbolj priljubljeno orodje je uničevanje ugleda, veljave
+(*diskreditacija*). To opravijo z uporabo svojega ustaljenega nabora oznak:
+*rasist*, *nacist*, *fašist*, *diktator*, ... Svojih oznak ne rabijo niti
+utemljevat, kajti ljudje jih bodo poslušali kljub temu. Če jih kdo ujame pri
+neustrezni rabi teh oznak, priredijo jezik svojim potreba – pomene spremenijo
+ali razširijo do neprepoznavnosti).
 
 ## Jezik
 
@@ -104,6 +120,9 @@ tovrstnim domislicam manjšine?
 > 4. vdati se islamu (ker strah pred praznino in želja po močnem očetu)
 >
 <cite>Branko Cestnik, 2. svečana 2024</cite>
+
+„*Toksična* moškost“ ne obstaja. Obstajajo le nekateri neumni in/ali nasilni
+moški. Kar se namreč smatra za *toksično* moškost, ni moškost.
 
 ## Splav
 
@@ -296,6 +315,39 @@ Kajti na stotine Slovencev v globelih Kočevja njihova revolucija ni osvobodila.
 
 A to ne opraviči njihovih premnogih zločinov. Oni niso junaki.
 
+## Priseljevanje
+
+Država, ki hoče ostati pravna država, ne sme dopuščati kršenja zakonov.
+Nezakoniti priseljenci nimajo pravice bivanja v državi, v katero so vstopili
+nezakonito. Tudi vsak, ki želi vstopiti zakonito in zaprosi za *azil*, nima
+pravice do *azila*, če ne izpolnjuje predpisanih pogojev.
+
+Nobena država ni dolžna sprejemati vsakogar, ki se hoče vanjo priseliti. Še več:
+če se večina državljanov s tako porabo ne strinja, nima pravice porabljati denarja
+davkoplačevalcev za podporo tujih državljanov. To ni *rasizem*, *diskriminacija*
+ali sovraštvo do drugih narodov.
+
+## Islam
+
+Na začetku je koran zelo prizanesljiv do drugih verstev.
+Obstajata nekako dve različici islama – Mekin in Medinin. Prvi pravi „ti imaš
+svojo vero in jaz imam svojo“, spodbuja sožitje med verstvi, strpnost. In potem
+je različica islama s konca Korana, ko je imel Mohamed že precej svojih
+pripadnikov, je imel moč. Tam koran naroča:
+
+> Bojujte se proti tistim, ki ne verujejo v Alaha in v zadnji dan, ne upoštevajo
+> prepovedi Alaha in Njegovega poslanca ter ne sprejemajo vere resnice med
+> tistimi, ki so prejeli Sveto pismo, dokler ne plačajo davka in se prostovoljno
+> podredijo ter se popolnoma ponižajo.
+– [Sura 9: 29](https://quran.com/at-tawbah/29)
+
+In ta razlika med islamom v začetku Mohamedovega delovanja in na koncu uči tudi
+današnje muslimane, kako naj se vedejo: ko so v manjšini, naj oznanjajo
+strpnost, miroljubnost; in ko postanejo večina, oz. ko so dovolj močni, naj si
+podredijo nemuslimane.
+Združene države Amerike, zahodna Evropa – to je današnja Meka, in Bližnji Vzhod
+– ta je današnja Medina.
+
 ---
 
 ## Zunanje povezave
@@ -310,6 +362,10 @@ A to ne opraviči njihovih premnogih zločinov. Oni niso junaki.
   tednih](https://www.poliklinika-amber.si/ginekologija-in-nosecnice/nosecnice/nosecnost-po-tednih/)
 - [March of Dimes – Pregnancy Week by
   Week](https://www.marchofdimes.org/pregnancy-week-week)
+
+Islam:
+
+- [Raymond Ibrahim: Cameraman Gets Triggered During Wild Islam Debate](https://www.youtube.com/watch?v=OWIjxZG64nY) (YouTube)
 
 Prebujenski članki:
 
