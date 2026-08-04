@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-07255
+date: 2026-08-03
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -68,6 +68,8 @@ Moja *priporočila* (precej nepopolna)
 - [Aatish Bhatia](https://aatishb.com/) – pisec znanstvenih vsebin, učitelj
 - [Anton Luka Šijanec](https://sijanec.eu/) – član Programerskega kluba FMF
 - [Barbara Makovec](https://makovec.si/) – članica Programerskega kluba FMF
+- [Blaž Lapanja](https://b1.si/) – duhovnik, računalniški navdušenec
+  (oblikovalec raznih spletnih strani)
 - [Branko cestnik](https://branenacesti.blogspot.com/) – slo. župnik
 - [Filip Štamcar](https://www.filips.si/) – član Programerskega kluba FMF
 - [Filip Žebovec](https://filipzebovec.net/)
@@ -754,6 +756,9 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [Mikhaila Peterson](https://www.youtube.com/@mikhaila)
 - [Nicholas Bowling](https://www.youtube.com/@NicholasBowling) – ameriški ulični pridigar, nekdanji katolik
 - [Pearl](https://www.youtube.com/@JustPearlyThings) – kritičarka *feminizma*, zagovornica ženstvenosti in moškosti
+- [Peter Boghossian](https://www.youtube.com/@drpeterboghossian) – intervjuji z
+  zagovorniki desnih in levih miselnosti, dosti o islamu in priseljevanju
+  muslimanov
 - [Pope Defenders](https://www.youtube.com/@PopeDefendersYT) – zagovornik katolištva
 - [Remnant777](https://www.youtube.com/@Remnant777) – kritik levice
 - [Sahar TV](https://www.youtube.com/@OfficialSaharTV) – Jud, zagovornik Izraela v vojni proti palestinski oblasti
@@ -811,7 +816,11 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [SK Bushcraft](https://www.youtube.com/@skbushcraft) - gradnja zavetij v naravi
 - [Stuff Made Here](https://www.youtube.com/@StuffMadeHere) - naprave
 
-#### Racunalnistvo
+#### Preživetje v naravi
+
+- [Hadzabe Tribe Adventures](https://www.youtube.com/@Hadzabetribeadventures10)
+
+#### Računalnistvo
 
 - [AI In Context](https://www.youtube.com/@AI_In_Context) – umetna inteligenca
 - [Bryce Vandergrift](https://www.youtube.com/@brycevandegrift)
@@ -820,6 +829,7 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [Core Dumpped](https://www.youtube.com/@CoreDumpped)
 - [Distro Tube](https://www.youtube.com/@DistroTube) – Linux
 - [Network Chuck](https://www.youtube.com/@NetworkChuck)
+- [Reject Convenience](https://www.youtube.com/@rejectconvenience)
 - [SysHack](https://www.youtube.com/@SysHackkk) – razkriva slabe plati Windowsa, zagovarja prehod na Linux
 - [Techlore](https://www.youtube.com/@techlore) – predstavitev orodij (*programov*), nevarnosti Googla, ...
 - [The Linux Experiment](https://www.youtube.com/@TheLinuxEXP) – Linux

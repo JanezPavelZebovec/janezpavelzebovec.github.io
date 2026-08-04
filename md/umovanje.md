@@ -1,6 +1,6 @@
 ---
 title: Umovanje
-date: 2026-07-29
+date: 2026-08-04
 description: Osebna razmišljanja
 keywords: Janez Pavel Žebovec, razmišljanje, blog
 ---
@@ -28,6 +28,13 @@ Mar ni lažje verjeti, da namesto tega niča nekaj je? Da je to nekaj Bog, ki je
 izvenčasen, izvenprostoren in nesnoven?
 
 ## Posameznik je bog
+
+> "I don't wanna go, I want this to go away. Because I believe that I am god. I
+> am my own god. /.../ I create my own reality and I manifest what I want to see
+> in this world. /.../ I am creating my own reality right here." 
+- študentka v "razpravi" z Cliffom Knechtlom
+    (glej [to](https://www.youtube.com/watch?v=Uh0v4Ogkcok) ali
+    [to](https://www.youtube.com/shorts/yne5A5F-NFw))
 
 Ko ljudje izgubijo vero v Boga, bogove najdejo drugod. Med drugim jih lahko
 najdejo v sebi, kar je še posebaj dandanes tako pogosto. Tak človek ima sebe za
@@ -272,6 +279,11 @@ za živo ***človeško*** bitje? In dalje: gre za ***osebo***? Katere
 pogoje mora izpolnjevati živo bitje, da se mu prizna človekove pravice? Kaj
 človeškemu bitju daje svojo vrednost?
 
+Najbolj bedna izjava je, da nerojeni otrok postane živi človek z rojstvom.
+Ker če je nedonošenček živ človek in se v ničemer, razen tega, da rojen,
+ne razlikuje od nerojenega otroka v isti stopnji razvoja, potem ta trditev nima
+nobene podlage.
+
 Krščanstvo uči, da je vsako človeško življenje neprecenljivo. Tu ni razlikovanja
 v velikosti, številu celic, umski razvitosti, odvisnosti za preživetje,
 sposobnosti pomnenja, čutnosti, ...
@@ -329,9 +341,16 @@ ali sovraštvo do drugih narodov.
 
 ## Islam
 
-Na začetku je koran zelo prizanesljiv do drugih verstev.
-Obstajata nekako dve različici islama – Mekin in Medinin. Prvi pravi „ti imaš
-svojo vero in jaz imam svojo“, spodbuja sožitje med verstvi, strpnost. In potem
+Obstajata nekako dve strani/različici islama – t.i. Mekin in Medinin. Prvi pravi
+„ti imaš svojo vero in jaz imam svojo“, spodbuja sožitje med verstvi, strpnost,
+koran je prizanesljiv do drugih verstev.
+
+> Alah vam ne prepoveduje, da bi se prijazno in pravično obnašali do tistih, ki
+> se niso borili proti vam niti vas niso izgnali iz vaših domov. Resnično, Alah
+> ljubi tiste, ki so pravični.
+– [Koran 60:8](https://quran.com/al-mumtahanah/8)
+
+In potem
 je različica islama s konca Korana, ko je imel Mohamed že precej svojih
 pripadnikov, je imel moč. Tam koran naroča:
 
@@ -339,7 +358,7 @@ pripadnikov, je imel moč. Tam koran naroča:
 > prepovedi Alaha in Njegovega poslanca ter ne sprejemajo vere resnice med
 > tistimi, ki so prejeli Sveto pismo, dokler ne plačajo davka in se prostovoljno
 > podredijo ter se popolnoma ponižajo.
-– [Sura 9: 29](https://quran.com/at-tawbah/29)
+– [Koran 9: 29](https://quran.com/at-tawbah/29)
 
 In ta razlika med islamom v začetku Mohamedovega delovanja in na koncu uči tudi
 današnje muslimane, kako naj se vedejo: ko so v manjšini, naj oznanjajo
@@ -347,6 +366,21 @@ strpnost, miroljubnost; in ko postanejo večina, oz. ko so dovolj močni, naj si
 podredijo nemuslimane.
 Združene države Amerike, zahodna Evropa – to je današnja Meka, in Bližnji Vzhod
 – ta je današnja Medina.
+
+Islam dovoljuje otroške poroke (glej tudi statistiko na
+[Girls not Brides](https://www.girlsnotbrides.org/)). Tako npr. pravi koran, ko
+razlaga, da mora tisti, ki se namerava ločiti, upoštevati ženske „čakalne dobe“
+(torej obdobje, ki mora poteči po ločitvi pred ponovno poroko):
+
+> Kar zadeva vaše ženske, ki so že prestopile starost menstruacije – če tega
+> morda ne veste, njihovo čakalno obdobje traja tri mesece, enako velja tudi za
+> tiste, ki še niso imele menstruacije. Kar zadeva nosečnice, se njihovo čakalno
+> obdobje konča z rojstvom otroka. In komurkoli je Alah blizu, bo On olajšal
+> njegove zadeve.
+– [Koran 65:4](https://quran.com/at-talaq/4)
+
+Kot pravijo haditi, se je Mohamed poročil z Ajšo pri njenih šestih letih in pri
+devetih poroko potrdil.
 
 ---
 
@@ -362,10 +396,14 @@ Združene države Amerike, zahodna Evropa – to je današnja Meka, in Bližnji 
   tednih](https://www.poliklinika-amber.si/ginekologija-in-nosecnice/nosecnice/nosecnost-po-tednih/)
 - [March of Dimes – Pregnancy Week by
   Week](https://www.marchofdimes.org/pregnancy-week-week)
+- [Stanko Plestenjak: Ko revolucija zasenči upor (2026-06-29)](https://buymeacoffee.com/staneplestenjak/ko-revolucija-zasenci-upor)
+- [Girls not Brides](https://www.girlsnotbrides.org/) – gibanje proti otroškim
+  porokam, ki so pogosto predvsem v islamskih državah
 
 Islam:
 
 - [Raymond Ibrahim: Cameraman Gets Triggered During Wild Islam Debate](https://www.youtube.com/watch?v=OWIjxZG64nY) (YouTube)
+- [WikiIslam: Child Marriage in the Qur'an](https://wikiislam.net/wiki/Child_Marriage_in_the_Qur'an)
 
 Prebujenski članki:
 

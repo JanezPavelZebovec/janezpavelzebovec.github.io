@@ -122,6 +122,12 @@ Zveza avtobusne povezave v obe (/vse) smeri (`route_master`):
     operator=Ljubljanski Potniški Promet
     colour=#58574a
 
+Zavetje postajališč:
+
+    amenity=shelter
+    shelter_type=public_transport
+    building=roof
+
 # Verski gradniki
 
 Splošna verska zgradba: `building=religious`

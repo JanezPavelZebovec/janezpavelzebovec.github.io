@@ -1,6 +1,6 @@
 ---
 title: Župnije Slovenije na OSM
-date: 2026-07-13
+date: 2026-08-01
 description: Seznam že vnešenih župnij v OSM
 keywords: OpenStreetMap, župnija, Slovenija
 ---
@@ -38,6 +38,7 @@ Cerkve/kapele, ki so navedene na Družini, a so verjetno/zagotovo že porušene
 - Župnija Banja Loka: podružnica Sv. Mihael v Borovcu (pri Kočevski Reki?, EID: 1-01646, požgana 1943)
 - Župnija Banja Loka: podružnica Sv. Valentin v Doljni Brigi (ruševine odstranjene 1954, EID: 1-01648)
 - Župnija Banja Loka: kapela sv. Kozme in Damijana v Inlaufu pri Borovcu pri Kočevski Reki (porušena po 1955, EID: 1-02762)
+- Župnija Žužemberk: cerkev sv. Petra na Koroški Gori (porušena v 2. svetovni vojni)
 
 ## Napake
 
@@ -60,5 +61,6 @@ Podatki o župnijah, ki so navedeni na Družini, a drugi viri navajajo drugače
 
 Podatki o župnijah, ki jih na Družini (še) ni
 
-- Župnija Bogojina: [spletna stran](https://www.rk-zupnijabogojina.si/)
+- Župnija Bogojina: [rk-zupnijabogojina.si](https://www.rk-zupnijabogojina.si/)
 - Župnija Budanje: podružnica Marije tolažnice žalostnih v Budanjah / Logu pri Vipavi
+- Župnija Cerklje na Gorenjskem: [zupnija-cerklje.si](https://zupnija-cerklje.si/)
