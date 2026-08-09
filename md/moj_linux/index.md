@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-07-22
+date: 2026-08-07
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -238,6 +238,7 @@ jaz ob zadnji namestitvi z njo nisem imel težav?), sicer pa je postopek tak
 
 ### Zunanji pogoni
 
+#### USB
 - `sudo apt install udisks2` – namesti udisksctl za upravljanje z USB-ji
 - `udisksctl mount -b /dev/sda1` – priključi napravo (najpogostje je ime naprave
   *sda1*, kot v tem primeru, oz. *sda2* itd. če je naprav več, oz. *sdb1*)
@@ -248,6 +249,25 @@ Za nekoliko bolj priročno uporabo zunanjih pogonov:
 - `mkdir -p ~/usb` – ustvari *mapo* usb v domači mapi
 - `ln -s /media/janezpavel ~/usb` – ustvari simbolno povezavo med *mapo*, kamor
   zgornji ukaz priklaplja naprave in novo ustvarjeno *mapo* v domači *mapi*
+
+#### Dlančnik
+
+- `sudo apt install android-file-transfer` – namesti android-file-transfer za
+  prenos datotek med Androidom in Linuxom
+- na dlančniku dovoli prenos podatkov
+- `aft-mtp-mount ~/mapa_za_priklop_dlancnika` – poveži dlančnik na
+  izbrano mapo na Linuxu
+
+Če ne deluje, najprej poskusi obidi razdelilec USB (*USB hub*), če ga
+uporabljaš, sicer poskusi sledeče:
+
+- v datoteki **etc/default/grub** zamenjaj vrstico
+    `GRUB_CMDLINE_LINUX_DEFAULT="quiet"` z vrstico
+    `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash usbcore.autosuspend=-1"`
+- `sudo update-grub`
+- `sudo reboot` za ponovni zagon sistema, ali
+    `echo -1 | sudo tee /sys/module/usbcore/parameters/autosuspend`, če (še) ne
+    želiš ponovno zaganjati, ampak le ugotoviti, če s tem že vse deluje
 
 ### Zvok
 

@@ -1,9 +1,13 @@
 ---
 title: Umovanje
-date: 2026-08-04
+date: 2026-08-09
 description: Osebna razmišljanja
 keywords: Janez Pavel Žebovec, razmišljanje, blog
 ---
+
+<small>(Na tej strani je navedenih nekaj sklicev, vendar niso vsi sklici taki, s
+katerimi bi se strinjal, namenjeni so namreč predstavitvi določene miselnosti,
+oz. vrst izjav.)</small>
 
 ## Znanost
 
@@ -119,6 +123,21 @@ razlog, da si kot družba lažemo? In le zakaj bi morali kot družba prizanavati
 domislico *družbenega spola*? Zakaj dopuščati izkoriščanje jezika v prid
 tovrstnim domislicam manjšine?
 
+> I had an irreversible operation to remove healthy tissue before I was old
+> enough to vote, sign a contract, or understand what motherhood might one day
+> mean to me. \ ... \
+>
+> The peace and self-acceptance I was promised did not come. I am now almost 22
+> years old, and I live every day with the consequences of decisions made when I
+> was a minor. \ ... \
+>
+> Medical care should help children heal. It should not permanently alter
+> healthy bodies in response to psychological distress.
+>
+<cite>[Chloe Cole](https://www.help.senate.gov/imo/media/doc/836dcbdb-dc18-2dcd-e758-5033879edf61/Cole%20Testimony_3ff44286-db12-4a99-9427-b8359fe9d51b.pdf)</cite>
+
+### *Feminizem* in *patriarhat*
+
 > Štiri faze feminizma:
 >
 > 1. borba za volilno pravico žensk
@@ -126,7 +145,15 @@ tovrstnim domislicam manjšine?
 > 3. trans-spolnost in LGBT-izacija (razkol z razsvetljenstvom)
 > 4. vdati se islamu (ker strah pred praznino in želja po močnem očetu)
 >
-<cite>Branko Cestnik, 2. svečana 2024</cite>
+<cite>[Branko Cestnik, X, 2. svečana 2024](https://x.com/BCestnik/status/1753332111044399168?s=20)</cite>
+
+> \ ... \ kaže, da so mladi, tako kot tudi mi odrasli, razdeljeni na pol. En del ima
+> napredne poglede, želi se oddaljiti od hierarhičnega patriarhalnega sistema,
+> emotivno in racionalno dojemati žensko kot celovito bitje in ne zgolj kot
+> telo, ki pripada moškemu. Druga polovica se vrača v preteklost.
+>
+<cite>[Elisa Ercoli, predsednica združenja Differenza donna (za MMC)](https://www.rtvslo.si/svet/evropa/umor-zenske-motiviran-s-spolom-je-poseben-pojav-ki-ima-velik-vpliv-na-druzbo/766443)</cite>
+
 
 „*Toksična* moškost“ ne obstaja. Obstajajo le nekateri neumni in/ali nasilni
 moški. Kar se namreč smatra za *toksično* moškost, ni moškost.
@@ -300,14 +327,17 @@ verjeti, kajti njegove trditve so protislovne.
 
 ## Narodno osvobodilni boj
 
+### Partizani
+
 Partizani niso bili narodnoosvobodilno gibanje, temveč revolucionarno gibanje.
 Njihov cilj ni bil osvoboditev slovenskega naroda, temveč poraz okupatorja in
 komunistična revolucija. Kajti niso osvobajali slovenskega naroda, ampak so ga
-izsiljevali, ustrahovali za potrebe svoje revolucije. Njihova moč je bila v ustrahovanju,
-ljudje so jim pomagali iz strahu pred njihovim pobijanjem in požiganjem. Kajti
-vsakdo, ki se z njimi ni strinjal, je bil proti njim. Vsak, ki ni hotel
-žrtvovati svojega življenja in življenj svoje družine za partizansko revolucijo,
-je bil izdajalec. Niso torej osvobajali naroda, ampak svoje tovariše.
+izsiljevali, ustrahovali za potrebe svoje revolucije. Njihova moč je bila v
+ustrahovanju, ljudje so jim pomagali iz strahu pred njihovim pobijanjem in
+požiganjem. Kajti vsakdo, ki se z njimi ni strinjal, je bil proti njim. Vsak, ki
+ni hotel žrtvovati svojega življenja in življenj svoje družine za partizansko
+revolucijo, je bil izdajalec. Niso torej osvobajali naroda, ampak svoje
+tovariše.
 
 Partizani so izkoristili Osvobodilno fronto za potrebe svoje revolucije. Zastavo
 OF so zamenjali z rdečo zvezdo Sovjetske zveze. To ne
@@ -315,17 +345,84 @@ pomeni, da so bili vsi partizani hudobni komunisti. Številni so namreč
 dobronamerno sodelovali v partizanstvu, hoteč prispevati k osvoboditvi naroda,
 misleč, da njihovi vodje hočejo isto.
 
-Domobranci so bili odgovor na partizansko ustrahovanje. To so bili tisti, ki so
-izbrali manjše zlo – sodelovanje z okupatorjem, da se zaščitijo pred
-partizani.
-
 Partizani niso narodni heroji. Niso veliki osvoboditelji slovenskega naroda.
 Kajti na stotine Slovencev v globelih Kočevja njihova revolucija ni osvobodila.
-Častilci rdeče zvede pravijo:
+Poveličevalci rdeče zvede pravijo:
 
 > Brez rdeče zvezde bi zdaj govorili nemško.
 
-A to ne opraviči njihovih premnogih zločinov. Oni niso junaki.
+To ni niti povsem res, niti to ne opraviči njihovih premnogih zločinov. Oni niso
+junaki, za kakršne jih številni imajo.
+
+### Domobranci
+
+Domobranci so bili odgovor na partizansko ustrahovanje. To so bili tisti, ki so
+izbrali manjše zlo – sodelovanje z okupatorjem, da se zaščitijo pred
+partizani, oz. komunizmom in socializmom.
+
+Domobrance se obtožuje, da so prisegli zvestobo Hitlerju. Tu je njihova prisega:
+
+> Prisegam pri Vsemogočnem Bogu, da bom zvest, hraber in svojim nadrejenim
+> pokoren, da bom v skupnem boju z nemško oboroženo silo, stoječo pod
+> poveljstvom vodje velike Nemčije, SS četami in policijo, proti banditom in
+> komunizmu kakor tudi njegovim zaveznikom svoje dolžnosti vestno izpolnjeval za
+> svojo slovensko domovino kot del svobodne Evrope. Za ta boj sem pripravljen
+> žrtvovati tudi svoje življenje. Tako mi Bog pomagaj!
+>
+<cite>Prisega Slovenskih domobrancev z Leonom Rupnikom Nemčiji na bežigrajskem
+Plečnikovem stadionu, 20. malega travna 1944</cite>
+
+To ni prisega zvestobe Nemčiji, kaj šele Hitlerju. To je prisega Bogu.
+
+> Prvič je bila tedaj na omenjeni palači slovesno izobešena tudi slovenska
+> zastava s kranjskim deželnim grbom, godba pa je zaigrala poleg nemške državne
+> in nacionalsocialistične himne tudi pesem *Naprej zastava slave*.
+>
+<cite>[Janez Peršič: Domobranska prisega dne 20. aprila 1944](https://ojs.inz.si/pnz/article/download/3558/3895/8886)</cite>
+
+Domobranci so tudi podpisali izjavo:
+
+> Sem prostovoljno pristopil v Slov. domobranstvo, v boj in uničenje komunizma,
+> ki je moji deželi že toliko gorja prinesel in vso Evropo ogrozil.  Moja trdna
+> volja je, z vsemi mojimi močmi v zadovoljstvo moje dežele in Evrope bojevati
+> se pod nemškim vodstvom, in zato tudi moje življenje postaviti.  To obvezo sem
+> danes s sveto prisego potrdil. Sem bil o dolžnostih in pravicah v službenem,
+> disciplinarnem in gospodarskem oziru poučen.
+>
+<cite>Podpisana izjava Slovenskih domobrancev</cite>
+
+Med podpisniki zgornje izjave ni najti imen častnikov organizacijskega štaba
+Slovenskega domobranstva.
+
+> Po vojni ga je tedanje vojaško sodišče spoznalo za krivega izdaje in
+> sodelovanja z okupatorjem in 4. septembra 1946 so ga usmrtili.
+>
+> Slovensko vrhovno sodišče je obsodbo domobranskega generala Leona Rupnika, ki
+> je bil zaradi izdaje in sodelovanja z okupatorjem obsojen na smrt s
+> streljanjem, razveljavilo prosinca 2020. Sodniki so tedaj presodili, da pet
+> izmed enajstih očitanih dejanj iz obsodbe delno ali v celoti ni bilo
+> obrazloženih.
+>
+<cite>[24ur – 80 let od srhljive zaprisege Hitlerju na Plečnikovem stadionu](https://www.24ur.com/novice/slovenija/80-let-od.html)</cite>
+
+Domobranci so bili prisiljeni v prisego, sicer bi jih Nemčiji razpustila. Prvo
+besedilo prisege so domobranci zavrnili, saj je jasno kršilo mednarodno pravo,
+verjetno je vključevalo tudi zvestobo Nemčiji/Hitlerju, priznavalo okupatorjevo
+suverenost. Z drugo različico besedila so se tako med drugim izgonili tudi
+pravni zavezanosti.
+
+> Domobranska prisega je prisega pomožnih policijskih enot, ki so bile \ ... \
+> hkrati tudi del ilegalne strukture vojske Kraljevine Jugoslavije pod
+> poveljstvom generala Mihailovića. Te enote so ohranile nedotaknjeno svojo
+> prisego zvestobe kralju Petru II. kot zakonitemu suverenu in so mu služile v
+> svoji dvojni funkciji: kot samozaščitna enota so v skladu s Haaško konvencijo
+> (1907, IV, čl. 43) izpolnjevale dolžnost vzdrževanja reda in miru ter tako
+> prispevale k temeljni pravici okupiranih državljanov Kraljevine Jugoslavije do
+> javnega reda in varnosti, kralju pa so služile tudi v svoji ilegalni
+> strukturi, kot del vojske Kraljevine Jugoslavije. Del te dvojnosti je bila
+> tudi domobranska prisega.
+>
+<cite>[Domovina – Kolaboracija in propaganda (15. del): Slovenski protikomunisti in kolaboracija 5: domobranska prisega](https://www.domovina.je/kolaboracija-in-propaganda-15-del-slovenski-protikomunisti-in-kolaboracija-5-domobranska-prisega)</cite>
 
 ## Priseljevanje
 
@@ -348,7 +445,8 @@ koran je prizanesljiv do drugih verstev.
 > Alah vam ne prepoveduje, da bi se prijazno in pravično obnašali do tistih, ki
 > se niso borili proti vam niti vas niso izgnali iz vaših domov. Resnično, Alah
 > ljubi tiste, ki so pravični.
-– [Koran 60:8](https://quran.com/al-mumtahanah/8)
+>
+<cite>[Koran 60:8](https://quran.com/al-mumtahanah/8)</cite>
 
 In potem
 je različica islama s konca Korana, ko je imel Mohamed že precej svojih
@@ -358,7 +456,8 @@ pripadnikov, je imel moč. Tam koran naroča:
 > prepovedi Alaha in Njegovega poslanca ter ne sprejemajo vere resnice med
 > tistimi, ki so prejeli Sveto pismo, dokler ne plačajo davka in se prostovoljno
 > podredijo ter se popolnoma ponižajo.
-– [Koran 9: 29](https://quran.com/at-tawbah/29)
+>
+<cite>[Koran 9: 29](https://quran.com/at-tawbah/29)</cite>
 
 In ta razlika med islamom v začetku Mohamedovega delovanja in na koncu uči tudi
 današnje muslimane, kako naj se vedejo: ko so v manjšini, naj oznanjajo
@@ -377,7 +476,8 @@ razlaga, da mora tisti, ki se namerava ločiti, upoštevati ženske „čakalne 
 > tiste, ki še niso imele menstruacije. Kar zadeva nosečnice, se njihovo čakalno
 > obdobje konča z rojstvom otroka. In komurkoli je Alah blizu, bo On olajšal
 > njegove zadeve.
-– [Koran 65:4](https://quran.com/at-talaq/4)
+>
+<cite>[Koran 65:4](https://quran.com/at-talaq/4)</cite>
 
 Kot pravijo haditi, se je Mohamed poročil z Ajšo pri njenih šestih letih in pri
 devetih poroko potrdil.
@@ -404,6 +504,11 @@ Islam:
 
 - [Raymond Ibrahim: Cameraman Gets Triggered During Wild Islam Debate](https://www.youtube.com/watch?v=OWIjxZG64nY) (YouTube)
 - [WikiIslam: Child Marriage in the Qur'an](https://wikiislam.net/wiki/Child_Marriage_in_the_Qur'an)
+
+Narodnoosvobodilni boj:
+
+- [Inštitut za novejšo zgodovino – Janez Peršič: Domobranska prisega dne 20. aprila 1944](https://ojs.inz.si/pnz/article/download/3558/3895/8886)
+- [Domovina – Kolaboracija in propaganda (15. del): Slovenski protikomunisti in kolaboracija 5: domobranska prisega](https://www.domovina.je/kolaboracija-in-propaganda-15-del-slovenski-protikomunisti-in-kolaboracija-5-domobranska-prisega)
 
 Prebujenski članki:
 

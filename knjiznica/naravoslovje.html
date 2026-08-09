@@ -36,7 +36,7 @@
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/naravoslovje/">naravoslovje</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-07-09">2026-07-09</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-08-05">2026-08-05</time></p>
     </header>
     <nav>
         <ul>
@@ -82,7 +82,7 @@
         <li><a href="#Entropija"
         id="toc-Entropija"><i>Entropija</i></a></li>
         </ul></li>
-        <li><a href="#Vrtenje" id="toc-Vrtenje">Vrtenje</a>
+        <li><a href="#Krozenje" id="toc-Krozenje">Kroženje</a>
         <ul>
         <li><a href="#Ubezne_hitrosti" id="toc-Ubezne_hitrosti">Ubežne
         hitrosti</a></li>
@@ -320,10 +320,10 @@
             \frac{\d^2 z}{\d t^2} \right) \]</span></p>
             <p>Pospešek, ki je vzporeden hitrosti, zgolj spreminja
             velikost hitrosti, nevzporeden pospešek pa tudi spreminja
-            smer. <span class="math display">\[ \sin \d \phi = \frac{|
-            \vec a | \d t}{| \vec v |} \implies \d \phi = \frac{a}{v} \d
-            t \implies a = \frac{\d \phi}{\d t} v = \omega v
-            \]</span></p>
+            smer. <span class="math display">\[ \sin \d \phi
+            = \frac{| \vec a | \d t}{| \vec v |} \implies \d \phi =
+            \frac{a}{v} \d t \implies a
+            = \frac{\d \phi}{\d t} v = \omega v \]</span></p>
             <table>
             <colgroup>
             <col style="width: 50%" />
@@ -364,8 +364,13 @@
             </tbody>
             </table>
             <h3 id="Navor">Navor</h3>
-            <p><span class="math display">\[ \vec M = \vec r \times \vec
-            F = m \vec \alpha r^2 = J \vec \alpha \]</span></p>
+            <p>(Glej tudi <a href="#Vrtenje">Vrtenje</a>)</p>
+            <p>Navor (tudi vrtilni <i>moment</i>) <span
+            class="math inline">\(M [Nm]\)</span> je sukalna sila,
+            odvisna od neke sile <span class="math inline">\(F\)</span>
+            na ročico dolžine <span class="math inline">\(r\)</span>,
+            pripeto v osi sukanja. <span class="math display">\[ \vec M
+            = \vec r \times \vec F = \vec r \vec F_t \]</span></p>
             <h2 id="Energije"><i>Energije</i></h2>
             <div class="zakon">
             <p><b>Zakon o ohranitvi <i>energije</i></b>: V zaprtem
@@ -426,7 +431,8 @@
                 = m \int \left( v_x \d v_x + v_y \d v_y + v_z \d v_z
             \right)
                 = \frac{1}{2} m \left( v_x&#39; + v_y&#39; + v_z&#39;
-            \right) \Big|_{v&#39;}^{v} = \frac{1}{2} m v^2
+            \right)
+                \Big|_{v&#39;}^{v} = \frac{1}{2} m v^2
             \Big|_{v&#39;}^{v}
                 = \frac{1}{2} m (v^2 - v&#39;^2) \]</span></p>
             </div>
@@ -471,8 +477,8 @@
             class="math inline">\(x = 0\)</span>).</p>
             <div class="izpeljava">
             <p><span class="math display">\[ \Delta W_{pr} = -A_{vzmeti}
-            = - \int_{x&#39;}^x F x \d x = \int_{x&#39;}^{x} k x \d x =
-            \frac{1}{2} k (x^2 - x&#39;^2) = \frac{1}{2} k x^2
+            = - \int_{x&#39;}^x F x \d x = \int_{x&#39;}^{x} k x \d x
+            = \frac{1}{2} k (x^2 - x&#39;^2) = \frac{1}{2} k x^2
             \]</span></p>
             </div>
             <p><span class="math display">\[ \Delta W_{pr} = \frac{1}{2}
@@ -486,20 +492,20 @@
             <i>vektor</i>.</p>
             <span class="math display">\[ \vec G = m \vec v \]</span>
             <span class="math display">\[ \vec F = m \vec a = m \frac{\d
-            \vec v}{\d t} = \frac{\d (m \vec v)}{\d t} = \frac{\d \vec
-            G}{\d t} \]</span>
+            \vec v}{\d t} = \frac{\d (m \vec v)}{\d t}
+            = \frac{\d \vec G}{\d t} \]</span>
             <div class="izpeljava">
             <p><span class="math display">\[ \int_{t&#39;}^{t} \vec F \d
-            t = \int_{t&#39;}^t \frac{\d \vec G}{\d t} \d t = \vec G
-            \Big|_{t&#39;}^t = \vec G - \vec G&#39; = \Delta \vec G
-            \]</span></p>
+            t = \int_{t&#39;}^t \frac{\d \vec G}{\d t} \d t
+            = \vec G \Big|_{t&#39;}^t = \vec G - \vec G&#39; = \Delta
+            \vec G \]</span></p>
             </div>
             <p><span class="math display">\[ \int_{t&#39;}^{t} \vec
             F_{zun.} \d t = \Delta \vec G = m \Delta \vec v \]</span>
             Gibalna količina zaprtega <i>sistema</i> se ohranja (če ni
             pretvorb <i>energij</i>), spremenijo jo lahko le zunanje
             sile (torej se lahko spremeni le, če <i>sistem</i> ni
-            zaprt), ker se notranje sile med sabo izničijo..</p>
+            zaprt), ker se notranje sile med sabo izničijo.</p>
             <ul>
             <li>Neprožni trk: ohranja se gibalna količina, <i>kinetična
             energija</i> se ne ohranja</li>
@@ -533,7 +539,8 @@
             <li><a href="#Entropija"><i>Entropija</i></a> je pri vsaki
             izmenjavi toplote večja od nič (<b><i>entropijski</i>
             zakon</b>): <span class="math display">\[ \Delta S \ge \oint
-            \frac{\mathrm{đ} Q}{T} \ge 0 \]</span></li>
+            \frac{\mathrm{đ} Q}{T} \ge 0
+            \]</span></li>
             <li>Sprememba <i>entropije</i> je pri <i>absolutni</i> ničli
             enaka nič (<b>Nernstov izrek</b>): <span
             class="math display">\[ \Delta S (T = 0 K) = 0
@@ -623,10 +630,14 @@
             <p><span class="math display">\[ \d S \geq \frac{\mathrm{đ}
             Q}{T} \]</span> <span class="math display">\[ \Delta S \geq
             \int{ \frac{\mathrm{đ} Q}{T} } \]</span></p>
-            <h2 id="Vrtenje">Vrtenje</h2>
+            <h2 id="Krozenje">Kroženje</h2>
             <p>Kot <span class="math inline">\(\phi\)</span> ni
-            <i>vektor</i>, je pa <i>vektor</i> njegov <i>diferencial</i>
-            <span class="math inline">\(\vec{d \phi}\)</span>.</p>
+            <i>vektor</i>, ker ne velja zamenljivost zasukov, je pa
+            <i>vektor</i> njegov <i>diferencial</i> <span
+            class="math inline">\(\d \vec{\phi}\)</span> (to si lahko
+            predstavljamo tako, da je premik pri zasuku <span
+            class="math inline">\(\d \phi\)</span> premi, ne
+            ukrivljen).</p>
             <table>
             <colgroup>
             <col style="width: 50%" />
@@ -643,7 +654,7 @@
             <td>kotna hitrost [<span
             class="math inline">\(\frac{1}{s}\)</span>]</td>
             <td><span class="math display">\[ \vec \omega = \vec \phi
-            &#39;(t) = \frac{\vec {\d \phi}}{dt} \]</span> <span
+            &#39;(t) = \frac{\vec {\d \phi}}{\d t} \]</span> <span
             class="math display">\[ \overline \omega = \frac{\Delta
             \phi}{\Delta t} = \frac{2 \pi}{t_o} = 2 \pi \gamma =
             \omega_0 + \alpha t \]</span></td>
@@ -685,38 +696,77 @@
             </ol>
             </div>
             Vztrajnostni <i>moment</i> [<span class="math inline">\(kg
-            m^2\)</span>] je porazdelitev <i>mase</i> glede na os
+            m^2\)</span>] je porazdelitev <i>mase</i> telesa glede na os
             vrtenja:
             <div class="izpeljava">
             <p><span class="math display">\[ W_{k, rot} = \frac{1}{2}
-            \sum_i m_i v_i^2 = \frac{1}{2} \int \d m v^2 = \frac{1}{2}
-            \int \d m r^2 \omega^2 = \frac{1}{2} \omega^2 \int \d m r^2
-            = \frac{1}{2} J \omega^2 \]</span></p>
+            \sum_i m_i \vec{v_i}^2
+            = \frac{1}{2} \int \d m \vec{v}^2
+            = \frac{1}{2} \int \d m \vec{r}^2 \vec{\omega}^2
+            = \frac{1}{2} \omega^2 \int \d m \vec{r}^2
+            = \frac{1}{2} J \vec{\omega}^2 \]</span></p>
             </div>
             <p><span class="math display">\[ W_{k, rot} = \frac{1}{2} J
-            \omega^2 \]</span> <span class="math display">\[ J_{točka,
-            cev} = m r^2 \]</span> <span class="math display">\[
-            J_{valj} = \frac{1}{2} m r^4 \]</span> <span
-            class="math display">\[ J_{krogla} = \frac{2}{5} m r^2
+            \omega^2 \]</span></p>
+            Vztrajnostni <i>momenti</i> za nekatera <i>homogena</i>
+            telesa: <span class="math display">\[ J_{točka, cev} = m R^2
+            \]</span>
+            <div class="izpeljava">
+            <p><span class="math display">\[ J_{valj} = \int \d m r^2
+            = \int \rho \d V r^3 = \int \rho h 2 \pi r^3 \d r
+            = \frac{\pi}{2} \rho h \Delta R^4 = \frac{1}{2} m R^4
             \]</span></p>
-            <p>Steinerjev izrek: če je težišče telesa izmaknjeno od osi
-            vrtenja, je vztrajnostni <i>moment</i> telesa enak vsoti
+            </div>
+            <p><span class="math display">\[ J_{valj} = \frac{1}{2} m
+            R^4 \]</span> <span class="math display">\[ J_{krogla} =
+            \frac{2}{5} m R^2 \]</span></p>
+            <b>Steinerjev izrek</b>: če je težišče telesa izmaknjeno od
+            osi vrtenja, je vztrajnostni <i>moment</i> telesa enak vsoti
             tistega, ki bi bil, če bi bila os v težišču in tistega, če
             telo vzamemo kot točko (težišče) ki kroži na neki razdalji
-            os osi: <span class="math display">\[ J = J^* + m r^2
-            \]</span></p>
+            os osi: <span class="math display">\[ J = J^* + m d^2
+            \]</span>
+            <div class="izpeljava">
+            <p><span class="math display">\[ \vec r = \vec r^* + \vec
+            r_T \]</span> <span class="math display">\[ J = \int \d m
+            r^2
+            = \int \d m (\vec r - \vec r_{os})^2
+            = \int \d m (\vec r^* + r_T - \vec r_{os})^2
+            = \int \d m (\vec r_T^2 + 2 (\vec r^* - \vec r_{os}) \vec
+            r_T + (\vec r - \vec r_{os})^2)
+            = \int \d m r_T^2 + \d m 2 (\vec r^* - \vec r_{os}) \vec r_T
+            + \d m (\vec r - \vec r_{os})^2
+            = J^* + 0 + m d^2 \]</span></p>
+            </div>
             <p><span class="math display">\[ A = \Delta W_k =
             \frac{1}{2} J (\Delta \omega)^2 = \int \vec M \vec{\d \phi}
             \]</span> <span class="math display">\[ P = \frac{\d A}{\d
             t} = \frac{\vec M \vec{\d \phi}}{\d t} = \vec M \vec \omega
             \]</span> <span class="math display">\[ \vec M = J \vec
             \alpha \]</span></p>
+            Navor: <span class="math display">\[ \vec M = \vec r \times
+            \vec F = \vec r \times m \vec \alpha \vec r = J \vec
+            \alpha \]</span>
+            <div class="izpeljava">
+            <p><span class="math display">\[ \int \vec M \d \vec \phi =
+            J \int \frac{\d \vec \omega}{\d t} \d \vec \phi =
+            J \int \frac{\d \vec \omega}{\vec \omega} = \frac{1}{2} J
+            \omega^2
+            |_{\omega&#39;}^{\omega} = \Delta W_k = A \implies A = \int
+            \vec M \d \vec \phi =
+            \frac{1}{2} J (\Delta \vec \omega)^2 \]</span></p>
+            </div>
+            <p><span class="math display">\[ A = \int \vec M \d \vec
+            \phi = \frac{1}{2} J (\Delta \vec \omega)^2 \]</span> <span
+            class="math display">\[ P = \frac{\d A}{\d t} = \frac{\vec M
+            \d \vec \phi}{\d t} = \vec M \vec \omega \]</span></p>
             <p>Vrtilna količina je gibalna količina porazdeljena po
             vrtečem se telesu: <span class="math display">\[ \vec \Gamma
-            = \vec r \times \vec G = \int \d m \vec r \times \vec v = J
-            \vec \omega \]</span> <span class="math display">\[ \vec M =
-            \vec r \times \vec F = \vec r \times \frac{\d \vec G}{\d t}
-            = \frac{\d \vec \Gamma}{\d t} \]</span> <span
+            = = \sum_i \vec r_i \times \vec G_i = \vec r \times \vec G
+                = \int \d m \vec r \times \vec v = J \vec \omega
+            \]</span> <span class="math display">\[ \vec M = \vec r
+            \times \vec F = \vec r \times \frac{\d \vec G}{\d t} =
+            \frac{\d \vec \Gamma}{\d t} \]</span> <span
             class="math display">\[ \vec \Gamma = \vec \Gamma_{tirna} +
             \vec \Gamma_{lastna}^* \]</span> <span
             class="math display">\[ \vec \Gamma_{tirna}^* = \int \d m

@@ -1,6 +1,6 @@
 ---
 title: Naravoslovje
-date: 2026-07-09
+date: 2026-08-05
 description: Naravni zakoni
 keywords: naravoslovje, fizika
 author: Janez Pavel Žebovec
@@ -115,8 +115,10 @@ $$ \vec a = \lim_{\Delta t \to 0} \frac{\Delta \vec v}{\Delta t} = \frac{\d \vec
 $$ \vec a = \left( \frac{\d v_x}{\d t}, \frac{\d v_y}{\d t}, \frac{\d v_z}{\d t} \right)
     = \left( \frac{\d^2 x}{\d t^2}, \frac{\d^2 y}{\d t^2}, \frac{\d^2 z}{\d t^2} \right) $$
 
-Pospešek, ki je vzporeden hitrosti, zgolj spreminja velikost hitrosti, nevzporeden pospešek pa tudi spreminja smer.
-$$ \sin \d \phi = \frac{| \vec a | \d t}{| \vec v |} \implies \d \phi = \frac{a}{v} \d t \implies a = \frac{\d \phi}{\d t} v = \omega v $$
+Pospešek, ki je vzporeden hitrosti, zgolj spreminja velikost hitrosti,
+nevzporeden pospešek pa tudi spreminja smer.  $$ \sin \d \phi
+= \frac{| \vec a | \d t}{| \vec v |} \implies \d \phi = \frac{a}{v} \d t \implies a
+= \frac{\d \phi}{\d t} v = \omega v $$
 
 | | |
 | --- | --- |
@@ -127,12 +129,17 @@ $$ \sin \d \phi = \frac{| \vec a | \d t}{| \vec v |} \implies \d \phi = \frac{a}
 
 ### Navor
 
-$$ \vec M = \vec r \times \vec F = m \vec \alpha r^2 = J \vec \alpha $$
+(Glej tudi [Vrtenje](#Vrtenje))
+
+Navor (tudi vrtilni *moment*) $M [Nm]$ je sukalna sila, odvisna od neke sile $F$ na ročico dolžine $r$, pripeto v osi sukanja.
+$$ \vec M = \vec r \times \vec F = \vec r \vec F_t $$
 
 ## *Energije*
 
 <div class="zakon">
-**Zakon o ohranitvi *energije***: V zaprtem *sistemu* se *energija* ohranja; ne more nastati iz nič ali izginiti v nič, lahko pa se pretvarja iz ene vrste *energije* v drugo.
+**Zakon o ohranitvi *energije***: V zaprtem *sistemu* se *energija* ohranja; ne
+more nastati iz nič ali izginiti v nič, lahko pa se pretvarja iz ene vrste
+*energije* v drugo.
 </div>
 
 $$ A = \Delta W_k + \Delta W_p + \Delta W_{pr} + ... $$
@@ -162,14 +169,17 @@ $$ \Delta W_k = A = \int_{\vec r_1}^{\vec r_2} \vec F \d \vec r
     = m \int_{\vec v'}^{v} \vec v \d \vec v
     = m \int \vec v \d \vec v
     = m \int \left( v_x \d v_x + v_y \d v_y + v_z \d v_z \right)
-    = \frac{1}{2} m \left( v_x' + v_y' + v_z' \right) \Big|_{v'}^{v} = \frac{1}{2} m v^2 \Big|_{v'}^{v}
+    = \frac{1}{2} m \left( v_x' + v_y' + v_z' \right)
+    \Big|_{v'}^{v} = \frac{1}{2} m v^2 \Big|_{v'}^{v}
     = \frac{1}{2} m (v^2 - v'^2) $$
 </div>
 $$ W_k = \frac {m v^2}{2} $$
 
 ### *Potencialna* težnostna *energija*
 
-*Potencialna energija* ima naravno izhodišče ($W_{p, g} = 0$) neskončno daleč stran od izvora težnosti, kjer gre teža proti nič ($r_1 \rightarrow \infty$), in je tem bolj *negativna*, bližje, kot smo izvoru težnosti:
+*Potencialna energija* ima naravno izhodišče ($W_{p, g} = 0$) neskončno daleč
+stran od izvora težnosti, kjer gre teža proti nič ($r_1 \rightarrow \infty$), in
+je tem bolj *negativna*, bližje, kot smo izvoru težnosti:
 
 $$ \vec F_g = -G \frac{m_1 m_2}{r^2} \frac{\vec r_{1,2}}{r} $$
 <div class="izpeljava">
@@ -182,7 +192,8 @@ $$ W_{p, g} = - A_g
 </div>
 $$ W_{p, g} = - \frac{G m_1 m_2}{r_2} $$
 
-Za "ravno Zemljo" ($\Delta h << r_Z$) – izhodišče je po dogovoru na ničelni nadmorski višini:
+Za "ravno Zemljo" ($\Delta h << r_Z$) – izhodišče je po dogovoru na ničelni
+nadmorski višini:
 $$ g = \frac{G M_Z}{r_Z^2} $$
 $$ W_{p, g} = m g h $$
 $$ \Delta W_{p, g} = \int_{z_0}^z m g \d z = m g (z - z_0) $$
@@ -196,7 +207,8 @@ kjer je $W_k$ vedno *pozitivna*, $W_p$ pa vedno *negativna*.
 Izhodišče je v ravnovesni legi ($x = 0$).
 
 <div class="izpeljava">
-$$ \Delta W_{pr} = -A_{vzmeti} = - \int_{x'}^x F x \d x = \int_{x'}^{x} k x \d x = \frac{1}{2} k (x^2 - x'^2) = \frac{1}{2} k x^2 $$
+$$ \Delta W_{pr} = -A_{vzmeti} = - \int_{x'}^x F x \d x = \int_{x'}^{x} k x \d x
+= \frac{1}{2} k (x^2 - x'^2) = \frac{1}{2} k x^2 $$
 </div>
 $$ \Delta W_{pr} = \frac{1}{2} k x^2 $$
 
@@ -210,19 +222,24 @@ $$ \Delta H = \Delta W_n + p \Delta V $$
 V nasprotju z *energijami* je gibalna količina *vektor*.
 
 $$ \vec G = m \vec v $$
-$$ \vec F = m \vec a = m \frac{\d \vec v}{\d t} = \frac{\d (m \vec v)}{\d t} = \frac{\d \vec G}{\d t} $$
+$$ \vec F = m \vec a = m \frac{\d \vec v}{\d t} = \frac{\d (m \vec v)}{\d t}
+= \frac{\d \vec G}{\d t} $$
 <div class="izpeljava">
-$$ \int_{t'}^{t} \vec F \d t = \int_{t'}^t \frac{\d \vec G}{\d t} \d t = \vec G \Big|_{t'}^t = \vec G - \vec G' = \Delta \vec G $$
+$$ \int_{t'}^{t} \vec F \d t = \int_{t'}^t \frac{\d \vec G}{\d t} \d t
+= \vec G \Big|_{t'}^t = \vec G - \vec G' = \Delta \vec G $$
 </div>
 $$ \int_{t'}^{t} \vec F_{zun.} \d t = \Delta \vec G = m \Delta \vec v $$
-Gibalna količina zaprtega *sistema* se ohranja (če ni pretvorb *energij*), spremenijo jo lahko le zunanje sile (torej se lahko spremeni le, če *sistem* ni zaprt), ker se notranje sile med sabo izničijo..
+Gibalna količina zaprtega *sistema* se ohranja (če ni pretvorb *energij*),
+spremenijo jo lahko le zunanje sile (torej se lahko spremeni le, če *sistem* ni
+zaprt), ker se notranje sile med sabo izničijo.
 
 - Neprožni trk: ohranja se gibalna količina, *kinetična energija* se ne ohranja
 - Prožni trk: ohranjata se gobalna količina in *kinetična energija*
 
 ## *Termodinamika*
 
-*Temperatura* je *termodinamska* spremenljivka, toplota pa ne. Toplota je način prehajanja *energije*, vrsta dela.
+*Temperatura* je *termodinamska* spremenljivka, toplota pa ne. Toplota je način
+prehajanja *energije*, vrsta dela.
 
 Povprečna *kinetična energija molekul*:
 $$ p = \frac{2}{3} \frac{N}{V} < W_{k1} > $$
@@ -233,10 +250,18 @@ $$ < W_{k 1} > = \frac{3}{2} k_B T $$
 <div class="zakon">
 ***Termodinamski* zakoni**:
 
-0. Če je *termodinamski sistem* A v ravnovesju z B in B v ravnovesju z C, potem je A v ravnovesju z C (**zakon o prenosljivosti *termodinamskega* ravnovesja**). $$ A \sim B \wedge B \sim C \Rightarrow A \sim C $$
-1. Iz zakona o ohranitvi *energije* sledi, da je sprememba *energije* sistema enaka vsoti dovedene/oddane toplote in dovedenega/oddanega dela (***energijski* zakon**): $$ \d W = \mathrm{đ} Q + \mathrm{đ} A $$
-2. [*Entropija*](#Entropija) je pri vsaki izmenjavi toplote večja od nič (***entropijski* zakon**): $$ \Delta S \ge \oint \frac{\mathrm{đ} Q}{T} \ge 0 $$
-3. Sprememba *entropije* je pri *absolutni* ničli enaka nič (**Nernstov izrek**): $$ \Delta S (T = 0 K) = 0 $$
+0. Če je *termodinamski sistem* A v ravnovesju z B in B v ravnovesju z C, potem
+   je A v ravnovesju z C (**zakon o prenosljivosti *termodinamskega*
+   ravnovesja**). $$ A \sim B \wedge B \sim C \Rightarrow A \sim C $$
+1. Iz zakona o ohranitvi *energije* sledi, da je sprememba *energije* sistema
+   enaka vsoti dovedene/oddane toplote in dovedenega/oddanega dela
+   (***energijski* zakon**): $$ \d W = \mathrm{đ} Q + \mathrm{đ} A $$
+2. [*Entropija*](#Entropija) je pri vsaki izmenjavi toplote večja od nič
+   (***entropijski* zakon**): $$ \Delta S \ge \oint \frac{\mathrm{đ} Q}{T} \ge 0
+   $$
+3. Sprememba *entropije* je pri *absolutni* ničli enaka nič (**Nernstov
+   izrek**): $$ \Delta S (T = 0 K) = 0 $$
+
 </div>
 
 $$ \Delta W_n = Q_{stalna V} = m c_V \Delta T $$
@@ -268,19 +293,22 @@ $$ \beta = 3 \alpha $$
 
 ### *Entropija*
 
-*Entropija* je *termodinamična* količina  neurejenosti, naključnosti, nepovratnosti. V zaprtem *sistemu* se vedno povečuje.
+*Entropija* je *termodinamična* količina  neurejenosti, naključnosti,
+nepovratnosti. V zaprtem *sistemu* se vedno povečuje.
 
 $$ \d S \geq \frac{\mathrm{đ} Q}{T} $$
 $$ \Delta S \geq \int{ \frac{\mathrm{đ} Q}{T} } $$
 
-## Vrtenje
+## Kroženje
 
-Kot $\phi$ ni *vektor*, je pa *vektor* njegov *diferencial* $\vec{d \phi}$.
+Kot $\phi$ ni *vektor*, ker ne velja zamenljivost zasukov, je pa *vektor* njegov
+*diferencial* $\d \vec{\phi}$ (to si lahko predstavljamo tako, da je premik pri
+zasuku $\d \phi$ premi, ne ukrivljen).
 
 | | |
 | --- | --- |
 | kot [rd] | $$ \phi = \frac{l}{r} $$ $$ \phi = \phi_0 + \omega_0 t + \frac{\alpha}{2} t^2 $$ |
-| kotna hitrost [$\frac{1}{s}$] | $$ \vec \omega = \vec \phi '(t) = \frac{\vec {\d \phi}}{dt} $$ $$ \overline \omega = \frac{\Delta \phi}{\Delta t} = \frac{2 \pi}{t_o} = 2 \pi \gamma = \omega_0 + \alpha t $$ |
+| kotna hitrost [$\frac{1}{s}$] | $$ \vec \omega = \vec \phi '(t) = \frac{\vec {\d \phi}}{\d t} $$ $$ \overline \omega = \frac{\Delta \phi}{\Delta t} = \frac{2 \pi}{t_o} = 2 \pi \gamma = \omega_0 + \alpha t $$ |
 | kotni pospešek [$\frac{1}{s^2}$] | $$ \vec \alpha = \vec \omega '(t) = \frac{\vec {\d \omega}}{\d t} $$ $$ \overline{\alpha} = \frac{\Delta \omega}{\Delta t} $$ |
 | *frekvenca* [Hz] | $$ \gamma = \frac{N}{\Delta t} = \frac{1}{t_o} $$ |
 
@@ -302,26 +330,65 @@ Keplerjevi zakoni:
 1. Tiri planetov so *elipse*, Sonce je v gorišču.
 2. Ploščinska hitrost *planetov* je stalna.
 3. $\frac{r^3}{t_0^2}$ = stalno
+
 </div>
 
-Vztrajnostni *moment* [$kg m^2$] je porazdelitev *mase* glede na os vrtenja:
+Vztrajnostni *moment* [$kg m^2$] je porazdelitev *mase* telesa glede na os vrtenja:
 <div class="izpeljava">
-$$ W_{k, rot} = \frac{1}{2} \sum_i m_i v_i^2 = \frac{1}{2} \int \d m v^2 = \frac{1}{2} \int \d m r^2 \omega^2 = \frac{1}{2} \omega^2 \int \d m r^2 = \frac{1}{2} J \omega^2 $$
+$$ W_{k, rot} = \frac{1}{2} \sum_i m_i \vec{v_i}^2
+= \frac{1}{2} \int \d m \vec{v}^2
+= \frac{1}{2} \int \d m \vec{r}^2 \vec{\omega}^2
+= \frac{1}{2} \omega^2 \int \d m \vec{r}^2
+= \frac{1}{2} J \vec{\omega}^2 $$
 </div>
-$$ W_{k, rot} = \frac{1}{2} J \omega^2 $$
-$$ J_{točka, cev} = m r^2 $$
-$$ J_{valj} = \frac{1}{2} m r^4 $$
-$$ J_{krogla} = \frac{2}{5} m r^2 $$
 
-Steinerjev izrek: če je težišče telesa izmaknjeno od osi vrtenja, je vztrajnostni *moment* telesa enak vsoti tistega, ki bi bil, če bi bila os v težišču in tistega, če telo vzamemo kot točko (težišče) ki kroži na neki razdalji os osi:
-$$ J = J^* + m r^2 $$
+$$ W_{k, rot} = \frac{1}{2} J \omega^2 $$
+
+Vztrajnostni *momenti* za nekatera *homogena* telesa:
+$$ J_{točka, cev} = m R^2 $$
+<div class="izpeljava">
+$$ J_{valj} = \int \d m r^2
+= \int \rho \d V r^3 = \int \rho h 2 \pi r^3 \d r
+= \frac{\pi}{2} \rho h \Delta R^4 = \frac{1}{2} m R^4 $$
+</div>
+$$ J_{valj} = \frac{1}{2} m R^4 $$
+$$ J_{krogla} = \frac{2}{5} m R^2 $$
+
+**Steinerjev izrek**: če je težišče telesa izmaknjeno od osi vrtenja, je
+vztrajnostni *moment* telesa enak vsoti tistega, ki bi bil, če bi bila os v
+težišču in tistega, če telo vzamemo kot točko (težišče) ki kroži na neki
+razdalji os osi:
+$$ J = J^* + m d^2 $$
+<div class="izpeljava">
+$$ \vec r = \vec r^* + \vec r_T $$
+$$ J = \int \d m r^2
+= \int \d m (\vec r - \vec r_{os})^2
+= \int \d m (\vec r^* + r_T - \vec r_{os})^2
+= \int \d m (\vec r_T^2 + 2 (\vec r^* - \vec r_{os}) \vec r_T + (\vec r - \vec r_{os})^2)
+= \int \d m r_T^2 + \d m 2 (\vec r^* - \vec r_{os}) \vec r_T + \d m (\vec r - \vec r_{os})^2
+= J^* + 0 + m d^2 $$
+</div>
 
 $$ A = \Delta W_k = \frac{1}{2} J (\Delta \omega)^2 = \int \vec M \vec{\d \phi} $$
 $$ P = \frac{\d A}{\d t} = \frac{\vec M \vec{\d \phi}}{\d t} = \vec M \vec \omega $$
 $$ \vec M = J \vec \alpha $$
 
+Navor:
+$$ \vec M = \vec r \times \vec F = \vec r \times m \vec \alpha \vec r = J \vec
+\alpha $$
+<div class="izpeljava">
+$$ \int \vec M \d \vec \phi = J \int \frac{\d \vec \omega}{\d t} \d \vec \phi =
+J \int \frac{\d \vec \omega}{\vec \omega} = \frac{1}{2} J \omega^2
+|_{\omega'}^{\omega} = \Delta W_k = A \implies A = \int \vec M \d \vec \phi =
+\frac{1}{2} J (\Delta \vec \omega)^2 $$
+</div>
+
+$$ A = \int \vec M \d \vec \phi = \frac{1}{2} J (\Delta \vec \omega)^2 $$
+$$ P = \frac{\d A}{\d t} = \frac{\vec M \d \vec \phi}{\d t} = \vec M \vec \omega $$
+
 Vrtilna količina je gibalna količina porazdeljena po vrtečem se telesu:
-$$ \vec \Gamma = \vec r \times \vec G = \int \d m \vec r \times \vec v = J \vec \omega $$
+$$ \vec \Gamma = = \sum_i \vec r_i \times \vec G_i = \vec r \times \vec G
+    = \int \d m \vec r \times \vec v = J \vec \omega $$
 $$ \vec M = \vec r \times \vec F = \vec r \times \frac{\d \vec G}{\d t} = \frac{\d \vec \Gamma}{\d t} $$
 $$ \vec \Gamma = \vec \Gamma_{tirna} + \vec \Gamma_{lastna}^* $$
 $$ \vec \Gamma_{tirna}^* = \int \d m \vec r_T \times \vec v_T $$
@@ -330,7 +397,8 @@ $$ \sum \vec r^* \times \vec F_{zun} = \vec r^* \times \sum \vec F_{zun} $$
 ### Ubežne hitrosti
 (*kozmične* hitrosti)
 
-**1. ubežna hitrost** $v_I$: kako hitro bi se morala Zemlja vrteti, da bi sredobežni pospešek premagal težnost
+**1. ubežna hitrost** $v_I$: kako hitro bi se morala Zemlja vrteti, da bi
+sredobežni pospešek premagal težnost
 <div class="izpeljava">
 $$ F_c = F_g \\
     \implies \frac{m v^2}{R_Z} = \frac{K m M_Z}{R_Z^2} = m g \\

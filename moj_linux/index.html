@@ -32,7 +32,7 @@ sistema"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/moj_linux/">moj_linux</a> / <a href="/moj_linux/index/">index</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-07-22">2026-07-22</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-08-07">2026-08-07</time></p>
     </header>
     <nav>
         <ul>
@@ -62,7 +62,11 @@ sistema"/>
         id="toc-Tipkovnica">Tipkovnica</a></li>
         <li><a href="#Cas" id="toc-Cas">Čas</a></li>
         <li><a href="#Zunanji_pogoni" id="toc-Zunanji_pogoni">Zunanji
-        pogoni</a></li>
+        pogoni</a>
+        <ul>
+        <li><a href="#USB" id="toc-USB">USB</a></li>
+        <li><a href="#Dlancnik" id="toc-Dlancnik">Dlančnik</a></li>
+        </ul></li>
         <li><a href="#Zvok" id="toc-Zvok">Zvok</a></li>
         <li><a href="#Odstranitev_nadleznega_piskanja"
         id="toc-Odstranitev_nadleznega_piskanja">Odstranitev nadležnega
@@ -482,6 +486,7 @@ sistema"/>
             <code>date</code></li>
             </ul>
             <h3 id="Zunanji_pogoni">Zunanji pogoni</h3>
+            <h4 id="USB">USB</h4>
             <ul>
             <li><code>sudo apt install udisks2</code> – namesti
             udisksctl za upravljanje z USB-ji</li>
@@ -500,6 +505,28 @@ sistema"/>
             simbolno povezavo med <i>mapo</i>, kamor zgornji ukaz
             priklaplja naprave in novo ustvarjeno <i>mapo</i> v domači
             <i>mapi</i></li>
+            </ul>
+            <h4 id="Dlancnik">Dlančnik</h4>
+            <ul>
+            <li><code>sudo apt install android-file-transfer</code> –
+            namesti android-file-transfer za prenos datotek med
+            Androidom in Linuxom</li>
+            <li>na dlančniku dovoli prenos podatkov</li>
+            <li><code>aft-mtp-mount ~/mapa_za_priklop_dlancnika</code> –
+            poveži dlančnik na izbrano mapo na Linuxu</li>
+            </ul>
+            <p>Če ne deluje, najprej poskusi obidi razdelilec USB
+            (<i>USB hub</i>), če ga uporabljaš, sicer poskusi
+            sledeče:</p>
+            <ul>
+            <li>v datoteki <b>etc/default/grub</b> zamenjaj vrstico
+            <code>GRUB_CMDLINE_LINUX_DEFAULT="quiet"</code> z vrstico
+            <code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash usbcore.autosuspend=-1"</code></li>
+            <li><code>sudo update-grub</code></li>
+            <li><code>sudo reboot</code> za ponovni zagon sistema, ali
+            <code>echo -1 | sudo tee /sys/module/usbcore/parameters/autosuspend</code>,
+            če (še) ne želiš ponovno zaganjati, ampak le ugotoviti, če s
+            tem že vse deluje</li>
             </ul>
             <h3 id="Zvok">Zvok</h3>
             <ul>

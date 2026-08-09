@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2026-07-21
+date: 2026-08-04
 description: Priročnik za uporabo Linuxa, posebno skozi terminal
 keywords: Linux, terminal, operacijski sistem
 author: Janez Pavel Žebovec
@@ -27,11 +27,15 @@ Debiana](/moj_linux/), kjer je moje okolje podrobno opisano).
         - **bin/** – tu so praviloma osebni programčki
         - **/share/applications/** – tu so datoteke za slovarske datoteke programov
     - **.xinitrc** – datoteka z ukazi, ki se izvedejo ob zagonu računalnika
+    - **.cache/dmenu_run** seznam programov v pasici [DMenuja](#DMenu)
     - **bash_history** – datoteka z zgodovino izvedenih ukazov v terminalu
+- **/usr/share/doc/ncmpcpp/** primeri nastavitvenih datotek (z navodili in razlagami) za [NCMPCPP](#NCMPCPP)
 
 ## *Terminal* (jezik Bash)
 
 - `cd ime_mape` = *change directory* -  premakni se v mapo
+    - `cd ..` = premakni se v mapo višje, v starševsko mapo (dve višje: `cd
+      ../..` itd.)
 - `cp pot/do/kopirane_datoteke_mape pot/do/ciljne_datoteke_mape` = *copy* -
   kopiraj
     - `-r` = *recrusive* - kopiraj vključno s podmapami in datotekami/mapami v
@@ -302,7 +306,16 @@ program sam povedal, da moraš):
 
 - `sudo apt install zip gzip tar`
 - `zip -r moja_mapa.zip moja_mapa` – ustvari stisnjen (*.zip*) dvojnik mape
-  *moja_mapa*
+  *moja_mapa*# NCMPCPP
+
+r               *repeat mode* - način ponavljanja
+z               naključni način
+y               način ene skladbe (po eni sladbi prekine predvajanje)
+u               *update* - posodobi knjižnico
+:               izvrši ukaz
+i               pokaže podatke o skladbi
+
+
 - `unzip moja_mapa.zip` – razširi stisnjeno mapo *moja_mapa.zip* v navadno mapo
   *moja_mapa*
 - `tar -cvzf moja_mapa.tar.gz moja_mapa` – navadno mapo *moja_mapa* stisne v
@@ -404,9 +417,10 @@ Javni ključ moraš shraniti na strežniku v datoteko *.ssh/authorized_keys*.
 
 Bližnjice:
 
-- <kbd>Ctrl+c</kbd> - ustavi program;
+- <kbd>Ctrl+c</kbd> - ustavi program, ki se izvaja v terminalu
 - <kbd>Ctrl+Shift+c</kbd> = *copy* - kopira izbrano besedilo v odložišče
-- <kbd>Ctrl+Shift+v</kbd> = **sredinska tipka** - prilepi iz odložišča
+- <kbd>Ctrl+Shift+v</kbd> = <kbd>[sredinska tipka]</kbd> - prilepi iz odložišča
+- <kbd>/</kbd> – v iskalni način
 
 Ukazi:
 
@@ -419,22 +433,22 @@ Ukazi:
 
 Za tipko *Mod1* se običajno uporablja/nastavi tipka *Super*.
 
-- <kbd>Ctrl+Shift+Q</kbd> – zaustavi DWM
+- <kbd>Ctrl+Shift+Q</kbd> =*quit* – zaustavi DWM
 - <kbd>F11</kbd> -  celozaslonski način
 - <kbd>Mod1+Shift+c</kbd> = *close* -  zapri trenutno okno
 - <kbd>Mod1+Enter</kbd> -  nastavi prvo okno pod glavnim kot glavno
 - <kbd>Mod1+j/k</kbd> -  premikni se po oknih naprej/nazaj
 - <kbd>Mod1+Tab</kbd> -  premikaj se med okni
 - <kbd>Mod1+l/h</kbd> -  povečaj/zmanjšaj širino stranskih oken
-- <kbd>Mod1+i/d</kbd> -  povečaj/zmanjšaj število oken kot glavna
+- <kbd>Mod1+i/d</kbd> = *increase*/*decrease* -  povečaj/zmanjšaj število oken kot glavna
 - <kbd>Mod1+[0 - 9]</kbd> -  preklopi delovno površino (pod 0 so vsa odprta
   okna)
 - <kbd>Mod1+Shift+[0 - 9]</kbd> -  dodeli oknu drugo oznako (tj. delovno
   površino; <kbd>Mod1+Shift+0</kbd> dodeli oknu vse oznake 1 - 9)
-    - <kbd>od1+Shift+Ctrl+[0 - 9]</kbd> -  dodeli oknu dodatno oznako poleg
+    - <kbd>Mod1+Shift+Ctrl+[0 - 9]</kbd> -  dodeli oknu dodatno oznako poleg
       trenutne
-- <kbd>MMod1+b</kbd> = *bar* -  prikaži/skrij zgornjo pasico
-- <kbd>Mod1+m</kbd> -  pojdi v način celozaslonskih oken
+- <kbd>Mod1+b</kbd> = *bar* -  prikaži/skrij zgornjo pasico
+- <kbd>Mod1+m</kbd> = *main* – v način enega vidnega okna
 - <kbd>Mod1+t</kbd> = *tiles* -  pojdi v prikaz oken v mozaičnem načinu
 - <kbd>Mod1+Tab</kbd> - premikaj se med okni
 - <kbd>Mod1+a</kbd> - odpre meni
@@ -449,7 +463,7 @@ Za tipko *Mod1* se običajno uporablja/nastavi tipka *Super*.
   trenutno, za primer, da je bila spremenjena drugje)
     - `e ime_datoteke` -  urejaj (odpri) datoteko
 - `bd` -  preneha z urejanjem trenutno ogledovane datoteke (zapre za urejanje)
-- `<` oz. `:>` -  zamakni vse označene vrstice v levo oz. desno
+- `<` oz. `>` -  zamakni vse označene vrstice v levo oz. desno
 - `s/niz/zamenjava` -  zamenja niz v trenutni vrsticii
     - `%s/niz/zamenjava/g` -  zamenja niz v vseh vrsticah
     - `%s/niz/zamenjavanew/gc` - za vsako zamenjavo vpraša
@@ -473,12 +487,13 @@ znotraj seje, kjer v ukazni način vstopiš z bližnjico `:`.
 
 **Bližnjice**:
 
+- <kbd>:</kbd> – preklopi v ukazni način
 - <kbd>i</kbd> = *insert* – preklopi v urejevalni način
 - <kbd>v</kbd> = *visual* – preklopi v ogledovalni način, v katerem lahko
   izbiraš besedilo, uporabljaš vse bližnjice
     - <kbd>Shift+v</kbd> -  preklopi v ogledovalni način vrstic (za izbiranje
       celotnih vrstic)
-- <kbd>Shift+2</kbd> / <kbd>"</kbd> -  izberi register odložišča (odložišče
+- <kbd>Shift+2</kbd>, oz. <kbd>"</kbd> -  izberi register odložišča (odložišče
   moraš izbrati pred kopiranjem z npr. </kbd>y</kbd>)
     - <kbd>+</kbd> -  "običajen" register
     - <kbd>\*</kbd> -  register terminala
@@ -487,7 +502,8 @@ znotraj seje, kjer v ukazni način vstopiš z bližnjico `:`.
 - <kbd>y</kbd> = *yank* -  kopiraj
 - <kbd>d</kbd> -  izreži (tj. kopiraj in izbriši)
 - <kbd>p</kbd> = *paste* -  prilepi
-- <kbd>u</kbd> = *undo* -  pojdi korak nazaj v zgodovini urejanja
+- <kbd>u</kbd> = *undo* -  korak nazaj v zgodovini urejanja
+- <kbd>r</kbd> = *redo* -  korak naprej v zgodovini urejanja
 - <kbd>gg</kbd> -  na začetek datoteke
 - <kbd>Shift+g</kbd>  -  na konec datoteke
 - <kbd>0</kbd> -  na začetek trenutne vrstice (v urejevalnem načinu deluje le
@@ -530,18 +546,33 @@ Uporablja podobne bližnjice kot VIM:
 - <kbd>gg</kbd> -  premakni se na vrh seznama predmetov
 - <kbd>Shift+g</kbd> -  premakni se na dno seznama predmetov
 - <kbd>s</kbd> = *sort* -  razvrsti
-- <kbd>s</kbd> - razvrsti po ...
 - <kbd>z</kbd> - nastavi
-    - <kbd>**zh</kbd>** = *hidden* -  skrij/prikaži skrite datoteke
-    - <kbd>**zr</kbd>** = *reverse* -  razvrsti predmete v obratnem vrstnem redu
-    - <kbd>**zt</kbd>** = *time* - prikaži čas datotek/map
-    - <kbd>**zs</kbd>** = *size* - prikaži velikost datotek
-- <kbd>**Super+w</kbd>** - odpri trenutno mesto v terminalu
+    - <kbd>**h**</kbd> = *hidden* -  skrij/prikaži skrite datoteke
+    - <kbd>**r**</kbd> = *reverse* -  razvrsti predmete v obratnem vrstnem redu
+    - <kbd>**t**</kbd> = *time* - prikaži čas datotek/map
+    - <kbd>**s**</kbd> = *size* - prikaži velikost datotek
+- <kbd>**Super+w**</kbd> - odpri trenutno mesto v terminalu
 - <kbd>$</kbd> -  odpre ukazno vrstico, kjer lahko uporabljaš ukaze terminala
   (le tako lahko npr. brišeš) - **ta bližnjica ni privzeto nastavljena**
 - `/iskalni_niz` - išči
     - <kbd>n</kbd> / <kbd>Shift+n</kbd> - premikaj se naprej/nazaj po zadetkih
       iskanja
+
+### Pandoc
+
+- `pandoc ime_vhodne_datoteke ime_izhodne_datoteke` – pretvori datoteko
+    - `-f oblika` – opredelitev oblike vhodne datoteke (npr. `-f markdown`)
+    - `-t oblika` – opredelitev oblike izhodne datoteke (npr. `-t html`, `-t
+      beamer`)
+    - `-o ime_izhodne_datoteke` – ugane obliko datotek po končnici
+    - `-s` = *standalone* – pretvori v samostojno datoteko s potrebno „glavo“ in
+      „nogo“ (npr. `<html>` in `</html>` pri datotekah HTML)
+    - `-c pandoc.css`
+    - `-A seznam_imen_datotek_ločen_s_presledki`
+    - `--metadata title="Moj naslov"` – doda naslov v metapodatke
+    - `--toc` – ustvari kazalo strani
+    - `--template=moja-predloga.html` – pretvori datoteko v HTMl ob uporabi
+      predloge HTML
 
 ### YT-DLP
 
@@ -599,8 +630,8 @@ Prenos posnetkov z YouTuba pa tudi številnih drugih spletnih mest
 - <kbd>e</kbd> = *edit* -  odpri preprost urejevalnik oznak skladbe (*tiny tag
   editor*)
 - <kbd>l</kbd> = *lyrics* -  naloži besedilo pesmi
-- <kbd>>**/**<</kbd> -  pojdi na naslednjo/prejšnjo skladbo na seznamu
-- <kbd>f**/**b</kbd> = *forward*/*backward* -  išči naprej/nazaj v pesmi
+- <kbd>></kbd> / <kbd><</kbd> -  pojdi na naslednjo/prejšnjo skladbo na seznamu
+- <kbd>f</kbd / <kbd>b</kbd> = *forward*/*backward* -  išči naprej/nazaj v pesmi
 - <kbd>r</kbd> = *repeat mode* -  preklopi na način ponavljanja
 - <kbd>z</kbd> -  preklopi na naključni način
 - <kbd>y</kbd> -  preklopi na način ene skladbe (po eni sladbi prekine
@@ -608,6 +639,54 @@ Prenos posnetkov z YouTuba pa tudi številnih drugih spletnih mest
 - <kbd>u</kbd> = *update* -  posodobi knjižnico
 - <kbd>i</kbd> -  pokaži podatke o skladbi
 - <kbd>:</kbd> -  odpri ukazno vrstico
+
+### Zathura
+
+- <kbd>J</kbd> – dol
+- <kbd>K</kbd> – gor
+- <kbd>Shift+J</kbd> – celo stran dol
+- <kbd>Shift+K</kbd> – celo stran gor
+- <kbd>Ctrl+D</kbd> – pol strani dol
+- <kbd>Ctrl+U</kbd> – pol strani gor
+- <kbd>[številka] Shift+G</kbd> – na določeno stran
+- <kbd>Ctrl+N</kbd> – izklopi/vklopi spodnjo pasico
+- <kbd>Ctrl+R</kbd> – preklopi barvni način
+- <kbd>Shift+D</kbd> – pogled dveh strani
+- <kbd>F11</kbd> – celozaslonski pogled
+- <kbd>F5</kbd> – celozaslonski pogled za predstavitve (tudi brez spodnje
+  pasice)
+- <kbd>M</kbd> – označi odsek/stran
+- <kbd>R</kbd> – sukaj
+- <kbd>F</kbd> – pokaži povezave za izbiro
+    - <kbd>[številka]</kbd> – odpiranje izbrane povezave
+- <kbd>:</kbd> – v ukazni način
+    - <kbd>:print</kbd> – natisni
+
+### SXIV
+
+- `sxiv ime_datoteke_ali_mape` – odpre sliko ali celotno mapo s slikami v SXIV
+
+Bližnjice:
+
+- <kbd>Enter<kbd> – preklopi med načinom pogleda vseh slik v trenutni mapi ali v
+  način posamezne slike
+- <kbd>n</kbd> = *next* – na naslednjo sliko
+- <kbd>p</kbd> = *previous* – na prejšnjo sliko
+- <kbd>r</kbd> = *rotate* – sukaj
+- <kbd>R<7kbd> = *rotate* – sukaj
+- <kbd>Ctrl+x</kbd> <kbd>Ctrl+l</kbd> – izbriše sliko
+
+### SC-IM
+
+- <kbd>|</kbd> – vstavi niz
+- <kbd>=</kbd> – vstavi številsko vrednost
+- <kbd>E</kbd> – uredi številko v trenutni celici
+- <kbd>Shift+E</kbd> – uredi niz v trenutni celici
+
+### Exiftool
+
+- `exiftool -overwrite_original -Title="Novi naslov" ime_datoteke.pdf`
+- `exiftool -overwrite_original -Author="Novi avtor" ime_datoteke.pdf`
 
 ### JOSM
 (Java OpenStreetMap editor)
@@ -661,6 +740,10 @@ Uporabni vtičniki za "JOHM":
 - [PicLayer](https://github.com/JOSM/PicLayer): prikaz slike zemljevida in nje
   umeščanje v prostor ([na
   *Wiki*ju](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/PicLayer))
+
+### Wireguard
+
+- `sudo wg-quick up ime_okolja` oz. `sudo wg-quick down ime_okolja`
 
 ---
 

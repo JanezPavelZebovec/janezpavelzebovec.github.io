@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-08-03
+date: 2026-08-08
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -54,12 +54,15 @@ Moja *priporočila* (precej nepopolna)
     - [The 10,000-year clock](https://longnow.org/clock/) – mehanska ura, ki naj bi z zelo malo vzdrževanja in občasnim navitjem delala 10 tisoč let
         - [načrti za uro](https://static.longnow.org/media/ClockPlans01.pdf)
 
-### Dobra podjetja
+### Zanimiva, dobra podjetja
 
+- [BOOX](https://euroshop.boox.com/)
 - [Fairphone](https://fairphone.com/) – dlančniki, tudi slušalke (Nizozemska); popravljivost, okoljevarstvo, zeleni viri, pravični trg
 - [Framework](https://frame.work/) – prenosni računalniki, tudi namizni računalnik (ZDA); popravljivost
 - [Gizzmo – Reborn](https://gizzmo.si/reborn) – obnovljeni dlančniki
-- [The Light Phone](https://www.thelightphone.com/)
+- [The Light Phone](https://www.thelightphone.com/) – *minimalistični* dlančniki
+- [Minimal](https://minimalcompany.com/) – *minimalistični* dlančniki
+- [Nothing](https://si.nothing.tech/collections/shop-all)
 - [PinePhone](https://pine64.org/) – dlančniki (*pametni telefoni*) z Linuxom in še nekaj drugih naprav
 - [Sanctuary Computer](https://www.sanctuary.computer/) – *programersko* podjetje (sodelovali tudi z The Light Phone pri zasnovi njihovega dlančnika)
 
@@ -77,6 +80,10 @@ Moja *priporočila* (precej nepopolna)
 - [Matija Šuklje](https://matija.suklje.name/) – član slo. odprtokodne skupnosti
 - [Mitja Jež](https://mitja.jež.si/) – član slo. odprtokodne skupnosti (mdr. OpenStreetMap)
 - [Siggsy](https://siggsy.xyz/) – član slo. odprtokodne skupnosti (mdr. v zvezi s z javnim prevozom)
+
+### Okolje
+
+- [Electricity Maps – Map](https://app.electricitymaps.com/)
 
 ### Naravoslovje
 
@@ -244,6 +251,7 @@ Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
 - [Mestni Promer](https://mestnipromet.cyou/) – sledilec avtobusov LPP in njihov seznam, arhiv
 - [Jaka Černetič: IJPP Tracker](https://tracker.cernetic.cc/) – avtobusi in vlaki v omrežju Integriranega javnega potniškega prometa (IJPP)
 - [Točen.si](https://tocen.si/#/) – točni časi prihodov avtobusov z njihovimi trenutnimi položaji
+- [Zamudil.si](https://zamudil.si/) – zamude vlakov Slovenskih železnic
 - [ZZnidar – Busi](https://zznidar.github.io/busi/)
 
 ###### Druga spletna mesta za urejanje OSM, oz. projekti OSM
@@ -642,13 +650,17 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Good News](Good News) – dobre novice iz sveta
 - [Imperial](https://www.youtube.com/@IMPERIALYT) – zgodovina in *politika*
 - [The Infographics Show](https://www.youtube.com/@TheInfographicsShow)
-- [Johnny Harris](https://www.youtube.com/@johnnyharris) – "neodvisni novinar" – razno iz sveta / o svetu
 - [Rabbit Hole](https://www.youtube.com/@rabbithole)
 - [Ruhi Cenet Documentaries](https://www.youtube.com/@ruhicenetdocs) – potovanja v najrazličnejše konce sveta
 - [Thoughty2](https://www.youtube.com/@Thoughty2) - večinoma zgodovinske zanimivosti
 - [Tom Scott](https://www.youtube.com/@TomScottGo)
 - [UsefulCharts](https://www.youtube.com/@UsefulCharts) - zgodovinski in drugi prikazi
 - [The Woke Critic](https://www.youtube.com/@thewokecritic) - ocene filmov (predvsem kritika novejših trnedov v filmih) na zabaven način
+
+### Svet
+
+- [Johnny Harris](https://www.youtube.com/@johnnyharris)
+- [Max Fisher](https://www.youtube.com/@maxfisher)
 
 #### Zabava
 
@@ -789,12 +801,14 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [Middle Earth Tales](https://www.youtube.com/@middleearthtales)
 - [Nerd of the Rings](https://www.youtube.com/@NerdoftheRings)
 
-#### Strojništvo
+#### Strojništvo, *inženirstvo*
 
 - [Animagraffs](https://www.youtube.com/@animagraffs) – zelo podrobni *dokumentarni* posnetki razlage delovanja posameznih naprav v celoti
+- [The B1M](https://www.youtube.com/@TheB1M)
 - [Brick Technology](https://www.youtube.com/@BrickTechnology) – izdelovanje napravic / vozil iz tehnokock
 - [Driver61](https://www.youtube.com/@Driver61) – snovanje dirkalnikov, predvsem formul
 - [Practical Engineering](https://www.youtube.com/@PracticalEngineeringChannel)
+  – *infrastruktura*, *inženirstvo*
 
 ##### Zvezna računala, zvezdoslovne ure
 
@@ -856,3 +870,7 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [Sondre Berg](https://www.youtube.com/@Sondre_Berg) - "ulična vadba" (*kalistenika*)
 - [The Bioneer](https://www.youtube.com/@TheBioneer) - uporabna moč
 - [Yellow Dude | Gravgear](https://www.youtube.com/@yellowdude_co) - "ulična vadba" (*kalistenika*)
+
+### Dobri posnetki
+
+- [Johnny Harris: How Switzerland Engineered the Perfect Country](https://www.youtube.com/watch?v=OMbV1rIPhCg) – kako zgleda učinkovit javni promet, *specifično* v Švici (YT)
