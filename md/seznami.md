@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-08-08
+date: 2026-08-14
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -71,13 +71,15 @@ Moja *priporočila* (precej nepopolna)
 - [Aatish Bhatia](https://aatishb.com/) – pisec znanstvenih vsebin, učitelj
 - [Anton Luka Šijanec](https://sijanec.eu/) – član Programerskega kluba FMF
 - [Barbara Makovec](https://makovec.si/) – članica Programerskega kluba FMF
-- [Blaž Lapanja](https://b1.si/) – duhovnik, računalniški navdušenec
+- [Blaž Lapanja](https://b1.si/) – slovenski duhovnik, računalniški navdušenec
   (oblikovalec raznih spletnih strani)
-- [Branko cestnik](https://branenacesti.blogspot.com/) – slo. župnik
+- [Branko cestnik](https://branenacesti.blogspot.com/) – slovenski župnik
 - [Filip Štamcar](https://www.filips.si/) – član Programerskega kluba FMF
 - [Filip Žebovec](https://filipzebovec.net/)
 - [Jure Smolar](https://jure.smolar.si/) ([stara *domena*](https://jure-smolar.com/)) – član Programerskega kluba FMF
 - [Matija Šuklje](https://matija.suklje.name/) – član slo. odprtokodne skupnosti
+- [Minh Nguyễn](http://notes.1ec5.org/) – pomemben član OpenHistoricalMap, tudi
+  urejevalec Wikipedije
 - [Mitja Jež](https://mitja.jež.si/) – član slo. odprtokodne skupnosti (mdr. OpenStreetMap)
 - [Siggsy](https://siggsy.xyz/) – član slo. odprtokodne skupnosti (mdr. v zvezi s z javnim prevozom)
 
@@ -745,6 +747,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Imperial](https://www.youtube.com/@IMPERIALYT)
 - [Lost in Time](https://www.youtube.com/@LostInTimeVids)
 - [Manuel Bravo](https://www.youtube.com/@ManuelBravo/videos) - poudarek na cerkveni, rimski in egipčanski *arhitekturi*
+- [The Present Past](https://www.youtube.com/@ThePresentPast_)
 - [World War Two](https://www.youtube.com/@WorldWarTwo) – 2. svetovna vojna
 
 #### Modroslovje

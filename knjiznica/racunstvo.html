@@ -7,7 +7,8 @@
     <title>Računstvo</title>
     <meta name="author" content="Janez Pavel Žebovec">
     <meta name="description" content="računska teorija, enačbe"/>
-    <meta name="keywords" content="računstvo, matematika"/>
+    <meta name="keywords" content="računstvo, matematika, algebra,
+logika"/>
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg"/>
@@ -36,7 +37,7 @@
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/racunstvo/">racunstvo</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-06-22">2026-06-22</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-08-13">2026-08-13</time></p>
     </header>
     <nav>
         <ul>
@@ -1281,22 +1282,44 @@
             (vsak <i>vektor</i> je moč izraziti le z eno <i>linearno
             kombinacijo</i>).</p>
             <h2 id="Matrike"><i>Matrike</i></h2>
+            <p><i>Matrika</i> je orodje s katerim lahko med drugim
+            računamo <i>linearne</i> enačbe, predstavimo in računamo s
+            preslikavami, oz. prostorskimi <i>transformacijami</i>
+            različnih števil razsežnosti.</p>
             <p><b>Vrste <i>matrik</i></b>:</p>
             <ul>
-            <li><b><i>Identična matrika</i></b>:
-            <i>diagonala</i>/prekotnica <i>matrike</i> je v vseh členih
-            enaka 1, ostali členi so 0. Vedno je tudi kvadratna. <span
-            class="math display">\[ IA = AI = A \]</span></li>
+            <li><b>Ničelna</b>: vsi členi so enaki nič</li>
+            <li><b><i>Identična</i></b>: <i>diagonala</i>/prekotnica
+            <i>matrike</i> je v vseh členih enaka 1, ostali členi so 0.
+            Vedno je tudi kvadratna. <span class="math display">\[
+            \begin{bmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp;
+            0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0
+            &amp; 1 \end{bmatrix} \]</span> V primeru preslikave je to
+            <i>nevtralni element</i> pri sestavljenih
+            (<i>kompozitnih</i>) preslikavah, saj ne spremeni ničesar.
+            <span class="math display">\[ IA = AI = A \]</span></li>
+            <li><b><i>diagonalna</i></b> (prekotniška): vsi členi izven
+            prekotnice (<i>diagonale</i>) so enaki nič <span
+            class="math display">\[ \begin{bmatrix} a_1 &amp; 0 &amp; 0
+            &amp; 0 \\ 0 &amp; a_2 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp;
+            a_3 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; a_4 \end{bmatrix}
+            \]</span></li>
+            <li><b><i>antidiagonalna</i></b>: (nasprotno prekotniška)
+            vsi členi izven nasprotne prekotnice (<i>diagonale</i>) so
+            enaki nič</li>
+            <li><b>Zgornje trikotna</b>: vsi neničelni členi so nad
+            prekotnico (<i>diagonalo</i>), členi pod prekotnico so enaki
+            nič</li>
             </ul>
             <h3 id="Pravila_za_racunanje_z_matrikami">Pravila za
             računanje z <i>matrikami</i></h3>
             <ul>
-            <li>Seštevanje/odštevanje <i>matrik</i>: po
-            <i>komponentah</i> (<i>matriki</i> morata biti torej enake
-            oblike / velikosti)</li>
-            <li>Množenje s <i>skalarjem</i> (oz. matrika velikosti 1x1):
-            po <i>komponentah</i></li>
-            <li>Množenje <i>matrik</i> (ne velja zamenljivost /
+            <li><b>Seštevanje/odštevanje</b>: po <i>komponentah</i>
+            (<i>matriki</i> morata biti torej enake oblike /
+            velikosti)</li>
+            <li><b>Množenje s <i>skalarjem</i></b> (oz. matrika
+            velikosti 1x1): po <i>komponentah</i></li>
+            <li><b>Množenje <i>matrik</i></b> (ne velja zamenljivost /
             <i>komutativnost</i>, velja pa družilnost /
             <i>asociativnost</i>): <span class="math display">\[
             \begin{bmatrix}a &amp; b &amp; c\\d &amp; e &amp;
@@ -1305,8 +1328,8 @@
             cl\\dg + ei + fk &amp; dh + ej + fl\end{bmatrix} \]</span>
             <i>Matrični produkt</i> dveh neničelnih <i>matrik</i> je
             lahko tudi enak nič.</li>
-            <li><i>transpozicija</i>: stolpci postanejo vrstice in
-            vrstice stolpci</li>
+            <li><b><i>transpozicija</i></b>: stolpci postanejo vrstice
+            in vrstice stolpci</li>
             </ul>
             <h3 id="Funkcije_matrik"><i>Funkcije matrik</i></h3>
             <p><b>Komutator</b> kvadratnih matrik <span
@@ -1351,15 +1374,15 @@
             <p>Primer:</p>
             <p><span class="math display">\[ x - 2y + 3z - 4u = 4 \\ y -
             z + u = -3 \\ x + 3y - 3u = 1 \]</span> <span
-            class="math display">\[ \begin{bmatrix}1 &amp; -1 &amp; 3
-            &amp; -4 &amp; : &amp; 4\\0 &amp; 1 &amp; -1 &amp; 1 &amp; :
-            &amp; -3\\1 &amp; 3 &amp; 0 &amp; -3 &amp; : &amp;
-            1\end{bmatrix} \to \begin{bmatrix}1 &amp; -2 &amp; 3 &amp;
-            -4 &amp; : &amp; 4\\0 &amp; 1 &amp; -1 &amp; 1 &amp; : &amp;
-            -3\\0 &amp; 0 &amp; 1 &amp; -2 &amp; : &amp; 6\end{bmatrix}
-            \]</span> Tako dobimo poenostavljen <i>sistem</i> enačb:
-            <span class="math display">\[ x - 2y + 3z - 4u = 4 \\ y -z +
-            u = -3 \\ z - 2u = 6 \]</span> <span
+            class="math display">\[ \left[\begin{array}{cccc|c} 1 &amp;
+            -1 &amp; 3 &amp; -4 &amp; 4\\0 &amp; 1 &amp; -1 &amp; 1
+            &amp; -3\\1 &amp; 3 &amp; 0 &amp; -3 &amp;
+            1\end{array}\right] \to \left[\begin{array}{cccc|c} 1 &amp;
+            -2 &amp; 3 &amp; -4 &amp; 4\\0 &amp; 1 &amp; -1 &amp; 1
+            &amp; -3\\0 &amp; 0 &amp; 1 &amp; -2 &amp;
+            6\end{array}\right] \]</span> Tako dobimo poenostavljen
+            <i>sistem</i> enačb: <span class="math display">\[ x - 2y +
+            3z - 4u = 4 \\ y -z + u = -3 \\ z - 2u = 6 \]</span> <span
             class="math inline">\(u\)</span> vzamemo za
             <i>parameter</i>, ker nima pivota: <span
             class="math display">\[ x = -8 \\ y = 3 + u \\ z = 6 + 2 u
@@ -1621,8 +1644,15 @@
             <h3 id="Linearne_preslikave"><i>Linearne</i> preslikave</h3>
             <p>Preslikava je lahko:</p>
             <ul>
-            <li><i>monomorfizem</i>: je <i>injektivna</i></li>
-            <li><i>epimorfizem</i>: je <i>surjektivna</i></li>
+            <li><i>monomorfizem</i>: je <i>injektivna</i> (vsak
+            <i>vektor</i> slika v svoj <i>vektor</i>, nobenih
+            <i>vektorjev</i> ne slika v isti <i>vektor</i>), jedro
+            <i>monomorfne linearne</i> preslikave vsebuje le ničelni
+            <i>vektor</i> (<span class="math inline">\(\mathrm{ker}(T) =
+            {{0}}\)</span>)</li>
+            <li><i>epimorfizem</i>: je <i>surjektivna</i> (slika
+            preslikave je enaka celotnemu prostoru, v katerega
+            slikamo)</li>
             <li><i>izomorfizem</i>: je <i>injektivna</i> in
             <i>surjektivna</i>, torej <i>bijektivna</i> Prostora sta
             <i>izomorfna</i>, če med njima obstaja kak

@@ -36,9 +36,10 @@ izvenčasen, izvenprostoren in nesnoven?
 > "I don't wanna go, I want this to go away. Because I believe that I am god. I
 > am my own god. /.../ I create my own reality and I manifest what I want to see
 > in this world. /.../ I am creating my own reality right here." 
-- študentka v "razpravi" z Cliffom Knechtlom
+>
+<cite>študentka v "razpravi" z Cliffom Knechtlom
     (glej [to](https://www.youtube.com/watch?v=Uh0v4Ogkcok) ali
-    [to](https://www.youtube.com/shorts/yne5A5F-NFw))
+    [to](https://www.youtube.com/shorts/yne5A5F-NFw))</cite>
 
 Ko ljudje izgubijo vero v Boga, bogove najdejo drugod. Med drugim jih lahko
 najdejo v sebi, kar je še posebaj dandanes tako pogosto. Tak človek ima sebe za
@@ -356,9 +357,9 @@ junaki, za kakršne jih številni imajo.
 
 ### Domobranci
 
-Domobranci so bili odgovor na partizansko ustrahovanje. To so bili tisti, ki so
-izbrali manjše zlo – sodelovanje z okupatorjem, da se zaščitijo pred
-partizani, oz. komunizmom in socializmom.
+Domobranci so bili odgovor na partizansko gibanje. To so bili tisti, ki so
+izbrali manjše zlo – sodelovanje z okupatorjem, da se zaščitijo pred partizani,
+oz. komunizmom in socializmom.
 
 Domobrance se obtožuje, da so prisegli zvestobo Hitlerju. Tu je njihova prisega:
 
@@ -372,7 +373,18 @@ Domobrance se obtožuje, da so prisegli zvestobo Hitlerju. Tu je njihova prisega
 <cite>Prisega Slovenskih domobrancev z Leonom Rupnikom Nemčiji na bežigrajskem
 Plečnikovem stadionu, 20. malega travna 1944</cite>
 
-To ni prisega zvestobe Nemčiji, kaj šele Hitlerju. To je prisega Bogu.
+To ni prisega zvestobe Nemčiji, kaj šele Hitlerju. To je prisega Bogu, da se
+bodo zvesto, hrabro, z Nemčijo borili proti partizanom in komunizmu (za svojo
+slovensko domovino, da so za to pripravljeni žrtvovati svoje življenje).
+
+Za primerjavo se prisega nemških vojakov glasi:
+
+> Prisegam pri Bogu to sveto prisego, da bom brezpogojno pokoren vodji nemškega
+> rajha in ljudstva, vrhovnemu poveljniku oboroženih sil, Adolfu Hitlerju, in da
+> bom kot pogumen vojak pripravljen kadarkoli žrtvovati svoje življenje za to
+> prisego.
+>
+<cite>[Prisega nemških vojakov Adolfu Hitlerju](https://www.facinghistory.org/resource-library/pledging-allegiance)</cite>
 
 > Prvič je bila tedaj na omenjeni palači slovesno izobešena tudi slovenska
 > zastava s kranjskim deželnim grbom, godba pa je zaigrala poleg nemške državne
@@ -435,6 +447,15 @@ Nobena država ni dolžna sprejemati vsakogar, ki se hoče vanjo priseliti. Še 
 če se večina državljanov s tako porabo ne strinja, nima pravice porabljati denarja
 davkoplačevalcev za podporo tujih državljanov. To ni *rasizem*, *diskriminacija*
 ali sovraštvo do drugih narodov.
+
+> Evropske politike migrante in begunce vse bolj silijo k ubiranju nevarnih
+> poti, na katerih morajo prečkati puščavo, morje ali divjino gozdov, prav s
+> tem, ko vse običajne in regularne poti zapirajo in onemogočajo. V naslednjem
+> koraku pa to dejstvo, da so na ozemlje evropskih držav prišli po neregularnih
+> poteh, izrabljajo za njihovo kriminalizacijo: za zapiranje v centre za
+> pridržanje – dejansko koncentracijska taborišča \ ... \
+>
+<cite>[Rdeča pesa](https://www.facebook.com/share/1FRogt3s1x/) (Facebook)</cite>
 
 ## Islam
 

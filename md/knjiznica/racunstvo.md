@@ -1,8 +1,8 @@
 ---
 title: Računstvo
-date: 2026-06-22
+date: 2026-08-13
 description: računska teorija, enačbe
-keywords: računstvo, matematika
+keywords: računstvo, matematika, algebra, logika
 author: Janez Pavel Žebovec
 ---
 
@@ -569,7 +569,9 @@ $$ h^2 = k_1^2 + k_2^2 $$
 
 Središčni kot je dvakratnik obodnega.
 
-Talesov izrek: obodni kot nad premerom krožnice je pravi; oz. razdalja med razpoloviščem *hipotenuze* in nasprotnim ogliščem je vedno polovica *hipotenuze*.
+Talesov izrek: obodni kot nad premerom krožnice je pravi; oz. razdalja med
+razpoloviščem *hipotenuze* in nasprotnim ogliščem je vedno polovica
+*hipotenuze*.
 
 ### *Paralelogram*
 
@@ -601,30 +603,56 @@ $$ \vec{a} \cdot \vec{b} = |\vec{a}| \cdot |\vec{b}| \cdot cos \phi = a_1 \cdot 
     - množenje/deljenje s *skalarjem*: po *komponentah*
 - *absolutna* vrednost / dolžina:
 $$ |\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2} $$
-- *Vektorski produkt* prestavlja ploščino paralelograma, ki ga zmnožena *vektorja* oklepata. Smer zmnožka je odvisna od zaporedja množenja in pri tem velja desno pravilo (tudi "pravilo desnega vijaka, ki pomeni, da če prvi *vektor* zasučemo okoli skupnega izhodišča proti drugemu *vektorju*, se vijak zavrti v smer *vektorja* zmnožka).
+- *Vektorski produkt* prestavlja ploščino paralelograma, ki ga zmnožena
+  *vektorja* oklepata. Smer zmnožka je odvisna od zaporedja množenja in pri tem
+  velja desno pravilo (tudi "pravilo desnega vijaka, ki pomeni, da če prvi
+  *vektor* zasučemo okoli skupnega izhodišča proti drugemu *vektorju*, se vijak
+  zavrti v smer *vektorja* zmnožka).
 $$ \vec{a} \times \vec{b} = \mathrm{det} \left( \begin{bmatrix}a_1 & b_1\\a_2 & b_2\\a_3 & b_3\end{bmatrix} \right) $$
 
 ### *Vektorski* prostori
 
-*Vektorji* tvorijo ogrodje prostora, če lahko vsak *vektor* v tem prostoru izrazimo kot njihovo *linearno kombinacijo*.
+*Vektorji* tvorijo ogrodje prostora, če lahko vsak *vektor* v tem prostoru
+izrazimo kot njihovo *linearno kombinacijo*.
 
-*Baza* prostora je tako ogrodje prostora, da so *linearne kombinacije* vseh *vektorjev* enolične (vsak *vektor* je moč izraziti le z eno *linearno kombinacijo*).
+*Baza* prostora je tako ogrodje prostora, da so *linearne kombinacije* vseh
+*vektorjev* enolične (vsak *vektor* je moč izraziti le z eno *linearno
+kombinacijo*).
 
 ## *Matrike*
 
+*Matrika* je orodje s katerim lahko med drugim računamo *linearne* enačbe,
+predstavimo in računamo s preslikavami, oz. prostorskimi *transformacijami*
+različnih števil razsežnosti.
+
 **Vrste *matrik***:
 
-- ***Identična matrika***: *diagonala*/prekotnica *matrike* je v vseh členih enaka 1, ostali členi so 0. Vedno je tudi kvadratna.
+- **Ničelna**: vsi členi so enaki nič
+- ***Identična***: *diagonala*/prekotnica *matrike* je v vseh členih enaka 1,
+  ostali členi so 0. Vedno je tudi kvadratna.
+$$ \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix} $$
+  V primeru preslikave je to
+  *nevtralni element* pri sestavljenih (*kompozitnih*) preslikavah, saj ne
+  spremeni ničesar.
 $$ IA = AI = A $$
+- ***diagonalna*** (prekotniška): vsi členi izven prekotnice (*diagonale*) so
+  enaki nič
+$$ \begin{bmatrix} a_1 & 0 & 0 & 0 \\ 0 & a_2 & 0 & 0 \\ 0 & 0 & a_3 & 0 \\ 0 & 0 & 0 & a_4 \end{bmatrix} $$
+- ***antidiagonalna***: (nasprotno prekotniška) vsi členi izven nasprotne
+  prekotnice (*diagonale*) so enaki nič
+- **Zgornje trikotna**: vsi neničelni členi so nad prekotnico (*diagonalo*),
+  členi pod prekotnico so enaki nič
 
 ### Pravila za računanje z *matrikami*
 
-- Seštevanje/odštevanje *matrik*: po *komponentah* (*matriki* morata biti torej enake oblike / velikosti)
-- Množenje s *skalarjem* (oz. matrika velikosti 1x1): po *komponentah*
-- Množenje *matrik* (ne velja zamenljivost / *komutativnost*, velja pa družilnost / *asociativnost*):
+- **Seštevanje/odštevanje**: po *komponentah* (*matriki* morata biti torej
+  enake oblike / velikosti)
+- **Množenje s *skalarjem*** (oz. matrika velikosti 1x1): po *komponentah*
+- **Množenje *matrik*** (ne velja zamenljivost / *komutativnost*, velja pa
+  družilnost / *asociativnost*):
 $$ \begin{bmatrix}a & b & c\\d & e & f\end{bmatrix} \begin{bmatrix}g & h\\i & j\\k & l\end{bmatrix} = \begin{bmatrix}ag + bi + ck & ah + bj + cl\\dg + ei + fk & dh + ej + fl\end{bmatrix} $$
     *Matrični produkt* dveh neničelnih *matrik* je lahko tudi enak nič.
-- *transpozicija*: stolpci postanejo vrstice in vrstice stolpci
+- ***transpozicija***: stolpci postanejo vrstice in vrstice stolpci
 
 ### *Funkcije matrik*
 
@@ -639,21 +667,27 @@ $$ \mathrm{tr} (\lambda A) = \lambda \mathrm{tr} (A); \lambda \in \mathbb{C}; A 
 
 ### Reševanje *linearnih* enačb z *matrikami*
 
-***Dimenzija*** prostora rešitev *homogenega sistema linearnih* enačb je enaka razliki med številom vrstic in njenim *rangom* ($k = n - \mathrm{rang}(A)$). Spremenljivke, ki nimajo *pivota*, vzamemo za *parameter*.
+***Dimenzija*** prostora rešitev *homogenega sistema linearnih* enačb je enaka
+razliki med številom vrstic in njenim *rangom* ($k = n - \mathrm{rang}(A)$).
+Spremenljivke, ki nimajo *pivota*, vzamemo za *parameter*.
 
-Homogen *sistem* (kjer so vse vrstice enake 0) pa je pravzaprav podvrsta *nehomogenega*, kjer moramo *matriko* zgolj zapisati v razširjeni obliki, in je rešljiv le takrat, ko je $\mathrm{rang}(A) = \mathrm{rang}(A:b)$
+Homogen *sistem* (kjer so vse vrstice enake 0) pa je pravzaprav podvrsta
+*nehomogenega*, kjer moramo *matriko* zgolj zapisati v razširjeni obliki, in je
+rešljiv le takrat, ko je $\mathrm{rang}(A) = \mathrm{rang}(A:b)$
 
 Postopek reševanja *nehomogenih linearnih* enačb:
 
 - zapišemo *matriko* količnikov in jo prevedemo v VKF
-- spremenljivke, ki nimajo pivotov v VKF, vzamemo za proste spremenljivke (*parametre*)
-- zapišemo poenostavljen *sistem* enačb in ostale spremenljivke izrazimo s prostimi spremenljivkami
+- spremenljivke, ki nimajo pivotov v VKF, vzamemo za proste spremenljivke
+  (*parametre*)
+- zapišemo poenostavljen *sistem* enačb in ostale spremenljivke izrazimo s
+  prostimi spremenljivkami
 
 <div class="zgled">
 Primer:
 
 $$ x - 2y + 3z - 4u = 4 \\ y - z + u = -3 \\ x + 3y - 3u = 1 $$
-$$ \begin{bmatrix}1 & -1 & 3 & -4 & : & 4\\0 & 1 & -1 & 1 & : & -3\\1 & 3 & 0 & -3 & : & 1\end{bmatrix} \to \begin{bmatrix}1 & -2 & 3 & -4 & : & 4\\0 & 1 & -1 & 1 & : & -3\\0 & 0 & 1 & -2 & : & 6\end{bmatrix} $$
+$$ \left[\begin{array}{cccc|c} 1 & -1 & 3 & -4 & 4\\0 & 1 & -1 & 1 & -3\\1 & 3 & 0 & -3 & 1\end{array}\right] \to \left[\begin{array}{cccc|c} 1 & -2 & 3 & -4 & 4\\0 & 1 & -1 & 1 & -3\\0 & 0 & 1 & -2 & 6\end{array}\right] $$
 Tako dobimo poenostavljen *sistem* enačb:
 $$ x - 2y + 3z - 4u = 4 \\ y -z + u = -3 \\ z - 2u = 6 $$
 $u$ vzamemo za *parameter*, ker nima pivota:
@@ -662,15 +696,19 @@ $$ r(u) (x, y, z, u) = (-8, 3 + u, b + 2 u, u) = (-8, 3, 6, 0) + u (0, 1, 2, 1) 
 kjer je $\vec{r_0}$ začetna točka na premici in $\vec{s}$ smerni *vektor* premice.
 </div>
 
-Ali dani *vektorji* tvorijo ogrodje [*vektorskega* prostora](Vektorski_prostori) $\mathbb{R}^n$, ugotovimo tako, da
+Ali dani *vektorji* tvorijo ogrodje [*vektorskega* prostora](Vektorski_prostori)
+$\mathbb{R}^n$, ugotovimo tako, da
 
 1. *vektorje* zložimo v stolpce *matrike* A
 2. to *matriko* A pretvorimo v [VKF](#Vrsticna_kanonicna_forma)
-3. Če je $\mathrm{rang}(A) = n$, dani *vektorji* tvorijo ogrodje; *vektorji*, ki imajo pivote, tvorijo *bazo*
+3. Če je $\mathrm{rang}(A) = n$, dani *vektorji* tvorijo ogrodje; *vektorji*, ki
+   imajo pivote, tvorijo *bazo*
 
 ### Inverz matrike
 
-Če *matriko* razumemo/razlagamo kot [*transformacijo*](#Linearne_transformacije), je *inverz matrike* obratna *transformacija*.
+Če *matriko* razumemo/razlagamo kot
+[*transformacijo*](#Linearne_transformacije), je *inverz matrike* obratna
+*transformacija*.
 
 $$ A^{-1} A = A A^{-1} = I_n; A, A^{-1} \in \mathbb{C}^{n \times n}; \mathrm{det}(A) \neq 0 $$
 
@@ -800,8 +838,11 @@ $$ R_\phi = \begin{bmatrix} \cos \phi & - \sin \phi \\ \sin \phi & \cos \phi \en
 
 Preslikava je lahko:
 
-- *monomorfizem*: je *injektivna*
-- *epimorfizem*: je *surjektivna*
+- *monomorfizem*: je *injektivna* (vsak *vektor* slika v svoj *vektor*, nobenih
+  *vektorjev* ne slika v isti *vektor*), jedro *monomorfne linearne* preslikave vsebuje le ničelni *vektor*
+  ($\mathrm{ker}(T) = {{0}}$)
+- *epimorfizem*: je *surjektivna* (slika preslikave je enaka celotnemu prostoru,
+  v katerega slikamo)
 - *izomorfizem*: je *injektivna* in *surjektivna*, torej *bijektivna*
     Prostora sta *izomorfna*, če med njima obstaja kak *izomorfizem*. To je *ekvivalenčna relacija*.
 
