@@ -37,7 +37,7 @@ logika"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/racunstvo/">racunstvo</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-08-13">2026-08-13</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-08-16">2026-08-16</time></p>
     </header>
     <nav>
         <ul>
@@ -1632,8 +1632,8 @@ logika"/>
             class="math inline">\((0, 0)\)</span> za kot <span
             class="math inline">\(\phi\)</span>: <span
             class="math display">\[ R_\phi = \begin{bmatrix} \cos \phi
-            &amp; - \sin \phi \\ \sin \phi &amp; \cos \phi \end{bmatrix}
-            \]</span></p>
+            &amp; - \sin \phi
+            \\ \sin \phi &amp; \cos \phi \end{bmatrix} \]</span></p>
             </div>
             <h3 id="Preslikave_med_vektorskimi_prostori">Preslikave med
             <i>vektorskimi</i> prostori</h3>
@@ -1668,7 +1668,8 @@ logika"/>
             <li>Poenostavitev <i>matrike</i> <span
             class="math inline">\(A\)</span> z <a
             href="#Gauss_Jordanova_eliminacija">Gaussovo
-            <i>eliminacijo</i></a> v zgornje trikotno obliko</li>
+            <i>eliminacijo</i></a> v zgornje trikotno obliko (da dobimo
+            <i>nekolinearne bazne</i> vektorje podprostora jedra)</li>
             <li>Določitev prostih spremenljivk: če je število stolpcev
             večje od <i>ranka matrike</i>, se za proste spremenljivke
             uvede <i>parametre</i> (npr. <span
@@ -1705,9 +1706,10 @@ logika"/>
             njihovimi <i>koordinatami</i> se spremeni). Če je katera
             izmed njegovih lastnih vrednosti <i>negativna</i>, se tak
             <i>vektor</i> tudi preslika čez svoje izhodišče (a ostane na
-            svoji ogrinjači). Za sukanje v treh razsežnostih so lastni
-            <i>vektorji</i> osi tega sukanja (če gre samo za sukanje,
-            morajo biti lastne vrednosti enake 1).</p>
+            svoji ogrinjači).</p>
+            <p>Za sukanje v treh razsežnostih so lastni <i>vektorji</i>
+            osi tega sukanja (če gre samo za sukanje, morajo biti lastne
+            vrednosti enake 1).</p>
             <p>Število <span class="math inline">\(\lambda\)</span> je
             lastna vrednost za <span class="math inline">\(A\)</span>,
             če obstaja tak neničeln <i>vektor</i> <span
@@ -1717,8 +1719,12 @@ logika"/>
             v\)</span> imenujemo lastni <i>vektor</i> za A pri lastni
             vrednosti <span class="math inline">\(\lambda\)</span>.</p>
             <p><span class="math display">\[ A \vec v = \lambda \vec v =
-            (\lambda I) \vec v \implies (A - \lambda I) \vec v = \vec 0
-            \implies \mathrm{det}(A - \lambda I) = 0 \]</span></p>
+            (\lambda I) \vec v
+            \implies (A - \lambda I) \vec v = \vec 0
+            \\\implies p_K = \mathrm{det}(A - \lambda I) = 0 \]</span>
+            <span class="math inline">\(p_K\)</span> je t.i.
+            <i>karakteristični polinom</i>, katerega ničle ustrezajo
+            lastnim vrednostim.</p>
             <p>Število <span class="math inline">\(\lambda\)</span> je
             lastna vrednost za <span class="math inline">\(A\)</span>
             natanko tedaj, ko velja <span class="math display">\[
@@ -1734,6 +1740,11 @@ logika"/>
             <i>transformacija</i>, za katero so vsi <i>bazni
             vektorji</i> lastni <i>vektorji</i> s svojimi lastnimi
             vrednostmi, ki so kar <i>diagonalni</i> členi.</p>
+            <p>Podobno kot za <i>diagonalne matrike</i> velja tudi za
+            <i>bločno diagonalne</i>, kjer <i>determinanta</i> vsakega
+            <i>bloka</i> ustreza eni lastni vrednosti (če je lastna
+            vrednost <i>kompleksna</i>, nastopa v <i>konjugiranem</i>
+            paru). vsak <i>blok</i> na <i>diagonali</i></p>
             <p>Zaradi lepih lastnosti lastnih <i>vektorjev</i> je lahko
             zelo priročno, če za <i>bazne vektorje</i> vzamemo lastne
             <i>vektorje</i>. Vendar to lahko storimo le, če imamo dovolj
@@ -1745,11 +1756,12 @@ logika"/>
             class="math inline">\(b = (-1, 1)\)</span>, potem
             <i>bazo</i> prostora spremenimo tako: <span
             class="math display">\[ \begin{bmatrix} 1 &amp; -1 \\ 0
-            &amp; 1 \end{bmatrix}^{-1} A \begin{bmatrix} 1 &amp; -1 \\ 0
-            &amp; 1 \end{bmatrix}^{-1} \]</span> Iz tega potem dobimo
-            <i>diagonalno matriko</i>, z <i>diagonalnimi</i> členi, ki
-            so hkrati tusi lastne vrednosti <i>baznih</i> vektorjev. Tej
-            novi <i>bazi</i> prostora pravimo lastna <i>baza</i>.</p>
+            &amp; 1 \end{bmatrix}^{-1} A \begin{bmatrix} 1 &amp; -1
+            \\ 0 &amp; 1 \end{bmatrix}^{-1} \]</span> Iz tega potem
+            dobimo <i>diagonalno matriko</i>, z <i>diagonalnimi</i>
+            členi, ki so hkrati tudi lastne vrednosti <i>baznih</i>
+            vektorjev. Tej novi <i>bazi</i> prostora pravimo lastna
+            <i>baza</i>.</p>
             </div>
             <h1 id="Zunanje_povezave_in_viri">Zunanje povezave in
             viri</h1>

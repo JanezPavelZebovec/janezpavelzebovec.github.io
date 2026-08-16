@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-08-13
+date: 2026-08-16
 description: računska teorija, enačbe
 keywords: računstvo, matematika, algebra, logika
 author: Janez Pavel Žebovec
@@ -827,7 +827,8 @@ $$ f(g(x)) = \begin{bmatrix}a & b\\c & d\end{bmatrix} \left( \begin{bmatrix}e & 
 
 <div class="zgled">
 Primer zasuka dvorazsežnostnega prostora okoli $(0, 0)$ za kot $\phi$:
-$$ R_\phi = \begin{bmatrix} \cos \phi & - \sin \phi \\ \sin \phi & \cos \phi \end{bmatrix} $$
+$$ R_\phi = \begin{bmatrix} \cos \phi & - \sin \phi
+\\ \sin \phi & \cos \phi \end{bmatrix} $$
 </div>
 
 ### Preslikave med *vektorskimi* prostori
@@ -839,21 +840,26 @@ $$ R_\phi = \begin{bmatrix} \cos \phi & - \sin \phi \\ \sin \phi & \cos \phi \en
 Preslikava je lahko:
 
 - *monomorfizem*: je *injektivna* (vsak *vektor* slika v svoj *vektor*, nobenih
-  *vektorjev* ne slika v isti *vektor*), jedro *monomorfne linearne* preslikave vsebuje le ničelni *vektor*
-  ($\mathrm{ker}(T) = {{0}}$)
+  *vektorjev* ne slika v isti *vektor*), jedro *monomorfne linearne* preslikave
+  vsebuje le ničelni *vektor* ($\mathrm{ker}(T) = {{0}}$)
 - *epimorfizem*: je *surjektivna* (slika preslikave je enaka celotnemu prostoru,
   v katerega slikamo)
-- *izomorfizem*: je *injektivna* in *surjektivna*, torej *bijektivna*
-    Prostora sta *izomorfna*, če med njima obstaja kak *izomorfizem*. To je *ekvivalenčna relacija*.
+- *izomorfizem*: je *injektivna* in *surjektivna*, torej *bijektivna* Prostora
+  sta *izomorfna*, če med njima obstaja kak *izomorfizem*. To je *ekvivalenčna
+  relacija*.
 
 #### Jedro *matrike*
 
-Jedro (imenovan tudi ničelni prostor ali *kernel*) je množica vseh *vektorjev* $x$, za katere velja
+Jedro (imenovan tudi ničelni prostor ali *kernel*) je množica vseh *vektorjev*
+$x$, za katere velja
 $$ A x = 0 $$
 Postopek računanja jedra *matrike*:
 
-1. Poenostavitev *matrike* $A$ z [Gaussovo *eliminacijo*](#Gauss_Jordanova_eliminacija) v zgornje trikotno obliko
-2. Določitev prostih spremenljivk: če je število stolpcev večje od *ranka matrike*, se za proste spremenljivke uvede *parametre* (npr. $t$, $s$)
+1. Poenostavitev *matrike* $A$ z [Gaussovo *eliminacijo*](#Gauss_Jordanova_eliminacija)
+   v zgornje trikotno obliko (da dobimo *nekolinearne bazne* vektorje
+   podprostora jedra)
+2. Določitev prostih spremenljivk: če je število stolpcev večje od *ranka
+   matrike*, se za proste spremenljivke uvede *parametre* (npr. $t$, $s$)
 3. Zapis enačbe $A x = 0$
 4. Zapis rešitve s *parametri*
 
@@ -872,28 +878,54 @@ $$ A = \begin{bmatrix} 1 & 2 \\ 2 & 4 \end{bmatrix} $$
 
 #### Lastni *vektorji* in lastne vrednosti
 
-Lastni *vektorji* so tisti, ki ob *transformaciji* ostanejo na svoji ogrinjači in se zgolj raztegnejo/skrčijo za svojo lastno rednost. Ostali *vektorji* v prostoru se premaknejo (razmerje med njihovimi *koordinatami* se spremeni). Če je katera izmed njegovih lastnih vrednosti *negativna*, se tak *vektor* tudi preslika čez svoje izhodišče (a ostane na svoji ogrinjači).
-Za sukanje v treh razsežnostih so lastni *vektorji* osi tega sukanja (če gre samo za sukanje, morajo biti lastne vrednosti enake 1).
+Lastni *vektorji* so tisti, ki ob *transformaciji* ostanejo na svoji ogrinjači
+in se zgolj raztegnejo/skrčijo za svojo lastno rednost. Ostali *vektorji* v
+prostoru se premaknejo (razmerje med njihovimi *koordinatami* se spremeni). Če
+je katera izmed njegovih lastnih vrednosti *negativna*, se tak *vektor* tudi
+preslika čez svoje izhodišče (a ostane na svoji ogrinjači).
 
-Število $\lambda$ je lastna vrednost za $A$, če obstaja tak neničeln *vektor* $\vec v \in \mathbb{C}^n$, da je
+Za sukanje v treh razsežnostih so lastni *vektorji* osi tega sukanja (če gre
+samo za sukanje, morajo biti lastne vrednosti enake 1).
+
+Število $\lambda$ je lastna vrednost za $A$, če obstaja tak neničeln *vektor*
+$\vec v \in \mathbb{C}^n$, da je
 $$ A \vec v = \lambda \vec v $$
-Tak *vektor* $\vec v$ imenujemo lastni *vektor* za A pri lastni vrednosti $\lambda$.
+Tak *vektor* $\vec v$ imenujemo lastni *vektor* za A pri lastni vrednosti
+$\lambda$.
 
-$$ A \vec v = \lambda \vec v = (\lambda I) \vec v \implies (A - \lambda I) \vec v = \vec 0 \implies \mathrm{det}(A - \lambda I) = 0 $$
+$$ A \vec v = \lambda \vec v = (\lambda I) \vec v 
+\implies (A - \lambda I) \vec v = \vec 0
+\\\implies p_K = \mathrm{det}(A - \lambda I) = 0 $$
+$p_K$ je t.i. *karakteristični polinom*, katerega ničle ustrezajo lastnim
+vrednostim.
 
 Število $\lambda$ je lastna vrednost za $A$ natanko tedaj, ko velja
 $$ \mathrm{ker}(A - \lambda I ) \neq 0 $$
-Če je $\lambda$ lastna vrednost za $A$, potem je *vektorski* podprostor $\mathrm{ker}(A - \lambda I)$ lastni podprostor za A pri lastni vrednosti $\lambda$
+Če je $\lambda$ lastna vrednost za $A$, potem je *vektorski* podprostor
+$\mathrm{ker}(A - \lambda I)$ lastni podprostor za A pri lastni vrednosti
+$\lambda$
 
-***Diagonalna matrika*** ima neničelne člene le na svoji *diagonali*, kar pomeni, da je *transformacija*, za katero so vsi *bazni vektorji* lastni *vektorji* s svojimi lastnimi vrednostmi, ki so kar *diagonalni* členi.
+***Diagonalna matrika*** ima neničelne člene le na svoji *diagonali*, kar
+pomeni, da je *transformacija*, za katero so vsi *bazni vektorji* lastni
+*vektorji* s svojimi lastnimi vrednostmi, ki so kar *diagonalni* členi.
 
-Zaradi lepih lastnosti lastnih *vektorjev* je lahko zelo priročno, če za *bazne vektorje* vzamemo lastne *vektorje*. Vendar to lahko storimo le, če imamo dovolj nevzporednih (*nekolinearnih*) *vektorjev* za *bazo* prostora.
+Podobno kot za *diagonalne matrike* velja tudi za *bločno diagonalne*, kjer
+*determinanta* vsakega *bloka* ustreza eni lastni vrednosti (če je lastna
+vrednost *kompleksna*, nastopa v *konjugiranem* paru).
+vsak *blok* na *diagonali*
+
+Zaradi lepih lastnosti lastnih *vektorjev* je lahko zelo priročno, če za *bazne
+vektorje* vzamemo lastne *vektorje*. Vendar to lahko storimo le, če imamo dovolj
+nevzporednih (*nekolinearnih*) *vektorjev* za *bazo* prostora.
 
 <div class="zgled">
-Če sta naša lastna *vektorja* $a = (1, 0)$ in $b = (-1, 1)$, potem *bazo* prostora spremenimo tako:
-$$ \begin{bmatrix} 1 & -1 \\ 0 & 1 \end{bmatrix}^{-1} A \begin{bmatrix} 1 & -1 \\ 0 & 1 \end{bmatrix}^{-1} $$
-Iz tega potem dobimo *diagonalno matriko*, z *diagonalnimi* členi, ki so hkrati tusi lastne vrednosti *baznih* vektorjev.
-Tej novi *bazi* prostora pravimo lastna *baza*.
+Če sta naša lastna *vektorja* $a = (1, 0)$ in $b = (-1, 1)$, potem *bazo*
+prostora spremenimo tako:
+$$ \begin{bmatrix} 1 & -1 \\ 0 & 1 \end{bmatrix}^{-1} A \begin{bmatrix} 1 & -1
+\\ 0 & 1 \end{bmatrix}^{-1} $$
+Iz tega potem dobimo *diagonalno matriko*, z *diagonalnimi* členi, ki so hkrati
+tudi lastne vrednosti *baznih* vektorjev.  Tej novi *bazi* prostora pravimo
+lastna *baza*.
 </div>
 
 # Zunanje povezave in viri

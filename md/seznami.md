@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-08-14
+date: 2026-08-16
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -24,6 +24,7 @@ Moja *priporočila* (precej nepopolna)
 
 ## Splet
 
+- [Existential Comics](https://existentialcomics.com/)
 - [KamiKam](https://kamkam.si/) – *platforma* za medsebojno *organiziranje* deljenega prevoza
 - [Kvarkadabra - časopis za tolmačenje znanosti](https://kvarkadabra.net/)
 - [Na prostem, zadruga za odprto kodo](https://www.na-prostem.si/)
