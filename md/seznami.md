@@ -1,8 +1,8 @@
 ---
 title: Seznami
-date: 2026-08-16
-description: Priporočila oz. seznami raznih zadev.
-keywords: priporočila
+date: 2026-08-20
+description: Razni seznami z različnih področij in priporočila
+keywords: seznam, priporočilo
 author: Janez Pavel Žebovec
 ---
 
@@ -24,6 +24,7 @@ Moja *priporočila* (precej nepopolna)
 
 ## Splet
 
+- [Distro Sea](https://distrosea.com/) – preizkus različnih Linuxovih *distribucij* v brskalniku
 - [Existential Comics](https://existentialcomics.com/)
 - [KamiKam](https://kamkam.si/) – *platforma* za medsebojno *organiziranje* deljenega prevoza
 - [Kvarkadabra - časopis za tolmačenje znanosti](https://kvarkadabra.net/)
@@ -86,6 +87,7 @@ Moja *priporočila* (precej nepopolna)
 
 ### Okolje
 
+- [Copernicus – Climate Pulse](https://pulse.climate.copernicus.eu/)
 - [Electricity Maps – Map](https://app.electricitymaps.com/)
 
 ### Naravoslovje
@@ -678,6 +680,41 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Two Set Violin](https://www.youtube.com/@twosetviolin)
 - [Vsauce](https://www.youtube.com/@Vsauce)
 
+#### Obrt
+(ročno delo, izdelovanje naprav, ...)
+
+- [Alex Lab](https://www.youtube.com/@ALEXLAB) - izdelava Iron Manove obleke
+    - [Alex Lab researches](https://www.youtube.com/@alexlabresearches)
+- [Andi's workshop](https://www.youtube.com/@andiswerkstatt-ow4uw/featured) - 
+- [Clay Hayes](https://www.youtube.com/@clayhayeshunter)
+- [Colin Furze](https://www.youtube.com/@colinfurze)
+- [Four Keys Book Arts](https://www.youtube.com/@FourKeysBookArts) - vezava, izdelava knjig
+- [H Carpenter](https://www.youtube.com/@HCarpenter) - tesarstvo
+- [Hacksmith Industries](https://www.youtube.com/@hacksmith)
+- [Northmen](https://www.youtube.com/@northmenguild) - tesarstvo, kovaštvo
+- [SK Bushcraft](https://www.youtube.com/@skbushcraft) - gradnja zavetij v naravi
+- [Stuff Made Here](https://www.youtube.com/@StuffMadeHere) - naprave
+
+#### Življenje v divjini in tretjem svetu
+
+- [Hadzabe Tribe Adventures](https://www.youtube.com/@Hadzabetribeadventures10)
+  – Afrika
+- [Justin Alvo](https://www.youtube.com/@JustinAlvo) – Ekvador
+
+#### Strojništvo, *inženirstvo*
+
+- [Animagraffs](https://www.youtube.com/@animagraffs) – zelo podrobni *dokumentarni* posnetki razlage delovanja posameznih naprav v celoti
+- [The B1M](https://www.youtube.com/@TheB1M)
+- [Brick Technology](https://www.youtube.com/@BrickTechnology) – izdelovanje napravic / vozil iz tehnokock
+- [Driver61](https://www.youtube.com/@Driver61) – snovanje dirkalnikov, predvsem formul
+- [Practical Engineering](https://www.youtube.com/@PracticalEngineeringChannel)
+  – *infrastruktura*, *inženirstvo*
+
+##### Zvezna računala, zvezdoslovne ure
+
+- [Mark Frank](https://www.youtube.com/@MarkFrankclocks) - zvezdoslovna ura
+- [Spencer Connor](https://www.youtube.com/@EngineeringCommonsLLC) - zvezdoslovna ura
+
 #### Naravoslovje
 
 - [Ali the Dazzling](https://www.youtube.com/@alithedazzling) – računstvo, naravoslovje; doktor elektrotehnike, zaposlen pri NASA)
@@ -804,39 +841,6 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [Ink and Fantasy](https://www.youtube.com/@InkandFantasy) - tudi književnost na splošno
 - [Middle Earth Tales](https://www.youtube.com/@middleearthtales)
 - [Nerd of the Rings](https://www.youtube.com/@NerdoftheRings)
-
-#### Strojništvo, *inženirstvo*
-
-- [Animagraffs](https://www.youtube.com/@animagraffs) – zelo podrobni *dokumentarni* posnetki razlage delovanja posameznih naprav v celoti
-- [The B1M](https://www.youtube.com/@TheB1M)
-- [Brick Technology](https://www.youtube.com/@BrickTechnology) – izdelovanje napravic / vozil iz tehnokock
-- [Driver61](https://www.youtube.com/@Driver61) – snovanje dirkalnikov, predvsem formul
-- [Practical Engineering](https://www.youtube.com/@PracticalEngineeringChannel)
-  – *infrastruktura*, *inženirstvo*
-
-##### Zvezna računala, zvezdoslovne ure
-
-- [Mark Frank](https://www.youtube.com/@MarkFrankclocks) - zvezdoslovna ura
-- [Spencer Connor](https://www.youtube.com/@EngineeringCommonsLLC) - zvezdoslovna ura
-
-#### Obrt
-(ročno delo, izdelovanje naprav, ...)
-
-- [Alex Lab](https://www.youtube.com/@ALEXLAB) - izdelava Iron Manove obleke
-    - [Alex Lab researches](https://www.youtube.com/@alexlabresearches)
-- [Andi's workshop](https://www.youtube.com/@andiswerkstatt-ow4uw/featured) - 
-- [Clay Hayes](https://www.youtube.com/@clayhayeshunter)
-- [Colin Furze](https://www.youtube.com/@colinfurze)
-- [Four Keys Book Arts](https://www.youtube.com/@FourKeysBookArts) - vezava, izdelava knjig
-- [H Carpenter](https://www.youtube.com/@HCarpenter) - tesarstvo
-- [Hacksmith Industries](https://www.youtube.com/@hacksmith)
-- [Northmen](https://www.youtube.com/@northmenguild) - tesarstvo, kovaštvo
-- [SK Bushcraft](https://www.youtube.com/@skbushcraft) - gradnja zavetij v naravi
-- [Stuff Made Here](https://www.youtube.com/@StuffMadeHere) - naprave
-
-#### Preživetje v naravi
-
-- [Hadzabe Tribe Adventures](https://www.youtube.com/@Hadzabetribeadventures10)
 
 #### Računalnistvo
 

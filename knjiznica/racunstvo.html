@@ -37,7 +37,7 @@ logika"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/racunstvo/">racunstvo</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-08-16">2026-08-16</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-08-20">2026-08-20</time></p>
     </header>
     <nav>
         <ul>
@@ -58,7 +58,11 @@ logika"/>
         <li><a href="#Stvarna_stevila" id="toc-Stvarna_stevila">Stvarna
         števila</a></li>
         <li><a href="#Skupna_stevila" id="toc-Skupna_stevila">Skupna
-        števila</a></li>
+        števila</a>
+        <ul>
+        <li><a href="#Polarni_zapis"
+        id="toc-Polarni_zapis"><i>Polarni</i> zapis:</a></li>
+        </ul></li>
         </ul></li>
         <li><a href="#Racunske_operacije"
         id="toc-Racunske_operacije">Računske <i>operacije</i></a></li>
@@ -348,29 +352,29 @@ logika"/>
             class="math inline">\(\sqrt{2}\)</span>, …).</p>
             <h3 id="Skupna_stevila">Skupna števila</h3>
             <p>(<i>kompleksna</i> števila)</p>
-            <p>Skupna števila imajo stvarno sestavino (<i>realno
-            komponento</i>) <i>a</i> in umišljeno sestavino
-            (<i>imaginarno komponento</i>) <i>b</i>. Umišljena
-            <i>komponenta</i> se označuje z i.</p>
+            <p>Skupna števila imajo stvarni del (<i>realno
+            komponento</i>) <span class="math inline">\(a\)</span> in
+            umišljeni del (<i>imaginarno komponento</i>) <span
+            class="math inline">\(b \mathrm{i}\)</span>.</p>
             <p><span class="math display">\[ \mathbb{C} = \left\{a +
             b\mathrm{i}; (a, b \in \mathbb{R} ) \land (\mathrm{i}^2 = -1
             \Leftrightarrow \sqrt{-1} = \sqrt{\mathrm{i^2}})\right\}
-            \]</span> <span class="math display">\[ i = \sqrt{-}
-            \]</span> <span class="math display">\[ {\lvert z \rvert}^2
-            = a^2 + b^2 \]</span> <span
+            \]</span> <span class="math display">\[ \mathrm{i} =
+            \sqrt{-1} = \sqrt{-} \]</span> <span class="math display">\[
+            {\lvert z \rvert}^2 = a^2 + b^2 \]</span> <span
             class="math inline">\(\overline{z}\)</span> je
             <i>konjugirana</i> vrednost skupnega števila <span
             class="math display">\[ \overline{z} = a - \mathrm{i} b
             \]</span> <span class="math display">\[ {\lvert z \rvert}^2
             = z \overline{z} \]</span> <span class="math display">\[
             \phi = \arctan \left( \frac{b}{a} \right) \]</span></p>
-            <p><i>Polarni</i> zapis:</p>
+            <h4 id="Polarni_zapis"><i>Polarni</i> zapis:</h4>
             <p><span class="math display">\[ z = \lvert  z \rvert (\cos
             \phi + \mathrm{i} \sin \phi) \]</span></p>
             <p>Eulerjeva enačba: <span class="math display">\[
             \mathrm{e}^{\mathrm{i} \phi} = \cos(\phi) + \mathrm{i}
             \sin(\phi) \]</span></p>
-            <p>Eulerjev zapis:</p>
+            <p>Eulerjev zapis skupnega števila:</p>
             <p><span class="math display">\[ z = \lvert z \rvert
             \mathrm{e}^{\mathrm{i} \phi} \]</span> <span
             class="math display">\[ \overline{z} = \lvert z \rvert
@@ -383,37 +387,41 @@ logika"/>
             <p><i>Operacije</i> imajo lahko sledeče lastnosti:</p>
             <ul>
             <li><b>zamenljivost</b>, zakon o zamenjavi
-            (<i>komutativnost</i>; npr. <span class="math inline">\(a+b
-            = b+a\)</span>, <span class="math inline">\(A \cup B = B
-            \cup A\)</span>),</li>
+            (<i>komutativnost</i>; <span class="zgled">npr. <span
+            class="math inline">\(a+b = b+a\)</span>, <span
+            class="math inline">\(A \cup B = B \cup
+            A\)</span></span>),</li>
             <li><b>družilnost</b>, zakon o združevanju
-            (<i>asociativnost</i>; npr. <span
-            class="math inline">\((a+b)+c = a+(b+c)\)</span>, <span
-            class="math inline">\((A \cup B) \cup C = A \cup (B \cup
-            C)\)</span>),</li>
+            (<i>asociativnost</i>; <span class="zgled">npr. <span
+            class="math inline">\((a+b)+c =
+            a+(b+c)\)</span>, <span class="math inline">\((A \cup B)
+            \cup C = A \cup (B \cup C)\)</span></span>),</li>
             <li><b>razčlenljivost</b>, zakon o razčlenitvi
-            (<i>distributivnost</i>; npr. <span
-            class="math inline">\((a+b)c = ac + bc\)</span>, <span
-            class="math inline">\(A \cap (B \cup C) = (A \cap B) \cup (A
-            \cap C)\)</span>),</li>
-            <li><b>povratnost</b> (<i>refleksivnost</i>; npr. <span
-            class="math inline">\(a \parallel a\)</span>),</li>
-            <li><b>vzajemnost</b> (<i>simetričnost</i>; npr. <span
-            class="math inline">\(a \parallel b \iff b \parallel
-            a\)</span>),</li>
-            <li><b>prehodnost</b> (<i>tranzitivnost</i>; npr. <span
-            class="math inline">\(a \parallel b \land b \parallel c \iff
-            a \parallel c\)</span>),</li>
-            <li><b>nespremenljivost</b> (<i>idempotenca</i>; npr. <span
-            class="math inline">\(A \cup A = A\)</span>),</li>
-            <li><b><i>absorbcija</i></b> (npr. <span
+            (<i>distributivnost</i>; <span class="zgled">npr. <span
+            class="math inline">\((a+b)c = ac
+            + bc\)</span>, <span class="math inline">\(A \cap (B \cup C)
+            = (A \cap B) \cup (A \cap C)\)</span></span>),</li>
+            <li><b>povratnost</b> (<i>refleksivnost</i>; <span
+            class="zgled">npr. <span class="math inline">\(a \parallel
+            a\)</span></span>),</li>
+            <li><b>vzajemnost</b> (<i>simetričnost</i>; <span
+            class="zgled">npr. <span class="math inline">\(a \parallel b
+            \iff b \parallel a\)</span></span>),</li>
+            <li><b>prehodnost</b> (<i>tranzitivnost</i>; <span
+            class="zgled">npr. <span class="math inline">\(a \parallel b
+            \land b \parallel c \iff
+            a \parallel c\)</span></span>),</li>
+            <li><b>nespremenljivost</b> (<i>idempotenca</i>; <span
+            class="zgled">npr. <span class="math inline">\(A \cup A =
+            A\)</span></span>),</li>
+            <li><b><i>absorbcija</i></b> (<span class="zgled">npr. <span
             class="math inline">\(A \cup (A \cap B) = A\)</span> -
-            <i>absorbcija</i> unije glede na presek),</li>
+            <i>absorbcija</i> unije glede na presek</span>),</li>
             </ul>
             <h2 id="Mnozice">Množice</h2>
-            <p>Potenčna množica množice A je množica njenih podmnož</p>
-            <p>ic, vključno s prazno množico. Če imamo množico A = {a,
-            b, c, … }, je potenčna množica te množice:</p>
+            <p>Potenčna množica množice A je množica njenih podmnožic,
+            vključno s prazno množico. Če imamo množico A = {a, b, c, …
+            }, je potenčna množica te množice:</p>
             <p>P(A) = {{}, {a}, {b}, {c}, …, {ab}, {ac}, {bc}, …, {abc},
             …}</p>
             <p>Moč takšne potenčne mnoćžice, kjer je <i>n</i> število
@@ -1319,15 +1327,18 @@ logika"/>
             velikosti)</li>
             <li><b>Množenje s <i>skalarjem</i></b> (oz. matrika
             velikosti 1x1): po <i>komponentah</i></li>
-            <li><b>Množenje <i>matrik</i></b> (ne velja zamenljivost /
+            <li><b>Množenje <i>matrik</i></b> – št. stolpcev prve
+            <i>matrike</i> mora ustrezati št. vrsic druge
+            <i>matrike</i>; ne velja zamenljivost /
             <i>komutativnost</i>, velja pa družilnost /
-            <i>asociativnost</i>): <span class="math display">\[
+            <i>asociativnost</i>: <span class="math display">\[
             \begin{bmatrix}a &amp; b &amp; c\\d &amp; e &amp;
             f\end{bmatrix} \begin{bmatrix}g &amp; h\\i &amp; j\\k &amp;
             l\end{bmatrix} = \begin{bmatrix}ag + bi + ck &amp; ah + bj +
             cl\\dg + ei + fk &amp; dh + ej + fl\end{bmatrix} \]</span>
-            <i>Matrični produkt</i> dveh neničelnih <i>matrik</i> je
-            lahko tudi enak nič.</li>
+            <span class="math display">\[ c_{i, j} = \sum_{k=1}^n a_{ik}
+            b_{kj} \]</span> <i>Matrični produkt</i> dveh neničelnih
+            <i>matrik</i> je lahko tudi enak nič.</li>
             <li><b><i>transpozicija</i></b>: stolpci postanejo vrstice
             in vrstice stolpci</li>
             </ul>
@@ -1744,7 +1755,8 @@ logika"/>
             <i>bločno diagonalne</i>, kjer <i>determinanta</i> vsakega
             <i>bloka</i> ustreza eni lastni vrednosti (če je lastna
             vrednost <i>kompleksna</i>, nastopa v <i>konjugiranem</i>
-            paru). vsak <i>blok</i> na <i>diagonali</i></p>
+            paru znotraj istega <i>bloka</i>?). vsak <i>blok</i> na
+            <i>diagonali</i></p>
             <p>Zaradi lepih lastnosti lastnih <i>vektorjev</i> je lahko
             zelo priročno, če za <i>bazne vektorje</i> vzamemo lastne
             <i>vektorje</i>. Vendar to lahko storimo le, če imamo dovolj

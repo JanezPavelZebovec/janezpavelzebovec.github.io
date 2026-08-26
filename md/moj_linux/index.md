@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-08-07
+date: 2026-08-25
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -37,6 +37,10 @@ Sicer pa je tu seznam najnovejših datotek, ki so na tem spletišču:
             - [fpr.mplstyle](moj_linux/home/janezpavel/.config/matlpotlib/stylelib/fpr.mpstyle)
             - [latex.mplstyle](moj_linux/home/janezpavel/.config/matlpotlib/stylelib/latex.mpstyle)
             - [rof.mplstyle](moj_linux/home/janezpavel/.config/matlpotlib/stylelib/rof.mpstyle)
+        - [mpd/mpd.conf](moj_linux/home/janezpavel/.config/mpd/mpd.conf)
+        - ncmpcpp/
+            - [bindings](moj_linux/home/janezpavel/.config/ncmpcpp/bindings)
+            - [config](moj_linux/home/janezpavel/.config/ncmpcpp/config)
         - [sxhkd/sxhkdrc](moj_linux/home/janezpavel/.config/sxhkd/sxhkdrc)
         - [vim/vimrc](moj_linux/home/janezpavel/.config/vim/vimrc)
         - [mimeapps.list](moj_linux/home/janezpavel/.config/mimeapps.list)
@@ -355,7 +359,6 @@ temno), jim moramo to nekako povedati. To storimo s sledečima datotekama:
     - `inkscape` – [Inkscape](https://inkscape.org/), urejevalnik SVG
     - `gimp` – [GIMP](https://www.gimp.org/), urejevalnik slik
     - `sc-im` – [SC-IM](https://github.com/andmarti1424/sc-im), preprost urejevalnik preglednic
-    - `ncmpcpp` – [NCMPCPP](https://github.com/ncmpcpp/ncmpcpp), poslušanje glasbe (po *avtorjih*, *albumih*, seznamih predvajanja, ...)
 
 #### Brskalnik Brave
 
@@ -369,6 +372,54 @@ Ker [Brava](https://brave.com/) ni v uradni knjižnici Debiana, je treba dodati 
 Morda deluje tudi tole (?)
  
 - `curl -fsS https://dl.brave.com/install.sh | sh`
+
+
+#### NCMPCPP
+
+[NCMPCPP](https://github.com/ncmpcpp/ncmpcpp) je orodje za poslušanje glasbe (po *avtorjih*, *albumih*, seznamih predvajanja, ...).
+
+- `sudo apt install ncmpcpp`
+- `sudo apt install mpd`
+- `mkdir -p ~/.config/mpd`
+- `cp /etc/mpd.conf ~/.config/mpd/mpd.conf` – *kopiraj sistemsko* nastavitveno
+  datoteko
+- v [**~/.config/mpd/mpd.conf**](moj_linux/home/janezpavel/.config/mpd/mpd.conf):
+    - *zakomentiraj* vrstico `user "mpd"`
+    - *odkomentiraj* vrstico `auto_update "yes"`, ki poskrbi, da se podatkovna  zbirka glasbe
+      samodejno posodobi ob spremembi v mapi glasbe
+    - `mkdir -p ~/.config/mpd/playlists` – ustvari imenik za sezname predvajanja
+    - `touch ~/.config/mpd/tag_cache`
+    - spremeni vrstice
+        ```
+        music_directory "/var/lib/mpd/music"
+        playlist_directory "/var/lib/mpd/playlists"
+        db_file	"/var/lib/mpd/tag_cache"
+        state_file "/var/lib/mpd/state"
+        sticker_file "/var/lib/mpd/sticker.sql"
+        ```
+        v npr.
+        ```
+        music_directory "/home/janezpavel/glasba"
+        playlist_directory "/home/janezpavel/.config/mpd/playlists"
+        db_file	"/home/janezpavel/.config/mpd/tag_cache"
+        state_file "/home/janezpavel/config/mpd/state"
+        sticker_file "/home/janezpavel/.config/mpd/sticker.sql"
+        ```
+    - v razdelek *Audio Output* dodaj
+        ```
+        audio_output {
+            type "pulse"
+            name "PulseAudio"
+        }
+        ```
+- preveri delovanje MPD-ja z `mpd --no-daemon ~/.config/mpd/mpd.conf`. Če ne
+  izpiše nobene napake, deluje. Ustavi z <kbd>Ctrl+C</kbd>.
+- `systemctl --user start mpd` – zaženi storitev MPD
+- `systemctl --user status mpd` – preveri stanje MPD-ja – mora pisati
+  *active (running)*
+- preveri še `ss -ltnp | grep 6600`, da MPD posluša na *127.0.0.1:6600*
+- `ncmpcpp` – zaženi NCMPCPP
+- `systemctl --user enable mpd` – da se bo MPD samodejno zagnal ob prijavi
 
 #### Eduroam
 

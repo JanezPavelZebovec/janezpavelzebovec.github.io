@@ -1,17 +1,18 @@
 ---
 title: Janez Pavel Žebovec
-date: 2026-07-21
+date: 2026-08-25
 description: Osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran, osebno spletišče
 ---
 
 Pozdravljen, spletni popotnik! Obiskal si spletišče osebe Janez Pavel Žebovec.
 
-To spletišče je osrednje mesto deljenja mojih zanimanj in povezavanja z mojimi
-spletnimi računi – tako družabnimi, kot tudi *projektnimi*. Slednji pomembneje
-krojijo mojo prisotnost na spletu.
+To je moja osrednja spletna „podoba“, od koder in kamor se načeloma povezujejo
+vsi moji javni spletni računi – tako družabni, kot tudi *projektni*.
 
 ---
+
+## Kazalo
 
 - [Visoka slovenščina](/visoka_slovenscina/) – kakšna bi slovenščina morala biti
   (oz. mora biti)
@@ -36,6 +37,10 @@ krojijo mojo prisotnost na spletu.
   podatkov OpenStreetMap, pa tudi GURS-ov zračni posnetek, <small>ter
   prepovedani  G\*\*\*lovi zemljevidi zgolj za primerjavo</small>
 - [Moji seznami](/seznami) – priporočila, predvsem spletne povezave
+- [Umovanje](/umovanje) – skupek *citatov*, podatkov oz. mojih razmišljanj
+  predvsem o trenutnih  *političnih* vprašanjih <small>(stran je še precej v
+  nastajanju, *teme* so obravnavano zelo površno in najverjetneje tudi
+  enostransko
 
 Tu je tudi moja [Knjižnica](/knjiznica/), kjer so zbrana nekatera
 znanja/področja mojih zanimanj ali izobraževanja, torej zadeve, ki si jih
@@ -43,7 +48,7 @@ načeloma lahko preberete tudi drugje.
 
 ---
 
-## Stiki
+## Splet
 
 - spletni poštni naslov:
   [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net)
@@ -63,9 +68,7 @@ načeloma lahko preberete tudi drugje.
 - [Facebook](https://www.facebook.com/janezpavel.zebovec)
 - [Twitter](https://x.com/JanezPavelZ)
 
----
-
-## Dejavnosti na spletu
+### Dejavnosti na spletu
 
 - Zemljevidi:
     - [Open Street Map](https://www.openstreetmap.org/user/JanezPavelZebovec),

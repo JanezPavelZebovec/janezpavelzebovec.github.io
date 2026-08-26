@@ -1,6 +1,6 @@
 ---
 title: Naravoslovje
-date: 2026-08-05
+date: 2026-08-24
 description: Naravni zakoni
 keywords: naravoslovje, fizika
 author: Janez Pavel Žebovec
@@ -248,6 +248,7 @@ $$ p = \frac{2}{3} \frac{N}{V} < W_{k1} > $$
 $$ < W_{k 1} > = \frac{3}{2} k_B T $$
 
 <div class="zakon">
+
 ***Termodinamski* zakoni**:
 
 0. Če je *termodinamski sistem* A v ravnovesju z B in B v ravnovesju z C, potem
@@ -265,8 +266,11 @@ $$ < W_{k 1} > = \frac{3}{2} k_B T $$
 </div>
 
 $$ \Delta W_n = Q_{stalna V} = m c_V \Delta T $$
+
 <div class="izpeljava">
+
 $$ Q_{stalen p} = \Delta W_n - A = m c_V \Delta T + \int{p \d V} = m c_V \Delta T + p (V_2 - V_1) = m c_V \Delta T + \frac{m}{M} R \Delta T = m c_p \Delta T $$
+
 </div>
 $$ Q = m c_p \Delta T $$
 
@@ -277,16 +281,21 @@ Splošna plinska enačba:
 $$ \frac{p V}{T} = \mathrm{stalnica} = N k_B = \frac{m}{M} N_A k_b = \frac{m}{M} R $$
 $$ p V = n R T = \frac{m}{M} R T $$
 
-| | enačba stanja | toplota | delo | $$\Delta W_n$$ |
+</div>
+
+| | enačba stanja | $Q$ | $\Delta W_n$ | $A$ |
 | --- | --- | --- | --- | --- |
-| stalen $p$ | $$ \frac{V}{T} $$ | $$ Q = \Delta H = m c_p \Delta T $$ | $$ - p \Delta V $$ | $$ m c_V \Delta T $$ |
-| stalna $V$ | $$ \frac{p}{T} $$ | $$ Q = \Delta W_n = m c_V \Delta T $$ | / | $$ m c_V \Delta T; \Delta W_n = Q_{stalna V} $$ |
-| stalna $T$ | $$ p V $$ | $$ Q = - A = \frac{m}{M} R T \ln(\frac{V}{V'}) $$ | $$ A = - \int{p \d V} = - p_0 V_0 \int{\frac{\d V}{V}} = \frac{m}{M} R T \ln(\frac{V}{V'}) $$ |
+| stalen $p$ (*izobarno*) | $$ \frac{V}{T} $$ | $$ \Delta H = m c_p \Delta T $$ | $$ m c_V \Delta T $$ | $$ - p \Delta V $$ |
+| stalna $V$ (*izohorno*) | $$ \frac{p}{T} $$ | $$ m c_V \Delta T $$ | $$ Q(\mathrm{stalna V}) = m c_V \Delta T $$ | 0 | 
+| stalna $T$ (*izotermno*) | $$ p V $$ | $$ - A $$ <span class="izpeljava">$$ = p_0 V_0 \ln \left(\frac{V_2}{V_1} \right) $$</span> | 0 | $$ - \int_1^2{p \d V} $$ <span class="izpeljava">$$ = - p_0 V_0 \int_1^2{\frac{\d V}{V}} = p_0 V_0 \ln \left(\frac{V_2}{V_1} \right) $$</span> |
+| stalna $S$ (*izentropno*) | | $$ 0 $$ | $$ m c_V \Delta T $$ | $$ m c_V \Delta T $$ |
+
+<div class="content">
 
 $$ \frac{\Delta l}{l} = \alpha \Delta T $$
 $$ \frac{\Delta V}{V} = \beta \Delta T $$
 
-- $\alpha$ – *lienarni* količnik dolžinskega raztezka
+- $\alpha$ – *linearni* količnik dolžinskega raztezka
 - $\beta$ – *linearni* količnik prostorninskega raztezka
 
 $$ \beta = 3 \alpha $$
@@ -305,12 +314,16 @@ Kot $\phi$ ni *vektor*, ker ne velja zamenljivost zasukov, je pa *vektor* njegov
 *diferencial* $\d \vec{\phi}$ (to si lahko predstavljamo tako, da je premik pri
 zasuku $\d \phi$ premi, ne ukrivljen).
 
+</div>
+
 | | |
 | --- | --- |
 | kot [rd] | $$ \phi = \frac{l}{r} $$ $$ \phi = \phi_0 + \omega_0 t + \frac{\alpha}{2} t^2 $$ |
 | kotna hitrost [$\frac{1}{s}$] | $$ \vec \omega = \vec \phi '(t) = \frac{\vec {\d \phi}}{\d t} $$ $$ \overline \omega = \frac{\Delta \phi}{\Delta t} = \frac{2 \pi}{t_o} = 2 \pi \gamma = \omega_0 + \alpha t $$ |
 | kotni pospešek [$\frac{1}{s^2}$] | $$ \vec \alpha = \vec \omega '(t) = \frac{\vec {\d \omega}}{\d t} $$ $$ \overline{\alpha} = \frac{\Delta \omega}{\Delta t} $$ |
 | *frekvenca* [Hz] | $$ \gamma = \frac{N}{\Delta t} = \frac{1}{t_o} $$ |
+
+<div class="content">
 
 Sredobežni (*centripetalni*) pospešek, ki sploh povzroča kroženje:
 $$ a_r = \omega v = \frac{v_0^2}{r} = - \omega^2 r $$
@@ -642,6 +655,20 @@ $$ P = \frac{\d A_e}{\d t} = \frac{U \d e}{\d t} = U I = - I^2 R $$
     $$ \sum_{krog} U_i = 0 $$
 </div>
 
+### *Indukcija*
+
+*Indukcija* je posledica spremembe *magnetnega* polja. *Indukcijski* pojavi
+nasprotujejo tej spremembi, da zmanjšajo ublažijo spremembo polja.
+
+<div class="zakon">
+**Faradayev zakon** (*indukcijski* zakon):
+
+*Inducirana* napetost $U_i$ je v zaključeni zanki premo sorazmerna hitrosti
+spreminjanja *magnetnega* pretoka $\phi_m$ skozi površino te zanke.
+
+$$ U_i = \oint E \d s = - \frac{\p}{\p t} \int B \d S = - \frac{\d \phi_m}{\d t} $$
+</div>
+
 ### *Kondenzator*
 
 *Kondenzator* deluje kot hranilnik naboja, oz. v tokokrogu kot "prožnost"
@@ -839,9 +866,10 @@ V enačbi lahko zanemarimo člene od tistega naprej, ki je zadosti manjši od ne
 </div>
 | veličina | oznaka veličine | enota | oznaka enote |
 | --- | --- | --- | --- |
-| dolžina, (odmik) | l, d, (x) | meter | m |
+| dolžina, (odmik) | l, d, x | meter | m |
 | masa | m | kilogram | kg |
 | čas | t | sekunda | s |
+
 <div class="content">
 
 #### *Indukcija*
@@ -985,6 +1013,7 @@ V enačbi lahko zanemarimo člene od tistega naprej, ki je zadosti manjši od ne
 ### Osnovne enote
 
 </div>
+
 | veličina | oznaka veličine | enota | oznaka enote |
 | --- | --- | --- | --- |
 | dolžina, (odmik) | l, d, (x) | meter | m |

@@ -32,7 +32,7 @@ sistema"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/moj_linux/">moj_linux</a> / <a href="/moj_linux/index/">index</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-08-07">2026-08-07</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-08-25">2026-08-25</time></p>
     </header>
     <nav>
         <ul>
@@ -84,6 +84,7 @@ sistema"/>
         <ul>
         <li><a href="#Brskalnik_Brave"
         id="toc-Brskalnik_Brave">Brskalnik Brave</a></li>
+        <li><a href="#NCMPCPP" id="toc-NCMPCPP">NCMPCPP</a></li>
         <li><a href="#Eduroam" id="toc-Eduroam">Eduroam</a></li>
         </ul></li>
         <li><a href="#Programski_jeziki"
@@ -190,6 +191,15 @@ sistema"/>
             href="moj_linux/home/janezpavel/.config/matlpotlib/stylelib/latex.mpstyle">latex.mplstyle</a></li>
             <li><a
             href="moj_linux/home/janezpavel/.config/matlpotlib/stylelib/rof.mpstyle">rof.mplstyle</a></li>
+            </ul></li>
+            <li><a
+            href="moj_linux/home/janezpavel/.config/mpd/mpd.conf">mpd/mpd.conf</a></li>
+            <li>ncmpcpp/
+            <ul>
+            <li><a
+            href="moj_linux/home/janezpavel/.config/ncmpcpp/bindings">bindings</a></li>
+            <li><a
+            href="moj_linux/home/janezpavel/.config/ncmpcpp/config">config</a></li>
             </ul></li>
             <li><a
             href="moj_linux/home/janezpavel/.config/sxhkd/sxhkdrc">sxhkd/sxhkdrc</a></li>
@@ -653,10 +663,6 @@ sistema"/>
             <li><code>sc-im</code> – <a
             href="https://github.com/andmarti1424/sc-im">SC-IM</a>,
             preprost urejevalnik preglednic</li>
-            <li><code>ncmpcpp</code> – <a
-            href="https://github.com/ncmpcpp/ncmpcpp">NCMPCPP</a>,
-            poslušanje glasbe (po <i>avtorjih</i>, <i>albumih</i>,
-            seznamih predvajanja, …)</li>
             </ul></li>
             </ul>
             <h4 id="Brskalnik_Brave">Brskalnik Brave</h4>
@@ -674,6 +680,48 @@ sistema"/>
             <p>Morda deluje tudi tole (?)</p>
             <ul>
             <li><code>curl -fsS https://dl.brave.com/install.sh | sh</code></li>
+            </ul>
+            <h4 id="NCMPCPP">NCMPCPP</h4>
+            <p><a href="https://github.com/ncmpcpp/ncmpcpp">NCMPCPP</a>
+            je orodje za poslušanje glasbe (po <i>avtorjih</i>,
+            <i>albumih</i>, seznamih predvajanja, …).</p>
+            <ul>
+            <li><code>sudo apt install ncmpcpp</code></li>
+            <li><code>sudo apt install mpd</code></li>
+            <li><code>mkdir -p ~/.config/mpd</code></li>
+            <li><code>cp /etc/mpd.conf ~/.config/mpd/mpd.conf</code> –
+            <i>kopiraj sistemsko</i> nastavitveno datoteko</li>
+            <li>v <a
+            href="moj_linux/home/janezpavel/.config/mpd/mpd.conf"><b>~/.config/mpd/mpd.conf</b></a>:
+            <ul>
+            <li><i>zakomentiraj</i> vrstico <code>user "mpd"</code></li>
+            <li><i>odkomentiraj</i> vrstico
+            <code>auto_update "yes"</code>, ki poskrbi, da se podatkovna
+            zbirka glasbe samodejno posodobi ob spremembi v mapi
+            glasbe</li>
+            <li><code>mkdir -p ~/.config/mpd/playlists</code> – ustvari
+            imenik za sezname predvajanja</li>
+            <li><code>touch ~/.config/mpd/tag_cache</code></li>
+            <li>spremeni vrstice
+            <code>music_directory "/var/lib/mpd/music"       playlist_directory "/var/lib/mpd/playlists"       db_file "/var/lib/mpd/tag_cache"       state_file "/var/lib/mpd/state"       sticker_file "/var/lib/mpd/sticker.sql"</code>
+            v npr.
+            <code>music_directory "/home/janezpavel/glasba"       playlist_directory "/home/janezpavel/.config/mpd/playlists"       db_file "/home/janezpavel/.config/mpd/tag_cache"       state_file "/home/janezpavel/config/mpd/state"       sticker_file "/home/janezpavel/.config/mpd/sticker.sql"</code></li>
+            <li>v razdelek <i>Audio Output</i> dodaj
+            <code>audio_output {           type "pulse"           name "PulseAudio"       }</code></li>
+            </ul></li>
+            <li>preveri delovanje MPD-ja z
+            <code>mpd --no-daemon ~/.config/mpd/mpd.conf</code>. Če ne
+            izpiše nobene napake, deluje. Ustavi z
+            <kbd>Ctrl+C</kbd>.</li>
+            <li><code>systemctl --user start mpd</code> – zaženi
+            storitev MPD</li>
+            <li><code>systemctl --user status mpd</code> – preveri
+            stanje MPD-ja – mora pisati <i>active (running)</i></li>
+            <li>preveri še <code>ss -ltnp | grep 6600</code>, da MPD
+            posluša na <i>127.0.0.1:6600</i></li>
+            <li><code>ncmpcpp</code> – zaženi NCMPCPP</li>
+            <li><code>systemctl --user enable mpd</code> – da se bo MPD
+            samodejno zagnal ob prijavi</li>
             </ul>
             <h4 id="Eduroam">Eduroam</h4>
             <ul>

@@ -160,6 +160,8 @@ table {
     overflow-x: auto;
     max-width: 100%;
     width: auto;
+    /*column-width: auto;*/
+    /*table-layout: auto;*/
     /*display: block;*/
 }
 
@@ -221,9 +223,12 @@ button {
 
 .zakon {
     background-color: var(--bOzadjeNaprej);
+    padding: 0;
     padding-left: 1em;
     padding-right: 1em;
     margin: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
 }
 .zakon p {
     margin: 0;

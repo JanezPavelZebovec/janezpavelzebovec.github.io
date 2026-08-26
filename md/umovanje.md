@@ -1,6 +1,6 @@
 ---
 title: Umovanje
-date: 2026-08-09
+date: 2026-08-23
 description: Osebna razmišljanja
 keywords: Janez Pavel Žebovec, razmišljanje, blog
 ---
@@ -158,6 +158,19 @@ tovrstnim domislicam manjšine?
 
 „*Toksična* moškost“ ne obstaja. Obstajajo le nekateri neumni in/ali nasilni
 moški. Kar se namreč smatra za *toksično* moškost, ni moškost.
+
+> **Mesec draga – razvijanje drag scene in kulture** V primerjavi z
+> Zahodno in Srednjo Evropo, je drag kultura pri nas dokaj majhna. Čeprav imamo
+> številne nadarjene drag performerje, a številni med njimi so se v preteklosti
+> odločili za odhod v tujino. Zakaj ne bi Ljubljana postala eden od epicentrov
+> drag kulture? Na kratek rok želi projekt ljudem ponuditi zabavne in
+> informativne dogodke, na dolgi rok pa predstavljenj draga kot legitimne
+> umetnosti, ki je vredna pozornosti in vlaganja vanjo. Tako lahko nastane tudi
+> platforma za slovenske drag perfomerje, za ustvarjanje in delo v Sloveniji.
+> Cilj projekta je predstaviti drag umetnost, življenje kraljic preobleke in
+> proces ustvarjanja draga ter vzpostavljanje razumevanja LGBTIQ+ skupnosti.
+>
+<cite>[Ivan Kovač](https://mladizmaji.si/aktualno/kaj-ljubljani-prinasa-5-generacija-idejalistk-in-idejalistov-iz-mestnega-inkubatorja/)
 
 ## Splav
 

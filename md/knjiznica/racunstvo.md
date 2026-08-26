@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-08-16
+date: 2026-08-20
 description: računska teorija, enačbe
 keywords: računstvo, matematika, algebra, logika
 author: Janez Pavel Žebovec
@@ -25,54 +25,63 @@ author: Janez Pavel Žebovec
 
 ## Množice števil
 
-Računamo lahko v različnih množicah števil - to je stvar izbire. Tako lahko račun v neki množici nima rešitve (ki jo hočemo v tej množici), ima pa jo v neki drugi množici, vendar nas ta rešitev ne zanima, zato razglasimo, da račun v izbrani množici nima rešitve (tako je običajno npr. s koreni negativnih števil).
+Računamo lahko v različnih množicah števil - to je stvar izbire. Tako lahko
+račun v neki množici nima rešitve (ki jo hočemo v tej množici), ima pa jo v neki
+drugi množici, vendar nas ta rešitev ne zanima, zato razglasimo, da račun v
+izbrani množici nima rešitve (tako je običajno npr. s koreni negativnih števil).
 
 $$ \href{#Naravna_stevila}{\mathbb{N}} < \href{#Cela_stevila}{\mathbb{Z}} < \href{#Razlozna_stevila}{\mathbb{Q}} < \href{#Stvarna_stevila}{\mathbb{R}} < \href{#Skupna_stevila}{\mathbb{C}} $$
 
 ### Naravna števila
 
-To so (*pozitivna* cela) števila s katerimi štejemo (npr. 1, 2, 3, 4, 5, 6, ...).
+To so (*pozitivna* cela) števila s katerimi štejemo (npr. 1, 2, 3, 4, 5, 6,
+...).
 
 ### Cela števila
 
-To so naravna števila, število 0 in nasprotne vrednosti naravnih števil - *negativna* cela števila (npr. 0, 1, -1, 2, -2, 3, -3, ...)
+To so naravna števila, število 0 in nasprotne vrednosti naravnih števil -
+*negativna* cela števila (npr. 0, 1, -1, 2, -2, 3, -3, ...)
 
 ### Razložna števila
 (*racionalna* števila)
 
-To so števila, ki jih lahko izrazimo kot razmerje dveh celih števil, oz. predstavimo z ulomki (npr. 0, 1, -1, 1/3, -1/3, ...).
+To so števila, ki jih lahko izrazimo kot razmerje dveh celih števil, oz.
+predstavimo z ulomki (npr. 0, 1, -1, 1/3, -1/3, ...).
 
 ### Nerazložna števila
 (*iracionalna* števila)
 
-To so števila, ki jih ni mogoče izraziti kot razmerje dveh celih števil, oz. predstaviti z ulomki (npr. $\sqrt{2}$, π, e, ...).
+To so števila, ki jih ni mogoče izraziti kot razmerje dveh celih števil, oz.
+predstaviti z ulomki (npr. $\sqrt{2}$, π, e, ...).
 
 ### Stvarna števila
 (*realna* števila)
 
-To so števila, ki jih lahko predstavimo na običajni številski premici (npr. 0, 1, -1, 1/3, -1/3, π, $\sqrt{2}$, ...).
+To so števila, ki jih lahko predstavimo na običajni številski premici (npr. 0,
+1, -1, 1/3, -1/3, π, $\sqrt{2}$, ...).
 
 ### Skupna števila
 (*kompleksna* števila)
 
-Skupna števila imajo stvarno sestavino (*realno komponento*) *a* in umišljeno sestavino (*imaginarno komponento*) *b*. Umišljena *komponenta* se označuje z i.
+Skupna števila imajo stvarni del (*realno komponento*) $a$ in umišljeni del
+(*imaginarno komponento*) $b \mathrm{i}$.
 
 $$ \mathbb{C} = \left\{a + b\mathrm{i}; (a, b \in \mathbb{R} ) \land (\mathrm{i}^2 = -1 \Leftrightarrow \sqrt{-1} = \sqrt{\mathrm{i^2}})\right\} $$
-$$ i = \sqrt{-} $$
+$$ \mathrm{i} = \sqrt{-1} = \sqrt{-} $$
 $$ {\lvert z \rvert}^2 = a^2 + b^2 $$
 $\overline{z}$ je *konjugirana* vrednost skupnega števila
 $$ \overline{z} = a - \mathrm{i} b $$
 $$ {\lvert z \rvert}^2 = z \overline{z} $$
 $$ \phi = \arctan \left( \frac{b}{a} \right) $$
 
-*Polarni* zapis:
+#### *Polarni* zapis:
 
 $$ z = \lvert  z \rvert (\cos \phi + \mathrm{i} \sin \phi) $$
 
 Eulerjeva enačba:
 $$ \mathrm{e}^{\mathrm{i} \phi} = \cos(\phi) + \mathrm{i} \sin(\phi) $$
 
-Eulerjev zapis:
+Eulerjev zapis skupnega števila:
 
 $$ z = \lvert z \rvert \mathrm{e}^{\mathrm{i} \phi} $$
 $$ \overline{z} = \lvert z \rvert \mathrm{e}^{- \mathrm{i} \phi} $$
@@ -85,21 +94,24 @@ $$ z^n = {\lvert  z \rvert}^n (\cos n \phi + \mathrm{i} \sin n \phi) = {\lvert z
 
 *Operacije* imajo lahko sledeče lastnosti:
 
-- **zamenljivost**, zakon o zamenjavi (*komutativnost*; npr. $a+b = b+a$, $A \cup B = B \cup A$),
-- **družilnost**, zakon o združevanju (*asociativnost*; npr. $(a+b)+c = a+(b+c)$, $(A \cup B) \cup C = A \cup (B \cup C)$),
-- **razčlenljivost**, zakon o razčlenitvi (*distributivnost*; npr. $(a+b)c = ac + bc$, $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$),
-- **povratnost** (*refleksivnost*; npr. $a \parallel a$),
-- **vzajemnost** (*simetričnost*; npr. $a \parallel b \iff b \parallel a$),
-- **prehodnost** (*tranzitivnost*; npr. $a \parallel b \land b \parallel c \iff a \parallel c$),
-- **nespremenljivost** (*idempotenca*; npr. $A \cup A = A$),
-- ***absorbcija*** (npr. $A \cup (A \cap B) = A$ - *absorbcija* unije glede na presek),
+- **zamenljivost**, zakon o zamenjavi
+    (*komutativnost*; <span class="zgled">npr. $a+b = b+a$, $A \cup B = B \cup A$</span>),
+- **družilnost**, zakon o združevanju (*asociativnost*; <span class="zgled">npr. $(a+b)+c =
+  a+(b+c)$, $(A \cup B) \cup C = A \cup (B \cup C)$</span>),
+- **razčlenljivost**, zakon o razčlenitvi (*distributivnost*; <span class="zgled">npr. $(a+b)c = ac
+  + bc$, $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$</span>),
+- **povratnost** (*refleksivnost*; <span class="zgled">npr. $a \parallel a$</span>),
+- **vzajemnost** (*simetričnost*; <span class="zgled">npr. $a \parallel b \iff b \parallel a$</span>),
+- **prehodnost** (*tranzitivnost*; <span class="zgled">npr. $a \parallel b \land b \parallel c \iff
+  a \parallel c$</span>),
+- **nespremenljivost** (*idempotenca*; <span class="zgled">npr. $A \cup A = A$</span>),
+- ***absorbcija*** (<span class="zgled">npr. $A \cup (A \cap B) = A$ - *absorbcija* unije glede na
+  presek</span>),
 
 ## Množice
 
-Potenčna množica množice A je množica njenih podmnož
-
-ic, vključno s prazno množico.
-Če imamo množico A = {a, b, c, ... }, je potenčna množica te množice:
+Potenčna množica množice A je množica njenih podmnožic, vključno s prazno
+množico.  Če imamo množico A = {a, b, c, ... }, je potenčna množica te množice:
 
 P(A) = {{}, {a}, {b}, {c}, ..., {ab}, {ac}, {bc}, ..., {abc}, ...}
 
@@ -121,7 +133,8 @@ Pri razvrstitvah z *r* ponovitvami posameznih *elementov* ne upoštevamo različ
 
 $$ P_n^{r_1, r_2, r_3, ... , r_k} = \frac {n!}{r_1! r_2! r_3! ... r_k!} $$
 
-Pri krožni razvrstitvi ne upoštevamo možnih zasukov enake razporedbe (če ne razlikujemo mest te krožne razvrstitve):
+Pri krožni razvrstitvi ne upoštevamo možnih zasukov enake razporedbe (če ne
+razlikujemo mest te krožne razvrstitve):
 
 $$ P_n = \frac {n!}{n} = (n-1)! $$
 
@@ -139,29 +152,37 @@ $$ ^{(p)}V_n^r = n^r $$
 
 ### Izbori (*kombinacije*)
 
-To so izbori *r* *elementov* iz množice z *n* elementi. Pri tem vrstni red ni pomemben, zato je to pravzaprav število različic (*variacij*), deljeno s številom možnih razvrstitev *elementov* posamezne različice.
+To so izbori *r* *elementov* iz množice z *n* elementi. Pri tem vrstni red ni
+pomemben, zato je to pravzaprav število različic (*variacij*), deljeno s
+številom možnih razvrstitev *elementov* posamezne različice.
 
 $$ C_n^r = \frac {V_n^r}{r!} = \binom {n}{r} $$
 
 ## Verjetnost
 
-*Statistično*/*empirično* se verjetnost dogodka *P(A)* lahko opredeli kot število, pri katerem se ustali *relativna* pogostost dogodka A pri velikem številu ponovitev poskusa:
+*Statistično*/*empirično* se verjetnost dogodka *P(A)* lahko opredeli kot
+število, pri katerem se ustali *relativna* pogostost dogodka A pri velikem
+številu ponovitev poskusa:
 
 $$ P(A) = \lim_{n \to \infty} f'(A) $$
 
-*Relativna* pogostost dogodka A se izračuna kot pogostost dog. A *f(A)* na število ponovitev poskusa *n*:
+*Relativna* pogostost dogodka A se izračuna kot pogostost dog. A *f(A)* na
+število ponovitev poskusa *n*:
 
 $$ f'(A) = \frac {f(A)}{n} $$
 
-Običajno se verjetnost opredeli kot št. ugodnih izidov *m* za dogodek na št. vseh izidov *n*:
+Običajno se verjetnost opredeli kot št. ugodnih izidov *m* za dogodek na št.
+vseh izidov *n*:
 
 $$ P(A) = \frac {m}{n} $$
 
-Za *elementarni* dogodek v popolnem *sistemu* dogodkov (kjer so vsi dog. enako verjetni) je ta verjetnost $P(E) = \frac {1}{n}$.
+Za *elementarni* dogodek v popolnem *sistemu* dogodkov (kjer so vsi dog. enako
+verjetni) je ta verjetnost $P(E) = \frac {1}{n}$.
 
 ## Zaporedja
 
-Če je $a_n$ zaporedje s *pozitivnimi* členi, velja, da če sta zaporedji  $\frac{a_{n+1}}{a_n}$ in $\sqrt[n]{a_n}$ *konvergentni*, je:
+Če je $a_n$ zaporedje s *pozitivnimi* členi, velja, da če sta zaporedji
+$\frac{a_{n+1}}{a_n}$ in $\sqrt[n]{a_n}$ *konvergentni*, je:
 $$ \lim_{x \to 0} \sqrt[n]{a_n} = \lim_{x \to 0} \frac {a_{n+1}}{a_n} $$
 
 ### *Aritmetično* zaporedje
@@ -648,9 +669,11 @@ $$ \begin{bmatrix} a_1 & 0 & 0 & 0 \\ 0 & a_2 & 0 & 0 \\ 0 & 0 & a_3 & 0 \\ 0 & 
 - **Seštevanje/odštevanje**: po *komponentah* (*matriki* morata biti torej
   enake oblike / velikosti)
 - **Množenje s *skalarjem*** (oz. matrika velikosti 1x1): po *komponentah*
-- **Množenje *matrik*** (ne velja zamenljivost / *komutativnost*, velja pa
-  družilnost / *asociativnost*):
+- **Množenje *matrik*** – št. stolpcev prve *matrike* mora ustrezati št. vrsic
+  druge *matrike*; ne velja zamenljivost / *komutativnost*, velja pa
+  družilnost / *asociativnost*:
 $$ \begin{bmatrix}a & b & c\\d & e & f\end{bmatrix} \begin{bmatrix}g & h\\i & j\\k & l\end{bmatrix} = \begin{bmatrix}ag + bi + ck & ah + bj + cl\\dg + ei + fk & dh + ej + fl\end{bmatrix} $$
+    $$ c_{i, j} = \sum_{k=1}^n a_{ik} b_{kj} $$
     *Matrični produkt* dveh neničelnih *matrik* je lahko tudi enak nič.
 - ***transpozicija***: stolpci postanejo vrstice in vrstice stolpci
 
@@ -911,7 +934,7 @@ pomeni, da je *transformacija*, za katero so vsi *bazni vektorji* lastni
 
 Podobno kot za *diagonalne matrike* velja tudi za *bločno diagonalne*, kjer
 *determinanta* vsakega *bloka* ustreza eni lastni vrednosti (če je lastna
-vrednost *kompleksna*, nastopa v *konjugiranem* paru).
+vrednost *kompleksna*, nastopa v *konjugiranem* paru znotraj istega *bloka*?).
 vsak *blok* na *diagonali*
 
 Zaradi lepih lastnosti lastnih *vektorjev* je lahko zelo priročno, če za *bazne
