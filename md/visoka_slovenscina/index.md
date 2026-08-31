@@ -191,7 +191,7 @@ Tu je seznam mojih predlogov za nove slovenske ustreznice (nekatere so že obsto
 - **vóz** <small>(/2025-06-30)</small>, **sámogôn**\* <small>(/2025-06-30)</small> < *avtomobil/avto* <small>(< nem. *Auto/Automobil*; fran. *auto/automobile* < gr. *autós* = *sam*, lat. *mōbilis* = *premičen*)</small>
 - **síto** <small>(/2026-02-18)</small> < *filter*
 - **snôvoslôvje** <small>(/2025-06-30)</small> < *kemija*
-- **sprejémnik zvóka** <small>(/2025-06-30)</small>, **zvókosprejémnik** <small>(/2025-06-30)</small> < *mikrofon*
+- **sprejémnik zvóka** <small>(/2025-06-30)</small> (**zvókosprejémnik** <small>(/2025-06-30)</small>) < *mikrofon*
 - **tresávec** <small>(/2025-06-30)</small> < *vibrant*
 - **vêlecésta** <small>(/2025-06-30)</small> < *avtocesta*
 - **vesóljeslôvje** <small>(/2025-06-30)</small> < *kozmologija*
@@ -229,7 +229,7 @@ Te skovanke so (še) precej okorne in potrebne dodatnega premisleka ali druge za
 
 Predlogi so dobrodošli na [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net).
 
-Glej tudi [Propad slovenščine](/visoka_slovenscina/propad_slovenscine) za primere.
+Glej tudi [Propad slovenščine](/visoka_slovenscina/propad_slovenscine) za primere in [Slovar slovenske angleščine](/visoka_slovenscina/ssa).
 
 ## Zunanje povezave,  viri in sklici
 

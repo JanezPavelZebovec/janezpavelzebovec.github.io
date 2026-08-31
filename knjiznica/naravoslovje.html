@@ -36,7 +36,7 @@
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/naravoslovje/">naravoslovje</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-08-24">2026-08-24</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-08-29">2026-08-29</time></p>
     </header>
     <nav>
         <ul>
@@ -142,8 +142,8 @@
             <p><b>Newtonovi zakoni</b> (veljajo le v galilejevskih
             opazovalnih <i>sistemih</i>):</p>
             <ol type="1">
-            <li><b>Če je vsota učinkov okolice (sil) enaka nič, telo
-            miruje ali se giblje premo in enakomerno</b> <span
+            <li><b>Če je vsota učinkov okolice (zunanjih sil) enaka nič,
+            telo miruje ali se giblje premo in enakomerno</b> <span
             class="math display">\[ \sum_{i} \vec F_i = 0 \implies \vec
             a = 0 \]</span> Bolj splošno: Če je vsota sil na telo enaka
             nič, je mogoče najti <a
@@ -579,6 +579,45 @@
             Q}{T} \]</span> <span class="math display">\[ \Delta S \geq
             \int{ \frac{\mathrm{đ} Q}{T} } \]</span></p>
             <h2 id="Krozenje">Kroženje</h2>
+            <p>Primerjava količin pri premem gibanju in kroženju
+            (večinoma lahko eno količino pretvorimo v drugo s količnikom
+            <span class="math inline">\(r\)</span>):</p>
+            </div>
+            <table>
+            <thead>
+            <tr class="header">
+            <th>premo g.</th>
+            <th>kroženje</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="odd">
+            <td><span class="math inline">\(v\)</span></td>
+            <td><span class="math inline">\(\omega\)</span></td>
+            </tr>
+            <tr class="even">
+            <td><span class="math inline">\(a\)</span></td>
+            <td><span class="math inline">\(\alpha\)</span></td>
+            </tr>
+            <tr class="odd">
+            <td><span class="math inline">\(m\)</span></td>
+            <td><span class="math inline">\(J\)</span></td>
+            </tr>
+            <tr class="even">
+            <td><span class="math inline">\(W_{k}\)</span></td>
+            <td><span class="math inline">\(W_{k, rot.}\)</span></td>
+            </tr>
+            <tr class="odd">
+            <td><span class="math inline">\(F\)</span></td>
+            <td><span class="math inline">\(M\)</span></td>
+            </tr>
+            <tr class="even">
+            <td><span class="math inline">\(G\)</span></td>
+            <td><span class="math inline">\(\Gamma\)</span></td>
+            </tr>
+            </tbody>
+            </table>
+            <div class="content">
             <p>Kot <span class="math inline">\(\phi\)</span> ni
             <i>vektor</i>, ker ne velja zamenljivost zasukov, je pa
             <i>vektor</i> njegov <i>diferencial</i> <span
@@ -637,7 +676,7 @@
             F_{Coriolis} = -2 m (\vec{\omega} \times \vec{v})
             \]</span></p>
             <div class="zakon">
-            <p>Keplerjevi zakoni:</p>
+            <p><b>Keplerjevi zakoni</b>:</p>
             <ol type="1">
             <li>Tiri planetov so <i>elipse</i>, Sonce je v gorišču.</li>
             <li>Ploščinska hitrost <i>planetov</i> je stalna.</li>
@@ -645,9 +684,9 @@
             stalno</li>
             </ol>
             </div>
-            Vztrajnostni <i>moment</i> [<span class="math inline">\(kg
-            m^2\)</span>] je porazdelitev <i>mase</i> telesa glede na os
-            vrtenja:
+            <b>Vztrajnostni <i>moment</i></b> [<span
+            class="math inline">\(kg m^2\)</span>] je porazdelitev
+            <i>mase</i> telesa glede na os vrtenja:
             <div class="izpeljava">
             <p><span class="math display">\[ W_{k, rot} = \frac{1}{2}
             \sum_i m_i \vec{v_i}^2
@@ -694,8 +733,8 @@
             t} = \frac{\vec M \vec{\d \phi}}{\d t} = \vec M \vec \omega
             \]</span> <span class="math display">\[ \vec M = J \vec
             \alpha \]</span></p>
-            Navor: <span class="math display">\[ \vec M = \vec r \times
-            \vec F = \vec r \times m \vec \alpha \vec r = J \vec
+            <b>Navor</b>: <span class="math display">\[ \vec M = \vec r
+            \times \vec F = \vec r \times m \vec \alpha \vec r = J \vec
             \alpha \]</span>
             <div class="izpeljava">
             <p><span class="math display">\[ \int \vec M \d \vec \phi =
@@ -710,9 +749,9 @@
             \phi = \frac{1}{2} J (\Delta \vec \omega)^2 \]</span> <span
             class="math display">\[ P = \frac{\d A}{\d t} = \frac{\vec M
             \d \vec \phi}{\d t} = \vec M \vec \omega \]</span></p>
-            <p>Vrtilna količina je gibalna količina porazdeljena po
-            vrtečem se telesu: <span class="math display">\[ \vec \Gamma
-            = = \sum_i \vec r_i \times \vec G_i = \vec r \times \vec G
+            <p><b>Vrtilna količina</b> je gibalna količina krožečega
+            telesa: <span class="math display">\[ \vec \Gamma = = \sum_i
+            \vec r_i \times \vec G_i = \vec r \times \vec G
                 = \int \d m \vec r \times \vec v = J \vec \omega
             \]</span> <span class="math display">\[ \vec M = \vec r
             \times \vec F = \vec r \times \frac{\d \vec G}{\d t} =
@@ -723,6 +762,13 @@
             \vec r_T \times \vec v_T \]</span> <span
             class="math display">\[ \sum \vec r^* \times \vec F_{zun} =
             \vec r^* \times \sum \vec F_{zun} \]</span></p>
+            <p>Prečna vrtilna količina (<span
+            class="math inline">\(\Gamma_{trans.}\)</span>), ki povzroča
+            tresenje pri vrtenju, je pravokotna na os vrtenja, oz. na
+            <i>vektor</i> <span class="math inline">\(\omega\)</span>.
+            Če obstaja ta prečna vrtilna količina, lahko torej celotna
+            vrtilna količina ni vzporedna kotni hitrosti. Do tega pride,
+            če težišče telesa ne leži na osi vrtenja.</p>
             <h3 id="Ubezne_hitrosti">Ubežne hitrosti</h3>
             <p>(<i>kozmične</i> hitrosti)</p>
             <b>1. ubežna hitrost</b> <span
@@ -772,8 +818,10 @@
             </colgroup>
             <tbody>
             <tr class="odd">
-            <td>napetost, prožnostni <i>modul</i>, <i>deformacija</i>
-            (?)</td>
+            <td>napetost <span
+            class="math inline">\(\frac{F}{S}\)</span>, prožnostni
+            <i>modul</i> <span class="math inline">\(k\)</span>,
+            <i>deformacija</i> (?)</td>
             <td><span class="math inline">\(\frac{\vec F}{\vec S} = k
             \frac{\vec F}{\vec S}\)</span></td>
             </tr>
@@ -796,7 +844,8 @@
             V}{V} = - K \chi \Delta p\)</span></td>
             </tr>
             <tr class="odd">
-            <td>Pasonov količik</td>
+            <td>Pasonov količik <span
+            class="math inline">\(\mu\)</span></td>
             <td><span class="math inline">\(\frac{\Delta y}{\d y}
             \frac{\Delta z}{\d z} = - \mu \frac{\Delta}{\d
             x}\)</span></td>
@@ -806,92 +855,236 @@
             <p><span class="math display">\[ K = \frac{E}{3 (1 - 2 \mu}
             \]</span> <span class="math display">\[ G = \frac{E}{2 (1 +
             \mu)} \]</span></p>
-            <p>Vzvoj (<i>torzija</i>; npr. zvijanje palice okoli njene
-            osi): <span class="math display">\[ M = - D \phi \]</span>
+            Vzvoj (<i>torzija</i>; npr. zvijanje palice okoli njene
+            osi):
+            <div class="izpeljava">
+            <p><span class="math display">\[ M = \int_0^R d \d F =
+            \int_0^R r G \frac{r \phi}{l} 2\pi r \d r
+            = G \frac{2 \pi R^4}{4 l} \phi = G \frac{\pi R^4}{4 l} \phi
+            \]</span></p>
+            </div>
+            <p><span class="math display">\[ M = - D \phi \]</span>
             <span class="math display">\[ D = \frac{1}{2} \pi G
             \frac{R_0^4}{l} \left[ \frac{N m^4}{m^2 m} = N m \right]
             \]</span></p>
             <h2 id="Nihanje">Nihanje</h2>
-            <p><span class="math display">\[ \gamma = \frac{N}{\Delta t}
-            = \frac{1}{t_0} \]</span> <span class="math display">\[
-            \omega = \frac{2 \pi}{t_0} = 2 \pi \gamma \]</span></p>
-            <p><span class="math display">\[ x(t) = A \sin (\omega t +
-            \delta) \]</span> <span class="math display">\[ v(t) =
-            \frac{\d x}{\d t} = v_0 \cos (\omega t + \delta) = \omega A
-            cos(\omega t + \delta) \]</span> <span
+            <table>
+            <colgroup>
+            <col style="width: 50%" />
+            <col style="width: 50%" />
+            </colgroup>
+            <tbody>
+            <tr class="odd">
+            <td><i>Frekvenca</i></td>
+            <td><span class="math display">\[ \gamma = \frac{N}{\Delta
+            t} = \frac{1}{t_0} \]</span></td>
+            </tr>
+            <tr class="even">
+            <td>Krožilna <i>frekvenca</i> (kotna hitrost)</td>
+            <td><span class="math display">\[ \omega = \frac{\Delta
+            \phi}{\Delta t} = \frac{2 \pi}{t_0} = 2 \pi \gamma
+            \]</span></td>
+            </tr>
+            </tbody>
+            </table>
+            <p><span class="math display">\[ x(t) = A \sin(2\pi
+            \frac{t}{t_0} + \delta) = A \sin(\omega t + \delta)
+                = A \left[ \sin(\omega t) \cos(\delta) + \cos(\omega t)
+            \sin(\delta) \right] \]</span> <span class="math display">\[
+            v(t) = \frac{\d x}{\d t} = v_0 \cos (\omega t + \delta)
+                = \omega A cos(\omega t + \delta) \]</span> <span
             class="math display">\[ a(t) = \frac{\d v}{\d t} = a_0 \sin
-            (\omega t + \delta) = - \omega^2 A \sin (\omega t + \delta)
-            = - \omega^2 x(t) \]</span></p>
+            (\omega t + \delta)
+                = - \omega^2 A \sin (\omega t + \delta) = - \omega^2
+            x(t) \]</span></p>
             <p><span class="math display">\[ F = m a = -m \omega^2 x = -
             k x \]</span> <span class="math display">\[ W = W_k + W_p =
-            \frac{1}{2} m \omega^2 \left( \cos^2 (\omega t + \delta) +
-            \sin^2 (\omega t + \delta) \right) = \frac{1}{2} m \omega^2
+            \frac{1}{2} m \omega^2 \left[ \cos^2 (\omega t + \delta) +
+            \sin^2 (\omega t + \delta) \right] = \frac{1}{2} m \omega^2
             \]</span></p>
-            <p>Matematično nihalo: <span class="math display">\[
-            \omega_0 = \sqrt{\frac{g}{l}} \]</span></p>
-            <p>Vzmetno nihalo: <span class="math display">\[ \omega_0 =
-            \sqrt{\frac{k}{m}} \]</span></p>
-            <p>Vzvojno nihalo: <span class="math display">\[ \omega_0 =
-            \sqrt{\frac{D}{J}} \]</span></p>
+            Matematično nihalo:
+            <div class="izpeljava">
+            <p><span class="math display">\[ M = J \alpha \]</span>
+            <span class="math display">\[ - m g l \sin(\phi) = m l^2
+            \frac{\d^2 \phi}{\d t^2} \\
+                \implies g \sin(\phi) = l \frac{\d^2 \phi}{\d t^2} \\
+                \implies \frac{\d^2 \phi}{\d t^2} = - \frac{g}{l}
+            \sin(\phi) \]</span></p>
+            </div>
+            <p><span class="math display">\[ \omega^2 = \frac{g}{l}
+            \]</span></p>
+            <p>Vzmetno nihalo: <span class="math display">\[ - k x = m
+            \alpha = \frac{\d^2 x}{\d t^2} \]</span> <span
+            class="math display">\[ \omega^2 = \frac{k}{m} =
+            \frac{\mathrm{prožnost}}{\mathrm{vztrajnost}} \]</span></p>
+            <p>Vzvojno (<i>torzijsko</i>) / sučno nihalo: <span
+            class="math display">\[ - D \phi = M = J \alpha = J
+            \frac{\d^2 \phi}{\d t^2} \]</span> <span
+            class="math display">\[ \omega^2 = \frac{D}{J} =
+            \frac{\mathrm{prožnost}}{\mathrm{vztrajnost}} \]</span></p>
+            <i>Fizikalno</i> nihalo (<i>masa</i> nihala ni točkasta,
+            ampak porazdeljena po dolžini nihala):
+            <div class="izpeljava">
+            <p><span class="math display">\[ M = J \alpha \]</span>
+            <span class="math display">\[ - mg d^* \sin(\phi) = J
+            \frac{\d^2 \phi}{\d t^2} \]</span></p>
+            </div>
+            <p><span class="math display">\[ \omega^2 = \frac{m g d^*
+            }{J} \]</span></p>
             <h3 id="Duseno_nihanje">Dušeno nihanje</h3>
-            <p><span class="math display">\[ W = W_0 \mathrm{e}^{-2
-            \beta t} \]</span> <span class="math display">\[ \omega
-            &#39;^2 = \omega^2 - \beta^2 \]</span></p>
+            <p><span class="math display">\[ x = A e^{-\beta t}
+            \sin(\omega&#39; t + \delta) \]</span> <span
+            class="math display">\[ W = W_0 \mathrm{e}^{-2 \beta t}
+            \]</span></p>
+            <p><span class="math display">\[ \omega &#39;^2 = \omega^2 -
+            \beta^2 \]</span></p>
             <ul>
-            <li>nad<i>kritično</i> dušenje: <span
-            class="math inline">\(\beta &gt; \omega\)</span> <span
-            class="math display">\[ s = s_0 \mathrm{e}^{- \beta t} \cosh
-            (\omega t + \delta) \]</span></li>
-            <li><i>kritično</i> dušenje: <span
-            class="math inline">\(\beta = \omega\)</span> <span
-            class="math display">\[ s = s_0 \mathrm{e}^{- \beta t} + s_2
+            <li><b><i>nadkritično</i> dušenje</b>: nihalo se počasi –
+            tem počasneje tem večje je dušenje – vrne v ravnovesno lego
+            <span class="math display">\[ \beta &gt; \omega \]</span>
+            <span class="math display">\[ x = x_0 \mathrm{e}^{- \beta t}
+            \cosh (\omega t + \delta) \]</span></li>
+            <li><b><i>kritično</i> dušenje</b>: nihalo se vrne v
+            ravnovesno lego v najhitrejšem možnem času <span
+            class="math display">\[ \beta = \omega \]</span> <span
+            class="math display">\[ x = x_0 \mathrm{e}^{- \beta t} + x_2
             t \mathrm{e}^{- \beta t} \]</span></li>
-            <li>pod<i>kritično</i> dušenje: <span
-            class="math inline">\(\beta &lt; \omega\)</span> <span
-            class="math display">\[ s = s_0 \mathrm{e}^{- \beta t} \cos
-            (\omega t + \delta) \]</span></li>
+            <li><b><i>podkritično</i> dušenje</b>: nihanje se sčasoma
+            ustavi, a šele po tem ko še večkrat prečka ravnovesno lego
+            <span class="math display">\[ \beta &lt; \omega \]</span>
+            <span class="math display">\[ x = x_0 \mathrm{e}^{- \beta t}
+            \cos (\omega t + \delta) \]</span></li>
             </ul>
             <h3 id="Vsiljeno_nihanje">Vsiljeno nihanje</h3>
+            <table>
+            <thead>
+            <tr class="header">
+            <th></th>
+            <th><span class="math inline">\(x_0\)</span></th>
+            <th><span class="math inline">\(\delta\)</span></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="odd">
+            <td><span class="math inline">\(\omega_v &lt;&lt;
+            \omega_0\)</span></td>
+            <td><span class="math inline">\(\to 1\)</span></td>
+            <td>0</td>
+            </tr>
+            <tr class="even">
+            <td><span class="math inline">\(\omega_v \approx
+            \omega_0\)</span></td>
+            <td>&gt;&gt; 1</td>
+            <td><span class="math inline">\(\pi / 2\)</span></td>
+            </tr>
+            <tr class="odd">
+            <td><span class="math inline">\(\omega_v &gt;&gt;
+            \omega_0\)</span></td>
+            <td><span class="math inline">\(\to 0\)</span></td>
+            <td><span class="math inline">\(\pi\)</span></td>
+            </tr>
+            </tbody>
+            </table>
             <p><span class="math display">\[ \tan \delta = \frac{2 \beta
             \omega}{\omega_0^2 - \omega^2} \]</span></p>
             <h2 id="Tekocine">Tekočine</h2>
-            <p>Tlak [<span class="math inline">\(\frac{N}{m^2} =
+            <ul>
+            <li>kapljevina: vezan <i>sistem</i>; <span
+            class="math inline">\(W_p + W_k &lt; 0\)</span>; <span
+            class="math inline">\(|W_p| &gt; |W_k|\)</span></li>
+            <li>plin: prost <i>sistem</i>; <span
+            class="math inline">\(W_p + W_k &gt; 0\)</span>; <span
+            class="math inline">\(W_p \approx 0\)</span>; <span
+            class="math inline">\(|W_p| &lt;&lt; |W_k|\)</span></li>
+            </ul>
+            <p><b>Tlak</b> [<span class="math inline">\(\frac{N}{m^2} =
             Pa\)</span>]: <span class="math display">\[ p = \frac{\d
             F}{\d S} \]</span></p>
-            <p><i>Hidravlika</i>: <span class="math display">\[
-            \frac{F_2}{F_1} = \frac{S_2}{S_1} \]</span></p>
-            <p>Vzgon – nasprotno enak teži izpodrinjene tekočine: <span
-            class="math display">\[ \Delta p = \rho  g h \]</span> <span
-            class="math display">\[ \vec F_{vzg} = \int p_{hidrostat.}
-            \d \vec S \]</span></p>
-            <p>Bernoullijeva enačba: <span class="math display">\[
-            A_{tek.} = - \Delta p V = \Delta W_k + \Delta W_pg = \rho V
-            \Delta (\frac{v_2}{2} + \rho V g \Delta h \]</span> <span
-            class="math display">\[ \frac{1}{2} \rho v_1^2 + \rho g h_1
-            + p_1 = stalno \]</span></p>
-            <p><span class="math display">\[ \frac{S_1}{S_2} =
-            \frac{v_1}{v_2} \]</span></p>
-            <p><i>Gradient</i> hitrosti zaradi strižnih sil: $$ = </p>
+            <p><b><i>Hidravlika</i></b>: na eni strani imamo ozko cev,
+            kjer je potrebna majhna sila, da na strani široke cevi
+            zagotovimo veliko silo; vendar dela opravimo enako, ker
+            <span class="math inline">\(A =
+            -\ p \Delta V\)</span> in na obeh straneh prostornino enako
+            spremenimo, ker moramo na ožji strani <i>bat</i> potisniti
+            dlje kot se premakne na širši strani. <span
+            class="math display">\[ \frac{F_2}{F_1} = \frac{S_2}{S_1}
+            \]</span></p>
+            <p><b>Vzgon</b> – nasprotno enak teži izpodrinjene tekočine:
+            <span class="math display">\[ \Delta p = \rho_t  g h
+            \]</span> <span class="math display">\[ \vec F_{vzg} = \int
+            p_{hidrostat.} \d \vec S \]</span> <span
+            class="math display">\[ F_{vzg.} = \rho_{i. t.} V_{i. t.} g
+            \]</span></p>
+            <p><b>Površinska napetost</b>: <i>Molekule</i> gladine so
+            manj vezane, <span class="math inline">\(W_{p, gladina} &gt;
+            W_{p, not.}\)</span>, ker imajo okoli sebe manj (<span
+            class="math inline">\(\approx 1/2\)</span>) sosednjih
+            <i>molekul</i>, ki bi jih vezale nase. Z višanjem
+            <i>temperature</i> se površinska napetost še manjša (prehod
+            v nevezan plin).</p>
+            <h3 id="Tok">Tok</h3>
+            <p>Židkost (<i>viskoznost</i>) [<span
+            class="math inline">\(\frac{N s}{m^2} = \frac{kg}{ms} = {Pa}
+            s\)</span>] <span class="math inline">\(\eta\)</span> je
+            kako težko tekočina teče. Opredeljena je (za newtonske
+            tekočine) kot razmerje med strižno napetostjo in strižno
+            hitrostjo.</p>
+            <p>Če <span class="math inline">\(\eta \to 0 \implies {Re}
+            \to \infty\)</span>, tekočino imenujemo
+            <i>superfluid</i>.</p>
             <p>Upor:</p>
             <ul>
-            <li><i>linerani</i> zakon (Stokes): <span
+            <li><i>linerani</i> zakon upora (Stokes): <span
             class="math inline">\(F_u^{(1)} = 6 \pi R \eta
             v\)</span></li>
-            <li>kvadratni zakon: <span class="math inline">\(F_u^{(2)} =
-            \frac{1}{2} \rho v^2 \pi R^2 C_u\)</span></li>
+            <li>kvadratni zakon upora: <span
+            class="math inline">\(F_u^{(2)} = \frac{1}{2} \rho v^2 \pi
+            R^2 C_u\)</span></li>
             </ul>
-            <h3 id="Laminarni_in_turbolentni_tok"><i>Laminarni</i> in
-            <i>turbolentni</i> tok</h3>
+            <div class="izpeljava">
+            <p><span class="math display">\[ \frac{F_u^{(1)}}{F_u^{(2)}}
+            = \frac{1/2 \pi R^2 \rho v^2 C_u}{6 \pi R \eta v}
+                = \frac{C_u \rho}{12 \eta} R v \]</span></p>
+            </div>
             <p>Reynoldsovo število: <span class="math display">\[ {Re} =
-            \frac{\rho}{\eta} 2R v \]</span></p>
+            \frac{\rho}{\eta} 2 R v \]</span></p>
             <ul>
             <li><span class="math inline">\({Re} &lt; 0.1\)</span>:
             <i>laminaren</i> tok, <i>linearni</i> zakon upora</li>
-            <li><span class="math inline">\(0,1 &lt; {Re} &lt;
+            <li><span class="math inline">\(10^{-1} &lt; {Re} &lt;
             10^3\)</span>: mešani tok</li>
             <li><span class="math inline">\(10^3 &lt; {Re}\)</span>:
             <i>turbolentni</i> tok, kvadratni zakon upora</li>
             </ul>
+            <p>Značilnosti popolne (<i>idealne</i>) tekočine:</p>
+            <ul>
+            <li>ni <i>disipativnih</i> sil</li>
+            <li><i>staionaren</i> (<i>laminaren</i>) tok</li>
+            <li><span class="math inline">\(A = \Delta W_k + \Delta
+            W_p\)</span></li>
+            <li>nestisljiva (<span class="math inline">\(V_1 = V_2 =
+            V\)</span>)</li>
+            </ul>
+            <p><span class="math display">\[ \d \Phi_V = \frac{\d V}{\d
+            t} = \frac{v \d t \d S}{\d t} = \vec v \d \vec S \]</span>
+            <span class="math display">\[ \Phi_V = \int \vec v \d \vec S
+            = \bar{v} S \]</span></p>
+            <p><b>Bernoullijeva enačba</b> (je popolna za popolno
+            tekočino, sicer pa je dober približek): <span
+            class="math display">\[ A_{tek.} = - \Delta p V = \Delta W_k
+            + \Delta W_pg
+                = \rho V \Delta (\frac{v_2}{2} + \rho V g \Delta h
+            \]</span> <span class="math display">\[ \frac{1}{2} \rho
+            v_1^2 + \rho g h_1 + p_1 = \mathrm{stalno} \]</span></p>
+            <p><span class="math display">\[ \frac{S_1}{S_2} =
+            \frac{v_1}{v_2} \]</span></p>
+            <p><i>Gradient</i> hitrosti zaradi strižnih sil (glej
+            strižne <i>deformacije</i>): Tekočina ob steni cevi miruje,
+            od stene proti sredini toka pa hitrost narašča – večja kot
+            je židkost (<i>viskoznost</i>) <span
+            class="math inline">\(\eta\)</span>, hitreje narašča. <span
+            class="math display">\[ \frac{F}{S} = \eta \frac{\d v_y}{\d
+            x} \]</span></p>
             <h2 id="Elektrika"><i>Elektrika</i></h2>
             <p>V <i>mikrosvetu</i> je težnost zanemarljiva v primerjavi
             z <i>električno</i> silo.</p>

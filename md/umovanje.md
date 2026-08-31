@@ -1,6 +1,6 @@
 ---
 title: Umovanje
-date: 2026-08-23
+date: 2026-08-28
 description: Osebna razmišljanja
 keywords: Janez Pavel Žebovec, razmišljanje, blog
 ---
@@ -70,6 +70,13 @@ Njihovo najbolj priljubljeno orodje je uničevanje ugleda, veljave
 utemljevat, kajti ljudje jih bodo poslušali kljub temu. Če jih kdo ujame pri
 neustrezni rabi teh oznak, priredijo jezik svojim potreba – pomene spremenijo
 ali razširijo do neprepoznavnosti).
+
+> Hard times create strong men,
+> strong men create good times,
+> good times create weak men,
+> and weak men create hard times.
+>
+<cite>G. Michael Hopf: *postapokaliptičen* roman Those Who Remain (2016)</cite>
 
 ## Jezik
 

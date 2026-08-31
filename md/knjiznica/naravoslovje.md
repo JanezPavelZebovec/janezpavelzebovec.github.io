@@ -1,6 +1,6 @@
 ---
 title: Naravoslovje
-date: 2026-08-24
+date: 2026-08-29
 description: Naravni zakoni
 keywords: naravoslovje, fizika
 author: Janez Pavel Žebovec
@@ -48,7 +48,7 @@ Sila je učinek/vpliv okolice, teles v okolici na drugo telo. V [galilejevskih (
 <div class="zakon">
 **Newtonovi zakoni** (veljajo le v galilejevskih opazovalnih *sistemih*):
 
-1. **Če je vsota učinkov okolice (sil) enaka nič, telo miruje ali se giblje premo in enakomerno**
+1. **Če je vsota učinkov okolice (zunanjih sil) enaka nič, telo miruje ali se giblje premo in enakomerno**
     $$ \sum_{i} \vec F_i = 0 \implies \vec a = 0 $$
     Bolj splošno: Če je vsota sil na telo enaka nič, je mogoče najti [opazovalni *sistem*](#Opazovalni sistemi), v katerem se telo giblje premo in enakomerno.
 2. **Pospešek je sorazmeren s silo in ima smer sile** (vzročna zveza: vzrok sila $\to$ posledica gibanje)
@@ -310,6 +310,22 @@ $$ \Delta S \geq \int{ \frac{\mathrm{đ} Q}{T} } $$
 
 ## Kroženje
 
+Primerjava količin pri premem gibanju in kroženju (večinoma lahko eno količino
+pretvorimo v drugo s količnikom $r$):
+
+</div>
+
+| premo g. | kroženje |
+| --- | --- |
+| $v$ | $\omega$ |
+| $a$ | $\alpha$ |
+| $m$ | $J$ |
+| $W_{k}$ | $W_{k, rot.}$ |
+| $F$ | $M$ |
+| $G$ | $\Gamma$ |
+
+<div class="content">
+
 Kot $\phi$ ni *vektor*, ker ne velja zamenljivost zasukov, je pa *vektor* njegov
 *diferencial* $\d \vec{\phi}$ (to si lahko predstavljamo tako, da je premik pri
 zasuku $\d \phi$ premi, ne ukrivljen).
@@ -338,7 +354,7 @@ Coriolisova sila:
 $$ \vec F_{Coriolis} = -2 m (\vec{\omega} \times \vec{v}) $$
 
 <div class="zakon">
-Keplerjevi zakoni:
+**Keplerjevi zakoni**:
 
 1. Tiri planetov so *elipse*, Sonce je v gorišču.
 2. Ploščinska hitrost *planetov* je stalna.
@@ -346,7 +362,7 @@ Keplerjevi zakoni:
 
 </div>
 
-Vztrajnostni *moment* [$kg m^2$] je porazdelitev *mase* telesa glede na os vrtenja:
+**Vztrajnostni *moment*** [$kg m^2$] je porazdelitev *mase* telesa glede na os vrtenja:
 <div class="izpeljava">
 $$ W_{k, rot} = \frac{1}{2} \sum_i m_i \vec{v_i}^2
 = \frac{1}{2} \int \d m \vec{v}^2
@@ -386,7 +402,7 @@ $$ A = \Delta W_k = \frac{1}{2} J (\Delta \omega)^2 = \int \vec M \vec{\d \phi} 
 $$ P = \frac{\d A}{\d t} = \frac{\vec M \vec{\d \phi}}{\d t} = \vec M \vec \omega $$
 $$ \vec M = J \vec \alpha $$
 
-Navor:
+**Navor**:
 $$ \vec M = \vec r \times \vec F = \vec r \times m \vec \alpha \vec r = J \vec
 \alpha $$
 <div class="izpeljava">
@@ -399,13 +415,18 @@ J \int \frac{\d \vec \omega}{\vec \omega} = \frac{1}{2} J \omega^2
 $$ A = \int \vec M \d \vec \phi = \frac{1}{2} J (\Delta \vec \omega)^2 $$
 $$ P = \frac{\d A}{\d t} = \frac{\vec M \d \vec \phi}{\d t} = \vec M \vec \omega $$
 
-Vrtilna količina je gibalna količina porazdeljena po vrtečem se telesu:
+**Vrtilna količina** je gibalna količina krožečega telesa:
 $$ \vec \Gamma = = \sum_i \vec r_i \times \vec G_i = \vec r \times \vec G
     = \int \d m \vec r \times \vec v = J \vec \omega $$
 $$ \vec M = \vec r \times \vec F = \vec r \times \frac{\d \vec G}{\d t} = \frac{\d \vec \Gamma}{\d t} $$
 $$ \vec \Gamma = \vec \Gamma_{tirna} + \vec \Gamma_{lastna}^* $$
 $$ \vec \Gamma_{tirna}^* = \int \d m \vec r_T \times \vec v_T $$
 $$ \sum \vec r^* \times \vec F_{zun} = \vec r^* \times \sum \vec F_{zun} $$
+
+Prečna vrtilna količina ($\Gamma_{trans.}$), ki povzroča tresenje pri vrtenju,
+je pravokotna na os vrtenja, oz. na *vektor* $\omega$. Če obstaja ta prečna
+vrtilna količina, lahko torej celotna vrtilna količina ni vzporedna kotni
+hitrosti. Do tega pride, če težišče telesa ne leži na osi vrtenja.
 
 ### Ubežne hitrosti
 (*kozmične* hitrosti)
@@ -444,90 +465,165 @@ kjer je $v_0$ hitrost, ki jo že imamo zaradi kroženja Zemlje
 
 | | |
 | --- | --- |
-| napetost, prožnostni *modul*, *deformacija* (?) | $\frac{\vec F}{\vec S} = k \frac{\vec F}{\vec S}$ |
+| napetost $\frac{F}{S}$, prožnostni *modul* $k$, *deformacija* (?) | $\frac{\vec F}{\vec S} = k \frac{\vec F}{\vec S}$ |
 | nateg (prožnost E [$\frac{N}{m^2}$)| $\frac{F_x}{S_x} = E \frac{\Delta x}{\d x}$ |
 | strižna *deformacija* | $\frac{F_y}{S_x} = G \frac{\Delta y}{\d x}$ |
 | vsestransko stiskanje (stisljivost $\chi$ [$\frac{m^2}{N}$]) | $\frac{F}{S} = K \frac{\Delta V}{V} = - K \chi \Delta p$ |
-| Pasonov količik | $\frac{\Delta y}{\d y} \frac{\Delta z}{\d z} = - \mu \frac{\Delta}{\d x}$ |
+| Pasonov količik $\mu$ | $\frac{\Delta y}{\d y} \frac{\Delta z}{\d z} = - \mu \frac{\Delta}{\d x}$ |
 
 $$ K = \frac{E}{3 (1 - 2 \mu} $$
 $$ G = \frac{E}{2 (1 + \mu)} $$
 
 Vzvoj (*torzija*; npr. zvijanje palice okoli njene osi):
+<div class="izpeljava">
+$$ M = \int_0^R d \d F = \int_0^R r G \frac{r \phi}{l} 2\pi r \d r
+= G \frac{2 \pi R^4}{4 l} \phi = G \frac{\pi R^4}{4 l} \phi $$
+</div>
 $$ M = - D \phi $$
 $$ D = \frac{1}{2} \pi G \frac{R_0^4}{l} \left[ \frac{N m^4}{m^2 m} = N m \right] $$
 
 ## Nihanje
 
-$$ \gamma = \frac{N}{\Delta t} = \frac{1}{t_0} $$
-$$ \omega = \frac{2 \pi}{t_0} = 2 \pi \gamma $$
+| | |
+| --- | --- |
+| *Frekvenca*                           | $$ \gamma = \frac{N}{\Delta t} = \frac{1}{t_0} $$ |
+| Krožilna *frekvenca* (kotna hitrost)  | $$ \omega = \frac{\Delta \phi}{\Delta t} = \frac{2 \pi}{t_0} = 2 \pi \gamma $$ |
 
-$$ x(t) = A \sin (\omega t + \delta) $$
-$$ v(t) = \frac{\d x}{\d t} = v_0 \cos (\omega t + \delta) = \omega A cos(\omega t + \delta) $$
-$$ a(t) = \frac{\d v}{\d t} = a_0 \sin (\omega t + \delta) = - \omega^2 A \sin (\omega t + \delta) = - \omega^2 x(t) $$
+$$ x(t) = A \sin(2\pi \frac{t}{t_0} + \delta) = A \sin(\omega t + \delta)
+    = A \left[ \sin(\omega t) \cos(\delta) + \cos(\omega t) \sin(\delta) \right] $$
+$$ v(t) = \frac{\d x}{\d t} = v_0 \cos (\omega t + \delta)
+    = \omega A cos(\omega t + \delta) $$
+$$ a(t) = \frac{\d v}{\d t} = a_0 \sin (\omega t + \delta)
+    = - \omega^2 A \sin (\omega t + \delta) = - \omega^2 x(t) $$
 
 $$ F = m a = -m \omega^2 x = - k x $$
-$$ W = W_k + W_p = \frac{1}{2} m \omega^2 \left( \cos^2 (\omega t + \delta) + \sin^2 (\omega t + \delta) \right) = \frac{1}{2} m \omega^2 $$
+$$ W = W_k + W_p = \frac{1}{2} m \omega^2 \left[ \cos^2 (\omega t + \delta) + \sin^2 (\omega t + \delta) \right] = \frac{1}{2} m \omega^2 $$
 
 Matematično nihalo:
-$$ \omega_0 = \sqrt{\frac{g}{l}} $$
+<div class="izpeljava">
+$$ M = J \alpha $$
+$$ - m g l \sin(\phi) = m l^2 \frac{\d^2 \phi}{\d t^2} \\
+    \implies g \sin(\phi) = l \frac{\d^2 \phi}{\d t^2} \\
+    \implies \frac{\d^2 \phi}{\d t^2} = - \frac{g}{l} \sin(\phi) $$
+</div>
+$$ \omega^2 = \frac{g}{l} $$
 
 Vzmetno nihalo:
-$$ \omega_0 = \sqrt{\frac{k}{m}} $$
+$$ - k x = m \alpha = \frac{\d^2 x}{\d t^2} $$
+$$ \omega^2 = \frac{k}{m} = \frac{\mathrm{prožnost}}{\mathrm{vztrajnost}} $$
 
-Vzvojno nihalo:
-$$ \omega_0 = \sqrt{\frac{D}{J}} $$
+Vzvojno (*torzijsko*) / sučno nihalo:
+$$ - D \phi = M = J \alpha = J \frac{\d^2 \phi}{\d t^2} $$
+$$ \omega^2 = \frac{D}{J} = \frac{\mathrm{prožnost}}{\mathrm{vztrajnost}} $$
+
+*Fizikalno* nihalo
+(*masa* nihala ni točkasta, ampak porazdeljena po dolžini nihala):
+<div class="izpeljava">
+$$ M = J \alpha $$
+$$ - mg d^* \sin(\phi) = J \frac{\d^2 \phi}{\d t^2} $$
+</div>
+$$ \omega^2 = \frac{m g d^* }{J} $$
 
 ### Dušeno nihanje
 
+$$ x = A e^{-\beta t} \sin(\omega' t + \delta) $$
 $$ W = W_0 \mathrm{e}^{-2 \beta t} $$
+
 $$ \omega '^2 = \omega^2 - \beta^2 $$
 
-- nad*kritično* dušenje: $\beta > \omega$
-    $$ s = s_0 \mathrm{e}^{- \beta t} \cosh (\omega t + \delta) $$
-- *kritično* dušenje: $\beta = \omega$
-    $$ s = s_0 \mathrm{e}^{- \beta t} + s_2 t \mathrm{e}^{- \beta t} $$
-- pod*kritično* dušenje: $\beta < \omega$
-    $$ s = s_0 \mathrm{e}^{- \beta t} \cos (\omega t + \delta) $$
+- ***nadkritično* dušenje**: nihalo se počasi – tem počasneje tem večje je dušenje –
+  vrne v ravnovesno lego
+    $$ \beta > \omega $$
+    $$ x = x_0 \mathrm{e}^{- \beta t} \cosh (\omega t + \delta) $$
+- ***kritično* dušenje**: nihalo se vrne v ravnovesno lego v najhitrejšem možnem
+  času
+    $$ \beta = \omega $$
+    $$ x = x_0 \mathrm{e}^{- \beta t} + x_2 t \mathrm{e}^{- \beta t} $$
+- ***podkritično* dušenje**: nihanje se sčasoma ustavi, a šele po tem ko še večkrat
+  prečka ravnovesno lego
+    $$ \beta < \omega $$
+    $$ x = x_0 \mathrm{e}^{- \beta t} \cos (\omega t + \delta) $$
 
 ### Vsiljeno nihanje
+
+| | $x_0$ | $\delta$ |
+| --- | --- | --- |
+| $\omega_v << \omega_0$ | $\to 1$ | 0 |
+| $\omega_v \approx \omega_0$ | >> 1 | $\pi / 2$ |
+| $\omega_v >> \omega_0$ | $\to 0$ | $\pi$ |
 
 $$ \tan \delta = \frac{2 \beta \omega}{\omega_0^2 - \omega^2} $$
 
 ## Tekočine
 
-Tlak [$\frac{N}{m^2} = Pa$]:
+- kapljevina: vezan *sistem*; $W_p + W_k < 0$; $|W_p| > |W_k|$
+- plin: prost *sistem*; $W_p + W_k > 0$; $W_p \approx 0$; $|W_p| << |W_k|$
+
+**Tlak** [$\frac{N}{m^2} = Pa$]:
 $$ p = \frac{\d F}{\d S} $$
 
-*Hidravlika*:
+***Hidravlika***: na eni strani imamo ozko cev, kjer je potrebna majhna sila, da na
+strani široke cevi zagotovimo veliko silo; vendar dela opravimo enako, ker $A =
+-\ p \Delta V$ in na obeh straneh prostornino enako spremenimo, ker moramo na
+ožji strani *bat* potisniti dlje kot se premakne na širši strani.
 $$ \frac{F_2}{F_1} = \frac{S_2}{S_1} $$
 
-Vzgon – nasprotno enak teži izpodrinjene tekočine:
-$$ \Delta p = \rho  g h $$
+**Vzgon** – nasprotno enak teži izpodrinjene tekočine:
+$$ \Delta p = \rho_t  g h $$
 $$ \vec F_{vzg} = \int p_{hidrostat.} \d \vec S $$
+$$ F_{vzg.} = \rho_{i. t.} V_{i. t.} g $$
 
-Bernoullijeva enačba:
-$$ A_{tek.} = - \Delta p V = \Delta W_k + \Delta W_pg = \rho V \Delta (\frac{v_2}{2} + \rho V g \Delta h $$
-$$ \frac{1}{2} \rho v_1^2 + \rho g h_1 + p_1 = stalno $$
+**Površinska napetost**: *Molekule* gladine so manj vezane, $W_{p, gladina} >
+W_{p, not.}$, ker imajo okoli sebe manj ($\approx 1/2$) sosednjih *molekul*, ki
+bi jih vezale nase. Z višanjem *temperature* se površinska napetost še manjša
+(prehod v nevezan plin).
 
-$$ \frac{S_1}{S_2} = \frac{v_1}{v_2} $$
+### Tok
 
-*Gradient* hitrosti zaradi strižnih sil:
-$$ \frac{F}{S} = \eta \frac{\d v_y}{\d x}
+Židkost (*viskoznost*) [$\frac{N s}{m^2} = \frac{kg}{ms} = {Pa} s$] $\eta$ je
+kako težko tekočina teče. Opredeljena je (za newtonske tekočine) kot razmerje
+med strižno napetostjo in strižno hitrostjo.
+
+Če $\eta \to 0 \implies {Re} \to \infty$, tekočino imenujemo *superfluid*.
 
 Upor:
 
-- *linerani* zakon (Stokes): $F_u^{(1)} = 6 \pi R \eta v$
-- kvadratni zakon: $F_u^{(2)} = \frac{1}{2} \rho v^2 \pi R^2 C_u$
+- *linerani* zakon upora (Stokes): $F_u^{(1)} = 6 \pi R \eta v$
+- kvadratni zakon upora: $F_u^{(2)} = \frac{1}{2} \rho v^2 \pi R^2 C_u$
 
-### *Laminarni* in *turbolentni* tok
+<div class="izpeljava">
+$$ \frac{F_u^{(1)}}{F_u^{(2)}} = \frac{1/2 \pi R^2 \rho v^2 C_u}{6 \pi R \eta v}
+    = \frac{C_u \rho}{12 \eta} R v $$
+</div>
 
 Reynoldsovo število:
-$$ {Re} = \frac{\rho}{\eta} 2R v $$
+$$ {Re} = \frac{\rho}{\eta} 2 R v $$
 
 - ${Re} < 0.1$: *laminaren* tok, *linearni* zakon upora
-- $0,1 < {Re} < 10^3$: mešani tok
+- $10^{-1} < {Re} < 10^3$: mešani tok
 - $10^3 < {Re}$: *turbolentni* tok, kvadratni zakon upora
+
+Značilnosti popolne (*idealne*) tekočine:
+
+- ni *disipativnih* sil
+- *staionaren* (*laminaren*) tok
+- $A = \Delta W_k + \Delta W_p$
+- nestisljiva ($V_1 = V_2 = V$)
+
+$$ \d \Phi_V = \frac{\d V}{\d t} = \frac{v \d t \d S}{\d t} = \vec v \d \vec S $$
+$$ \Phi_V = \int \vec v \d \vec S = \bar{v} S $$
+
+**Bernoullijeva enačba** (je popolna za popolno tekočino, sicer pa je dober približek):
+$$ A_{tek.} = - \Delta p V = \Delta W_k + \Delta W_pg
+    = \rho V \Delta (\frac{v_2}{2} + \rho V g \Delta h $$
+$$ \frac{1}{2} \rho v_1^2 + \rho g h_1 + p_1 = \mathrm{stalno} $$
+
+$$ \frac{S_1}{S_2} = \frac{v_1}{v_2} $$
+
+*Gradient* hitrosti zaradi strižnih sil (glej strižne *deformacije*):
+Tekočina ob steni cevi miruje, od stene proti sredini toka pa hitrost narašča –
+večja kot je židkost (*viskoznost*) $\eta$, hitreje narašča.
+$$ \frac{F}{S} = \eta \frac{\d v_y}{\d x} $$
 
 ## *Elektrika*
 

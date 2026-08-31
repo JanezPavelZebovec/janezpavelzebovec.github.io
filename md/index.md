@@ -40,7 +40,7 @@ vsi moji javni spletni računi – tako družabni, kot tudi *projektni*.
 - [Umovanje](/umovanje) – skupek *citatov*, podatkov oz. mojih razmišljanj
   predvsem o trenutnih  *političnih* vprašanjih <small>(stran je še precej v
   nastajanju, *teme* so obravnavano zelo površno in najverjetneje tudi
-  enostransko
+  enostransko)</small>
 
 Tu je tudi moja [Knjižnica](/knjiznica/), kjer so zbrana nekatera
 znanja/področja mojih zanimanj ali izobraževanja, torej zadeve, ki si jih
