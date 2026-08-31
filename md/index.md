@@ -1,6 +1,6 @@
 ---
 title: Janez Pavel Žebovec
-date: 2026-08-25
+date: 2026-08-31
 description: Osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran, osebno spletišče
 ---
@@ -50,20 +50,21 @@ načeloma lahko preberete tudi drugje.
 
 ## Splet
 
-- spletni poštni naslov:
-  [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net)
-  <small>(nekdanji naslov, ki ga umikam iz rabe:
-  [janezpavel.zebovec@gmail.com](mailto:janezpavel.zebovec@gmail.com))</small>
-- [Matrix](https://matrix.org/):
-  [@janezpavelzebovec:matrix.org](https://matrix.to/#/@janezpavelzebovec:matrix.org)
-  (moje prednostno omrežje za klepete)
-- [Discord](https://discord.com/):
-  [janezpavel](https://discordapp.com/users/789883011084058666) (trenutno
-  najbolj uporabljano omrežje, vendar bi ga bilo lepo zapustiti in preiti
-  popolnoma na Matrix)
-- [Telegram](telegram.org): [@janezpavelzebovec](https://t.me/janezpavelzebovec)
+### Stiki
 
-Še nekatera družbena omrežja, kjer sem sicer registriram, a jih ne uporabljam:
+- [osebno](mailto:osebno@janezpavelzebovec.net)@[janezpavelzebovec.net](https://janezpavelzebovec.net/)
+- [janezpavel.zebovec](mailto:janezpavel.zebovec@gmail.com)@[gmail.com](https://mail.google.com/) (nekdanji naslov, ki ga umikam iz rabe)
+- [janezpavelzebovec](https://matrix.to/#/@janezpavelzebovec:matrix.org)@[matrix.org](https://matrix.org/)
+  (*protokol* [Matrix](https://matrix.org/); moje prednostno omrežje za klepete)
+- [janezpavel](https://discordapp.com/users/789883011084058666)@[Discord](https://discord.com/)
+
+Sledečih stikov ne uporabljam, čeprav obstajajo:
+
+- [janezpavel.zebovec](xmpp:janezpavel.zebovec@xmpp.is)@[xmpp.is](https://xmpp.is/) (*protokol* [XMPP](https://xmpp.org/))
+- [janezpavelzebovec](https://t.me/janezpavelzebovec)@[Telegram](telegram.org): 
+- @[Signal](https://signal.org/)
+
+Družbena omrežja, kjer sem sicer registriram, a jih ne uporabljam (kaj dosti):
 
 - [Facebook](https://www.facebook.com/janezpavel.zebovec)
 - [Twitter](https://x.com/JanezPavelZ)
