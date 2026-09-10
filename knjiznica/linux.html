@@ -32,7 +32,7 @@ sistem"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/linux/">linux</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-08-04">2026-08-04</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-08">2026-09-08</time></p>
     </header>
     <nav>
         <ul>
@@ -92,8 +92,16 @@ sistem"/>
         </ul></li>
         <li><a href="#Streznik" id="toc-Streznik">Strežnik</a>
         <ul>
+        <li><a href="#SSH" id="toc-SSH">SSH</a></li>
+        <li><a href="#SCP" id="toc-SCP">SCP</a></li>
+        <li><a href="#Hetzner" id="toc-Hetzner">Hetzner</a></li>
         <li><a href="#Lokalni_streznik"
         id="toc-Lokalni_streznik"><i>Lokalni</i> strežnik</a></li>
+        </ul></li>
+        <li><a href="#Podatkovne_zbirke"
+        id="toc-Podatkovne_zbirke">Podatkovne zbirke</a>
+        <ul>
+        <li><a href="#MariaDB" id="toc-MariaDB">MariaDB</a></li>
         </ul></li>
         <li><a href="#Programi" id="toc-Programi">Programi</a>
         <ul>
@@ -673,7 +681,32 @@ sistem"/>
             ali od zadnje objave?)</li>
             </ul>
             <h2 id="Streznik">Strežnik</h2>
-            <p>Sinhronizacija s strežnikom (npr. pri Hetznerju):</p>
+            <h3 id="SSH">SSH</h3>
+            <p>Do strežnika v lokalnem omrežju dostopaš z
+            <code>ssh up_ime@ip</code>, po čemer moraš vnesti še geslo.
+            Povezavo SSH prekineš z <code>exit</code>.</p>
+            <p>Za olajšam dostop na osebnem računalniku:</p>
+            <ul>
+            <li><code>ssh-keygen</code> – začni ustvarjanje para ključev
+            SSH (zasebni in javni)</li>
+            <li><code>ssh-copy-id -i .ssh/ime_datoteke_javnega_kljuca.pub up_ime@ip</code>
+            – deli javni ključ s strežnikom</li>
+            <li>zdaj lahko dostopaš do strežnika s svojim ključem SSH:
+            <code>ssh -i .ssh/ime_datoteke_zasebnega_kljuca 'up_ime@ip'</code></li>
+            </ul>
+            <p>Za še priročnejši dostop v <b>~/.ssh/config</b>
+            dodaj:</p>
+            <pre><code>Host vzdevek
+    HostName URL_ali_IP
+    User up_ime_na_strezniku
+    IdentityFile ~/.ssh/ime_datoteke_zasebnega_kljuca</code></pre>
+            <p>Zdaj lahko do strežnika dostopaš zgolj z
+            <code>ssh vzdevek</code> (ali
+            <code>up_ime@vzdevek</code>).</p>
+            <h3 id="SCP">SCP</h3>
+            <p>Datoteko lahko kopiraš v oddaljeni imenik z
+            <code>scp pot/do/lokalne/datoteke up_ime@strežnik:pot/do/oddaljenega/imenika</code>.</p>
+            <h3 id="Hetzner">Hetzner</h3>
             <ul>
             <li><code>ssh-keygen -t ed25519 -C "tvoje_ime" -f pot/do/datoteke</code>
             - ustvari ključ SSH
@@ -738,6 +771,11 @@ sistem"/>
             <li><code>php -S localhost:8000</code> – streže na
             <i>lokalnem</i> naslovu <a href="http://localhost:8000"
             class="uri">http://localhost:8000</a></li>
+            </ul>
+            <h2 id="Podatkovne_zbirke">Podatkovne zbirke</h2>
+            <h3 id="MariaDB">MariaDB</h3>
+            <ul>
+            <li><code>SHOW DATABASES;</code></li>
             </ul>
             <h2 id="Programi">Programi</h2>
             <h3 id="ST">ST</h3>

@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2026-08-04
+date: 2026-09-08
 description: Priročnik za uporabo Linuxa, posebno skozi terminal
 keywords: Linux, terminal, operacijski sistem
 author: Janez Pavel Žebovec
@@ -370,7 +370,32 @@ Npr. za sinhronizacijo z [GitHubom](https://github.com/),
 
 ## Strežnik
 
-Sinhronizacija s strežnikom (npr. pri Hetznerju):
+### SSH
+
+Do strežnika v lokalnem omrežju dostopaš z `ssh up_ime@ip`, po čemer moraš
+vnesti še geslo. Povezavo SSH prekineš z `exit`.
+
+Za olajšam dostop na osebnem računalniku:
+
+- `ssh-keygen` – začni ustvarjanje para ključev SSH (zasebni in javni)
+- `ssh-copy-id -i .ssh/ime_datoteke_javnega_kljuca.pub up_ime@ip` – deli javni
+  ključ s strežnikom
+- zdaj lahko dostopaš do strežnika s svojim ključem SSH: `ssh -i .ssh/ime_datoteke_zasebnega_kljuca 'up_ime@ip'`
+
+Za še priročnejši dostop v **~/.ssh/config** dodaj:
+
+    Host vzdevek
+        HostName URL_ali_IP
+        User up_ime_na_strezniku
+        IdentityFile ~/.ssh/ime_datoteke_zasebnega_kljuca
+
+Zdaj lahko do strežnika dostopaš zgolj z `ssh vzdevek` (ali `up_ime@vzdevek`).
+
+### SCP
+
+Datoteko lahko kopiraš v oddaljeni imenik z `scp pot/do/lokalne/datoteke up_ime@strežnik:pot/do/oddaljenega/imenika`.
+
+### Hetzner
 
 - `ssh-keygen -t ed25519 -C "tvoje_ime" -f pot/do/datoteke` - ustvari ključ SSH
   - javnega (daš ga Hetznerju) in zasebnega (ostane pri tebi);
@@ -409,6 +434,12 @@ Javni ključ moraš shraniti na strežniku v datoteko *.ssh/authorized_keys*.
     - `live server --open=pot/do/datoteke` - zažene lokalni strežnik in odpre
       izbrano datoteko
 - `php -S localhost:8000` – streže na *lokalnem* naslovu <http://localhost:8000>
+
+## Podatkovne zbirke
+
+### MariaDB
+
+- `SHOW DATABASES;`
 
 ## Programi
 

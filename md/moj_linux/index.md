@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-08-25
+date: 2026-09-09
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -446,6 +446,9 @@ Knjižnice:
     - `python3-isbnlib` – [isbnlib](https://pypi.org/project/isbnlib/) omogoča
       pridobivanje podatkov o knjigah glede na ISBN, preverjanje veljavnosti
       ISBN-ja, ...
+    - `python3-ijson` – [ijson](https://pypi.org/project/ijson/), za obdelavo večjih datotek JSON
+    - `python3-mariadb-connector` – za povezovanje Pythona s
+      podatkovno zbirko MariDB
 
 Micromamba
 
@@ -628,17 +631,25 @@ Za lažje zaganjanje:
 
 - `sudo apt install mariadb-server` – namesti strežnik [MariaDB](https://mariadb.com/) (različica MySQL?)
 - `sudo systemctl status mariadb` – preveri stanje zbirke SQL
-- `sudo mariadb` – tako vstopiš v zbirko
+- `sudo systemctl start mariadb.service` – zažene storitev MariaDB (je to sploh
+  potrebno?)
+- `sudo mariadb` – tako vstopiš v zbirko (morda deluje tudi `sudo mariadb -u
+  root`, da si uporabnik kot *root* in `mariadb -uuporabnik -pgeslo
+  ime_zbirke`?)
     - `exit;` – izhod iz zbirke
     - `CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE utfmb4_unicode_ci;` – ustvari zbirko z imenom *moja_zbirka* s polnim Unikodom (utf8mb4), kar prepreči težave s šumniki, posebnimi znaki; ter zagotovi pravilno slovensko/Unikodno razvrščanje besedila
     - `CREATE USER 'uporabnik'@'localhost' IDENTIFIED BY 'geslo';` – ustvari uporabnika zbirke z up. imenom *uporabnik*, ki se sme povezati preko *lokalnega* strežnika (*localhost*); dodelimo mu še geslo za prijavo
     - `GRANT ALL PRIVILEGES ON moja_zbirka.* TO 'uporabnik'@'localhost';` – dodeli uporabniku vse pravice do vseh preglednic v zbirki (.\*)
+    - `SHOW GRANTS FOR 'uporabnik'@'localhost';` – preglej dovoljenja za
+      uporabnika
     - `ALTER USER 'uporabnik'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('geslo');` – uporabnika izrecno nastavimo na geselno *avtentikacijo*
     - `FLUSH PRIVILEGES;` – MariaDB ponovno naloži, oz. osveži pravice in zagotovi, da začnejo veljati takoj
     - `ALTER USER 'uporabnik'@'localhost' IDENTIFIED BY 'novo_geslo';` – spremeni geslo uporabnika
     - `DROP USER 'uporabnik'@'localhost';` – izbriše uporabnika
     - `DROP DATABASE knjige_dev;` – izbriše zbirko
-- `mysql -u uporabnik -p moja_zbirka` – prijava uporabnika v zbirko (v naslednjem koraku moraš vnesti še geslo)
+    - `USE moja_zbirka;` – vstopi v zbirko "moja_zbirka"
+- `sudo mariadb` – prijava v mariadb kot *root*
+- `mariadb -u uporabnik -p moja_zbirka` – prijava uporabnika v zbirko (v naslednjem koraku moraš vnesti še geslo uporabnik)
     - `CREATE TABLE moja_preglednica (` – ustvari preglednico z imenom *moja_preglednica* v zbirki
         - `id INT AUTO_INCREMENT PRIMARY KEY,`
         - `ime VARCHAR(255) NOT NULL,` – opredeli stolpec *ime* za nize, dolžine največ 255; vse vrstice rabijo imeti ime

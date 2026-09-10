@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-08-20
+date: 2026-09-04
 description: Razni seznami z različnih področij in priporočila
 keywords: seznam, priporočilo
 author: Janez Pavel Žebovec
@@ -26,6 +26,7 @@ Moja *priporočila* (precej nepopolna)
 
 - [Distro Sea](https://distrosea.com/) – preizkus različnih Linuxovih *distribucij* v brskalniku
 - [Existential Comics](https://existentialcomics.com/)
+- [Is AI Profitable Yet](https://isaiprofitable.com/)
 - [KamiKam](https://kamkam.si/) – *platforma* za medsebojno *organiziranje* deljenega prevoza
 - [Kvarkadabra - časopis za tolmačenje znanosti](https://kvarkadabra.net/)
 - [Na prostem, zadruga za odprto kodo](https://www.na-prostem.si/)
@@ -89,6 +90,8 @@ Moja *priporočila* (precej nepopolna)
 
 - [Copernicus – Climate Pulse](https://pulse.climate.copernicus.eu/)
 - [Electricity Maps – Map](https://app.electricitymaps.com/)
+- [Nutschool Earth](https://earth.nullschool.net/) – *globus* s prikazom vetrov,
+  tokov, ravni prašnih delcev, *temperature*, vlažnosti, ...
 
 ### Naravoslovje
 
@@ -275,6 +278,8 @@ Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
 ###### Prenos podatkov OSM
 
 - [BBBike - Extract](https://extract.bbbike.org/) - prenos kolesarskih zemljevidov
+- [Open Orienteering Map](https://oomap.dna-software.co.uk/) – izdelava
+  zemljevid za *orientacijske* dogodke
 - [Project OSMR](https://project-osrm.org/) – iskanje najkrajše poti
 
 ##### Uradni zemljevidi
@@ -707,8 +712,8 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [The B1M](https://www.youtube.com/@TheB1M)
 - [Brick Technology](https://www.youtube.com/@BrickTechnology) – izdelovanje napravic / vozil iz tehnokock
 - [Driver61](https://www.youtube.com/@Driver61) – snovanje dirkalnikov, predvsem formul
-- [Practical Engineering](https://www.youtube.com/@PracticalEngineeringChannel)
-  – *infrastruktura*, *inženirstvo*
+- [Practical Engineering](https://www.youtube.com/@PracticalEngineeringChannel) – *infrastruktura*, *inženirstvo*
+- [Technology Connections](https://www.youtube.com/@TechnologyConnections)
 
 ##### Zvezna računala, zvezdoslovne ure
 
@@ -822,6 +827,7 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 
 - [Amadej Jazbec](https://www.youtube.com/@amadejjazbec7214) – bogoslovec
 - [Answers in Genesis Canada](https://www.youtube.com/@AnswersCanada) – zagovornik krščanstva skozi znanost (ima precej vprašljivih razlag, a dosti stvari je še vedno zanimivih)
+- [Give Me An Answer with Stuart & Cliffe Knechtle](https://www.youtube.com/@givemeananswer)
 - [Hochelaga](https://www.youtube.com/@hochelaga) – Sveto pismo
 - [Jesus and Whatnot](https://www.youtube.com/@Jesus.andwhatnot)
 - [Taylor Alesia](https://www.youtube.com/@thebiblechick)
@@ -882,3 +888,4 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 ### Dobri posnetki
 
 - [Johnny Harris: How Switzerland Engineered the Perfect Country](https://www.youtube.com/watch?v=OMbV1rIPhCg) – kako zgleda učinkovit javni promet, *specifično* v Švici (YT)
+- [Johnny Harris: The Modern Middle East, Explained](https://www.youtube.com/watch?v=bLOEhycMG78&t=1491s) – zgodovina Bližnjega Vzhoda, razlaga trenutnih razmer

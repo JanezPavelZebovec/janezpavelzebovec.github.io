@@ -30,8 +30,8 @@ računalnik zna ustrezno upoštevati"/>
             </svg>
         </a>
 
-        <nav id="pot"><p><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/racunalniski_jeziki/">racunalniski_jeziki</a></p></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-03-17">2026-03-17</time></p>
+        <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/racunalniski_jeziki/">racunalniski_jeziki</a></nav>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-02">2026-09-02</time></p>
     </header>
     <nav>
         <ul>
@@ -48,6 +48,7 @@ računalnik zna ustrezno upoštevati"/>
         <li><a href="#Scipy" id="toc-Scipy">Scipy</a></li>
         <li><a href="#SymPy" id="toc-SymPy">SymPy</a></li>
         </ul></li>
+        <li><a href="#C" id="toc-C">C</a></li>
         <li><a href="#Zunanje_povezave_in_viri"
         id="toc-Zunanje_povezave_in_viri">Zunanje povezave in
         viri</a></li>
@@ -390,6 +391,39 @@ sp.diff(izraz, po, red_odvoda) # odvajanje
 sp.diff(izrat, (po, red), (po, red)) # mešani odvod
 
 sp.oo # neskočno</code></pre>
+            <h2 id="C">C</h2>
+            <p>Glave (<i>headers</i>) opredelimo na vrhu datoteke v
+            obliki <code>#include &lt;ime.h&gt;</code>. Osnovna glava
+            C-ja je <code>#include &lt;stdio.h&gt;</code>.</p>
+            <p>Vsaka spremenljivka potrebuje opredeljeno vrsto.</p>
+            <ul>
+            <li><i>integerji</i>:
+            <ul>
+            <li><code>char</code> – znak (do 255; 1 bit)</li>
+            <li><code>short</code> – (do 65535; 2 bita)</li>
+            <li><code>int</code> – število (do 4294967295; 4 biti)</li>
+            <li><code>long</code> – (do 4294967295; 4 biti)</li>
+            <li><code>long long</code> – (do 2^64 - 1; 8 bitov)</li>
+            </ul></li>
+            <li><code>float</code> – <i>decimalno</i> število (</li>
+            <li><code>double</code></li>
+            <li><code>bool</code> – resničnost/neresničnost</li>
+            </ul>
+            <p><i>Integerji</i> imajo lahko predznak ali ne. Če imajo
+            predznak, se doda pred vrsto <code>signed</code>, sicer
+            <code>unsigned</code>.</p>
+            <ul>
+            <li><code>int8_t</code> – <code>int</code> velikosti 8
+            bitov</li>
+            <li><code>uint64_t</code> – nepredznačen <code>int</code>
+            velikosti 64 bitov</li>
+            </ul>
+            <p><i>Koda</i> je sestavljena iz <i>funkcij</i>. Opredeli se
+            jih v obliki
+            <code>int funkcija(vhodni_podatki) { vsebina }</code>.</p>
+            <p>Vsaka datoteka potrebuje vsaj eno <i>funkcijo</i>, s
+            katero se izvajanje <i>skripte</i> začne. Ta ima posebno ime
+            <code>main</code>.</p>
             <hr />
             <h2 id="Zunanje_povezave_in_viri">Zunanje povezave in
             viri</h2>

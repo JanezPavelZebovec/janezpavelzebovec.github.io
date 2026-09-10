@@ -1,6 +1,6 @@
 ---
 title: Naravoslovje
-date: 2026-08-29
+date: 2026-09-02
 description: Naravni zakoni
 keywords: naravoslovje, fizika
 author: Janez Pavel Žebovec
@@ -554,6 +554,33 @@ $$ \omega '^2 = \omega^2 - \beta^2 $$
 
 $$ \tan \delta = \frac{2 \beta \omega}{\omega_0^2 - \omega^2} $$
 
+
+### Sklopljeno nihanje in valovanje
+
+Za razliko od nihala, ki je *diskretna* točka v prostoru, je valovanje zvezno v
+prostoru. Lahko tudi rečemo, da je valovanje nabor mnogih med seboj sklopljenih
+nihal.
+
+Motnje preko te sklopitve nihal potujejo s hitrostjo $c$. Hitrost je odvisna
+od moči sklopitve, oz. prožnosti vezi, in vztrajnosti nihal:
+$$ c^2 = qfrac{\mathrm{prožnost}}{\mathrm{vztrajnost{}} $$
+
+Dve vrsti valovanja:
+
+- prečno (*transverzalno*): $\vec s \perp \vec c$; neke vrste strižne
+  [*deformacije*](#Deformacije)
+    $$ c^2 = \frac{G}{\rho} $$
+- vzdolžno (*longitudinalno*): $\vec s \parallel \vec c$; neke vrste natezne
+  [*deformacije*](#Deformacije)
+    $$ c^2 = \frac{E}{\rho} $$
+    $$ c^2 = \frac{1}{\chi \rho} $$
+
+***Energija* valovanja**:
+*Energija*, porazdeljena po prostoru:
+$$ W_k \to w_k = \frac{\d W_k}{\d V} $$
+$$ \d W_k = \d m \frac{v^2}{2} \to w_k = rac{1}{2} \rho v'^2
+    = \frac{1}{2} \rho \left( \frac{\pd s}{\pd t} \right) = w_k $$
+
 ## Tekočine
 
 - kapljevina: vezan *sistem*; $W_p + W_k < 0$; $|W_p| > |W_k|$
@@ -580,7 +607,7 @@ bi jih vezale nase. Z višanjem *temperature* se površinska napetost še manjš
 
 ### Tok
 
-Židkost (*viskoznost*) [$\frac{N s}{m^2} = \frac{kg}{ms} = {Pa} s$] $\eta$ je
+Židkost (*viskoznost*) $\eta$ [$\frac{N s}{m^2} = \frac{kg}{ms} = {Pa} s$] je
 kako težko tekočina teče. Opredeljena je (za newtonske tekočine) kot razmerje
 med strižno napetostjo in strižno hitrostjo.
 
@@ -624,6 +651,9 @@ $$ \frac{S_1}{S_2} = \frac{v_1}{v_2} $$
 Tekočina ob steni cevi miruje, od stene proti sredini toka pa hitrost narašča –
 večja kot je židkost (*viskoznost*) $\eta$, hitreje narašča.
 $$ \frac{F}{S} = \eta \frac{\d v_y}{\d x} $$
+
+**Poiseuillov zakon**:
+$$ \Phi_V = \frac{\d V}{\d t} = \frac{\pi r^4}{8 \eta} \frac{\Delta p}{l} $$
 
 ## *Elektrika*
 

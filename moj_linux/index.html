@@ -32,7 +32,7 @@ sistema"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/moj_linux/">moj_linux</a> / <a href="/moj_linux/index/">index</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-08-25">2026-08-25</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-09">2026-09-09</time></p>
     </header>
     <nav>
         <ul>
@@ -765,6 +765,11 @@ sistema"/>
             href="https://pypi.org/project/isbnlib/">isbnlib</a> omogoča
             pridobivanje podatkov o knjigah glede na ISBN, preverjanje
             veljavnosti ISBN-ja, …</li>
+            <li><code>python3-ijson</code> – <a
+            href="https://pypi.org/project/ijson/">ijson</a>, za
+            obdelavo večjih datotek JSON</li>
+            <li><code>python3-mariadb-connector</code> – za povezovanje
+            Pythona s podatkovno zbirko MariDB</li>
             </ul></li>
             </ul>
             <p>Micromamba</p>
@@ -1060,7 +1065,12 @@ sistema"/>
             (različica MySQL?)</li>
             <li><code>sudo systemctl status mariadb</code> – preveri
             stanje zbirke SQL</li>
-            <li><code>sudo mariadb</code> – tako vstopiš v zbirko
+            <li><code>sudo systemctl start mariadb.service</code> –
+            zažene storitev MariaDB (je to sploh potrebno?)</li>
+            <li><code>sudo mariadb</code> – tako vstopiš v zbirko (morda
+            deluje tudi <code>sudo mariadb -u   root</code>, da si
+            uporabnik kot <i>root</i> in
+            <code>mariadb -uuporabnik -pgeslo   ime_zbirke</code>?)
             <ul>
             <li><code>exit;</code> – izhod iz zbirke</li>
             <li><code>CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE utfmb4_unicode_ci;</code>
@@ -1075,6 +1085,8 @@ sistema"/>
             <li><code>GRANT ALL PRIVILEGES ON moja_zbirka.* TO 'uporabnik'@'localhost';</code>
             – dodeli uporabniku vse pravice do vseh preglednic v zbirki
             (.*)</li>
+            <li><code>SHOW GRANTS FOR 'uporabnik'@'localhost';</code> –
+            preglej dovoljenja za uporabnika</li>
             <li><code>ALTER USER 'uporabnik'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('geslo');</code>
             – uporabnika izrecno nastavimo na geselno
             <i>avtentikacijo</i></li>
@@ -1087,10 +1099,14 @@ sistema"/>
             izbriše uporabnika</li>
             <li><code>DROP DATABASE knjige_dev;</code> – izbriše
             zbirko</li>
+            <li><code>USE moja_zbirka;</code> – vstopi v zbirko
+            “moja_zbirka”</li>
             </ul></li>
-            <li><code>mysql -u uporabnik -p moja_zbirka</code> – prijava
-            uporabnika v zbirko (v naslednjem koraku moraš vnesti še
-            geslo)
+            <li><code>sudo mariadb</code> – prijava v mariadb kot
+            <i>root</i></li>
+            <li><code>mariadb -u uporabnik -p moja_zbirka</code> –
+            prijava uporabnika v zbirko (v naslednjem koraku moraš
+            vnesti še geslo uporabnik)
             <ul>
             <li><code>CREATE TABLE moja_preglednica (</code> – ustvari
             preglednico z imenom <i>moja_preglednica</i> v zbirki

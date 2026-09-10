@@ -1,8 +1,8 @@
 ---
 title: Prepovedane besede v visoki slovenščini
-date: 2026-06-11
+date: 2026-09-05
 description: Prepovedane besede, prevzete besede, v visoki slovenščini
-keywords: visoka slovenščina, visoka slovenščina, potujčenje
+keywords: slovenščina, visoka slovenščina, potujčenje
 author: Janez Pavel Žebovec
 ---
 
@@ -10,26 +10,38 @@ author: Janez Pavel Žebovec
 
 Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne sveže skovanimi) in so zato v visoki slovenščini prepovedane.
 
+- *adaptacija*, *adapter* > prilagoditev; prireditelj, prilagojevalo, prilagojevalec, prirejevalec, pretvornik
 - *agronomija* > kmetijstvo
 - *anketa* > vprašalnik
 - *anksioznost* > tesnoba, tesnobnost
+- *antikvariat* > starinarna, starinarnica
 - *atmosfera* > ozračje
 - *avion* > letalo
+- *center* > središče, sredina
+- *cilinder* > valj
 - *definicija* > opredelitev, določitev/določba
 - *ekran* > (računalniški/dlančniški/drugi) zaslon
 - *eksitacija* > vzbuditev
+- *elipsa* > pakrog
+- *emigrant* > izseljenec, begunec
 - *fluktuacija* > spreminjanje, menjavanje, gibanje
 - *horizontalno*, *horizontala* > vodoravno, vodoravnica
 - *ilustracija* (v nekaterih rabah/pomenih) > ponazorilo, ponazorilna/pojasnevalna slika
+- *imigrant* > priseljenec
 - *integracija*, *integriranost* > vključitev, (združitev); povezanost, vključenost, združenost
 - *karcinogen* > rakotvoren
+- *karta* (v enem izmed pomenov) > zemljevid
 - *koeficient* > (stalni?) količnik
 - *komponenta* > (sestavni) del, sestavina
 - *konkaven* > vbočen, vbokel
 - *konkurent* > tekmec
 - *konveksen* > izbočen, izbokel
 - *longitudinalno* > vzdolžno
+- *migracija* > selitev
 - *monitor* > (računalniški) zaslon
+- *mortaliteta* > smrtnost
+- *muzika* > glasba
+- *nataliteta* > rodnost
 - *neologizem* > novotvorjenka
 - *nervoza* > živčnost, nemir
 - *ornament* > okras(ek)
@@ -45,7 +57,9 @@ Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne svež
 - *solvatacija* > raztapljanje
 - *šola* > učilišče
 - *tabela* > preglednica
+- *tiran* > samodržec, trinog, samosilnik, silnik, (oblastnež)
 - *transverzalno* > prečno
+- *tunel* > predor
 - *univerza* > vseučilišče
 - *vertikalno*, *vertikala* > navpično, navpičnica
 - *vikend* > konec tedna
@@ -96,8 +110,13 @@ Lastnosti *operacij*:
 
 ## Računalništvo
 
-- *ekran*, *monitor* > (računalniški/...) zaslon
-- *font* > (slog/družina/vrsta) pisave
+- *CD* > zgoščenka
+- *ekran* > (računalniški/...) zaslon
+- *font* > (slog/družina/vrsta) pisava
+- *internet* > (svetovni) splet, medmrežje
+- *monitor* > (računalniški/...) zaslon
+- *RAM* > delovni pomnilnik (bralno-pisalni pomnilnik)
+- *router* > (omrežni) usmerjevalnik
 
 ## Jezikoslovje
 
@@ -114,4 +133,3 @@ Lastnosti *operacij*:
 - *lokativ* > mestnik
 - *instrumental* > orodnik
 - *vokativ* > zvalnik
-

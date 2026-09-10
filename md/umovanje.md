@@ -1,6 +1,6 @@
 ---
 title: Umovanje
-date: 2026-08-28
+date: 2026-09-10
 description: Osebna razmišljanja
 keywords: Janez Pavel Žebovec, razmišljanje, blog
 ---
@@ -55,6 +55,24 @@ S takim poudarjanjem posameznikove pristranske resničnosti se odpira možnost z
 opravičevanje zločina, saj ta ni več nepristransko slab, zla ni več, le še
 muhavost, težka otroštva, želja biti viden.
 
+## Zlo in svobodna volja
+
+Ko je Bog, ki je ljubezen, ustvaril človeka, ni želel sužnjev brez lastne volje.
+Ustvaril človeka s svobodno voljo, svobodo, da se odloči dobro – zanj – ali za
+slabo – proti njemu. Če bi Bog preprečil, da bi ljudje delali slabo, bi jih
+pravzaprav prisilil, da delajo dobro, da se odločijo zanj, kar nasprotuje
+svobodni volji. Na svetu je zlo, ker se je človek tako odločil. Zlo je odsotnost
+ljubezni, Boga.
+
+Bog gre s svobodno voljo celo tako daleč, da dopušča bivanje v večnosti brez
+njega. Temu se reče pekel. To je kraj, od koder se je Bog umaknil, da naredi
+prostor vsem, ki ga nočejo. Pekel ni kazen, temveč izbira.
+
+Da lahko človek spolh ve, kaj je prav in kaj narobe, da se lahko sploh med čim
+odloča, je Bog človeku dal vest. Brez nje ne bi mogli vedeti, kaj sploh želi
+Bog, da bi se ravnali po njegovi volji, če bi tako hoteli, oz. proti njegovi
+volji, če bi tako hoteli. Brez vesti bi bila svobodna volja precej nesmiselna.
+
 ## Leva gibanja
 
 Veliko levičarjev je ljudi, ki jim ni uspelo prerasti najstniške upornosti, ki
@@ -70,6 +88,30 @@ Njihovo najbolj priljubljeno orodje je uničevanje ugleda, veljave
 utemljevat, kajti ljudje jih bodo poslušali kljub temu. Če jih kdo ujame pri
 neustrezni rabi teh oznak, priredijo jezik svojim potreba – pomene spremenijo
 ali razširijo do neprepoznavnosti).
+
+> They’re not just coming for Tolkien.
+> They’re coming for your culture.
+>
+> University of Nottingham is now teaching that J. R. R. Tolkien demonized people of color in The Lord of the Rings.
+>
+> Yes. You heard me right. Middle Earth is now “racist.”
+> Orcs, Easterlings, Southrons are victims of “ethnic chauvinism.”
+>
+> And it doesn’t stop there.
+> They’re dragging Shakespeare. Milton. Lewis. One by one.
+>
+> Forget education. This is cultural demolition.
+> The goal isn’t to “re-examine the past.”
+> It’s to poison it. To strip stories of their meaning until they become something you’re ashamed to love.
+>
+> First, they redefine the words.
+> Then they rewrite the history.
+> And finally, they tell you what you’re allowed to believe.
+>
+> This isn’t a debate about orcs.
+> It’s a war over who owns your culture.
+>
+<cite><a href="https://x.com/CultureExploreX/status/1979259443574460909?s=20">Culture Explorer (X) o kritikah Gospodarja prstanov</a></cite>
 
 > Hard times create strong men,
 > strong men create good times,
@@ -336,6 +378,15 @@ Krščanstvo uči, da je vsako človeško življenje neprecenljivo. Tu ni razlik
 v velikosti, številu celic, umski razvitosti, odvisnosti za preživetje,
 sposobnosti pomnenja, čutnosti, ...
 
+> In mislim da večina ljudi ni sposobnih skrbet za tok motene otroke. In je bolš
+> za vse če nardijo splav. In ni problemov.
+>
+<cite>B.</cite>
+
+> Pač pusti ljudem da imajo pravice ki ne škodijo tebi.
+>
+<cite>B.</cite>
+
 ## Nasilje
 
 Z leve strani se pogosto sliši, da so povsem proti nasilju in za vključenost. A
@@ -347,6 +398,30 @@ oboje – da je proti nasilju in za splav in/ali pomoč pri samomoru – ni moč
 verjeti, kajti njegove trditve so protislovne.
 
 ## Narodno osvobodilni boj
+
+<small> Slovarček posameznih gibanj po knjigi Resnica o domobranstvu (Ivan
+Košutnak): </small>
+
+- **Jugoslovanska vojska v domovini** (JVD) / slovensko četništvo / plava garda:
+  *gverilske* enote za boj proti *okupatorju*, predvsem proti partizanom (od
+  velikega travna 1942 do konca vojne)
+- **Vaške straže** / bela garda: samoobrambne oborožene enote za varovanje vasi pred
+  *revolucionarnim terorjem* (od malega srpana 1942 do kimavca 1943)
+- **Slovensko domobranstvo**: protirevolucionarne enote, organizirane po nemški
+  zasedbi Ljubljanske pokrajine iz preživelih vaških stražarjev, dela četnikov
+  ter novih prostovoljcev za obrambo pred revolucionarji (od kimavca 1943 do 3.
+  velikega travna 1945, ko so se preimenovali v Slovensko narodno vojsko, SNV)
+    - **Slovenski narodni varnostni zbor** (SNVZ): primorsko domobranstvo (od
+      jeseni 1943 do konca vojne)
+    - **Gorenjska samozaščita**: gorenjsko domobranstvo (od spomladi 1944 do
+      konca vojne)
+- **Osvobodilna fronta** (OF): ustanovljena l. 1941 kot navidezno koalicijska
+  odporniška narodnoosvobodilna in revolucionarna *organizacija*; spomladi 1943
+  je tudi uradno izgubila *koalicijski* značaj in prišla pod popolen nadzor
+  komunistov
+- **TIGR**: vrsto let je nezakonito in tudi  orožjem delovala proti Italiji na
+  Primorskem ter v Istri, pri čemer so jo skrivaj podpirale tudi jugoslovanske
+  oblasti
 
 ### Partizani
 

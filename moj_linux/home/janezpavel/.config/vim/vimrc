@@ -51,6 +51,9 @@ autocmd FileType python map <buffer> <F8> :w<CR>:exec '!python3' shellescape(@%,
 autocmd FileType sh map <buffer> <F8> :w<CR>:exec '!bash' shellescape(@%, 1)<CR>
 autocmd FileType markdown map <buffer> <F8> :w<CR>:exec '!pandoc -f markdown -t pdf -V papersize:a4 -o' shellescape(expand('%:r'), 1) .. '.pdf' shellescape(@%, 1)<CR>
 
+autocmd FileType c map <buffer> <F8> :w<CR>:exec '!gcc -Wall -Wextra -o' shellescape(expand('%:r'), 1) shellescape(@%, 1) '&&' shellescape('./'.expand('%:r'), 1)<CR>
+autocmd FileType c map <buffer> <F7> :w<CR>:exec '!gcc -Wall -Wextra -o' shellescape(expand('%:r'), 1) shellescape(@%, 1)<CR>
+
 autocmd FileType tex map <buffer> <F8> :w<CR>:exec '!pdflatex -shell-escape' shellescape(@%, 1)<CR>
 "autocmd FileType tex map <buffer> <F7> :w<CR>:!bibtex %:r<CR>
 autocmd FileType tex map <buffer> <F7> :w<CR>:!biber %:r<CR>

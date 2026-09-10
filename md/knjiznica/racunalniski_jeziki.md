@@ -1,6 +1,6 @@
 ---
 title: Računalniški jeziki
-date: 2026-03-17
+date: 2026-09-02
 description: Skladnje, oz. zapisovanja, ki jih računalnik zna ustrezno upoštevati
 keywords: programiranje, programski jeziki
 author: Janez Pavel Žebovec
@@ -314,6 +314,35 @@ Simbolno računanje (poenostavljanje, razširjanje enačb s spremenljivkami)
     sp.diff(izrat, (po, red), (po, red)) # mešani odvod
 
     sp.oo # neskočno
+
+## C
+
+Glave (*headers*) opredelimo na vrhu datoteke  v obliki `#include <ime.h>`.
+Osnovna glava C-ja je `#include <stdio.h>`.
+
+Vsaka spremenljivka potrebuje opredeljeno vrsto.
+
+- *integerji*:
+    - `char` – znak (do 255; 1 bit)
+    - `short` – (do 65535; 2 bita)
+    - `int` – število (do 4294967295; 4 biti)
+    - `long` – (do 4294967295; 4 biti)
+    - `long long` – (do 2^64 - 1; 8 bitov)
+- `float` – *decimalno* število (
+- `double`
+- `bool` – resničnost/neresničnost
+
+*Integerji* imajo lahko predznak ali ne. Če imajo predznak, se doda pred vrsto
+`signed`, sicer `unsigned`.
+
+- `int8_t` – `int` velikosti 8 bitov
+- `uint64_t` – nepredznačen `int` velikosti 64 bitov
+
+*Koda* je sestavljena iz *funkcij*. Opredeli se jih v obliki `int
+funkcija(vhodni_podatki) { vsebina }`.
+
+Vsaka datoteka potrebuje vsaj eno *funkcijo*, s katero se izvajanje *skripte*
+začne. Ta ima posebno ime `main`.
     
 ---
 
