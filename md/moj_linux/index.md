@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-09-09
+date: 2026-09-11
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -560,6 +560,27 @@ Debian ima precej staro različico, zato je bolje [prenesti AppImage](https://mu
 - `sudo make install`
 - `mw -a moj@elektronski.naslov` – dodaj elektronski naslov
 
+#### Chroncal
+
+[Chroncal](https://github.com/DouglasdeMoura/chroncal) je preprosto
+*terminalsko* orodje za
+koledarje.
+
+- `curl -fsSL https://raw.githubusercontent.com/DouglasdeMoura/chroncal/master/scripts/install.sh | sh` – namesti
+- `chroncal` – odpre program (zaenkrat ni vnešenih še nobenih dogodkov, oz. ni
+  povezanih koledarjev)
+
+Primer povezovanja z Disrootovim koledarjem:
+
+- `chroncal account add "Disroot" \
+    --server "https://cloud.disroot.org/remote.php/dav/calendars/" \
+    --username "moje_uporabnisko_ime" \
+    --auth basic \
+    --allow-plaintext`
+- `chroncal account calendars list "Disroot" --allow-plaintext` – izpiše
+  oddaljene koledarje
+- `chroncal account calendars add "Disroot" --allow-plaintext --calendar "Moj koledar"`
+
 #### *Live-server*
 
 - `sudo apt install nodejs npm`
@@ -626,35 +647,6 @@ Za lažje zaganjanje:
     - `sudo install -Dm644 sxcs.1 /usr/local/share/man/man1/sxcs.1` – namestimo navodila na ustrezno mesto
     - `sudo mandb` – lahko še takoj osvežimo zbirko navodil
     - če zdaj poženemo orodje v *terminalu* (`sxcs`), lahko *klikamo* z miško naokoli in se v *terminalu* izpisujejo barve *poklikanih* točk
-
-### Podatkovna zbirka SQL
-
-- `sudo apt install mariadb-server` – namesti strežnik [MariaDB](https://mariadb.com/) (različica MySQL?)
-- `sudo systemctl status mariadb` – preveri stanje zbirke SQL
-- `sudo systemctl start mariadb.service` – zažene storitev MariaDB (je to sploh
-  potrebno?)
-- `sudo mariadb` – tako vstopiš v zbirko (morda deluje tudi `sudo mariadb -u
-  root`, da si uporabnik kot *root* in `mariadb -uuporabnik -pgeslo
-  ime_zbirke`?)
-    - `exit;` – izhod iz zbirke
-    - `CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE utfmb4_unicode_ci;` – ustvari zbirko z imenom *moja_zbirka* s polnim Unikodom (utf8mb4), kar prepreči težave s šumniki, posebnimi znaki; ter zagotovi pravilno slovensko/Unikodno razvrščanje besedila
-    - `CREATE USER 'uporabnik'@'localhost' IDENTIFIED BY 'geslo';` – ustvari uporabnika zbirke z up. imenom *uporabnik*, ki se sme povezati preko *lokalnega* strežnika (*localhost*); dodelimo mu še geslo za prijavo
-    - `GRANT ALL PRIVILEGES ON moja_zbirka.* TO 'uporabnik'@'localhost';` – dodeli uporabniku vse pravice do vseh preglednic v zbirki (.\*)
-    - `SHOW GRANTS FOR 'uporabnik'@'localhost';` – preglej dovoljenja za
-      uporabnika
-    - `ALTER USER 'uporabnik'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('geslo');` – uporabnika izrecno nastavimo na geselno *avtentikacijo*
-    - `FLUSH PRIVILEGES;` – MariaDB ponovno naloži, oz. osveži pravice in zagotovi, da začnejo veljati takoj
-    - `ALTER USER 'uporabnik'@'localhost' IDENTIFIED BY 'novo_geslo';` – spremeni geslo uporabnika
-    - `DROP USER 'uporabnik'@'localhost';` – izbriše uporabnika
-    - `DROP DATABASE knjige_dev;` – izbriše zbirko
-    - `USE moja_zbirka;` – vstopi v zbirko "moja_zbirka"
-- `sudo mariadb` – prijava v mariadb kot *root*
-- `mariadb -u uporabnik -p moja_zbirka` – prijava uporabnika v zbirko (v naslednjem koraku moraš vnesti še geslo uporabnik)
-    - `CREATE TABLE moja_preglednica (` – ustvari preglednico z imenom *moja_preglednica* v zbirki
-        - `id INT AUTO_INCREMENT PRIMARY KEY,`
-        - `ime VARCHAR(255) NOT NULL,` – opredeli stolpec *ime* za nize, dolžine največ 255; vse vrstice rabijo imeti ime
-        - `podime VARCHAR(255),` – opredeli stolpec *podime* za nize, dolžine največ 255, ki je lahko tudi prazen
-        - `stevilke INT,` – opredeli stolpec *stevilke* številk
 
 ### Uporaba lastnih *skript*
 
@@ -861,3 +853,19 @@ Po prvem zagonu novega *operacijskega sistema*:
 Še nekaj uporabnih ukazov:
 
 - `nslookup moja-domena`
+
+### Podatkovna zbirka SQL
+
+#### MariaDB
+
+- `sudo apt install mariadb-server` – namesti [MariaDB](https://mariadb.com/)
+- `sudo systemctl start mariadb.service` – zažene sroritev MariaDB (je to
+  običajno sploh potrebno?)
+- `sudo systemctl status mariadb` – preveri stanje
+
+#### PostgreSQL
+
+- `sudo apt install postgresql` – namesti [PostgreSQL](https://www.postgresql.org/)
+- `sudo apt install postgresql-contrib`
+- `sudo systemctl status postgresql` – preveri stanje (mora biti *enabled* in
+  *active*)

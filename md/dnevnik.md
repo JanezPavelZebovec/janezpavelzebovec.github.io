@@ -1,6 +1,6 @@
 ---
 title: Dnevnik
-date: 2026-06-06
+date: 2026-09-12
 description: Tu beležim svoj napredek pri projektih in nekatere druge stvari
 ---
 
@@ -28,3 +28,6 @@ Glej tudi dnevniške zapise [na OSM-ju](https://www.openstreetmap.org/user/Janez
 - 2026-03-09: v OpenHistoricalMap sem uvozil vse GURS-ove naslove Slovenije
 - 2026-03-16: v OpenHistoricalMap sem uvozil prvo občino zgradb – Medvode
 - 2026-04-27: ponovno nameščanje Linux Debiana (tudi z Debiana 12 na Debian 13) in bistvena posodobitev [Vodiča skozi namestitev Linuxa](/moj_linux/)
+- 2026-08-31: spoznavati sem se začel z *programskim* jezikom C
+- 2026-09-03: začel z delom na spletni strani za statistiko uvoza GURS-ovih
+  podatkov (naslovi, zgradbe) v [OpenStreetMap](https://www.openstreetmap.org/)

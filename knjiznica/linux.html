@@ -32,7 +32,7 @@ sistem"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/linux/">linux</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-08">2026-09-08</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-11">2026-09-11</time></p>
     </header>
     <nav>
         <ul>
@@ -98,10 +98,12 @@ sistem"/>
         <li><a href="#Lokalni_streznik"
         id="toc-Lokalni_streznik"><i>Lokalni</i> strežnik</a></li>
         </ul></li>
-        <li><a href="#Podatkovne_zbirke"
-        id="toc-Podatkovne_zbirke">Podatkovne zbirke</a>
+        <li><a href="#Podatkovne_zbirke_SQL"
+        id="toc-Podatkovne_zbirke_SQL">Podatkovne zbirke SQL</a>
         <ul>
         <li><a href="#MariaDB" id="toc-MariaDB">MariaDB</a></li>
+        <li><a href="#PostgreSQL"
+        id="toc-PostgreSQL">PostgreSQL</a></li>
         </ul></li>
         <li><a href="#Programi" id="toc-Programi">Programi</a>
         <ul>
@@ -772,10 +774,189 @@ sistem"/>
             <i>lokalnem</i> naslovu <a href="http://localhost:8000"
             class="uri">http://localhost:8000</a></li>
             </ul>
-            <h2 id="Podatkovne_zbirke">Podatkovne zbirke</h2>
+            <h2 id="Podatkovne_zbirke_SQL">Podatkovne zbirke SQL</h2>
+            <ul>
+            <li><code>SELECT * FROM ime_preglednice</code> – izpiše vse
+            v preglednici
+            <ul>
+            <li><code>SELECT ime_stolpca FROM ime_preglednice</code> –
+            izpiše podatke določenega stolpca v preglednici</li>
+            <li><code>SELECT * FROM ime_preglednice ORDER BY ime_stolpca</code></li>
+            </ul></li>
+            </ul>
+            </div>
+            <table>
+            <colgroup>
+            <col style="width: 50%" />
+            <col style="width: 50%" />
+            </colgroup>
+            <thead>
+            <tr class="header">
+            <th>MariaDB</th>
+            <th>PostgreSQL</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="odd">
+            <td><code>sudo mariadb</code></td>
+            <td><code>sudo -u postgres psql</code></td>
+            </tr>
+            <tr class="even">
+            <td><code>CREATE USER 'ime_up'@'localhost' IDENTIFIED BY 'geslo';</code></td>
+            <td><code>CREATE USER ime_up WITH PASSWORD 'geslo';</code></td>
+            </tr>
+            <tr class="odd">
+            <td><code>SHOW DATABASES;</code></td>
+            <td><code>\l</code></td>
+            </tr>
+            <tr class="even">
+            <td><code>SHOW USERS;</code></td>
+            <td><code>\du</code></td>
+            </tr>
+            <tr class="odd">
+            <td><code>USE ime_zbirke;</code></td>
+            <td><code>\c ime_zbirke</code></td>
+            </tr>
+            <tr class="even">
+            <td><code>exit;</code></td>
+            <td><code>\q</code></td>
+            </tr>
+            </tbody>
+            </table>
+            <div class="content">
+
             <h3 id="MariaDB">MariaDB</h3>
             <ul>
-            <li><code>SHOW DATABASES;</code></li>
+            <li><code>sudo apt install mariadb-server</code> – namesti
+            strežnik <a href="https://mariadb.com/">MariaDB</a>
+            (različica MySQL?)</li>
+            <li><code>sudo systemctl status mariadb</code> – preveri
+            stanje zbirke SQL</li>
+            <li><code>sudo systemctl start mariadb.service</code> –
+            zažene storitev MariaDB (je to sploh potrebno?)</li>
+            <li><code>sudo mariadb</code> – tako vstopiš v zbirko (morda
+            deluje tudi <code>sudo mariadb -u   root</code>, da si
+            uporabnik kot <i>root</i> in
+            <code>mariadb -uuporabnik -pgeslo   ime_zbirke</code>?)
+            <ul>
+            <li><code>exit;</code> – izhod iz zbirke</li>
+            <li><code>CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE     utfmb4_unicode_ci;</code>
+            – ustvari zbirko z imenom <i>moja_zbirka</i> s polnim
+            Unikodom (utf8mb4), kar prepreči težave s šumniki, posebnimi
+            znaki; ter zagotovi pravilno slovensko/Unikodno razvrščanje
+            besedila</li>
+            <li><code>CREATE USER 'uporabnik'@'localhost' IDENTIFIED BY 'geslo';</code>
+            – ustvari uporabnika zbirke z up. imenom <i>uporabnik</i>,
+            ki se sme povezati preko <i>lokalnega</i> strežnika
+            (<i>localhost</i>); dodelimo mu še geslo za prijavo</li>
+            <li><code>GRANT ALL PRIVILEGES ON moja_zbirka.* TO 'uporabnik'@'localhost';</code>
+            – dodeli uporabniku vse pravice do vseh preglednic v zbirki
+            (.*)</li>
+            <li><code>SHOW GRANTS FOR 'uporabnik'@'localhost';</code> –
+            preglej dovoljenja za uporabnika</li>
+            <li><code>ALTER USER 'uporabnik'@'localhost' IDENTIFIED VIA mysql_native_password     USING PASSWORD('geslo');</code>
+            – uporabnika izrecno nastavimo na geselno
+            <i>avtentikacijo</i></li>
+            <li><code>FLUSH PRIVILEGES;</code> – MariaDB ponovno naloži,
+            oz. osveži pravice in zagotovi, da začnejo veljati
+            takoj</li>
+            <li><code>ALTER USER 'uporabnik'@'localhost' IDENTIFIED BY 'novo_geslo';</code>
+            – spremeni geslo uporabnika</li>
+            <li><code>DROP USER 'uporabnik'@'localhost';</code> –
+            izbriše uporabnika</li>
+            <li><code>DROP DATABASE knjige_dev;</code> – izbriše
+            zbirko</li>
+            <li><code>USE moja_zbirka;</code> – vstopi v zbirko
+            “moja_zbirka”</li>
+            </ul></li>
+            <li><code>sudo mariadb</code> – prijava v mariadb kot
+            <i>root</i></li>
+            <li><code>mariadb -u uporabnik -p moja_zbirka</code> –
+            prijava uporabnika v zbirko (v naslednjem koraku moraš
+            vnesti še geslo uporabnik)
+            <ul>
+            <li><code>CREATE TABLE moja_preglednica (</code> – ustvari
+            preglednico z imenom <i>moja_preglednica</i> v zbirki
+            <ul>
+            <li><code>id INT AUTO_INCREMENT PRIMARY KEY,</code></li>
+            <li><code>ime VARCHAR(255) NOT NULL,</code> – opredeli
+            stolpec <i>ime</i> za nize, dolžine največ 255; vse vrstice
+            rabijo imeti ime</li>
+            <li><code>podime VARCHAR(255),</code> – opredeli stolpec
+            <i>podime</i> za nize, dolžine največ 255, ki je lahko tudi
+            prazen</li>
+            <li><code>stevilke INT,</code> – opredeli stolpec
+            <i>stevilke</i> številk</li>
+            </ul></li>
+            </ul></li>
+            <li><code>SHOW DATABASES;</code> – izpiše seznam podatkovnih
+            zbirk</li>
+            </ul>
+            <h3 id="PostgreSQL">PostgreSQL</h3>
+            <p>Ukazi, ki jih izvedeš v okolju terminala, so označeni z
+            dolarjem $, ukazi v okolju PostgreSQL pa s ključnikom #.</p>
+            <ul>
+            <li>$ <code>sudo apt install postgresql</code> – namesti <a
+            href="https://www.postgresql.org/">PostgreSQL</a></li>
+            <li>$ <code>sudo apt install postgresql-contrib</code></li>
+            <li>$ <code>sudo systemctl status postgresql</code> –
+            preveri stanje (mora biti <i>enabled</i> in
+            <i>active</i>)</li>
+            <li>$ <code>sudo -u postgres psql</code> – dostopaj do
+            PostgreSQL kot privzeti vrhovni uporabnik (ang.
+            <i>superuser</i>) <i>postgres</i></li>
+            <li><h1
+            id="CREATE_USER_uporabnik_WITH_PASSWORD_geslo_ustvari_uporabnika_in_mu"><code>CREATE USER uporabnik WITH PASSWORD 'geslo'</code>
+            – ustvari uporabnika in mu</h1>
+            dodeli geslo</li>
+            <li><h1
+            id="CREATE_TABLE_ime_preglednice_ustvari_preglednico"><code>CREATE TABLE ime_preglednice ( ... )</code>
+            – ustvari preglednico</h1></li>
+            <li><h1
+            id="i_ime_datoteke_izvedi_ukaze_iz_datoteke"><code>\i ime_datoteke</code>
+            – izvedi ukaze iz datoteke</h1></li>
+            <li><h1
+            id="l_izpise_seznam_podatkovnih_zbirk_z_njihovimi_lastnostmi"><code>\l</code>
+            – izpiše seznam podatkovnih zbirk z njihovimi
+            lastnostmi</h1></li>
+            <li><h1
+            id="connect_ime_podatkovne_zbirke_c_povezi_se_s_podatkovno_zbirko"><code>\connect ime_podatkovne_zbirke</code>
+            = <code>\c ...</code> – poveži se s podatkovno zbirko</h1>
+            <ul>
+            <li><h1
+            id="c_ime_podatkovne_zbirke_ime_uporabnika_povezi_se_kot_dolocen"><code>\c ime_podatkovne_zbirke ime_uporabnika</code>
+            – poveži se kot določen</h1>
+            uporabnik</li>
+            </ul></li>
+            <li><h1
+            id="dt_izpise_vse_preglednice_podatkovne_zbirke"><code>\dt</code>
+            – izpiše vse preglednice podatkovne zbirke</h1></li>
+            <li><h1 id="dn_izpise_vse_sheme"><code>\dn</code> – izpiše
+            vse <i>sheme</i></h1></li>
+            <li><h1
+            id="du_izpise_vse_uporabnike_z_njihovimi_pravicami_in_vlogami"><code>\du</code>
+            – izpiše vse uporabnike z njihovimi pravicami in
+            vlogami</h1>
+            <ul>
+            <li><h1
+            id="du_ime_uporabnika_izpise_podatke_o_uporabniku"><code>du ime_uporabnika</code>
+            – izpiše podatke o uporabniku</h1></li>
+            </ul></li>
+            <li><h1
+            id="d_ime_preglednice_izpise_stolpce_shemo_preglednice_d_ime_preglednice_podrobnejsi_izpis"><code>\d ime_preglednice</code>
+            – izpiše stolpce/<i>shemo</i> preglednice #
+            <code>\d+   ime_preglednice</code> – podrobnejši
+            izpis</h1></li>
+            <li><h1 id="df_izpise_vse_funkcije"><code>\df</code> –
+            izpiše vse <i>funkcije</i></h1></li>
+            <li><h1 id="q_izhod_iz_PostgreSQL"><code>\q</code> – izhod
+            iz PostgreSQL</h1></li>
+            <li>$
+            <code>psql -h localhost -d ime_podatkovne_zbirke -U ime_uporabnika</code>
+            – prijava v določeno podatkovno zbirko (navajanju
+            <i>localhost</i> za naslov podatkovne zbirke se lahko
+            izogneš, če v <b>~/.bashrc</b> ali <b>~/.profile</b> dodaš
+            <code>export   PGHOST=localhost</code>?)</li>
             </ul>
             <h2 id="Programi">Programi</h2>
             <h3 id="ST">ST</h3>

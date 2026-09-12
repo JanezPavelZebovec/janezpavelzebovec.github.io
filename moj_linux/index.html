@@ -32,7 +32,7 @@ sistema"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/moj_linux/">moj_linux</a> / <a href="/moj_linux/index/">index</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-09">2026-09-09</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-11">2026-09-11</time></p>
     </header>
     <nav>
         <ul>
@@ -100,6 +100,7 @@ sistema"/>
         <li><a href="#QGIS" id="toc-QGIS">QGIS</a></li>
         <li><a href="#Musescore" id="toc-Musescore">Musescore</a></li>
         <li><a href="#NeoMutt" id="toc-NeoMutt">NeoMutt</a></li>
+        <li><a href="#Chroncal" id="toc-Chroncal">Chroncal</a></li>
         <li><a href="#Live_server"
         id="toc-Live_server"><i>Live-server</i></a></li>
         <li><a href="#Beekeeper_Studio"
@@ -111,8 +112,6 @@ sistema"/>
         id="toc-Izbirnik_barv_na_zaslonu">Izbirnik barv na
         zaslonu</a></li>
         </ul></li>
-        <li><a href="#Podatkovna_zbirka_SQL"
-        id="toc-Podatkovna_zbirka_SQL">Podatkovna zbirka SQL</a></li>
         <li><a href="#Uporaba_lastnih_skript"
         id="toc-Uporaba_lastnih_skript">Uporaba lastnih
         <i>skript</i></a>
@@ -138,7 +137,16 @@ sistema"/>
         narediti</a></li>
         <li><a href="#Namestitev_streznika_na_Linux_Debianu"
         id="toc-Namestitev_streznika_na_Linux_Debianu">Namestitev
-        strežnika na Linux Debianu</a></li>
+        strežnika na Linux Debianu</a>
+        <ul>
+        <li><a href="#Podatkovna_zbirka_SQL"
+        id="toc-Podatkovna_zbirka_SQL">Podatkovna zbirka SQL</a>
+        <ul>
+        <li><a href="#MariaDB" id="toc-MariaDB">MariaDB</a></li>
+        <li><a href="#PostgreSQL"
+        id="toc-PostgreSQL">PostgreSQL</a></li>
+        </ul></li>
+        </ul></li>
         </ul></li>
         </ul>
     </nav>
@@ -970,6 +978,24 @@ sistema"/>
             <li><code>mw -a moj@elektronski.naslov</code> – dodaj
             elektronski naslov</li>
             </ul>
+            <h4 id="Chroncal">Chroncal</h4>
+            <p><a
+            href="https://github.com/DouglasdeMoura/chroncal">Chroncal</a>
+            je preprosto <i>terminalsko</i> orodje za koledarje.</p>
+            <ul>
+            <li><code>curl -fsSL https://raw.githubusercontent.com/DouglasdeMoura/chroncal/master/scripts/install.sh | sh</code>
+            – namesti</li>
+            <li><code>chroncal</code> – odpre program (zaenkrat ni
+            vnešenih še nobenih dogodkov, oz. ni povezanih
+            koledarjev)</li>
+            </ul>
+            <p>Primer povezovanja z Disrootovim koledarjem:</p>
+            <ul>
+            <li><code>chroncal account add "Disroot" \     --server "https://cloud.disroot.org/remote.php/dav/calendars/" \     --username "moje_uporabnisko_ime" \     --auth basic \     --allow-plaintext</code></li>
+            <li><code>chroncal account calendars list "Disroot" --allow-plaintext</code>
+            – izpiše oddaljene koledarje</li>
+            <li><code>chroncal account calendars add "Disroot" --allow-plaintext --calendar "Moj koledar"</code></li>
+            </ul>
             <h4 id="Live_server"><i>Live-server</i></h4>
             <ul>
             <li><code>sudo apt install nodejs npm</code></li>
@@ -1056,71 +1082,6 @@ sistema"/>
             (<code>sxcs</code>), lahko <i>klikamo</i> z miško naokoli in
             se v <i>terminalu</i> izpisujejo barve <i>poklikanih</i>
             točk</li>
-            </ul></li>
-            </ul>
-            <h3 id="Podatkovna_zbirka_SQL">Podatkovna zbirka SQL</h3>
-            <ul>
-            <li><code>sudo apt install mariadb-server</code> – namesti
-            strežnik <a href="https://mariadb.com/">MariaDB</a>
-            (različica MySQL?)</li>
-            <li><code>sudo systemctl status mariadb</code> – preveri
-            stanje zbirke SQL</li>
-            <li><code>sudo systemctl start mariadb.service</code> –
-            zažene storitev MariaDB (je to sploh potrebno?)</li>
-            <li><code>sudo mariadb</code> – tako vstopiš v zbirko (morda
-            deluje tudi <code>sudo mariadb -u   root</code>, da si
-            uporabnik kot <i>root</i> in
-            <code>mariadb -uuporabnik -pgeslo   ime_zbirke</code>?)
-            <ul>
-            <li><code>exit;</code> – izhod iz zbirke</li>
-            <li><code>CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE utfmb4_unicode_ci;</code>
-            – ustvari zbirko z imenom <i>moja_zbirka</i> s polnim
-            Unikodom (utf8mb4), kar prepreči težave s šumniki, posebnimi
-            znaki; ter zagotovi pravilno slovensko/Unikodno razvrščanje
-            besedila</li>
-            <li><code>CREATE USER 'uporabnik'@'localhost' IDENTIFIED BY 'geslo';</code>
-            – ustvari uporabnika zbirke z up. imenom <i>uporabnik</i>,
-            ki se sme povezati preko <i>lokalnega</i> strežnika
-            (<i>localhost</i>); dodelimo mu še geslo za prijavo</li>
-            <li><code>GRANT ALL PRIVILEGES ON moja_zbirka.* TO 'uporabnik'@'localhost';</code>
-            – dodeli uporabniku vse pravice do vseh preglednic v zbirki
-            (.*)</li>
-            <li><code>SHOW GRANTS FOR 'uporabnik'@'localhost';</code> –
-            preglej dovoljenja za uporabnika</li>
-            <li><code>ALTER USER 'uporabnik'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('geslo');</code>
-            – uporabnika izrecno nastavimo na geselno
-            <i>avtentikacijo</i></li>
-            <li><code>FLUSH PRIVILEGES;</code> – MariaDB ponovno naloži,
-            oz. osveži pravice in zagotovi, da začnejo veljati
-            takoj</li>
-            <li><code>ALTER USER 'uporabnik'@'localhost' IDENTIFIED BY 'novo_geslo';</code>
-            – spremeni geslo uporabnika</li>
-            <li><code>DROP USER 'uporabnik'@'localhost';</code> –
-            izbriše uporabnika</li>
-            <li><code>DROP DATABASE knjige_dev;</code> – izbriše
-            zbirko</li>
-            <li><code>USE moja_zbirka;</code> – vstopi v zbirko
-            “moja_zbirka”</li>
-            </ul></li>
-            <li><code>sudo mariadb</code> – prijava v mariadb kot
-            <i>root</i></li>
-            <li><code>mariadb -u uporabnik -p moja_zbirka</code> –
-            prijava uporabnika v zbirko (v naslednjem koraku moraš
-            vnesti še geslo uporabnik)
-            <ul>
-            <li><code>CREATE TABLE moja_preglednica (</code> – ustvari
-            preglednico z imenom <i>moja_preglednica</i> v zbirki
-            <ul>
-            <li><code>id INT AUTO_INCREMENT PRIMARY KEY,</code></li>
-            <li><code>ime VARCHAR(255) NOT NULL,</code> – opredeli
-            stolpec <i>ime</i> za nize, dolžine največ 255; vse vrstice
-            rabijo imeti ime</li>
-            <li><code>podime VARCHAR(255),</code> – opredeli stolpec
-            <i>podime</i> za nize, dolžine največ 255, ki je lahko tudi
-            prazen</li>
-            <li><code>stevilke INT,</code> – opredeli stolpec
-            <i>stevilke</i> številk</li>
-            </ul></li>
             </ul></li>
             </ul>
             <h3 id="Uporaba_lastnih_skript">Uporaba lastnih
@@ -1446,6 +1407,25 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             <p>Še nekaj uporabnih ukazov:</p>
             <ul>
             <li><code>nslookup moja-domena</code></li>
+            </ul>
+            <h3 id="Podatkovna_zbirka_SQL">Podatkovna zbirka SQL</h3>
+            <h4 id="MariaDB">MariaDB</h4>
+            <ul>
+            <li><code>sudo apt install mariadb-server</code> – namesti
+            <a href="https://mariadb.com/">MariaDB</a></li>
+            <li><code>sudo systemctl start mariadb.service</code> –
+            zažene sroritev MariaDB (je to običajno sploh
+            potrebno?)</li>
+            <li><code>sudo systemctl status mariadb</code> – preveri
+            stanje</li>
+            </ul>
+            <h4 id="PostgreSQL">PostgreSQL</h4>
+            <ul>
+            <li><code>sudo apt install postgresql</code> – namesti <a
+            href="https://www.postgresql.org/">PostgreSQL</a></li>
+            <li><code>sudo apt install postgresql-contrib</code></li>
+            <li><code>sudo systemctl status postgresql</code> – preveri
+            stanje (mora biti <i>enabled</i> in <i>active</i>)</li>
             </ul>
         </div>
     </main>

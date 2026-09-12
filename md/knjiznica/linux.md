@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2026-09-08
+date: 2026-09-11
 description: Priročnik za uporabo Linuxa, posebno skozi terminal
 keywords: Linux, terminal, operacijski sistem
 author: Janez Pavel Žebovec
@@ -435,11 +435,103 @@ Javni ključ moraš shraniti na strežniku v datoteko *.ssh/authorized_keys*.
       izbrano datoteko
 - `php -S localhost:8000` – streže na *lokalnem* naslovu <http://localhost:8000>
 
-## Podatkovne zbirke
+## Podatkovne zbirke SQL
+
+- `SELECT * FROM ime_preglednice` – izpiše vse v preglednici
+    - `SELECT ime_stolpca FROM ime_preglednice` – izpiše podatke določenega
+    stolpca v preglednici
+    - `SELECT * FROM ime_preglednice ORDER BY ime_stolpca`
+
+</div>
+
+| MariaDB | PostgreSQL |
+| --- | --- |
+| `sudo mariadb` | `sudo -u postgres psql` |
+| `CREATE USER 'ime_up'@'localhost' IDENTIFIED BY 'geslo';` | `CREATE USER ime_up WITH PASSWORD 'geslo';` |
+| `SHOW DATABASES;` | `\l` |
+| `SHOW USERS;` | `\du` |
+| `USE ime_zbirke;` | `\c ime_zbirke` |
+| `exit;` | `\q` |
+
+<div class="content">
 
 ### MariaDB
 
-- `SHOW DATABASES;`
+- `sudo apt install mariadb-server` – namesti strežnik
+  [MariaDB](https://mariadb.com/) (različica MySQL?)
+- `sudo systemctl status mariadb` – preveri stanje zbirke SQL
+- `sudo systemctl start mariadb.service` – zažene storitev MariaDB (je to sploh
+  potrebno?)
+- `sudo mariadb` – tako vstopiš v zbirko (morda deluje tudi `sudo mariadb -u
+  root`, da si uporabnik kot *root* in `mariadb -uuporabnik -pgeslo
+  ime_zbirke`?)
+    - `exit;` – izhod iz zbirke
+    - `CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE
+      utfmb4_unicode_ci;` – ustvari zbirko z imenom *moja_zbirka* s polnim
+      Unikodom (utf8mb4), kar prepreči težave s šumniki, posebnimi znaki; ter
+      zagotovi pravilno slovensko/Unikodno razvrščanje besedila
+    - `CREATE USER 'uporabnik'@'localhost' IDENTIFIED BY 'geslo';` – ustvari
+      uporabnika zbirke z up. imenom *uporabnik*, ki se sme povezati preko
+      *lokalnega* strežnika (*localhost*); dodelimo mu še geslo za prijavo
+    - `GRANT ALL PRIVILEGES ON moja_zbirka.* TO 'uporabnik'@'localhost';` –
+      dodeli uporabniku vse pravice do vseh preglednic v zbirki (.\*)
+    - `SHOW GRANTS FOR 'uporabnik'@'localhost';` – preglej dovoljenja za
+      uporabnika
+    - `ALTER USER 'uporabnik'@'localhost' IDENTIFIED VIA mysql_native_password
+      USING PASSWORD('geslo');` – uporabnika izrecno nastavimo na geselno
+      *avtentikacijo*
+    - `FLUSH PRIVILEGES;` – MariaDB ponovno naloži, oz. osveži pravice in
+      zagotovi, da začnejo veljati takoj
+    - `ALTER USER 'uporabnik'@'localhost' IDENTIFIED BY 'novo_geslo';` –
+      spremeni geslo uporabnika
+    - `DROP USER 'uporabnik'@'localhost';` – izbriše uporabnika
+    - `DROP DATABASE knjige_dev;` – izbriše zbirko
+    - `USE moja_zbirka;` – vstopi v zbirko "moja_zbirka"
+- `sudo mariadb` – prijava v mariadb kot *root*
+- `mariadb -u uporabnik -p moja_zbirka` – prijava uporabnika v zbirko (v
+  naslednjem koraku moraš vnesti še geslo uporabnik)
+    - `CREATE TABLE moja_preglednica (` – ustvari preglednico z imenom
+      *moja_preglednica* v zbirki
+        - `id INT AUTO_INCREMENT PRIMARY KEY,`
+        - `ime VARCHAR(255) NOT NULL,` – opredeli stolpec *ime* za nize, dolžine
+          največ 255; vse vrstice rabijo imeti ime
+        - `podime VARCHAR(255),` – opredeli stolpec *podime* za nize, dolžine
+          največ 255, ki je lahko tudi prazen
+        - `stevilke INT,` – opredeli stolpec *stevilke* številk
+- `SHOW DATABASES;` – izpiše seznam podatkovnih zbirk
+
+### PostgreSQL
+
+Ukazi, ki jih izvedeš v okolju terminala, so označeni z dolarjem $, ukazi v
+okolju PostgreSQL pa s ključnikom #.
+
+- $ `sudo apt install postgresql` – namesti
+  [PostgreSQL](https://www.postgresql.org/)
+- $ `sudo apt install postgresql-contrib`
+- $ `sudo systemctl status postgresql` – preveri stanje (mora biti *enabled* in
+  *active*)
+- $ `sudo -u postgres psql` – dostopaj do PostgreSQL kot privzeti vrhovni
+  uporabnik (ang. *superuser*) *postgres*
+- # `CREATE USER uporabnik WITH PASSWORD 'geslo'` – ustvari uporabnika in mu
+  dodeli geslo
+- # `CREATE TABLE ime_preglednice ( ... )` – ustvari preglednico
+- # `\i ime_datoteke` – izvedi ukaze iz datoteke
+- # `\l` – izpiše seznam podatkovnih zbirk z njihovimi lastnostmi
+- # `\connect ime_podatkovne_zbirke` = `\c ...` – poveži se s podatkovno zbirko
+    - # `\c ime_podatkovne_zbirke ime_uporabnika` – poveži se kot določen
+      uporabnik
+- # `\dt` – izpiše vse preglednice podatkovne zbirke
+- # `\dn` – izpiše vse *sheme*
+- # `\du` – izpiše vse uporabnike z njihovimi pravicami in vlogami
+    - # `du ime_uporabnika` – izpiše podatke o uporabniku
+- # `\d ime_preglednice` – izpiše stolpce/*shemo* preglednice # `\d+
+  ime_preglednice` – podrobnejši izpis
+- # `\df` – izpiše vse *funkcije*
+- # `\q` – izhod iz PostgreSQL
+- $ `psql -h localhost -d ime_podatkovne_zbirke -U ime_uporabnika` – prijava v
+  določeno podatkovno zbirko (navajanju *localhost* za naslov podatkovne zbirke
+  se lahko izogneš, če v **~/.bashrc** ali **~/.profile** dodaš `export
+  PGHOST=localhost`?)
 
 ## Programi
 
