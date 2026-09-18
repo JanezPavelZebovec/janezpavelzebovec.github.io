@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2026-09-11
+date: 2026-09-12
 description: Priročnik za uporabo Linuxa, posebno skozi terminal
 keywords: Linux, terminal, operacijski sistem
 author: Janez Pavel Žebovec
@@ -503,31 +503,36 @@ Javni ključ moraš shraniti na strežniku v datoteko *.ssh/authorized_keys*.
 ### PostgreSQL
 
 Ukazi, ki jih izvedeš v okolju terminala, so označeni z dolarjem $, ukazi v
-okolju PostgreSQL pa s ključnikom #.
+okolju PostgreSQL pa s ključnikom \#.
 
 - $ `sudo apt install postgresql` – namesti
   [PostgreSQL](https://www.postgresql.org/)
 - $ `sudo apt install postgresql-contrib`
 - $ `sudo systemctl status postgresql` – preveri stanje (mora biti *enabled* in
   *active*)
+- $ `psql -u postgres createdb ime_zbirke` – ustvari novo podatkovno zbirko
+- $ `sudo -u postgres createuser --superuser up_ime` – ustvari uporabnika z
+  enakim imenom kot *root* v Linuxu, da ne potrebuješ vsakič `-u postgres`, ker
+  PostgreSQL, če ni naveden uporabnik, preveri, če obstaja kakšen uporabnik z
+  enakim imenom kot v Linuxu
 - $ `sudo -u postgres psql` – dostopaj do PostgreSQL kot privzeti vrhovni
   uporabnik (ang. *superuser*) *postgres*
-- # `CREATE USER uporabnik WITH PASSWORD 'geslo'` – ustvari uporabnika in mu
+- \# `CREATE USER uporabnik WITH PASSWORD 'geslo'` – ustvari uporabnika in mu
   dodeli geslo
-- # `CREATE TABLE ime_preglednice ( ... )` – ustvari preglednico
-- # `\i ime_datoteke` – izvedi ukaze iz datoteke
-- # `\l` – izpiše seznam podatkovnih zbirk z njihovimi lastnostmi
-- # `\connect ime_podatkovne_zbirke` = `\c ...` – poveži se s podatkovno zbirko
-    - # `\c ime_podatkovne_zbirke ime_uporabnika` – poveži se kot določen
+- \# `CREATE TABLE ime_preglednice ( ... )` – ustvari preglednico
+- \# `\i ime_datoteke` – izvedi ukaze iz datoteke
+- \# `\l` – izpiše seznam podatkovnih zbirk z njihovimi lastnostmi
+- \# `\connect ime_podatkovne_zbirke` = `\c ...` – poveži se s podatkovno zbirko
+    - \# `\c ime_podatkovne_zbirke ime_uporabnika` – poveži se kot določen
       uporabnik
-- # `\dt` – izpiše vse preglednice podatkovne zbirke
-- # `\dn` – izpiše vse *sheme*
-- # `\du` – izpiše vse uporabnike z njihovimi pravicami in vlogami
-    - # `du ime_uporabnika` – izpiše podatke o uporabniku
-- # `\d ime_preglednice` – izpiše stolpce/*shemo* preglednice # `\d+
+- \# `\dt` – izpiše vse preglednice podatkovne zbirke
+- \# `\dn` – izpiše vse *sheme*
+- \# `\du` – izpiše vse uporabnike z njihovimi pravicami in vlogami
+    - \# `du ime_uporabnika` – izpiše podatke o uporabniku
+- \# `\d ime_preglednice` – izpiše stolpce/*shemo* preglednice # `\d+
   ime_preglednice` – podrobnejši izpis
-- # `\df` – izpiše vse *funkcije*
-- # `\q` – izhod iz PostgreSQL
+- \# `\df` – izpiše vse *funkcije*
+- \# `\q` – izhod iz PostgreSQL
 - $ `psql -h localhost -d ime_podatkovne_zbirke -U ime_uporabnika` – prijava v
   določeno podatkovno zbirko (navajanju *localhost* za naslov podatkovne zbirke
   se lahko izogneš, če v **~/.bashrc** ali **~/.profile** dodaš `export

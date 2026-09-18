@@ -1,202 +1,275 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-
-<url>
-  <loc>https://janezpavelzebovec.net/</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/zvezdoslovna_ura</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/visoka_slovenscina</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/glasopisnica</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/programje</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/seznami</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/mojrodovnik</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/opombe_k_zvezdoslovni_uri</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/racunstvo</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/jezikoslovje</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/zgodovina</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/rodoslovje</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/naravoslovje</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/snovoslovje</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/zivoslovje</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/zvezdoslovje</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/slovenscina</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/nemscina</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/latinscina</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/anglescina</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/pisave</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/grska_abeceda</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/latinica</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/gotica</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/glagolica</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/cirilica</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/ogamska_pisava</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/shawova_abeceda</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/krscanstvo</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/John_Ronald_Reuel_Tolkien</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/Clive_Staples_Lewis</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/knjiznica</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/slovenscina.html</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/nemscina.html</loc>
-  <lastmod>2025-05-24T10:01:30+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/anglescina.html</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://janezpavelzebovec.net/knjiznica/latinscina.html</loc>
-  <lastmod>2025-05-24T10:01:31+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
-
+  <url>
+       <loc>https://janezpavelzebovec.net/</loc>
+       <lastmod>2026-08-31T16:39:41+00:00</lastmod>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/visoka_slovenscina/</loc>
+       <lastmod>2026-08-31T09:03:12+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/visoka_slovenscina/prepovedane_besede</loc>
+       <lastmod>2026-09-10T15:56:25+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/zvezdoslovna_ura/</loc>
+       <lastmod>2026-04-28T17:32:20+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/zvezdoslovna_ura/opombe_k_zvezdoslovni_uri</loc>
+       <lastmod>2026-07-06T07:41:58+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/glasopisnica/</loc>
+       <lastmod>2026-04-28T17:32:07+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/programje</loc>
+       <lastmod>2026-07-22T07:34:49+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/</loc>
+       <lastmod>2026-09-12T08:02:20+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/dnevnik</loc>
+       <lastmod>2026-09-12T08:02:19+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/zemljevid/</loc>
+       <lastmod>2026-07-07T14:41:29+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/seznami</loc>
+       <lastmod>2026-09-12T08:02:21+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/umovanje</loc>
+       <lastmod>2026-09-10T15:56:25+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/</loc>
+       <lastmod>2026-07-05T10:30:19+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/visoka_slovenscina/propad_slovenscine</loc>
+       <lastmod>2026-07-06T07:41:58+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/visoka_slovenscina/ssa</loc>
+       <lastmod>2026-09-10T15:56:25+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_rodovnik/</loc>
+       <lastmod>2025-07-20T14:46:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/linux</loc>
+       <lastmod>2026-09-12T08:02:19+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/etc/systemd/system/log-halt.service</loc>
+       <lastmod>2026-05-03T10:18:19+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/etc/systemd/system/log-poweroff.service</loc>
+       <lastmod>2026-05-03T10:18:19+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/etc/systemd/system/log-reboot.service</loc>
+       <lastmod>2026-05-03T10:18:19+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/etc/systemd/system/log-startup.service</loc>
+       <lastmod>2026-05-03T10:18:19+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/home/janezpavel/.local/bin/johm</loc>
+       <lastmod>2026-05-03T10:13:31+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/home/janezpavel/.local/bin/namesti-usb</loc>
+       <lastmod>2026-05-03T10:13:31+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/home/janezpavel/.local/bin/posnetki</loc>
+       <lastmod>2026-05-03T10:13:31+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/home/janezpavel/.local/bin/raba</loc>
+       <lastmod>2026-05-03T10:13:31+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/home/janezpavel/.local/bin/raba-izbira</loc>
+       <lastmod>2026-05-03T10:13:31+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/home/janezpavel/.local/bin/raba-statistika</loc>
+       <lastmod>2026-05-11T06:29:45+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/home/janezpavel/.local/bin/status-bar</loc>
+       <lastmod>2026-05-03T10:13:31+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/home/janezpavel/.local/bin/ugasni</loc>
+       <lastmod>2026-05-03T10:13:31+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/home/janezpavel/viri/slstatus/Makefile</loc>
+       <lastmod>2026-05-03T09:58:42+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/home/janezpavel/.bashrc</loc>
+       <lastmod>2026-05-03T10:05:50+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/home/janezpavel/.profile</loc>
+       <lastmod>2026-05-03T10:44:12+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/home/janezpavel/.xinitrc</loc>
+       <lastmod>2026-05-17T19:08:17+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/etc/modprobe.d/nobeep.conf</loc>
+       <lastmod>2026-05-11T06:53:09+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/home/janezpavel/.config/sxhkd/sxhkdrc</loc>
+       <lastmod>2026-05-03T10:15:18+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/home/janezpavel/.config/vim/vimrc</loc>
+       <lastmod>2026-08-31T18:10:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/moj_linux/home/janezpavel/.config/lf/lfrc</loc>
+       <lastmod>2026-05-03T10:15:18+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/racunstvo</loc>
+       <lastmod>2026-08-26T08:00:15+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/rodoslovje</loc>
+       <lastmod>2026-07-06T07:41:56+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/naravoslovje</loc>
+       <lastmod>2026-09-10T15:56:24+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/snovoslovje</loc>
+       <lastmod>2026-07-06T07:41:56+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/zivoslovje</loc>
+       <lastmod>2026-07-06T07:41:56+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/racunalniski_jeziki</loc>
+       <lastmod>2026-09-10T15:56:24+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/jezikoslovje/jeziki/slovenscina</loc>
+       <lastmod>2026-07-06T07:41:55+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/jezikoslovje/jeziki/latinscina</loc>
+       <lastmod>2026-07-06T07:41:55+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/jezikoslovje/jeziki/anglescina</loc>
+       <lastmod>2026-07-06T07:41:55+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/jezikoslovje/pisave/grska_abeceda</loc>
+       <lastmod>2026-07-06T07:41:55+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/jezikoslovje/pisave/aramejska_abeceda</loc>
+       <lastmod>2026-07-06T07:41:55+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/jezikoslovje/pisave/cirilica</loc>
+       <lastmod>2026-07-06T07:41:55+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/jezikoslovje/pisave/slovenske_pisave</loc>
+       <lastmod>2026-07-06T07:41:55+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/jezikoslovje/pisave/shawova_abeceda</loc>
+       <lastmod>2026-07-06T07:41:55+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/krscanstvo</loc>
+       <lastmod>2026-07-06T07:41:56+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/jezikoslovje/</loc>
+       <lastmod>2026-07-06T07:41:55+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://janezpavelzebovec.net/knjiznica/jezikoslovje/pisave/</loc>
+       <lastmod>2026-07-06T07:41:55+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
 </urlset>

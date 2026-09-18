@@ -1,6 +1,6 @@
 ---
 title: Umovanje
-date: 2026-09-10
+date: 2026-09-17
 description: Osebna razmišljanja
 keywords: Janez Pavel Žebovec, razmišljanje, blog
 ---
@@ -185,6 +185,21 @@ tovrstnim domislicam manjšine?
 > healthy bodies in response to psychological distress.
 >
 <cite>[Chloe Cole](https://www.help.senate.gov/imo/media/doc/836dcbdb-dc18-2dcd-e758-5033879edf61/Cole%20Testimony_3ff44286-db12-4a99-9427-b8359fe9d51b.pdf)</cite>
+
+Kako levičarji predstavljajo desni pogled na razspolnike (*LGBTQ+*), kot
+vsiljen, *neiteligenten* (značilen levi način *diskreditacije*):
+
+> /.../ Večina ljudi, ka je proti, itak sploh ne vejo zakaj so proti. Ponavad si
+> kot otrok, za štirimi stenami, al pa recimo v svoji družbi, ka si odraščal, si
+> poslušal kao „joj ti pedri, ti geji, to jih je treba tepst, zakaj sploh
+> obstajajo, bla, bla, bla, bla, bla, a ne; in pol se ti rodi neka jeza, neka
+> agresija do takih ljudi, ka sploh ne veš zakaj. Ka pol ko se usedeš in se
+> vprašaš pol ko odrasteš kot oseba, če si vsaj mal inteligenten, zakaj pa sem
+> bil tak do njih, oni mene res motjo in pol ugotoviš: ne in da ti je vbistvu
+> čist popolnoma vseen in da živijo tak lajf kot ti /.../ Pač, hu kers?! Ampak
+> za to rabš nek močn inteličenz, pa nek odprt pogled na svet.
+>
+<cite>[David Milosavljević, LGBTIQ+, Parada ponosa, diskriminacija (Gostja: Simona Muršec)](https://youtu.be/oP2slxagfY8?t=1272) (YT)</cite>
 
 ### *Feminizem* in *patriarhat*
 
@@ -597,6 +612,12 @@ razlaga, da mora tisti, ki se namerava ločiti, upoštevati ženske „čakalne 
 
 Kot pravijo haditi, se je Mohamed poročil z Ajšo pri njenih šestih letih in pri
 devetih poroko potrdil.
+
+## Osebnost
+
+> Don’t be embarrassed at things you’ve done, just change.
+>
+<cite>[Russell](https://www.youtube.com/watch?v=cVFlpvuK_ns&t=305s)</cite>
 
 ---
 

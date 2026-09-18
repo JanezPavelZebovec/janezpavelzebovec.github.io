@@ -32,7 +32,7 @@ sistema"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/moj_linux/">moj_linux</a> / <a href="/moj_linux/index/">index</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-11">2026-09-11</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-16">2026-09-16</time></p>
     </header>
     <nav>
         <ul>
@@ -101,6 +101,7 @@ sistema"/>
         <li><a href="#Musescore" id="toc-Musescore">Musescore</a></li>
         <li><a href="#NeoMutt" id="toc-NeoMutt">NeoMutt</a></li>
         <li><a href="#Chroncal" id="toc-Chroncal">Chroncal</a></li>
+        <li><a href="#Gramps" id="toc-Gramps">Gramps</a></li>
         <li><a href="#Live_server"
         id="toc-Live_server"><i>Live-server</i></a></li>
         <li><a href="#Beekeeper_Studio"
@@ -145,6 +146,9 @@ sistema"/>
         <li><a href="#MariaDB" id="toc-MariaDB">MariaDB</a></li>
         <li><a href="#PostgreSQL"
         id="toc-PostgreSQL">PostgreSQL</a></li>
+        <li><a href="#Domaca_podatkovna_zbirka_OSM"
+        id="toc-Domaca_podatkovna_zbirka_OSM">Domača podatkovna zbirka
+        OSM</a></li>
         </ul></li>
         </ul></li>
         </ul></li>
@@ -996,6 +1000,26 @@ sistema"/>
             – izpiše oddaljene koledarje</li>
             <li><code>chroncal account calendars add "Disroot" --allow-plaintext --calendar "Moj koledar"</code></li>
             </ul>
+            <h4 id="Gramps">Gramps</h4>
+            <p>Uporabni vtičniki:</p>
+            <ul>
+            <li><a
+            href="https://www.gramps-project.org/wiki/index.php/Addon:AncestorsMap">Ancestors
+            Map</a></li>
+            <li><a
+            href="https://www.gramps-project.org/wiki/index.php/Addon:BirthOrderTool">Birth
+            Order Tool</a></li>
+            <li>Gramps Web Sync</li>
+            <li><a
+            href="https://www.gramps-project.org/wiki/index.php/Addon:House_Timeline_Gramplet">House
+            Timeline Gramplet</a></li>
+            <li><a
+            href="https://www.gramps-project.org/wiki/index.php/Addon:Life_Line_Chart_View">Life
+            Line Chart View</a></li>
+            <li><a
+            href="https://www.gramps-project.org/wiki/index.php/Addon:Photo_Tagging_Gramplet">Photo
+            Tagging Gramplet</a></li>
+            </ul>
             <h4 id="Live_server"><i>Live-server</i></h4>
             <ul>
             <li><code>sudo apt install nodejs npm</code></li>
@@ -1426,6 +1450,39 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             <li><code>sudo apt install postgresql-contrib</code></li>
             <li><code>sudo systemctl status postgresql</code> – preveri
             stanje (mora biti <i>enabled</i> in <i>active</i>)</li>
+            </ul>
+            <h4 id="Domaca_podatkovna_zbirka_OSM">Domača podatkovna
+            zbirka OSM</h4>
+            <ul>
+            <li><code>sudo apt install postgresql-17-postgis-3 postgresql-17-postgis-3-scripts</code></li>
+            <li><code>sudo apt install osm2pgsql</code> – namestitev
+            osm2pgsql</li>
+            <li><code>sudo -u postgres psql -d osm_slovenia -c "CREATE EXTENSION postgis; CREATE   EXTENSION hstore;"</code>
+            – v podatkovno zbirko doda PostGIS (prostorske podatkovne
+            vrste in <i>funkcije</i>) in hstore (podatkovna vrsta za
+            shranjevanje parov ključ-vrednost znotraj enega stolpca
+            <ul>
+            <li>uspešnost lahko preveriš z
+            <code>sudo -u postgres psql -d osm_slovenia -c     "\dx"</code>
+            (izpisana morata biti postgis in hstore)</li>
+            </ul></li>
+            <li>prenos datoteke PBF za Slovenijo z <a
+            href="https://download.geofabrik.de/europe/slovenia.html">Geofabrik
+            Downloads</a></li>
+            </ul>
+            <pre><code>wget https://download.geofabrik.de/europe/slovenia-latest.osm.pbf`</code></pre>
+            <ul>
+            <li><code>osm2pgsql --create --slim --hstore -d osm_slovenia slovenia-latest.osm.pbf</code>
+            – začetni uvoz podatkov iz datoteke PBF v podatkovno zbirko:
+            prebere datoteko PBF (z vsemi tremi <i>primitivi OSM</i>:
+            točke, poti in zveze); ta korak traja kakih 10 <i>minut</i>
+            (<code>--slim</code> je obvezen za kasnejše
+            posodobitve)</li>
+            <li><code>osm2pgsql-replication init -d osm_slovenia</code>
+            – <i>inicializacija</i> dvojnika podatkovne zbirke OSM, da
+            se ve, kje smo trenutno</li>
+            <li><code>osm2pgsql-replication update -d osm_slovenia -- --slim --hstore</code>
+            – posodobitev</li>
             </ul>
         </div>
     </main>

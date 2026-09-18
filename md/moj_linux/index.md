@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-09-11
+date: 2026-09-16
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -581,6 +581,17 @@ Primer povezovanja z Disrootovim koledarjem:
   oddaljene koledarje
 - `chroncal account calendars add "Disroot" --allow-plaintext --calendar "Moj koledar"`
 
+#### Gramps
+
+Uporabni vtičniki:
+
+- [Ancestors Map](https://www.gramps-project.org/wiki/index.php/Addon:AncestorsMap)
+- [Birth Order Tool](https://www.gramps-project.org/wiki/index.php/Addon:BirthOrderTool)
+- Gramps Web Sync
+- [House Timeline Gramplet](https://www.gramps-project.org/wiki/index.php/Addon:House_Timeline_Gramplet)
+- [Life Line Chart View](https://www.gramps-project.org/wiki/index.php/Addon:Life_Line_Chart_View)
+- [Photo Tagging Gramplet](https://www.gramps-project.org/wiki/index.php/Addon:Photo_Tagging_Gramplet)
+
 #### *Live-server*
 
 - `sudo apt install nodejs npm`
@@ -869,3 +880,27 @@ Po prvem zagonu novega *operacijskega sistema*:
 - `sudo apt install postgresql-contrib`
 - `sudo systemctl status postgresql` – preveri stanje (mora biti *enabled* in
   *active*)
+
+#### Domača podatkovna zbirka OSM
+
+- `sudo apt install postgresql-17-postgis-3 postgresql-17-postgis-3-scripts`
+- `sudo apt install osm2pgsql` – namestitev osm2pgsql
+- `sudo -u postgres psql -d osm_slovenia -c "CREATE EXTENSION postgis; CREATE
+  EXTENSION hstore;"` – v podatkovno zbirko doda PostGIS (prostorske podatkovne
+  vrste in *funkcije*) in hstore (podatkovna vrsta za shranjevanje parov
+  ključ-vrednost znotraj enega stolpca
+    - uspešnost lahko preveriš z `sudo -u postgres psql -d osm_slovenia -c
+      "\dx"` (izpisana morata biti postgis in hstore)
+- prenos datoteke PBF za Slovenijo z
+  [Geofabrik Downloads](https://download.geofabrik.de/europe/slovenia.html)
+```
+wget https://download.geofabrik.de/europe/slovenia-latest.osm.pbf`
+```
+- `osm2pgsql --create --slim --hstore -d osm_slovenia slovenia-latest.osm.pbf` –
+začetni uvoz podatkov iz datoteke PBF v podatkovno zbirko: prebere datoteko
+PBF (z vsemi tremi *primitivi OSM*: točke, poti in zveze); ta korak traja
+  kakih 10 *minut* (`--slim` je obvezen za kasnejše posodobitve)
+- `osm2pgsql-replication init -d osm_slovenia` – *inicializacija* dvojnika
+  podatkovne zbirke OSM, da se ve, kje smo trenutno
+- `osm2pgsql-replication update -d osm_slovenia -- --slim --hstore` –
+  posodobitev

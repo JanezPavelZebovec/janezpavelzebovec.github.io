@@ -32,7 +32,7 @@ sistem"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/linux/">linux</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-11">2026-09-11</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-12">2026-09-12</time></p>
     </header>
     <nav>
         <ul>
@@ -902,55 +902,46 @@ sistem"/>
             <li>$ <code>sudo systemctl status postgresql</code> –
             preveri stanje (mora biti <i>enabled</i> in
             <i>active</i>)</li>
+            <li>$ <code>psql -u postgres createdb ime_zbirke</code> –
+            ustvari novo podatkovno zbirko</li>
+            <li>$
+            <code>sudo -u postgres createuser --superuser up_ime</code>
+            – ustvari uporabnika z enakim imenom kot <i>root</i> v
+            Linuxu, da ne potrebuješ vsakič <code>-u postgres</code>,
+            ker PostgreSQL, če ni naveden uporabnik, preveri, če obstaja
+            kakšen uporabnik z enakim imenom kot v Linuxu</li>
             <li>$ <code>sudo -u postgres psql</code> – dostopaj do
             PostgreSQL kot privzeti vrhovni uporabnik (ang.
             <i>superuser</i>) <i>postgres</i></li>
-            <li><h1
-            id="CREATE_USER_uporabnik_WITH_PASSWORD_geslo_ustvari_uporabnika_in_mu"><code>CREATE USER uporabnik WITH PASSWORD 'geslo'</code>
-            – ustvari uporabnika in mu</h1>
-            dodeli geslo</li>
-            <li><h1
-            id="CREATE_TABLE_ime_preglednice_ustvari_preglednico"><code>CREATE TABLE ime_preglednice ( ... )</code>
-            – ustvari preglednico</h1></li>
-            <li><h1
-            id="i_ime_datoteke_izvedi_ukaze_iz_datoteke"><code>\i ime_datoteke</code>
-            – izvedi ukaze iz datoteke</h1></li>
-            <li><h1
-            id="l_izpise_seznam_podatkovnih_zbirk_z_njihovimi_lastnostmi"><code>\l</code>
-            – izpiše seznam podatkovnih zbirk z njihovimi
-            lastnostmi</h1></li>
-            <li><h1
-            id="connect_ime_podatkovne_zbirke_c_povezi_se_s_podatkovno_zbirko"><code>\connect ime_podatkovne_zbirke</code>
-            = <code>\c ...</code> – poveži se s podatkovno zbirko</h1>
+            <li>#
+            <code>CREATE USER uporabnik WITH PASSWORD 'geslo'</code> –
+            ustvari uporabnika in mu dodeli geslo</li>
+            <li># <code>CREATE TABLE ime_preglednice ( ... )</code> –
+            ustvari preglednico</li>
+            <li># <code>\i ime_datoteke</code> – izvedi ukaze iz
+            datoteke</li>
+            <li># <code>\l</code> – izpiše seznam podatkovnih zbirk z
+            njihovimi lastnostmi</li>
+            <li># <code>\connect ime_podatkovne_zbirke</code> =
+            <code>\c ...</code> – poveži se s podatkovno zbirko
             <ul>
-            <li><h1
-            id="c_ime_podatkovne_zbirke_ime_uporabnika_povezi_se_kot_dolocen"><code>\c ime_podatkovne_zbirke ime_uporabnika</code>
-            – poveži se kot določen</h1>
-            uporabnik</li>
+            <li># <code>\c ime_podatkovne_zbirke ime_uporabnika</code> –
+            poveži se kot določen uporabnik</li>
             </ul></li>
-            <li><h1
-            id="dt_izpise_vse_preglednice_podatkovne_zbirke"><code>\dt</code>
-            – izpiše vse preglednice podatkovne zbirke</h1></li>
-            <li><h1 id="dn_izpise_vse_sheme"><code>\dn</code> – izpiše
-            vse <i>sheme</i></h1></li>
-            <li><h1
-            id="du_izpise_vse_uporabnike_z_njihovimi_pravicami_in_vlogami"><code>\du</code>
-            – izpiše vse uporabnike z njihovimi pravicami in
-            vlogami</h1>
+            <li># <code>\dt</code> – izpiše vse preglednice podatkovne
+            zbirke</li>
+            <li># <code>\dn</code> – izpiše vse <i>sheme</i></li>
+            <li># <code>\du</code> – izpiše vse uporabnike z njihovimi
+            pravicami in vlogami
             <ul>
-            <li><h1
-            id="du_ime_uporabnika_izpise_podatke_o_uporabniku"><code>du ime_uporabnika</code>
-            – izpiše podatke o uporabniku</h1></li>
+            <li># <code>du ime_uporabnika</code> – izpiše podatke o
+            uporabniku</li>
             </ul></li>
-            <li><h1
-            id="d_ime_preglednice_izpise_stolpce_shemo_preglednice_d_ime_preglednice_podrobnejsi_izpis"><code>\d ime_preglednice</code>
-            – izpiše stolpce/<i>shemo</i> preglednice #
-            <code>\d+   ime_preglednice</code> – podrobnejši
-            izpis</h1></li>
-            <li><h1 id="df_izpise_vse_funkcije"><code>\df</code> –
-            izpiše vse <i>funkcije</i></h1></li>
-            <li><h1 id="q_izhod_iz_PostgreSQL"><code>\q</code> – izhod
-            iz PostgreSQL</h1></li>
+            <li># <code>\d ime_preglednice</code> – izpiše
+            stolpce/<i>shemo</i> preglednice #
+            <code>\d+   ime_preglednice</code> – podrobnejši izpis</li>
+            <li># <code>\df</code> – izpiše vse <i>funkcije</i></li>
+            <li># <code>\q</code> – izhod iz PostgreSQL</li>
             <li>$
             <code>psql -h localhost -d ime_podatkovne_zbirke -U ime_uporabnika</code>
             – prijava v določeno podatkovno zbirko (navajanju
