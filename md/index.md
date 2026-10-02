@@ -1,6 +1,6 @@
 ---
 title: Janez Pavel Žebovec
-date: 2026-08-31
+date: 2026-10-02
 description: Osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran, osebno spletišče
 ---
@@ -114,6 +114,8 @@ Družbena omrežja, kjer sem sicer registriram, a jih ne uporabljam (kaj dosti):
       Translations](https://translate.element.io/user/JanezPavelZebovec/) –
       začel sem sodelovati pri prevodu [Elementa](https://element.io/), posebej
       dlančniškega orodja
+- [Open Library](https://openlibrary.org/people/janezpavelzebovec) – tu sem
+  dodal nekaj slovenskih izdaj
 
 Druga spletna mesta:
 

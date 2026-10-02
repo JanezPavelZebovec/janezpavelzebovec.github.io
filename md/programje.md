@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2026-07-21
+date: 2026-09-22
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -16,7 +16,7 @@ Večina ljudi se dandanes zadovolji s slabo programsko opremo, s tem pa se ne le
 
 ## Računalnik
 
-Večinoma so tu programi, ki jih sam uporabljam, nekateri pa za določene naloge primerljivo dobri tem, ki jih sam uporabljam (spletni brskalniki za primer).
+Večinoma so tu programi, ki jih sam uporabljam, nekateri pa za določene naloge primerljivo dobri tem, ki jih sam uporabljam.
 
 | program | namembnost | Debianov paket | opombe |
 | --- | --- | --- | --- |
@@ -27,6 +27,7 @@ Večinoma so tu programi, ki jih sam uporabljam, nekateri pa za določene naloge
 | [DBeaver](https://dbeaver.io/) | urejevalnik podatkovnih zbirk SQL | | |
 | [DigiKam](https://www.digikam.org/) | razvrščevalnik slik | [digikam](https://packages.debian.org/bookworm/digikam) | s prepoznavo obrazov, urejanjem metapodatkov |
 | [FontForge](https://fontforge.org/) | urejevalnik računalniških pisav | [fontforge](https://packages.debian.org/buster/fontforge) | napreden, grši |
+| [FreeCAD](https://www.freecad.org/) | urejevalnik CAD | | |
 | [Gimp](https://www.gimp.org/) | urejevalnik slik | [gimp](https://wiki.debian.org/GIMP) | |
 | [Gramps](https://gramps-project.org/) | rodoslovje | [gramps](https://packages.debian.org/buster/gramps) | |
 | [Inkscape](https://inkscape.org/) | urejevalnik SVG | [inkscape](https://packages.debian.org/buster/inkscape) | |

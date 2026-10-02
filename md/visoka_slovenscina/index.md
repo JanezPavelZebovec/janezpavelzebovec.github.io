@@ -8,50 +8,127 @@ author: Janez Pavel Žebovec
 
 # Visoka slovenščina
 
-Z *visoko slovenščino* ni mišljena neka stroga knjižna oz. zborna slovenščina, temveč tudi vsa slovenska narečja, ki izginjajo in se zlivajo v skupno pogovorno, velikovečinsko *nižjo*, slovenščino. Knjižna slovenščina je umetni skupni jezik Slovencev, s podlago na (nekaterih) narečjih. Pojem visoke slovenščine se torej ne nanaša na knjižnost, temveč na *čistost* jezika, da slovenščina ostaja slovenščina, popolnoma razumljiva vsakemu Slovencu le z znanjem slovenščine, ne sme zahtevati znanja nobenega drugega jezika. Tuji izrazi se smejo rabiti zgolj takrat, ko za nekaj ne obstaja noben slovenski izraz (eno- ali večbeseden) in je ta beseda zares potrebna, pa še to le začasno, dokler se ne iznajde domači izraz (zahtevnost in trajanje take iznajdbe se pač razlikuje od izraza do izraza).
+Z *visoko slovenščino* ni mišljena neka stroga knjižna oz. zborna slovenščina,
+temveč tudi vsa slovenska narečja, ki izginjajo in se zlivajo v skupno
+pogovorno, velikovečinsko *nižjo*, slovenščino. Knjižna slovenščina je umetni
+skupni jezik Slovencev, s podlago na (nekaterih) narečjih. Pojem visoke
+slovenščine se torej ne nanaša na knjižnost, temveč na *čistost* jezika, da
+slovenščina ostaja slovenščina, popolnoma razumljiva vsakemu Slovencu le z
+znanjem slovenščine, ne sme zahtevati znanja nobenega drugega jezika. Tuji
+izrazi se smejo rabiti zgolj takrat, ko za nekaj ne obstaja noben slovenski
+izraz (eno- ali večbeseden) in je ta beseda zares potrebna, pa še to le začasno,
+dokler se ne iznajde domači izraz (zahtevnost in trajanje take iznajdbe se pač
+razlikuje od izraza do izraza).
 
-Slovenščina je velik del zgodovine veljala za nerazvit jezik preprostega kmečkega ljudstva, podvrženega močnejšim evropskim narodom in njihovim kulturnim, jezikovnim vplivom. Nekako v 18. stoletju se je že lahko kosala z ostalimi evropskimi jeziki, v zadnjih desetljih pa slovenščina zopet nazaduje in postaja (če čisto malo pretiravamo) zgolj neko narečje svetôvščine (to pomeni predvsem angleščine).
+Slovenščina je velik del zgodovine veljala za nerazvit jezik preprostega
+kmečkega ljudstva, podvrženega močnejšim evropskim narodom in njihovim
+kulturnim, jezikovnim vplivom. Nekako v 18. stoletju se je že lahko kosala z
+ostalimi evropskimi jeziki, v zadnjih desetljih pa slovenščina zopet nazaduje in
+postaja (če čisto malo pretiravamo) zgolj neko narečje svetôvščine (to pomeni
+predvsem angleščine).
 
-Nekdaj so se besede prevzemale predvsem iz nemščine, kar je posledica soležnosti Avstrije in dalje Nemčije, pod kateri smo svojčas spadali, in katerih uradni jezik je bila nemščina; danes pa se besede prevzemajo predvsem (ali docela) iz angleščine, ki je glavni jezik dandanašnjega svetovnega naroda, neozerečega se na dediščino, zgodovino, temveč zreč zgolj v sedanje udobje ter sanje in želje prihodnosti. V taki družbi slovenščina izgubi svojo veljavo in pomen, kot ostali nesvetovni jeziki.
+Nekdaj so se besede prevzemale predvsem iz nemščine, kar je posledica soležnosti
+Avstrije in dalje Nemčije, pod kateri smo svojčas spadali, in katerih uradni
+jezik je bila nemščina; danes pa se besede prevzemajo predvsem (ali docela) iz
+angleščine, ki je glavni jezik dandanašnjega svetovnega naroda, neozerečega se
+na dediščino, zgodovino, temveč zreč zgolj v sedanje udobje ter sanje in želje
+prihodnosti. V taki družbi slovenščina izgubi svojo veljavo in pomen, kot ostali
+nesvetovni jeziki.
 
-Samo prevzemanje besede še ne bi bilo tako velika težava, če bi se prevzemale le besede, za katere nimamo ustreznic, oz. se je potrebno do njih še dokopati, in bi prevzete besede z besedotvornimi sposobnostmi maternih govorcev sčasoma nadomestili – a temu ni tako, in materni govorci tega niso sposobni, niti se za to posebno ne menijo. Tako se bo slovenščina počasi zlila s prevladujočimi jeziki ali še verjetneje: preprosto utihnila.
+Samo prevzemanje besede še ne bi bilo tako velika težava, če bi se prevzemale le
+besede, za katere nimamo ustreznic, oz. se je potrebno do njih še dokopati, in
+bi prevzete besede z besedotvornimi sposobnostmi maternih govorcev sčasoma
+nadomestili – a temu ni tako, in materni govorci tega niso sposobni, niti se za
+to posebno ne menijo. Tako se bo slovenščina počasi zlila s prevladujočimi
+jeziki ali še verjetneje: preprosto utihnila.
 
-Medtem ko se nabor prevzetih besed veča, se slovenske besede opušča kot  „*arhaične*“ (torej starinske), a to pomeni zgolj to, da so se uporabljale, ko je bil naš jezik še toliko bogatejši. In ko so v slovarju enkrat označene kot take, postane to nespremenljivo dejstvo, na katerega se lahko sklicuje in se namesto njih uporablja tiste, ki so še preživele ali pa njihovo mesto zasedejo kar prevzete.
+Medtem ko se nabor prevzetih besed veča, se slovenske besede opušča kot
+„*arhaične*“ (torej starinske), a to pomeni zgolj to, da so se uporabljale, ko
+je bil naš jezik še toliko bogatejši. In ko so v slovarju enkrat označene kot
+take, postane to nespremenljivo dejstvo, na katerega se lahko sklicuje in se
+namesto njih uporablja tiste, ki so še preživele ali pa njihovo mesto zasedejo
+kar prevzete.
 
 Če povzamemo, so razlogi (oz. izgovori) za rabo tujk sledeči:
 
-- **medjezikovna povezljivost** in premočrtnost prevajanja je eden najbolj priljubljenih razlogov (morda tudi eden boljših), tako namreč pomensko polje tudi skozi prevod ostaja bolj ali manj enako, kar je koristno predvsem v znanosti;
-- **vpetost v angleško govoreči svet** je bolj vzrok, kot razlog; največji vpliv ima na mlajše rodove, ki veliko časa preživijo na spletu, družbenih omrežjih, računalniških igricah in drugi programski opremi, ki ostaja v veliki večini neprevedena (oziroma prevodov ne uporabljajo, ker bi to otežilo spoznavanje z določenim programskim okoljem – tudi sam sem v nekaterih primerih med temi – spletni vodiči so namreč v angleščini; prevodi so pogosto tudi neustrezni/okorni), veliko (večino) novega znanja (tudi izven neposredno z računalniki povezanih področij) tako pridobijo v angleščini, ki si ga ne znajo ustrezno prevesti (glej naslednjo točko);
-- **slabo poznavanje slovenščine** in premajhen poudarek na njej je med drugim vzrok za splošni upad pismenosti - nepoznavanje osnovnih/temeljnih zakonitosti slovenščini in jezika na splošno (iz katerih so logično izpeljana ostala dogovorjena pravila - npr. pravopis, ki je potreben za splošno razumljivost in preglednost). To lahko v veliki meri pripišemo tudi prekomernemu usmerjanju pozornosti na svetovno književnost namesto jeziku pri pouku *slovenščine*;
-- **„zvenečnost“ tujih jezikov in razkazovanje „razgledanosti“** je kot razlog med najbednejšimi in neupravičenimi; z vpeljevanjem tujih izrazov naj bi se namreč govorec/pisec izkazal bolj izobražen, razgledan, omikan; to je veljalo tudi v preteklosti, ko so bili višji sloji večinoma potujčeni (oz. so imeli najboljše znanje tujih jezikov); čeprav ima to danes nekoliko manjši pomen, tuje izrazje še vedno velja za bolj omikano, oziroma strokovno, zato naj bi se uporabljalo v v krogih izobražencev, znanstvenikov – vsak se hoče izkazati kot eden od njih (vendar pa tega očitno ne zna izkazati s svojim znanjem maternega jezika!).
+- **medjezikovna povezljivost** in premočrtnost prevajanja je eden najbolj
+  priljubljenih razlogov (morda tudi eden boljših), tako namreč pomensko polje
+  tudi skozi prevod ostaja bolj ali manj enako, kar je koristno predvsem v
+  znanosti;
+- **vpetost v angleško govoreči svet** je bolj vzrok, kot razlog; največji vpliv
+  ima na mlajše rodove, ki veliko časa preživijo na spletu, družbenih omrežjih,
+  računalniških igricah in drugi programski opremi, ki ostaja v veliki večini
+  neprevedena (oziroma prevodov ne uporabljajo, ker bi to otežilo spoznavanje z
+  določenim programskim okoljem – tudi sam sem v nekaterih primerih med temi –
+  spletni vodiči so namreč v angleščini; prevodi so pogosto tudi
+  neustrezni/okorni), veliko (večino) novega znanja (tudi izven neposredno z
+  računalniki povezanih področij) tako pridobijo v angleščini, ki si ga ne znajo
+  ustrezno prevesti (glej naslednjo točko);
+- **slabo poznavanje slovenščine** in premajhen poudarek na njej je med drugim
+  vzrok za splošni upad pismenosti - nepoznavanje osnovnih/temeljnih zakonitosti
+  slovenščini in jezika na splošno (iz katerih so logično izpeljana ostala
+  dogovorjena pravila - npr. pravopis, ki je potreben za splošno razumljivost in
+  preglednost). To lahko v veliki meri pripišemo tudi prekomernemu usmerjanju
+  pozornosti na svetovno književnost namesto jeziku pri pouku *slovenščine*;
+- **„zvenečnost“ tujih jezikov in razkazovanje „razgledanosti“** je kot razlog
+  med najbednejšimi in neupravičenimi; z vpeljevanjem tujih izrazov naj bi se
+  namreč govorec/pisec izkazal bolj izobražen, razgledan, omikan; to je veljalo
+  tudi v preteklosti, ko so bili višji sloji večinoma potujčeni (oz. so imeli
+  najboljše znanje tujih jezikov); čeprav ima to danes nekoliko manjši pomen,
+  tuje izrazje še vedno velja za bolj omikano, oziroma strokovno, zato naj bi se
+  uporabljalo v v krogih izobražencev, znanstvenikov – vsak se hoče izkazati kot
+  eden od njih (vendar pa tega očitno ne zna izkazati s svojim znanjem maternega
+  jezika!).
 
-Popolnoma zgrešen (a zelo pogost) pristop k prevajanju, oz. kovanju slovenskih ustreznic tujim izrazom je dobesedno prevajanje. Taki prevodi so pogosto pomensko zgrešeni, saj ne odražajo prave in/ali trenutne rabe besede. Pri ustvarjanju novih besed (praviloma so to skovanke) se zelo pogosto ne držijo besedotvornih zakonitosti, oziroma celo te prevzemajo iz angleščine, kar je – seveda – popolnoma nesprejemljivo in še nevarnejše kot prevzemanje izrazov.
+Popolnoma zgrešen (a zelo pogost) pristop k prevajanju, oz. kovanju slovenskih
+ustreznic tujim izrazom je dobesedno prevajanje. Taki prevodi so pogosto
+pomensko zgrešeni, saj ne odražajo prave in/ali trenutne rabe besede. Pri
+ustvarjanju novih besed (praviloma so to skovanke) se zelo pogosto ne držijo
+besedotvornih zakonitosti, oziroma celo te prevzemajo iz angleščine, kar je –
+seveda – popolnoma nesprejemljivo in še nevarnejše kot prevzemanje izrazov.
 
 Če torej povzamem nekaj pravil visoke slovenščine:
 
-- **Visoka slovenščina je jezik, ki izvira le iz sebe, torej naj bo tak, kot bi bil brez prevzemanja iz, oz. posnemanja drugih jezikov.**
-- **Visoka slovenščina vključuje tudi vsa narečja**, ni le knjižni, oz. zborni jezik.
-- **Od drugih jezikov se ne prevzema niti izrazov, niti jezikovnih pravil** (besedotvornih, skladenjskih, oblikoslovnih, povednih, ...). Izjema je lahko v majhni meri (!) zgolj slovnica.
+- **Visoka slovenščina je jezik, ki izvira le iz sebe, torej naj bo tak, kot bi
+  bil brez prevzemanja iz, oz. posnemanja drugih jezikov.**
+- **Visoka slovenščina vključuje tudi vsa narečja**, ni le knjižni, oz. zborni
+  jezik.
+- **Od drugih jezikov se ne prevzema niti izrazov, niti jezikovnih pravil**
+  (besedotvornih, skladenjskih, oblikoslovnih, povednih, ...). Izjema je lahko v
+  majhni meri (!) zgolj slovnica.
 - **Novi izrazi naj ne bodo dobesedni prevodi tujih izrazov.**
 - **Izraze naj se kuje po njihovi trenutni rabi.**
-- **Prevzeti izrazi naj se v zapisu jasno ločijo od domačih**, podobno kot je uveljavljeno označevanje latinskih poimenovanj v živoslovju, zdravstvu – torej v poševnem tisku, podčrtano, v navednicah.
-- Še pod vprašajem: **Visoko slovenščino se zapisuje v slovenskem črkopisu – gajici**; zato naj se vsi tuji izrazi, ki so zapisani v slovenščini, pišejo po gajici, podobno kot Hrvatje počnejo v svojem črkopisu. Naj bo zapis v slovenščini vedno berljiv Slovencu. Kjer pomen zapisanega zato postane preveč dvomljiv, se lahko nadomesti (ali dopolni v oklepaju) z izrazom v tujem črkopisu, a po omenjenih pravilih. Npr.: *Linux* > Linuks, *John Ronald Reuel Tolkien* > Džon Ronald Roel Tolkin.
+- **Prevzeti izrazi naj se v zapisu jasno ločijo od domačih**, podobno kot je
+  uveljavljeno označevanje latinskih poimenovanj v živoslovju, zdravstvu – torej
+  v poševnem tisku, podčrtano, v navednicah.
+- Še pod vprašajem: **Visoko slovenščino se zapisuje v slovenskem črkopisu –
+  gajici**; zato naj se vsi tuji izrazi, ki so zapisani v slovenščini, pišejo po
+  gajici, podobno kot Hrvatje počnejo v svojem črkopisu. Naj bo zapis v
+  slovenščini vedno berljiv Slovencu. Kjer pomen zapisanega zato postane preveč
+  dvomljiv, se lahko nadomesti (ali dopolni v oklepaju) z izrazom v tujem
+  črkopisu, a po omenjenih pravilih. Npr.: *Linux* > Linuks, *John Ronald Reuel
+  Tolkien* > Džon Ronald Roel Tolkin.
 
 ## Obstoječa slovenščina
 
-Za seznam drugih prepovedanih izrazov v visoki slovenščini (izrazi, ki imajo v slovenščini že popolno uveljavljeno domačo ustreznico) glej stran [Prepovedane besede](/prepovedane_besede).
+Za seznam drugih prepovedanih izrazov v visoki slovenščini (izrazi, ki imajo v
+slovenščini že popolno uveljavljeno domačo ustreznico) glej stran
+[Prepovedane besede](/prepovedane_besede).
 
 Tu so navedene nekatere sprejete (a ne nujno – več – uveljavljene/uporabljane).
 
 - **hranilnica** < *banka*
-- **ljudovlada** (ustrezneje *ljudstvovlada*? – neuveljavljeno) < *republika*, *demokracija* <small>(it./nem. < frc. < lat.; nem. < frc. < lat. < gr.))</small>
+- **ljudovlada** (ustrezneje *ljudstvovlada*? – neuveljavljeno) < *republika*,
+  *demokracija* <small>(it./nem. < frc. < lat.; nem. < frc. < lat. < gr.))
+  </small>
 - **krajepis** < *topografija*
 - **pogon** (gonilna sila, gibalo, pogonski stroj) < *motor*
 - **ravnik** < *ekvator*
 - **veljava** < *valuta* <small>(nem. < it.)</small>
 - **stálnica** < *konstanta* (nasploh in npr. matematična, fizikalna)
 
-Mesece, ki so dandanes večinoma uporabljani, smo prevzeli neposredno iz nemščine, nekako po zmagi komunizma po drugi svetovni vojni: 
+Mesece, ki so dandanes večinoma uporabljani, smo prevzeli neposredno iz
+nemščine, nekako po zmagi komunizma po drugi svetovni vojni: 
 
 - **prosinec** < *januar*
 - **svečan** < *februar*
@@ -68,7 +145,10 @@ Mesece, ki so dandanes večinoma uporabljani, smo prevzeli neposredno iz nemšč
 
 ## Starejše ustreznice tujim izrazom
 
-Skupaj z nekaterimi opuščenimi, starinskimi ali narečnimi izrazi. Veliko slovenskih ustreznic oz. izrazov v tem poglavju ni najbolj posrečenih. Na velikih mestih je namesto tujke naveden kar zdaj uveljavljen izraz. Navedene so tudi ustreznice, ki jih je oseba uveljavila/skovala.
+Skupaj z nekaterimi opuščenimi, starinskimi ali narečnimi izrazi. Veliko
+slovenskih ustreznic oz. izrazov v tem poglavju ni najbolj posrečenih. Na
+velikih mestih je namesto tujke naveden kar zdaj uveljavljen izraz. Navedene so
+tudi ustreznice, ki jih je oseba uveljavila/skovala.
 
 ### Blaž Matek - računstvo
 (1852 - 1910)
@@ -100,7 +180,8 @@ Namesto *eno-* piše *jedno-*; tako ima *jednačba, jednak, jeden ...*.
 - **algebrajska števila** - cela števila
 - **številna vrsta** - številska premica
 - **cela števila** - naravna števila
-- **oblične izpremembe ulomkov** - razširjanje/krajšanje ulomkov; nem. *Formveränderung der Brüche*
+- **oblične izpremembe ulomkov** - razširjanje/krajšanje ulomkov; nem.
+  *Formveränderung der Brüche*
 - **povračaj, povratni ulomek** - *perioda, periodični* ulomek
 - **pravokotno soredje** - *koordinatni sistem*
 - **odsečnična os** - *abcisna* os
@@ -109,10 +190,12 @@ Namesto *eno-* piše *jedno-*; tako ima *jednačba, jednak, jeden ...*.
 - **stalnica** - *konstanta*, nem. *die Konstante*
 - **premenljivka** - spremenljivka, nem. *die Variable*
 - **razvita/nerazvita funkcija** - *eksplicitna/implicitna funkcija*
-- **nerazložno/razložno število**, iracijonalno/racijonalno število - *iracionalno/racionalno* število, nem. *Irrationale/Rationale Zahl*
+- **nerazložno/razložno število**, iracijonalno/racijonalno število -
+  *iracionalno/racionalno* število, nem. *Irrationale/Rationale Zahl*
 - **umišljeno število** (ker nima stvarne podlage) - *imaginarno* število
 - **stvarno število** - *realno* število
-- **skupno število** (vsota stvarnega in umišljenega števila) - *kompleksno* število
+- **skupno število** (vsota stvarnega in umišljenega števila) - *kompleksno*
+  število
 - **prirastek** - *diferencial*
 - **značilka** - *karakteristika*; nem. *die Charakteristik*
 - **pridavek** - *mantisa*; nem. *die Mantisse*
@@ -125,7 +208,10 @@ Namesto *eno-* piše *jedno-*; tako ima *jednačba, jednak, jeden ...*.
 
 ## Nove slovenske ustreznice
 
-Izvori besed, ki so pri nekaterih besedah, niso tam zato, ker bi prevzete besede skušal prevajati dobesedno ali po izvornem pomenu te besede, ampak ker so bodisi zanimivi, bodisi koristijo kot navdih pri kovanju slovenske ustreznice, ali pa so tam zgolj kot dokaz tujeizvornosti.
+Izvori besed, ki so pri nekaterih besedah, niso tam zato, ker bi prevzete besede
+skušal prevajati dobesedno ali po izvornem pomenu te besede, ampak ker so bodisi
+zanimivi, bodisi koristijo kot navdih pri kovanju slovenske ustreznice, ali pa
+so tam zgolj kot dokaz tujeizvornosti.
 
 Malo uporabljani predlogi, a večinoma poznani:
 
@@ -140,7 +226,8 @@ Dobri predlogi na [*Fran - Predlagajte nove slovenske ustreznice*](https://fran.
 - **znamčenje** < ang. *branding*
 - **ženomor** < *femicid*
 
-Drugi predlogi (slabše tvorjeni – pomeni, da imajo precej angleško tvorbo, sli so bolj dobesedni prevod, kot poimenovanje pojava – so označeni z zvezdico \*):
+Drugi predlogi (slabše tvorjeni – pomeni, da imajo precej angleško tvorbo, sli
+so bolj dobesedni prevod, kot poimenovanje pojava – so označeni z zvezdico \*):
 
 - **gonilnik** <small>(Benjamin Žebovec, 2026-05-01)</small> < *motor* (kot tisto, kar poganja)
 - **kadníca** [L1] <small>(Boštjan Mejak, 2025-11-24)</small> < *cigareta*
@@ -169,7 +256,8 @@ Drugi predlogi (slabše tvorjeni – pomeni, da imajo precej angleško tvorbo, s
 
 ### Moji predlogi
 
-Tu je seznam mojih predlogov za nove slovenske ustreznice (nekatere so že obstoječe, z zgolj dodanim/prirejenim pomenom, druge so tvorjene nanovo):
+Tu je seznam mojih predlogov za nove slovenske ustreznice (nekatere so že
+obstoječe, z zgolj dodanim/prirejenim pomenom, druge so tvorjene nanovo):
 
 - **déževka** <small>(2025-12-17)</small> < *pelerina*
 - **dlánčnik** <small>(/2025-06-30)</small> < "pametni" *telefon* <small>(podobno je tudi nem. *Handy*)</small>
@@ -227,9 +315,9 @@ Te skovanke so (še) precej okorne in potrebne dodatnega premisleka ali druge za
 
 ---
 
-Predlogi so dobrodošli na [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net).
+Predlogi so dobrodošli na [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net) ;)
 
-Glej tudi [Propad slovenščine](/visoka_slovenscina/propad_slovenscine) za primere in [Slovar slovenske angleščine](/visoka_slovenscina/ssa).
+Glej tudi [Propad slovenščine](/visoka_slovenscina/propad_slovenscine) za primere propada in [Slovar slovenske angleščine](/visoka_slovenscina/ssa).
 
 ## Zunanje povezave,  viri in sklici
 

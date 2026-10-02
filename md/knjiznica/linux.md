@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2026-09-12
+date: 2026-09-25
 description: Priročnik za uporabo Linuxa, posebno skozi terminal
 keywords: Linux, terminal, operacijski sistem
 author: Janez Pavel Žebovec
@@ -505,21 +505,31 @@ Javni ključ moraš shraniti na strežniku v datoteko *.ssh/authorized_keys*.
 Ukazi, ki jih izvedeš v okolju terminala, so označeni z dolarjem $, ukazi v
 okolju PostgreSQL pa s ključnikom \#.
 
+**Namestitev**:
+
 - $ `sudo apt install postgresql` – namesti
   [PostgreSQL](https://www.postgresql.org/)
 - $ `sudo apt install postgresql-contrib`
 - $ `sudo systemctl status postgresql` – preveri stanje (mora biti *enabled* in
   *active*)
-- $ `psql -u postgres createdb ime_zbirke` – ustvari novo podatkovno zbirko
+
+**Dostop**:
+
+- $ `sudo -u postgres psql` – dostopaj do PostgreSQL kot privzeti vrhovni
+  uporabnik (ang. *superuser*) *postgres*
 - $ `sudo -u postgres createuser --superuser up_ime` – ustvari uporabnika z
   enakim imenom kot *root* v Linuxu, da ne potrebuješ vsakič `-u postgres`, ker
   PostgreSQL, če ni naveden uporabnik, preveri, če obstaja kakšen uporabnik z
   enakim imenom kot v Linuxu
-- $ `sudo -u postgres psql` – dostopaj do PostgreSQL kot privzeti vrhovni
-  uporabnik (ang. *superuser*) *postgres*
 - \# `CREATE USER uporabnik WITH PASSWORD 'geslo'` – ustvari uporabnika in mu
   dodeli geslo
-- \# `CREATE TABLE ime_preglednice ( ... )` – ustvari preglednico
+- $ `psql -h localhost -d ime_podatkovne_zbirke -U ime_uporabnika` – prijava v
+  določeno podatkovno zbirko
+- vsakokratnemu navajanju `-h localhost` za naslov podatkovne zbirke se lahko izogneš, če v
+  **~/.bashrc** ali **~/.profile** dodaš `export PGHOST=localhost`?
+
+**Ukazi PostgreSQL**:
+
 - \# `\i ime_datoteke` – izvedi ukaze iz datoteke
 - \# `\l` – izpiše seznam podatkovnih zbirk z njihovimi lastnostmi
 - \# `\connect ime_podatkovne_zbirke` = `\c ...` – poveži se s podatkovno zbirko
@@ -533,10 +543,46 @@ okolju PostgreSQL pa s ključnikom \#.
   ime_preglednice` – podrobnejši izpis
 - \# `\df` – izpiše vse *funkcije*
 - \# `\q` – izhod iz PostgreSQL
-- $ `psql -h localhost -d ime_podatkovne_zbirke -U ime_uporabnika` – prijava v
-  določeno podatkovno zbirko (navajanju *localhost* za naslov podatkovne zbirke
-  se lahko izogneš, če v **~/.bashrc** ali **~/.profile** dodaš `export
-  PGHOST=localhost`?)
+
+**Izgradnja podatkovne zbirke**:
+
+- Ustvarjanje zbirke:
+    - $ `psql -u postgres createdb ime_zbirke`
+        - $ `psql -u postgres createdb -O uporabnik_lastnik ime_zbrike` – določitev
+      lastnika ob ustvarjanju nove zbirke
+    - \# `CREATE DATABASE ime_zbirke WITH OWNER ime_up ENCODING 'UTF8';`
+- Ustvarjanje *sheme* (povezan moraš biti na zbirko, v kateri želiš *shemo*
+  ustvrjati):
+    - \# `CREATE SCHEMA ime_sheme;`
+        - \# `CREATE SCHEMA ime_sheme AUTHORIZATION ime_vloge;` – določitev
+          lastnika *sheme*
+- Ustvarjanje preglednice:
+    - \# `CREATE TABLE ime_preglednice ( ... )`
+- Ustvarjanje zbirke z zagonom datoteke SQL:
+    - $ `psql -U uporabnik -d postgres -f /absolutna/pot/do/datoteke.sql`
+    - \# `\c postgres`, \# `\i /absolutna/pot/do/datoteke.sql` ?
+
+**Spreminjanje zbirke**:
+
+- Spreminjanje dovoljenj:
+    - \# `GRANT ALL PRIVILEGES ON DATABASE zbirka TO uporabnik;` – da
+      uporabniku vsa dovoljenja za zbirko
+    - \# `GRANT ALL ON SCHEMA shema TO uporabnik;`
+    - \# `GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA shema TO uporabnik;` –
+      vsa dovoljenja za preglednice v shemi
+    - \# `GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA shema TO uporabnik;`
+    - \# `GRANT ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA shema TO uporabnik;`
+- Preimenovanje zbirke:
+    - \# `ALTER DATABASE staro_ime_zbirke RENAME TO novo_ime_zbirke;`
+
+**Brisanje**:
+
+- Brisanje zbirke:
+    - \# `DROP DATABASE ime_zbirke;`
+    - $ `dropdb ime_zbirke`
+- Brisanje *sheme* (povezan moraš biti na zbirko, v kateri brišeš *shemo*):
+    - če ni prazna: \# `DROP SCHEMA ime_sheme CASCADE;`
+    - če je prazna: \# `DROP SCHEMA ime_sheme;`
 
 ## Programi
 

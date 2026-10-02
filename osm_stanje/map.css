@@ -1,0 +1,52 @@
+@import "../colorscheme.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: var(--bOzadje);
+    color: var(--bOspredje);
+    font-size: 0.8rem;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 60ch);
+    height: 100%;
+}
+
+#menu {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 60ch;
+    background: var(--bOzadje);
+    color: var(--bOspredje);
+}
+
+#layers_menu {
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 8px 12px;
+    /*border: 1px solid black;*/
+    /*border-radius: 4px;*/
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#info_panel {
+    width: 100%;
+    overflow: auto;
+}
+
+button, .ol-attribution, .ol-attribution ul,.ol-attribution a {
+    background: var(--bOzadje) !important;
+    color: var(--bOspredje) !important;
+    text-shadow: none !important;
+}

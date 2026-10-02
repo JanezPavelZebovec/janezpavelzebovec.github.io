@@ -1,13 +1,14 @@
 ---
 title: Umovanje
-date: 2026-09-17
+date: 2026-09-23
 description: Osebna razmišljanja
 keywords: Janez Pavel Žebovec, razmišljanje, blog
 ---
 
-<small>(Na tej strani je navedenih nekaj sklicev, vendar niso vsi sklici taki, s
-katerimi bi se strinjal, namenjeni so namreč predstavitvi določene miselnosti,
-oz. vrst izjav.)</small>
+<small>(Vse to niso samo moja osebna razmišljanja, oz. do njih večinoma nisem
+prišel sam. Na tej strani je navedenih nekaj sklicev, vendar niso vsi sklici
+taki, s katerimi bi se strinjal, namenjeni so namreč predstavitvi določene
+miselnosti, oz. vrst izjav.)</small>
 
 ## Znanost
 
@@ -39,7 +40,8 @@ izvenčasen, izvenprostoren in nesnoven?
 >
 <cite>študentka v "razpravi" z Cliffom Knechtlom
     (glej [to](https://www.youtube.com/watch?v=Uh0v4Ogkcok) ali
-    [to](https://www.youtube.com/shorts/yne5A5F-NFw))</cite>
+    [to](https://www.youtube.com/shorts/yne5A5F-NFw) na YT, ali [tu, na tem
+    spletišču](/posnetki/I_am_God-Cliffe.mp4))</cite>
 
 Ko ljudje izgubijo vero v Boga, bogove najdejo drugod. Med drugim jih lahko
 najdejo v sebi, kar je še posebaj dandanes tako pogosto. Tak človek ima sebe za
@@ -54,6 +56,33 @@ resničnosti, bližje so jim pravljice o *Matrici*, *simulacijah*, ipd.
 S takim poudarjanjem posameznikove pristranske resničnosti se odpira možnost za
 opravičevanje zločina, saj ta ni več nepristransko slab, zla ni več, le še
 muhavost, težka otroštva, želja biti viden.
+
+Nekateri pravijo, da ne moremo (ne smemo) reči, da ima nekdo napačno
+dojemanje/razumevanje/mnenje.  Strogo jezikovno to res nima smisla, kajti
+dojemanje ne more biti napačno, to samo je, lahko pa narobe dojemamo resničnost;
+ali drugače: ne moremo narobe misliti, lahko pa mislimo narobe. In seveda so to
+še vedno le jezikovni približki tega, kar skušammo povedati. Najbolj točno bi,
+po mojem mnenju bilo, če rečemo, da njegovo dojemanje resničnostjo ni v skladu z
+resničnostjo samo.  Kajti resničnost je le ena. Vendar ko izrečemo takšno
+trditev, seveda ne moremo trditi, da je naše dojemanje stoodstotno, oz. da je
+dojemanje velike večine pravilno; vedno namreč obstaja vsaj neka majhna možnost,
+da se večina moti, oz.  da ima le ena oseba prav. Vendar je pomembno upoštevati,
+da, vsaj v vsakdanjih pogovorih, velja dogovor, da se dojemanje velike večine
+smatra za pravo. In čeprav se lahko večina moti, to še ne pomeni, da imajo lahko
+vsi prav.
+
+Podobno je celo pri znanosti. Niti znanost ne more ničesar trditi stoodstotno,
+vedno je možnost, da se moti – deloma ali v celoti (kar se je izkazalo že
+mnogokrat). Vse je stvar verjetnosti, le da je pri znanosti potrebna dosti višja
+verjetnost, da sme trditi, da je nekaj res.
+
+## Sodba
+
+Kot nepopolni ljudje ne moremo in ne smemo biti sodniki ljudi, ne moremo zares soditi
+(obsojati) ljudi kot dobre in slabe. To lahko le Bog. Lahko, in smo celo dolžni,
+pa sodimo dejanja. Kajti dana sta nam bila vest in razum, da razlikujemo med
+dobrim in hudim, ne le za usmerjanje sebe, temveč tudi za usmerjanje, oz.
+popravljanje smeri drugih.
 
 ## Zlo in svobodna volja
 
@@ -89,27 +118,25 @@ utemljevat, kajti ljudje jih bodo poslušali kljub temu. Če jih kdo ujame pri
 neustrezni rabi teh oznak, priredijo jezik svojim potreba – pomene spremenijo
 ali razširijo do neprepoznavnosti).
 
-> They’re not just coming for Tolkien.
-> They’re coming for your culture.
+> They’re not just coming for Tolkien.  They’re coming for your culture.
 >
-> University of Nottingham is now teaching that J. R. R. Tolkien demonized people of color in The Lord of the Rings.
+> University of Nottingham is now teaching that J. R. R. Tolkien demonized
+> people of color in The Lord of the Rings.
 >
-> Yes. You heard me right. Middle Earth is now “racist.”
-> Orcs, Easterlings, Southrons are victims of “ethnic chauvinism.”
+> Yes. You heard me right. Middle Earth is now “racist.” Orcs, Easterlings,
+> Southrons are victims of “ethnic chauvinism.”
 >
-> And it doesn’t stop there.
-> They’re dragging Shakespeare. Milton. Lewis. One by one.
+> And it doesn’t stop there.  They’re dragging Shakespeare. Milton. Lewis. One
+> by one.
 >
-> Forget education. This is cultural demolition.
-> The goal isn’t to “re-examine the past.”
-> It’s to poison it. To strip stories of their meaning until they become something you’re ashamed to love.
+> Forget education. This is cultural demolition.  The goal isn’t to “re-examine
+> the past.” It’s to poison it. To strip stories of their meaning until they
+> become something you’re ashamed to love.
 >
-> First, they redefine the words.
-> Then they rewrite the history.
-> And finally, they tell you what you’re allowed to believe.
+> First, they redefine the words.  Then they rewrite the history.  And finally,
+> they tell you what you’re allowed to believe.
 >
-> This isn’t a debate about orcs.
-> It’s a war over who owns your culture.
+> This isn’t a debate about orcs.  It’s a war over who owns your culture.
 >
 <cite><a href="https://x.com/CultureExploreX/status/1979259443574460909?s=20">Culture Explorer (X) o kritikah Gospodarja prstanov</a></cite>
 
@@ -201,6 +228,11 @@ vsiljen, *neiteligenten* (značilen levi način *diskreditacije*):
 >
 <cite>[David Milosavljević, LGBTIQ+, Parada ponosa, diskriminacija (Gostja: Simona Muršec)](https://youtu.be/oP2slxagfY8?t=1272) (YT)</cite>
 
+> Kot ženska si veliko več lahko privoščim Ker moški si pač žensk večinoma ne
+> upajo tepsti.
+>
+<cite>[prespolnik (*transseksualec*) oz „kraljiva preobleke“  na nekem intervjuju](https://youtu.be/9rX3aUuA-Ak?t=762)
+
 ### *Feminizem* in *patriarhat*
 
 > Štiri faze feminizma:
@@ -235,6 +267,14 @@ moški. Kar se namreč smatra za *toksično* moškost, ni moškost.
 > proces ustvarjanja draga ter vzpostavljanje razumevanja LGBTIQ+ skupnosti.
 >
 <cite>[Ivan Kovač](https://mladizmaji.si/aktualno/kaj-ljubljani-prinasa-5-generacija-idejalistk-in-idejalistov-iz-mestnega-inkubatorja/)
+
+## Ljubezen
+
+Ljubezen ni neka zunanja privlačnost, pač pa odločitev, postaviti nekoga drugega
+pred sabe, h kateri dostikrat (predvsem kar se tiče *romantične* ljubezni) res
+pripomore privlačnost. Ljubezen se ne „zgodi na prvi pogled“, niti drugi ali
+tretji. Pri ljubezni na prvi pogled gre za opaženje privlačnosti, sebično željo po imeti
+nekoga / nekaj.
 
 ## Splav
 
@@ -615,9 +655,43 @@ devetih poroko potrdil.
 
 ## Osebnost
 
+Smeri osebnega razvoja:
+
+- vera, povezanost z Bogom
+- znanja (naravoslovje, računstvo, zgodovina, jezik, ... ~ dejstva)
+- modroslovje (*filozofija*)
+- umetnost
+- družabni odnosi
+- spretnost, obvladovanje orodij (kar so tudi gole roke)
+    - telesna pripravljenost, delo na telesu
+
+Bolje se je razvijati v čim več smereh, ne le eni (?).
+
+Z vsakim trenutkom trenutkom imamo novo priložnost odločiti se biti bolši in
+postajati boljši. S tem (lahko) postajamo nov, drugačen človek, ki je sicer še
+vedno odgovoren za svoja pretekla dejanja, vendar od njih ni odvisen.
+
 > Don’t be embarrassed at things you’ve done, just change.
 >
-<cite>[Russell](https://www.youtube.com/watch?v=cVFlpvuK_ns&t=305s)</cite>
+<cite>[Russell (Abolitionists Rising)](https://www.youtube.com/watch?v=cVFlpvuK_ns&t=305s) (YT)</cite>
+
+## Potovanje skozi čas
+
+Za potovanje skozi čas običajno smatramo potovanje po časovni razsežnostmi s
+*pozitivno* hitrostjo, večjo od hitrosti sedanjega trenutka (v prihodnost) ali
+pa z *negativno* hitrostjo (v preteklost). Vsi namreč potujemo skozi čas
+**proti** (lahko bi rekli tudi **v**) prihodnosti z neko stalno hitrostjo, če v
+prostoru mirujemo, in vse manjšo, tem hitreje potujemo skozi prostor, ter
+ničelno, če potujemo s svetlobno hitrostjo.
+
+Glede potovanja skozi čas se mi zdi, da imamo le dve možnosti: ali ob vsakem
+tovrstnem popotovanju ustvarimo novo časovnico, pri čemer lahko preprečimo svoje
+rojstvo v tej novi časovnici, ali pa (kar mi je bližje, bolj smiselno) da ne
+moremo s popotovanjem spremeniti časovnice, da je vse nekako prepleteno – je to
+podobno zamisli **usode**?
+
+Seveda pa je tudi povsem mogoče, da bomo ugotovili, da potovanje skozi čas sploh
+ni mogoče (zaenkrat se mi zdi, da se še ne ve).
 
 ---
 

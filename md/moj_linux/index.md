@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-09-16
+date: 2026-09-18
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -492,7 +492,15 @@ Micromamba
 
 #### JOSM
 
-- v [~/.xinitrc](/moj_linux/home/janezpavel/.xinitrc) dodaj `export _JAVA_AWT_WM_NONREPARENTING=1`, da Java ve, kake vrste je upravljalec oken, da se preprečijo napake, povezane z okni (belo okno ob zagonu JOSM-a)
+- v [~/.xinitrc](/moj_linux/home/janezpavel/.xinitrc) dodaj
+  `export _JAVA_AWT_WM_NONREPARENTING=1`, da Java ve, kake vrste je upravljalec
+  oken, da se preprečijo napake, povezane z okni (belo okno ob zagonu JOSM-a)
+
+Če ti med urejanjem zemljevida zmanjkuje spomina, program zaženo z
+`JAVA_OPTS="-Xmx2G" josm` (tu je dodeljen spomin 2G = 2 Gb, lahko pa je tudi
+npr 256M). Kot trajno rešitev lahko npr. v **~/.bashrc** dodaš vzdevek
+`alias josm='JAVA_OPTS="-Xmx2G" josm'`, ali pa z 
+`java -Xmx2G -jar /usr/share/josm/josm.jar` urediš **/etc/default/josm**?
 
 #### QGIS
 
@@ -904,3 +912,20 @@ PBF (z vsemi tremi *primitivi OSM*: točke, poti in zveze); ta korak traja
   podatkovne zbirke OSM, da se ve, kje smo trenutno
 - `osm2pgsql-replication update -d osm_slovenia -- --slim --hstore` –
   posodobitev
+- `osm2pgsql-replication status -d osm_slovenia` – preveri stanje
+
+### Cronjob
+
+- `sudo apt install cron`
+- `crontab -l` – izpiše seznam načrtovanih opravil na napravi
+- `crontab -e` – odpri **crontab** trenutnega uporabnika v urejevalniku (za
+  točno določenega uporabnika `crontab -e -u uporabnik`)
+- dodaj vrstico oblike
+    ```
+    * * * * * /pot/do/opravila
+    ```
+    oz.
+    ```
+    [min 0 – 59] [ure 0 – 23] [dan v mesecu 1 – 31] [mesec v letu 1 – 12 / jan – dec]
+    [dan v tednu 0 – 7 / Mon – Sun] /pot/do/opravila
+    ```

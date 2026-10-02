@@ -108,7 +108,7 @@ Avtobusna povezava v eno smer (`route`):
     via=Podgrad
     to=Zadobrova
     network=MPP Ljubljana - Urbana
-    operator=Ljubljanski Potniški Promet
+    operator=Ljubljanski potniški promet
     fee=yes
     colour=#58574a
 
@@ -119,7 +119,7 @@ Zveza avtobusne povezave v obe (/vse) smeri (`route_master`):
     ref=42
     name=Bus 42
     network=MPP Ljubljana - Urbana
-    operator=Ljubljanski Potniški Promet
+    operator=Ljubljanski potniški promet
     colour=#58574a
 
 Zavetje postajališč:

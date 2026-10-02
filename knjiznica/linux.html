@@ -32,7 +32,7 @@ sistem"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/linux/">linux</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-12">2026-09-12</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-25">2026-09-25</time></p>
     </header>
     <nav>
         <ul>
@@ -895,6 +895,7 @@ sistem"/>
             <h3 id="PostgreSQL">PostgreSQL</h3>
             <p>Ukazi, ki jih izvedeš v okolju terminala, so označeni z
             dolarjem $, ukazi v okolju PostgreSQL pa s ključnikom #.</p>
+            <p><b>Namestitev</b>:</p>
             <ul>
             <li>$ <code>sudo apt install postgresql</code> – namesti <a
             href="https://www.postgresql.org/">PostgreSQL</a></li>
@@ -902,22 +903,31 @@ sistem"/>
             <li>$ <code>sudo systemctl status postgresql</code> –
             preveri stanje (mora biti <i>enabled</i> in
             <i>active</i>)</li>
-            <li>$ <code>psql -u postgres createdb ime_zbirke</code> –
-            ustvari novo podatkovno zbirko</li>
+            </ul>
+            <p><b>Dostop</b>:</p>
+            <ul>
+            <li>$ <code>sudo -u postgres psql</code> – dostopaj do
+            PostgreSQL kot privzeti vrhovni uporabnik (ang.
+            <i>superuser</i>) <i>postgres</i></li>
             <li>$
             <code>sudo -u postgres createuser --superuser up_ime</code>
             – ustvari uporabnika z enakim imenom kot <i>root</i> v
             Linuxu, da ne potrebuješ vsakič <code>-u postgres</code>,
             ker PostgreSQL, če ni naveden uporabnik, preveri, če obstaja
             kakšen uporabnik z enakim imenom kot v Linuxu</li>
-            <li>$ <code>sudo -u postgres psql</code> – dostopaj do
-            PostgreSQL kot privzeti vrhovni uporabnik (ang.
-            <i>superuser</i>) <i>postgres</i></li>
             <li>#
             <code>CREATE USER uporabnik WITH PASSWORD 'geslo'</code> –
             ustvari uporabnika in mu dodeli geslo</li>
-            <li># <code>CREATE TABLE ime_preglednice ( ... )</code> –
-            ustvari preglednico</li>
+            <li>$
+            <code>psql -h localhost -d ime_podatkovne_zbirke -U ime_uporabnika</code>
+            – prijava v določeno podatkovno zbirko</li>
+            <li>vsakokratnemu navajanju <code>-h localhost</code> za
+            naslov podatkovne zbirke se lahko izogneš, če v
+            <b>~/.bashrc</b> ali <b>~/.profile</b> dodaš
+            <code>export PGHOST=localhost</code>?</li>
+            </ul>
+            <p><b>Ukazi PostgreSQL</b>:</p>
+            <ul>
             <li># <code>\i ime_datoteke</code> – izvedi ukaze iz
             datoteke</li>
             <li># <code>\l</code> – izpiše seznam podatkovnih zbirk z
@@ -942,12 +952,79 @@ sistem"/>
             <code>\d+   ime_preglednice</code> – podrobnejši izpis</li>
             <li># <code>\df</code> – izpiše vse <i>funkcije</i></li>
             <li># <code>\q</code> – izhod iz PostgreSQL</li>
+            </ul>
+            <p><b>Izgradnja podatkovne zbirke</b>:</p>
+            <ul>
+            <li>Ustvarjanje zbirke:
+            <ul>
+            <li>$ <code>psql -u postgres createdb ime_zbirke</code>
+            <ul>
             <li>$
-            <code>psql -h localhost -d ime_podatkovne_zbirke -U ime_uporabnika</code>
-            – prijava v določeno podatkovno zbirko (navajanju
-            <i>localhost</i> za naslov podatkovne zbirke se lahko
-            izogneš, če v <b>~/.bashrc</b> ali <b>~/.profile</b> dodaš
-            <code>export   PGHOST=localhost</code>?)</li>
+            <code>psql -u postgres createdb -O uporabnik_lastnik ime_zbrike</code>
+            – določitev lastnika ob ustvarjanju nove zbirke</li>
+            </ul></li>
+            <li>#
+            <code>CREATE DATABASE ime_zbirke WITH OWNER ime_up ENCODING 'UTF8';</code></li>
+            </ul></li>
+            <li>Ustvarjanje <i>sheme</i> (povezan moraš biti na zbirko,
+            v kateri želiš <i>shemo</i> ustvrjati):
+            <ul>
+            <li># <code>CREATE SCHEMA ime_sheme;</code>
+            <ul>
+            <li>#
+            <code>CREATE SCHEMA ime_sheme AUTHORIZATION ime_vloge;</code>
+            – določitev lastnika <i>sheme</i></li>
+            </ul></li>
+            </ul></li>
+            <li>Ustvarjanje preglednice:
+            <ul>
+            <li># <code>CREATE TABLE ime_preglednice ( ... )</code></li>
+            </ul></li>
+            <li>Ustvarjanje zbirke z zagonom datoteke SQL:
+            <ul>
+            <li>$
+            <code>psql -U uporabnik -d postgres -f /absolutna/pot/do/datoteke.sql</code></li>
+            <li># <code>\c postgres</code>, #
+            <code>\i /absolutna/pot/do/datoteke.sql</code> ?</li>
+            </ul></li>
+            </ul>
+            <p><b>Spreminjanje zbirke</b>:</p>
+            <ul>
+            <li>Spreminjanje dovoljenj:
+            <ul>
+            <li>#
+            <code>GRANT ALL PRIVILEGES ON DATABASE zbirka TO uporabnik;</code>
+            – da uporabniku vsa dovoljenja za zbirko</li>
+            <li>#
+            <code>GRANT ALL ON SCHEMA shema TO uporabnik;</code></li>
+            <li>#
+            <code>GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA shema TO uporabnik;</code>
+            – vsa dovoljenja za preglednice v shemi</li>
+            <li>#
+            <code>GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA shema TO uporabnik;</code></li>
+            <li>#
+            <code>GRANT ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA shema TO uporabnik;</code></li>
+            </ul></li>
+            <li>Preimenovanje zbirke:
+            <ul>
+            <li>#
+            <code>ALTER DATABASE staro_ime_zbirke RENAME TO novo_ime_zbirke;</code></li>
+            </ul></li>
+            </ul>
+            <p><b>Brisanje</b>:</p>
+            <ul>
+            <li>Brisanje zbirke:
+            <ul>
+            <li># <code>DROP DATABASE ime_zbirke;</code></li>
+            <li>$ <code>dropdb ime_zbirke</code></li>
+            </ul></li>
+            <li>Brisanje <i>sheme</i> (povezan moraš biti na zbirko, v
+            kateri brišeš <i>shemo</i>):
+            <ul>
+            <li>če ni prazna: #
+            <code>DROP SCHEMA ime_sheme CASCADE;</code></li>
+            <li>če je prazna: # <code>DROP SCHEMA ime_sheme;</code></li>
+            </ul></li>
             </ul>
             <h2 id="Programi">Programi</h2>
             <h3 id="ST">ST</h3>

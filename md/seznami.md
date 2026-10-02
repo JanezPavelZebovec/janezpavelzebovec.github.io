@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-09-15
+date: 2026-09-28
 description: Razni seznami z različnih področij in priporočila
 keywords: seznam, priporočilo
 author: Janez Pavel Žebovec
@@ -66,6 +66,8 @@ Moja *priporočila* (precej nepopolna)
 - [The Light Phone](https://www.thelightphone.com/) – *minimalistični* dlančniki
 - [Minimal](https://minimalcompany.com/) – *minimalistični* dlančniki
 - [Nothing](https://si.nothing.tech/collections/shop-all)
+- [Open Tools](https://www.opentools.studio/) – novo francosko podjetje (2025; odprti
+  tiskalnik Openprinter)
 - [PinePhone](https://pine64.org/) – dlančniki (*pametni telefoni*) z Linuxom in še nekaj drugih naprav
 - [Sanctuary Computer](https://www.sanctuary.computer/) – *programersko* podjetje (sodelovali tudi z The Light Phone pri zasnovi njihovega dlančnika)
 
@@ -335,6 +337,9 @@ Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
 
 ##### Uradni zemljevidi
 
+- [DRAJV zemljevid](https://drajv.triglav.si/zemljevid) – dlančniško orodje zavarovalnice
+  Triglav, ki zbira brezimne podatke o prekoračitvah hitrostih, povprečni
+  hitrosti, prometnih nesrečah, pospeških, ...
 - [GisKD pregledovalnik](https://geohub.gov.si/ghapp/giskd/) - zemljevid
   kulturne dediščine, arheoloških najdišč
 - [NAP – Nacionalna točka dostopa](https://www.nap.si/) - dostop do prometnih
@@ -342,7 +347,7 @@ Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
   infrastrukturo)
 - [Planinska zveza Slovenije](https://poti.pzs.si/)
 - [Promet.si](https://promet.si/) – DARS-ov prometni zemljevid, ki ima tudi
-  svojo *aplikacijo* (s trenutnimi zastoji, zaprtimi cestami, hitrostmi, ...);
+  svojo *aplikacijo* (s trenutnimi zastoji, zaprtimi cestami, gostoto prometa, ...);
   podatke črpa predvsem od GURS-a (zgradbe, ceste, ...) in OSM-ja (točke
   zanimivosti/storitve, podjetja, ...), pa tudi še nekaterih vir;
 - [SiMO](https://www.simo.si/) – načrtovalnik potovanj, uporablja tudi podatke
@@ -675,6 +680,7 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [Brian Holdsworth](https://www.youtube.com/@BrianHoldsworth)
 - [Charlie Kirk](https://www.youtube.com/@RealCharlieKirk) - zagovornik Trumpa, prepovedi splava
 - [The Crucible](https://www.youtube.com/@The_Crucible) – Andrew Wilson
+- [The Counsel of Trent](https://www.youtube.com/@TheCounselofTrent)
 - [Daily Dose Of Wisdom](https://www.youtube.com/@Daily_Dose_Of_Wisdom)
 - [Družina in Življenje](https://www.youtube.com/@Druzinainzivljenje)
 - [The Fallen State](https://www.youtube.com/@TheFallenStateTV) – *intervuji* z raznimi osebnostmi, večinoma s strani *liberalcev*

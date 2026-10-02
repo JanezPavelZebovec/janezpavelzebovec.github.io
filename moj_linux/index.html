@@ -32,7 +32,7 @@ sistema"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/moj_linux/">moj_linux</a> / <a href="/moj_linux/index/">index</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-16">2026-09-16</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-18">2026-09-18</time></p>
     </header>
     <nav>
         <ul>
@@ -150,6 +150,7 @@ sistema"/>
         id="toc-Domaca_podatkovna_zbirka_OSM">Domača podatkovna zbirka
         OSM</a></li>
         </ul></li>
+        <li><a href="#Cronjob" id="toc-Cronjob">Cronjob</a></li>
         </ul></li>
         </ul></li>
         </ul>
@@ -878,6 +879,13 @@ sistema"/>
             Java ve, kake vrste je upravljalec oken, da se preprečijo
             napake, povezane z okni (belo okno ob zagonu JOSM-a)</li>
             </ul>
+            <p>Če ti med urejanjem zemljevida zmanjkuje spomina, program
+            zaženo z <code>JAVA_OPTS="-Xmx2G" josm</code> (tu je
+            dodeljen spomin 2G = 2 Gb, lahko pa je tudi npr 256M). Kot
+            trajno rešitev lahko npr. v <b>~/.bashrc</b> dodaš vzdevek
+            <code>alias josm='JAVA_OPTS="-Xmx2G" josm'</code>, ali pa z
+            <code>java -Xmx2G -jar /usr/share/josm/josm.jar</code>
+            urediš <b>/etc/default/josm</b>?</p>
             <h4 id="QGIS">QGIS</h4>
             <p>(Glej tudi <a
             href="https://qgis.org/resources/installation-guide/#debian-ubuntu">QGIS
@@ -1483,6 +1491,20 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             se ve, kje smo trenutno</li>
             <li><code>osm2pgsql-replication update -d osm_slovenia -- --slim --hstore</code>
             – posodobitev</li>
+            <li><code>osm2pgsql-replication status -d osm_slovenia</code>
+            – preveri stanje</li>
+            </ul>
+            <h3 id="Cronjob">Cronjob</h3>
+            <ul>
+            <li><code>sudo apt install cron</code></li>
+            <li><code>crontab -l</code> – izpiše seznam načrtovanih
+            opravil na napravi</li>
+            <li><code>crontab -e</code> – odpri <b>crontab</b>
+            trenutnega uporabnika v urejevalniku (za točno določenega
+            uporabnika <code>crontab -e -u uporabnik</code>)</li>
+            <li>dodaj vrstico oblike
+            <code>* * * * * /pot/do/opravila</code> oz.
+            <code>[min 0 – 59] [ure 0 – 23] [dan v mesecu 1 – 31] [mesec v letu 1 – 12 / jan – dec]     [dan v tednu 0 – 7 / Mon – Sun] /pot/do/opravila</code></li>
             </ul>
         </div>
     </main>
