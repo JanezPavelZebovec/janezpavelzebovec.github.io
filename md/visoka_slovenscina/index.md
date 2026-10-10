@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2026-08-16
+date: 2026-10-10
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 author: Janez Pavel Žebovec
@@ -123,7 +123,8 @@ Tu so navedene nekatere sprejete (a ne nujno – več – uveljavljene/uporablja
   </small>
 - **krajepis** < *topografija*
 - **pogon** (gonilna sila, gibalo, pogonski stroj) < *motor*
-- **ravnik** < *ekvator*
+- **ravnik** < *ekvator
+- **oblika** (datoteke)< *format* (datoteke)
 - **veljava** < *valuta* <small>(nem. < it.)</small>
 - **stálnica** < *konstanta* (nasploh in npr. matematična, fizikalna)
 
@@ -219,6 +220,7 @@ Malo uporabljani predlogi, a večinoma poznani:
 - **prebujenstvo, prebujenski**, < *woke*
 - **pregledna plošča** < ang. *dashboard*
 - **sébek** < *selfi*
+- (**spletni**) **vir** < *feed* (npr. pri RSS, YouTubu, Facebooku, ...)
 - **všéček** < *lajk*
 
 Dobri predlogi na [*Fran - Predlagajte nove slovenske ustreznice*](https://fran.si/ustreznice):
@@ -268,11 +270,15 @@ obstoječe, z zgolj dodanim/prirejenim pomenom, druge so tvorjene nanovo):
 - **gonilo** <small>(2026-05-01)</small> < *motor* (kot tisto, kar poganja)
 - **gonohrán** (gonski hranilnik) <small>(2026-06-07)</small> < *baterija*
 - **oslíka** <small>(/2026-05-01)</small>(oz. samo: **ponazorilna/pojasnilna slika**; celo uveljavljeno: **ponazorilo**); **osličen** (oz. samo: opremljen s slikami) < *ilustracija*; *ilustriran*
+- **mnógovôz** <small>(/2025-06-30)</small> < *avtobus*
 - **naravoslôvje** <small>(/2025-06-30)</small>, **stvárnoslovje**\* <small>(/2025-06-30)</small>, tvárnoslovje(?) < *fizika* <small>(< nem. *Physik* < lat. *physica* < gr. *physikḗ* = *naravoslovje, naraven, ki zadeva naravo* < gr. *phýsis* = *narava, stvarstvo, rast, rojstvo* < gr. glagol *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*)</small>
 - **preslikáva** <small>(2026-04-13)</small> < *funkcija*
 - **prostóroslôvje** <small>(/2025-06-30)</small> < *geometrija*
 - **pótno usmérjanje** <small>(/2026-03-13)</small> < *navigacija*
+- **pozívno *programiranje*** <small>(2026-10-10)</small> < *vibecodanje*
 - **rájčnik** <small>(/2026-08-16)</small> < *paradižnik*
+- **razpoznavna številka** <small>(2026-10-05)</small> < *identifikacijska*
+  številka / *ID*
 - **rázspôlnik** <small>(/2025-06-30)</small>, **razspôlništvo** <small>(/2025-06-30)</small> < *LGBTQ ...* (kot motnja v spolnem razvoju, ko posameznik nima pravilno razvitih spolnih značilnostih zaradi prirojenih motenj ali **samorazspoljenja**, ki je pogosto družbeno pogojeno, kot zavestna odločitev, da živiš v nasprotju z značilnostmi svojega pravega spola, oz. da trdiš, da nisi spola, kakršnega si v resnici)
 - **prespǒljenje, prêspolnik** <small>(/2026-05-01)</small></small> < *transseksualnost, transseksualec*
 - **rod otrok blaginje** <small>(/2025-08-05)</small> (se izraz itak že uporablja?) < *babyboom generacija*
@@ -281,9 +287,11 @@ obstoječe, z zgolj dodanim/prirejenim pomenom, druge so tvorjene nanovo):
 - **snôvoslôvje** <small>(/2025-06-30)</small> < *kemija*
 - **sprejémnik zvóka** <small>(/2025-06-30)</small> (**zvókosprejémnik** <small>(/2025-06-30)</small>) < *mikrofon*
 - **tresávec** <small>(/2025-06-30)</small> < *vibrant*
+- **ukáznik** (kot sklop ukazov) <small>(2026-08-16)</small> < (računalniški) *program*
 - **vêlecésta** <small>(/2025-06-30)</small> < *avtocesta*
 - **vesóljeslôvje** <small>(/2025-06-30)</small> < *kozmologija*
 - **vrh** <small>(/2026-03-13)</small> < *ekstrem* (*funkcije*)
+- **zahtévek za vključítev** <small>(2026-10-05)</small> < *pull request*
 - **zemlják** <small>(/2025-06-30)</small> < *krompir*
 - **zemljevidopis** <small>(/2025-08-05)</small> < *kartografija*
 
@@ -291,21 +299,19 @@ obstoječe, z zgolj dodanim/prirejenim pomenom, druge so tvorjene nanovo):
 
 Te skovanke so (še) precej okorne in potrebne dodatnega premisleka ali druge zamisli, ali pa sploh še nimajo ustreznice, a se dosti uporabljane in torej potrebne ustreznice:
 
-- **mnógovôz** <small>(/2025-06-30)</small> < *avtobus*
 - **(napihljivi) mehur** <small>(/2025-12-19)</small> < *balon*
 - *bazen*
 - uštevilčiti <small>(/2026-03-13)</small> , vračunalčiti? <small>(/2026-03-13)</small> < *digitalizirati*
 - **številčno** <small>(/2025-08-05)</small>, **računalniško** <small>(/2025-08-05)</small> < *digitalno*, *digitalizirati*
 - *film*
 - *kino*
-- svetlo(bo)stav(ba)? <small>(/2025-08-05)</small> < *fotosinteza*
+- svetlo(bo)stav(a)? <small>(/2025-08-05)</small> < *fotosinteza*
 - – **vozohrán** <small>(2026-08-16)</small> (zgradba/shramba za voz) < *garaža*
 - omika, družba, narod (?) < *kultura* (zelo širok pojem, ki bi ga bilo verjetno
   najbolje nadomestiti z več besedami, ki bi pokrivale vsaka svoje področje
   pomena)
 - *park*
 - *piknik*
-- **ukáznik** (kot sklop ukazov) <small>(2026-08-16)</small> < (računalniški) *program*
 - **redarstvo** (zaseden pojem?) < *policija*
 - kopališko obrežje? (s peskom?) <small>(/2026-03-13)</small> < *plaža*
 - *savna*

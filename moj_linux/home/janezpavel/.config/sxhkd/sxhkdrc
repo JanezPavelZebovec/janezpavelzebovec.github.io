@@ -1,5 +1,27 @@
 # da stopijo v veljavo sprememebe te datoteke: pkill -usr1 -x sxhkd
 
+XF86AudioRaiseVolume
+#	amixer --card 1 sset Master 5%+
+	amixer -D pulse sset Master 5%+
+#   glasnost 5%+
+
+XF86AudioLowerVolume
+#	amixer --card 1 sset Master 5%-
+	amixer -D pulse sset Master 5%-
+#   glasnost 5%-
+
+XF86AudioMute
+#	amixer -D pulse set Master 1+ toggle
+	amixer -D pulse set Master toggle
+#   glasnost toggle
+
+XF86MonBrightnessUp
+	brightnessctl -d amdgpu_bl0 set 10%+
+
+XF86MonBrightnessDown
+	brightnessctl -d amdgpu_bl0 set 10%-
+
+
 super + shift + l
 #zaklepanje zaslona
     slock
@@ -51,11 +73,27 @@ shift + Print
     posnetki
 
 
+# Nameščanje ključka. 2>&1 preusmeri tudi poročila o napakah v navaden izhodni tok.
+#super + n
+#     xsetroot -name "$(udisksctl mount -p block_devices/sda1 2>&1)"; sleep 2"
+
+#super + shift + n
+#     xsetroot -name "$(udisksctl unmount -p block_devices/sda1 2>&1)"; sleep 2"
+
 super + n
     namesti-usb mount
 
 super + shift + n
     namesti-usb unmount
+
+super + p
+# xsetroot -name "$(aft-mtp-mount ~/dlancnik 2>&1)"; sleep 2
+# xsetroot -name "$(jmtpfs ~/dlancnik 2>&1 >/dev/null)"; sleep 2
+    out=$(jmtpfs ~/dlancnik 2>&1 >/dev/null); [ -z "$out" ] && out="Dlančnik je povezan."; pkill -STOP slstatus; xsetroot -name "$out"; sleep 2; pkill -CONT slstatus
+super + shift + p
+# xsetroot -name "$(umount ~/dlancnik 2>&1)"; sleep 2
+# xsetroot -name "$(fusermount -u ~/dlancnik 2>&1)"; sleep 2
+    out=$(fusermount -u ~/dlancnik 2>&1); [ -z "$out" ] && out="Dlančnik je odvezan."; pkill -STOP slstatus; xsetroot -name "$out"; sleep 2; pkill -CONT slstatus
 
 super + shift + u
     ugasni
@@ -72,6 +110,9 @@ super + c
 
 super + s
     st -e lf ~/moje/spletno_mesto/
+
+super + shift + s
+	sh -c 'cd ~/moje/spletno_mesto/ && st -e php -S localhost:8000 && bas'
 
 super + r
 # prikaže izbiro za rabo

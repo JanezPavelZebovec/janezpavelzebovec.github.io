@@ -32,7 +32,7 @@ sistema"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/moj_linux/">moj_linux</a> / <a href="/moj_linux/index/">index</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-18">2026-09-18</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-10-06">2026-10-06</time></p>
     </header>
     <nav>
         <ul>
@@ -530,26 +530,41 @@ sistema"/>
             <i>mapi</i></li>
             </ul>
             <h4 id="Dlancnik">Dlančnik</h4>
+            <p><b>Android File Transfer</b></p>
             <ul>
             <li><code>sudo apt install android-file-transfer</code> –
             namesti android-file-transfer za prenos datotek med
             Androidom in Linuxom</li>
             <li>na dlančniku dovoli prenos podatkov</li>
-            <li><code>aft-mtp-mount ~/mapa_za_priklop_dlancnika</code> –
-            poveži dlančnik na izbrano mapo na Linuxu</li>
+            <li><code>aft-mtp-mount ~/mapa_za_priklop</code> – poveži
+            dlančnik na izbrano mapo na Linuxu</li>
             </ul>
-            <p>Če ne deluje, najprej poskusi obidi razdelilec USB
-            (<i>USB hub</i>), če ga uporabljaš, sicer poskusi
+            <p>Če ne deluje, najprej poskusi obidi razdelilec USB (ang.
+            <i>USB hub</i>), če ga uporabljaš; sicer poskusi
             sledeče:</p>
             <ul>
-            <li>v datoteki <b>etc/default/grub</b> zamenjaj vrstico
+            <li><code>echo -1 | sudo tee /sys/module/usbcore/parameters/autosuspend</code>
+            – prepreči, da bi jedro Linuxa napravam USB po nekaj
+            sekundah mirovanja zmanjšalo porabo (<i>autosuspend</i>; to
+            je privzeto delovanje); nekateri dlančniki se iz tega stanja
+            tudi ne prebudijo pravilno in ne odgovarjajo več na
+            zahtevke?</li>
+            <li>če to težavo odpravi, spremembo uveljavi za stalno – v
+            datoteki <b>etc/default/grub</b> zamenjaj vrstico
             <code>GRUB_CMDLINE_LINUX_DEFAULT="quiet"</code> z vrstico
             <code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash usbcore.autosuspend=-1"</code></li>
-            <li><code>sudo update-grub</code></li>
-            <li><code>sudo reboot</code> za ponovni zagon sistema, ali
-            <code>echo -1 | sudo tee /sys/module/usbcore/parameters/autosuspend</code>,
-            če (še) ne želiš ponovno zaganjati, ampak le ugotoviti, če s
-            tem že vse deluje</li>
+            <li><code>sudo update-grub</code> – to bo zagotovilo
+            delovanje tudi po naslednjem zagonu <i>sistema</i> (za
+            trenutno sejo zadostuje prvi ukaz)</li>
+            </ul>
+            <p><b>JMTPFS</b></p>
+            <ul>
+            <li><code>sudo apt install jmtpfs</code> – namesti
+            jmtpfs</li>
+            <li><code>jmtpfs ~/mapa_za_priklop</code> – poveže dlančnik
+            na izbrano mapo</li>
+            <li><code>fusermount -u ~/mapa_za_priklop</code> – (varno)
+            prekine povezavo z dlančnikom</li>
             </ul>
             <h3 id="Zvok">Zvok</h3>
             <ul>

@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-09-18
+date: 2026-10-06
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -256,22 +256,32 @@ Za nekoliko bolj priročno uporabo zunanjih pogonov:
 
 #### Dlančnik
 
+**Android File Transfer**
+
 - `sudo apt install android-file-transfer` – namesti android-file-transfer za
   prenos datotek med Androidom in Linuxom
 - na dlančniku dovoli prenos podatkov
-- `aft-mtp-mount ~/mapa_za_priklop_dlancnika` – poveži dlančnik na
+- `aft-mtp-mount ~/mapa_za_priklop` – poveži dlančnik na
   izbrano mapo na Linuxu
 
-Če ne deluje, najprej poskusi obidi razdelilec USB (*USB hub*), če ga
-uporabljaš, sicer poskusi sledeče:
+Če ne deluje, najprej poskusi obidi razdelilec USB (ang. *USB hub*), če ga
+uporabljaš; sicer poskusi sledeče:
 
-- v datoteki **etc/default/grub** zamenjaj vrstico
-    `GRUB_CMDLINE_LINUX_DEFAULT="quiet"` z vrstico
-    `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash usbcore.autosuspend=-1"`
-- `sudo update-grub`
-- `sudo reboot` za ponovni zagon sistema, ali
-    `echo -1 | sudo tee /sys/module/usbcore/parameters/autosuspend`, če (še) ne
-    želiš ponovno zaganjati, ampak le ugotoviti, če s tem že vse deluje
+- `echo -1 | sudo tee /sys/module/usbcore/parameters/autosuspend` – prepreči, da
+  bi jedro Linuxa napravam USB po nekaj sekundah mirovanja zmanjšalo porabo
+  (*autosuspend*; to je privzeto delovanje); nekateri dlančniki se iz tega
+  stanja tudi ne prebudijo pravilno in ne odgovarjajo več na zahtevke?
+- če to težavo odpravi, spremembo uveljavi za stalno – v datoteki
+  **etc/default/grub** zamenjaj vrstico `GRUB_CMDLINE_LINUX_DEFAULT="quiet"` z
+  vrstico `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash usbcore.autosuspend=-1"`
+- `sudo update-grub` – to bo zagotovilo delovanje tudi po naslednjem zagonu
+  *sistema* (za trenutno sejo zadostuje prvi ukaz)
+
+**JMTPFS**
+
+- `sudo apt install jmtpfs` – namesti jmtpfs
+- `jmtpfs ~/mapa_za_priklop` – poveže dlančnik na izbrano mapo
+- `fusermount -u ~/mapa_za_priklop` – (varno) prekine povezavo z dlančnikom
 
 ### Zvok
 

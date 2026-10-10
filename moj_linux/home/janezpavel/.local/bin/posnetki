@@ -1,8 +1,16 @@
 #!/bin/bash
 
-#shraniš v ~/.local/bin/moje/posnetki ali nekaj takega
+mapa=~/posnetki_zaslona
+mkdir -p "$mapa"
 
-import png:- | xclip -selection clipboard -t image/png -i
-poziv='Kam shranim?'
-izhod=`echo | dmenu -sb "#ccaa22" -sf "#222222" -i -p "$poziv"`
-xclip -selection clipboard -t image/png -o > ~/Posnetki_zaslona/$izhod
+# Zajem v odložišče
+import png:- | xclip -selection clipboard -t image/png -i || exit 1
+
+poziv='Kam/kako shranim? (brez končnice!; prazno = samodejno ime)'
+izhod=$(echo | dmenu -sb "#ccaa22" -sf "#222222" -i -p "$poziv") || exit 0
+
+if [ -z "$ime" ]; then
+    izhod="posnetek_zaslona_$(date +%Y%m%d%H%M%S).png"
+fi
+
+xclip -selection clipboard -t image/png -o > $mapa/$izhod

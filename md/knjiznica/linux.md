@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2026-09-25
+date: 2026-10-06
 description: Priročnik za uporabo Linuxa, posebno skozi terminal
 keywords: Linux, terminal, operacijski sistem
 author: Janez Pavel Žebovec
@@ -97,7 +97,12 @@ Dodatno:
 - `udisksctl`
     - `mount`/`unmount` - namesti/odmesti zunanji pogon (npr. `udisksctl mount
       -b /dev/sda1` namesti pogon);
-- `aft-mtp-mount pot/do/dlančnika` - namesti dlančnik
+- MTP (*Media Transfer Protocol*; vrsta povezave za prenos datotek med napravami, tudi med računalnikom in
+  dlančnikom z Androidom):
+    - `aft-mtp-mount /pot/do/datoteke` - namesti (vzpostavi povezavo) dlančnik,
+      ga poveže na izbrano datoteko
+    - `umount /pot/do/dlančnika` – odmesti (prekine povezavo) dlančnik
+    - `pkill -f aft-mtp-mount` – ubije vse povezave MTP?
 
 ### Upravljanje programov
 
@@ -866,6 +871,21 @@ Bližnjice:
 (Java OpenStreetMap editor)
 
 Urejevalnik zemljevida [Open Street Map](https://www.openstreetmap.org/) (OSM)
+
+Uporabni vtičniki:
+
+- [Account Manager](https://github.com/daishu0000/josm-account-manager/) – za
+  preprosto prehajanje med različnimi računi (npr. za uvoz, za
+  OpenHistoricalMap)
+- [Reverter](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/Reverter) –
+  razveljavljanje sklopov sprememb
+- [Review](https://github.com/DavidKarlas/JosmReviewPlugin) – pregled sprememb v
+  trenutni seji (posebej uporabno pri uvozih)
+- [TODO list](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/TODO_list)
+- [Undelete](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/Undelete)
+- [Urban Eye 3D](https://github.com/Zkir/UrbanEye3D) – trorazsežnostni pogled
+  zgradb
+- utilsplugin2
 
 #### JOHM
 (JOSM za *Open Historical Map*)

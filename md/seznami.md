@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-09-28
+date: 2026-10-10
 description: Razni seznami z različnih področij in priporočila
 keywords: seznam, priporočilo
 author: Janez Pavel Žebovec
@@ -60,6 +60,8 @@ Moja *priporočila* (precej nepopolna)
 ### Zanimiva, dobra podjetja
 
 - [BOOX](https://euroshop.boox.com/)
+- [DFGCon](https://dfgcon.si/) – snemanje prometne infrastrukture, pretvarjanje
+  le te v *strukturirane* podatke
 - [Fairphone](https://fairphone.com/) – dlančniki, tudi slušalke (Nizozemska); popravljivost, okoljevarstvo, zeleni viri, pravični trg
 - [Framework](https://frame.work/) – prenosni računalniki, tudi namizni računalnik (ZDA); popravljivost
 - [Gizzmo – Reborn](https://gizzmo.si/reborn) – obnovljeni dlančniki
@@ -88,6 +90,8 @@ Moja *priporočila* (precej nepopolna)
 - [Minh Nguyễn](http://notes.1ec5.org/) – pomemben član OpenHistoricalMap, tudi
   urejevalec Wikipedije
 - [Mitja Jež](https://mitja.jež.si/) – član slo. odprtokodne skupnosti (mdr. OpenStreetMap)
+- [Nedžad Beus](https://beus.cc/) – slovenski *programer*, ki je med vodilnimi
+  pri razvoju [BrezAvta.si](https://brezavta.si/)
 - [Siggsy](https://siggsy.xyz/) – član slo. odprtokodne skupnosti (mdr. v zvezi s z javnim prevozom)
 
 ### Okolje
@@ -337,6 +341,8 @@ Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
 
 ##### Uradni zemljevidi
 
+Uradni seznam GIS: [Geo Slovenija – Aplikacije](https://geo-slovenija.si/portal/aplikacije)
+
 - [DRAJV zemljevid](https://drajv.triglav.si/zemljevid) – dlančniško orodje zavarovalnice
   Triglav, ki zbira brezimne podatke o prekoračitvah hitrostih, povprečni
   hitrosti, prometnih nesrečah, pospeških, ...
@@ -420,9 +426,17 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 
 - [Tyler Oliveira: Inside the Country that KILLS Disabled People...](https://youtu.be/XmQzuxyl4DA?t=963) (YouTube)
 
+## Krščanstvo
+
+### Morebitni dokazi
+
+- [Noah's Ark Scans](https://www.noahsarkscans.com/) – raziskave
+  *geološke*/*negeološke* *strukture* v obliki velike ladje v bližine gore
+  Ararat, kjer naj bi pristal svetopisemski Noe
+
 #### Čudeži, znamenja
 
-##### Turinski prt
+**Turinski prt**
 
 - [MDPI – X-ray Dating of a Turin Shroud’s Linen Sample](https://www.mdpi.com/2571-9408/5/2/47)
 - [Research Gate – A Ray of Light on the Shroud of Turin](https://www.researchgate.net/publication/305496617_A_Ray_of_Light_on_the_Shroud_of_Turin)
@@ -510,6 +524,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [DistroTube](https://odysee.com/@DistroTube:2) – Linux
 - [Johnny Harris](https://odysee.com/@johnnyharris:e) – novinarski slog o svetu
 - [Luke Smith](https://odysee.com/@Luke:7) – Linux, odprtokodno programje; modroslovje, pravoslavje
+- [Linux Renaissance](https://odysee.com/@LinuxRenaissance:1)
 - [Nwtwork Chuck](https://odysee.com/@NetworkChuck:f) – splet
 - [Programmers are also human](https://odysee.com/@ProgrammersAreAlsoHuman:3) – komedije iz sveta programiranja
 - [Veritasium](https://odysee.com/@veritasium:f) – večinsko naravoslovni znanstveno-dukumentarni posnetki
@@ -734,6 +749,8 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [Computerphile](https://www.youtube.com/@Computerphile)
 - [Core Dumpped](https://www.youtube.com/@CoreDumpped)
 - [Distro Tube](https://www.youtube.com/@DistroTube) – Linux
+- [Linux Renaissance](https://www.youtube.com/@LinuxRenaissance) –
+  Darth, *sistemski administrator*; o Linuxu na splošno, BSD
 - [Network Chuck](https://www.youtube.com/@NetworkChuck)
 - [Reject Convenience](https://www.youtube.com/@rejectconvenience)
 - [SysHack](https://www.youtube.com/@SysHackkk) – razkriva slabe plati Windowsa, zagovarja prehod na Linux

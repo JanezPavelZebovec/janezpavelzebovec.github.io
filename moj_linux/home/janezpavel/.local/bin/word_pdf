@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for arg in "$@"; do
+    pandoc "$arg" -o "${arg%.*}.pdf"
+done

@@ -32,7 +32,7 @@ sistem"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/linux/">linux</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-09-25">2026-09-25</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-10-06">2026-10-06</time></p>
     </header>
     <nav>
         <ul>
@@ -287,8 +287,18 @@ sistem"/>
             <code>udisksctl mount     -b /dev/sda1</code> namesti
             pogon);</li>
             </ul></li>
-            <li><code>aft-mtp-mount pot/do/dlančnika</code> - namesti
-            dlančnik</li>
+            <li>MTP (<i>Media Transfer Protocol</i>; vrsta povezave za
+            prenos datotek med napravami, tudi med računalnikom in
+            dlančnikom z Androidom):
+            <ul>
+            <li><code>aft-mtp-mount /pot/do/datoteke</code> - namesti
+            (vzpostavi povezavo) dlančnik, ga poveže na izbrano
+            datoteko</li>
+            <li><code>umount /pot/do/dlančnika</code> – odmesti (prekine
+            povezavo) dlančnik</li>
+            <li><code>pkill -f aft-mtp-mount</code> – ubije vse povezave
+            MTP?</li>
+            </ul></li>
             </ul>
             <h3 id="Upravljanje_programov">Upravljanje programov</h3>
             <ul>
@@ -1414,6 +1424,28 @@ sistem"/>
             <p>Urejevalnik zemljevida <a
             href="https://www.openstreetmap.org/">Open Street Map</a>
             (OSM)</p>
+            <p>Uporabni vtičniki:</p>
+            <ul>
+            <li><a
+            href="https://github.com/daishu0000/josm-account-manager/">Account
+            Manager</a> – za preprosto prehajanje med različnimi računi
+            (npr. za uvoz, za OpenHistoricalMap)</li>
+            <li><a
+            href="https://wiki.openstreetmap.org/wiki/JOSM/Plugins/Reverter">Reverter</a>
+            – razveljavljanje sklopov sprememb</li>
+            <li><a
+            href="https://github.com/DavidKarlas/JosmReviewPlugin">Review</a>
+            – pregled sprememb v trenutni seji (posebej uporabno pri
+            uvozih)</li>
+            <li><a
+            href="https://wiki.openstreetmap.org/wiki/JOSM/Plugins/TODO_list">TODO
+            list</a></li>
+            <li><a
+            href="https://wiki.openstreetmap.org/wiki/JOSM/Plugins/Undelete">Undelete</a></li>
+            <li><a href="https://github.com/Zkir/UrbanEye3D">Urban Eye
+            3D</a> – trorazsežnostni pogled zgradb</li>
+            <li>utilsplugin2</li>
+            </ul>
             <h4 id="JOHM">JOHM</h4>
             <p>(JOSM za <i>Open Historical Map</i>)</p>
             <p>JOSM lahko uporabljaš tudi za urejanje <a
