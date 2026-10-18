@@ -503,8 +503,8 @@ var naducilisca = createOverpassLayer(`
     [out:json][timeout:60];
     area["ISO3166-1"="SI"]->.a;
     (
-      node["building"="university"](area.a);
-      way["building"="university"](area.a);
+      node["amenity"="university"](area.a);
+      way["amenity"="university"](area.a);
     );
     out center tags;`,
     "#3333FF");

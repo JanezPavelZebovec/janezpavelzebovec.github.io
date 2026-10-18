@@ -86,20 +86,23 @@ Social media, where I am registered, though I don't (really) use them:
     - [Codeberg](https://codeberg.org/), where are some of my little scripts and
       this website
     - [Git Hub](https://github.com/janezpavelzebovec)
-- Genealogy: I trace roots of my ancestors and theirs descendants (see also [My family tree](./mojrodovnik) on this site).
+- Genealogy: I trace roots of my ancestors and theirs descendants (see also
+  [My family tree](./mojrodovnik) on this site).
   Currently I use [Gramps](https://gramps-project.org/) as main genealogy tool
     - [Geneanet](https://gw.geneanet.org/japaze1_w)
     - [WikiTree](https://www.wikitree.com/wiki/%C5%BDebovec-1) – open database
       of genealogy data
     - [Geni](https://www.geni.com/people/Janez-Pavel-%C5%BDebovec) – here I
-      first really started with my research ([MyHeritage](https://www.myheritage.com/), I used before that is not even worth mentioning)
+      first really started with my research ([MyHeritage](https://www.myheritage.com/),
+      I used before that is not even worth mentioning)
 - [Wikipedija](https://sl.wikipedia.org/wiki/Uporabnik:JanezPavelZebovec) –
   I contribute to atricles in Slovenian that seem important or interewsting
   enough (however, I haven't been as active lately)
 - Software translations:
     - [Codeberg
       Translate](https://translate.codeberg.org/user/JanezPavelZebovec/) –
-      [CoMaps](https://www.comaps.app/) (the translation is almost or entirely my own, finished and maintained by me)
+      [CoMaps](https://www.comaps.app/) (the translation is almost or entirely my own,
+      finished and maintained by me)
     - [Translate Wiki](https://translatewiki.net/wiki/User:JanezPavelZebovec) –
       I participate at translation of website
       [OpenStreetMap.org](https://www.openstreetmap.org/) and
@@ -107,11 +110,10 @@ Social media, where I am registered, though I don't (really) use them:
     - [Transifex](https://app.transifex.com/user/profile/JanezPavelZebovec/) –
       I participate at translation of browser editor iD
     - [Hosted Weblate](https://hosted.weblate.org/user/janezpavelzebovec/) –
-      I participate at translation of [OsmAnd](https://osmand.net/), a little at translation of
-      [F-Droidu](https://f-droid.org/)
-    - [Element
-      Translations](https://translate.element.io/user/JanezPavelZebovec/) –
-      I contribute a little at translation of [Element](https://element.io/), especially mobile app
+      I participate at translation of [OsmAnd](https://osmand.net/),
+      a little at translation of [F-Droidu](https://f-droid.org/)
+    - [Element Translations](https://translate.element.io/user/JanezPavelZebovec/) –
+      I contribute a little to translation of [Element](https://element.io/), especially mobile app
 - [Open Library](https://openlibrary.org/people/janezpavelzebovec) – there I
   added a few Slovenian editions
 
@@ -123,8 +125,7 @@ Other websites:
 
 ## About website
 
-My webiste is hosted by German company
-[Hetzner](https://www.hetzner.com/), where I have also bought domain.
+My webiste is hosted by German company [Hetzner](https://www.hetzner.com/).
 
 Accessible also at:
 
@@ -134,18 +135,24 @@ Accessible also at:
   at address [janezpavelzebovec.github.io](https://janezpavelzebovec.github.io)
 
 This website is in majority written in
-[Markdownu](https://en.wikipedia.org/wiki/Markdown) and then converted to [HTML](https://sl.wikipedia.org/wiki/HTML) with
-[Pandocom](https://pandoc.org/), that is why pages are also accessible in
-original Markdown format in section *janezpavelzebovec.net/md/*.  In footer of each page is link to it's page in Markdown.
+[Markdownu](https://en.wikipedia.org/wiki/Markdown) and then converted to
+[HTML](https://sl.wikipedia.org/wiki/HTML) with [Pandocom](https://pandoc.org/),
+that is why pages are also accessible in original Markdown format in section
+*janezpavelzebovec.net/md/*.  In footer of each page is link to it's page in
+Markdown.
 
-Date of last page change at the top takes in account only content-related changes, not stylistic or minor (grammar) fixes.
+Date of last page change at the top takes in account only content-related
+changes, not stylistic or minor (grammar) fixes.
 
 I use coloscheme [Gruvbox](https://github.com/morhetz/gruvbox) by Pavel Pertsev.
 
 Page [My family tree](/moj_rodovnik) is created with
-[Grampsom](https://gramps-project.org/).
+[Gramps](https://gramps-project.org/).
 
-Website analitycs are accessible at [Umami](https://cloud.umami.is/analytics/eu/share/FhDonlJniEyIGdQY). Somewhere March 2026 I banned access for bots. Traffic has been greately reduced because of that,
+Website analitycs are accessible at
+[Umami](https://cloud.umami.is/analytics/eu/share/FhDonlJniEyIGdQY). Somewhere
+March 2026 I banned access for bots. Traffic has been greately reduced because
+of that,
 
 Website has 3 shortcuts:
 
@@ -156,10 +163,10 @@ Website has 3 shortcuts:
 ### Guidelines
 
 - as simple as possible, but not at the expense of beauty and usability;
-- as little JavaScript as possible (i.e., animations, transitions, interactivity, etc.;
-  the website must function even without it – with the exception of
-  [Astronomical clock](/zvezdoslovna_ura/), of course);
-- HTML structure that allows for a clear view of the page even without CSS, or allows for
-  easy adaptation to one’s own style;
-- content should also be accessible as plain text (e.g., for viewing in a terminal)—
-  see the *janezpavelzebovec.net/md/* section)
+- as little JavaScript as possible (i.e., animations, transitions,
+  interactivity, etc.; the website must function even without it – with the
+  exception of [Astronomical clock](/zvezdoslovna_ura/), of course);
+- HTML structure that allows for a clear view of the page even without CSS, or
+  allows for easy adaptation to one’s own style;
+- content should also be accessible as plain text (e.g., for viewing in a
+  terminal)— see the *janezpavelzebovec.net/md/* section)

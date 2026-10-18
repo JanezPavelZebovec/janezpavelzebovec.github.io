@@ -1,0 +1,18 @@
+@import "/colorscheme.css";
+
+body {
+    background: var(--bOzadje);
+    color: var(--bOspredje);
+    overflow: hidden;
+}
+
+a {
+    color: var(--bPoudarek);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
