@@ -111,34 +111,12 @@ seveda – popolnoma nesprejemljivo in še nevarnejše kot prevzemanje izrazov.
 
 ## Obstoječa slovenščina
 
-Nekateri sprejeti (a ne več nujno uporabljani / splošno razumljivi) slovenski
-izrazi:
+V slovenščini imamo že ogromno slovesnkih izrazov, s katerimi lahko nadomestimo
+mnogo prevzetih izrazov, pa kljub temu večina ljudi uporablja prevzete.
 
-- **hranilnica** < *banka*
-- **ljudovlada** (ustrezneje *ljudstvovlada*? – neuveljavljeno) < *republika*,
-  *demokracija* <small>(it./nem. < frc. < lat.; nem. < frc. < lat. < gr.))
-  </small>
-- **pogon** (gonilna sila, gibalo, pogonski stroj) < *motor*
-
-Mesece, ki so dandanes večinoma uporabljani, smo prevzeli neposredno iz
-nemščine, vendar imamo tudi svoja slovenska imena: 
-
-- **prosinec** < *januar*
-- **svečan** < *februar*
-- **sušec** < *marec*
-- **mali traven** < *april*
-- **veliki traven** < *maj*
-- **rožnik** < *junij*
-- **mali srpan** < *julij*
-- **veliki srpan** < *avgust*
-- **kimavec** < *september*
-- **vinotok**/**vinotoč** < *oktober*
-- **listopad** < *november*
-- **gruden** < *december*
-
-Za seznam drugih prepovedanih izrazov v visoki slovenščini (izrazi, ki imajo v
-slovenščini že popolno uveljavljeno domačo ustreznico) glej stran
-[Prepovedane besede](/prepovedane_besede).
+Za seznam prepovedanih izrazov v visoki slovenščini – torej izrazi, ki imajo v
+slovenščini že popolno uveljavljeno domačo ustreznico – glej stran
+[Prepovedani izrazi](/visoka_slovenscina/prepovedani_izrazi).
 
 ## Starejše ustreznice tujim izrazom
 
@@ -267,7 +245,6 @@ obstoječe, z zgolj dodanim/prirejenim pomenom, druge so tvorjene nanovo):
 - **dáljnoglás** <small>(/2025-06-30)</small> < *telefon* <small>(< nem.
   *Telephon*; fran. *téléphone*; ang. *telephone* < gr. *tē̃le* = *daleč, v
   daljavi*; *phōnḗ* = *glas, zvok*)</small>
-
 - **glasbílen** <small>(/2026-08-16)</small> < *inštrumentalen*
 - **gmôta** <small>(/2025-06-30)</small> (**gmôtnost**) < *masa*
 - **gôn** <small>(/2025-06-30)</small> < *energija* <small>(< nem. *Energie* <
@@ -287,6 +264,7 @@ obstoječe, z zgolj dodanim/prirejenim pomenom, druge so tvorjene nanovo):
   *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*)</small>
 - **preslikáva** <small>(2026-04-13)</small> < *funkcija*
 - **prostóroslôvje** <small>(/2025-06-30)</small> < *geometrija*
+- **pogonski stroj** <small>(/2026-10-19)</small> / **pogon** < *motor*
 - **pótno usmérjanje** <small>(/2026-03-13)</small> < *navigacija*
 - **pozívno *programiranje*** <small>(2026-10-10)</small> < *vibecodanje*
 - **rájčnik** <small>(/2026-08-16)</small> < *paradižnik*
@@ -300,7 +278,7 @@ obstoječe, z zgolj dodanim/prirejenim pomenom, druge so tvorjene nanovo):
   pravega spola, oz. da trdiš, da nisi spola, kakršnega si v resnici;
   uporabljalo bi se lahko tudi za osebo, ki trdi, da je spol povsem umeten, da
   ni zares nekih značilnosti, ki bi jih lahko povezali s (samo) enim
-  spolom)<small>
+  spolom)</small>
 - **prespǒljenje, prêspolnik** <small>(/2026-05-01)</small></small> <
   *transseksualnost, transseksualec*
 - **rod otrok blaginje** <small>(/2025-08-05)</small> (se izraz itak že
@@ -352,7 +330,10 @@ Te skovanke so (še) precej okorne in potrebne dodatnega premisleka ali druge za
 
 Predlogi so dobrodošli na [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net) ;)
 
-Glej tudi [Propad slovenščine](/visoka_slovenscina/propad_slovenscine) za primere propada in [Slovar slovenske angleščine](/visoka_slovenscina/ssa).
+Poleg [Prepovedanih izrazov](/visoka_slovenscina/prepovedani_izrazi) glej tudi
+[Propad slovenščine](/visoka_slovenscina/propad_slovenscine) za primere propada,
+ter [Slovar slovenske angleščine](/visoka_slovenscina/ssa) in [Slovar slovenske
+nemščine](/visoka_slovenscina/ssn).
 
 ## Zunanje povezave,  viri in sklici
 

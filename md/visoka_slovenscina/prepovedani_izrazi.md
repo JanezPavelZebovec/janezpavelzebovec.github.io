@@ -126,8 +126,10 @@ Prevzeti izrazi, ki imajo uveljavljene (t.j. uvrščene v SSKJ) slovenske
 ustreznice, ki pa niso splošno/večinsko poznane, kaj šele uporabljane
 
 - *banka* > hranílnica
+- *demokracija* > ljudovlada (ustrezneje *ljudstvovlada*? – neuveljavljeno)
 - *ekvator* > polutnik, ravnik
 - *relief* > pridvig
+- *republika* > ljudovlada(ustrezneje *ljudstvovlada*? – neuveljavljeno)
 - *šola* > učilišče
 - *tiran* > samodržec, trinog, samosilnik, silnik, (oblastnež)
 - *univerza* > vseučilišče
