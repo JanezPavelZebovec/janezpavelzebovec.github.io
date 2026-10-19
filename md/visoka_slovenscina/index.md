@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2026-10-10
+date: 2026-10-19
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 author: Janez Pavel Žebovec
@@ -111,25 +111,17 @@ seveda – popolnoma nesprejemljivo in še nevarnejše kot prevzemanje izrazov.
 
 ## Obstoječa slovenščina
 
-Za seznam drugih prepovedanih izrazov v visoki slovenščini (izrazi, ki imajo v
-slovenščini že popolno uveljavljeno domačo ustreznico) glej stran
-[Prepovedane besede](/prepovedane_besede).
-
-Tu so navedene nekatere sprejete (a ne nujno – več – uveljavljene/uporabljane).
+Nekateri sprejeti (a ne več nujno uporabljani / splošno razumljivi) slovenski
+izrazi:
 
 - **hranilnica** < *banka*
 - **ljudovlada** (ustrezneje *ljudstvovlada*? – neuveljavljeno) < *republika*,
   *demokracija* <small>(it./nem. < frc. < lat.; nem. < frc. < lat. < gr.))
   </small>
-- **krajepis** < *topografija*
 - **pogon** (gonilna sila, gibalo, pogonski stroj) < *motor*
-- **ravnik** < *ekvator
-- **oblika** (datoteke)< *format* (datoteke)
-- **veljava** < *valuta* <small>(nem. < it.)</small>
-- **stálnica** < *konstanta* (nasploh in npr. matematična, fizikalna)
 
 Mesece, ki so dandanes večinoma uporabljani, smo prevzeli neposredno iz
-nemščine, nekako po zmagi komunizma po drugi svetovni vojni: 
+nemščine, vendar imamo tudi svoja slovenska imena: 
 
 - **prosinec** < *januar*
 - **svečan** < *februar*
@@ -143,6 +135,10 @@ nemščine, nekako po zmagi komunizma po drugi svetovni vojni:
 - **vinotok**/**vinotoč** < *oktober*
 - **listopad** < *november*
 - **gruden** < *december*
+
+Za seznam drugih prepovedanih izrazov v visoki slovenščini (izrazi, ki imajo v
+slovenščini že popolno uveljavljeno domačo ustreznico) glej stran
+[Prepovedane besede](/prepovedane_besede).
 
 ## Starejše ustreznice tujim izrazom
 
@@ -223,6 +219,10 @@ Malo uporabljani predlogi, a večinoma poznani:
 - (**spletni**) **vir** < *feed* (npr. pri RSS, YouTubu, Facebooku, ...)
 - **všéček** < *lajk*
 
+Manj poznani predlogi:
+
+- **večvesolje** < *multiverzum*
+
 Dobri predlogi na [*Fran - Predlagajte nove slovenske ustreznice*](https://fran.si/ustreznice):
 
 - **znamčenje** < ang. *branding*
@@ -262,16 +262,29 @@ Tu je seznam mojih predlogov za nove slovenske ustreznice (nekatere so že
 obstoječe, z zgolj dodanim/prirejenim pomenom, druge so tvorjene nanovo):
 
 - **déževka** <small>(2025-12-17)</small> < *pelerina*
-- **dlánčnik** <small>(/2025-06-30)</small> < "pametni" *telefon* <small>(podobno je tudi nem. *Handy*)</small>
-- **dáljnoglás** <small>(/2025-06-30)</small> < *telefon* <small>(< nem. *Telephon*; fran. *téléphone*; ang. *telephone* < gr. *tē̃le* = *daleč, v daljavi*; *phōnḗ* = *glas, zvok*)</small>
+- **dlánčnik** <small>(/2025-06-30)</small> < "pametni" *telefon*
+  <small>(podobno je tudi nem. *Handy*)</small>
+- **dáljnoglás** <small>(/2025-06-30)</small> < *telefon* <small>(< nem.
+  *Telephon*; fran. *téléphone*; ang. *telephone* < gr. *tē̃le* = *daleč, v
+  daljavi*; *phōnḗ* = *glas, zvok*)</small>
+
 - **glasbílen** <small>(/2026-08-16)</small> < *inštrumentalen*
 - **gmôta** <small>(/2025-06-30)</small> (**gmôtnost**) < *masa*
-- **gôn** <small>(/2025-06-30)</small> < *energija* <small>(< nem. *Energie* < fran. *énergie* < poznolat. *energīa*; gr. *enérgeia* = delo, delovanje, moč)</small>
-- **gonilo** <small>(2026-05-01)</small> < *motor* (kot tisto, kar poganja)
+- **gôn** <small>(/2025-06-30)</small> < *energija* <small>(< nem. *Energie* <
+  fran. *énergie* < poznolat. *energīa*; gr. *enérgeia* = delo, delovanje,
+  moč)</small>
+- **gonilo** <small>(2026-05-01)</small> / **gonílnik**
+  <small>(2026-10-19)</small> < *motor* (kot tisto, kar poganja)
 - **gonohrán** (gonski hranilnik) <small>(2026-06-07)</small> < *baterija*
-- **oslíka** <small>(/2026-05-01)</small>(oz. samo: **ponazorilna/pojasnilna slika**; celo uveljavljeno: **ponazorilo**); **osličen** (oz. samo: opremljen s slikami) < *ilustracija*; *ilustriran*
+- **oslíka** <small>(/2026-05-01)</small>(oz. samo: **ponazorilna/pojasnilna
+  slika**; celo uveljavljeno: **ponazorilo**); **osličen** (oz. samo: opremljen
+  s slikami) < *ilustracija*; *ilustriran*
 - **mnógovôz** <small>(/2025-06-30)</small> < *avtobus*
-- **naravoslôvje** <small>(/2025-06-30)</small>, **stvárnoslovje**\* <small>(/2025-06-30)</small>, tvárnoslovje(?) < *fizika* <small>(< nem. *Physik* < lat. *physica* < gr. *physikḗ* = *naravoslovje, naraven, ki zadeva naravo* < gr. *phýsis* = *narava, stvarstvo, rast, rojstvo* < gr. glagol *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*)</small>
+- **naravoslôvje** <small>(/2025-06-30)</small>, **stvárnoslovje**\*
+  <small>(/2025-06-30)</small>, tvárnoslovje(?) < *fizika* <small>(< nem.
+  *Physik* < lat. *physica* < gr. *physikḗ* = *naravoslovje, naraven, ki zadeva
+  naravo* < gr. *phýsis* = *narava, stvarstvo, rast, rojstvo* < gr. glagol
+  *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*)</small>
 - **preslikáva** <small>(2026-04-13)</small> < *funkcija*
 - **prostóroslôvje** <small>(/2025-06-30)</small> < *geometrija*
 - **pótno usmérjanje** <small>(/2026-03-13)</small> < *navigacija*
@@ -279,15 +292,31 @@ obstoječe, z zgolj dodanim/prirejenim pomenom, druge so tvorjene nanovo):
 - **rájčnik** <small>(/2026-08-16)</small> < *paradižnik*
 - **razpoznavna številka** <small>(2026-10-05)</small> < *identifikacijska*
   številka / *ID*
-- **rázspôlnik** <small>(/2025-06-30)</small>, **razspôlništvo** <small>(/2025-06-30)</small> < *LGBTQ ...* (kot motnja v spolnem razvoju, ko posameznik nima pravilno razvitih spolnih značilnostih zaradi prirojenih motenj ali **samorazspoljenja**, ki je pogosto družbeno pogojeno, kot zavestna odločitev, da živiš v nasprotju z značilnostmi svojega pravega spola, oz. da trdiš, da nisi spola, kakršnega si v resnici)
-- **prespǒljenje, prêspolnik** <small>(/2026-05-01)</small></small> < *transseksualnost, transseksualec*
-- **rod otrok blaginje** <small>(/2025-08-05)</small> (se izraz itak že uporablja?) < *babyboom generacija*
-- **vóz** <small>(/2025-06-30)</small>, **sámogôn**\* <small>(/2025-06-30)</small> < *avtomobil/avto* <small>(< nem. *Auto/Automobil*; fran. *auto/automobile* < gr. *autós* = *sam*, lat. *mōbilis* = *premičen*)</small>
+- **rázspôlnik** <small>(/2025-06-30)</small>, **razspôlništvo**
+  <small>(/2025-06-30)</small> < *LGBTQ ...* <small>(kot motnja v spolnem
+  razvoju, ko posameznik nima pravilno razvitih spolnih značilnostih zaradi
+  prirojenih motenj ali **samorazspoljenja**, ki je pogosto tudi družbeno
+  pogojeno, kot zavestna odločitev, da živiš v nasprotju z značilnostmi svojega
+  pravega spola, oz. da trdiš, da nisi spola, kakršnega si v resnici;
+  uporabljalo bi se lahko tudi za osebo, ki trdi, da je spol povsem umeten, da
+  ni zares nekih značilnosti, ki bi jih lahko povezali s (samo) enim
+  spolom)<small>
+- **prespǒljenje, prêspolnik** <small>(/2026-05-01)</small></small> <
+  *transseksualnost, transseksualec*
+- **rod otrok blaginje** <small>(/2025-08-05)</small> (se izraz itak že
+  uporablja?) < *babyboom generacija*
+- **vóz** <small>(/2025-06-30)</small>, **sámogôn**\*
+  <small>(/2025-06-30)</small> < *avtomobil/avto* <small>(< nem.
+  *Auto/Automobil*; fran. *auto/automobile* < gr. *autós* = *sam*, lat.
+  *mōbilis* = *premičen*)</small>
 - **síto** <small>(/2026-02-18)</small> < *filter*
 - **snôvoslôvje** <small>(/2025-06-30)</small> < *kemija*
-- **sprejémnik zvóka** <small>(/2025-06-30)</small> (**zvókosprejémnik** <small>(/2025-06-30)</small>) < *mikrofon*
+- **sprejémnik zvóka** <small>(/2025-06-30)</small> (**zvókosprejémnik**
+  <small>(/2025-06-30)</small>) < *mikrofon*
 - **tresávec** <small>(/2025-06-30)</small> < *vibrant*
 - **ukáznik** (kot sklop ukazov) <small>(2026-08-16)</small> < (računalniški) *program*
+- **večsvétje** <small>(2026-10-19)</small> / **mnogosvétje**
+  <small>(2026-10-19)</small> < *multiverzum*
 - **vêlecésta** <small>(/2025-06-30)</small> < *avtocesta*
 - **vesóljeslôvje** <small>(/2025-06-30)</small> < *kozmologija*
 - **vrh** <small>(/2026-03-13)</small> < *ekstrem* (*funkcije*)
@@ -312,7 +341,7 @@ Te skovanke so (še) precej okorne in potrebne dodatnega premisleka ali druge za
   pomena)
 - *park*
 - *piknik*
-- **redarstvo** (zaseden pojem?) < *policija*
+- **redarstvo** (zaseden pojem) < *policija*
 - kopališko obrežje? (s peskom?) <small>(/2026-03-13)</small> < *plaža*
 - *savna*
 - (vadba, zabava, urjenje) <small>(/2026-01-03)</small> < *šport*

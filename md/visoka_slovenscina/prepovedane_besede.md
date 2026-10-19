@@ -1,6 +1,6 @@
 ---
 title: Prepovedane besede v visoki slovenščini
-date: 2026-09-05
+date: 2026-10-19
 description: Prepovedane besede, prevzete besede, v visoki slovenščini
 keywords: slovenščina, visoka slovenščina, potujčenje
 author: Janez Pavel Žebovec
@@ -8,33 +8,41 @@ author: Janez Pavel Žebovec
 
 # Prepovedane besede
 
-Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne sveže skovanimi) in so zato v visoki slovenščini prepovedane.
+## Strogo prepovedane
 
-- *adaptacija*, *adapter* > prilagoditev; prireditelj, prilagojevalo, prilagojevalec, prirejevalec, pretvornik
+Prevzeti izrazi, ki so popolnoma nadomestljivi z uveljavljenimi, (domnevno
+večinsko) poznanimi izrazi.
+
+- *adaptacija*, *adapter* > prilagoditev; prireditelj, prilagojevalo,
+  prilagojevalec, prirejevalec, pretvornik
 - *agronomija* > kmetijstvo
 - *anketa* > vprašalnik
 - *anksioznost* > tesnoba, tesnobnost
 - *antikvariat* > starinarna, starinarnica
 - *atmosfera* > ozračje
 - *avion* > letalo
+- *biseksualec* > dvospolnik
 - *center* > središče, sredina
 - *cilinder* > valj
 - *definicija* > opredelitev, določitev/določba
-- *ekran* > (računalniški/dlančniški/drugi) zaslon
 - *eksitacija* > vzbuditev
 - *elipsa* > pakrog
 - *emigrant* > izseljenec, begunec
+- *format* > oblika (tudi npr. oblika datoteke); velikost
 - *fluktuacija* > spreminjanje, menjavanje, gibanje
 - *horizontalno*, *horizontala* > vodoravno, vodoravnica
-- *ilustracija* (v nekaterih rabah/pomenih) > ponazorilo, ponazorilna/pojasnevalna slika
+- *ilustracija* (v nekaterih rabah/pomenih) > ponazorilo,
+  ponazorilna/pojasnevalna slika
 - *imigrant* > priseljenec
-- *integracija*, *integriranost* > vključitev, (združitev); povezanost, vključenost, združenost
+- *integracija*, *integriranost* > vključitev, (združitev); povezanost,
+  vključenost, združenost
 - *karcinogen* > rakotvoren
 - *karta* (v enem izmed pomenov) > zemljevid
 - *koeficient* > (stalni?) količnik
 - *komponenta* > (sestavni) del, sestavina
 - *konkaven* > vbočen, vbokel
 - *konkurent* > tekmec
+- *konstanta* (nasploh in npr. matematična, fizikalna) > stalnica
 - *konveksen* > izbočen, izbokel
 - *longitudinalno* > vzdolžno
 - *migracija* > selitev
@@ -51,20 +59,78 @@ Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne svež
 - *problem* > težava
 - *projekcija*; *projicirati* > preslikava; preslikati, prenesti, (prikazati)
 - *refleksija* > odboj, premišljevanje, (odziv)
-- *relief* > pridvig
 - *sediment* > usedlina
 - *simetrija*, *simetričnost* > somernost
 - *solvatacija* > raztapljanje
-- *šola* > učilišče
 - *tabela* > preglednica
-- *tiran* > samodržec, trinog, samosilnik, silnik, (oblastnež)
 - *transverzalno* > prečno
 - *tunel* > predor
-- *univerza* > vseučilišče
 - *vertikalno*, *vertikala* > navpično, navpičnica
 - *vikend* > konec tedna
 - *virtualna realnost* > namišljena resničnost
 - *vulkan* > ognjenik
+
+### Računstvo
+
+- *formula* > (stalna) enačba
+- *iteracija* > ponovitev, ponavljanje
+- *komponenta* > del
+- *kvocient* > količnik
+- *produkt* > zmnožek
+
+Lastnosti *operacij*:
+
+- *asociativnost* > družilnost
+- *distributivnost* > razčlenljivost
+- *idempotenca* > nespremenljivost
+- *komutativnost* > zamenljivost
+- *refleksivnost* > povratnost
+- *simetričnost* > vzajemnost
+- *tranzitivnost* > prehodnost
+
+### Naravoslovje
+
+- *dipol* > dvo*pol*
+- *gravitacija* > težnost
+    - sila *gravitacije* > težnost
+- *torzija* > vzvoj
+
+### Računalništvo
+
+- *ekran* > (računalniški/...) zaslon
+- *font* > (slog/družina/vrsta) pisava
+- *internet* > (svetovni) splet, medmrežje
+- *monitor* > (računalniški/...) zaslon
+- *RAM* > delovni pomnilnik (bralno-pisalni pomnilnik)
+- *router* > (omrežni) usmerjevalnik
+
+### Jezikoslovje
+
+- *inklinacija* > naklon
+- *ligvistika* > jezikoslovje
+
+#### Skloni
+
+- *kazus* > sklon
+- *nominativ* > imenovalnik
+- *genitiv* > rodilnik
+- *dativ* > dajalnik
+- *akuzativ* > tožilnik
+- *lokativ* > mestnik
+- *instrumental* > orodnik
+- *vokativ* > zvalnik
+
+## Prepovedane
+
+Prevzeti izrazi, ki imajo uveljavljene (t.j. uvrščene v SSKJ) slovenske
+ustreznice, ki pa niso splošno/večinsko poznane, kaj šele uporabljane
+
+- *banka* > hranílnica
+- *ekvator* > polutnik, ravnik
+- *relief* > pridvig
+- *šola* > učilišče
+- *tiran* > samodržec, trinog, samosilnik, silnik, (oblastnež)
+- *univerza* > vseučilišče
 
 Imena mesecev:
 
@@ -81,55 +147,10 @@ Imena mesecev:
 - *november* > listopad
 - *december* > gruden
 
-## Računstvo
-
-- *formula* > (stalna) enačba
-- *funkcija* > preslikava
-- *iteracija* > ponovitev, ponavljanje
-- *komponenta* > del
-- *kvocient* > količnik
-- *produkt* > zmnožek
-
-Lastnosti *operacij*:
-
-- *asociativnost* > družilnost
-- *distributivnost* > razčlenljivost
-- *idempotenca* > nespremenljivost
-- *komutativnost* > zamenljivost
-- *refleksivnost* > povratnost
-- *simetričnost* > vzajemnost
-- *tranzitivnost* > prehodnost
-
-## Naravoslovje
+### Naravoslovje
 
 - *biologija* > živoslovje
-- *dipol* > dvo*pol*
-- *gravitacija* > težnost
-    - sila *gravitacije* > težnost
-- *torzija* > vzvoj
 
-## Računalništvo
+### Računalništvo
 
 - *CD* > zgoščenka
-- *ekran* > (računalniški/...) zaslon
-- *font* > (slog/družina/vrsta) pisava
-- *internet* > (svetovni) splet, medmrežje
-- *monitor* > (računalniški/...) zaslon
-- *RAM* > delovni pomnilnik (bralno-pisalni pomnilnik)
-- *router* > (omrežni) usmerjevalnik
-
-## Jezikoslovje
-
-- *inklinacija* > naklon
-- *ligvistika* > jezikoslovje
-
-### Skloni
-
-- *kazus* > sklon
-- *nominativ* > imenovalnik
-- *genitiv* > rodilnik
-- *dativ* > dajalnik
-- *akuzativ* > tožilnik
-- *lokativ* > mestnik
-- *instrumental* > orodnik
-- *vokativ* > zvalnik
