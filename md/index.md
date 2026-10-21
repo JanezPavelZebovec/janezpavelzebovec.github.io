@@ -1,6 +1,6 @@
 ---
 title: Janez Pavel Žebovec
-date: 2026-10-02
+date: 2026-10-21
 description: Osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran, osebno spletišče
 ---
@@ -12,13 +12,19 @@ vsi moji javni spletni računi – tako družabni, kot tudi *projektni*.
 
 ---
 
-## Kazalo
+## Kazalo Spletišča
 
-- [Visoka slovenščina](/visoka_slovenscina/) – kakšna bi slovenščina morala biti
-  (oz. mora biti)
-    - [Prepovedane besede](/visoka_slovenscina/prepovedane_besede) – seznam
-      nekaj več prepovedanih besed v visoki slovenščini z ustreznicami v visoki
-      slovenščini
+- [Visoka slovenščina](/visoka_slovenscina/) – kakršna bi slovenščina morala
+  biti
+    - [Prepovedani izrazi](/visoka_slovenscina/prepovedane_besede) – seznam
+      nekaj izrazov, ki niso primerni za rabo v visoki
+      slovenščini, z visokoslovenskimi ustreznicami
+    - [Slovar slovenske nemščine](/visoka_slovenscina/ssn) – nemške besede, ki
+      so v rabi v „slovenščini“
+    - [Slovar slovenske angleščine](/visoka_slovenscina/ssa) – angleške besede,
+      ki so v rabi v „slovenščini“
+    - [Propad slovenščine](/visoka_slovenscina/propad_slovenscine) – nekaj
+      primerov propada
 - [Zvezdoslovna ura](/zvezdoslovna_ura/) – predstavitev vesolja kot ure
     - [Opombe k Zvezdoslovni uri](/zvezdoslovna_ura/opombe_k_zvezdoslovni_uri)
 - [Glasopisnica](/glasopisnica/) – moja pisava <small>*(v delu - tako pisava
@@ -41,10 +47,8 @@ vsi moji javni spletni računi – tako družabni, kot tudi *projektni*.
   predvsem o trenutnih  *političnih* vprašanjih <small>(stran je še precej v
   nastajanju, *teme* so obravnavano zelo površno in najverjetneje tudi
   enostransko)</small>
-
-Tu je tudi moja [Knjižnica](/knjiznica/), kjer so zbrana nekatera
-znanja/področja mojih zanimanj ali izobraževanja, torej zadeve, ki si jih
-načeloma lahko preberete tudi drugje.
+- [Knjižnica](/knjiznica/) – zbirka nekaterih znanj/področij mojih zanimanj ali
+  izobraževanja, torej zadeve, ki se jih načeloma lahko prebere tudi drugje
 
 ---
 
@@ -66,24 +70,28 @@ Sledečih stikov ne uporabljam, čeprav obstajajo:
 
 Družbena omrežja, kjer sem sicer registriram, a jih ne uporabljam (kaj dosti):
 
-- [Facebook](https://www.facebook.com/janezpavel.zebovec)
-- [Twitter](https://x.com/JanezPavelZ)
+- [janezpavel.zebovec](https://www.facebook.com/janezpavel.zebovec)@[Facebook](https:/www.facebook.com/)
+- [JanezPavelZ](https://x.com/JanezPavelZ)@[Twitter](https://x.com/)
+- [Ionoeryn](https://www.reddit.com/user/Ionoeryn/)@[Reddit](https://www.reddit.com/)
 
-### Dejavnosti na spletu
+### Dejavnosti
 
 - Zemljevidi:
-    - [Open Street Map](https://www.openstreetmap.org/user/JanezPavelZebovec),
-      kjer prispevam k najboljšemu prostemu zemljevidu
+    - [Open Street Map](https://www.openstreetmap.org/user/JanezPavelZebovec) –
+      tu prispevam k najboljšemu prostemu zemljevidu
     - [Open Historical
-      Map](https://www.openhistoricalmap.org/user/JanezPavelZebovec), izpeljanka
+      Map](https://www.openhistoricalmap.org/user/JanezPavelZebovec) – izpeljanka
       zgoraj omenjenega OpenStreetMapa, vendar za zgodovinsko zemljepisje
-    - [MapWarper](https://mapwarper.net/users/40154) – za potrebe
-      OpenHistoricalMap
+    - [MapWarper](https://mapwarper.net/users/40154) – uravnani zemljevidi za
+      za potrebe OpenHistoricalMap
 - Programiranje/Git:
-    - [Codeberg](https://codeberg.org/), kjer je nekaj mojih pregramčkov in ta
+    - [Codeberg](https://codeberg.org/) – nekaj mojih pregramčkov in ta
       spletna stran
-    - [Git Hub](https://github.com/janezpavelzebovec), ki ga bom za osebne
-      zadeve zamenjal s Codebergom
+    - [Git Hub](https://github.com/janezpavelzebovec) – priljubljeno spletišče
+      za *programje*, namesto katerega večinoma uporabljat zgoraj omenjeni
+      Codeberg
+    - [GitLab](https://gitlab.com/JanezPavelZebovec) – še eno *programsko*
+      spletišče, ki pa ga ne uporabljam
 - Rodoslovje: popisujem predvsem častivredne korenine svojih prednikov in
   njihovih potomcev (na tem spletišču glej tudi [Moj rodovnik](./mojrodovnik)).
   Trenutno kot osrednje rodoslovno orodje uporabljam
@@ -95,11 +103,9 @@ Družbena omrežja, kjer sem sicer registriram, a jih ne uporabljam (kaj dosti):
       prvič bolj zares začel ([MyHeritage](https://www.myheritage.com/) raje ne
       omenjajmo), zdaj pa je tamkajšnje drevo že precej zastarelo
 - [Wikipedija](https://sl.wikipedia.org/wiki/Uporabnik:JanezPavelZebovec) –
-  prispevam k člankom, ki se mi zdijo pomembnejši ali zanimivejši (vendar nisem
-  več dosti dejaven)
+  prispevam k člankom, ki se mi zdijo pomembnejši ali zanimivejši
 - Prevodi programov / spletnih strani:
-    - [Codeberg
-      Translate](https://translate.codeberg.org/user/JanezPavelZebovec/) –
+    - [Codeberg Translate](https://translate.codeberg.org/user/JanezPavelZebovec/) –
       [CoMaps](https://www.comaps.app/) (prevod je skoraj povsem moj in končan)
     - [Translate Wiki](https://translatewiki.net/wiki/User:JanezPavelZebovec) –
       sodelujem pri prevodu spletnih strani
@@ -110,12 +116,11 @@ Družbena omrežja, kjer sem sicer registriram, a jih ne uporabljam (kaj dosti):
     - [Hosted Weblate](https://hosted.weblate.org/user/janezpavelzebovec/) –
       sodelujem pri prevodu [OsmAnd](https://osmand.net/), nekaj malega tudi pri
       [F-Droidu](https://f-droid.org/)
-    - [Element
-      Translations](https://translate.element.io/user/JanezPavelZebovec/) –
+    - [Element Translations](https://translate.element.io/user/JanezPavelZebovec/) –
       začel sem sodelovati pri prevodu [Elementa](https://element.io/), posebej
       dlančniškega orodja
 - [Open Library](https://openlibrary.org/people/janezpavelzebovec) – tu sem
-  dodal nekaj slovenskih izdaj
+  dodal nekaj slovenskih izdaj knjig
 
 Druga spletna mesta:
 
@@ -144,7 +149,8 @@ v izvornem Markdownu v razdelku *janezpavelzebovec.net/md/*.  Na dnu vsake take
 strani je povezava do pripadajoče strani v Markdownu.
 
 Datum zadnje spremembe strani, ki je naveden na vrhu, se nanaša na vsebinsko
-spremembo, ne na slogovno ali kak zanemarljiv (npr. slovničen) popravek.
+spremembo, ne na slogovno ali kak zanemarljiv (npr. slovničen) popravek (datum
+se spreminja ročno).
 
 Uporabljen je barvni slog [Gruvbox](https://github.com/morhetz/gruvbox) Pavla
 Pertseva.
@@ -153,24 +159,18 @@ Stran [Moj rodovnik](/moj_rodovnik) je ustvarjena z
 [Grampsom](https://gramps-project.org/).
 
 *Analitika* spletišča je na voljo [preko storitve
-Umami](https://cloud.umami.is/analytics/eu/share/FhDonlJniEyIGdQY). Nekako
-rožnika 2026 sem prepovedal robotom dostop do spletnega mesta (ti so močno
-pripevali k prometu na spletišču, ter najverjetneje krivi za tolikšno število
-obiskovalcev iz ZDA, ki se bili celo na vrhu lestvice). Promet se je zato od
-takrat precej umiril.
-
-Spletišče ima tri bližnjice:
-
-- **B** – preklop barvnega načina
-- **D** – povezava na domačo stran
-- **M** – povezava na stran v Markdownu
+Umami](https://cloud.umami.is/analytics/eu/share/FhDonlJniEyIGdQY).
+<br>Nekako rožnika 2026 sem prepovedal robotom dostop do spletnega mesta (ti so
+močno pripevali k prometu na spletišču, ter najverjetneje krivi za tolikšno
+število obiskovalcev iz ZDA, ki se bili celo na vrhu lestvice). Promet se je
+zato od takrat precej umiril.
 
 ### Smernice spletišča
 
-- čim bolj preprosto, a ne na ceno lepote in uporabnosti;
-- čim manj Javascripta (tj. *animacij*, prehodov, *interaktivnosti*, ...;
-  spletna stran mora delovati tudi brez njega – z izjemo [Zvezdoslovne
-  ure](/zvezdoslovna_ura/), seveda);
+- čim bolj preprosto, a ne na ceno lepote in zahtevane uporabnosti;
+- čim manj Javascripta (tj. *animacij*, prehodov, *interaktivnosti*, ...),
+  običajna spletna stran mora delovati tudi brez njega – izjema so strani kot je
+  [Zvezdoslovna ura](/zvezdoslovna_ura/);
 - zgradba HTML-ja, ki omogoča jasen ogled strani tudi brez CSS-ja, oz. omogoča
   enostavno prilagajanje na lastni slog;
 - vsebina naj bo dostopna tudi v golem besedilu (za npr. ogled v terminalu) –

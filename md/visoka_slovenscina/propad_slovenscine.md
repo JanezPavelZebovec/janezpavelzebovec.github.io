@@ -1,6 +1,6 @@
 ---
 title: Propad slovenščine
-date: 2026-06-13
+date: 2026-10-21
 description: Primeri propada slovenščine
 keywords: slovenščina
 author: Janez Pavel Žebovec
@@ -18,7 +18,7 @@ author: Janez Pavel Žebovec
 
 ![gre naprej (carry on)](slike/sestevanje.png)
 
-**Znak v bližini cerkvice sv. Tomaža v Sv. Tomažu pri Škofji Loki v angleščini** ([46.184575, 14.244740](https://www.openstreetmap.org/node/13928613396)) – za koga le?! (2026-03-08):
+**Znak v bližini cerkvice sv. Tomaža v Sv. Tomažu pri Škofji Loki v angleščini** (2026-03-08, [46.184575, 14.244740](https://www.openstreetmap.org/node/13928613396):
 
 > Please keep off the grass  
 > Private land  
@@ -35,11 +35,7 @@ author: Janez Pavel Žebovec
 
 > ...zemljevidi, ki jim strokovno rečemo karte ...
 
-**Neznanje nikalnega rodilnika v sporočilu Študentskega servisa** (2026-05-05):
-
-> Kaj NE BO na voljo?
-
-![Rodilnik v sporočilu Študentskega servisa](slike/studentski_servis-2026-05-05.png)
+![Nikalni rodilnik v sporočilu Študentskega servisa: „*Kaj NE BO na voljo?*“ (2026-05-05)](slike/studentski_servis-2026-05-05.png)
 
 **Razprave FMF, 1. letnik (2026-06-06)**:
 
@@ -66,8 +62,6 @@ author: Janez Pavel Žebovec
 
 > od kje pa naj bi prišle? poleg tega tako ali tako veliko tujih besed vseeno prevedejo/poslovenijo tako da res ne vidim problema [E]
 
-![Coming soon (prispeval SK, 2026-06-06)](slike/pride_kmalu-zajbron.png)
+![Coming soon / Pride kmalu (avtor: SK, 2026-06-06)](slike/pride_kmalu-zajbron.png)
 
-Pred Logarsko dolino; osrednji oglas *akcije* "Gostje prihajajo" (1986; [46.4179596, 14.6412436](https://www.openstreetmap.org/#map=19/46.4179596/14.6412436); [vir](https://lipovlist.turisticna-zveza.si/turisti-bodo-prisli-ce-jim-bomo-ponudili-prave-stvari-in-se-ustrezno-obnasali/)):
-
-![Slovenščina je v Sloveniji na zadnjem mestu](slike/slovenija_moja_dezela-dobrodosli.png)
+![(T2: Življenje je najs / ekstra najs / ful najs](slike/zivljenje_je_najs-t2.jpg)

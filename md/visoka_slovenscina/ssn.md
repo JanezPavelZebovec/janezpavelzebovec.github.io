@@ -6,7 +6,7 @@ keywords: prevzeti izrazi
 author: Janez Pavel Žebovec
 ---
 
-# Slovar nemške angleščine
+# Slovar slovenske nemščine
 
 - *ajzenpon* (nem. *die Eisenbahn*); *ajzenponar* – železnica; železničar
 - *auspuh* (nem. *das Auspuffrohr*) – izpušna cev
@@ -76,3 +76,9 @@ author: Janez Pavel Žebovec
 - *šraufštok* – primež
 - *štrompajser* 
 - *vaservaga* (nem. *Wasserwaga*) – vodna tehtnica
+
+---
+
+## Zunanje povezave in viri
+
+- [Articae horulae – Slovar nemških izposojenk v slovenskem jeziku](https://arcticae-horulae.si/)

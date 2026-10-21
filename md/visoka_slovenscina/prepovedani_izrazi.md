@@ -6,7 +6,7 @@ keywords: slovenščina, visoka slovenščina, potujčenje
 author: Janez Pavel Žebovec
 ---
 
-# Prepovedane besede
+# Prepovedani izrazi
 
 ## Strogo prepovedane
 
