@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2026-10-19
+date: 2026-10-30
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 author: Janez Pavel Žebovec
@@ -262,6 +262,8 @@ obstoječe, z zgolj dodanim/prirejenim pomenom, druge so tvorjene nanovo):
   *Physik* < lat. *physica* < gr. *physikḗ* = *naravoslovje, naraven, ki zadeva
   naravo* < gr. *phýsis* = *narava, stvarstvo, rast, rojstvo* < gr. glagol
   *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*)</small>
+- **nebovíd** <small>(2026-10-30)</small> < *karta* neba, *karta* nočnega neba,
+  *astronomska karta*
 - **preslikáva** <small>(2026-04-13)</small> < *funkcija*
 - **prostóroslôvje** <small>(/2025-06-30)</small> < *geometrija*
 - **pogonski stroj** <small>(/2026-10-19)</small> / **pogon** < *motor*

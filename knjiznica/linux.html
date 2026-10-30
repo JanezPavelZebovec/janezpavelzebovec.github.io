@@ -90,6 +90,11 @@ sistem"/>
         <ul>
         <li><a href="#Git" id="toc-Git">Git</a></li>
         </ul></li>
+        <li><a href="#Kljuci_in_gesla" id="toc-Kljuci_in_gesla">Ključi
+        in gesla</a>
+        <ul>
+        <li><a href="#GPG" id="toc-GPG">GPG</a></li>
+        </ul></li>
         <li><a href="#Streznik" id="toc-Streznik">Strežnik</a>
         <ul>
         <li><a href="#SSH" id="toc-SSH">SSH</a></li>
@@ -691,6 +696,34 @@ sistem"/>
             <li><code>git diff &gt; spremembe.patch</code> - ustvari
             datoteko s spremembami (od kdaj – od začetka repozitorija
             ali od zadnje objave?)</li>
+            </ul>
+            <h2 id="Kljuci_in_gesla">Ključi in gesla</h2>
+            <h3 id="GPG">GPG</h3>
+            <ul>
+            <li><code>gpg --list-keys</code> – izpiše vse ključe
+            GPG</li>
+            <li><code>gpg --full-generate-key</code> – ustvarjanje
+            novega ključa GPG</li>
+            <li><code>gpg --edit-key ime_ključa</code> – uredi ključ
+            <ul>
+            <li><code>save</code> – shrani spremembe in konča z
+            urejanjem ključa</li>
+            <li><code>list</code> – izpiše ključ in morebitne
+            podključe</li>
+            <li><code>expire</code> – uredi rok veljavnosti</li>
+            </ul></li>
+            <li><code>gpg --passwd ime_ključa</code> – spremeni geslo
+            ključa</li>
+            <li><code>gpg --import ime_ključa_za_preklic</code> –
+            prekliči ključ GPG z datoteko za preklic</li>
+            <li><code>gpg --export --armor ime_ključa</code> – vrne
+            javni ključ ključa GPG
+            <ul>
+            <li><code>--armor</code> – zagotovi, da izpiše v besedilni
+            obliki, ne binarni</li>
+            <li><code>--output izhodna_datoteka.gpg.pub</code> – zapiše
+            ključ še v datoteko</li>
+            </ul></li>
             </ul>
             <h2 id="Streznik">Strežnik</h2>
             <h3 id="SSH">SSH</h3>

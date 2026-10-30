@@ -99,7 +99,10 @@ sistema"/>
         <li><a href="#JOSM" id="toc-JOSM">JOSM</a></li>
         <li><a href="#QGIS" id="toc-QGIS">QGIS</a></li>
         <li><a href="#Musescore" id="toc-Musescore">Musescore</a></li>
+        <li><a href="#GPG" id="toc-GPG">GPG</a></li>
+        <li><a href="#Pass" id="toc-Pass">Pass</a></li>
         <li><a href="#NeoMutt" id="toc-NeoMutt">NeoMutt</a></li>
+        <li><a href="#Aerc" id="toc-Aerc">Aerc</a></li>
         <li><a href="#Chroncal" id="toc-Chroncal">Chroncal</a></li>
         <li><a href="#Gramps" id="toc-Gramps">Gramps</a></li>
         <li><a href="#Live_server"
@@ -140,6 +143,7 @@ sistema"/>
         id="toc-Namestitev_streznika_na_Linux_Debianu">Namestitev
         strežnika na Linux Debianu</a>
         <ul>
+        <li><a href="#SSH" id="toc-SSH">SSH</a></li>
         <li><a href="#Podatkovna_zbirka_SQL"
         id="toc-Podatkovna_zbirka_SQL">Podatkovna zbirka SQL</a>
         <ul>
@@ -966,6 +970,17 @@ sistema"/>
             <li><code>./gradlew build</code> – izgradi program iz
             vira</li>
             </ul>
+            <h4 id="GPG">GPG</h4>
+            <ul>
+            <li><code>gpg --list-keys</code> – izpiše vse ključe
+            GPG</li>
+            </ul>
+            <h4 id="Pass">Pass</h4>
+            <p><a href="https://www.passwordstore.org/">Pass</a> je
+            upravitelj gesel, ključev.</p>
+            <ul>
+            <li><code>sudo apt install pass</code> – namestitev</li>
+            </ul>
             <h4 id="NeoMutt">NeoMutt</h4>
             <ul>
             <li><code>sudo apt install neomutt isync msmtp pass curl ca-certificates gettext</code>
@@ -1005,6 +1020,16 @@ sistema"/>
             <li><code>mw -a moj@elektronski.naslov</code> – dodaj
             elektronski naslov</li>
             </ul>
+            <h4 id="Aerc">Aerc</h4>
+            <p><code>sudo apt install aerc</code> – namestitev</p>
+            <p>Če nočeš imeti gesla shranjenega v golem besedilu (kar
+            tudi ni priporočljivo), najprej v
+            <b>~/.config/aerc/accounts.conf</b> odstrani morebitna gesla
+            iz vrstic <i>source</i> in <i>outgoing</i> (uporabljena
+            oblika <code>protokol://naslov:geslo@strežnik:vrata</code>).
+            Če uporabljaš Pass kot upravitelja gesel, dodaj vrstici:</p>
+            <pre><code>source-cred-cmd = pass show ime_gesla
+outgoing-cred-cmd = pass show ime_gesla</code></pre>
             <h4 id="Chroncal">Chroncal</h4>
             <p><a
             href="https://github.com/DouglasdeMoura/chroncal">Chroncal</a>
@@ -1320,14 +1345,14 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             <p>Na začetek datoteke <a
             href="/moj_linux/home/janezpavel/.config/vim/vimrc"><b>~/.vimrc</b></a>
             dodaj:</p>
-            <div class="sourceCode" id="cb7"><pre
-            class="sourceCode sh"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">call</span> plug#begin<span class="er">(</span><span class="st">&#39;~/.config/vim/plugged&#39;</span><span class="kw">)</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Plug</span> <span class="st">&#39;morhetz/gruvbox&#39;</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ex">call</span> plug#end<span class="er">(</span><span class="kw">)</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="ex">syntax</span> on</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> background=dark</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="ex">colorscheme</span> gruvbox</span></code></pre></div>
+            <div class="sourceCode" id="cb8"><pre
+            class="sourceCode sh"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">call</span> plug#begin<span class="er">(</span><span class="st">&#39;~/.config/vim/plugged&#39;</span><span class="kw">)</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Plug</span> <span class="st">&#39;morhetz/gruvbox&#39;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="ex">call</span> plug#end<span class="er">(</span><span class="kw">)</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="ex">syntax</span> on</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> background=dark</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="ex">colorscheme</span> gruvbox</span></code></pre></div>
             <p>Nato v odprtem VIM-u izvedi:</p>
             <ul>
             <li><code>:source %</code> – da stopijo spremembe
@@ -1454,6 +1479,20 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             <p>Še nekaj uporabnih ukazov:</p>
             <ul>
             <li><code>nslookup moja-domena</code></li>
+            </ul>
+            <h3 id="SSH">SSH</h3>
+            <ul>
+            <li><code>sudo apt install openssh-server</code> – namesti
+            strežnik SSH; če si že ob nameščanju <i>operacijskega
+            sistema</i> izbral <i>SSH server</i>, imaš to že
+            nameščeno</li>
+            <li><code>apt install openssh-client</code> – namesti
+            odjemalca SSH; to je praviloma že privzeto nameščeno tudi na
+            nestrežniškem <i>operacijskem sistemu</i></li>
+            <li><code>sudo systemctl enable --now ssh</code> – če želiš
+            zagotoviti, da SSH ostane dejaven in se samodejno zažene ob
+            zagonu <i>sistema</i>, kar je sicer že privzeto
+            obnašanje</li>
             </ul>
             <h3 id="Podatkovna_zbirka_SQL">Podatkovna zbirka SQL</h3>
             <h4 id="MariaDB">MariaDB</h4>

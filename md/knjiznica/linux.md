@@ -373,6 +373,23 @@ Npr. za sinhronizacijo z [GitHubom](https://github.com/),
 - `git diff > spremembe.patch` - ustvari datoteko s spremembami (od kdaj – od
   začetka repozitorija ali od zadnje objave?)
 
+## Ključi in gesla
+
+### GPG
+
+- `gpg --list-keys` – izpiše vse ključe GPG
+- `gpg --full-generate-key` – ustvarjanje novega ključa GPG 
+- `gpg --edit-key ime_ključa` – uredi ključ
+    - `save` – shrani spremembe in konča z urejanjem ključa
+    - `list` – izpiše ključ in morebitne podključe
+    - `expire` – uredi rok veljavnosti
+- `gpg --passwd ime_ključa` – spremeni geslo ključa
+- `gpg --import ime_ključa_za_preklic` – prekliči ključ GPG z datoteko za
+  preklic
+- `gpg --export --armor ime_ključa` – vrne javni ključ ključa GPG
+    - `--armor` – zagotovi, da izpiše v besedilni obliki, ne binarni
+    - `--output izhodna_datoteka.gpg.pub` – zapiše ključ še v datoteko
+
 ## Strežnik
 
 ### SSH

@@ -31,19 +31,23 @@ označevanje v OpenStretMap"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/openstreetmap/">openstreetmap</a> / <a href="/openstreetmap/oznacevanje/">oznacevanje</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-07-31">2026-07-31</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-10-28">2026-10-28</time></p>
     </header>
     <nav>
+        <ul>
+        <li><a href="#Oznacevanje_v_OpenStreetMap"
+        id="toc-Oznacevanje_v_OpenStreetMap">Označevanje v
+        OpenStreetMap</a>
         <ul>
         <li><a href="#Poti" id="toc-Poti">Poti</a>
         <ul>
         <li><a href="#Plocniki" id="toc-Plocniki">Pločniki</a></li>
         <li><a href="#Prehodi" id="toc-Prehodi">Prehodi</a></li>
-        <li><a href="#Poti_ki_niso_plocniki"
-        id="toc-Poti_ki_niso_plocniki">Poti, ki niso pločniki</a></li>
+        <li><a href="#Ostale_poti" id="toc-Ostale_poti">Ostale
+        poti</a></li>
+        </ul></li>
         <li><a href="#Avtobusne_povezave"
         id="toc-Avtobusne_povezave">Avtobusne povezave</a></li>
-        </ul></li>
         <li><a href="#Verski_gradniki" id="toc-Verski_gradniki">Verski
         gradniki</a>
         <ul>
@@ -54,15 +58,10 @@ označevanje v OpenStretMap"/>
         <li><a href="#Podruznicna_cerkev"
         id="toc-Podruznicna_cerkev">Podružnična cerkev</a></li>
         <li><a href="#Zupnisce" id="toc-Zupnisce">Župnišče</a></li>
-        <li><a href="#Kapela" id="toc-Kapela">Kapela</a>
-        <ul>
-        <li><a href="#Bolnisnicna_kapela"
-        id="toc-Bolnisnicna_kapela">Bolnišnična kapela</a></li>
-        <li><a href="#Pokopaliska_kapela"
-        id="toc-Pokopaliska_kapela">Pokopališka kapela</a></li>
+        </ul></li>
+        <li><a href="#Kapela" id="toc-Kapela">Kapela</a></li>
         <li><a href="#Pokopaliska_vezica"
         id="toc-Pokopaliska_vezica">Pokopališka vežica</a></li>
-        </ul></li>
         <li><a href="#Zvonik" id="toc-Zvonik">Zvonik</a>
         <ul>
         <li><a href="#Samostojec"
@@ -74,55 +73,65 @@ označevanje v OpenStretMap"/>
         id="toc-Pokopalisce_okoli_cerkve">Pokopališče okoli
         cerkve</a></li>
         </ul></li>
+        <li><a href="#Redovi" id="toc-Redovi">Redovi</a></li>
         </ul></li>
-        </ul></li>
-        <li><a href="#Parkirisce"
-        id="toc-Parkirisce">Parkirišče</a></li>
-        <li><a href="#Spomeniki" id="toc-Spomeniki">Spomeniki</a>
+        <li><a href="#Parkirisce" id="toc-Parkirisce">Parkirišče</a>
         <ul>
+        <li><a href="#Spomeniki" id="toc-Spomeniki">Spomeniki</a></li>
+        <li><a href="#Domobrancem"
+        id="toc-Domobrancem">Domobrancem</a></li>
         <li><a href="#NOB" id="toc-NOB">NOB</a></li>
         </ul></li>
         <li><a href="#Omrezje" id="toc-Omrezje">Omrežje</a>
         <ul>
         <li><a href="#Elektrika" id="toc-Elektrika">Elektrika</a></li>
         </ul></li>
+        </ul></li>
         </ul>
     </nav>
     <main>
         <div class="content">
-            <h1 id="Poti">Poti</h1>
-            <pre><code>segregated=yes/no
+            <h1 id="Oznacevanje_v_OpenStreetMap">Označevanje v
+            OpenStreetMap</h1>
+            <h2 id="Poti">Poti</h2>
+            <pre><code>highway=path/footway/cycleway
+segregated=yes/no
 oneway=yes/no
-surface=asphalt/gravel/fine_gravel/...</code></pre>
-            <h2 id="Plocniki">Pločniki</h2>
+surface=asphalt/compacted/gravel/fine_gravel/...
+
+foot=yes/no/designated/private
+bicycle=yes/no/designated
+footway=sidewalk/crossing
+cycleway=-/crossing</code></pre>
+            <h3 id="Plocniki">Pločniki</h3>
             <p>Za pešce in kolesarje:</p>
             <pre><code>highway=path
-foot=designated
-bicycle=designated
+foot=yes/designated
+bicycle=yes/designated
 footway=sidewalk</code></pre>
             <p>Samo za pešce:</p>
             <pre><code>highway=footway
 foot=designated
 footway=sidewalk</code></pre>
-            <h2 id="Prehodi">Prehodi</h2>
-            <pre><code>crossing=traffic_signals/uncontrolled
+            <h3 id="Prehodi">Prehodi</h3>
+            <pre><code>crossing=traffic_signals/uncontrolled/...
 crossing:island=yes/no
-crossing:markings=zebra</code></pre>
+crossing:markings=zebra/...</code></pre>
             <p>Za pešce in kolesarje:</p>
             <pre><code>highway=path
-foot=designated
-bicycle=designated
+foot=yes/designated
+bicycle=yes/designated
 cycleway=crossing
 footway=crossing</code></pre>
             <p>Samo za kolesarje:</p>
             <pre><code>highway=cycleway
 bicycle=designated
 cycleway=crossing</code></pre>
-            <h2 id="Poti_ki_niso_plocniki">Poti, ki niso pločniki</h2>
+            <h3 id="Ostale_poti">Ostale poti</h3>
             <p>Za pešce in kolesarje:</p>
             <pre><code>highway=path
-foot=designated
-bicycle=designated</code></pre>
+foot=yes/designated
+bicycle=yes/designated</code></pre>
             <p>Zgolj kolesarska steza:</p>
             <pre><code>highway=cycleway
 bicycle=designated</code></pre>
@@ -147,35 +156,41 @@ name=Jadranska
 operator=Ljubljanski potniški promet</code></pre>
             <p>Avtobusna povezava v eno smer (<code>route</code>):</p>
             <pre><code>type=route
-route=bus
-public_transport:version=2
-ref=42
 name=Bus 10: Besnica obračališče =&gt; Zadobrova
+
+network=MPP Ljubljana - Urbana
+operator=Ljubljanski potniški promet
+route=bus
+ref=42
+public_transport:version=2
+
 from=Besnica obračališče
 via=Podgrad
 to=Zadobrova
-network=MPP Ljubljana - Urbana
-operator=Ljubljanski potniški promet
+
 fee=yes
 colour=#58574a</code></pre>
             <p>Zveza avtobusne povezave v obe (/vse) smeri
             (<code>route_master</code>):</p>
             <pre><code>type=route_master
+name=Bus 42
+
 route_master=bus
 ref=42
-name=Bus 42
 network=MPP Ljubljana - Urbana
 operator=Ljubljanski potniški promet
+
 colour=#58574a</code></pre>
             <p>Zavetje postajališč:</p>
             <pre><code>amenity=shelter
 shelter_type=public_transport
 building=roof</code></pre>
-            <h1 id="Verski_gradniki">Verski gradniki</h1>
+            <h2 id="Verski_gradniki">Verski gradniki</h2>
             <p>Splošna verska zgradba:
             <code>building=religious</code></p>
-            <h2 id="Zupnija">Župnija</h2>
+            <h3 id="Zupnija">Župnija</h3>
             <pre><code>name=Župnija *
+
 deanery=Dekanija *
 diocese=Škofija *
 
@@ -183,15 +198,14 @@ religion=christian
 denomination=roman_catholic
 
 parish:website=http://*
+
 parish:wikidata=Q*
-parish:wikipedia=sl:*
-</code></pre>
+parish:wikipedia=sl:*</code></pre>
             <p>Lahko tudi <code>boundary=religious_administration</code>
             za mejo župnije</p>
-            <h3 id="Zupnijska_cerkev">Župnijska cerkev</h3>
-            <pre><code>name=Župnijska cerkev sv. *
-
-amenity=place_of_worship
+            <h4 id="Zupnijska_cerkev">Župnijska cerkev</h4>
+            <p>name=Župnijska cerkev sv. *</p>
+            <pre><code>amenity=place_of_worship
 building=church
 religion=christian
 denomination=roman_catholic
@@ -204,14 +218,13 @@ diocese=Nadškofija *
 parish:website=http://*
 parish:wikidata=Q*
 parish:wikipedia=sl:*
-
 wikidata=Q*
 wikipedia=sl:</code></pre>
             <p>Zadnji dve le, če ima sama cerkev zapis na
             Wikipediji/Wikidata.</p>
-            <h3 id="Podruznicna_cerkev">Podružnična cerkev</h3>
-            <pre><code>name=Podružnična cerkev sv. *
-short_name=Sv. *
+            <h4 id="Podruznicna_cerkev">Podružnična cerkev</h4>
+            <pre><code>name=Podružnična cerkev svete/ga *
+short_name=Sveta/i *
 
 amenity=place_of_worship
 building=church
@@ -224,19 +237,12 @@ deanery=Dekanija *
 diocese=Nadškofija *
 
 parish:website=http://*
-
 wikidata=Q*
 wikipedia=sl:</code></pre>
             <p>Zadnji dve le, če ima sama cerkev zapis na
             Wikipediji/Wikidata.</p>
-            <h3 id="Zupnisce">Župnišče</h3>
-            <pre><code>addr:city=*
-addr:housenumber=*
-addr:postcode=****
-addr:street=*
-
-name=Župnišče župnije *
-short_name=Župnišče
+            <h4 id="Zupnisce">Župnišče</h4>
+            <pre><code>name=Župnija *
 
 building=rectory
 office=parish
@@ -248,10 +254,17 @@ diocese=Škofija *
 website=http://*
 phone=*
 contact:email=*
+
 parish:wikidata=Q*
-parish:wikipedia=sl:*</code></pre>
+parish:wikipedia=sl:*
+
+addr:city=*
+addr:housenumber=*
+addr:postcode=****
+addr:street=*</code></pre>
             <p>Namesto <code>building=rectory</code> se uporablja tudi
-            <code>building=presbytery</code></p>
+            <code>building=presbytery</code>; če pa župnišče označuješ
+            na točki, <code>building=*</code> sploh povsem izpustiš.</p>
             <p>Za župnijo, ki jo oskrbuje/upravlja druga župnija:</p>
             <pre><code>operator=Župnija *
 operator:type=religious</code></pre>
@@ -268,12 +281,12 @@ denomination=roman_catholic
 parish=Župnija *
 deanery=Dekanija *
 diocese=Škofija *</code></pre>
-            <h4 id="Bolnisnicna_kapela">Bolnišnična kapela</h4>
+            <p><b>Bolnišnična kapela</b>:</p>
             <pre><code>building:part=chapel
 chapel:type=hospital</code></pre>
-            <h4 id="Pokopaliska_kapela">Pokopališka kapela</h4>
+            <p><b>Pokopališka kapela</b>:</p>
             <pre><code>chapel:type=grave_yard</code></pre>
-            <h4 id="Pokopaliska_vezica">Pokopališka vežica</h4>
+            <h3 id="Pokopaliska_vezica">Pokopališka vežica</h3>
             <pre><code>amenity=place_of_mourning</code></pre>
             <h3 id="Zvonik">Zvonik</h3>
             <pre><code>building:part=tower
@@ -297,35 +310,57 @@ landuse=cemetry
 parish=Župnija *
 deanery=Dekanija *
 diocese=Škofija *</code></pre>
-            <h1 id="Parkirisce">Parkirišče</h1>
+            <h3 id="Redovi">Redovi</h3>
+            <p>Kapucinski frančiškani:</p>
+            <pre><code>community=OFMCap
+community:sl=frančiškani
+community:gender=male
+community:wikidata=Q124862</code></pre>
+            <p>Klarise:</p>
+            <pre><code>community=OSC
+community:sl=klarise
+community:gender=female
+community:wikidata=Q733658</code></pre>
+            <h2 id="Parkirisce">Parkirišče</h2>
             <pre><code>amenity=parking
 fee=no/yes
 parking=surface/street_side
 capacity=*
 orientation=parallel/diagonal/perpendicular
 surface=asphalt</code></pre>
-            <h1 id="Spomeniki">Spomeniki</h1>
+            <h3 id="Spomeniki">Spomeniki</h3>
             <pre><code>historic=memorial
+memorial=obelisk/bust/stele/*
 wikidata=Q*</code></pre>
-            <h2 id="NOB">NOB</h2>
+            <h3 id="Domobrancem">Domobrancem</h3>
             <pre><code>historic=memorial
-memorial=war_memorial
+war_memorial=yes
 memorial:conflict=WW2
-wikidata=Q*
+subject=Slovensko domobranstvo
+subject:wikidata=Q137886</code></pre>
+            <h3 id="NOB">NOB</h3>
+            <pre><code>historic=memorial
+war_memorial=yes
+memorial:conflict=WW2
 subject=NOB
 subject:wikidata=Q1565371</code></pre>
-            <h1 id="Omrezje">Omrežje</h1>
-            <h2 id="Elektrika">Elektrika</h2>
+            <h2 id="Omrezje">Omrežje</h2>
+            <h3 id="Elektrika">Elektrika</h3>
             <p><a
             href="https://wiki.openstreetmap.org/wiki/Key:power"><code>power=*</code></a></p>
-            <p><code>power=line</code> – daljnovod
-            <code>power=tower</code> – daljnovodni stolp</p>
-            <p><code>power=minor_line</code> – manj pomemben daljnovod
-            <code>power=pole</code> – daljnovodni steber</p>
-            <p><code>power=terminal</code> – električni stolp</p>
+            <ul>
+            <li><code>power=line</code> – (pomembnejši) daljnovod</li>
+            <li><code>power=minor_line</code> – manj pomemben (običajno
+            stebrni) daljnovod</li>
+            <li><code>power=tower</code> – daljnovodni stolp</li>
+            <li><code>power=pole</code> – daljnovodni steber</li>
+            <li><code>power=terminal</code> – prehod z daljnovoda v
+            stavbo (npr. električni stolp / transformator) ali
+            obratno</li>
+            </ul>
             <p><a
             href="https://wiki.openstreetmap.org/wiki/Tag:location:transition%3Dyes">Prehodni
-            steber daljnovoda</a></p>
+            steber daljnovoda</a>:</p>
             <pre><code>power=pole
 location:transition=yes
 line_management=transition</code></pre>

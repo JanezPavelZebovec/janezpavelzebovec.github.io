@@ -553,6 +553,16 @@ Debian ima precej staro različico, zato je bolje [prenesti AppImage](https://mu
 - `git checkout development`, `git pull --all` – zagotovi, da smo na najnovejši veji (je to sploh potrebno, če smo itak ravnokar prenesli?)
 - `./gradlew build` – izgradi program iz vira
 
+#### GPG
+
+- `gpg --list-keys` – izpiše vse ključe GPG
+
+#### Pass
+
+[Pass](https://www.passwordstore.org/) je upravitelj gesel, ključev.
+
+- `sudo apt install pass` – namestitev
+
 #### NeoMutt
 
 - `sudo apt install neomutt isync msmtp pass curl ca-certificates gettext` – Neomutt in njegove odvisnosti
@@ -577,6 +587,19 @@ Debian ima precej staro različico, zato je bolje [prenesti AppImage](https://mu
 - `cd mutt-wizard`
 - `sudo make install`
 - `mw -a moj@elektronski.naslov` – dodaj elektronski naslov
+
+#### Aerc
+
+`sudo apt install aerc` – namestitev
+
+Če nočeš imeti gesla shranjenega v golem besedilu (kar tudi ni priporočljivo),
+najprej v
+**~/.config/aerc/accounts.conf** odstrani morebitna gesla iz vrstic *source* in *outgoing* (uporabljena oblika
+`protokol://naslov:geslo@strežnik:vrata`). Če uporabljaš Pass kot upravitelja
+gesel, dodaj vrstici:
+
+    source-cred-cmd = pass show ime_gesla
+    outgoing-cred-cmd = pass show ime_gesla
 
 #### Chroncal
 
@@ -882,6 +905,15 @@ Po prvem zagonu novega *operacijskega sistema*:
 Še nekaj uporabnih ukazov:
 
 - `nslookup moja-domena`
+
+### SSH
+
+- `sudo apt install openssh-server` – namesti strežnik SSH; če si že ob nameščanju *operacijskega
+  sistema* izbral *SSH server*, imaš to že nameščeno
+- `apt install openssh-client` – namesti odjemalca SSH; to je praviloma že privzeto nameščeno tudi na
+  nestrežniškem *operacijskem sistemu*
+- `sudo systemctl enable --now ssh` – če želiš zagotoviti, da SSH ostane dejaven
+  in se samodejno zažene ob zagonu *sistema*, kar je sicer že privzeto obnašanje
 
 ### Podatkovna zbirka SQL
 

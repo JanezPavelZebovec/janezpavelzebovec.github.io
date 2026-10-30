@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-10-10
+date: 2026-10-29
 description: Razni seznami z različnih področij in priporočila
 keywords: seznam, priporočilo
 author: Janez Pavel Žebovec
@@ -737,13 +737,17 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 
 - [Glumpuddle](https://www.youtube.com/@Glumpuddle) - Zgodbe iz Narnije
 - [In Deep Geek](https://www.youtube.com/@InDeepGeek)
-- [Ink and Fantasy](https://www.youtube.com/@InkandFantasy) - tudi književnost na splošno
-- [Middle Earth Tales](https://www.youtube.com/@middleearthtales)
-- [Nerd of the Rings](https://www.youtube.com/@NerdoftheRings)
+- [Ink and Fantasy](https://www.youtube.com/@InkandFantasy) - književnost
+  na splošno
+- [Middle Earth Tales](https://www.youtube.com/@middleearthtales) – Tolkienova
+  *mitologija*
+- [Nerd of the Rings](https://www.youtube.com/@NerdoftheRings) – Tolkienova
+  *mitologija*
 
 #### Računalnistvo
 
 - [AI In Context](https://www.youtube.com/@AI_In_Context) – umetna inteligenca
+- [Bread on Penguins](https://www.youtube.com/@BreadOnPenguins) – Linux
 - [Bryce Vandergrift](https://www.youtube.com/@brycevandegrift)
 - [Chris Titus Tech](https://www.youtube.com/@ChrisTitusTech)
 - [Computerphile](https://www.youtube.com/@Computerphile)
@@ -762,13 +766,13 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [Chris Titus Tech](https://www.youtube.com/@ChrisTitusTech)
 - [Computerphile](https://www.youtube.com/@Computerphile)
 - [DistroTube](https://www.youtube.com/@DistroTube) - Linux
+- [Kyle Cook from WDS](https://www.youtube.com/@KyleCookWDS) – *kritik*
+  pozivnega *programiranja* (*vajbkoudanja*)
 - [NetworkChuck](https://www.youtube.com/@NetworkChuck) - predvsem omrežne, spletne zadeve
 - [RootJunky](https://www.youtube.com/@Rootjunkycom/videos) - vlamljanje v Android
 - [The Linux Experiment](https://www.youtube.com/@TheLinuxEXP)
-
-###### Spletne strani
-
-- [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)
+- [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified) – spletne
+  strani
 
 #### Urjenje telesa
 
@@ -776,7 +780,7 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [larsandersen23](https://www.youtube.com/@larsandersen23) - lokostrelstvo
 - [Magnus Midtbø](https://www.youtube.com/@magmidt) – plezanje, telesni izzivi
 - [Mover's Odyssey](https://www.youtube.com/@moversodyssey) - strokovne razlage, napotki, skice
-- [Sondre Berg](https://www.youtube.com/@Sondre_Berg) - "ulična vadba" (*kalistenika*)
+- [Sondre Berg](https://www.youtube.com/@Sondre_Berg) - ulična vadba (*kalistenika*)
 - [The Bioneer](https://www.youtube.com/@TheBioneer) - uporabna moč
 - [Yellow Dude | Gravgear](https://www.youtube.com/@yellowdude_co) - "ulična vadba" (*kalistenika*)
 

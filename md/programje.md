@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2026-09-22
+date: 2026-10-29
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -84,6 +84,7 @@ Sucklessove programe je priporočljivo namestiti kar iz vira - neposredno s [Suc
 | program | namembnost | Debianov paket | opombe |
 | --- | --- | --- | --- |
 | ABook (Adress Book) | imenik | [abook](https://packages.debian.org/buster/abook) | namenjen je uporabi v [Muttu](#mutt) (ali [NeoMuttu](#neomutt)), a se lahko uporablja tudi neodvisno |
+| [Chroncal](https://github.com/DouglasdeMoura/chroncal) | koledar | | omogoča s spletnimi koledarskimi storitvami|
 | [DMenu](https://tools.suckless.org/dmenu/) (Dynamic Menu) | statusna vrstica (za DWM) | | |
 | [DWM](https://dwm.suckless.org) (Dynamic Windows Manager) | upravitelj oken | [dwm](https://wiki.debian.org/Dwm) | |
 | [exiftool](https://exiftool.org/) | pregledovalnik in urejevalnik metapodatkov slik | [exiftool](https://packages.debian.org/search?keywords=exiftool) | |
@@ -95,6 +96,7 @@ Sucklessove programe je priporočljivo namestiti kar iz vira - neposredno s [Suc
 | [NMCli](https://networkmanager.dev/) (Network Manager) [Debian Wiki - Network Manager](https://wiki.debian.org/NetworkManager) | upravitelj omrežne povezave | [network-manager](https://packages.debian.org/buster/network-manager) | |
 | [NSXIV](https://nsxiv.codeberg.page/) (Neo Simple X Image Viewer) | pregledovalnik in urejevalnik slik | | je trenutno vzdrževana različica SXIV |
 | [Pandoc](https://pandoc.org/) | pretvornik dokumentov | [pandoc](https://packages.debian.org/buster/pandoc) | LaTex, MarkDown, PDF, HTML, ...|
+| [Pass](https://www.passwordstore.org/) | upravitelj gesel | pass | |
 | [SC-IM](https://github.com/andmarti1424/sc-im) | urejevalnik preglednic z izračunalnimi sposobnostmi | | |
 | [SLock](https://tools.suckless.org/slock/) (Screen Lock) | zaklenjen zaslon | | |
 | [ST](https://st.suckless.org/) (Simple Terminal ) | terminal | [stterm](https://packages.debian.org/buster/stterm) | |

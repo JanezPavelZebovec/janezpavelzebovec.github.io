@@ -146,8 +146,13 @@ Opomba: ob nekaterih jezikih je sklic ^G^, ki se povezuje na zunanjo stran na [G
 
 ## Zunanje povezave in viri
 
-- [Glottolog](https://glottolog.org/)
-- [Ethnologue](https://www.ethnologue.com/)
-- [Medslovanski slovar](https://interslavic-dictionary.com/)
+- [Glottolog](https://glottolog.org/) – zbirka svetovnih jezikov, še živečih in
+  izumrlih, *hierarhija* jezikov, ...
+- [Dood – Pink Trombone](https://dood.al/pinktrombone/) – *simlacija*
+  ustvarjanja glasov z govorili
+- [Ethnologue](https://www.ethnologue.com/) – jeziki, njihovo stanje,
+  *literatura*, ...
+- [Medslovanski slovar](https://interslavic-dictionary.com/) – slovar
+  medslovanščine s podporo 11 glavnih slovanskih jezikov in angleščine
 - [Wikipedija - Mednarodna fonetična abeceda](https://sl.wikipedia.org/wiki/Mednarodna_foneti%C4%8Dna_abeceda)
 - [Wikipedija - Seznam jezikovnih družin in jezikov](https://sl.wikipedia.org/wiki/Seznam_jezikovnih_dru%C5%BEin_in_jezikov)
