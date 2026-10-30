@@ -769,6 +769,7 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [Kyle Cook from WDS](https://www.youtube.com/@KyleCookWDS) – *kritik*
   pozivnega *programiranja* (*vajbkoudanja*)
 - [NetworkChuck](https://www.youtube.com/@NetworkChuck) - predvsem omrežne, spletne zadeve
+- [The Prime Time](https://www.youtube.com/@ThePrimeTimeagen)
 - [RootJunky](https://www.youtube.com/@Rootjunkycom/videos) - vlamljanje v Android
 - [The Linux Experiment](https://www.youtube.com/@TheLinuxEXP)
 - [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified) – spletne

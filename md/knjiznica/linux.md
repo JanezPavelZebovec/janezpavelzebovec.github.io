@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2026-10-06
+date: 2026-10-30
 description: Priročnik za uporabo Linuxa, posebno skozi terminal
 keywords: Linux, terminal, operacijski sistem
 author: Janez Pavel Žebovec
@@ -389,6 +389,31 @@ Npr. za sinhronizacijo z [GitHubom](https://github.com/),
 - `gpg --export --armor ime_ključa` – vrne javni ključ ključa GPG
     - `--armor` – zagotovi, da izpiše v besedilni obliki, ne binarni
     - `--output izhodna_datoteka.gpg.pub` – zapiše ključ še v datoteko
+
+**Šifriranje in odšifriranje datotek/sporočil**:
+
+- `gpg --recipient javni_ključ_prejemnika --encrypt izbrana_datoteka`
+  – zašifrira izbrano datoteko s tujim javnim ključem in shrani v novo (binarno) datoteko
+  s končnico *.gpg*.
+  - `gpg --armor --recipient javni_ključ_prejemnika --encrypt izbrana_datoteka` – zašifrira
+    v nebinarno datoteko (golo besedilo)
+- `gpg --decrypt datoteka.gpg` – odšifrira datoteko s tvojim zasebnim ključem
+  (ki je v paru z uporabljenim javnim ključem za šifriranje); če je bilo izvorno
+  zašifrirano v binarno datoteko, bo tudi odšifriralo v binarno datoteko
+
+**Podpisovanje**:
+
+- `gpg --local-user zasebni_ključ_pošiljatelja --detach-sign izbrana_datoteka` – iz izbrane
+  datoteke ustvari pripadajoči *hash*, ki ga združi z zasebnim ključem in ustvari novo
+  podpisano datoteko s končnico *.sig*
+- `gpg --verify podpisana_datoteka.sig datoteka` – preveri, ali je datoteka
+  podpisana z zasebnim ključem pošiljatelja in je vsebina datoteke nespremenjena
+
+**Hkratno zašifriranje in podpisovanje**
+
+- `gpg --local-user zasebni_ključ_pošiljatelja ime_ključa --recipient javni_ključ_prejemnika --sign --encrypt datoteka` –
+    zašifrira in podpiše datoteko/sporočilo v novi datoteki s končnico *.gpg*
+- `gpg --decrypt datoteka.gpg` – odšifrira in preveri podpis
 
 ## Strežnik
 

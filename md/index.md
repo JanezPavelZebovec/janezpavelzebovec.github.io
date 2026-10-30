@@ -1,6 +1,6 @@
 ---
 title: Janez Pavel Žebovec
-date: 2026-10-21
+date: 2026-10-30
 description: Osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran, osebno spletišče
 ---
@@ -56,23 +56,23 @@ vsi moji javni spletni računi – tako družabni, kot tudi *projektni*.
 
 ### Stiki
 
-- [osebno](mailto:osebno@janezpavelzebovec.net)@[janezpavelzebovec.net](https://janezpavelzebovec.net/)
-- [janezpavel.zebovec](mailto:janezpavel.zebovec@gmail.com)@[gmail.com](https://mail.google.com/) (nekdanji naslov, ki ga umikam iz rabe)
+- [osebno](mailto:osebno@janezpavelzebovec.net)@[janezpavelzebovec.net](https://janezpavelzebovec.net/) (*protokol el.* pošte)
+- [janezpavel.zebovec](mailto:janezpavel.zebovec@gmail.com)@[gmail.com](https://mail.google.com/) (*protokol el.* pošte; nekdanji naslov, ki ga umikam iz rabe)
 - [janezpavelzebovec](https://matrix.to/#/@janezpavelzebovec:matrix.org)@[matrix.org](https://matrix.org/)
   (*protokol* [Matrix](https://matrix.org/); moje prednostno omrežje za klepete)
-- [janezpavel](https://discordapp.com/users/789883011084058666)@[Discord](https://discord.com/)
+- [janezpavel](https://discordapp.com/users/789883011084058666)@[discord.com](https://discord.com/)
 
 Sledečih stikov ne uporabljam, čeprav obstajajo:
 
 - [janezpavel.zebovec](xmpp:janezpavel.zebovec@xmpp.is)@[xmpp.is](https://xmpp.is/) (*protokol* [XMPP](https://xmpp.org/))
-- [janezpavelzebovec](https://t.me/janezpavelzebovec)@[Telegram](telegram.org): 
-- @[Signal](https://signal.org/)
+- [janezpavelzebovec](https://t.me/janezpavelzebovec)@[telegram.org](telegram.org): 
+- @[signal.org](https://signal.org/)
 
 Družbena omrežja, kjer sem sicer registriram, a jih ne uporabljam (kaj dosti):
 
-- [janezpavel.zebovec](https://www.facebook.com/janezpavel.zebovec)@[Facebook](https:/www.facebook.com/)
-- [JanezPavelZ](https://x.com/JanezPavelZ)@[Twitter](https://x.com/)
-- [Ionoeryn](https://www.reddit.com/user/Ionoeryn/)@[Reddit](https://www.reddit.com/)
+- [janezpavel.zebovec](https://www.facebook.com/janezpavel.zebovec)@[facebook.com](https:/www.facebook.com/)
+- [JanezPavelZ](https://x.com/JanezPavelZ)@[x.com](https://x.com/)
+- [Ionoeryn](https://www.reddit.com/user/Ionoeryn/)@[reddit.com](https://www.reddit.com/)
 
 ### Dejavnosti
 

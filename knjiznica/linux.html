@@ -32,7 +32,7 @@ sistem"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/linux/">linux</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-10-06">2026-10-06</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-10-30">2026-10-30</time></p>
     </header>
     <nav>
         <ul>
@@ -724,6 +724,39 @@ sistem"/>
             <li><code>--output izhodna_datoteka.gpg.pub</code> – zapiše
             ključ še v datoteko</li>
             </ul></li>
+            </ul>
+            <p><b>Šifriranje in odšifriranje datotek/sporočil</b>:</p>
+            <ul>
+            <li><code>gpg --recipient javni_ključ_prejemnika --encrypt izbrana_datoteka</code>
+            – zašifrira izbrano datoteko s tujim javnim ključem in
+            shrani v novo (binarno) datoteko s končnico <i>.gpg</i>.
+            <ul>
+            <li><code>gpg --armor --recipient javni_ključ_prejemnika --encrypt izbrana_datoteka</code>
+            – zašifrira v nebinarno datoteko (golo besedilo)</li>
+            </ul></li>
+            <li><code>gpg --decrypt datoteka.gpg</code> – odšifrira
+            datoteko s tvojim zasebnim ključem (ki je v paru z
+            uporabljenim javnim ključem za šifriranje); če je bilo
+            izvorno zašifrirano v binarno datoteko, bo tudi odšifriralo
+            v binarno datoteko</li>
+            </ul>
+            <p><b>Podpisovanje</b>:</p>
+            <ul>
+            <li><code>gpg --local-user zasebni_ključ_pošiljatelja --detach-sign izbrana_datoteka</code>
+            – iz izbrane datoteke ustvari pripadajoči <i>hash</i>, ki ga
+            združi z zasebnim ključem in ustvari novo podpisano datoteko
+            s končnico <i>.sig</i></li>
+            <li><code>gpg --verify podpisana_datoteka.sig datoteka</code>
+            – preveri, ali je datoteka podpisana z zasebnim ključem
+            pošiljatelja in je vsebina datoteke nespremenjena</li>
+            </ul>
+            <p><b>Hkratno zašifriranje in podpisovanje</b></p>
+            <ul>
+            <li><code>gpg --local-user zasebni_ključ_pošiljatelja ime_ključa --recipient javni_ključ_prejemnika --sign --encrypt datoteka</code>
+            – zašifrira in podpiše datoteko/sporočilo v novi datoteki s
+            končnico <i>.gpg</i></li>
+            <li><code>gpg --decrypt datoteka.gpg</code> – odšifrira in
+            preveri podpis</li>
             </ul>
             <h2 id="Streznik">Strežnik</h2>
             <h3 id="SSH">SSH</h3>
