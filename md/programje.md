@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2026-10-29
+date: 2026-10-31
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -70,6 +70,9 @@ Moji izbrani programi po namembnosti:
 | razširitev | namembnost | Chrome Web Store | opombe |
 | --- | --- | --- | --- |
 | Custom CSS by Denis | lasten CSS za izbrane spletne strani | [Custom CSS by Denis](https://chromewebstore.google.com/detail/custom-css-by-denis/cemphncflepgmgfhcdegkbkekifodacd) | |
+| [Dark Reader](https://darkreader.org/) | temen način za katerekoli spletne strani | [Dark Reader](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh) | |
+| [Unhook](https://unhook.app/) | nastavitve za YouTube | [Unhook](https://chromewebstore.google.com/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid) | |
+| [UnTrap for YouTube](https://untrap.app/) | nastavitve za YouTube | [Untrap for YouTube](https://chromewebstore.google.com/detail/untrap-for-youtube-%E2%80%94-bloc/enboaomnljigfhfjfoalacienlhjlfil) | določene zadeve so na voljo le z naročnino|
 | [Violentmonkey](https://violentmonkey.github.io/) | dodajanje programčkov (*userscripts*) v brskalnik (npr. [better-osm-org](https://github.com/deevroman/better-osm-org) | [Violentmonkey](https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag) | |
 
 #### Programčki/knjižnice za razširitve
@@ -84,6 +87,7 @@ Sucklessove programe je priporočljivo namestiti kar iz vira - neposredno s [Suc
 | program | namembnost | Debianov paket | opombe |
 | --- | --- | --- | --- |
 | ABook (Adress Book) | imenik | [abook](https://packages.debian.org/buster/abook) | namenjen je uporabi v [Muttu](#mutt) (ali [NeoMuttu](#neomutt)), a se lahko uporablja tudi neodvisno |
+| [Aerc](https://aerc-mail.org/) | poštni odjemalec | aerc | dosti bolj preprost za uporabo od mutta ali neomutta |
 | [Chroncal](https://github.com/DouglasdeMoura/chroncal) | koledar | | omogoča s spletnimi koledarskimi storitvami|
 | [DMenu](https://tools.suckless.org/dmenu/) (Dynamic Menu) | statusna vrstica (za DWM) | | |
 | [DWM](https://dwm.suckless.org) (Dynamic Windows Manager) | upravitelj oken | [dwm](https://wiki.debian.org/Dwm) | |

@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-10-29
+date: 2026-10-31
 description: Razni seznami z različnih področij in priporočila
 keywords: seznam, priporočilo
 author: Janez Pavel Žebovec
@@ -29,14 +29,25 @@ Moja *priporočila* (precej nepopolna)
 - [Is AI Profitable Yet](https://isaiprofitable.com/)
 - [KamiKam](https://kamkam.si/) – *platforma* za medsebojno *organiziranje* deljenega prevoza
 - [Kvarkadabra - časopis za tolmačenje znanosti](https://kvarkadabra.net/)
+- [List of websites](https://www.listofwebsites.net/) – seznam kakovostnih
+  spletnih mest
+- [Lokacija.si](https://lokacija.si/) – zemljevid slovenskih stanovanjskih
+  nepremičnin, trenutnih cen
 - [Na prostem, zadruga za odprto kodo](https://www.na-prostem.si/)
 - [Odysee](https://odysee.com/)
 - [Prevoz](https://prevoz.org/) – za medsebojno *organizacijo* deljenega prevoza
+- [Slednilnik](https://sledilnik.org/) – znanstveno društvo, ustanovljeno l. 2020, ki se ukvarja s
+  prikazom podatkov, podatkovno znanostjo, uporabnostjo podatkov
+    - [Covid-10](https://covid-19.sledilnik.org/)
+    - [Zdravniki](https://zdravniki.sledilnik.org/) – zasedenost slovenskih
+      družinskih zdravnikov, pediatrov, ginekologov in zobozdravnikov
+    - [Podnebnik](https://podnebnik.org/) – podatki, *analiza* podnebnih
+      sprememb v SLoveniji
 - [Statistični urad Republike Slovenije](https://www.stat.si/)
 - [Windows93](https://www.windows93.net/)
 - [Yewtu.be](https://yewtu.be/) – odjemalec YouTuba
 
-### Nepridobitne organizacije
+### Nepridobitne organizacije, gibanja
 
 - [Društvo za elektronsko in računalniško pismenost (DERP)](https://derp.si/)
 - [Duh časa](https://www.duh-casa.si/)
@@ -49,6 +60,9 @@ Moja *priporočila* (precej nepopolna)
 - [Open Source Ecology](https://www.opensourceecology.org/) – odprti načrti za "izgraditev civilizacije"
 - [Pohod za življenje](https://pohodzazivljenje.si/)
 - [Prolife Europe](https://prolifeeurope.org/)
+- [Proti militarizmu](https://protimilitarizmu.kompot.si/) – eno levičarsko gibanje
+  proti vojaški zaščiti lastne države
+- [Publiv Money Public Code](https://publiccode.eu/)
 
 ### Gibanja
 
@@ -83,6 +97,7 @@ Moja *priporočila* (precej nepopolna)
 - [Branko cestnik](https://branenacesti.blogspot.com/) – slovenski župnik
 - [Filip Štamcar](https://www.filips.si/) – član Programerskega kluba FMF
 - [Filip Žebovec](https://filipzebovec.net/)
+- [Gašper Žejn](https://zejn.net/) – sodelavec društva [Slednilnik](https://sledilnik.org/)
 - [Jure Smolar](https://jure.smolar.si/) ([stara *domena*](https://jure-smolar.com/)) – član Programerskega kluba FMF
 - [Lio Novelli](https://lio.novelli.si/) – soavtor radijske oddaje [Tehno klistir](https://radiostudent.si/druzba/tehno-klistir)
   na Radiu Študent, organizator [Kompota](https://kompot.si/), ...
@@ -92,6 +107,7 @@ Moja *priporočila* (precej nepopolna)
 - [Mitja Jež](https://mitja.jež.si/) – član slo. odprtokodne skupnosti (mdr. OpenStreetMap)
 - [Nedžad Beus](https://beus.cc/) – slovenski *programer*, ki je med vodilnimi
   pri razvoju [BrezAvta.si](https://brezavta.si/)
+- [Sebastian Plesko ("Seba")](https://plesko.si/)
 - [Siggsy](https://siggsy.xyz/) – član slo. odprtokodne skupnosti (mdr. v zvezi s z javnim prevozom)
 
 ### Okolje
@@ -220,6 +236,7 @@ Za zgodovinske zemljevide glej tudi razdelek [Zgodovinski zemljevidi](#Zgodovins
 
 Druge zbirke zemljepisnih podatkov:
 
+- [Brezavta.si](https://o.brezavta.si/)
 - [Kočevski rog - lokacije](https://www.google.com/maps/d/u/0/viewer?mid=12iNVSpmmL8bA2B3qieBjdweF2t8&femb=1&ll=45.666989008977595%2C15.028848286105609&z=14)
 - [Župnije v nadškofiji Ljubljana](https://www.google.com/maps/d/viewer?mid=17_9jBIaZns8lH4PIv7GnIJ8DnoU&hl=sl&ll=46.066899841485196%2C14.912383489615394&z=10)
 
@@ -455,6 +472,8 @@ Glej tudi stran [Rodoslovje](knjiznica/rodoslovje).
   matičnih knjigah
 - [Slovenska hišna imena](https://www.hisnaimena.si/) – seznam popisanih hišnih
   imen v Sloveniji (predvsem Gorenjska) z zemljevidom
+- [Slovensko rodoslovno društvo](https://rodoslovje.si/)
+    - [Slovenski rodoslovni indeks](https://indeks.rodoslovje.si/)
 - [WikiTree](https://www.wikitree.com/) - družinska drevesa uporabnikov,
   sodelovanje med rodoslovci
 
