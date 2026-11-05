@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-10-31
+date: 2026-11-04
 description: Razni seznami z različnih področij in priporočila
 keywords: seznam, priporočilo
 author: Janez Pavel Žebovec
@@ -44,6 +44,8 @@ Moja *priporočila* (precej nepopolna)
     - [Podnebnik](https://podnebnik.org/) – podatki, *analiza* podnebnih
       sprememb v SLoveniji
 - [Statistični urad Republike Slovenije](https://www.stat.si/)
+- [Transkribus](https://www.transkribus.org/) – prepoznavalec ročno napisanega
+  besedila na podlagi s posebnim poudarkom na starih besedilih
 - [Windows93](https://www.windows93.net/)
 - [Yewtu.be](https://yewtu.be/) – odjemalec YouTuba
 
@@ -271,6 +273,7 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
 - [MapMagic – Map](https://mapmagic.app/map)
 - [Mapy](https://mapy.com/) – *interaktiven* zemljevid češkega podjetja
 - [Open AED Map](https://openaedmap.org/sl/) – zemljevid AED-jev po vsem svetu
+- [Open Airport Map](https://openairportmap.org/) – zemljevid letališč
 - [Open Cycle Map](https://www.opencyclemap.org/) - kolesarski zemljevid
 - [Open Infrastructure Map](https://openinframap.org/) – *infrastrukturni*
   zemljevid (elektrika, plinovodi, vodovod, *telekomunikacija*)
@@ -415,10 +418,14 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 - [Itiner-e](https://itiner-e.org/) – zemljevid rimskih cest
 - [Map Warper](https://mapwarper.net/) - predvsem zgodovinski zemljevidi, uvažanje zemljevidov in njihovo *geopozicioniranje*
 - [Old Maps Online](https://www.oldmapsonline.org/)
+- [Omnesciae](https://omnesviae.org/) – zemljevid prometnega omrežja rimskega cesarstva z možnostjo
+  potnega usmerjanja (*navigacije*) po rimskih cestah
 - [Open Historical Map](https://www.openhistoricalmap.org/) - prosto dostopen in urejevan zemljevid
     - [OpenHistoricalMap – VTiles](https://vtiles.openhistoricalmap.org/)
 - [Rapalska meja – Karta ZDRM](https://www.rapalskameja.si/zdrm_karta/) – zemljevid rapalske meje in (predvsem vojaški) *objekti* tistega obdobja
-- [Time Travel](https://time-travel.app/) – uporablja podatke OpenHistoricalMap in OpenStreetMap in jih združuje z Wikipedijo, 
+- [Time Travel](https://time-travel.app/) – uporablja podatke OpenHistoricalMap in OpenStreetMap in jih združuje z Wikipedijo
+- [Vici](https://vici.org/) – svetovni *arheološki* zemljevid, ki ga ureja
+  skupnosti
 
 ##### Državni zgodovinski zemljevidi RS
 

@@ -1,6 +1,6 @@
 ---
 title: Prepovedane besede v visoki slovenščini
-date: 2026-10-19
+date: 2026-11-04
 description: Prepovedane besede, prevzete besede, v visoki slovenščini
 keywords: slovenščina, visoka slovenščina, potujčenje
 author: Janez Pavel Žebovec
@@ -30,6 +30,7 @@ večinsko) poznanimi izrazi.
 - *emigrant* > izseljenec, begunec
 - *format* > oblika (tudi npr. oblika datoteke); velikost
 - *fluktuacija* > spreminjanje, menjavanje, gibanje
+- *gumb* > tipka
 - *horizontalno*, *horizontala* > vodoravno, vodoravnica
 - *ilustracija* (v nekaterih rabah/pomenih) > ponazorilo,
   ponazorilna/pojasnevalna slika
@@ -44,6 +45,7 @@ večinsko) poznanimi izrazi.
 - *konkurent* > tekmec
 - *konstanta* (nasploh in npr. matematična, fizikalna) > stalnica
 - *konveksen* > izbočen, izbokel
+- *labirint* > blodnjak
 - *longitudinalno* > vzdolžno
 - *migracija* > selitev
 - *monitor* > (računalniški) zaslon

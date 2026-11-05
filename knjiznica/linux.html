@@ -1339,6 +1339,7 @@ sistem"/>
             </ul></li>
             </ul>
             <h3 id="YT_DLP">YT-DLP</h3>
+            <p>Posodobitev: <code>yt-dlp -U</code></p>
             <p>Prenos posnetkov z YouTuba pa tudi številnih drugih
             spletnih mest</p>
             <ul>
@@ -1397,6 +1398,17 @@ sistem"/>
             </ul></li>
             </ul></li>
             </ul>
+            <p>Primer za prenos zvočne datoteke:</p>
+            <pre><code>yt-dlp \
+    -x \
+    --restrict-filenames \
+    -f bestaudio \
+    --audio-format mp3 \
+    --audio-quality 0 \
+    --embed-metadata \
+    --progress \
+    --no-overwrites \
+    &quot;https://preostanek_url&quot;</code></pre>
             <h3 id="NCMPCPP">NCMPCPP</h3>
             <ul>
             <li><kbd>1</kbd> - na sezname predvajanja

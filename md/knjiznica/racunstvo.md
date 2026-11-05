@@ -258,7 +258,7 @@ $$ R = \lim_{ n \to \infty} n \left( \frac{a_n}{a_{n+1}} - 1 \right) $$
 - $R = 1$: vrsta je *konvergentna* ali *divergentna*
 
 ## Dvočlenik
-*Binom*
+(*Binom*)
 
 Dvočlenik je $a+b$.
 

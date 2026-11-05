@@ -797,6 +797,8 @@ Uporablja podobne bližnjice kot VIM:
 
 ### YT-DLP
 
+Posodobitev: `yt-dlp -U`
+
 Prenos posnetkov z YouTuba pa tudi številnih drugih spletnih mest
 
 - `yt-dlp {možnosti} {--} URL-ji` - prenese posnetek na naslovu URL
@@ -836,6 +838,19 @@ Prenos posnetkov z YouTuba pa tudi številnih drugih spletnih mest
         - `--force-keyframes-at-cuts "*01:57:00-03:05:06"` - zagotovi bolj
           natančno rezanje med sličicami (deluje le z nekaterimi oblikami
           datotek)
+
+Primer za prenos zvočne datoteke:
+
+    yt-dlp \
+        -x \
+        --restrict-filenames \
+        -f bestaudio \
+        --audio-format mp3 \
+        --audio-quality 0 \
+        --embed-metadata \
+        --progress \
+        --no-overwrites \
+        "https://preostanek_url"
 
 ### NCMPCPP
 

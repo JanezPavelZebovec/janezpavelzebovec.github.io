@@ -1,9 +1,11 @@
 ---
 title: Umovanje
-date: 2026-10-22
-description: Osebna razmišljanja
-keywords: Janez Pavel Žebovec, razmišljanje, blog
+date: 2026-11-03
+description:
+keywords: razmišljanje
 ---
+
+# Umovanje
 
 <small>(Vse to niso samo moja osebna razmišljanja, oz. do njih večinoma nisem
 prišel sam. Na tej strani je navedenih nekaj sklicev, vendar niso vsi sklici
@@ -563,6 +565,11 @@ devetih poroko potrdil.
 > sramuje in molči.“ Odgovoril je: „Njeno molčanje pomeni njeno soglasje.“
 >
 <cite>[Suna Sahih al-Bukhari 6946](https://sunnah.com/bukhari:6946)</cite>
+
+> Vsak moški naj ima svojo posteljo, njegova žena svojo, tretja naj bo za gosta,
+> četrta pa je za hudiča.
+>
+<cite>[ Suna Sahih Muslim 2084](https://sunnah.com/muslim:2084)</cite>
 
 ## Osebnost
 
