@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-08-20
+date: 2026-11-05
 description: računska teorija, enačbe
 keywords: računstvo, matematika, algebra, logika
 author: Janez Pavel Žebovec
@@ -10,11 +10,22 @@ author: Janez Pavel Žebovec
 
 # Računstvo
 
-| ne | ali | in | torej / če ..., potem | če in samo če ..., potem | je enako | podmnožica | unija | prazna množica | presek |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| $$\neg$$ | $$\lor$$ | $$\land$$ | $$\implies$$ | $$\iff$$ | $$\Leftrightarrow$$ $$=$$ | $$\subset$$ | $$\cup$$ | $$\emptyset$$ | $$\cap$$ |
-
 ## *Logika*
+
+*Logični operatorji*:
+
+| znamenje | ime | pomen |
+| --- | --- | --- |
+| $$\neg$$ | ne (*negacija*) | obrne resničnost izjave |
+| $$\lor$$ | ali (*disjunkcija*) | ena izmed izjav ali obe izjava sta resnični |
+| $$\land$$ | in (*konjunkcija*) | obe izjavi sta resnični |
+| $$\implies$$ | torej / če A, potem B | če je prva izjava resnična, je tudi druga |
+| $$\iff$$ | če in samo če A, potem B | če in samo če je prva izjava resnična, je tudi druga |
+| $$=$$ $$\Leftrightarrow$$ | enakost | izjavi sta enaki, enakovredni |
+| $$\neq$$ | neenakost | izjavi nista enaki, enakovredni |
+| $$\equiv$$ | čista enakost | izjavi sta natanko enaki |
+| $$\approx$$ | približna enakost | izjavi sta približno enaki |
+| $$\sim$$ | podobnost | izjavi sta podobni |
 
 | $A$ | $B$ | $\neg A$ | $A \land B$ | $A \lor B$ | $A \implies B$ | $A \iff B$ |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -25,22 +36,54 @@ author: Janez Pavel Žebovec
 
 ## Množice števil
 
+*Operatorji* za računanje z množicami:
+
+| znamenje | ime | pomen |
+| --- | --- | --- |
+| $$\cap$$ | presek | *elementi*, ki so v obeh množicah |
+| $$\setminus$$ | razlika | *elementi*, ki so v prvi, a ne tudi v drugi množici |
+| $$\cup$$ | *unija* | *elementi*, ki so v eni in/ali drugi množici |
+| $$\times$$ | *kartezično* množenje | množica vseh možnih *kombinacij elementov* množic |
+
+Razmerja med množicami:
+
+| znamenje | ime | pomen | zanikano |
+| --- | --- | --- | --- |
+| $$\subset$$ | *podmnožica* | vsi *elementi* prve množice so tudi v drugi | $$\not\subset$$ |
+| $$\in$$ | v / je del | *element* / prva množica je v/del druge množice | $$\notin$$ |
+
+Prazno množico označimo z $\emptyset$ ali ${}$.
+Za množici rečemo, da sta *disjunktni*, če velja $A \cap B = \emptyset$.
+
+Če nas zanimajo le podmnožice vnaprej izbrane množice, to množico imenujemo
+*univerzum* in označimo z $U$. Potem lahko uporabimo *komplement*
+$^{\complement}$:
+$$A^{\complement§ = U \setminus A = {a \subset U; a \notin A}$$
+
+<div class="zakon">
+**De Morganova zakona**
+$$ \bigcup_{j \in J} A_j^{\complement} = \left( \bigcap_{j \in J} A_j \right)^{\complement} $$
+$$ \bigcap_{j \in J} A_j^{\complement} = \left( \bigcup_{j \in J} A_j \right)^{\complement} $$
+</div>
+
+**Množice števil**:
+
+$$ \href{#Naravna_stevila}{\mathbb{N}} < \href{#Cela_stevila}{\mathbb{Z}} < \href{#Razlozna_stevila}{\mathbb{Q}} < \href{#Stvarna_stevila}{\mathbb{R}} < \href{#Skupna_stevila}{\mathbb{C}} $$
+
 Računamo lahko v različnih množicah števil - to je stvar izbire. Tako lahko
 račun v neki množici nima rešitve (ki jo hočemo v tej množici), ima pa jo v neki
 drugi množici, vendar nas ta rešitev ne zanima, zato razglasimo, da račun v
 izbrani množici nima rešitve (tako je običajno npr. s koreni negativnih števil).
 
-$$ \href{#Naravna_stevila}{\mathbb{N}} < \href{#Cela_stevila}{\mathbb{Z}} < \href{#Razlozna_stevila}{\mathbb{Q}} < \href{#Stvarna_stevila}{\mathbb{R}} < \href{#Skupna_stevila}{\mathbb{C}} $$
-
 ### Naravna števila
 
-To so (*pozitivna* cela) števila s katerimi štejemo (npr. 1, 2, 3, 4, 5, 6,
+To so (*pozitivna* cela) števila s katerimi (običajno) štejemo (1, 2, 3, 4, 5, 6,
 ...).
 
 ### Cela števila
 
 To so naravna števila, število 0 in nasprotne vrednosti naravnih števil -
-*negativna* cela števila (npr. 0, 1, -1, 2, -2, 3, -3, ...)
+*negativna* cela števila (0, 1, -1, 2, -2, 3, -3, ...)
 
 ### Razložna števila
 (*racionalna* števila)
@@ -115,7 +158,7 @@ množico.  Če imamo množico A = {a, b, c, ... }, je potenčna množica te mno�
 
 P(A) = {{}, {a}, {b}, {c}, ..., {ab}, {ac}, {bc}, ..., {abc}, ...}
 
-Moč takšne potenčne mnoćžice, kjer je *n* število elementov v množici, je:
+Moč takšne potenčne množice, kjer je *n* število elementov v množici, je:
 
 $$ m(\mathcal{P}(A)) = \binom{n}{0} + \binom{n}{1} + \binom{n}{2} + ... + \binom{n}{n} = 2^n $$
 
@@ -277,9 +320,15 @@ $$ \binom {n}{r} = \binom {n}{n-r} $$
 $$ \binom {n}{0} = \binom {n}{n} = 1 $$
 $$ \binom {n}{r} + \binom {n}{r+1} = \binom {n+1}{r+1} $$
 
-## Funkcije
+## *Funkcije*
 
-Funkcija je lahko:
+*Funkcija*/preslikava $f$ *elementu* iz vhodne množice $A$ (*domena* / *definicijsko območje*) priredi natanko en *element* v izhodni množici $B$ (*kodomena*):
+$$ f: A \to B $$
+Oziroma preslika *element* $a \in A$ v *element* $f(a)$:
+$$ f: a \to f(a) $$
+Zato $f(a)$ imenujemo tudi slika *elementa* $a$ vzdolž *funkcije* $f$, pa tudi vrednost *funkcije* $f$ v *elementu* $a$.
+
+*Funkcija* je lahko:
 
 - soda: $f(-x) = f(x)$,
 - liha: $f(-x) = -f(x)$;

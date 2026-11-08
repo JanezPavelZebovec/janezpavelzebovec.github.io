@@ -37,7 +37,7 @@ logika"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/racunstvo/">racunstvo</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-08-20">2026-08-20</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-11-05">2026-11-05</time></p>
     </header>
     <nav>
         <ul>
@@ -108,7 +108,7 @@ logika"/>
         id="toc-Dvoclenski_izrek_binomski_izrek">Dvočlenski izrek
         (<i>binomski</i> izrek)</a></li>
         </ul></li>
-        <li><a href="#Funkcije" id="toc-Funkcije">Funkcije</a>
+        <li><a href="#Funkcije" id="toc-Funkcije"><i>Funkcije</i></a>
         <ul>
         <li><a href="#Linearna_funkcija"
         id="toc-Linearna_funkcija">Linearna funkcija</a></li>
@@ -211,50 +211,76 @@ logika"/>
     <main>
         <div class="content">
             <h1 id="Racunstvo">Računstvo</h1>
-            <table style="width:100%;">
+            <h2 id="Logika"><i>Logika</i></h2>
+            <p><i>Logični operatorji</i>:</p>
+            <table>
             <colgroup>
-            <col style="width: 10%" />
-            <col style="width: 10%" />
-            <col style="width: 10%" />
-            <col style="width: 10%" />
-            <col style="width: 10%" />
-            <col style="width: 10%" />
-            <col style="width: 10%" />
-            <col style="width: 10%" />
-            <col style="width: 10%" />
-            <col style="width: 10%" />
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <col style="width: 33%" />
             </colgroup>
             <thead>
             <tr class="header">
-            <th>ne</th>
-            <th>ali</th>
-            <th>in</th>
-            <th>torej / če …, potem</th>
-            <th>če in samo če …, potem</th>
-            <th>je enako</th>
-            <th>podmnožica</th>
-            <th>unija</th>
-            <th>prazna množica</th>
-            <th>presek</th>
+            <th>znamenje</th>
+            <th>ime</th>
+            <th>pomen</th>
             </tr>
             </thead>
             <tbody>
             <tr class="odd">
             <td><span class="math display">\[\neg\]</span></td>
+            <td>ne (<i>negacija</i>)</td>
+            <td>obrne resničnost izjave</td>
+            </tr>
+            <tr class="even">
             <td><span class="math display">\[\lor\]</span></td>
+            <td>ali (<i>disjunkcija</i>)</td>
+            <td>ena izmed izjav ali obe izjava sta resnični</td>
+            </tr>
+            <tr class="odd">
             <td><span class="math display">\[\land\]</span></td>
+            <td>in (<i>konjunkcija</i>)</td>
+            <td>obe izjavi sta resnični</td>
+            </tr>
+            <tr class="even">
             <td><span class="math display">\[\implies\]</span></td>
+            <td>torej / če A, potem B</td>
+            <td>če je prva izjava resnična, je tudi druga</td>
+            </tr>
+            <tr class="odd">
             <td><span class="math display">\[\iff\]</span></td>
-            <td><span class="math display">\[\Leftrightarrow\]</span>
-            <span class="math display">\[=\]</span></td>
-            <td><span class="math display">\[\subset\]</span></td>
-            <td><span class="math display">\[\cup\]</span></td>
-            <td><span class="math display">\[\emptyset\]</span></td>
-            <td><span class="math display">\[\cap\]</span></td>
+            <td>če in samo če A, potem B</td>
+            <td>če in samo če je prva izjava resnična, je tudi
+            druga</td>
+            </tr>
+            <tr class="even">
+            <td><span class="math display">\[=\]</span> <span
+            class="math display">\[\Leftrightarrow\]</span></td>
+            <td>enakost</td>
+            <td>izjavi sta enaki, enakovredni</td>
+            </tr>
+            <tr class="odd">
+            <td><span class="math display">\[\neq\]</span></td>
+            <td>neenakost</td>
+            <td>izjavi nista enaki, enakovredni</td>
+            </tr>
+            <tr class="even">
+            <td><span class="math display">\[\equiv\]</span></td>
+            <td>čista enakost</td>
+            <td>izjavi sta natanko enaki</td>
+            </tr>
+            <tr class="odd">
+            <td><span class="math display">\[\approx\]</span></td>
+            <td>približna enakost</td>
+            <td>izjavi sta približno enaki</td>
+            </tr>
+            <tr class="even">
+            <td><span class="math display">\[\sim\]</span></td>
+            <td>podobnost</td>
+            <td>izjavi sta podobni</td>
             </tr>
             </tbody>
             </table>
-            <h2 id="Logika"><i>Logika</i></h2>
             <table style="width:100%;">
             <colgroup>
             <col style="width: 14%" />
@@ -316,25 +342,117 @@ logika"/>
             </tbody>
             </table>
             <h2 id="Mnozice_stevil">Množice števil</h2>
-            <p>Računamo lahko v različnih množicah števil - to je stvar
-            izbire. Tako lahko račun v neki množici nima rešitve (ki jo
-            hočemo v tej množici), ima pa jo v neki drugi množici,
-            vendar nas ta rešitev ne zanima, zato razglasimo, da račun v
-            izbrani množici nima rešitve (tako je običajno npr. s koreni
-            negativnih števil).</p>
+            <p><i>Operatorji</i> za računanje z množicami:</p>
+            <table>
+            <colgroup>
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            </colgroup>
+            <thead>
+            <tr class="header">
+            <th>znamenje</th>
+            <th>ime</th>
+            <th>pomen</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="odd">
+            <td><span class="math display">\[\cap\]</span></td>
+            <td>presek</td>
+            <td><i>elementi</i>, ki so v obeh množicah</td>
+            </tr>
+            <tr class="even">
+            <td><span class="math display">\[\setminus\]</span></td>
+            <td>razlika</td>
+            <td><i>elementi</i>, ki so v prvi, a ne tudi v drugi
+            množici</td>
+            </tr>
+            <tr class="odd">
+            <td><span class="math display">\[\cup\]</span></td>
+            <td><i>unija</i></td>
+            <td><i>elementi</i>, ki so v eni in/ali drugi množici</td>
+            </tr>
+            <tr class="even">
+            <td><span class="math display">\[\times\]</span></td>
+            <td><i>kartezično</i> množenje</td>
+            <td>množica vseh možnih <i>kombinacij elementov</i>
+            množic</td>
+            </tr>
+            </tbody>
+            </table>
+            <p>Razmerja med množicami:</p>
+            <table>
+            <colgroup>
+            <col style="width: 25%" />
+            <col style="width: 25%" />
+            <col style="width: 25%" />
+            <col style="width: 25%" />
+            </colgroup>
+            <thead>
+            <tr class="header">
+            <th>znamenje</th>
+            <th>ime</th>
+            <th>pomen</th>
+            <th>zanikano</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="odd">
+            <td><span class="math display">\[\subset\]</span></td>
+            <td><i>podmnožica</i></td>
+            <td>vsi <i>elementi</i> prve množice so tudi v drugi</td>
+            <td><span class="math display">\[\not\subset\]</span></td>
+            </tr>
+            <tr class="even">
+            <td><span class="math display">\[\in\]</span></td>
+            <td>v / je del</td>
+            <td><i>element</i> / prva množica je v/del druge
+            množice</td>
+            <td><span class="math display">\[\notin\]</span></td>
+            </tr>
+            </tbody>
+            </table>
+            <p>Prazno množico označimo z <span
+            class="math inline">\(\emptyset\)</span> ali <span
+            class="math inline">\({}\)</span>. Za množici rečemo, da sta
+            <i>disjunktni</i>, če velja <span class="math inline">\(A
+            \cap B = \emptyset\)</span>.</p>
+            <p>Če nas zanimajo le podmnožice vnaprej izbrane množice, to
+            množico imenujemo <i>univerzum</i> in označimo z <span
+            class="math inline">\(U\)</span>. Potem lahko uporabimo
+            <i>komplement</i> <span
+            class="math inline">\(^{\complement}\)</span>: <span
+            class="math display">\[A^{\complement§ = U \setminus A = {a
+            \subset U; a \notin A}\]</span></p>
+            <div class="zakon">
+            <p><b>De Morganova zakona</b> <span class="math display">\[
+            \bigcup_{j \in J} A_j^{\complement} = \left( \bigcap_{j \in
+            J} A_j \right)^{\complement} \]</span> <span
+            class="math display">\[ \bigcap_{j \in J} A_j^{\complement}
+            = \left( \bigcup_{j \in J} A_j \right)^{\complement}
+            \]</span></p>
+            </div>
+            <p><b>Množice števil</b>:</p>
             <p><span class="math display">\[
             \href{#Naravna_stevila}{\mathbb{N}} &lt;
             \href{#Cela_stevila}{\mathbb{Z}} &lt;
             \href{#Razlozna_stevila}{\mathbb{Q}} &lt;
             \href{#Stvarna_stevila}{\mathbb{R}} &lt;
             \href{#Skupna_stevila}{\mathbb{C}} \]</span></p>
+            <p>Računamo lahko v različnih množicah števil - to je stvar
+            izbire. Tako lahko račun v neki množici nima rešitve (ki jo
+            hočemo v tej množici), ima pa jo v neki drugi množici,
+            vendar nas ta rešitev ne zanima, zato razglasimo, da račun v
+            izbrani množici nima rešitve (tako je običajno npr. s koreni
+            negativnih števil).</p>
             <h3 id="Naravna_stevila">Naravna števila</h3>
-            <p>To so (<i>pozitivna</i> cela) števila s katerimi štejemo
-            (npr. 1, 2, 3, 4, 5, 6, …).</p>
+            <p>To so (<i>pozitivna</i> cela) števila s katerimi
+            (običajno) štejemo (1, 2, 3, 4, 5, 6, …).</p>
             <h3 id="Cela_stevila">Cela števila</h3>
             <p>To so naravna števila, število 0 in nasprotne vrednosti
-            naravnih števil - <i>negativna</i> cela števila (npr. 0, 1,
-            -1, 2, -2, 3, -3, …)</p>
+            naravnih števil - <i>negativna</i> cela števila (0, 1, -1,
+            2, -2, 3, -3, …)</p>
             <h3 id="Razlozna_stevila">Razložna števila</h3>
             <p>(<i>racionalna</i> števila)</p>
             <p>To so števila, ki jih lahko izrazimo kot razmerje dveh
@@ -424,7 +542,7 @@ logika"/>
             }, je potenčna množica te množice:</p>
             <p>P(A) = {{}, {a}, {b}, {c}, …, {ab}, {ac}, {bc}, …, {abc},
             …}</p>
-            <p>Moč takšne potenčne mnoćžice, kjer je <i>n</i> število
+            <p>Moč takšne potenčne množice, kjer je <i>n</i> število
             elementov v množici, je:</p>
             <p><span class="math display">\[ m(\mathcal{P}(A)) =
             \binom{n}{0} + \binom{n}{1} + \binom{n}{2} + ... +
@@ -627,8 +745,25 @@ logika"/>
             {n}{0} = \binom {n}{n} = 1 \]</span> <span
             class="math display">\[ \binom {n}{r} + \binom {n}{r+1} =
             \binom {n+1}{r+1} \]</span></p>
-            <h2 id="Funkcije">Funkcije</h2>
-            <p>Funkcija je lahko:</p>
+            <h2 id="Funkcije"><i>Funkcije</i></h2>
+            <p><i>Funkcija</i>/preslikava <span
+            class="math inline">\(f\)</span> <i>elementu</i> iz vhodne
+            množice <span class="math inline">\(A\)</span>
+            (<i>domena</i> / <i>definicijsko območje</i>) priredi
+            natanko en <i>element</i> v izhodni množici <span
+            class="math inline">\(B\)</span> (<i>kodomena</i>): <span
+            class="math display">\[ f: A \to B \]</span> Oziroma
+            preslika <i>element</i> <span class="math inline">\(a \in
+            A\)</span> v <i>element</i> <span
+            class="math inline">\(f(a)\)</span>: <span
+            class="math display">\[ f: a \to f(a) \]</span> Zato <span
+            class="math inline">\(f(a)\)</span> imenujemo tudi slika
+            <i>elementa</i> <span class="math inline">\(a\)</span>
+            vzdolž <i>funkcije</i> <span
+            class="math inline">\(f\)</span>, pa tudi vrednost
+            <i>funkcije</i> <span class="math inline">\(f\)</span> v
+            <i>elementu</i> <span class="math inline">\(a\)</span>.</p>
+            <p><i>Funkcija</i> je lahko:</p>
             <ul>
             <li>soda: <span class="math inline">\(f(-x) =
             f(x)\)</span>,</li>

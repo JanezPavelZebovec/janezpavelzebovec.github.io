@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-11-04
+date: 2026-11-07
 description: Razni seznami z različnih področij in priporočila
 keywords: seznam, priporočilo
 author: Janez Pavel Žebovec
@@ -100,6 +100,8 @@ Moja *priporočila* (precej nepopolna)
 - [Filip Štamcar](https://www.filips.si/) – član Programerskega kluba FMF
 - [Filip Žebovec](https://filipzebovec.net/)
 - [Gašper Žejn](https://zejn.net/) – sodelavec društva [Slednilnik](https://sledilnik.org/)
+- [Igor Setnikar](https://sigor.net/) – študent Fizike, član Programerskega
+  kluba FMF
 - [Jure Smolar](https://jure.smolar.si/) ([stara *domena*](https://jure-smolar.com/)) – član Programerskega kluba FMF
 - [Lio Novelli](https://lio.novelli.si/) – soavtor radijske oddaje [Tehno klistir](https://radiostudent.si/druzba/tehno-klistir)
   na Radiu Študent, organizator [Kompota](https://kompot.si/), ...
