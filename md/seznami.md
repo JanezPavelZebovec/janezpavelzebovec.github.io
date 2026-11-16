@@ -93,6 +93,7 @@ Moja *priporočila* (precej nepopolna)
 
 - [Aatish Bhatia](https://aatishb.com/) – pisec znanstvenih vsebin, učitelj
 - [Anton Luka Šijanec](https://sijanec.eu/) – član Programerskega kluba FMF
+  (tudi na [4a.si](https://splet.4a.si/))
 - [Barbara Makovec](https://makovec.si/) – članica Programerskega kluba FMF
 - [Blaž Lapanja](https://b1.si/) – slovenski duhovnik, računalniški navdušenec
   (oblikovalec raznih spletnih strani)
@@ -102,6 +103,7 @@ Moja *priporočila* (precej nepopolna)
 - [Gašper Žejn](https://zejn.net/) – sodelavec društva [Slednilnik](https://sledilnik.org/)
 - [Igor Setnikar](https://sigor.net/) – študent Fizike, član Programerskega
   kluba FMF
+- [Jon](https://yon.si/) – član Programerskega kluba FMF
 - [Jure Smolar](https://jure.smolar.si/) ([stara *domena*](https://jure-smolar.com/)) – član Programerskega kluba FMF
 - [Lio Novelli](https://lio.novelli.si/) – soavtor radijske oddaje [Tehno klistir](https://radiostudent.si/druzba/tehno-klistir)
   na Radiu Študent, organizator [Kompota](https://kompot.si/), ...
@@ -113,6 +115,7 @@ Moja *priporočila* (precej nepopolna)
   pri razvoju [BrezAvta.si](https://brezavta.si/)
 - [Sebastian Plesko ("Seba")](https://plesko.si/)
 - [Siggsy](https://siggsy.xyz/) – član slo. odprtokodne skupnosti (mdr. v zvezi s z javnim prevozom)
+- [Vida (Mlinar?)](https://83433121.xyz/) – članica Programerskega kluba FMF
 
 ### Okolje
 

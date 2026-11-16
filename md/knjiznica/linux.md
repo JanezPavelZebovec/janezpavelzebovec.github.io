@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2026-10-30
+date: 2026-11-10
 description: Priročnik za uporabo Linuxa, posebno skozi terminal
 keywords: Linux, terminal, operacijski sistem
 author: Janez Pavel Žebovec
@@ -382,7 +382,10 @@ Npr. za sinhronizacijo z [GitHubom](https://github.com/),
 - `gpg --edit-key ime_ključa` – uredi ključ
     - `save` – shrani spremembe in konča z urejanjem ključa
     - `list` – izpiše ključ in morebitne podključe
+    - `passwd` – sprememba gesla
     - `expire` – uredi rok veljavnosti
+    - `adduid` – doda nov UID (to je potrebno tudi, če želiš spremeniti starega)
+    - `uid stevilka_uid` – razveljavi UID z določeno številko
 - `gpg --passwd ime_ključa` – spremeni geslo ključa
 - `gpg --import ime_ključa_za_preklic` – prekliči ključ GPG z datoteko za
   preklic
@@ -415,6 +418,45 @@ Npr. za sinhronizacijo z [GitHubom](https://github.com/),
     zašifrira in podpiše datoteko/sporočilo v novi datoteki s končnico *.gpg*
 - `gpg --decrypt datoteka.gpg` – odšifrira in preveri podpis
 
+### Pass
+
+[Pass](https://www.passwordstore.org/) je upravitelj gesel, ključev.
+
+- `pass init id_gpg_ključa`
+- `pass git init` – omogoči beleženje zgodovine z GIT-om (izbirno)
+- `pass insert pot/do/ime_gesla` – dodaj geslo na določeno mesto v hierarhiji
+  gesel
+- `pass show pot/do/ime_gesla` – izpiše shranjeno geslo
+    - `pass show -c pot/do/ime_gesla` – kopira shranjeno geslo v odložišče, kjer
+      se po 45 sekundah samodejno izbriše
+- `pass edit pot/do/ime_gesla` – urejanje gesla
+
+### Aerc
+
+[Aerc](https://aerc-mail.org/) je preprost poštni odjemalec
+
+**Bližnjice**:
+
+- <kbd>j</kbd> / <kbd>k</kbd> – pomikanje dol/gor po sporočilih
+- <kbd>Shift+j</kbd> / <kbd>Shift+k</kbd> – pomikanje dol/gor po stranskem oknu
+  map
+- <kbd>Ctrl+n</kbd> / <kbd>Ctrl+p</kbd> – prehod med zavihki
+- <kbd>Enter</kbd> – odpri izbrano sporočilo
+    - <kbd>Ctrl+j</kbd> / <kbd>Ctrl+k</kbd> – premikaj po delih večdelnih
+      sporočil (sem spada vsebina in npr. priponke)
+    - <kbd>q</kbd> – zapri sporočilo
+- <kbd>C</kbd> – sestavi novo sporočilo
+- <kbd>rr</kbd> – odgovori vsem na sporočilo
+- <kbd>rq</kbd> – odgovori vsem na sporočilo in samodejno dodaj citirano vsebino
+  sporočila, na katerega odgovarjaš
+- <kbd>Rr</kbd> – odgovori na sporočilo
+- <kbd>Rq</kbd> – odgovori na sporočilo  in samodejno dodaj citirano vsebino
+  sporočila, na katerega odgovarjaš
+
+Glej tudi [aerc docs](https://aerc-docs.com/).
+
+pgxw cuuj jruz qqux
+Posta25ms06!
 ## Strežnik
 
 ### SSH
@@ -489,6 +531,8 @@ Javni ključ moraš shraniti na strežniku v datoteko *.ssh/authorized_keys*.
     stolpca v preglednici
     - `SELECT * FROM ime_preglednice ORDER BY ime_stolpca`
 
+Primerjava skladnje:
+
 </div>
 
 | MariaDB | PostgreSQL |
@@ -515,8 +559,13 @@ Javni ključ moraš shraniti na strežniku v datoteko *.ssh/authorized_keys*.
     - `exit;` – izhod iz zbirke
     - `CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE
       utfmb4_unicode_ci;` – ustvari zbirko z imenom *moja_zbirka* s polnim
-      Unikodom (utf8mb4), kar prepreči težave s šumniki, posebnimi znaki; ter
-      zagotovi pravilno slovensko/Unikodno razvrščanje besedila
+      Unikodom (utf8mb4 – UTF8, ki vključuje tudi 4-bitne znake), kar prepreči
+      težave s šumniki, posebnimi znaki; ter zagotovi pravilno
+      slovensko/Unikodno razvrščanje besedila, ki ne razlikuje med velikimi in
+      malimi črkami (*_ci* = *case insensitive*), dobra izbira bi bila tudi
+      *utf8mb4_uca1400_as_ci* (utf8mb4 – kateri nabor znakov, uca1400 –
+      algoritem za razvrščanje, *as* = *accent sensitive* – razlikuje npr. med
+      sičniki in šumniki, *ci* – ne razlikuje med veliki in malimi črkami)
     - `CREATE USER 'uporabnik'@'localhost' IDENTIFIED BY 'geslo';` – ustvari
       uporabnika zbirke z up. imenom *uporabnik*, ki se sme povezati preko
       *lokalnega* strežnika (*localhost*); dodelimo mu še geslo za prijavo

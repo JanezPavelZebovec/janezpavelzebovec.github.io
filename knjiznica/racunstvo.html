@@ -37,13 +37,15 @@ logika"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/racunstvo/">racunstvo</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-11-05">2026-11-05</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-11-16">2026-11-16</time></p>
     </header>
     <nav>
         <ul>
         <li><a href="#Racunstvo" id="toc-Racunstvo">Računstvo</a>
         <ul>
         <li><a href="#Logika" id="toc-Logika"><i>Logika</i></a></li>
+        <li><a href="#Mnozice" id="toc-Mnozice">Množice</a>
+        <ul>
         <li><a href="#Mnozice_stevil" id="toc-Mnozice_stevil">Množice
         števil</a>
         <ul>
@@ -58,15 +60,11 @@ logika"/>
         <li><a href="#Stvarna_stevila" id="toc-Stvarna_stevila">Stvarna
         števila</a></li>
         <li><a href="#Skupna_stevila" id="toc-Skupna_stevila">Skupna
-        števila</a>
-        <ul>
-        <li><a href="#Polarni_zapis"
-        id="toc-Polarni_zapis"><i>Polarni</i> zapis:</a></li>
+        števila</a></li>
         </ul></li>
         </ul></li>
         <li><a href="#Racunske_operacije"
         id="toc-Racunske_operacije">Računske <i>operacije</i></a></li>
-        <li><a href="#Mnozice" id="toc-Mnozice">Množice</a></li>
         <li><a href="#Kombinatorika"
         id="toc-Kombinatorika">Kombinatorika</a>
         <ul>
@@ -341,7 +339,7 @@ logika"/>
             </tr>
             </tbody>
             </table>
-            <h2 id="Mnozice_stevil">Množice števil</h2>
+            <h2 id="Mnozice">Množice</h2>
             <p><i>Operatorji</i> za računanje z množicami:</p>
             <table>
             <colgroup>
@@ -433,7 +431,28 @@ logika"/>
             = \left( \bigcup_{j \in J} A_j \right)^{\complement}
             \]</span></p>
             </div>
-            <p><b>Množice števil</b>:</p>
+            <p><b>Potenčna množica</b> množice A je množica njenih
+            podmnožic, vključno s prazno množico. Če imamo množico A =
+            {a, b, c, … }, je potenčna množica te množice:</p>
+            <p>P(A) = {{}, {a}, {b}, {c}, …, {ab}, {ac}, {bc}, …, {abc},
+            …}</p>
+            <p>Moč takšne potenčne množice, kjer je <i>n</i> število
+            elementov v množici, je:</p>
+            <p><span class="math display">\[ m(\mathcal{P}(A)) =
+            \binom{n}{0} + \binom{n}{1} + \binom{n}{2} + ... +
+            \binom{n}{n} = 2^n \]</span></p>
+            <p><b>Števnost množic</b>:</p>
+            <ul>
+            <li>Množica A je števna, če in samo če obstaja <i>injektivna
+            funkcija</i> <span class="math inline">\(A \to
+            \mathbb{N}\)</span>.</li>
+            <li>Neprazna množica A je števna, če in samo če obstaja
+            <i>surjektivna funkcija</i> <span
+            class="math inline">\(\mathbb{N} \to A\)</span>.</li>
+            </ul>
+            <p><i>Kartezični produkt</i> končno mnogo števnih množic je
+            števna množica.</p>
+            <h3 id="Mnozice_stevil">Množice števil</h3>
             <p><span class="math display">\[
             \href{#Naravna_stevila}{\mathbb{N}} &lt;
             \href{#Cela_stevila}{\mathbb{Z}} &lt;
@@ -446,29 +465,29 @@ logika"/>
             vendar nas ta rešitev ne zanima, zato razglasimo, da račun v
             izbrani množici nima rešitve (tako je običajno npr. s koreni
             negativnih števil).</p>
-            <h3 id="Naravna_stevila">Naravna števila</h3>
+            <h4 id="Naravna_stevila">Naravna števila</h4>
             <p>To so (<i>pozitivna</i> cela) števila s katerimi
             (običajno) štejemo (1, 2, 3, 4, 5, 6, …).</p>
-            <h3 id="Cela_stevila">Cela števila</h3>
+            <h4 id="Cela_stevila">Cela števila</h4>
             <p>To so naravna števila, število 0 in nasprotne vrednosti
             naravnih števil - <i>negativna</i> cela števila (0, 1, -1,
             2, -2, 3, -3, …)</p>
-            <h3 id="Razlozna_stevila">Razložna števila</h3>
+            <h4 id="Razlozna_stevila">Razložna števila</h4>
             <p>(<i>racionalna</i> števila)</p>
             <p>To so števila, ki jih lahko izrazimo kot razmerje dveh
             celih števil, oz. predstavimo z ulomki (npr. 0, 1, -1, 1/3,
             -1/3, …).</p>
-            <h3 id="Nerazlozna_stevila">Nerazložna števila</h3>
+            <h4 id="Nerazlozna_stevila">Nerazložna števila</h4>
             <p>(<i>iracionalna</i> števila)</p>
             <p>To so števila, ki jih ni mogoče izraziti kot razmerje
             dveh celih števil, oz. predstaviti z ulomki (npr. <span
             class="math inline">\(\sqrt{2}\)</span>, π, e, …).</p>
-            <h3 id="Stvarna_stevila">Stvarna števila</h3>
+            <h4 id="Stvarna_stevila">Stvarna števila</h4>
             <p>(<i>realna</i> števila)</p>
             <p>To so števila, ki jih lahko predstavimo na običajni
             številski premici (npr. 0, 1, -1, 1/3, -1/3, π, <span
             class="math inline">\(\sqrt{2}\)</span>, …).</p>
-            <h3 id="Skupna_stevila">Skupna števila</h3>
+            <h4 id="Skupna_stevila">Skupna števila</h4>
             <p>(<i>kompleksna</i> števila)</p>
             <p>Skupna števila imajo stvarni del (<i>realno
             komponento</i>) <span class="math inline">\(a\)</span> in
@@ -486,7 +505,7 @@ logika"/>
             \]</span> <span class="math display">\[ {\lvert z \rvert}^2
             = z \overline{z} \]</span> <span class="math display">\[
             \phi = \arctan \left( \frac{b}{a} \right) \]</span></p>
-            <h4 id="Polarni_zapis"><i>Polarni</i> zapis:</h4>
+            <p><b><i>Polarni</i> zapis</b></p>
             <p><span class="math display">\[ z = \lvert  z \rvert (\cos
             \phi + \mathrm{i} \sin \phi) \]</span></p>
             <p>Eulerjeva enačba: <span class="math display">\[
@@ -536,17 +555,6 @@ logika"/>
             class="math inline">\(A \cup (A \cap B) = A\)</span> -
             <i>absorbcija</i> unije glede na presek</span>),</li>
             </ul>
-            <h2 id="Mnozice">Množice</h2>
-            <p>Potenčna množica množice A je množica njenih podmnožic,
-            vključno s prazno množico. Če imamo množico A = {a, b, c, …
-            }, je potenčna množica te množice:</p>
-            <p>P(A) = {{}, {a}, {b}, {c}, …, {ab}, {ac}, {bc}, …, {abc},
-            …}</p>
-            <p>Moč takšne potenčne množice, kjer je <i>n</i> število
-            elementov v množici, je:</p>
-            <p><span class="math display">\[ m(\mathcal{P}(A)) =
-            \binom{n}{0} + \binom{n}{1} + \binom{n}{2} + ... +
-            \binom{n}{n} = 2^n \]</span></p>
             <h2 id="Kombinatorika">Kombinatorika</h2>
             <p>Verjetnost sestavljenega dogodka je zmnožek verjetnosti
             posameznih dogodkov.</p>
@@ -763,6 +771,11 @@ logika"/>
             class="math inline">\(f\)</span>, pa tudi vrednost
             <i>funkcije</i> <span class="math inline">\(f\)</span> v
             <i>elementu</i> <span class="math inline">\(a\)</span>.</p>
+            <p>Dve <i>funkciji</i> sta enaki, če imata enaki
+            <i>domeni</i>, enaki <i>kodomeni</i> ter enak predpis.</p>
+            <p><span class="math display">\[ \mathrm{Graf}(f) = \{ (a,
+            b) \in A \times B; b = f(a) \} \subset A \times B
+            \]</span></p>
             <p><i>Funkcija</i> je lahko:</p>
             <ul>
             <li>soda: <span class="math inline">\(f(-x) =
@@ -772,8 +785,11 @@ logika"/>
             <li>injektivna (nobena vrednost y se ne ponovi): <span
             class="math inline">\(x_1 \neq x_2 \implies f(x_1) \neq
             f(x_2)\)</span>;</li>
-            <li>surjektivna (zaloga funkcije so vsa stvarna števila):
-            <span class="math inline">\(Z_f = \mathbb{R}\)</span>;</li>
+            <li>surjektivna (slika je enaka kodomeni, oz. zaloga
+            funkcije so vsa stvarna števila): <span
+            class="math inline">\(\mathrm{Im}(f) = Y\)</span>, <span
+            class="math inline">\(\mathrm{Z}_f =
+            \mathbb{R}\)</span>;</li>
             <li>bijektivna: injektivna in surjektivna;</li>
             </ul>
             <p>Enačbo funkcije lahko podamo v več oblikah:</p>
@@ -812,13 +828,54 @@ logika"/>
             dvema funkcijama v presečišču: <span class="math display">\[
             \tan \varphi = \left| \frac {k_1 - k_2}{1 + k_1 k_2} \right|
             \]</span></p>
-            <p>Inverzna funkcija <span
-            class="math inline">\(f^{-1}(x)\)</span>: <span
-            class="math display">\[f: x \to y \iff f^{-1}: y \to
-            x\]</span></p>
-            <p>Sestavljena funkcija (<i>kompozitum funkcije</i>): <span
-            class="math display">\[ (g \circ f)(x) = g(f(x)) \neq (f
-            \circ g)(x) \]</span></p>
+            <p><b><i>Inverzna</i> funkcija</b> <span
+            class="math inline">\(f^{-1}(Y)\)</span> (vrne prasliko /
+            <i>inverzno</i> sliko): <span class="math display">\[ f: X
+            \to Y \iff f^{-1}: Y \to X \]</span> Prasliko <span
+            class="math inline">\(f^{-1}(\{y\})\)</span> imenujemo tudi
+            vlakno.</p>
+            <p><b>Sestavljena funkcija</b> (<i>kompozitum funkcije</i>):
+            <span class="math display">\[ (g \circ f)(x) = g(f(x)) \neq
+            (f \circ g)(x) \]</span> <i>Kompozicija</i> dveh funkcij je
+            opredeljena le za primer, da je <i>kodomena</i> prve
+            funkcije enaka <i>domeni</i> druge funkcije.</p>
+            <p><b><i>Identična funkcija</i></b>: <span
+            class="math display">\[ \mathrm{id}(a) = a \]</span></p>
+            <p><b>Zožitev</b> (<i>restrikcija</i>) <i>funkcije</i> na
+            neko množico: <span
+            class="math inline">\((f|_X)(a)\)</span></p>
+            <p><b>Vložitev</b> (<i>inkluzija</i>) množice X (podmnožica
+            v A) v množico A: <span
+            class="math inline">\(\mathrm{inc}_{X, A}: X \to
+            A\)</span></p>
+            <p><b>Inverzi</b> za primer <span class="math inline">\(f: A
+            \to B\)</span>:</p>
+            <ul>
+            <li>levi inverz <span class="math inline">\(f\)</span> je
+            <span class="math inline">\(g: B \to A\)</span>, če velja
+            <span class="math inline">\(g \circ f =
+            \mathrm{id}_A\)</span></li>
+            <li>desni inverz <span class="math inline">\(f\)</span> je
+            <span class="math inline">\(h: B \to A\)</span>, če velja
+            <span class="math inline">\(f \circ h =
+            \mathrm{id}_B\)</span></li>
+            <li>(obojestranski) inverz <span
+            class="math inline">\(f\)</span> je, če je hkrati levi in
+            desni inverz</li>
+            </ul>
+            <p><span class="math display">\[ (f^{-1})^{-1} = f
+            \]</span></p>
+            <ul>
+            <li>Če je funkcija <span class="math inline">\(f: A \to
+            B\)</span> je injektivna in je <span class="math inline">\(A
+            \neq \emptyset\)</span>, potem ima funkcija <span
+            class="math inline">\(f\)</span> levi inverz.</li>
+            <li>Če ima funkcija f levi inverz, potem je injektivna.</li>
+            <li>Funkcija f je surjektivna, če in samo če ima desni
+            inverz.</li>
+            <li>Funkcija f je bijektivna, če in samo če je
+            obrnljiva.</li>
+            </ul>
             <h3 id="Linearna_funkcija">Linearna funkcija</h3>
             <p><span class="math display">\[ f(x) = kx + n \]</span>
             <span class="math display">\[ k = \frac{\Delta y}{\Delta x}

@@ -32,7 +32,7 @@ sistem"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/linux/">linux</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-10-30">2026-10-30</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-11-10">2026-11-10</time></p>
     </header>
     <nav>
         <ul>
@@ -94,9 +94,8 @@ sistem"/>
         in gesla</a>
         <ul>
         <li><a href="#GPG" id="toc-GPG">GPG</a></li>
-        </ul></li>
-        <li><a href="#Streznik" id="toc-Streznik">Strežnik</a>
-        <ul>
+        <li><a href="#Pass" id="toc-Pass">Pass</a></li>
+        <li><a href="#Aerc" id="toc-Aerc">Aerc</a></li>
         <li><a href="#SSH" id="toc-SSH">SSH</a></li>
         <li><a href="#SCP" id="toc-SCP">SCP</a></li>
         <li><a href="#Hetzner" id="toc-Hetzner">Hetzner</a></li>
@@ -710,7 +709,12 @@ sistem"/>
             urejanjem ključa</li>
             <li><code>list</code> – izpiše ključ in morebitne
             podključe</li>
+            <li><code>passwd</code> – sprememba gesla</li>
             <li><code>expire</code> – uredi rok veljavnosti</li>
+            <li><code>adduid</code> – doda nov UID (to je potrebno tudi,
+            če želiš spremeniti starega)</li>
+            <li><code>uid stevilka_uid</code> – razveljavi UID z
+            določeno številko</li>
             </ul></li>
             <li><code>gpg --passwd ime_ključa</code> – spremeni geslo
             ključa</li>
@@ -758,7 +762,55 @@ sistem"/>
             <li><code>gpg --decrypt datoteka.gpg</code> – odšifrira in
             preveri podpis</li>
             </ul>
-            <h2 id="Streznik">Strežnik</h2>
+            <h3 id="Pass">Pass</h3>
+            <p><a href="https://www.passwordstore.org/">Pass</a> je
+            upravitelj gesel, ključev.</p>
+            <ul>
+            <li><code>pass init id_gpg_ključa</code></li>
+            <li><code>pass git init</code> – omogoči beleženje zgodovine
+            z GIT-om (izbirno)</li>
+            <li><code>pass insert pot/do/ime_gesla</code> – dodaj geslo
+            na določeno mesto v hierarhiji gesel</li>
+            <li><code>pass show pot/do/ime_gesla</code> – izpiše
+            shranjeno geslo
+            <ul>
+            <li><code>pass show -c pot/do/ime_gesla</code> – kopira
+            shranjeno geslo v odložišče, kjer se po 45 sekundah
+            samodejno izbriše</li>
+            </ul></li>
+            <li><code>pass edit pot/do/ime_gesla</code> – urejanje
+            gesla</li>
+            </ul>
+            <h3 id="Aerc">Aerc</h3>
+            <p><a href="https://aerc-mail.org/">Aerc</a> je preprost
+            poštni odjemalec</p>
+            <p><b>Bližnjice</b>:</p>
+            <ul>
+            <li><kbd>j</kbd> / <kbd>k</kbd> – pomikanje dol/gor po
+            sporočilih</li>
+            <li><kbd>Shift+j</kbd> / <kbd>Shift+k</kbd> – pomikanje
+            dol/gor po stranskem oknu map</li>
+            <li><kbd>Ctrl+n</kbd> / <kbd>Ctrl+p</kbd> – prehod med
+            zavihki</li>
+            <li><kbd>Enter</kbd> – odpri izbrano sporočilo
+            <ul>
+            <li><kbd>Ctrl+j</kbd> / <kbd>Ctrl+k</kbd> – premikaj po
+            delih večdelnih sporočil (sem spada vsebina in npr.
+            priponke)</li>
+            <li><kbd>q</kbd> – zapri sporočilo</li>
+            </ul></li>
+            <li><kbd>C</kbd> – sestavi novo sporočilo</li>
+            <li><kbd>rr</kbd> – odgovori vsem na sporočilo</li>
+            <li><kbd>rq</kbd> – odgovori vsem na sporočilo in samodejno
+            dodaj citirano vsebino sporočila, na katerega
+            odgovarjaš</li>
+            <li><kbd>Rr</kbd> – odgovori na sporočilo</li>
+            <li><kbd>Rq</kbd> – odgovori na sporočilo in samodejno dodaj
+            citirano vsebino sporočila, na katerega odgovarjaš</li>
+            </ul>
+            <p>Glej tudi <a href="https://aerc-docs.com/">aerc
+            docs</a>.</p>
+            <p>pgxw cuuj jruz qqux Posta25ms06! ## Strežnik</p>
             <h3 id="SSH">SSH</h3>
             <p>Do strežnika v lokalnem omrežju dostopaš z
             <code>ssh up_ime@ip</code>, po čemer moraš vnesti še geslo.
@@ -860,6 +912,7 @@ sistem"/>
             <li><code>SELECT * FROM ime_preglednice ORDER BY ime_stolpca</code></li>
             </ul></li>
             </ul>
+            <p>Primerjava skladnje:</p>
             </div>
             <table>
             <colgroup>
@@ -918,9 +971,15 @@ sistem"/>
             <li><code>exit;</code> – izhod iz zbirke</li>
             <li><code>CREATE DATABASE moja_zbirka CHARACTER SET utf8mb4 COLLATE     utfmb4_unicode_ci;</code>
             – ustvari zbirko z imenom <i>moja_zbirka</i> s polnim
-            Unikodom (utf8mb4), kar prepreči težave s šumniki, posebnimi
-            znaki; ter zagotovi pravilno slovensko/Unikodno razvrščanje
-            besedila</li>
+            Unikodom (utf8mb4 – UTF8, ki vključuje tudi 4-bitne znake),
+            kar prepreči težave s šumniki, posebnimi znaki; ter zagotovi
+            pravilno slovensko/Unikodno razvrščanje besedila, ki ne
+            razlikuje med velikimi in malimi črkami (*_ci* = <i>case
+            insensitive</i>), dobra izbira bi bila tudi
+            <i>utf8mb4_uca1400_as_ci</i> (utf8mb4 – kateri nabor znakov,
+            uca1400 – algoritem za razvrščanje, <i>as</i> = <i>accent
+            sensitive</i> – razlikuje npr. med sičniki in šumniki,
+            <i>ci</i> – ne razlikuje med veliki in malimi črkami)</li>
             <li><code>CREATE USER 'uporabnik'@'localhost' IDENTIFIED BY 'geslo';</code>
             – ustvari uporabnika zbirke z up. imenom <i>uporabnik</i>,
             ki se sme povezati preko <i>lokalnega</i> strežnika

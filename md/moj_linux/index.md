@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-10-06
+date: 2026-11-12
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -30,6 +30,7 @@ Sicer pa je tu seznam najnovejših datotek, ki so na tem spletišču:
     - [log-startup.service](/moj_linux/etc/systemd/system/log-startup.service)
 - home/janezpavel/
     - .config/
+        - [aerc/aerc.conf](moj_linux/home/janezpavel/.config/aerc/aerc.conf)
         - [lf/lfrc](moj_linux/home/janezpavel/.config/lf/lfrc)
         - matplotlib/stylelib/
             - [a4leze.mplstyle](moj_linux/home/janezpavel/.config/matlpotlib/stylelib/a4leze.mpstyle)
@@ -512,6 +513,12 @@ npr 256M). Kot trajno rešitev lahko npr. v **~/.bashrc** dodaš vzdevek
 `alias josm='JAVA_OPTS="-Xmx2G" josm'`, ali pa z 
 `java -Xmx2G -jar /usr/share/josm/josm.jar` urediš **/etc/default/josm**?
 
+#### Merkaartor
+
+[Merkaartor](https://merkaartor.be/) je orodje za urejanje [OpenStreetMap](https://www.openstreetmap.org/), ki pa ne deluje najbolje.
+
+- `sudo apt install merkaartor`
+
 #### QGIS
 
 (Glej tudi [QGIS – Installation Guide](https://qgis.org/resources/installation-guide/#debian-ubuntu)
@@ -562,6 +569,8 @@ Debian ima precej staro različico, zato je bolje [prenesti AppImage](https://mu
 [Pass](https://www.passwordstore.org/) je upravitelj gesel, ključev.
 
 - `sudo apt install pass` – namestitev
+- `pass init id_gpg_ključa`
+- `pass git init` – omogoči beleženje zgodovine z GIT-om (izbirno)
 
 #### NeoMutt
 
@@ -590,6 +599,8 @@ Debian ima precej staro različico, zato je bolje [prenesti AppImage](https://mu
 
 #### Aerc
 
+[Aerc](https://aerc-mail.org/) je preprost poštni odjemalec
+
 `sudo apt install aerc` – namestitev
 
 Če nočeš imeti gesla shranjenega v golem besedilu (kar tudi ni priporočljivo),
@@ -598,8 +609,14 @@ najprej v
 `protokol://naslov:geslo@strežnik:vrata`). Če uporabljaš Pass kot upravitelja
 gesel, dodaj vrstici:
 
-    source-cred-cmd = pass show ime_gesla
-    outgoing-cred-cmd = pass show ime_gesla
+    source-cred-cmd = pass show pot/do/ime_gesla
+    outgoing-cred-cmd = pass show pot/do/ime_gesla
+
+Za Gmail (če ga nesrečnik ima) je priporočeno imeti ločeno geslo za aplikacije –
+ustvariš ga na [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords).
+
+Da dostopaš do stikov, shranjenih v Abook, v **~.config/aerc/aerc.conf**
+odkomentiraj vrstico `address-book-cmd=` in dopolni v `address-book-cmd=abook --mutt-query "%s"`.
 
 #### Chroncal
 
@@ -861,7 +878,6 @@ V [**~/viri/dwm/config.h**](/moj_linux/home/janezpavel/viri/dwm/config.h):
 
 - [Gökçehan Kara (gokcehan): LF](https://github.com/gokcehan/lf) (GitHub) 
     - [predogled slik](https://github.com/gokcehan/lf/wiki/Previews#full-preview-with-image-support) 
-- Mutt / Neomutt
 - Tor, firefox 
 - Thunderbird
 - FreeCAD

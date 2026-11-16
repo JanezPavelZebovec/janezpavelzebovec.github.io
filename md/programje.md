@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2026-10-31
+date: 2026-11-10
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -69,6 +69,7 @@ Moji izbrani programi po namembnosti:
 
 | razširitev | namembnost | Chrome Web Store | opombe |
 | --- | --- | --- | --- |
+| [BrowserPass](https://github.com/browserpass/browserpass-extension) | uporaba upravitelja gesel [Pass](https://www.passwordstore.org/) | [Browserpass](https://chromewebstore.google.com/detail/browserpass/naepdomgkenhinolocfifgehidddafch) | |
 | Custom CSS by Denis | lasten CSS za izbrane spletne strani | [Custom CSS by Denis](https://chromewebstore.google.com/detail/custom-css-by-denis/cemphncflepgmgfhcdegkbkekifodacd) | |
 | [Dark Reader](https://darkreader.org/) | temen način za katerekoli spletne strani | [Dark Reader](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh) | |
 | [Unhook](https://unhook.app/) | nastavitve za YouTube | [Unhook](https://chromewebstore.google.com/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid) | |

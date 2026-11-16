@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-11-05
+date: 2026-11-16
 description: računska teorija, enačbe
 keywords: računstvo, matematika, algebra, logika
 author: Janez Pavel Žebovec
@@ -34,7 +34,7 @@ author: Janez Pavel Žebovec
 | N | P | P | N | P | P | N |
 | N | N | P | N | N | P | P |
 
-## Množice števil
+## Množice
 
 *Operatorji* za računanje z množicami:
 
@@ -66,7 +66,25 @@ $$ \bigcup_{j \in J} A_j^{\complement} = \left( \bigcap_{j \in J} A_j \right)^{\
 $$ \bigcap_{j \in J} A_j^{\complement} = \left( \bigcup_{j \in J} A_j \right)^{\complement} $$
 </div>
 
-**Množice števil**:
+**Potenčna množica** množice A je množica njenih podmnožic, vključno s prazno
+množico.  Če imamo množico A = {a, b, c, ... }, je potenčna množica te množice:
+
+P(A) = {{}, {a}, {b}, {c}, ..., {ab}, {ac}, {bc}, ..., {abc}, ...}
+
+Moč takšne potenčne množice, kjer je *n* število elementov v množici, je:
+
+$$ m(\mathcal{P}(A)) = \binom{n}{0} + \binom{n}{1} + \binom{n}{2} + ... + \binom{n}{n} = 2^n $$
+
+**Števnost množic**:
+
+- Množica A je števna, če in samo če obstaja *injektivna funkcija* $A \to
+  \mathbb{N}$.
+- Neprazna množica A je števna, če in samo če obstaja *surjektivna funkcija*
+  $\mathbb{N} \to A$.
+
+*Kartezični produkt* končno mnogo števnih množic je števna množica.
+
+### Množice števil
 
 $$ \href{#Naravna_stevila}{\mathbb{N}} < \href{#Cela_stevila}{\mathbb{Z}} < \href{#Razlozna_stevila}{\mathbb{Q}} < \href{#Stvarna_stevila}{\mathbb{R}} < \href{#Skupna_stevila}{\mathbb{C}} $$
 
@@ -75,35 +93,35 @@ račun v neki množici nima rešitve (ki jo hočemo v tej množici), ima pa jo v
 drugi množici, vendar nas ta rešitev ne zanima, zato razglasimo, da račun v
 izbrani množici nima rešitve (tako je običajno npr. s koreni negativnih števil).
 
-### Naravna števila
+#### Naravna števila
 
 To so (*pozitivna* cela) števila s katerimi (običajno) štejemo (1, 2, 3, 4, 5, 6,
 ...).
 
-### Cela števila
+#### Cela števila
 
 To so naravna števila, število 0 in nasprotne vrednosti naravnih števil -
 *negativna* cela števila (0, 1, -1, 2, -2, 3, -3, ...)
 
-### Razložna števila
+#### Razložna števila
 (*racionalna* števila)
 
 To so števila, ki jih lahko izrazimo kot razmerje dveh celih števil, oz.
 predstavimo z ulomki (npr. 0, 1, -1, 1/3, -1/3, ...).
 
-### Nerazložna števila
+#### Nerazložna števila
 (*iracionalna* števila)
 
 To so števila, ki jih ni mogoče izraziti kot razmerje dveh celih števil, oz.
 predstaviti z ulomki (npr. $\sqrt{2}$, π, e, ...).
 
-### Stvarna števila
+#### Stvarna števila
 (*realna* števila)
 
 To so števila, ki jih lahko predstavimo na običajni številski premici (npr. 0,
 1, -1, 1/3, -1/3, π, $\sqrt{2}$, ...).
 
-### Skupna števila
+#### Skupna števila
 (*kompleksna* števila)
 
 Skupna števila imajo stvarni del (*realno komponento*) $a$ in umišljeni del
@@ -117,7 +135,7 @@ $$ \overline{z} = a - \mathrm{i} b $$
 $$ {\lvert z \rvert}^2 = z \overline{z} $$
 $$ \phi = \arctan \left( \frac{b}{a} \right) $$
 
-#### *Polarni* zapis:
+***Polarni* zapis**
 
 $$ z = \lvert  z \rvert (\cos \phi + \mathrm{i} \sin \phi) $$
 
@@ -150,17 +168,6 @@ $$ z^n = {\lvert  z \rvert}^n (\cos n \phi + \mathrm{i} \sin n \phi) = {\lvert z
 - **nespremenljivost** (*idempotenca*; <span class="zgled">npr. $A \cup A = A$</span>),
 - ***absorbcija*** (<span class="zgled">npr. $A \cup (A \cap B) = A$ - *absorbcija* unije glede na
   presek</span>),
-
-## Množice
-
-Potenčna množica množice A je množica njenih podmnožic, vključno s prazno
-množico.  Če imamo množico A = {a, b, c, ... }, je potenčna množica te množice:
-
-P(A) = {{}, {a}, {b}, {c}, ..., {ab}, {ac}, {bc}, ..., {abc}, ...}
-
-Moč takšne potenčne množice, kjer je *n* število elementov v množici, je:
-
-$$ m(\mathcal{P}(A)) = \binom{n}{0} + \binom{n}{1} + \binom{n}{2} + ... + \binom{n}{n} = 2^n $$
 
 ## Kombinatorika
 
@@ -328,12 +335,17 @@ Oziroma preslika *element* $a \in A$ v *element* $f(a)$:
 $$ f: a \to f(a) $$
 Zato $f(a)$ imenujemo tudi slika *elementa* $a$ vzdolž *funkcije* $f$, pa tudi vrednost *funkcije* $f$ v *elementu* $a$.
 
+Dve *funkciji* sta enaki, če imata enaki *domeni*, enaki *kodomeni* ter enak
+predpis.
+
+$$ \mathrm{Graf}(f) = \{ (a, b) \in A \times B; b = f(a) \} \subset A \times B $$
+
 *Funkcija* je lahko:
 
 - soda: $f(-x) = f(x)$,
 - liha: $f(-x) = -f(x)$;
 - injektivna (nobena vrednost y se ne ponovi): $x_1 \neq x_2 \implies f(x_1) \neq f(x_2)$;
-- surjektivna (zaloga funkcije so vsa stvarna števila): $Z_f = \mathbb{R}$;
+- surjektivna (slika je enaka kodomeni, oz. zaloga funkcije so vsa stvarna števila): $\mathrm{Im}(f) = Y$, $\mathrm{Z}_f = \mathbb{R}$;
 - bijektivna: injektivna in surjektivna;
 
 Enačbo funkcije lahko podamo v več oblikah:
@@ -356,11 +368,37 @@ Za kot, pod katerim funkcija seka os x velja $\tan \varphi = k$.
 Kot med dvema funkcijama v presečišču:
 $$ \tan \varphi = \left| \frac {k_1 - k_2}{1 + k_1 k_2} \right| $$
 
-Inverzna funkcija $f^{-1}(x)$:
-$$f: x \to y \iff f^{-1}: y \to x$$
+***Inverzna* funkcija** $f^{-1}(Y)$ (vrne prasliko / *inverzno* sliko):
+$$ f: X \to Y \iff f^{-1}: Y \to X $$
+Prasliko $f^{-1}(\{y\})$ imenujemo tudi vlakno.
 
-Sestavljena funkcija (*kompozitum funkcije*):
+**Sestavljena funkcija** (*kompozitum funkcije*):
 $$ (g \circ f)(x) = g(f(x)) \neq (f \circ g)(x) $$
+*Kompozicija* dveh funkcij je opredeljena le za primer, da je *kodomena* prve
+funkcije enaka *domeni* druge funkcije.
+
+***Identična funkcija***:
+$$ \mathrm{id}(a) = a $$
+
+**Zožitev** (*restrikcija*) *funkcije* na neko množico: $(f|_X)(a)$
+
+**Vložitev** (*inkluzija*) množice X  (podmnožica v A) v množico A:
+$\mathrm{inc}_{X, A}: X \to A$
+
+**Inverzi** za primer $f: A \to B$:
+
+- levi inverz $f$ je $g: B \to A$, če velja $g \circ f = \mathrm{id}_A$
+- desni inverz $f$ je $h: B \to A$, če velja $f \circ h =
+  \mathrm{id}_B$
+- (obojestranski) inverz $f$ je, če je hkrati levi in desni inverz
+
+$$ (f^{-1})^{-1} = f $$
+
+- Če je funkcija $f: A \to B$ je injektivna in je $A \neq \emptyset$, potem ima
+  funkcija $f$ levi inverz.
+- Če ima funkcija f levi inverz, potem je injektivna.
+- Funkcija f je surjektivna, če in samo če ima desni inverz.
+- Funkcija f je bijektivna, če in samo če je obrnljiva.
 
 ### Linearna funkcija
 

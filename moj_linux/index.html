@@ -32,7 +32,7 @@ sistema"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/moj_linux/">moj_linux</a> / <a href="/moj_linux/index/">index</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-10-06">2026-10-06</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-11-12">2026-11-12</time></p>
     </header>
     <nav>
         <ul>
@@ -97,6 +97,8 @@ sistema"/>
         orodja</a>
         <ul>
         <li><a href="#JOSM" id="toc-JOSM">JOSM</a></li>
+        <li><a href="#Merkaartor"
+        id="toc-Merkaartor">Merkaartor</a></li>
         <li><a href="#QGIS" id="toc-QGIS">QGIS</a></li>
         <li><a href="#Musescore" id="toc-Musescore">Musescore</a></li>
         <li><a href="#GPG" id="toc-GPG">GPG</a></li>
@@ -194,6 +196,8 @@ sistema"/>
             <ul>
             <li>.config/
             <ul>
+            <li><a
+            href="moj_linux/home/janezpavel/.config/aerc/aerc.conf">aerc/aerc.conf</a></li>
             <li><a
             href="moj_linux/home/janezpavel/.config/lf/lfrc">lf/lfrc</a></li>
             <li>matplotlib/stylelib/
@@ -905,6 +909,14 @@ sistema"/>
             <code>alias josm='JAVA_OPTS="-Xmx2G" josm'</code>, ali pa z
             <code>java -Xmx2G -jar /usr/share/josm/josm.jar</code>
             urediš <b>/etc/default/josm</b>?</p>
+            <h4 id="Merkaartor">Merkaartor</h4>
+            <p><a href="https://merkaartor.be/">Merkaartor</a> je orodje
+            za urejanje <a
+            href="https://www.openstreetmap.org/">OpenStreetMap</a>, ki
+            pa ne deluje najbolje.</p>
+            <ul>
+            <li><code>sudo apt install merkaartor</code></li>
+            </ul>
             <h4 id="QGIS">QGIS</h4>
             <p>(Glej tudi <a
             href="https://qgis.org/resources/installation-guide/#debian-ubuntu">QGIS
@@ -980,6 +992,9 @@ sistema"/>
             upravitelj gesel, ključev.</p>
             <ul>
             <li><code>sudo apt install pass</code> – namestitev</li>
+            <li><code>pass init id_gpg_ključa</code></li>
+            <li><code>pass git init</code> – omogoči beleženje zgodovine
+            z GIT-om (izbirno)</li>
             </ul>
             <h4 id="NeoMutt">NeoMutt</h4>
             <ul>
@@ -1021,6 +1036,8 @@ sistema"/>
             elektronski naslov</li>
             </ul>
             <h4 id="Aerc">Aerc</h4>
+            <p><a href="https://aerc-mail.org/">Aerc</a> je preprost
+            poštni odjemalec</p>
             <p><code>sudo apt install aerc</code> – namestitev</p>
             <p>Če nočeš imeti gesla shranjenega v golem besedilu (kar
             tudi ni priporočljivo), najprej v
@@ -1028,8 +1045,15 @@ sistema"/>
             iz vrstic <i>source</i> in <i>outgoing</i> (uporabljena
             oblika <code>protokol://naslov:geslo@strežnik:vrata</code>).
             Če uporabljaš Pass kot upravitelja gesel, dodaj vrstici:</p>
-            <pre><code>source-cred-cmd = pass show ime_gesla
-outgoing-cred-cmd = pass show ime_gesla</code></pre>
+            <pre><code>source-cred-cmd = pass show pot/do/ime_gesla
+outgoing-cred-cmd = pass show pot/do/ime_gesla</code></pre>
+            <p>Za Gmail (če ga nesrečnik ima) je priporočeno imeti
+            ločeno geslo za aplikacije – ustvariš ga na <a
+            href="https://myaccount.google.com/apppasswords">myaccount.google.com/apppasswords</a>.</p>
+            <p>Da dostopaš do stikov, shranjenih v Abook, v
+            <b>~.config/aerc/aerc.conf</b> odkomentiraj vrstico
+            <code>address-book-cmd=</code> in dopolni v
+            <code>address-book-cmd=abook --mutt-query "%s"</code>.</p>
             <h4 id="Chroncal">Chroncal</h4>
             <p><a
             href="https://github.com/DouglasdeMoura/chroncal">Chroncal</a>
@@ -1402,7 +1426,6 @@ readpw(dpy, &amp;rr, locks, nscreens, hash);</code></pre>
             href="https://github.com/gokcehan/lf/wiki/Previews#full-preview-with-image-support">predogled
             slik</a></li>
             </ul></li>
-            <li>Mutt / Neomutt</li>
             <li>Tor, firefox</li>
             <li>Thunderbird</li>
             <li>FreeCAD</li>
