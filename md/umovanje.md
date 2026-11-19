@@ -1,6 +1,6 @@
 ---
 title: Umovanje
-date: 2026-11-03
+date: 2026-11-19
 description:
 keywords: razmišljanje
 ---
@@ -527,7 +527,15 @@ pripadnikov, je imel moč. Tam koran naroča:
 > tistimi, ki so prejeli Sveto pismo, dokler ne plačajo davka in se prostovoljno
 > podredijo ter se popolnoma ponižajo.
 >
-<cite>[Koran 9: 29](https://quran.com/at-tawbah/29)</cite>
+<cite>[Koran 9:29](https://quran.com/at-tawbah/29)</cite>
+
+> Ko pa se sveti meseci končajo, ubijte mnogobožnike, ki so kršili svoje
+> pogodbe, kjerkoli jih najdete, zajemite jih, oblegajte jih in prežite na njih
+> na vseh poteh. Če pa se pokesajo, opravljajo molitve in plačujejo davek na
+> dobrodelnost, jih izpustite. Resnično, Alah je Vseodpuščujoč, Najbolj
+> Usmiljeni.
+>
+<cite>[Koran 9:5](https://quran.com/at-tawbah/5)</cite>
 
 In ta razlika med islamom v začetku Mohamedovega delovanja in na koncu uči tudi
 današnje muslimane, kako naj se vedejo: ko so v manjšini, naj oznanjajo
@@ -535,6 +543,53 @@ strpnost, miroljubnost; in ko postanejo večina, oz. ko so dovolj močni, naj si
 podredijo nemuslimane.
 Združene države Amerike, zahodna Evropa – to je današnja Meka, in Bližnji Vzhod
 – ta je današnja Medina.
+
+Koran potrjuje resničnost Spisov / Svetega pisma, oz. uporabi izraze:
+
+- *Taurat* – Mojzesove knjige (vseh pet)
+- *Zabur* – Davidovi psalmi
+- *Injeel* – Evangelij (ni jasno, kateri evangeliji)
+
+Koran nikoli ne omeni, da bi bili ti spisi kadarkoli spremenjeni, pokvarjeni,
+kakor nedoslednosti med Koranom in Spisi razlagajo muslimani.
+
+> On ti je, o prerok, v resnici razodel Knjigo, ki potrjuje tisto, kar je bilo
+> pred njo, tako kot je prej razodel Toro in Evangelij, da bi bila vodilo za
+> ljudi, in razodel tudi Odločilno besedo. Resnično, tisti, ki zavračajo
+> Allahova razodetja, bodo utrpeli hudo muko. Kajti Allah je Vsemogočni,
+> sposoben kaznovanja.
+>
+<cite>[Koran (sura Ali 'Imran) 3:3–4](https://quran.com/ali-imran/3-4)</cite>
+
+> Resnično, razodeli smo Toro, ki vsebuje vodilo in luč, po kateri so preroki,
+> ki so se podredili Alahu, sodili Judom. Tudi rabini in učenjaki so sodili v
+> skladu z Allahovo knjigo, ki jim je bila zaupana in katere varuhi so postali.
+> Zato se ne bojte ljudi; bojte se Mene! In ne zamenjujte Mojih razodetij za
+> minljivo korist. Tisti pa, ki ne sodijo po tem, kar je razodel Alah, so
+> resnično neverniki.
+>
+<cite>[Koran (sura Al-Ma'idah) 5:44](https://quran.com/al-maidah/44)</cite>
+
+> Nato smo po stopinjah prerokov poslali Jezusa, sina Marije, da bi potrdil
+> Toro, ki je bila razodeta pred njim. In dali smo mu Evangelij, ki vsebuje
+> vodilo in luč ter potrjuje tisto, kar je bilo razodeto v Tori – vodilo in pouk
+> za tiste, ki se bojijo Boga.
+>
+<cite>[Koran (sura Al-Ma'idah) 5:46](https://quran.com/al-maidah/46)</cite>
+
+> Recite, o prerok: „O ljudje Knjige! Nimate nobene opore, če ne upoštevate Tore,
+> Evangelija in tistega, kar vam je razodel vaš Gospod.“ Razodetje, ki vam ga je
+> dal vaš Gospod, o prerok, bo pri mnogih izmed njih le še povečalo hudobijo in
+> nevernost. Zato ne žalujte za tistimi, ki ne verujejo.
+>
+<cite>[Koran (sura Al-Ma'idah) 5:68](https://quran.com/al-maidah/68)</cite>
+
+> Če o Prerok dvomiš o teh zgodbah, ki smo ti jih razodeli, potem vprašaj tiste,
+> ki so Spise [mišljeni Tora in evangeliji] brali pred teboj. Resnica
+> ti je vsekakor prišla od tvojega Gospoda, zato ne bodi med tistimi, ki
+> dvomijo, [...]
+>
+<cite>[Koran (sura Yunus) 10:94](https://quran.com/yunus/94)</cite>
 
 Islam dovoljuje otroške poroke (glej tudi statistiko na
 [Girls not Brides](https://www.girlsnotbrides.org/)). Tako npr. pravi koran, ko
@@ -569,7 +624,13 @@ devetih poroko potrdil.
 > Vsak moški naj ima svojo posteljo, njegova žena svojo, tretja naj bo za gosta,
 > četrta pa je za hudiča.
 >
-<cite>[ Suna Sahih Muslim 2084](https://sunnah.com/muslim:2084)</cite>
+<cite>[Suna Sahih Muslim 2084](https://sunnah.com/muslim:2084)</cite>
+
+> Prerok je rekel: „Ali pričevanje ženske ni enako polovici pričevanja moškega?“
+> Ženske so odgovorile: „Da.“ On je rekel: „To je zaradi pomanjkljivosti
+> ženskega uma.“
+>
+<cite>[Suna Sahih al-Bukhari 2658](https://sunnah.com/bukhari:2658)</cite>
 
 ## Osebnost
 
@@ -633,6 +694,7 @@ Islam:
 
 - [Raymond Ibrahim: Cameraman Gets Triggered During Wild Islam Debate](https://www.youtube.com/watch?v=OWIjxZG64nY) (YouTube)
 - [WikiIslam: Child Marriage in the Qur'an](https://wikiislam.net/wiki/Child_Marriage_in_the_Qur'an)
+- [No Cousins Left: The Qur’an Testifies that the Bible is the Word of God](https://nocousinsleft.com/2020/10/04/the-quran-testifies-that-the-bible-is-the-word-of-god/)
 
 Narodnoosvobodilni boj:
 
@@ -645,3 +707,7 @@ Prebujenski članki:
   debunked](https://www.bbc.com/news/science-environment-51914782)
 - [BBC – Adam Rutherford: 'Biological reality': What genetics has taught us about
   race](https://www.bbc.com/future/article/20250417-biological-reality-what-genetics-has-taught-us-about-race)
+
+Raziskave v podporo levici:
+
+- [Science Advances: Conservatives’ susceptibility to political misperceptions](https://www.science.org/doi/10.1126/sciadv.abf1234)

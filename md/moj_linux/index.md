@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-11-12
+date: 2026-11-17
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -370,6 +370,9 @@ temno), jim moramo to nekako povedati. To storimo s sledečima datotekama:
     - `inkscape` – [Inkscape](https://inkscape.org/), urejevalnik SVG
     - `gimp` – [GIMP](https://www.gimp.org/), urejevalnik slik
     - `sc-im` – [SC-IM](https://github.com/andmarti1424/sc-im), preprost urejevalnik preglednic
+    - `libreoffice` – [LibreOffice](https://www.libreoffice.org/), nadomestek
+      Microsoft Offica
+        Ali da namestiš le nekatere: `sudo apt install libreoffice-writer libreoffice-calc libreoffice-impress`
 
 #### Brskalnik Brave
 
@@ -383,7 +386,6 @@ Ker [Brava](https://brave.com/) ni v uradni knjižnici Debiana, je treba dodati 
 Morda deluje tudi tole (?)
  
 - `curl -fsS https://dl.brave.com/install.sh | sh`
-
 
 #### NCMPCPP
 

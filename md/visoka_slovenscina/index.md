@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2026-10-30
+date: 2026-11-18
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 author: Janez Pavel Žebovec
@@ -209,6 +209,8 @@ Dobri predlogi na [*Fran - Predlagajte nove slovenske ustreznice*](https://fran.
 Drugi predlogi (slabše tvorjeni – pomeni, da imajo precej angleško tvorbo, sli
 so bolj dobesedni prevod, kot poimenovanje pojava – so označeni z zvezdico \*):
 
+- **dvójno število** <small>(Filip Žebovec, 2026-11-17)</small> < *kompleksno* število
+- **četvorno število** <small>(Filip Žebovec, 2026-11-17)</small> < *kvartinion*
 - **gonilnik** <small>(Benjamin Žebovec, 2026-05-01)</small> < *motor* (kot tisto, kar poganja)
 - **kadníca** [L1] <small>(Boštjan Mejak, 2025-11-24)</small> < *cigareta*
 - **lik** [L1] <small>(Boštjan Mejak, 2025-11-24)</small> < *profil* (na npr. družbenih omrežjih)
@@ -239,6 +241,7 @@ so bolj dobesedni prevod, kot poimenovanje pojava – so označeni z zvezdico \*
 Tu je seznam mojih predlogov za nove slovenske ustreznice (nekatere so že
 obstoječe, z zgolj dodanim/prirejenim pomenom, druge so tvorjene nanovo):
 
+- **sklop sprememb** <small>(2026-11-18)</small> < *commit*
 - **déževka** <small>(2025-12-17)</small> < *pelerina*
 - **dlánčnik** <small>(/2025-06-30)</small> < "pametni" *telefon*
   <small>(podobno je tudi nem. *Handy*)</small>

@@ -1,6 +1,6 @@
 ---
 title: Prepovedane besede v visoki slovenščini
-date: 2026-11-04
+date: 2026-11-18
 description: Prepovedane besede, prevzete besede, v visoki slovenščini
 keywords: slovenščina, visoka slovenščina, potujčenje
 author: Janez Pavel Žebovec
@@ -99,11 +99,13 @@ Lastnosti *operacij*:
 
 ### Računalništvo
 
+- *direktorij* > imenik
 - *ekran* > (računalniški/...) zaslon
 - *font* > (slog/družina/vrsta) pisava
 - *internet* > (svetovni) splet, medmrežje
 - *monitor* > (računalniški/...) zaslon
 - *RAM* > delovni pomnilnik (bralno-pisalni pomnilnik)
+- *repozitorij* > skladišče
 - *router* > (omrežni) usmerjevalnik
 
 ### Jezikoslovje

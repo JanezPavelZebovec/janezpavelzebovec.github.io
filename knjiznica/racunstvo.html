@@ -37,7 +37,7 @@ logika"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/racunstvo/">racunstvo</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-11-16">2026-11-16</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-11-18">2026-11-18</time></p>
     </header>
     <nav>
         <ul>
@@ -441,7 +441,9 @@ logika"/>
             <p><span class="math display">\[ m(\mathcal{P}(A)) =
             \binom{n}{0} + \binom{n}{1} + \binom{n}{2} + ... +
             \binom{n}{n} = 2^n \]</span></p>
-            <p><b>Števnost množic</b>:</p>
+            <p><b>Števnost množic</b>: množica je števna, če lahko njene
+            gradnike razporedimo v vrsto, oz. jih naštejemo (četudi jih
+            je neskončno mnogo).</p>
             <ul>
             <li>Množica A je števna, če in samo če obstaja <i>injektivna
             funkcija</i> <span class="math inline">\(A \to
@@ -465,18 +467,57 @@ logika"/>
             vendar nas ta rešitev ne zanima, zato razglasimo, da račun v
             izbrani množici nima rešitve (tako je običajno npr. s koreni
             negativnih števil).</p>
+            <ul>
+            <li>zgornja meja množice je vsako število, od katerega so
+            vsa števila v množici manjša</li>
+            <li>spodnja meja množice je vsako število, od katerega so
+            vsa števila v množici večja</li>
+            <li>najmanjša/natančna zgornja meja – <i>supremum</i></li>
+            <li>največja/natančna spodnja meja – <i>infimum</i></li>
+            <li>če je <i>supremum</i> v množici, je imenovan tudi
+            največji <i>element</i> / <i>maksimum</i></li>
+            <li>če je <i>infimum</i> v množici, je imenovan tudi
+            najmanjši <i>element</i> / <i>minimum</i></li>
+            </ul>
             <h4 id="Naravna_stevila">Naravna števila</h4>
             <p>To so (<i>pozitivna</i> cela) števila s katerimi
-            (običajno) štejemo (1, 2, 3, 4, 5, 6, …).</p>
+            (običajno) štejemo. Množica je števno neskončna.</p>
+            <p><span class="math display">\[ \mathbb{N} = \{ 1, 2, 3, 4,
+            5, 6, ... \} \]</span></p>
+            <div class="zakon">
+            <p><b>Peanovi <i>aksiomi</i></b> (nabor osnovnih lastnosti
+            <a href="#Naravna_stevila">naravnih števil</a>):</p>
+            <ol type="1">
+            <li>1 je naravno število.</li>
+            <li>Vsako naravno število <span
+            class="math inline">\(n\)</span> ima svojega natanko
+            določenega naslednika, ki ga označimo z <span
+            class="math inline">\(n^+\)</span>.</li>
+            <li>Različni naravni števili imata različna naslednika.</li>
+            <li>1 ni naslednik kakšnega naravnega števila.</li>
+            <li>Če je <span class="math inline">\(A\)</span> podmnožica
+            množice naravnih števil, če je <span class="math inline">\(1
+            \in A\)</span> in če za vsak <span class="math inline">\(n
+            \in A\)</span> velja <span class="math inline">\(n^+ \in
+            A\)</span>, potem so v množici <span
+            class="math inline">\(A\)</span> vsa naravna števila.</li>
+            </ol>
+            </div>
             <h4 id="Cela_stevila">Cela števila</h4>
             <p>To so naravna števila, število 0 in nasprotne vrednosti
             naravnih števil - <i>negativna</i> cela števila (0, 1, -1,
-            2, -2, 3, -3, …)</p>
+            2, -2, 3, -3, …). Množica je števno neskončna.</p>
+            <p><span class="math display">\[ \mathbb{Z} = - \mathbb{N}
+            \cup \{0\} \cup \mathbb{N} = \{ ..., -2, -1, 0, 1,
+            2, ... \} \subset \mathbb{R} \]</span></p>
             <h4 id="Razlozna_stevila">Razložna števila</h4>
             <p>(<i>racionalna</i> števila)</p>
             <p>To so števila, ki jih lahko izrazimo kot razmerje dveh
             celih števil, oz. predstavimo z ulomki (npr. 0, 1, -1, 1/3,
-            -1/3, …).</p>
+            -1/3, …). Množica je števno neskončna.</p>
+            <p><span class="math display">\[ \mathbb{Q} = \{ \frac{k}{n}
+            \in \mathbb{R}; k \in \mathbb{Z}, n \in
+                \mathbb{N} \} \subset \mathbb{R} \]</span></p>
             <h4 id="Nerazlozna_stevila">Nerazložna števila</h4>
             <p>(<i>iracionalna</i> števila)</p>
             <p>To so števila, ki jih ni mogoče izraziti kot razmerje
@@ -486,25 +527,131 @@ logika"/>
             <p>(<i>realna</i> števila)</p>
             <p>To so števila, ki jih lahko predstavimo na običajni
             številski premici (npr. 0, 1, -1, 1/3, -1/3, π, <span
-            class="math inline">\(\sqrt{2}\)</span>, …).</p>
+            class="math inline">\(\sqrt{2}\)</span>, …). MNožica je
+            neštevno neskončna.</p>
+            <p><b>Osnovne lastnosti (<i>aksiomi</i>) stvarnih
+            števil</b>:</p>
+            <p>Osnovne lastnosti, ki govorijo o seštevanju (množici, ki
+            jih izpolnjuje, pravimo <b>Abelova <i>grupa</i></b> za
+            seštevanje):</p>
+            <ol type="1">
+            <li>(družilnost) Za vse <span class="math inline">\(x, y, z
+            \in \mathbb{R}\)</span> velja <span class="math inline">\(x
+            + (y + z) = (x + y) + z\)</span>.</li>
+            <li>(zamenljivost) Za vse <span class="math inline">\(x, y,
+            \in \mathbb{r}\)</span> velja $ x + y = y + x$.</li>
+            <li>(<i>nevtralni</i> člen) Obstaja takšno število <span
+            class="math inline">\(0 \in \mathbb{R}\)</span>, da za vsak
+            <span class="math inline">\(x \in \mathbb{R}\)</span> velja
+            <span class="math inline">\(x + 0 = 0 + x = x\)</span>.</li>
+            <li>(nasprotno število) Za vsak <span
+            class="math inline">\(x \in \mathbb{R}\)</span> obstaja
+            takšno število <span class="math inline">\(-x \in
+            \mathbb{R}\)</span>, da velja <span class="math inline">\(x
+            + (-x) = (-x) + x = 0\)</span> (to pomeni, da lahko
+            opredelimo <i>operacijo</i> odštevanja in sicer s predpisom
+            <span class="math inline">\(y - x = y + (-x) \in
+            \mathbb{R}\)</span>).</li>
+            </ol>
+            <p>Naslednje štiri lastnosti govorijo o množenju (množici,
+            ki jih izpolnjuje, pravimo <b>Abelova <i>grupa</i></b> za
+            množenje – <span class="math inline">\(\mathbb{R}\)</span> z
+            0, niso, ker 0 nima obratne vrednosti):</p>
+            <ol start="5" type="1">
+            <li>(družilnost) Za vse <span class="math inline">\(x, y, z
+            \in \mathbb{R}\)</span> velja <span class="math inline">\(x
+            \cdot (y \cdot z) = (x \cdot y)
+            \cdot z\)</span>.</li>
+            <li>(zamenljivost) Za vse <span class="math inline">\(x, y
+            \in \mathbb{R}\)</span> velja <span class="math inline">\(x
+            \cdot y = y \cdot x\)</span>.</li>
+            <li>(<i>nevtralni</i> člen) Obstaja takšno število <span
+            class="math inline">\(1 \in \mathbb{R}\)</span>, da za vsak
+            <span class="math inline">\(x
+            \in \mathbb{R}\)</span> velja <span class="math inline">\(x
+            \cdot 1 = 1 \cdot x = x\)</span>.</li>
+            <li>(obratno/recipročno število) Za vsak <span
+            class="math inline">\(x \in \mathbb{R} \setminus
+            \{0\}\)</span> obstaja takšno število <span
+            class="math inline">\(x^{-1} \in \mathbb{R}\)</span>, da
+            velja <span class="math inline">\(x \cdot x^{-1} = x^{-1}
+            \cdot x =
+            1\)</span> (tako lahko opredelimo <i>operacijo</i> deljenja,
+            in sicer s predpisom <span class="math inline">\(y/x =
+            \frac{y}{x} = y \cdot x^{-1} \in \mathbb{R}\)</span>.</li>
+            </ol>
+            <p>Tretja skupina povezuje seštevanje in množenje:</p>
+            <ol start="9" type="1">
+            <li>Velja <span class="math inline">\(1 \neq
+            0\)</span>.</li>
+            <li>(razčlenljivost) Za vse <span class="math inline">\(x,
+            y, z \in \mathbb{R}\)</span> velja <span
+            class="math inline">\(x \cdot (y + z) = (x \cdot y) + (x
+            \cdot z)\)</span>.</li>
+            </ol>
+            <p>Množicam, opremljenim z dvema <i>operacijama</i>, ki
+            zadoščata lastnostim 1–10, pravimo
+            (zamenljivostni/<i>komutativen</i>) <b>obseg</b>
+            <span class="zgled">(npr. še <a
+            href="#Razlozna_stevila">razložna</a> in <a
+            href="#Skupna_stevila">skupna</a> števila)<span>.</p>
+            <p>Četrta skupina se nanaša na <i>pozitivna</i> števila:</p>
+            <ol start="11" type="1">
+            <li>Velja <span class="math inline">\(0 \notin
+            \mathbb{R}^+\)</span>; za poljubno <i>realno</i> število
+            <span class="math inline">\(x \in \mathbb{R}
+            \setminus \{0\}\)</span> pa je bodisi <span
+            class="math inline">\(x \in \mathbb{R}^+\)</span> ali pa $-x
+            ^+, ne pa oboje.</li>
+            <li>Za vsa <i>realna</i> števila <span
+            class="math inline">\(x, y \in \mathbb{R}^+\)</span> velja
+            <span class="math inline">\(x + y \in
+            \mathbb{R}^+\)</span> in <span class="math inline">\(x \cdot
+            y \in \mathbb{R}^+\)</span>.</li>
+            </ol>
+            <p>Množice, za katere veljajo lastnosti 1–12, so t.i.
+            <b>urejeni obsegi</b>.</p>
+            <p>Zadnja lasnost <i>realnih</i> števil se imenuje
+            <b>Dedekindov <i>aksiom</i></b>:</p>
+            <ol start="13" type="1">
+            <li>Vsaka neprazna navzgor omejena podmnožica <i>realnih</i>
+            števil ima najmanjšo zgornjo mejo.</li>
+            </ol>
+            <p><i>Aksiomom</i> 1–13 zadošča, do preimenovanja natančno,
+            le en urejen obseg – obseg <i>relanih</i> števil.</p>
             <h4 id="Skupna_stevila">Skupna števila</h4>
             <p>(<i>kompleksna</i> števila)</p>
             <p>Skupna števila imajo stvarni del (<i>realno
             komponento</i>) <span class="math inline">\(a\)</span> in
             umišljeni del (<i>imaginarno komponento</i>) <span
-            class="math inline">\(b \mathrm{i}\)</span>.</p>
-            <p><span class="math display">\[ \mathbb{C} = \left\{a +
-            b\mathrm{i}; (a, b \in \mathbb{R} ) \land (\mathrm{i}^2 = -1
-            \Leftrightarrow \sqrt{-1} = \sqrt{\mathrm{i^2}})\right\}
-            \]</span> <span class="math display">\[ \mathrm{i} =
-            \sqrt{-1} = \sqrt{-} \]</span> <span class="math display">\[
-            {\lvert z \rvert}^2 = a^2 + b^2 \]</span> <span
-            class="math inline">\(\overline{z}\)</span> je
+            class="math inline">\(b \mathrm{i}\)</span>. Skupna števila
+            so (<i>komutativen</i>) obseg, ne pa tudi urejen obseg.</p>
+            <p><span class="math display">\[ \mathbb{C} = \mathbb{R}
+            \times \mathbb{R} = \{ (a, b); a, b \in \mathbb{R} \}
+            \]</span> <span class="math display">\[ \mathbb{C} =
+            \left\{a + b\mathrm{i}; (a, b \in \mathbb{R} ) \land
+            (\mathrm{i}^2 = -1 \Leftrightarrow \sqrt{-1} =
+            \sqrt{\mathrm{i^2}})\right\} \]</span> <span
+            class="math display">\[ \mathrm{i} = \sqrt{-1} = \sqrt{-} =
+            (0, 1) \]</span></p>
+            <p>Iz tega sledi <i>cikel</i>: <span
+            class="math inline">\(i\)</span>, <span
+            class="math inline">\(i^2 = -1\)</span>, <span
+            class="math inline">\(i^3 = -i\)</span>, <span
+            class="math inline">\(i^4 = i\)</span>.</p>
+            <p><span class="math display">\[ (a, b) + (a&#39;, b&#39;) =
+            (a + a&#39;, b + b&#39;) \]</span> <span
+            class="math display">\[ (a, b) \cdot (a&#39;, b&#39;) =
+            (aa&#39; - bb&#39;, ab&#39; + ba&#39;) \]</span></p>
+            <p><span class="math display">\[ {\lvert z \rvert}^2 = a^2 +
+            b^2 \]</span></p>
+            <p><span class="math inline">\(\overline{z}\)</span> je
             <i>konjugirana</i> vrednost skupnega števila <span
             class="math display">\[ \overline{z} = a - \mathrm{i} b
-            \]</span> <span class="math display">\[ {\lvert z \rvert}^2
-            = z \overline{z} \]</span> <span class="math display">\[
-            \phi = \arctan \left( \frac{b}{a} \right) \]</span></p>
+            \]</span> <span class="math display">\[ z \overline{z} =
+            {\lvert z \rvert}^2 \]</span></p>
+            <p><span class="math display">\[ \phi = \arctan \left(
+            \frac{b}{a} \right) \]</span></p>
             <p><b><i>Polarni</i> zapis</b></p>
             <p><span class="math display">\[ z = \lvert  z \rvert (\cos
             \phi + \mathrm{i} \sin \phi) \]</span></p>
@@ -516,6 +663,29 @@ logika"/>
             \mathrm{e}^{\mathrm{i} \phi} \]</span> <span
             class="math display">\[ \overline{z} = \lvert z \rvert
             \mathrm{e}^{- \mathrm{i} \phi} \]</span></p>
+            Če velja <span class="math inline">\(z = \lvert z \rvert
+            e^{\mathrm{i} \phi}\)</span> in <span
+            class="math inline">\(w = \lvert w \rvert e^{\mathrm{i}
+            \psi}\)</span>, potem:
+            <div class="izpeljava">
+            <p><span class="math display">\[ z w
+                = \lvert z \rvert \mathrm{e}^{\mathrm{i} \phi} \lvert w
+            \rvert
+                    \mathrm{e}^{\mathrm{i} \psi}
+                = \lvert z \rvert \lvert w \rvert (\cos \phi +
+            \mathrm{i} \sin \phi) (\cos
+                    \psi + \mathrm{i} \sin \psi)
+                = \lvert z \rvert \lvert w \rvert (\cos \phi \cos \psi -
+            \sin \phi \sin \psi
+                    + \mathrm{i} \cos \phi \sin \psi + \mathrm{i} \sin
+            \phi \cos \psi)
+                = \lvert z w \rvert (\cos(\phi + \psi) + \mathrm{i}
+            \sin(\phi + \psi))
+                = \lvert z w \rvert \mathrm{e}^{\mathrm{i} (\phi +
+            \psi)} \]</span></p>
+            </div>
+            <p><span class="math display">\[ z w = \lvert z w \rvert
+            \mathrm{e}^{\mathrm{i} (\phi + \psi)}\]</span></p>
             <p>De Moivrova enačba:</p>
             <p><span class="math display">\[ z^n = {\lvert  z \rvert}^n
             (\cos n \phi + \mathrm{i} \sin n \phi) = {\lvert z \rvert}^n

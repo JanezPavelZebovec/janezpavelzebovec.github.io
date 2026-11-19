@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-11-16
+date: 2026-11-18
 description: računska teorija, enačbe
 keywords: računstvo, matematika, algebra, logika
 author: Janez Pavel Žebovec
@@ -75,7 +75,8 @@ Moč takšne potenčne množice, kjer je *n* število elementov v množici, je:
 
 $$ m(\mathcal{P}(A)) = \binom{n}{0} + \binom{n}{1} + \binom{n}{2} + ... + \binom{n}{n} = 2^n $$
 
-**Števnost množic**:
+**Števnost množic**: množica je števna, če lahko njene gradnike razporedimo v
+vrsto, oz. jih naštejemo (četudi jih je neskončno mnogo).
 
 - Množica A je števna, če in samo če obstaja *injektivna funkcija* $A \to
   \mathbb{N}$.
@@ -93,21 +94,52 @@ račun v neki množici nima rešitve (ki jo hočemo v tej množici), ima pa jo v
 drugi množici, vendar nas ta rešitev ne zanima, zato razglasimo, da račun v
 izbrani množici nima rešitve (tako je običajno npr. s koreni negativnih števil).
 
+- zgornja meja množice je vsako število, od katerega so vsa števila v množici
+  manjša
+- spodnja meja množice je vsako število, od katerega so vsa števila v množici
+  večja
+- najmanjša/natančna zgornja meja – *supremum*
+- največja/natančna spodnja meja – *infimum*
+- če je *supremum* v množici, je imenovan tudi največji *element* / *maksimum*
+- če je *infimum* v množici, je imenovan tudi najmanjši *element* / *minimum*
+
 #### Naravna števila
 
-To so (*pozitivna* cela) števila s katerimi (običajno) štejemo (1, 2, 3, 4, 5, 6,
-...).
+To so (*pozitivna* cela) števila s katerimi (običajno) štejemo. Množica je števno neskončna.
+
+$$ \mathbb{N} = \{ 1, 2, 3, 4, 5, 6, ... \} $$
+
+<div class="zakon">
+**Peanovi *aksiomi*** (nabor osnovnih lastnosti [naravnih
+števil](#Naravna_stevila)):
+
+1. 1 je naravno število.
+2. Vsako naravno število $n$ ima svojega natanko določenega naslednika, ki ga
+   označimo z $n^+$.
+3. Različni naravni števili imata različna naslednika.
+4. 1 ni naslednik kakšnega naravnega števila.
+5. Če je $A$ podmnožica množice naravnih števil, če je $1 \in A$ in če za vsak
+   $n \in A$ velja $n^+ \in A$, potem so v množici $A$ vsa naravna števila.
+</div>
 
 #### Cela števila
 
 To so naravna števila, število 0 in nasprotne vrednosti naravnih števil -
-*negativna* cela števila (0, 1, -1, 2, -2, 3, -3, ...)
+*negativna* cela števila (0, 1, -1, 2, -2, 3, -3, ...). Množica je števno
+neskončna.
+
+$$ \mathbb{Z} = - \mathbb{N} \cup \{0\} \cup \mathbb{N} = \{ ..., -2, -1, 0, 1,
+2, ... \} \subset \mathbb{R} $$
 
 #### Razložna števila
 (*racionalna* števila)
 
 To so števila, ki jih lahko izrazimo kot razmerje dveh celih števil, oz.
-predstavimo z ulomki (npr. 0, 1, -1, 1/3, -1/3, ...).
+predstavimo z ulomki (npr. 0, 1, -1, 1/3, -1/3, ...). Množica je števno
+neskončna.
+
+$$ \mathbb{Q} = \{ \frac{k}{n} \in \mathbb{R}; k \in \mathbb{Z}, n \in
+    \mathbb{N} \} \subset \mathbb{R} $$
 
 #### Nerazložna števila
 (*iracionalna* števila)
@@ -119,20 +151,86 @@ predstaviti z ulomki (npr. $\sqrt{2}$, π, e, ...).
 (*realna* števila)
 
 To so števila, ki jih lahko predstavimo na običajni številski premici (npr. 0,
-1, -1, 1/3, -1/3, π, $\sqrt{2}$, ...).
+1, -1, 1/3, -1/3, π, $\sqrt{2}$, ...). MNožica je neštevno neskončna.
+
+**Osnovne lastnosti (*aksiomi*) stvarnih števil**:
+
+Osnovne lastnosti, ki govorijo o seštevanju (množici, ki jih izpolnjuje, pravimo
+**Abelova *grupa*** za seštevanje):
+
+1. (družilnost) Za vse $x, y, z \in \mathbb{R}$ velja $x + (y + z) = (x + y) + z$.
+2. (zamenljivost) Za vse $x, y, \in \mathbb{r}$ velja $ x + y = y + x$.
+3. (*nevtralni* člen) Obstaja takšno število $0 \in \mathbb{R}$, da
+   za vsak $x \in \mathbb{R}$ velja $x + 0 = 0 + x = x$.
+4. (nasprotno število) Za vsak $x \in \mathbb{R}$ obstaja takšno število $-x \in \mathbb{R}$, da
+   velja $x + (-x) = (-x) + x = 0$ (to pomeni, da lahko opredelimo *operacijo*
+   odštevanja in sicer s predpisom $y - x = y + (-x) \in \mathbb{R}$).
+
+Naslednje štiri lastnosti govorijo o množenju (množici, ki jih izpolnjuje,
+pravimo **Abelova *grupa*** za množenje – $\mathbb{R}$ z 0, niso, ker 0 nima
+obratne vrednosti):
+
+5. (družilnost) Za vse $x, y, z \in \mathbb{R}$ velja $x \cdot (y \cdot z) = (x \cdot y)
+   \cdot z$.
+6. (zamenljivost) Za vse $x, y \in \mathbb{R}$ velja $x \cdot y = y \cdot x$.
+7. (*nevtralni* člen) Obstaja takšno število $1 \in \mathbb{R}$, da za vsak $x
+   \in \mathbb{R}$ velja $x \cdot 1 = 1 \cdot x = x$.
+8. (obratno/recipročno število) Za vsak $x \in \mathbb{R} \setminus \{0\}$ obstaja takšno
+   število $x^{-1} \in \mathbb{R}$, da velja $x \cdot x^{-1} = x^{-1} \cdot x =
+   1$ (tako lahko opredelimo *operacijo* deljenja, in sicer s predpisom $y/x =
+   \frac{y}{x} = y \cdot x^{-1} \in \mathbb{R}$.
+
+Tretja skupina povezuje seštevanje in množenje:
+
+9. Velja $1 \neq 0$.
+10. (razčlenljivost) Za vse $x, y, z \in \mathbb{R}$ velja $x \cdot (y + z) = (x \cdot y) + (x
+    \cdot z)$.
+
+Množicam, opremljenim z dvema *operacijama*, ki zadoščata lastnostim 1–10,
+pravimo (zamenljivostni/*komutativen*) **obseg** <span class="zgled">(npr. še
+[razložna](#Razlozna_stevila) in [skupna](#Skupna_stevila)
+števila)<span>.
+
+Četrta skupina se nanaša na *pozitivna* števila:
+
+11. Velja $0 \notin \mathbb{R}^+$; za poljubno *realno* število $x \in \mathbb{R}
+    \setminus \{0\}$ pa je bodisi $x \in \mathbb{R}^+$ ali pa $-x \in
+    \mathbb{R}^+, ne pa oboje.
+12. Za vsa *realna* števila $x, y \in \mathbb{R}^+$ velja $x + y \in
+    \mathbb{R}^+$ in $x \cdot y \in \mathbb{R}^+$.
+
+Množice, za katere veljajo lastnosti 1–12, so t.i. **urejeni obsegi**.
+
+Zadnja lasnost *realnih* števil se imenuje **Dedekindov *aksiom***:
+
+13. Vsaka neprazna navzgor omejena podmnožica *realnih* števil ima najmanjšo
+    zgornjo mejo.
+
+*Aksiomom* 1–13 zadošča, do preimenovanja natančno, le en urejen obseg – obseg
+*relanih* števil.
 
 #### Skupna števila
 (*kompleksna* števila)
 
 Skupna števila imajo stvarni del (*realno komponento*) $a$ in umišljeni del
-(*imaginarno komponento*) $b \mathrm{i}$.
+(*imaginarno komponento*) $b \mathrm{i}$. Skupna števila so (*komutativen*)
+obseg, ne pa tudi urejen obseg.
 
+$$ \mathbb{C} = \mathbb{R} \times \mathbb{R} = \{ (a, b); a, b \in \mathbb{R} \} $$
 $$ \mathbb{C} = \left\{a + b\mathrm{i}; (a, b \in \mathbb{R} ) \land (\mathrm{i}^2 = -1 \Leftrightarrow \sqrt{-1} = \sqrt{\mathrm{i^2}})\right\} $$
-$$ \mathrm{i} = \sqrt{-1} = \sqrt{-} $$
+$$ \mathrm{i} = \sqrt{-1} = \sqrt{-} = (0, 1) $$
+
+Iz tega sledi *cikel*: $i$, $i^2 = -1$, $i^3 = -i$, $i^4 = i$.
+
+$$ (a, b) + (a', b') = (a + a', b + b') $$
+$$ (a, b) \cdot (a', b') = (aa' - bb', ab' + ba') $$
+
 $$ {\lvert z \rvert}^2 = a^2 + b^2 $$
+
 $\overline{z}$ je *konjugirana* vrednost skupnega števila
 $$ \overline{z} = a - \mathrm{i} b $$
-$$ {\lvert z \rvert}^2 = z \overline{z} $$
+$$ z \overline{z} = {\lvert z \rvert}^2 $$
+
 $$ \phi = \arctan \left( \frac{b}{a} \right) $$
 
 ***Polarni* zapis**
@@ -146,6 +244,20 @@ Eulerjev zapis skupnega števila:
 
 $$ z = \lvert z \rvert \mathrm{e}^{\mathrm{i} \phi} $$
 $$ \overline{z} = \lvert z \rvert \mathrm{e}^{- \mathrm{i} \phi} $$
+
+Če velja $z = \lvert z \rvert e^{\mathrm{i} \phi}$ in $w = \lvert w \rvert e^{\mathrm{i} \psi}$, potem:
+<div class="izpeljava">
+$$ z w
+    = \lvert z \rvert \mathrm{e}^{\mathrm{i} \phi} \lvert w \rvert
+        \mathrm{e}^{\mathrm{i} \psi}
+    = \lvert z \rvert \lvert w \rvert (\cos \phi + \mathrm{i} \sin \phi) (\cos
+        \psi + \mathrm{i} \sin \psi)
+    = \lvert z \rvert \lvert w \rvert (\cos \phi \cos \psi - \sin \phi \sin \psi
+        + \mathrm{i} \cos \phi \sin \psi + \mathrm{i} \sin \phi \cos \psi)
+    = \lvert z w \rvert (\cos(\phi + \psi) + \mathrm{i} \sin(\phi + \psi))
+    = \lvert z w \rvert \mathrm{e}^{\mathrm{i} (\phi + \psi)} $$
+</div>
+$$ z w = \lvert z w \rvert \mathrm{e}^{\mathrm{i} (\phi + \psi)}$$
 
 De Moivrova enačba:
 

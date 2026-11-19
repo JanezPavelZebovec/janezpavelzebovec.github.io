@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2026-11-10
+date: 2026-11-18
 description: Priročnik za uporabo Linuxa, posebno skozi terminal
 keywords: Linux, terminal, operacijski sistem
 author: Janez Pavel Žebovec
@@ -344,34 +344,66 @@ i               pokaže podatke o skladbi
 
 ### Git
 
-Npr. za sinhronizacijo z [GitHubom](https://github.com/),
-[Codebergom](https://codeberg.org/), ...
+[Git](https://git-scm.com/) je program za sledenje, upravljanje s spremembami
+datotek. Uporablja se tudi v [Codebergu](https://codeberg.org/),
+[Gitlabu](https://about.gitlab.com/), [GitHubu](https://github.com/) ...
 
-- `git clone URL` - podvoji *repozitorij* na URL-ju na svoj računalnik
-- `git init` - ustvari mapo Gita – od zdaj naprej Git sledi spremembam v tej
-  mapi
-- `git checkout -b main` = `git branch main` + `git checkout main` - ustvari
-  novo vejo z imenom *main* in se nanjo priklopi
-- `git add {datoteke}` - dodaj datoteke v Git pred objavo
-- `git commit` - ustvari objavo
-    - `-m "opomba"` = *message* - opomba/povzetek/sporočilo objave
-- `git remote add origin URL` - opredeli mesto objave (spletni naslov
-  *repozitorija*; to je potrebno le prvič)
-- `git push -u origin main` - poveži *repozitorij* na računalniku in oddaljeni
-  repozitorij (npr. na GitHubu, Codebergu), oz. objavi spremembe (vprašalo te bo
-  za up. ime in geslo)
-    - `-u` = *upstream remote*
-    - `main` - nastavi vejo, na kateri objavljamo (*main* je ime glavne veje)
-- `git status` - preveri stanje Gita - primerja vsebino glede na oddaljeni
-  *repozitorij*
-- `git log` - izpiši zgodovino objav
-- `git pull` - prejme spremebe, narejene na oddaljenem repozitoriju
-- `git remote -v` - izpiše, kateri URL-ji se uporabljajo za `remote`
-- `ssh -T git@github.com` - preveri povezavo prek SSH (prek ključa)
-- `ssh-add ~/.ssh/id_ed25519` - dodaj ključ
-- `ssh-add -l` - preveri ključe, dodane v `agent`
-- `git diff > spremembe.patch` - ustvari datoteko s spremembami (od kdaj – od
-  začetka repozitorija ali od zadnje objave?)
+- `git config --global` ... – uredi *globalne* nastavitve Gita (z zastavico
+  `--global` velja za vsa skladišča, sicer pa privzeto le za *lokalno* –
+  `--local`)
+    - ... `user.name "up. ime"` – uporabniško ime
+    - ... `user.email "el.pošta@domena"` – el. poštni naslov
+    - ... `init.defaultBranch main` – privzeta veja se imenuje *main*
+- `git clone URL` – prenese celotno oddaljeno skladišče na URL-ju z vso
+  zgodovino na svojo napravo (ustvari *lokalen* dvojnik skladišča)
+- `git init` – v trenutni *mapi* ustvari novo skladišče Git in skrito *mapo* **.git**, da lahko začne
+  slediti spremembam v tem skladišču
+- `git status` – preveri stanje Gita – ugotovi, katere datoteke so bile
+  spremenjene, zbrisane, katerim datotekam Git še ne sledi
+- `git add datoteke` – doda izbrane datoteke v Git, zabeleži njihove spremembe
+  za nadaljne ustvarjanje sklopa sprememb z `commit` (`git add .` doda vse v
+  *mapi* – imena *map*/datotek, za katere ne želiš, da sledi njihovim
+  spremembam, dodaj v datoteko **.gitignore**) 
+- `git commit` – ustvari sklop sprememb (*commit*)
+    - ... `-m "opomba"` = *message* - opomba/povzetek sprememb (brez `-m` odpre
+      urejevalnik besedila)
+- `git log` – izpiše zgodovino sklopov sprememb (*commitov*)
+    - ... `--oneline` – izpiše sklope sprememb strnjeno vsakega v svojo vrstico
+- `git diff` – izpiše nezabeležene (pred `add`) spremembe sledenih datotek
+    - ... `--staged` – izpiše že zabeležene spremembe (z `add`), ki še
+      čakajo na svoj sklop sprememb (`commit`)
+    - ... `> spremembe.patch` – spremembe shrani v posebno datoteko
+- `git restore ime_datoteke` – prekliče spremembe izbrane datoteke po zadnjem
+  sklopu sprememb (`commit`; preklic je nepovraten)
+    - `git restore --staged ime_datoteke` – prekliče `add` (datoteko odstrani iz
+      zabeleženih sprememb, vsebine ne spreminja)
+- `git branch` – izpiše vse *lokalne* veje, trenutna je označena z zvezdico (\*)
+    - `git branch -a` – izpiše vse veje, tudi oddaljene
+- `git switch ime_veje` – preklopi na drugo vejo
+- `git checkout -b ime_nove_veje` = `git branch main` + `git checkout main` – ustvari
+  novo vejo in se nanjo priklopi 
+- `git branch -d ime_veje` – izbriše izbrano vejo
+
+Povezovanje z oddaljenim skladiščem:
+
+- `git remote add origin URL` – opredeli mesto oddaljenega skladišča (to je
+  potrebno le prvič)
+- `git push -u origin main` – poveže *lokalno* vejo *main* z vejo *main* v
+  oddaljenem skladišču in objavi *lokalne* spremembe v oddaljeno skladišče
+    - `-u` = `--set-upstream` – nastavi nadrejeno vejo
+    - `main` – nastavi vejo, na kateri objavljamo (*main* je ime glavne veje)
+- `git fetch` – prenese spremembe (nove sklope sprememb) iz oddaljenega
+  skladišča, a jih še ne vključi v *lokalno* vejo
+- `git merge ime_veje` – združi vejo v trenutno
+- `git pull` = `git fetch` + `git merge` – prenese spremembe, narejene v
+  oddaljenem skladišču in združi z *lokalno* vejo
+- `git remote -v` – izpiše, kateri URL-ji se uporabljajo za `remote`
+
+Povezava SSH z oddaljenim strežnikom:
+
+- `ssh -T git@github.com` – preveri overitev s ključem prek SSH
+- `ssh-add ~/.ssh/id_ed25519` – dodaj ključ
+- `ssh-add -l` – preveri ključe, dodane v `ssh-agent`
 
 ## Ključi in gesla
 
@@ -424,6 +456,9 @@ Npr. za sinhronizacijo z [GitHubom](https://github.com/),
 
 - `pass init id_gpg_ključa`
 - `pass git init` – omogoči beleženje zgodovine z GIT-om (izbirno)
+- `git fetch` – prenese spremembe iz oddaljenega imenika, a jih še ne vključi v
+  *lokalno* vejo
+- `git merge ime_veje` – združi vejo v trenutnoGIT-om (izbirno)
 - `pass insert pot/do/ime_gesla` – dodaj geslo na določeno mesto v hierarhiji
   gesel
 - `pass show pot/do/ime_gesla` – izpiše shranjeno geslo
