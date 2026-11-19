@@ -544,6 +544,8 @@ podredijo nemuslimane.
 Združene države Amerike, zahodna Evropa – to je današnja Meka, in Bližnji Vzhod
 – ta je današnja Medina.
 
+### Islam in Sveto pismo
+
 Koran potrjuje resničnost Spisov / Svetega pisma, oz. uporabi izraze:
 
 - *Taurat* – Mojzesove knjige (vseh pet)
@@ -591,6 +593,8 @@ kakor nedoslednosti med Koranom in Spisi razlagajo muslimani.
 >
 <cite>[Koran (sura Yunus) 10:94](https://quran.com/yunus/94)</cite>
 
+### Islam in otroške poroke
+
 Islam dovoljuje otroške poroke (glej tudi statistiko na
 [Girls not Brides](https://www.girlsnotbrides.org/)). Tako npr. pravi koran, ko
 razlaga, da mora tisti, ki se namerava ločiti, upoštevati ženske „čakalne dobe“
@@ -605,7 +609,7 @@ razlaga, da mora tisti, ki se namerava ločiti, upoštevati ženske „čakalne 
 <cite>[Koran 65:4](https://quran.com/at-talaq/4)</cite>
 
 Kot pravijo haditi, se je Mohamed poročil z Ajšo pri njenih šestih letih in pri
-devetih poroko potrdil.
+devetih poroko potrdil (pomeni: imel z njo spolni odnos).
 
 > Ko sem se poročil, mi je Alahov poslanec rekel: „Kakšno žensko si
 > poročil?“ Odgovoril sem: „Poročil sem se z zrelo žensko.“ On je rekel: „Zakaj,
