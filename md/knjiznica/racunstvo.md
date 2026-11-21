@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-11-19
+date: 2026-11-21
 description: računska teorija, enačbe
 keywords: računstvo, matematika, algebra, logika
 author: Janez Pavel Žebovec
@@ -848,14 +848,20 @@ $$ \alpha \vec{v} = (\alpha v_1, \alpha v_2, \alpha v_3) $$
 
 ### *Skalarni produkt*
 
-*Skalarni produkt* $\vec{u} = (u_1, u_2, u_3)$ in $\vec{v} = (v_1, v_2, v_3)$
+*Skalarni produkt vektorjev* $\vec{u} = (u_1, u_2, u_3)$ in $\vec{v} = (v_1, v_2, v_3)$:
+po delih
+
 $$ \vec{u} \cdot \vec{v} = u_1 v_1 + u_2 v_2 + u_3 v_3 \in \mathbb{R} $$
+
 Za kot $\phi$ med *vektorjema* $\vec{u}$ in $\vec{v}$ velja:
+
 $$ \cos \phi = \frac{\vec{u} \cdot \vec{v}}
     { \lvert \vec{u} \rvert \lvert \vec{v} \rvert }
     \\ \implies \vec{u} \cdot \vec{v} =
     \lvert \vec{u} \rvert \lvert \vec{v} \rvert \cos \phi $$
+
 Iz zgornje enačb sledi, da je kot med *vektorjema*:
+
 - oster, če velja $\vec{u} \cdot \vec{v} > 0$
 - top, če velja $\vec{u} \cdot \vec{v} < 0$
 - pravi, če velja $\vec{u} \cdot \vec{v} = 0$
