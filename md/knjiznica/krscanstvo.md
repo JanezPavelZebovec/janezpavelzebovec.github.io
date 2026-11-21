@@ -205,5 +205,7 @@ Amen.
 
 ## Zunanje povezave in viri
 
-- [Biblija.net](https://www.biblija.net/biblija.cgi?Bible=Bible&l=sl)
+- [Biblija.net](https://www.biblija.net/biblija.cgi?Bible=Bible&l=sl) – spletno
+  Sveto pismo [Svetopisemske družbe Slovenije](https://svetopismo.si/)
+- [BozjaBeseda.si](https://bozjabeseda.si/) – spletna Jeruzalemska izdaja Svetega pisma založbe [Družina](https://www.druzina.si/) (sodobnejša oblika)
 - [Matic Brundič: Krščanske ločine Bližnjega vzhoda: njihova geneza in razvoj](https://repozitorij.uni-lj.si/Dokument.php?id=193722) (magistrska naloga)

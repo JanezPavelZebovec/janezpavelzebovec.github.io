@@ -1,16 +1,42 @@
 ---
 title: Umovanje
-date: 2026-11-19
+date: 2026-11-20
 description:
 keywords: razmišljanje
 ---
 
 # Umovanje
 
-<small>(Vse to niso samo moja osebna razmišljanja, oz. do njih večinoma nisem
-prišel sam. Na tej strani je navedenih nekaj sklicev, vendar niso vsi sklici
-taki, s katerimi bi se strinjal, namenjeni so namreč predstavitvi določene
-miselnosti, oz. vrst izjav.)</small>
+<small>(Vse to niso zgolj moja osebna razmišljanja, oz. do njih nisem nujno
+prišel sam. Tudi ne gre toliko za neka poglobljena razmišljanja – zaenkrat,
+upam, da mi uspe stran kaj poglobiti – gre bolj za zbirko *citatov*, misli,
+desjtev, ipd.
+<br>Na tej strani je navedenih nekaj sklicev, vendar niso vsi sklici taki, s
+katerimi bi se strinjal, namenjeni so namreč predstavitvi določene miselnosti,
+oz. vrst izjav.)</small>
+
+## Oblast in gospodarstvo
+
+Ljudstvovladje (*demokracija*) je tista oblika oblasti, ki od doslej
+znanih/izumljenih oblik najbolje deluje za človeško naravo. Zagotovo ni popolna
+(vsaj v obliki, v kakršni jo poznamo) – med drugim je ogromno odvisno od
+zavzetosti ljudstva za skupno dobro, oz. od tega, kako *aktivni* državljani so
+volilci: kako dobro spremljajo dogajanje v državi, kako se pozanimajo o
+voditeljih/*politikih*, med katerimi izbirajo na volitvah, ...  Kraljevina
+(*monarhija*), npr., bi bila veliko učinkovitejša, cenejša, zanesljivejša, a bi
+moral imeti popolnega, ali vsaj precej popolnega kralja, ki bi dobro vedel, kaj
+je najbolje za ljudstvo (po možnosti še bolje).
+
+Podobno velja tudi za *kapitalizem*, kot obliko gospodarstva. Kajti *socializem*
+se sliši še kar lepo (*komunizem*, kot neka skrajnejša oblika slednjega, že
+dosti manj), a le dokler je prostovoljen in se vsi trudijo za skupno dobrobit.
+Kajti npr. v samostanih (vsaj nekaterih redovih) imajo nekakšno vrsto
+*socializma*, a samostanski red si kot posameznik izbereš sam, povsem
+prostovoljno, in se posledično tudi trudiš po najboljših močeh za dobrobit
+kupnosti, poleg tega pa vse skupaj temelji na močnih krščanskih vrednotah, kar
+je za takšno vrsto "gospodarstva" v malem zelo pomembno. Na drugi strani imamo
+veliko primerov *socializma* na državni ravni, ki se nikoli ni dobro izkazal,
+nasprotno, to je eden izmed najbolj poraznih oblik gospodarstva.
 
 ## Znanost
 
@@ -272,11 +298,79 @@ moški. Kar se namreč smatra za *toksično* moškost, ni moškost.
 
 ## Ljubezen
 
+> Ljubezen je potrpežljiva, dobrotljiva je ljubezen, ni nevoščljiva, ljubezen se
+> ne ponaša, se ne napihuje, ni brezobzirna, ne išče svojega, ne da se
+> razdražiti, ne misli hudega. Ne veseli se krivice, veseli pa se resnice.  Vse
+> prenaša, vse veruje, vse upa, vse prestane.
+>
+<cite>[Sveto pismo, 1 Kor 13, 4–7](https://bozjabeseda.si/53?ref=13,4-7)</cite>
+
 Ljubezen ni neka zunanja privlačnost, pač pa odločitev, postaviti nekoga drugega
 pred sabe, h kateri dostikrat (predvsem kar se tiče *romantične* ljubezni) res
 pripomore privlačnost. Ljubezen se ne „zgodi na prvi pogled“, niti drugi ali
 tretji. Pri ljubezni na prvi pogled gre za opaženje privlačnosti, sebično željo po imeti
 nekoga / nekaj.
+
+## Družina
+
+> Gospod Bog je rekel: „Ni dobro človeku samemu biti. Naredil mu bom pomočnico,
+> njemu primerno.“
+>
+<cite>[Sveto pismo, 1 Mz 2, 18](https://bozjabeseda.si/1?ref=2,18)</cite>
+
+Ko Bog pravi, da bo človeku/moškemu naredil pomočnico, oz. „*pomoč, ki mu
+ustreza*“, to ne pomeni služkinje, sužnje, temveč je uporabljena hrebrejska
+beseda *ezer*, ki pomeni močno oporo, zaveznico; ista beseda se v Svetem pismu
+pogosto uporablja za Boga, ki pomaga človeku.
+
+Mož in žena sta enakovredna.
+
+> Iz strahospoštovanja do Kristusa se podrejajte drug drugemu. Žene naj bodo
+> podrejene svojim možem kakor Gospodu, mož je namreč glava ženi, kakor je
+> Kristus glava Cerkvi: on, odrešenik telesa. In kakor je Cerkev podrejena
+> Kristusu, tako naj bodo v vsem žene možem. Možje, ljubíte svoje žene, kakor je
+> Kristus vzljubil Cerkev in dal zanjo sam sebe,da bi jo posvetil, ko jo je
+> očistil s kopeljo vode z besedo,tako da bi sam postavil predse veličastno
+> Cerkev, brez madeža, gube ali česa podobnega, da bo sveta in brezmadežna. Tako
+> so tudi možje dolžni ljubiti svoje žene kot svoja lastna telesa. Kdor ljubi
+> svojo ženo, ljubi sebe. Saj vendar ni nihče nikoli sovražil svojega mesa,
+> temveč ga hrani in neguje, kakor Kristus Cerkev: smo namreč udje njegovega
+> telesa. Zaradi tega bo mož zapustil očeta in mater in se pridružil svoji ženi
+> in bosta oba eno meso. Ta skrivnost je velika; jaz pa pravim: glede Kristusa
+> in glede Cerkve. Zato naj tudi vsak med vami tako ljubi svojo ženo kakor sebe,
+> žena pa naj spoštuje moža.
+>
+<cite>[Sveto pismo, Ef 5, 21–3](https://bozjabeseda.si/56?ref=5,21-33)</cite>
+
+> Prav tako bodite, žene, podrejene svojim možem, da bodo, tudi če kateri niso
+> poslušni besedi, po vêdenju žená brez besede pridobljeni, in bodo uvideli,
+> da je vaše spoštljivo življenje čisto. Vaš okras naj ne bo zunanji, v spletanju
+> las in v nadevanju zlatnine ali nošenju oblek, ampak bodite skriti človek srca
+> v neminljivosti krotkega in umirjenega duha, kar je dragoceno pred Bogom. Tako
+> so se namreč nekoč krasile tudi svete žene, ki so upale v Boga in so bile
+> podrejene svojim možem, kakor je bila Sara poslušna Abrahamu in ga je imenovala
+> gospoda; njene hčere ste postale, če delate dobro in se ne bojite nobene
+> grožnje. Prav tako možje: živite s svojimi ženami razumevajoče, kot s
+> krhkejšimi bitji, in izkazujte jim čast, kot tistim, ki so obenem z vami
+> deležne milosti življenja. Tako ne bo nič oviralo vaših molitev.
+>
+<cite>[Sveto pismo, 1 Pt 3, 1–7](https://bozjabeseda.si/67?ref=3,1-7)</cite>
+
+> Žene, podrejajte se svojim možem, kakor se spodobi v Gospodu. Možje, ljubíte
+> svoje žene in ne bodite osorni do njih.
+>
+<cite>[Sveto pismo, Kol 3, 18–19](https://bozjabeseda.si/58?ref=3,18-19)</cite>
+
+Moška skrb za družino kot glava družine ni pravica, temveč dolžnost, ki jo mora
+opravljati, razen če žena izrazi poseben dar in željo po vodenju, pri čemer
+običajno ne prevzame vodenja v celoti in ne na vseh področjih/ravneh.
+
+Ženska ne sme biti prisiljeno podrejena možu. Mož ne sme izkoriščati svoje moči,
+da si ženo s silo pokori. Pokoritev mora biti prostovoljna. Da je žena pokorna
+možu ne pomeni, da nikoli ne sme nasprotovati možu, da mora slepo izpolnjevati
+njegove ukaze.
+
+Mož in žena morata postavljati potrebe drug drugega pred svoje.
 
 ## Splav 
 
@@ -297,11 +391,10 @@ Prebujenci zagovarjajo stališče
 
 > Moje telo, moja izbira!
 
-To bi torej moralo veljati za vse. Tudi za še nerojene otroke. Da lahko
-opravičijo svoje zagovarjanje splava, morajo torej, da ostanejo dosledni, nujno
-zagovarjati tudi stališče, da nerojeni otroci (vsaj v stopnji zarodka) niso živa
-bitja, ali vsaj niso človeška živa bitja / ljudje. Splav utemeljujejo na različne
-načine:
+To bi moralo veljati za vse. Tudi za še nerojene otroke. Da bi lahko opravičili
+splav, bi torej morali, da ostanejo dosledni, nujno znati zadovoljivo
+utemeljiti, zakaj nerojeni otroci niso človeška živa
+bitja / ljudje s človeškimi pravicami. Splav utemeljujejo na različne načine:
 
 > - Ženska, ki opravi splav, naajpogosteje ne more, ali noče skrbeti za otroka,
 >   zato je bolje narediti splav, kot pa da otrok odrašča v zelo težkih
@@ -317,16 +410,19 @@ načine:
 >   splav ni nasilje.
 > - Nerojen otrok se ničesar ne spomni.
 
-Nerojen otrok ***je*** živo bitje. Vsaj po kriterijih znanosti. To niti ni zares
-predmet razprave in niti nima prave teže pri odločanju o splavu. Ampak ali gre
-za živo ***človeško*** bitje? In dalje: gre za ***osebo***? Katere
-pogoje mora izpolnjevati živo bitje, da se mu prizna človekove pravice? Kaj
-človeškemu bitju daje svojo vrednost?
+Nerojen otrok je **živo človeško bitje**. Vsaj znanost tako pravi (in levičarji
+imajo običajno radi znanost, vsaj dokler podpira njihovo miselnost). To niti ne
+more biti zares predmet razprave in pogosto ni zadosten *argument* pri odločanju
+o splavu. Dosti težje vprašanje je, ali gre za **osebo**? Oziroma, katere pogoje
+mora izpolnjevati živo bitje, da se mu prizna človekove pravice? Kaj človeškemu
+bitju daje svojo vrednost? Je to osebnost/zavest, ali je človeško življenje samo
+po sebi zadosti? Sam sem zagotovo mnenja, da je človeško življenje samo po sebi
+neprecenljivo.
 
 Najbolj bedna izjava je, da nerojeni otrok postane živi človek z rojstvom.
 Ker če je nedonošenček živ človek in se v ničemer, razen tega, da rojen,
 ne razlikuje od nerojenega otroka v isti stopnji razvoja, potem ta trditev nima
-nobene podlage.
+nobene dobre podlage.
 
 Krščanstvo uči, da je vsako človeško življenje neprecenljivo. Tu ni razlikovanja
 v velikosti, številu celic, umski razvitosti, odvisnosti za preživetje,
@@ -508,9 +604,9 @@ ali sovraštvo do drugih narodov.
 
 ## Islam
 
-Obstajata nekako dve strani/različici islama – t.i. Mekin in Medinin. Prvi pravi
-„ti imaš svojo vero in jaz imam svojo“, spodbuja sožitje med verstvi, strpnost,
-koran je prizanesljiv do drugih verstev.
+Obstajata nekako dve plati islama – ena, ki bi ji lahko rekli *Mekina* in druga
+*Medinina*. Prva pravi „ti imaš svojo vero in jaz imam svojo“, spodbuja sožitje
+med verstvi, strpnost, koran je prizanesljiv do drugih verstev.
 
 > Alah vam ne prepoveduje, da bi se prijazno in pravično obnašali do tistih, ki
 > se niso borili proti vam niti vas niso izgnali iz vaših domov. Resnično, Alah
@@ -518,8 +614,7 @@ koran je prizanesljiv do drugih verstev.
 >
 <cite>[Koran 60:8](https://quran.com/al-mumtahanah/8)</cite>
 
-In potem
-je različica islama s konca Korana, ko je imel Mohamed že precej svojih
+In potem je drug plat islama s konca Korana, ko je imel Mohamed že precej svojih
 pripadnikov, je imel moč. Tam koran naroča:
 
 > Bojujte se proti tistim, ki ne verujejo v Alaha in v zadnji dan, ne upoštevajo

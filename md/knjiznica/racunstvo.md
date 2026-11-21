@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-11-18
+date: 2026-11-19
 description: računska teorija, enačbe
 keywords: računstvo, matematika, algebra, logika
 author: Janez Pavel Žebovec
@@ -87,7 +87,7 @@ vrsto, oz. jih naštejemo (četudi jih je neskončno mnogo).
 
 ### Množice števil
 
-$$ \href{#Naravna_stevila}{\mathbb{N}} < \href{#Cela_stevila}{\mathbb{Z}} < \href{#Razlozna_stevila}{\mathbb{Q}} < \href{#Stvarna_stevila}{\mathbb{R}} < \href{#Skupna_stevila}{\mathbb{C}} $$
+$$ \href{#Naravna_stevila}{\mathbb{N}} < \href{#Cela_stevila}{\mathbb{Z}} < \href{#Razlozna_stevila}{\mathbb{Q}} < \href{#Stvarna_stevila}{\mathbb{R}} < \href{#Dvojna_stevila}{\mathbb{C}} $$
 
 Računamo lahko v različnih množicah števil - to je stvar izbire. Tako lahko
 račun v neki množici nima rešitve (ki jo hočemo v tej množici), ima pa jo v neki
@@ -110,8 +110,7 @@ To so (*pozitivna* cela) števila s katerimi (običajno) štejemo. Množica je �
 $$ \mathbb{N} = \{ 1, 2, 3, 4, 5, 6, ... \} $$
 
 <div class="zakon">
-**Peanovi *aksiomi*** (nabor osnovnih lastnosti [naravnih
-števil](#Naravna_stevila)):
+**Peanovi *aksiomi*** (nabor osnovnih lastnosti naravnih števil):
 
 1. 1 je naravno število.
 2. Vsako naravno število $n$ ima svojega natanko določenega naslednika, ki ga
@@ -151,7 +150,7 @@ predstaviti z ulomki (npr. $\sqrt{2}$, π, e, ...).
 (*realna* števila)
 
 To so števila, ki jih lahko predstavimo na običajni številski premici (npr. 0,
-1, -1, 1/3, -1/3, π, $\sqrt{2}$, ...). MNožica je neštevno neskončna.
+1, -1, 1/3, -1/3, π, $\sqrt{2}$, ...). Množica je neštevno neskončna.
 
 **Osnovne lastnosti (*aksiomi*) stvarnih števil**:
 
@@ -188,7 +187,7 @@ Tretja skupina povezuje seštevanje in množenje:
 
 Množicam, opremljenim z dvema *operacijama*, ki zadoščata lastnostim 1–10,
 pravimo (zamenljivostni/*komutativen*) **obseg** <span class="zgled">(npr. še
-[razložna](#Razlozna_stevila) in [skupna](#Skupna_stevila)
+[razložna](#Razlozna_stevila) in [dvojna](#Dvojna_stevila)
 števila)<span>.
 
 Četrta skupina se nanaša na *pozitivna* števila:
@@ -209,11 +208,11 @@ Zadnja lasnost *realnih* števil se imenuje **Dedekindov *aksiom***:
 *Aksiomom* 1–13 zadošča, do preimenovanja natančno, le en urejen obseg – obseg
 *relanih* števil.
 
-#### Skupna števila
+#### Dvojna števila
 (*kompleksna* števila)
 
-Skupna števila imajo stvarni del (*realno komponento*) $a$ in umišljeni del
-(*imaginarno komponento*) $b \mathrm{i}$. Skupna števila so (*komutativen*)
+Dvojna števila imajo stvarni del (*realno komponento*) $a$ in umišljeni del
+(*imaginarno komponento*) $b \mathrm{i}$. Dvojna števila so (*komutativen*)
 obseg, ne pa tudi urejen obseg.
 
 $$ \mathbb{C} = \mathbb{R} \times \mathbb{R} = \{ (a, b); a, b \in \mathbb{R} \} $$
@@ -227,7 +226,7 @@ $$ (a, b) \cdot (a', b') = (aa' - bb', ab' + ba') $$
 
 $$ {\lvert z \rvert}^2 = a^2 + b^2 $$
 
-$\overline{z}$ je *konjugirana* vrednost skupnega števila
+$\overline{z}$ je *konjugirana* vrednost dvojnega števila
 $$ \overline{z} = a - \mathrm{i} b $$
 $$ z \overline{z} = {\lvert z \rvert}^2 $$
 
@@ -240,7 +239,7 @@ $$ z = \lvert  z \rvert (\cos \phi + \mathrm{i} \sin \phi) $$
 Eulerjeva enačba:
 $$ \mathrm{e}^{\mathrm{i} \phi} = \cos(\phi) + \mathrm{i} \sin(\phi) $$
 
-Eulerjev zapis skupnega števila:
+Eulerjev zapis dvojnega števila:
 
 $$ z = \lvert z \rvert \mathrm{e}^{\mathrm{i} \phi} $$
 $$ \overline{z} = \lvert z \rvert \mathrm{e}^{- \mathrm{i} \phi} $$
@@ -250,18 +249,34 @@ $$ \overline{z} = \lvert z \rvert \mathrm{e}^{- \mathrm{i} \phi} $$
 $$ z w
     = \lvert z \rvert \mathrm{e}^{\mathrm{i} \phi} \lvert w \rvert
         \mathrm{e}^{\mathrm{i} \psi}
-    = \lvert z \rvert \lvert w \rvert (\cos \phi + \mathrm{i} \sin \phi) (\cos
+    \\ = \lvert z \rvert \lvert w \rvert (\cos \phi + \mathrm{i} \sin \phi) (\cos
         \psi + \mathrm{i} \sin \psi)
-    = \lvert z \rvert \lvert w \rvert (\cos \phi \cos \psi - \sin \phi \sin \psi
+    \\ = \lvert z \rvert \lvert w \rvert (\cos \phi \cos \psi - \sin \phi \sin \psi
         + \mathrm{i} \cos \phi \sin \psi + \mathrm{i} \sin \phi \cos \psi)
-    = \lvert z w \rvert (\cos(\phi + \psi) + \mathrm{i} \sin(\phi + \psi))
-    = \lvert z w \rvert \mathrm{e}^{\mathrm{i} (\phi + \psi)} $$
+    \\ = \lvert z w \rvert (\cos(\phi + \psi) + \mathrm{i} \sin(\phi + \psi))
+    \\ = \lvert z w \rvert \mathrm{e}^{\mathrm{i} (\phi + \psi)} $$
 </div>
 $$ z w = \lvert z w \rvert \mathrm{e}^{\mathrm{i} (\phi + \psi)}$$
 
 De Moivrova enačba:
 
-$$ z^n = {\lvert  z \rvert}^n (\cos n \phi + \mathrm{i} \sin n \phi) = {\lvert z \rvert}^n \mathrm{e}^{\mathrm{i} n \phi} $$
+$$ z^n = {\lvert  z \rvert}^n (\cos n \phi + \mathrm{i} \sin n \phi)
+    = {\lvert z \rvert}^n \mathrm{e}^{\mathrm{i} n \phi} $$
+
+**Koreni dvojnih števil**:
+
+<div class="izpeljava">
+$$ \lvert z \rvert ^n \mathrm{e}^{\mathrm{i} n \phi}
+    = \lvert w \rvert \mathrm{e}^{\mathrm{i} \psi}
+    \\ \implies \lvert z \rvert = \sqrt[n]{\lvert w \rvert},
+    \phi = \frac{\psi}{n} + \frac{2 k \pi}{n}
+    \\ \implies z_k = \sqrt[n]{\lvert w \rvert} \mathrm{e}^{\mathrm{i}
+    (\psi / n + 2 k \pi / n)}, k \in \{ 0, 1, 2, 3, ..., n - 1 \} $$
+</div>
+
+$n$-ti koren neničelnega dvojnega števila ima torej natanko $n$ rešitev, ki jim
+pravimo $n$-ti koreni dvojnega števila; ti v ravnini dvojnih števil tvorijo
+oglišča navideznega pravilnega $n$-kotnika s središčem v izhodišču.
 
 ## Računske *operacije*
 
@@ -814,21 +829,90 @@ $$ V = \frac {4 \pi r^3}{3} $$
 
 ## *Vektorji*
 
-$\vec{i}$, $\vec{j}$ in $\vec{k}$ so *bazni vektorji*, tvorijo *bazo koordinatnega* prostora, morajo biti *linerano* neodvisni (enega ne moremo izraziti z ostalimi), večinoma pravokotni drug na drugega.
-$$\vec{a} = (a_1, a_2, a_3) = a_1 \vec{i} + a_2 \vec{j} + a_3 \vec{k} $$
+*Bazni vektorji* v
+$\mathbb{R}^3$ tvorijo *bazo koordinatnega* prostora, morajo biti *linerano*
+neodvisni (enega ne moremo izraziti z ostalimi). Običajno se jih označeni z $\vec{i}$, $\vec{j}$ in $\vec{k}$ in
+običajno se uporablja t.i. *standardna baza*, kjer so pravokotni drug na
+drugega:
+$$ \vec{i} = (1, 0, 0), \vec{j} = (0, 1, 0), \vec{k} = (0, 0, 1) $$
 
-- seštevanje/odštevanje: po *komponentah*
-- množenje:
-$$ \vec{a} \cdot \vec{b} = |\vec{a}| \cdot |\vec{b}| \cdot cos \phi = a_1 \cdot b_1 + a_2 \cdot b_2 +  a_3 \cdot b_3 $$
-    - množenje/deljenje s *skalarjem*: po *komponentah*
-- *absolutna* vrednost / dolžina:
-$$ |\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2} $$
-- *Vektorski produkt* prestavlja ploščino paralelograma, ki ga zmnožena
-  *vektorja* oklepata. Smer zmnožka je odvisna od zaporedja množenja in pri tem
-  velja desno pravilo (tudi "pravilo desnega vijaka, ki pomeni, da če prvi
-  *vektor* zasučemo okoli skupnega izhodišča proti drugemu *vektorju*, se vijak
-  zavrti v smer *vektorja* zmnožka).
-$$ \vec{a} \times \vec{b} = \mathrm{det} \left( \begin{bmatrix}a_1 & b_1\\a_2 & b_2\\a_3 & b_3\end{bmatrix} \right) $$
+$$\vec{a} = (a_1, a_2, a_3)
+    = \begin{bmatrix} a_1 \\ a_2 \\ a_3 \end{bmatrix}
+    = a_1 \vec{i} + a_2 \vec{j} + a_3 \vec{k} $$
+
+Seštevanje/odštevanje *vektorjev*: po delih (*komponentah*)
+$$ \vec{u} + \vec{v} = (u_1 + v_1, u_2 + v_2, u_3 + v_3) $$
+
+Množenje/deljenje *vektorjev* s *skalarjem*: po delih
+$$ \alpha \vec{v} = (\alpha v_1, \alpha v_2, \alpha v_3) $$
+
+### *Skalarni produkt*
+
+*Skalarni produkt* $\vec{u} = (u_1, u_2, u_3)$ in $\vec{v} = (v_1, v_2, v_3)$
+$$ \vec{u} \cdot \vec{v} = u_1 v_1 + u_2 v_2 + u_3 v_3 \in \mathbb{R} $$
+Za kot $\phi$ med *vektorjema* $\vec{u}$ in $\vec{v}$ velja:
+$$ \cos \phi = \frac{\vec{u} \cdot \vec{v}}
+    { \lvert \vec{u} \rvert \lvert \vec{v} \rvert }
+    \\ \implies \vec{u} \cdot \vec{v} =
+    \lvert \vec{u} \rvert \lvert \vec{v} \rvert \cos \phi $$
+Iz zgornje enačb sledi, da je kot med *vektorjema*:
+- oster, če velja $\vec{u} \cdot \vec{v} > 0$
+- top, če velja $\vec{u} \cdot \vec{v} < 0$
+- pravi, če velja $\vec{u} \cdot \vec{v} = 0$
+
+***Absolutna* vrednost / dolžina**:
+$$ \lvert v \rvert = \sqrt{\vec{v} \cdot \vec{v}}
+    = \sqrt{v_1^2 + v_2^2 + v_3^2} \in \mathbb{R} $$
+
+### *Vektorski produkt*
+
+*Vektorski produkt* prestavlja ploščino paralelograma, ki ga zmnožena
+*vektorja* oklepata. Smer zmnožka je odvisna od zaporedja množenja in pri tem
+velja desno pravilo (tudi "pravilo desnega vijaka, ki pomeni, da če prvi
+*vektor* zasučemo okoli skupnega izhodišča proti drugemu *vektorju*, se vijak
+zavrti v smer *vektorja* zmnožka).
+
+$$ \vec{a} \times \vec{b}
+    = \mathrm{det} \left( \begin{bmatrix}a_1 & b_1\\a_2 & b_2\\a_3 & b_3\end{bmatrix} \right)
+    \\ = \begin{vmatrix} \vec{i} & \vec{j} & \vec{k} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix}
+    = \begin{vmatrix} a_2 & a_3 \\ b_2 & b_3 \end{vmatrix} \vec{i} -
+    \begin{vmatrix} a_1 & a_3 \\ b_1 & b_3 \end{vmatrix} \vec{j} +
+    \begin{vmatrix} a_1 & a_2 \\ b_1 & b_2 \end{vmatrix} \vec{k}
+    \\ = a_2 b_3 \vec{i} + a_3 b_1 \vec{j} + a_1 b_2 \vec{k} - a_3 b_2 \vec{i} - a_1 b_3 \vec{j} - a_2 b_1 \vec{k}
+    = (a_2 b_3 - a_3 b_2) \vec{i} + (a_3 b_1 - a_1 b_3) \vec{j} + (a_1 b_2 - a_2 b_1) \vec{k} $$
+
+Za *bazne vektorje* velja
+$$ \vec{i} \times \vec{j} = \vec{k}
+    \\ \vec{j} \times \vec{k} = \vec{i}
+    \\ \vec{k} \times \vec{i} = \vec{j} $$
+torej da je *vektorski pridukt* dveh *baznih vektorjev* tretji *bazni
+vektor*. Ampak morata biti v pravem vrstnem redu ($i$, $j$, $k$, $i$, $j$,
+...) – velja namreč pravilo desnega vijaka:
+$$ \vec{i} \times \vec{k} = -\vec{j} $$
+
+Lastnosti računanja z *vektorskim produktom*:
+
+- $\vec{v} \times \vec{v} = \vec{0}$
+- (*antikomutativnost*) $\vec{u} \times \vec{v} = -(\vec{v} \times \vec{u})$
+- (razčlenljivost) $\vec{u} \times (\vec{v} + \vec{w})
+    = \vec{u} \times \vec{v} + \vec{u} \times \vec{w}$
+- (razčlenljivost) ($\vec{u} + \vec{v}) \times \vec{w}
+    = \vec{u} \times \vec{w} + \vec{v} \times \vec{w}$
+- (*homogenost*) $\alpha (\vec{u} \times \vec{v}) = (\alpha \vec{u}) \times \vec{v}
+    = \vec{u} \times (\alpha \vec{v})$
+- $\vec{u} \cdot (\vec{u} \times \vec{v})
+    = \vec{v} \cdot (\vec{u} \times \vec{v}) = 0$
+- $\vec{u} \cdot (\vec{v} \times \vec{w})
+    = (\vec{u} \times \vec{v}) \cdot \vec{w}$
+- (nedružilnost / *neasociativnost*) $\vec{u} \times (\vec{v} \times \vec{w})
+    = (\vec{u} \cdot \vec{w}) \vec{v} - (\vec{u} \cdot \vec{v}) \vec{w}$
+- (Jacobijeva *identiteta*)
+    $\vec{u} \times (\vec{v} \times \vec{w})
+        + \vec{v} \times (\vec{w} \times \vec{u}) 
+        + \vec{w} \times (\vec{u} \times \vec{v}) = \vec{0}$
+- za neničelna *vektorja*:
+    $\lvert \vec {u} \times \vec{v} \rvert
+        = \lvert \vec{u} \rvert \lvert \vec{v} \rvert \sin \phi$
 
 ### *Vektorski* prostori
 

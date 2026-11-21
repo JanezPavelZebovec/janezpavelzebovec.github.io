@@ -295,7 +295,8 @@ obstoječe, z zgolj dodanim/prirejenim pomenom, druge so tvorjene nanovo):
 - **síto** <small>(/2026-02-18)</small> < *filter*
 - **snôvoslôvje** <small>(/2025-06-30)</small> < *kemija*
 - **sprejémnik zvóka** <small>(/2025-06-30)</small> (**zvókosprejémnik**
-  <small>(/2025-06-30)</small>) < *mikrofon*
+  <small>(/2025-06-30)</small>, **zvokosprêjm** <small>(2026-11-19)</small>) <
+  *mikrofon*
 - **tresávec** <small>(/2025-06-30)</small> < *vibrant*
 - **ukáznik** (kot sklop ukazov) <small>(2026-08-16)</small> < (računalniški) *program*
 - **večsvétje** <small>(2026-10-19)</small> / **mnogosvétje**

@@ -37,7 +37,7 @@ logika"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/racunstvo/">racunstvo</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-11-18">2026-11-18</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-11-19">2026-11-19</time></p>
     </header>
     <nav>
         <ul>
@@ -59,7 +59,7 @@ logika"/>
         id="toc-Nerazlozna_stevila">Nerazložna števila</a></li>
         <li><a href="#Stvarna_stevila" id="toc-Stvarna_stevila">Stvarna
         števila</a></li>
-        <li><a href="#Skupna_stevila" id="toc-Skupna_stevila">Skupna
+        <li><a href="#Dvojna_stevila" id="toc-Dvojna_stevila">Dvojna
         števila</a></li>
         </ul></li>
         </ul></li>
@@ -155,6 +155,10 @@ logika"/>
         </ul></li>
         <li><a href="#Vektorji" id="toc-Vektorji"><i>Vektorji</i></a>
         <ul>
+        <li><a href="#Skalarni_produkt"
+        id="toc-Skalarni_produkt"><i>Skalarni produkt</i></a></li>
+        <li><a href="#Vektorski_produkt"
+        id="toc-Vektorski_produkt"><i>Vektorski produkt</i></a></li>
         <li><a href="#Vektorski_prostori"
         id="toc-Vektorski_prostori"><i>Vektorski</i> prostori</a></li>
         </ul></li>
@@ -460,7 +464,7 @@ logika"/>
             \href{#Cela_stevila}{\mathbb{Z}} &lt;
             \href{#Razlozna_stevila}{\mathbb{Q}} &lt;
             \href{#Stvarna_stevila}{\mathbb{R}} &lt;
-            \href{#Skupna_stevila}{\mathbb{C}} \]</span></p>
+            \href{#Dvojna_stevila}{\mathbb{C}} \]</span></p>
             <p>Računamo lahko v različnih množicah števil - to je stvar
             izbire. Tako lahko račun v neki množici nima rešitve (ki jo
             hočemo v tej množici), ima pa jo v neki drugi množici,
@@ -486,7 +490,7 @@ logika"/>
             5, 6, ... \} \]</span></p>
             <div class="zakon">
             <p><b>Peanovi <i>aksiomi</i></b> (nabor osnovnih lastnosti
-            <a href="#Naravna_stevila">naravnih števil</a>):</p>
+            naravnih števil):</p>
             <ol type="1">
             <li>1 je naravno število.</li>
             <li>Vsako naravno število <span
@@ -527,7 +531,7 @@ logika"/>
             <p>(<i>realna</i> števila)</p>
             <p>To so števila, ki jih lahko predstavimo na običajni
             številski premici (npr. 0, 1, -1, 1/3, -1/3, π, <span
-            class="math inline">\(\sqrt{2}\)</span>, …). MNožica je
+            class="math inline">\(\sqrt{2}\)</span>, …). Množica je
             neštevno neskončna.</p>
             <p><b>Osnovne lastnosti (<i>aksiomi</i>) stvarnih
             števil</b>:</p>
@@ -594,7 +598,7 @@ logika"/>
             (zamenljivostni/<i>komutativen</i>) <b>obseg</b>
             <span class="zgled">(npr. še <a
             href="#Razlozna_stevila">razložna</a> in <a
-            href="#Skupna_stevila">skupna</a> števila)<span>.</p>
+            href="#Dvojna_stevila">dvojna</a> števila)<span>.</p>
             <p>Četrta skupina se nanaša na <i>pozitivna</i> števila:</p>
             <ol start="11" type="1">
             <li>Velja <span class="math inline">\(0 \notin
@@ -619,12 +623,12 @@ logika"/>
             </ol>
             <p><i>Aksiomom</i> 1–13 zadošča, do preimenovanja natančno,
             le en urejen obseg – obseg <i>relanih</i> števil.</p>
-            <h4 id="Skupna_stevila">Skupna števila</h4>
+            <h4 id="Dvojna_stevila">Dvojna števila</h4>
             <p>(<i>kompleksna</i> števila)</p>
-            <p>Skupna števila imajo stvarni del (<i>realno
+            <p>Dvojna števila imajo stvarni del (<i>realno
             komponento</i>) <span class="math inline">\(a\)</span> in
             umišljeni del (<i>imaginarno komponento</i>) <span
-            class="math inline">\(b \mathrm{i}\)</span>. Skupna števila
+            class="math inline">\(b \mathrm{i}\)</span>. Dvojna števila
             so (<i>komutativen</i>) obseg, ne pa tudi urejen obseg.</p>
             <p><span class="math display">\[ \mathbb{C} = \mathbb{R}
             \times \mathbb{R} = \{ (a, b); a, b \in \mathbb{R} \}
@@ -646,7 +650,7 @@ logika"/>
             <p><span class="math display">\[ {\lvert z \rvert}^2 = a^2 +
             b^2 \]</span></p>
             <p><span class="math inline">\(\overline{z}\)</span> je
-            <i>konjugirana</i> vrednost skupnega števila <span
+            <i>konjugirana</i> vrednost dvojnega števila <span
             class="math display">\[ \overline{z} = a - \mathrm{i} b
             \]</span> <span class="math display">\[ z \overline{z} =
             {\lvert z \rvert}^2 \]</span></p>
@@ -658,7 +662,7 @@ logika"/>
             <p>Eulerjeva enačba: <span class="math display">\[
             \mathrm{e}^{\mathrm{i} \phi} = \cos(\phi) + \mathrm{i}
             \sin(\phi) \]</span></p>
-            <p>Eulerjev zapis skupnega števila:</p>
+            <p>Eulerjev zapis dvojnega števila:</p>
             <p><span class="math display">\[ z = \lvert z \rvert
             \mathrm{e}^{\mathrm{i} \phi} \]</span> <span
             class="math display">\[ \overline{z} = \lvert z \rvert
@@ -672,24 +676,45 @@ logika"/>
                 = \lvert z \rvert \mathrm{e}^{\mathrm{i} \phi} \lvert w
             \rvert
                     \mathrm{e}^{\mathrm{i} \psi}
-                = \lvert z \rvert \lvert w \rvert (\cos \phi +
+                \\ = \lvert z \rvert \lvert w \rvert (\cos \phi +
             \mathrm{i} \sin \phi) (\cos
                     \psi + \mathrm{i} \sin \psi)
-                = \lvert z \rvert \lvert w \rvert (\cos \phi \cos \psi -
-            \sin \phi \sin \psi
+                \\ = \lvert z \rvert \lvert w \rvert (\cos \phi \cos
+            \psi - \sin \phi \sin \psi
                     + \mathrm{i} \cos \phi \sin \psi + \mathrm{i} \sin
             \phi \cos \psi)
-                = \lvert z w \rvert (\cos(\phi + \psi) + \mathrm{i}
+                \\ = \lvert z w \rvert (\cos(\phi + \psi) + \mathrm{i}
             \sin(\phi + \psi))
-                = \lvert z w \rvert \mathrm{e}^{\mathrm{i} (\phi +
+                \\ = \lvert z w \rvert \mathrm{e}^{\mathrm{i} (\phi +
             \psi)} \]</span></p>
             </div>
             <p><span class="math display">\[ z w = \lvert z w \rvert
             \mathrm{e}^{\mathrm{i} (\phi + \psi)}\]</span></p>
             <p>De Moivrova enačba:</p>
             <p><span class="math display">\[ z^n = {\lvert  z \rvert}^n
-            (\cos n \phi + \mathrm{i} \sin n \phi) = {\lvert z \rvert}^n
-            \mathrm{e}^{\mathrm{i} n \phi} \]</span></p>
+            (\cos n \phi + \mathrm{i} \sin n \phi)
+                = {\lvert z \rvert}^n \mathrm{e}^{\mathrm{i} n \phi}
+            \]</span></p>
+            <p><b>Koreni dvojnih števil</b>:</p>
+            <div class="izpeljava">
+            <p><span class="math display">\[ \lvert z \rvert ^n
+            \mathrm{e}^{\mathrm{i} n \phi}
+                = \lvert w \rvert \mathrm{e}^{\mathrm{i} \psi}
+                \\ \implies \lvert z \rvert = \sqrt[n]{\lvert w \rvert},
+                \phi = \frac{\psi}{n} + \frac{2 k \pi}{n}
+                \\ \implies z_k = \sqrt[n]{\lvert w \rvert}
+            \mathrm{e}^{\mathrm{i}
+                (\psi / n + 2 k \pi / n)}, k \in \{ 0, 1, 2, 3, ..., n -
+            1 \} \]</span></p>
+            </div>
+            <p><span class="math inline">\(n\)</span>-ti koren
+            neničelnega dvojnega števila ima torej natanko <span
+            class="math inline">\(n\)</span> rešitev, ki jim pravimo
+            <span class="math inline">\(n\)</span>-ti koreni dvojnega
+            števila; ti v ravnini dvojnih števil tvorijo oglišča
+            navideznega pravilnega <span
+            class="math inline">\(n\)</span>-kotnika s središčem v
+            izhodišču.</p>
             <h2 id="Racunske_operacije">Računske <i>operacije</i></h2>
             <p><i>Operacije</i> imajo lahko sledeče lastnosti:</p>
             <ul>
@@ -1612,36 +1637,128 @@ logika"/>
             \pi r^2 \]</span> <span class="math display">\[ V = \frac {4
             \pi r^3}{3} \]</span></p>
             <h2 id="Vektorji"><i>Vektorji</i></h2>
-            <p><span class="math inline">\(\vec{i}\)</span>, <span
-            class="math inline">\(\vec{j}\)</span> in <span
-            class="math inline">\(\vec{k}\)</span> so <i>bazni
-            vektorji</i>, tvorijo <i>bazo koordinatnega</i> prostora,
-            morajo biti <i>linerano</i> neodvisni (enega ne moremo
-            izraziti z ostalimi), večinoma pravokotni drug na drugega.
-            <span class="math display">\[\vec{a} = (a_1, a_2, a_3) = a_1
-            \vec{i} + a_2 \vec{j} + a_3 \vec{k} \]</span></p>
-            <ul>
-            <li>seštevanje/odštevanje: po <i>komponentah</i></li>
-            <li>množenje: <span class="math display">\[ \vec{a} \cdot
-            \vec{b} = |\vec{a}| \cdot |\vec{b}| \cdot cos \phi = a_1
-            \cdot b_1 + a_2 \cdot b_2 +  a_3 \cdot b_3 \]</span>
-            <ul>
-            <li>množenje/deljenje s <i>skalarjem</i>: po
-            <i>komponentah</i></li>
-            </ul></li>
-            <li><i>absolutna</i> vrednost / dolžina: <span
-            class="math display">\[ |\vec{a}| = \sqrt{a_1^2 + a_2^2 +
-            a_3^2} \]</span></li>
-            <li><i>Vektorski produkt</i> prestavlja ploščino
+            <p><i>Bazni vektorji</i> v <span
+            class="math inline">\(\mathbb{R}^3\)</span> tvorijo <i>bazo
+            koordinatnega</i> prostora, morajo biti <i>linerano</i>
+            neodvisni (enega ne moremo izraziti z ostalimi). Običajno se
+            jih označeni z <span class="math inline">\(\vec{i}\)</span>,
+            <span class="math inline">\(\vec{j}\)</span> in <span
+            class="math inline">\(\vec{k}\)</span> in običajno se
+            uporablja t.i. <i>standardna baza</i>, kjer so pravokotni
+            drug na drugega: <span class="math display">\[ \vec{i} = (1,
+            0, 0), \vec{j} = (0, 1, 0), \vec{k} = (0, 0, 1)
+            \]</span></p>
+            <p><span class="math display">\[\vec{a} = (a_1, a_2, a_3)
+                = \begin{bmatrix} a_1 \\ a_2 \\ a_3 \end{bmatrix}
+                = a_1 \vec{i} + a_2 \vec{j} + a_3 \vec{k} \]</span></p>
+            <p>Seštevanje/odštevanje <i>vektorjev</i>: po delih
+            (<i>komponentah</i>) <span class="math display">\[ \vec{u} +
+            \vec{v} = (u_1 + v_1, u_2 + v_2, u_3 + v_3) \]</span></p>
+            <p>Množenje/deljenje <i>vektorjev</i> s <i>skalarjem</i>: po
+            delih <span class="math display">\[ \alpha \vec{v} = (\alpha
+            v_1, \alpha v_2, \alpha v_3) \]</span></p>
+            <h3 id="Skalarni_produkt"><i>Skalarni produkt</i></h3>
+            <p><i>Skalarni produkt</i> <span
+            class="math inline">\(\vec{u} = (u_1, u_2, u_3)\)</span> in
+            <span class="math inline">\(\vec{v} = (v_1, v_2,
+            v_3)\)</span> <span class="math display">\[ \vec{u} \cdot
+            \vec{v} = u_1 v_1 + u_2 v_2 + u_3 v_3 \in \mathbb{R}
+            \]</span> Za kot <span class="math inline">\(\phi\)</span>
+            med <i>vektorjema</i> <span
+            class="math inline">\(\vec{u}\)</span> in <span
+            class="math inline">\(\vec{v}\)</span> velja: <span
+            class="math display">\[ \cos \phi = \frac{\vec{u} \cdot
+            \vec{v}}
+                { \lvert \vec{u} \rvert \lvert \vec{v} \rvert }
+                \\ \implies \vec{u} \cdot \vec{v} =
+                \lvert \vec{u} \rvert \lvert \vec{v} \rvert \cos \phi
+            \]</span> Iz zgornje enačb sledi, da je kot med
+            <i>vektorjema</i>: - oster, če velja <span
+            class="math inline">\(\vec{u} \cdot \vec{v} &gt; 0\)</span>
+            - top, če velja <span class="math inline">\(\vec{u} \cdot
+            \vec{v} &lt; 0\)</span> - pravi, če velja <span
+            class="math inline">\(\vec{u} \cdot \vec{v} = 0\)</span></p>
+            <p><b><i>Absolutna</i> vrednost / dolžina</b>: <span
+            class="math display">\[ \lvert v \rvert = \sqrt{\vec{v}
+            \cdot \vec{v}}
+                = \sqrt{v_1^2 + v_2^2 + v_3^2} \in \mathbb{R}
+            \]</span></p>
+            <h3 id="Vektorski_produkt"><i>Vektorski produkt</i></h3>
+            <p><i>Vektorski produkt</i> prestavlja ploščino
             paralelograma, ki ga zmnožena <i>vektorja</i> oklepata. Smer
             zmnožka je odvisna od zaporedja množenja in pri tem velja
             desno pravilo (tudi “pravilo desnega vijaka, ki pomeni, da
             če prvi <i>vektor</i> zasučemo okoli skupnega izhodišča
             proti drugemu <i>vektorju</i>, se vijak zavrti v smer
-            <i>vektorja</i> zmnožka). <span class="math display">\[
-            \vec{a} \times \vec{b} = \mathrm{det} \left(
-            \begin{bmatrix}a_1 &amp; b_1\\a_2 &amp; b_2\\a_3 &amp;
-            b_3\end{bmatrix} \right) \]</span></li>
+            <i>vektorja</i> zmnožka).</p>
+            <p><span class="math display">\[ \vec{a} \times \vec{b}
+                = \mathrm{det} \left( \begin{bmatrix}a_1 &amp; b_1\\a_2
+            &amp; b_2\\a_3 &amp; b_3\end{bmatrix} \right)
+                \\ = \begin{vmatrix} \vec{i} &amp; \vec{j} &amp; \vec{k}
+            \\ a_1 &amp; a_2 &amp; a_3 \\ b_1 &amp; b_2 &amp; b_3
+            \end{vmatrix}
+                = \begin{vmatrix} a_2 &amp; a_3 \\ b_2 &amp; b_3
+            \end{vmatrix} \vec{i} -
+                \begin{vmatrix} a_1 &amp; a_3 \\ b_1 &amp; b_3
+            \end{vmatrix} \vec{j} +
+                \begin{vmatrix} a_1 &amp; a_2 \\ b_1 &amp; b_2
+            \end{vmatrix} \vec{k}
+                \\ = a_2 b_3 \vec{i} + a_3 b_1 \vec{j} + a_1 b_2 \vec{k}
+            - a_3 b_2 \vec{i} - a_1 b_3 \vec{j} - a_2 b_1 \vec{k}
+                = (a_2 b_3 - a_3 b_2) \vec{i} + (a_3 b_1 - a_1 b_3)
+            \vec{j} + (a_1 b_2 - a_2 b_1) \vec{k} \]</span></p>
+            <p>Za <i>bazne vektorje</i> velja <span
+            class="math display">\[ \vec{i} \times \vec{j} = \vec{k}
+                \\ \vec{j} \times \vec{k} = \vec{i}
+                \\ \vec{k} \times \vec{i} = \vec{j} \]</span> torej da
+            je <i>vektorski pridukt</i> dveh <i>baznih vektorjev</i>
+            tretji <i>bazni vektor</i>. Ampak morata biti v pravem
+            vrstnem redu (<span class="math inline">\(i\)</span>, <span
+            class="math inline">\(j\)</span>, <span
+            class="math inline">\(k\)</span>, <span
+            class="math inline">\(i\)</span>, <span
+            class="math inline">\(j\)</span>, …) – velja namreč pravilo
+            desnega vijaka: <span class="math display">\[ \vec{i} \times
+            \vec{k} = -\vec{j} \]</span></p>
+            <p>Lastnosti računanja z <i>vektorskim produktom</i>:</p>
+            <ul>
+            <li><span class="math inline">\(\vec{v} \times \vec{v} =
+            \vec{0}\)</span></li>
+            <li>(<i>antikomutativnost</i>) <span
+            class="math inline">\(\vec{u} \times \vec{v} = -(\vec{v}
+            \times \vec{u})\)</span></li>
+            <li>(razčlenljivost) <span class="math inline">\(\vec{u}
+            \times (\vec{v} + \vec{w})
+              = \vec{u} \times \vec{v} + \vec{u} \times
+            \vec{w}\)</span></li>
+            <li>(razčlenljivost) (<span class="math inline">\(\vec{u} +
+            \vec{v}) \times \vec{w}
+              = \vec{u} \times \vec{w} + \vec{v} \times
+            \vec{w}\)</span></li>
+            <li>(<i>homogenost</i>) <span class="math inline">\(\alpha
+            (\vec{u} \times \vec{v}) = (\alpha \vec{u}) \times \vec{v}
+              = \vec{u} \times (\alpha \vec{v})\)</span></li>
+            <li><span class="math inline">\(\vec{u} \cdot (\vec{u}
+            \times \vec{v})
+              = \vec{v} \cdot (\vec{u} \times \vec{v}) = 0\)</span></li>
+            <li><span class="math inline">\(\vec{u} \cdot (\vec{v}
+            \times \vec{w})
+              = (\vec{u} \times \vec{v}) \cdot \vec{w}\)</span></li>
+            <li>(nedružilnost / <i>neasociativnost</i>) <span
+            class="math inline">\(\vec{u} \times (\vec{v} \times
+            \vec{w})
+              = (\vec{u} \cdot \vec{w}) \vec{v} - (\vec{u} \cdot
+            \vec{v}) \vec{w}\)</span></li>
+            <li>(Jacobijeva <i>identiteta</i>) <span
+            class="math inline">\(\vec{u} \times (\vec{v} \times
+            \vec{w})
+                  + \vec{v} \times (\vec{w} \times \vec{u})
+                  + \vec{w} \times (\vec{u} \times \vec{v}) =
+            \vec{0}\)</span></li>
+            <li>za neničelna <i>vektorja</i>: <span
+            class="math inline">\(\lvert \vec {u} \times \vec{v} \rvert
+                  = \lvert \vec{u} \rvert \lvert \vec{v} \rvert \sin
+            \phi\)</span></li>
             </ul>
             <h3 id="Vektorski_prostori"><i>Vektorski</i> prostori</h3>
             <p><i>Vektorji</i> tvorijo ogrodje prostora, če lahko vsak
