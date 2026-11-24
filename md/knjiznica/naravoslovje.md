@@ -1,6 +1,6 @@
 ---
 title: Naravoslovje
-date: 2026-09-02
+date: 2026-11-24
 description: Naravni zakoni
 keywords: naravoslovje, fizika
 author: Janez Pavel Žebovec
@@ -272,6 +272,7 @@ $$ \Delta W_n = Q_{stalna V} = m c_V \Delta T $$
 $$ Q_{stalen p} = \Delta W_n - A = m c_V \Delta T + \int{p \d V} = m c_V \Delta T + p (V_2 - V_1) = m c_V \Delta T + \frac{m}{M} R \Delta T = m c_p \Delta T $$
 
 </div>
+
 $$ Q = m c_p \Delta T $$
 
 Za popolni plin velja:
@@ -579,7 +580,7 @@ Dve vrsti valovanja:
 *Energija*, porazdeljena po prostoru:
 $$ W_k \to w_k = \frac{\d W_k}{\d V} $$
 $$ \d W_k = \d m \frac{v^2}{2} \to w_k = rac{1}{2} \rho v'^2
-    = \frac{1}{2} \rho \left( \frac{\pd s}{\pd t} \right) = w_k $$
+    = \frac{1}{2} \rho \left( \frac{\p s}{\p t} \right) = w_k $$
 
 ## Tekočine
 
@@ -1101,6 +1102,12 @@ $$ N = N_0 2^{- \frac{t}{t_{1/2}}} = N_0 e^{- \lambda t} $$
 $$ \lambda = \frac{\ln 2}{t_{1/2}} $$
 $$ A = N \lambda $$
 
+### *Atomska fizika*
+
+</div>
+![Periodni sistem elementov](/images/knjiznica/naravoslovje/periodni_sistem_elementov.svg){.obrnljivaT}
+<div class="content">
+
 ### Jedrski razpadi
 
 Razpad alfa; delec razpada je $\alpha = ^4_2He_2^{2+}$:
@@ -1155,7 +1162,11 @@ V enačbi lahko zanemarimo člene od tistega naprej, ki je zadosti manjši od ne
 
 ### Izpeljane enote
 
+Te enote so izpeljane iz osnovnih enot in so dobile so posebno oznako zaradi
+pogoste rabe.
+
 </div>
+
 | veličina | oznaka veličine | enota | oznaka enote | osnovne enote |
 | --- | --- | --- | --- | --- |
 | ravninski kot | α | radian | rad | $$ \frac {m}{m} $$ |
@@ -1199,7 +1210,10 @@ V enačbi lahko zanemarimo člene od tistega naprej, ki je zadosti manjši od ne
 
 ## Stalnice
 
+blablabla
+
 </div>
+
 | stalnica | oznaka | vrednost | negotovost |
 | --- | --- | --- | --- |
 | hitrost svetlobe v brezzračnem prostoru | c | $$ 299.792.458 \frac{m}{s} $$ | |

@@ -37,13 +37,16 @@ logika"/>
         </a>
 
         <nav id="pot"><a href="/">dom</a> / <a href="/knjiznica/">knjiznica</a> / <a href="/knjiznica/racunstvo/">racunstvo</a></nav>
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-11-21">2026-11-21</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-11-24">2026-11-24</time></p>
     </header>
     <nav>
         <ul>
         <li><a href="#Racunstvo" id="toc-Racunstvo">Računstvo</a>
         <ul>
         <li><a href="#Logika" id="toc-Logika"><i>Logika</i></a></li>
+        <li><a href="#Dokazovanje_z_matematicno_indukcijo"
+        id="toc-Dokazovanje_z_matematicno_indukcijo">Dokazovanje z
+        <i>matematično indukcijo</i></a></li>
         <li><a href="#Mnozice" id="toc-Mnozice">Množice</a>
         <ul>
         <li><a href="#Mnozice_stevil" id="toc-Mnozice_stevil">Množice
@@ -343,6 +346,40 @@ logika"/>
             </tr>
             </tbody>
             </table>
+            <h2 id="Dokazovanje_z_matematicno_indukcijo">Dokazovanje z
+            <i>matematično indukcijo</i></h2>
+            <p>Enačbe in neenakosti s spremenljivko <span
+            class="math inline">\(n\)</span> lahko za cela števila
+            dokažemo z <i>indukcijo</i>. <span class="zgled">Primer:
+            <span class="math display">\[ 1 + 2 + 3 + .. + n = \frac{n
+            (n + 1)}{2} \]</span></span></p>
+            <ol type="1">
+            <li>V izraz namesto <span class="math inline">\(n\)</span>
+            vstavimo 1 in dokažemo, da izraz velja <span
+            class="math inline">\(n = 1\)</span>. <span
+            class="zgled"><span class="math display">\[ \frac{1 (1 +
+            1)}{2} = 1 \]</span></span></li>
+            <li>Naša <i>indukcijska</i> predpostavka je, da izraz velja
+            za <span class="math inline">\(n = m\)</span>. <span
+            class="zgled"><span class="math display">\[ 1 + 2 + ... + m
+            = \frac{m (m + 1)}{2} \]</span></span></li>
+            <li>Če izraz velja za <span class="math inline">\(n =
+            m\)</span>, potem iz tega sledi, da mora veljati tudi za
+            <span class="math inline">\(n = m + 1\)</span>. V izrazu na
+            poljubni prvi strani <span class="math inline">\(n\)</span>
+            zamenjamo z <span class="math inline">\(m + 1\)</span>, na
+            drugi strani pa ustrezno dopolnimo za toliko, kolikor smo
+            spremenil prvo stran. <span class="zgled"><span
+            class="math display">\[ 1 + 2 + ... + m + (m + 1) = \frac{m
+            (m + 1)}{2} + (m + 1) \]</span></span></li>
+            <li>Drugo stran preoblikujemo, da dobimo spet
+            <i>indukcijsko</i> predpostavko, vendar <span
+            class="math inline">\(m +
+            1\)</span> namesto <span class="math inline">\(n\)</span>.
+            <span class="zgled"><span class="math display">\[ 1 + 2+ ...
+            + (m + 1) = \frac{(m + 1) ((m + 1) + 1)}{2}
+            \]</span></span></li>
+            </ol>
             <h2 id="Mnozice">Množice</h2>
             <p><i>Operatorji</i> za računanje z množicami:</p>
             <table>
@@ -428,12 +465,12 @@ logika"/>
             class="math display">\[A^{\complement§ = U \setminus A = {a
             \subset U; a \notin A}\]</span></p>
             <div class="zakon">
-            <p><b>De Morganova zakona</b> <span class="math display">\[
+            <b>De Morganova zakona</b> <span class="math display">\[
             \bigcup_{j \in J} A_j^{\complement} = \left( \bigcap_{j \in
             J} A_j \right)^{\complement} \]</span> <span
             class="math display">\[ \bigcap_{j \in J} A_j^{\complement}
             = \left( \bigcup_{j \in J} A_j \right)^{\complement}
-            \]</span></p>
+            \]</span>
             </div>
             <p><b>Potenčna množica</b> množice A je množica njenih
             podmnožic, vključno s prazno množico. Če imamo množico A =
@@ -672,7 +709,7 @@ logika"/>
             class="math inline">\(w = \lvert w \rvert e^{\mathrm{i}
             \psi}\)</span>, potem:
             <div class="izpeljava">
-            <p><span class="math display">\[ z w
+            <span class="math display">\[ z w
                 = \lvert z \rvert \mathrm{e}^{\mathrm{i} \phi} \lvert w
             \rvert
                     \mathrm{e}^{\mathrm{i} \psi}
@@ -686,7 +723,7 @@ logika"/>
                 \\ = \lvert z w \rvert (\cos(\phi + \psi) + \mathrm{i}
             \sin(\phi + \psi))
                 \\ = \lvert z w \rvert \mathrm{e}^{\mathrm{i} (\phi +
-            \psi)} \]</span></p>
+            \psi)} \]</span>
             </div>
             <p><span class="math display">\[ z w = \lvert z w \rvert
             \mathrm{e}^{\mathrm{i} (\phi + \psi)}\]</span></p>
@@ -697,7 +734,7 @@ logika"/>
             \]</span></p>
             <p><b>Koreni dvojnih števil</b>:</p>
             <div class="izpeljava">
-            <p><span class="math display">\[ \lvert z \rvert ^n
+            <span class="math display">\[ \lvert z \rvert ^n
             \mathrm{e}^{\mathrm{i} n \phi}
                 = \lvert w \rvert \mathrm{e}^{\mathrm{i} \psi}
                 \\ \implies \lvert z \rvert = \sqrt[n]{\lvert w \rvert},
@@ -705,7 +742,7 @@ logika"/>
                 \\ \implies z_k = \sqrt[n]{\lvert w \rvert}
             \mathrm{e}^{\mathrm{i}
                 (\psi / n + 2 k \pi / n)}, k \in \{ 0, 1, 2, 3, ..., n -
-            1 \} \]</span></p>
+            1 \} \]</span>
             </div>
             <p><span class="math inline">\(n\)</span>-ti koren
             neničelnega dvojnega števila ima torej natanko <span
@@ -1868,8 +1905,8 @@ logika"/>
             </ul>
             <div class="zgled">
             <p>Primer:</p>
-            <p><span class="math display">\[ x - 2y + 3z - 4u = 4 \\ y -
-            z + u = -3 \\ x + 3y - 3u = 1 \]</span> <span
+            <span class="math display">\[ x - 2y + 3z - 4u = 4 \\ y - z
+            + u = -3 \\ x + 3y - 3u = 1 \]</span> <span
             class="math display">\[ \left[\begin{array}{cccc|c} 1 &amp;
             -1 &amp; 3 &amp; -4 &amp; 4\\0 &amp; 1 &amp; -1 &amp; 1
             &amp; -3\\1 &amp; 3 &amp; 0 &amp; -3 &amp;
@@ -1887,7 +1924,7 @@ logika"/>
             \vec{r_0} + \vec{s} \]</span> kjer je <span
             class="math inline">\(\vec{r_0}\)</span> začetna točka na
             premici in <span class="math inline">\(\vec{s}\)</span>
-            smerni <i>vektor</i> premice.</p>
+            smerni <i>vektor</i> premice.
             </div>
             <p>Ali dani <i>vektorji</i> tvorijo ogrodje <a
             href="Vektorski_prostori"><i>vektorskega</i> prostora</a>
@@ -1964,13 +2001,13 @@ logika"/>
             class="math inline">\(\beta\)</span>-kratnik <span
             class="math inline">\(j\)</span>-te vrstice</p>
             <div class="zgled">
-            Da drugi vrstici <i>matrike</i> <span
+            <p>Da drugi vrstici <i>matrike</i> <span
             class="math inline">\(A\)</span> prištejemo <span
             class="math inline">\(\beta\)</span>-kratnik prve vrstice:
             <span class="math display">\[ \begin{bmatrix} 1 &amp; 0
             &amp; 0 \\ \beta &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1
             \end{bmatrix} A X = \begin{bmatrix} \end{bmatrix} I
-            \]</span>
+            \]</span></p>
             </div></li>
             <li><p>zamenjamo <span class="math inline">\(i\)</span>-to
             in <span class="math inline">\(j\)</span>-to
@@ -1986,10 +2023,10 @@ logika"/>
             <li>od nekod dalje so lahko vrstice ničelne</li>
             </ul>
             <div class="zgled">
-            <p>Primer: <span class="math display">\[ \begin{bmatrix} 0
+            Primer: <span class="math display">\[ \begin{bmatrix} 0
             &amp; 0 &amp; 1 &amp; a &amp; b &amp; c \\ 0 &amp; 0 &amp; 0
             &amp; 0 &amp; 1 &amp; d \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
-            &amp; 0 \end{bmatrix} \]</span></p>
+            &amp; 0 \end{bmatrix} \]</span>
             </div>
             <p><i>Matriko</i> lahko pretvorimo v VKF z uporabo vrstičnih
             <i>operacij</i> <a
@@ -2124,12 +2161,12 @@ logika"/>
             (zamenjal predznak), kar se zgodi, če “zamenjamo” <i>bazna
             vektorja</i> med sabo.</p>
             <div class="zgled">
-            <p>Primer zasuka dvorazsežnostnega prostora okoli <span
+            Primer zasuka dvorazsežnostnega prostora okoli <span
             class="math inline">\((0, 0)\)</span> za kot <span
             class="math inline">\(\phi\)</span>: <span
             class="math display">\[ R_\phi = \begin{bmatrix} \cos \phi
             &amp; - \sin \phi
-            \\ \sin \phi &amp; \cos \phi \end{bmatrix} \]</span></p>
+            \\ \sin \phi &amp; \cos \phi \end{bmatrix} \]</span>
             </div>
             <h3 id="Preslikave_med_vektorskimi_prostori">Preslikave med
             <i>vektorskimi</i> prostori</h3>
@@ -2248,7 +2285,7 @@ logika"/>
             nevzporednih (<i>nekolinearnih</i>) <i>vektorjev</i> za
             <i>bazo</i> prostora.</p>
             <div class="zgled">
-            <p>Če sta naša lastna <i>vektorja</i> <span
+            Če sta naša lastna <i>vektorja</i> <span
             class="math inline">\(a = (1, 0)\)</span> in <span
             class="math inline">\(b = (-1, 1)\)</span>, potem
             <i>bazo</i> prostora spremenimo tako: <span
@@ -2258,7 +2295,7 @@ logika"/>
             dobimo <i>diagonalno matriko</i>, z <i>diagonalnimi</i>
             členi, ki so hkrati tudi lastne vrednosti <i>baznih</i>
             vektorjev. Tej novi <i>bazi</i> prostora pravimo lastna
-            <i>baza</i>.</p>
+            <i>baza</i>.
             </div>
             <h1 id="Zunanje_povezave_in_viri">Zunanje povezave in
             viri</h1>

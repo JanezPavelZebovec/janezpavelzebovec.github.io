@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-11-21
+date: 2026-11-24
 description: računska teorija, enačbe
 keywords: računstvo, matematika, algebra, logika
 author: Janez Pavel Žebovec
@@ -33,6 +33,23 @@ author: Janez Pavel Žebovec
 | P | N | N | N | P | N | N |
 | N | P | P | N | P | P | N |
 | N | N | P | N | N | P | P |
+
+## Dokazovanje z *matematično indukcijo*
+
+Enačbe in neenakosti s spremenljivko $n$ lahko za cela števila dokažemo z *indukcijo*.
+<span class="zgled">Primer: $$ 1 + 2 + 3 + .. + n = \frac{n (n + 1)}{2} $$</span>
+
+1. V izraz namesto $n$ vstavimo 1 in dokažemo, da izraz velja $n = 1$.
+    <span class="zgled">$$ \frac{1 (1 + 1)}{2} = 1 $$</span>
+2. Naša *indukcijska* predpostavka je, da izraz velja za $n = m$.
+    <span class="zgled">$$ 1 + 2 + ... + m = \frac{m (m + 1)}{2} $$</span>
+3. Če izraz velja za $n = m$, potem iz tega sledi, da mora veljati tudi za $n = m + 1$.
+    V izrazu na poljubni prvi strani $n$ zamenjamo z $m + 1$, na drugi strani pa
+    ustrezno dopolnimo za toliko, kolikor smo spremenil prvo stran.
+    <span class="zgled">$$ 1 + 2 + ... + m + (m + 1) = \frac{m (m + 1)}{2} + (m + 1) $$</span>
+4. Drugo stran preoblikujemo, da dobimo spet *indukcijsko* predpostavko, vendar $m +
+    1$ namesto $n$.
+    <span class="zgled">$$ 1 + 2+ ... + (m + 1) = \frac{(m + 1) ((m + 1) + 1)}{2} $$</span>
 
 ## Množice
 

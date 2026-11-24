@@ -356,8 +356,8 @@ datotek. Uporablja se tudi v [Codebergu](https://codeberg.org/),
     - ... `init.defaultBranch main` – privzeta veja se imenuje *main*
 - `git clone URL` – prenese celotno oddaljeno skladišče na URL-ju z vso
   zgodovino na svojo napravo (ustvari *lokalen* dvojnik skladišča)
-- `git init` – v trenutni *mapi* ustvari novo skladišče Git in skrito *mapo* **.git**, da lahko začne
-  slediti spremembam v tem skladišču
+- `git init` – v trenutni *mapi* ustvari novo skladišče Git in skrito *mapo*
+  **.git**, da lahko začne slediti spremembam v tem skladišču
 - `git status` – preveri stanje Gita – ugotovi, katere datoteke so bile
   spremenjene, zbrisane, katerim datotekam Git še ne sledi
 - `git add datoteke` – doda izbrane datoteke v Git, zabeleži njihove spremembe
@@ -402,7 +402,7 @@ Povezovanje z oddaljenim skladiščem:
 Povezava SSH z oddaljenim strežnikom:
 
 - `ssh -T git@github.com` – preveri overitev s ključem prek SSH
-- `ssh-add ~/.ssh/id_ed25519` – dodaj ključ
+- `ssh-add ~/.ssh/id_ed25519` – doda ključ
 - `ssh-add -l` – preveri ključe, dodane v `ssh-agent`
 
 ## Ključi in gesla

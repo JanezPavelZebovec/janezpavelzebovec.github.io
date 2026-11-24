@@ -1,6 +1,6 @@
 ---
 title: Umovanje
-date: 2026-11-20
+date: 2026-11-22
 description:
 keywords: razmišljanje
 ---
@@ -129,6 +129,12 @@ Da lahko človek spolh ve, kaj je prav in kaj narobe, da se lahko sploh med čim
 odloča, je Bog človeku dal vest. Brez nje ne bi mogli vedeti, kaj sploh želi
 Bog, da bi se ravnali po njegovi volji, če bi tako hoteli, oz. proti njegovi
 volji, če bi tako hoteli. Brez vesti bi bila svobodna volja precej nesmiselna.
+
+## Propad kulture, vrednot
+
+> I'm very proud that people can urinate against a church.
+>
+<cite>Bruseljski mestni svetnik Frederik Ceulemans</cite>
 
 ## Leva gibanja
 

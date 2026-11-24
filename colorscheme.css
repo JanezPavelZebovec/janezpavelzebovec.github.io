@@ -13,7 +13,7 @@
     --bNazaj: #a89984;
 
     --bKodaOzadje: None;
-    --bKodaOspredje: #b8bb26;
+    --bKodaOspredje: #b8bb26; /*#98971a;*/
 }
 
 .light {
@@ -28,7 +28,6 @@
     --bPoudarek: #458588; 
     --bNazaj: #7c6f64;
 
-    /*za kodo*/
     --bKodaOzadje: None;
     --bKodaOspredje: #98971a;
 }

@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2026-11-10
+date: 2026-11-24
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -64,6 +64,11 @@ Moji izbrani programi po namembnosti:
 - [SolveSpace](https://solvespace.com/): 3R (in 2R) urejevalnik
 - [VIM](https://www.vim.org/): urejevalnik golega besedila
 - [Zathura](https://pwmt.org/projects/zathura/): ogledovalnik PDF
+
+### Barvne palete
+
+- [Gruvbox](https://github.com/morhetz/gruvbox) ([neuradno spletišče](https://gruvbox.org/))
+- [Gruvbox Material](https://github.com/sainnhe/gruvbox-material)
 
 ### Razširitve za brskalnik
 
