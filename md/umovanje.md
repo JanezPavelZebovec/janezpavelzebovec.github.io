@@ -645,6 +645,34 @@ podredijo nemuslimane.
 Združene države Amerike, zahodna Evropa – to je današnja Meka, in Bližnji Vzhod
 – ta je današnja Medina.
 
+> If there will be a contradiction between the Constitution and Sharia?
+>
+> The way we will deal with that is thrugh the electoral process.
+> We will run candidates, wherever Muslims live, ...
+>
+> But you are not the majority?!
+>
+> No, that's what we say not yet. That's why I am running for commissioner,
+> that's why we need more Muslims; commissioners, senators, congressmen,
+> whatever political positions; in cities, in big and small administrations. In
+> Dearborn they already have control.
+> Yes, in Dearborn they already have control over the city. So it's not
+> impossible, it will just take time. That's why the strategy here is a
+> long-term strategy. Fifty years sounds like a long time, but for the Muslim
+> Brotherhood it's attainable. Their utlook and planning for the submission of
+> the world to Islam si a strategic weapon they have use for decades.
+>
+> How far in advance do they envision their plan?
+>
+> I think that they understood that the conventional democratic political
+> system, which is based on voting polls, is a system that can serve their
+> interests perfectly if they grow in numbers. This means very simply a
+> calculation: If I win 51 % or even less than that, if they settle in specific
+> places in US, in swing states which impact the election results, they would be
+> able to swing the state one way or another.
+>
+<cite>[](https://youtu.be/EbvPWoXeWH4?t=573)</cite>
+
 ### Islam in Sveto pismo
 
 Koran potrjuje resničnost Spisov / Svetega pisma, oz. uporabi izraze:

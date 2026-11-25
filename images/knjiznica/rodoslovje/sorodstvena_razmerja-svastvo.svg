@@ -2,447 +2,347 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="99.130951mm"
-   height="65.092361mm"
-   viewBox="0 0 99.130952 65.092363"
+   width="140.12898mm"
+   height="49.55201mm"
+   viewBox="0 0 140.12898 49.55201"
    version="1.1"
-   id="svg5"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   sodipodi:docname="sorodstvena_razmerja-svaštvo.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   id="svg1"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview7"
-     pagecolor="#505050"
-     bordercolor="#eeeeee"
-     borderopacity="1"
-     inkscape:pageshadow="0"
-     inkscape:pageopacity="0"
-     inkscape:pagecheckerboard="0"
-     inkscape:document-units="mm"
-     showgrid="true"
-     inkscape:zoom="2"
-     inkscape:cx="169"
-     inkscape:cy="95.75"
-     inkscape:window-width="1920"
-     inkscape:window-height="1022"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g1364"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0">
-    <inkscape:grid
-       type="xygrid"
-       id="grid8727"
-       originx="23.161621"
-       originy="-355.08661" />
-  </sodipodi:namedview>
   <defs
-     id="defs2">
-    <filter
-       style="color-interpolation-filters:sRGB"
-       inkscape:label="Invert"
-       id="filter200353"
-       x="0"
-       y="0"
-       width="1.0036976"
-       height="1.0030556">
-      <feColorMatrix
-         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="fbSourceGraphic"
-         id="feColorMatrix200351" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix200373" />
-      <feColorMatrix
-         id="feColorMatrix200375"
-         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="fbSourceGraphic"
-         in="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix200395" />
-      <feColorMatrix
-         id="feColorMatrix200397"
-         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="fbSourceGraphic"
-         in="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix200417" />
-      <feColorMatrix
-         id="feColorMatrix200419"
-         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="color2"
-         in="fbSourceGraphic" />
-    </filter>
-  </defs>
+     id="defs1" />
   <g
-     inkscape:label="Plast 1"
-     inkscape:groupmode="layer"
      id="layer1"
-     sodipodi:insensitive="true"
-     transform="translate(23.161619,-355.08659)">
+     transform="translate(-34.935508,-146.50775)">
     <g
-       id="g1347"
-       inkscape:label="kolena">
+       id="g6"
+       style="fill:none;stroke:#928374;stroke-width:0.264583;stroke-dasharray:none;stroke-opacity:1">
       <path
-         style="fill:none;stroke:#00ff00;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:2.11666654,2.11666654;stroke-dashoffset:0;stroke-opacity:1"
-         d="m -1.8546932,363.39483 v 42.38781"
-         id="path141181-2-3"
-         sodipodi:nodetypes="cc" />
+         style="fill:none;fill-opacity:1;stroke:#928374;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.05833, 1.05833;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 89.812912,155 h -30"
+         id="path7"
+         transform="translate(0.18708939)" />
       <path
-         style="fill:none;stroke:#00ff00;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:2.11666654,2.11666654;stroke-dashoffset:0;stroke-opacity:1"
-         d="m -15.983957,377.52413 v 28.25851"
-         id="path141181-2-3-3"
-         sodipodi:nodetypes="cc" />
+         style="fill:none;fill-opacity:1;stroke:#928374;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.05833, 1.05833;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 74.81291,170 H 44.812913"
+         id="path8"
+         transform="translate(0.18708939)" />
       <path
-         style="fill:none;stroke:#00ff00;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:2.11666654,2.11666654;stroke-dashoffset:0;stroke-opacity:1"
-         d="m 68.79167,377.52413 v 42.38782"
-         id="path141181-2"
-         sodipodi:nodetypes="cc" />
+         style="fill:none;fill-opacity:1;stroke:#928374;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 59.812912,155 -15,10"
+         id="path9"
+         transform="translate(0.18708939)" />
       <path
-         style="fill:none;stroke:#00ff00;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:2.11666654,2.11666654;stroke-dashoffset:0;stroke-opacity:1"
-         d="m 54.662395,363.39483 v 56.51712"
-         id="path141181-5"
-         sodipodi:nodetypes="cc" />
-      <text
-         xml:space="preserve"
-         style="font-size:3.76781px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-         x="54.549355"
-         y="357.70178"
-         id="text21908-09-6-9-2"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="54.549355"
-           y="357.70178"
-           id="tspan72163-6-4-2">1. koleno</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:3.76781px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-         x="68.752106"
-         y="371.83093"
-         id="text21908-09-6-9-9-7"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="68.752106"
-           y="371.83093"
-           id="tspan72163-6-4-1-0">2. koleno</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:3.76781px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-         x="-16.023529"
-         y="371.83093"
-         id="text21908-09-6-9-9-7-4"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="-16.023529"
-           y="371.83093"
-           id="tspan72163-6-4-1-0-6">2. koleno</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:3.76781px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-         x="-1.9677229"
-         y="357.70145"
-         id="text21908-09-6-9-2-6"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="-1.9677228"
-           y="357.70145"
-           id="tspan72163-6-4-2-3">1. koleno</tspan></text>
+         style="fill:none;stroke:#928374;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 105,169.99999 -14.999999,-15 -15.000001,15"
+         id="path1" />
+      <path
+         style="fill:none;stroke:#928374;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.05833, 1.05833;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 135,170 -30.80885,-0.33073"
+         id="path2" />
+      <path
+         style="fill:none;stroke:#928374;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.05833, 1.05833;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 150,185 H 120"
+         id="path3" />
+      <path
+         style="fill:none;stroke:#928374;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 104.86771,169.8677 120,185"
+         id="path4" />
+      <path
+         style="fill:none;stroke:#928374;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 135,170 15,-15 15,15"
+         id="path5" />
+      <path
+         style="fill:none;stroke:#928374;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 135,170 -15,15"
+         id="path6" />
     </g>
     <g
-       id="g199518"
-       inkscape:label="poroke"
-       transform="matrix(10.680394,0,0,10.680394,224.21365,-3437.3791)">
-      <path
-         style="fill:none;stroke:#ffffff;stroke-width:0.02477281;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.07431843,0.07431843;stroke-dashoffset:0;stroke-opacity:1"
-         d="M -18.520834,359.83333 H -15.875"
-         id="path93860"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:none;stroke:#ffffff;stroke-width:0.02477281;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.07431843,0.07431843;stroke-dashoffset:0;stroke-opacity:1"
-         d="m -18.520833,358.51041 h 1.322917"
-         id="path93862" />
-      <path
-         style="fill:none;stroke:#ffffff;stroke-width:0.02477281;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.07431843,0.07431843;stroke-dashoffset:0;stroke-opacity:1"
-         d="m -22.489583,358.77501 2.645833,-1e-5"
-         id="path119230"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:none;stroke:#ffffff;stroke-width:0.02477281;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.07431843,0.07431843;stroke-dashoffset:0;stroke-opacity:1"
-         d="m -19.84375,357.1875 h -1.322916"
-         id="path153573" />
+       id="g13"
+       style="fill:none;stroke:none;stroke-width:0.264583;stroke-dasharray:none;stroke-opacity:1">
+      <g
+         id="g15"
+         style="fill:none;stroke:#98971a;stroke-dasharray:1.05833, 1.05833;stroke-dashoffset:0;stroke-opacity:1">
+        <path
+           style="fill:none;fill-opacity:1;stroke:#98971a;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.05833, 1.05833;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 44.999999,149.99999 2e-6,45"
+           id="path11" />
+        <path
+           style="fill:none;fill-opacity:1;stroke:#98971a;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.05833, 1.05833;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 60.000001,150 v 44.99999"
+           id="path10" />
+        <path
+           style="fill:none;fill-opacity:1;stroke:#98971a;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.05833, 1.05833;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 165,150 v 44.99999"
+           id="path13" />
+        <path
+           style="fill:none;fill-opacity:1;stroke:#98971a;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.05833, 1.05833;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 150,149.99999 v 45"
+           id="path12" />
+      </g>
+      <g
+         id="g14"
+         style="fill:#98971a;fill-opacity:1;stroke:none">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#98971a;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.94"
+           x="166.95555"
+           y="149.44568"
+           id="text98-5-0-4-0-67"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#98971a;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:0.94"
+             x="166.95555"
+             y="149.44568"
+             id="tspan101-4-6-0-4-5">2. koleno</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#98971a;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.94"
+           x="147.873"
+           y="149.44568"
+           id="text98-5-0-4-0-67-3"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#98971a;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:0.94"
+             x="147.873"
+             y="149.44568"
+             id="tspan101-4-6-0-4-5-6">1. koleno</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#98971a;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.94"
+           x="61.873001"
+           y="149.44568"
+           id="text98-5-0-4-0-67-9"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#98971a;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:0.94"
+             x="61.873001"
+             y="149.44568"
+             id="tspan101-4-6-0-4-5-4">1. koleno</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#98971a;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.94"
+           x="42.955551"
+           y="149.44568"
+           id="text98-5-0-4-0-67-4"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#98971a;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:0.94"
+             x="42.955551"
+             y="149.44568"
+             id="tspan101-4-6-0-4-5-3">2. koleno</tspan></text>
+      </g>
     </g>
     <g
-       id="g1436"
-       inkscape:label="črte">
-      <path
-         style="fill:none;stroke:#fffffd;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="m 26.403856,391.65333 -14.129274,-14.1292 v 16.95513"
-         id="path118919"
-         sodipodi:nodetypes="ccc" />
-      <path
-         style="fill:none;stroke:#fffffd;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="m 40.533131,391.65333 14.129264,-14.1292 14.129275,14.12931"
-         id="path116297" />
-      <path
-         style="fill:none;stroke:#fffffd;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="m 26.403856,391.65333 v 14.12931"
-         id="path93856" />
-      <path
-         style="fill:none;stroke:#fffffd;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="M 3.7970188,391.65344 -1.8546825,377.52413"
-         id="path153575"
-         sodipodi:nodetypes="cc" />
+       id="g7"
+       style="fill:#9d0006;fill-opacity:1;stroke:none;stroke-width:1.00013;stroke-dasharray:none"
+       transform="translate(0.18708939)">
+      <g
+         id="g26"
+         style="fill:#8f3f76;fill-opacity:1;stroke:none;stroke-width:1.00013;stroke-dasharray:none">
+        <circle
+           style="display:inline;fill:#8f3f76;fill-opacity:1;stroke:none;stroke-width:1.00013;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path95-4-80"
+           cx="44.812912"
+           cy="165"
+           r="1.5" />
+        <circle
+           style="display:inline;fill:#8f3f76;fill-opacity:1;stroke:none;stroke-width:1.00013;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path95-4-8"
+           cx="59.812912"
+           cy="155"
+           r="1.5" />
+        <circle
+           style="display:inline;fill:#8f3f76;fill-opacity:1;stroke:none;stroke-width:1.00013;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path95-4-80-9"
+           cx="44.812912"
+           cy="170"
+           r="1.5" />
+        <circle
+           style="display:inline;fill:#8f3f76;fill-opacity:1;stroke:none;stroke-width:1.00013;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path95-4-5"
+           cx="164.81291"
+           cy="170"
+           r="1.5" />
+        <circle
+           style="display:inline;fill:#8f3f76;fill-opacity:1;stroke:none;stroke-width:1.00013;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path95-4-2"
+           cx="149.81291"
+           cy="155"
+           r="1.5" />
+        <circle
+           style="display:inline;fill:#8f3f76;fill-opacity:1;stroke:none;stroke-width:1.00013;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path95-4-6"
+           cx="134.81291"
+           cy="170"
+           r="1.5" />
+        <circle
+           style="display:inline;fill:#8f3f76;fill-opacity:1;stroke:none;stroke-width:1.00013;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path95-4-0"
+           cx="149.81291"
+           cy="185"
+           r="1.5" />
+      </g>
+      <circle
+         style="display:inline;fill:#9d0006;fill-opacity:1;stroke:none;stroke-width:1.00013;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="path95-4-9"
+         cx="74.812912"
+         cy="170"
+         r="1.5" />
+      <circle
+         style="display:inline;fill:#9d0006;fill-opacity:1;stroke:none;stroke-width:1.00013;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="path95-4-3"
+         cx="89.812912"
+         cy="155"
+         r="1.5" />
+      <circle
+         style="display:inline;fill:#9d0006;fill-opacity:1;stroke:none;stroke-width:1.00013;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="path95-4-804"
+         cx="119.81291"
+         cy="185"
+         r="1.5" />
+      <circle
+         style="display:inline;fill:#076678;fill-opacity:1;stroke:none;stroke-width:1.00013;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="path95-4"
+         cx="104.81291"
+         cy="170"
+         r="1.5" />
     </g>
     <g
-       id="g199775"
-       inkscape:label="pike"
-       transform="matrix(10.680394,0,0,10.680394,224.21365,-3437.3791)">
-      <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-0-9-9"
-         cx="-15.875"
-         cy="357.1875"
-         r="0.13249999" />
-      <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-0-9-9-0"
-         cx="-14.552083"
-         cy="358.51041"
-         r="0.13249999" />
-      <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-0-9-93-6"
-         cx="-19.84375"
-         cy="357.1875"
-         r="0.13249999" />
-      <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-0-9-93-6-9"
-         cx="-21.166666"
-         cy="357.1875"
-         r="0.13249999" />
-      <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-0-9-93-6-1"
-         cx="-19.84375"
-         cy="358.77499"
-         r="0.13249999" />
-      <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-0-9-93-62"
-         cx="-20.637501"
-         cy="358.51041"
-         r="0.13249999" />
-      <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-0-9-93-6-4"
-         cx="-22.489584"
-         cy="358.77499"
-         r="0.13249999" />
-      <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-0-9-93"
-         cx="26.403847"
-         cy="405.78278"
-         r="1.4151521" />
-      <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-0-9-7"
-         cx="40.533131"
-         cy="391.65329"
-         r="1.4151521" />
-      <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-0-9-2"
-         cx="54.662395"
-         cy="405.78278"
-         r="1.4151521" />
+       id="g16"
+       style="fill:none;stroke:none;stroke-width:0.264583;stroke-dasharray:none;stroke-opacity:1">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="89.997887"
+         y="160.79561"
+         id="text98-8"><tspan
+           id="tspan98-6"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="89.997887"
+           y="160.79561">oče</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="89.997887"
+           y="166.08727"
+           id="tspan101-28">mati</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="74.966133"
+         y="175.79985"
+         id="text98-8-2"><tspan
+           id="tspan98-6-6"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="74.966133"
+           y="175.79985">brat</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="74.966133"
+           y="181.09151"
+           id="tspan101-28-4">sestra</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="62.614086"
+         y="160.79561"
+         id="text98-8-2-6"><tspan
+           id="tspan98-6-6-8"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="62.614086"
+           y="160.79561">očim</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="62.614086"
+           y="166.08727"
+           id="tspan101-28-4-3">mačeha</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="44.976719"
+         y="156.41249"
+         id="text98-8-2-3"><tspan
+           id="tspan98-6-6-80"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="44.976719"
+           y="156.41249">polbrat</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="44.976719"
+           y="161.70415"
+           id="tspan101-28-4-4">polsestra</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="119.99789"
+         y="190.72153"
+         id="text98-8-2-9"><tspan
+           id="tspan98-6-6-0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="119.99789"
+           y="190.72153">sin</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="119.99789"
+           y="196.01318"
+           id="tspan101-28-4-6">hči</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="134.97672"
+         y="175.79561"
+         id="text98-8-2-0"><tspan
+           id="tspan98-6-6-3"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="134.97672"
+           y="175.79561">mož</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="134.97672"
+           y="181.08727"
+           id="tspan101-28-4-33">žena</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="149.96614"
+         y="190.63263"
+         id="text98-8-2-65"><tspan
+           id="tspan98-6-6-2"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="149.96614"
+           y="190.63263">zet</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="149.96614"
+           y="195.92429"
+           id="tspan101-28-4-65">snaha</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="149.99577"
+         y="160.63263"
+         id="text98-8-2-60"><tspan
+           id="tspan98-6-6-4"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="149.99577"
+           y="160.63263">tast</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="149.99577"
+           y="165.92429"
+           id="tspan101-28-4-1">tašča</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="164.96614"
+         y="175.38921"
+         id="text98-8-2-7"><tspan
+           id="tspan98-6-6-08"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="164.96614"
+           y="175.38921">svak</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="164.96614"
+           y="180.68086"
+           id="tspan101-28-4-62">svakinja</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="44.966133"
+         y="175.38921"
+         id="text98-8-8"><tspan
+           id="tspan98-6-9"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="44.966133"
+           y="175.38921">svak</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+           x="44.966133"
+           y="180.68086"
+           id="tspan101-28-2">svakinja</tspan></text>
     </g>
-    <g
-       id="g1364"
-       style="display:inline"
-       inkscape:label="poimenovanja">
-      <text
-         xml:space="preserve"
-         style="font-size:3.76781px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0;fill:#809fff;fill-opacity:1"
-         x="54.632244"
-         y="410.02393"
-         id="text21908-09-1"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="54.632244"
-           y="410.02393"
-           id="tspan72163-4">zet/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="54.632244"
-           y="414.9079"
-           id="tspan100965">snaha</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:3.76781px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0;fill:#809fff;fill-opacity:1"
-         x="26.449049"
-         y="410.02393"
-         id="text21908-09-7"><tspan
-           sodipodi:role="line"
-           id="tspan21906-9-5"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="26.449049"
-           y="410.02393">sin/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="26.449049"
-           y="414.9079"
-           id="tspan72163-17">hči</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:3.76781px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0;fill:#809fff;fill-opacity:1"
-         x="68.836884"
-         y="395.89441"
-         id="text21908-09-2-8"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="68.836884"
-           y="395.89441"
-           id="tspan97769-1">svak/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="68.836884"
-           y="400.77838"
-           id="tspan123652">svakinja</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:3.76781px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0;fill:#809fff;fill-opacity:1"
-         x="12.244432"
-         y="398.72031"
-         id="text21908-09-2-80"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="12.244432"
-           y="398.72031"
-           id="tspan97769-10">brat/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="12.244432"
-           y="403.60428"
-           id="tspan126089">sestra</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:3.76781px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0;fill:#809fff;fill-opacity:1"
-         x="40.580231"
-         y="395.89441"
-         id="text21908-09-2"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="40.580231"
-           y="395.89441"
-           id="tspan72163-21">mož/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="40.580231"
-           y="400.77838"
-           id="tspan97769">žena</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:3.76781px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0;fill:#809fff;fill-opacity:1"
-         x="-1.8829378"
-         y="371.18362"
-         id="text21908-09-2-80-1"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="-1.8829378"
-           y="371.18362"
-           id="tspan126089-4">očim/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="-1.8829378"
-           y="376.0676"
-           id="tspan156502">mačeha</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:3.76781px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0;fill:#809fff;fill-opacity:1"
-         x="3.776293"
-         y="384.62311"
-         id="text21908-09-2-80-1-8"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="3.776293"
-           y="384.62311"
-           id="tspan156502-8">polbrat/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="3.776293"
-           y="389.50708"
-           id="tspan163077">polsestra</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:3.76781px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0;fill:#809fff;fill-opacity:1"
-         x="54.658627"
-         y="381.76526"
-         id="text21908-09-37"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="54.658627"
-           y="381.76526"
-           id="tspan72163-2">tast/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="54.658627"
-           y="386.64923"
-           id="tspan94897">tašča</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:3.76781px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0;fill:#809fff;fill-opacity:1"
-         x="12.272707"
-         y="371.18362"
-         id="text21908-09-2-9"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="12.272707"
-           y="371.18362"
-           id="tspan97769-4">oče/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="12.272707"
-           y="376.0676"
-           id="tspan124795">mati</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:3.76781px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0;fill:#809fff;fill-opacity:1"
-         x="-16.014116"
-         y="398.72031"
-         id="text21908-09-4"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="-16.014116"
-           y="398.72031"
-           id="tspan72163-11">svak/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.76781px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0"
-           x="-16.014116"
-           y="403.60428"
-           id="tspan122588">svakinja</tspan></text>
-    </g>
-    <circle
-       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.06804;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.106804, 0.106804;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path9881-44-09"
-       cx="26.403847"
-       cy="391.65329"
-       r="1.4151521"
-       inkscape:label="izhodišče" />
   </g>
 </svg>
