@@ -8,7 +8,7 @@ keywords: snovoslovje, kemija, spojine
 # Snovoslovje
 
 </div>
-![Periodni sistem elementov](/images/knjiznica/naravoslovje/periodni_sistem_elementov.svg){.obrnljivaT}
+![Periodni sistem elementov](/images/knjiznica/naravoslovje/periodni_sistem_elementov.svg){.obrnljivaS}
 <div class="content">
 
 ## Zunanje povezave in viri

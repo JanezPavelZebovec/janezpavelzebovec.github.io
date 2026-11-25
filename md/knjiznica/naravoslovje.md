@@ -1105,7 +1105,7 @@ $$ A = N \lambda $$
 ### *Atomska fizika*
 
 </div>
-![Periodni sistem elementov](/images/knjiznica/naravoslovje/periodni_sistem_elementov.svg){.obrnljivaT}
+![Periodni sistem elementov](/images/knjiznica/naravoslovje/periodni_sistem_elementov.svg){.obrnljivaS}
 <div class="content">
 
 ### Jedrski razpadi
