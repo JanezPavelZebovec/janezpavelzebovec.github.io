@@ -51,7 +51,7 @@ Klarinet je sestavljen iz štirih večjih delov (označeni črno):
 
 ## Prijemi
 
-<link rel="stylesheet" href="styles-klarinet.css"/>
+<link rel="stylesheet" href="/styles-klarinet.css"/>
 <div id="prijemi" data-insert="klarinet/seznam_prijemov.html">
 
 ---

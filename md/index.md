@@ -1,6 +1,6 @@
 ---
 title: Janez Pavel Žebovec
-date: 2026-10-30
+date: 2026-11-26
 description: Osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran, osebno spletišče
 ---
@@ -47,6 +47,7 @@ vsi moji javni spletni računi – tako družabni, kot tudi *projektni*.
   predvsem o trenutnih  *političnih* vprašanjih <small>(stran je še precej v
   nastajanju, *teme* so obravnavano zelo površno in najverjetneje tudi
   enostransko)</small>
+- [Klarinet](/klarinet) – načrt klarinet, seznam prijemov in drugo
 - [Knjižnica](/knjiznica/) – zbirka nekaterih znanj/področij mojih zanimanj ali
   izobraževanja, torej zadeve, ki se jih načeloma lahko prebere tudi drugje
 

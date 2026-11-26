@@ -1,6 +1,6 @@
 ---
 title: Janez Pavel Žebovec
-date: 2026-10-10
+date: 2026-11-26
 description: Personal website
 keywords: Janez Pavel Žebovec, personal website
 ---
@@ -40,7 +40,8 @@ ones.
   prohibited G\*\*\*le Maps just for comparision</small>
 - [My lists](/seznami) – recomendations, intersting webistes and other lists,
   manly of web links
-- [Thinking](/umovanje) – set of citations, data and my thoughts on current
+- [Clarinet](/klarinet) – clarinet blueprint, list of grips etc.
+- [Thoughts](/umovanje) – set of citations, data and my thoughts on current
   political questions <small>(page is very much in early stage of creation,
   subjects are presented very shallowy and one-sidedly)</small>
 
@@ -69,8 +70,9 @@ stuff than most of mainstream):
 
 Social media, where I am registered, though I don't (really) use them:
 
-- [Facebook](https://www.facebook.com/janezpavel.zebovec)
-- [Twitter](https://x.com/JanezPavelZ)
+- [janezpavel.zebovec](https://www.facebook.com/janezpavel.zebovec)@[facebook.com](https:/www.facebook.com/)
+- [JanezPavelZ](https://x.com/JanezPavelZ)@[x.com](https://x.com/)
+- [Ionoeryn](https://www.reddit.com/user/Ionoeryn/)@[reddit.com](https://www.reddit.com/)
 
 ### Actiities at web
 
@@ -114,8 +116,8 @@ Social media, where I am registered, though I don't (really) use them:
       a little at translation of [F-Droidu](https://f-droid.org/)
     - [Element Translations](https://translate.element.io/user/JanezPavelZebovec/) –
       I contribute a little to translation of [Element](https://element.io/), especially mobile app
-- [Open Library](https://openlibrary.org/people/janezpavelzebovec) – there I
-  added a few Slovenian editions
+- [Open Library](https://openlibrary.org/people/janezpavelzebovec) – open
+  database/catalog of books (works, editions, authors, ...) 
 
 Other websites:
 
