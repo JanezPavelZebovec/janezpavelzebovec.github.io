@@ -1,0 +1,27 @@
+#prijemi {
+    display: flex;
+    flex-directioN: row;
+    flex-wrap: wrap;
+}
+
+#prijemi figure {
+    display: flex;
+    flex-directioN: column;
+    align-items: center;
+    border: 1px solid var(--bOspredjePovsemNazaj);
+    margin: 2px;
+}
+
+#prijemi figure .slike {
+    display: flex;
+    flex-direction: row;
+}
+
+#prijemi figure img {
+    width: 2em;
+}
+
+#prijemi figure figcaption {
+    padding: 0 0.25em;
+    text-align: center;
+}

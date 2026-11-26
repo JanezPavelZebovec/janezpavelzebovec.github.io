@@ -48,14 +48,19 @@ for v in prijemi:
         print(f"Opozorilo: prijem za {ime} ni vpisan. Preskočeno.")
         continue
 
+    ime_stand = ime.replace(" ", "_").replace("/", "-")
+
     if ime == ime_prej:
         stevec_ime += 1
     elif ime != ime_prej:
         stevec_ime = 0
         if not prvi:
-            seznam.write("</div>\n")
+            seznam.write("\t</div>\n")
+            seznam.write(f"\t<figcaption>{ime_prej}</figcaption>\n")
+            seznam.write("</figure>\n")
         prvi = False
-        seznam.write(f"<div id='{ime}'>\n")
+        seznam.write(f"<figure id='{ime_stand}'>\n")
+        seznam.write(f"\t<div class='slike'>\n")
     ime_prej = ime
 
     kl2_drevo = copy.deepcopy(kl_drevo) # ustvarimo dvojnik klarineta
@@ -73,11 +78,14 @@ for v in prijemi:
                 continue
             primi(tipka[0], barva)
 
-    ime_slike = ime.replace(" ", "_").replace("/", "-")
-    ime_datoteke = "slike_prijemov/" + ime_slike + "-" + str(stevec_ime) + ".svg"
+    ime_datoteke = "slike_prijemov/" + ime_stand + "-" + str(stevec_ime) + ".svg"
 
-    seznam.write(f"<image src='{ime_datoteke}' alt='{ime} - {stevec_ime}' />\n")
+    seznam.write(f"\t\t<img src='{ime_datoteke}' alt='{ime} - {stevec_ime}' />\n")
 
     kl2_drevo.write(ime_datoteke, xml_declaration=True, encoding="UTF-8")
+
+seznam.write("\t</div>\n")
+seznam.write(f"\t<figcaption>{ime_prej}</figcaption>\n")
+seznam.write("</figure>\n")
 
 seznam.close()

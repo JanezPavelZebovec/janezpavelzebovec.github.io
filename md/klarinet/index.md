@@ -1,6 +1,6 @@
 ---
 title: Klarinet
-date: 2026-11-22
+date: 2026-11-26
 description:
 keywords: klarinet
 ---
@@ -20,8 +20,8 @@ Klarinet je sestavljen iz štirih večjih delov (označeni črno):
 - odmevnik
 
 <div class="vodoravno">
-<img src="images/klarinet/klarinet_Selmer.png" alt="Klarinet Selmer" style="min-height: 90vh"/>
-<img src="images/klarinet/klarinet.svg" alt="Mehanizem klarineta" style="min-height: 90vh"/>
+<img src="slike/klarinet_Selmer.png" alt="Klarinet Selmer" style="min-height: 90vh"/>
+<img src="slike/klarinet.svg" alt="Mehanizem klarineta" style="min-height: 90vh"/>
 </div>
 
 ## Prepihovanje
@@ -51,8 +51,8 @@ Klarinet je sestavljen iz štirih večjih delov (označeni črno):
 
 ## Prijemi
 
-<div id="prijemi">
-</div>
+<link rel="stylesheet" href="styles-klarinet.css"/>
+<div id="prijemi" data-insert="klarinet/seznam_prijemov.html">
 
 ---
 

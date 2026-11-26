@@ -58,3 +58,5 @@ Drugi način označevanja kolen je po skupnih prednikih:
 ### Svaštvo
 
 ![](/images/knjiznica/rodoslovje/sorodstvena_razmerja-svastvo.svg){.obrnljivaS}
+
+<object class="vstavljena_slika" type="image/svg+xml" data="/images/knjiznica/rodoslovje/sorodstvena_razmerja-svastvo.svg">

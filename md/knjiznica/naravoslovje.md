@@ -351,7 +351,7 @@ $$ \vec{v} = \frac{\d \vec{r}}{\d t} = r \frac{\vec{\d \phi}}{\d t} = \vec r \ti
 Obodni pospešek:
 $$ \vec{a_t} = \frac{\vec{\d v}}{\d t} = r \frac{\vec{\d \omega}}{t} = \vec r \times \vec{\alpha} $$
 
-Coriolisova sila:
+**Coriolisova sila**:
 $$ \vec F_{Coriolis} = -2 m (\vec{\omega} \times \vec{v}) $$
 
 <div class="zakon">

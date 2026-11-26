@@ -660,7 +660,9 @@ Združene države Amerike, zahodna Evropa – to je današnja Meka, in Bližnji 
 > impossible, it will just take time. That's why the strategy here is a
 > long-term strategy. Fifty years sounds like a long time, but for the Muslim
 > Brotherhood it's attainable. Their utlook and planning for the submission of
-> the world to Islam si a strategic weapon they have use for decades.
+> the world to Islam is a strategic weapon they have use for decades.
+>
+> ---
 >
 > How far in advance do they envision their plan?
 >
@@ -671,7 +673,7 @@ Združene države Amerike, zahodna Evropa – to je današnja Meka, in Bližnji 
 > places in US, in swing states which impact the election results, they would be
 > able to swing the state one way or another.
 >
-<cite>[](https://youtu.be/EbvPWoXeWH4?t=573)</cite>
+<cite>[odzivni posnetek Sahar TV](https://youtu.be/EbvPWoXeWH4?t=573)</cite>
 
 ### Islam in Sveto pismo
 

@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-11-24
+date: 2026-11-26
 description: računska teorija, enačbe
 keywords: računstvo, matematika, algebra, logika
 author: Janez Pavel Žebovec
